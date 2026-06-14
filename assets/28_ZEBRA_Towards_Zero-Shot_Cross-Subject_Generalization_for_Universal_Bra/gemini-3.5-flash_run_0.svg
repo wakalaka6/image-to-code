@@ -1,0 +1,417 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="100%" height="100%">
+    <defs>
+        <!-- Drop Shadow Filter -->
+        <filter id="shadow" x="-1%" y="-1%" width="103%" height="106%">
+            <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+        
+        <!-- Markers for Arrows -->
+        <marker id="arrowhead-small" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#333"/>
+        </marker>
+        <marker id="arrowhead-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2f5597"/>
+        </marker>
+        <marker id="arrowhead-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c65911"/>
+        </marker>
+
+        <!-- Reusable Feature Bars (3D Layered Effect) -->
+        <g id="feature-bars">
+            <rect x="24" y="-9" width="10" height="55" rx="2" fill="#709fdc" stroke="#2f5597" stroke-width="1.2"/>
+            <rect x="16" y="-6" width="10" height="55" rx="2" fill="#5b9bd5" stroke="#2f5597" stroke-width="1.2"/>
+            <rect x="8" y="-3" width="10" height="55" rx="2" fill="#418ab3" stroke="#2f5597" stroke-width="1.2"/>
+            <rect x="0" y="0" width="10" height="55" rx="2" fill="#2f75b5" stroke="#1f4e78" stroke-width="1.5"/>
+        </g>
+
+        <!-- Reusable fMRI Monitor -->
+        <g id="fmri-monitor">
+            <rect x="0" y="0" width="60" height="45" rx="3" fill="#f2f2f2" stroke="#3a3a3a" stroke-width="2"/>
+            <rect x="4" y="4" width="52" height="30" fill="#0d1b2a"/>
+            <path d="M 22,45 L 38,45 L 35,52 L 25,52 Z" fill="#555" stroke="#3a3a3a" stroke-width="1.5"/>
+            <ellipse cx="30" cy="52" rx="15" ry="3" fill="#3a3a3a"/>
+            <!-- Brain Glow -->
+            <path d="M 22,18 C 20,15 24,11 27,13 C 29,11 33,11 35,13 C 38,11 42,15 40,18 C 42,21 38,25 35,23 C 33,25 29,25 27,23 C 24,25 20,21 22,18 Z" fill="#ff9999" opacity="0.8" stroke="#ff6666" stroke-width="1"/>
+            <line x1="30" y1="13" x2="30" y2="23" stroke="#ff6666" stroke-width="1"/>
+            <!-- EEG Wave -->
+            <path d="M 62,15 L 68,15 L 71,5 L 75,30 L 79,15 L 90,15" fill="none" stroke="#3a3a3a" stroke-width="1.5"/>
+        </g>
+
+        <!-- Reusable Subject Heads -->
+        <g id="subject-heads">
+            <circle cx="20" cy="30" r="14" fill="#ffdbac" stroke="#333" stroke-width="1.5"/>
+            <path d="M 6,24 C 6,15 34,15 34,24" fill="#4a3728" stroke="#333" stroke-width="1.5"/>
+            <circle cx="45" cy="30" r="14" fill="#f1c27d" stroke="#333" stroke-width="1.5"/>
+            <path d="M 31,24 C 31,12 59,12 59,24" fill="#edd59e" stroke="#333" stroke-width="1.5"/>
+            <circle cx="70" cy="30" r="14" fill="#e0ac69" stroke="#333" stroke-width="1.5"/>
+            <path d="M 56,24 C 56,15 84,15 84,24" fill="#111" stroke="#333" stroke-width="1.5"/>
+            <text x="10" y="10" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#c00">?</text>
+            <text x="40" y="5" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#c00">?</text>
+            <text x="70" y="10" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#c00">?</text>
+        </g>
+
+        <!-- Reusable Semantic Heads -->
+        <g id="semantic-heads">
+            <!-- Dog -->
+            <g transform="translate(15, 25)">
+                <ellipse cx="0" cy="0" rx="12" ry="10" fill="#d7a15c" stroke="#333" stroke-width="1.5"/>
+                <path d="M -12,-4 C -16,-12 -8,-14 -6,-6" fill="#a0703c" stroke="#333" stroke-width="1.5"/>
+                <path d="M 12,-4 C 16,-12 8,-14 6,-6" fill="#a0703c" stroke="#333" stroke-width="1.5"/>
+                <circle cx="-4" cy="-2" r="1.5" fill="#000"/>
+                <circle cx="4" cy="-2" r="1.5" fill="#000"/>
+                <ellipse cx="0" cy="3" rx="4" ry="3" fill="#fff" stroke="#333" stroke-width="1"/>
+                <polygon points="-1,2 1,2 0,4" fill="#000"/>
+            </g>
+            <!-- Woman -->
+            <g transform="translate(45, 25)">
+                <circle cx="0" cy="0" r="11" fill="#ffdbac" stroke="#333" stroke-width="1.5"/>
+                <path d="M -13,-4 C -13,-15 13,-15 13,-4 C 13,5 10,8 10,12 L -10,12 C -10,8 -13,5 -13,-4 Z" fill="#a0522d" stroke="#333" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="11" fill="none" stroke="#333" stroke-width="1.5"/>
+                <circle cx="-4" cy="0" r="1" fill="#000"/>
+                <circle cx="4" cy="0" r="1" fill="#000"/>
+                <path d="M -3,4 Q 0,7 3,4" fill="none" stroke="#333" stroke-width="1"/>
+            </g>
+            <!-- Cat -->
+            <g transform="translate(75, 25)">
+                <circle cx="0" cy="0" r="10" fill="#b0b0b0" stroke="#333" stroke-width="1.5"/>
+                <polygon points="-9,-4 -12,-14 -3,-9" fill="#808080" stroke="#333" stroke-width="1.5"/>
+                <polygon points="9,-4 12,-14 3,-9" fill="#808080" stroke="#333" stroke-width="1.5"/>
+                <ellipse cx="-3" cy="-1" rx="2" ry="1.5" fill="#99cc33" stroke="#333" stroke-width="1"/>
+                <ellipse cx="3" cy="-1" rx="2" ry="1.5" fill="#99cc33" stroke="#333" stroke-width="1"/>
+                <polygon points="-1,2 1,2 0,3" fill="#ff9999"/>
+                <line x1="-2" y1="3" x2="-8" y2="1" stroke="#333" stroke-width="1"/>
+                <line x1="-2" y1="4" x2="-8" y2="5" stroke="#333" stroke-width="1"/>
+                <line x1="2" y1="3" x2="8" y2="1" stroke="#333" stroke-width="1"/>
+                <line x1="2" y1="4" x2="8" y2="5" stroke="#333" stroke-width="1"/>
+            </g>
+            <text x="5" y="5" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#c00">?</text>
+            <text x="40" y="0" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#c00">?</text>
+            <text x="72" y="5" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#c00">?</text>
+        </g>
+
+        <!-- Reusable Train Subjects (4 Overlapping People) -->
+        <g id="train-subjects">
+            <g transform="translate(10, 15)">
+                <path d="M -15,25 C -15,12 -8,12 0,12 C 8,12 15,12 15,25 Z" fill="#4f81bd" stroke="#333" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="10" fill="#ffdbac" stroke="#333" stroke-width="1.5"/>
+                <path d="M -10,0 C -10,-8 10,-8 10,0" fill="#222" stroke="#333" stroke-width="1.5"/>
+            </g>
+            <g transform="translate(35, 15)">
+                <path d="M -15,25 C -15,12 -8,12 0,12 C 8,12 15,12 15,25 Z" fill="#e46c0a" stroke="#333" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="10" fill="#f1c27d" stroke="#333" stroke-width="1.5"/>
+                <path d="M -10,0 C -10,-8 10,-8 10,0" fill="#edd59e" stroke="#333" stroke-width="1.5"/>
+            </g>
+            <g transform="translate(0, 35)">
+                <path d="M -18,28 C -18,12 -10,12 0,12 C 10,12 18,12 18,28 Z" fill="#c00000" stroke="#333" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="11" fill="#e0ac69" stroke="#333" stroke-width="1.5"/>
+                <path d="M -11,0 C -11,-9 11,-9 11,0" fill="#4a3728" stroke="#333" stroke-width="1.5"/>
+            </g>
+            <g transform="translate(25, 35)">
+                <path d="M -18,28 C -18,12 -10,12 0,12 C 10,12 18,12 18,28 Z" fill="#7030a0" stroke="#333" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="11" fill="#ffdbac" stroke="#333" stroke-width="1.5"/>
+                <path d="M -11,0 C -11,-9 11,-9 11,0" fill="#111" stroke="#333" stroke-width="1.5"/>
+            </g>
+        </g>
+
+        <!-- Reusable Test Subject -->
+        <g id="test-subject">
+            <path d="M -25,35 C -25,15 -15,15 0,15 C 15,15 25,15 25,35 Z" fill="#55a855" stroke="#333" stroke-width="2"/>
+            <circle cx="0" cy="0" r="16" fill="#ffdbac" stroke="#333" stroke-width="2"/>
+            <path d="M -16,-5 C -22,-12 -12,-22 0,-20 C 12,-22 22,-12 16,-5 C 20,5 15,10 15,10 L -15,10 C -15,10 -20,5 -16,-5 Z" fill="#6b5b52" stroke="#333" stroke-width="2"/>
+            <circle cx="-6" cy="2" r="1.5" fill="#000"/>
+            <circle cx="6" cy="2" r="1.5" fill="#000"/>
+            <path d="M -4,8 Q 0,12 4,8" fill="none" stroke="#333" stroke-width="1.5"/>
+        </g>
+
+        <!-- Reusable Photo Stack (Training) -->
+        <g id="photo-stack">
+            <rect x="5" y="-10" width="65" height="45" rx="4" fill="#fff" stroke="#333" stroke-width="1.5" transform="rotate(-5)"/>
+            <rect x="9" y="-6" width="57" height="31" fill="#85c1e9" transform="rotate(-5)"/>
+            <g transform="translate(15, 5)">
+                <rect x="0" y="0" width="65" height="45" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+                <rect x="4" y="4" width="57" height="31" fill="#aed6f1"/>
+                <polygon points="4,35 25,15 40,35" fill="#27ae60"/>
+                <polygon points="25,35 45,20 58,35" fill="#2ecc71"/>
+                <circle cx="48" cy="12" r="4" fill="#f1c40f"/>
+            </g>
+        </g>
+
+        <!-- Reusable Reconstructed Photo Stack (Inference) -->
+        <g id="photo-stack-dog">
+            <rect x="5" y="-10" width="75" height="55" rx="4" fill="#fff" stroke="#333" stroke-width="1.5" transform="rotate(-5)"/>
+            <rect x="9" y="-6" width="67" height="41" fill="#85c1e9" transform="rotate(-5)"/>
+            <g transform="translate(15, 5)">
+                <rect x="0" y="0" width="75" height="55" rx="4" fill="#fff" stroke="#333" stroke-width="1.5"/>
+                <rect x="4" y="4" width="67" height="41" fill="#aed6f1"/>
+                <g transform="translate(37, 26) scale(1.2)">
+                    <ellipse cx="0" cy="0" rx="12" ry="10" fill="#f39c12" stroke="#333" stroke-width="1"/>
+                    <path d="M -12,-4 C -16,-12 -8,-14 -6,-6" fill="#d35400" stroke="#333" stroke-width="1"/>
+                    <path d="M 12,-4 C 16,-12 8,-14 6,-6" fill="#d35400" stroke="#333" stroke-width="1"/>
+                    <circle cx="-4" cy="-2" r="1" fill="#000"/>
+                    <circle cx="4" cy="-2" r="1" fill="#000"/>
+                    <ellipse cx="0" cy="3" rx="3" ry="2" fill="#fff" stroke="#333" stroke-width="0.8"/>
+                    <polygon points="-1,2 1,2 0,3" fill="#000"/>
+                </g>
+            </g>
+        </g>
+
+        <!-- Reusable Diffusion Prior Box -->
+        <g id="diffusion-prior-box">
+            <rect x="0" y="0" width="130" height="45" rx="8" fill="#fff2cc" stroke="#d6b218" stroke-width="2"/>
+            <circle cx="25" cy="22" r="7" fill="#f4b183" stroke="#c65911" stroke-width="1.5"/>
+            <circle cx="65" cy="22" r="7" fill="#8faadc" stroke="#2f5597" stroke-width="1.5"/>
+            <circle cx="105" cy="22" r="7" fill="#f4b183" stroke="#c65911" stroke-width="1.5"/>
+            <path d="M 36,22 L 54,22" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+            <path d="M 76,22 L 94,22" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+        </g>
+
+        <!-- Reusable Snowflake (Frozen Icon) -->
+        <g id="snowflake" stroke="#1f4e79" stroke-width="1.5" fill="none">
+            <path d="M 0,-8 L 0,8 M -8,0 L 8,0 M -6,-6 L 6,6 M -6,6 L 6,-6" />
+            <circle cx="0" cy="0" r="1.5" fill="#fff" stroke="#1f4e79" stroke-width="1" />
+        </g>
+
+        <!-- Reusable Thick Arrows -->
+        <g id="thick-arrow-right-blue">
+            <path d="M 0,8 L 35,8 L 35,2 L 48,11 L 35,20 L 35,14 L 0,14 Z" fill="#b9cde5" stroke="#2f5597" stroke-width="1.5"/>
+        </g>
+        <g id="thick-arrow-right-yellow">
+            <path d="M 0,8 L 35,8 L 35,2 L 48,11 L 35,20 L 35,14 L 0,14 Z" fill="#fff2cc" stroke="#bf9000" stroke-width="1.5"/>
+        </g>
+        <g id="thick-arrow-up-blue">
+            <path d="M 8,48 L 8,13 L 2,13 L 11,0 L 20,13 L 14,13 L 14,48 Z" fill="#b9cde5" stroke="#2f5597" stroke-width="1.5"/>
+        </g>
+
+        <!-- Reusable Double-headed Arrow with Slash -->
+        <g id="double-arrow">
+            <line x1="-25" y1="0" x2="25" y2="0" stroke="#333" stroke-width="2" marker-start="url(#arrowhead-small)" marker-end="url(#arrowhead-small)"/>
+            <line x1="-5" y1="-8" x2="5" y2="8" stroke="#333" stroke-width="2"/>
+        </g>
+
+        <!-- Reusable Minus Operator -->
+        <g id="minus-operator">
+            <circle cx="0" cy="0" r="10" fill="#fff" stroke="#333" stroke-width="2"/>
+            <line x1="-6" y1="0" x2="6" y2="0" stroke="#333" stroke-width="2"/>
+        </g>
+    </defs>
+
+    <!-- ==================== TRAINING SECTION ==================== -->
+    <g filter="url(#shadow)">
+        <rect x="5" y="5" width="1190" height="540" rx="12" fill="#fff" stroke="#d0d0d0" stroke-width="1"/>
+    </g>
+
+    <!-- Background Cards inside Training -->
+    <rect x="300" y="15" width="350" height="510" rx="15" fill="#f1f6fa" stroke="#e1edf5" stroke-width="1.5"/>
+    <rect x="660" y="15" width="520" height="510" rx="15" fill="#fdf8f2" stroke="#fbeee0" stroke-width="1.5"/>
+
+    <!-- Headers -->
+    <rect x="15" y="15" width="180" height="45" rx="8" fill="#e2ece9"/>
+    <text x="105" y="45" font-family="Georgia, serif" font-size="24" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000">Training</text>
+
+    <text x="475" y="45" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle" fill="#4f81bd">Subject-Invariant Feature Extraction</text>
+    <text x="920" y="45" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle" fill="#e46c0a">Semantic-Specific Feature Extraction</text>
+
+    <!-- LEFT COLUMN (Subject / ViT / CLS / DIS) -->
+    <use href="#subject-heads" x="60" y="110"/>
+    <text x="105" y="195" font-family="Georgia, serif" font-size="16" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000">Subject</text>
+
+    <!-- CLS Block -->
+    <rect x="210" y="85" width="60" height="30" rx="5" fill="#ddebf7" stroke="#2f5597" stroke-width="1.5"/>
+    <text x="240" y="105" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">CLS</text>
+
+    <!-- DIS Block with GRL -->
+    <rect x="210" y="205" width="45" height="20" rx="3" fill="#fbcbc9" stroke="#c00000" stroke-width="1"/>
+    <text x="232.5" y="219" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#000">GRL</text>
+    <rect x="210" y="225" width="60" height="30" rx="5" fill="#ddebf7" stroke="#2f5597" stroke-width="1.5"/>
+    <text x="240" y="245" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">DIS</text>
+
+    <!-- Double Arrows & Losses (Left) -->
+    <use href="#double-arrow" transform="translate(160, 125) rotate(-35)"/>
+    <use href="#double-arrow" transform="translate(160, 215) rotate(35)"/>
+    <text x="145" y="95" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#4f81bd" text-anchor="middle">ℒ<tspan font-size="12" dy="5">cls</tspan><tspan font-size="12" dy="-10">E</tspan></text>
+    <text x="145" y="275" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#4f81bd" text-anchor="middle">ℒ<tspan font-size="12" dy="5">dis</tspan><tspan font-size="12" dy="-10">E</tspan></text>
+
+    <!-- fMRI & ViT (Left Bottom) -->
+    <use href="#fmri-monitor" x="70" y="310"/>
+    <text x="100" y="305" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">fMRI</text>
+    <use href="#thick-arrow-right-blue" transform="translate(135, 345) scale(0.8, 1)"/>
+
+    <!-- ViT Trapezoid -->
+    <polygon points="180,310 250,330 250,390 180,410" fill="#dbe5f1" stroke="#2f5597" stroke-width="2"/>
+    <text x="215" y="365" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">ViT</text>
+
+    <use href="#train-subjects" x="65" y="410"/>
+    <text x="105" y="495" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">Train Subjects</text>
+
+    <!-- MIDDLE COLUMN (Features & Projectors) -->
+    <use href="#feature-bars" x="330" y="350"/>
+    <text x="345" y="425" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">E</text>
+
+    <use href="#feature-bars" x="325" y="200"/>
+    <text x="345" y="275" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">E<tspan font-size="12" dy="5">i</tspan></text>
+
+    <use href="#feature-bars" x="325" y="65"/>
+    <text x="345" y="140" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">E<tspan font-size="12" dy="5">s</tspan></text>
+
+    <!-- Connectors in Middle Column -->
+    <use href="#thick-arrow-right-blue" transform="translate(255, 345) scale(1.4, 1)"/>
+    <use href="#thick-arrow-up-blue" transform="translate(330, 265) scale(1, 1.6)"/>
+    <text x="305" y="320" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">ℱ<tspan font-size="12" dy="5">i</tspan><tspan font-size="18" dy="-5">(·)</tspan></text>
+
+    <use href="#minus-operator" x="345" y="170"/>
+    <text x="410" y="175" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle">Difference</text>
+
+    <!-- Curved Skip Connection (Left) -->
+    <path d="M 370,360 C 400,300 400,220 360,175" fill="none" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+
+    <!-- Decoder & fMRI Reconstruction -->
+    <path d="M 345,415 L 345,450 L 385,450" fill="none" stroke="#2f5597" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+    <polygon points="390,440 470,420 470,480 390,460" fill="#dbe5f1" stroke="#2f5597" stroke-width="2"/>
+    <text x="430" y="455" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Decoder</text>
+
+    <line x1="475" y1="450" x2="505" y2="450" stroke="#333" stroke-width="2" marker-start="url(#arrowhead-small)" marker-end="url(#arrowhead-small)"/>
+    <text x="490" y="475" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#4f81bd" text-anchor="middle">ℒ<tspan font-size="11" dy="4">rec</tspan></text>
+
+    <use href="#fmri-monitor" x="510" y="415"/>
+    <text x="540" y="495" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">fMRI</text>
+
+    <!-- Vision Projectors (Middle) -->
+    <!-- Projector 1 -->
+    <rect x="510" y="65" width="110" height="50" rx="8" fill="#fff2cc" stroke="#d6b218" stroke-width="2"/>
+    <text x="565" y="83" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Vision</text>
+    <text x="565" y="101" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Projector</text>
+    <text x="565" y="135" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">𝒫<tspan font-size="12" dy="5">i</tspan><tspan font-size="18" dy="-5">(·)</tspan></text>
+    <use href="#thick-arrow-right-blue" transform="translate(370, 75) scale(2.8, 1)"/>
+
+    <!-- Projector 2 -->
+    <rect x="510" y="200" width="110" height="50" rx="8" fill="#fff2cc" stroke="#d6b218" stroke-width="2"/>
+    <text x="565" y="218" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Vision</text>
+    <text x="565" y="236" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Projector</text>
+    <text x="565" y="270" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">𝒫<tspan font-size="12" dy="5">s</tspan><tspan font-size="18" dy="-5">(·)</tspan></text>
+    <use href="#thick-arrow-right-blue" transform="translate(370, 210) scale(2.8, 1)"/>
+
+    <!-- Projector 3 -->
+    <rect x="510" y="335" width="110" height="50" rx="8" fill="#fff2cc" stroke="#d6b218" stroke-width="2"/>
+    <text x="565" y="353" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Vision</text>
+    <text x="565" y="371" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Projector</text>
+    <text x="565" y="405" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">𝒫(·)</text>
+    <use href="#thick-arrow-right-blue" transform="translate(370, 345) scale(2.8, 1)"/>
+
+
+    <!-- RIGHT COLUMN (Semantic / Visual Stimuli) -->
+    <!-- GRL on top path -->
+    <use href="#thick-arrow-right-yellow" transform="translate(635, 75) scale(3.1, 1)"/>
+    <rect x="680" y="100" width="60" height="25" rx="4" fill="#fbcbc9" stroke="#c00000" stroke-width="1.5"/>
+    <text x="710" y="117" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">GRL</text>
+
+    <use href="#thick-arrow-right-yellow" transform="translate(635, 210) scale(3.1, 1)"/>
+    <use href="#thick-arrow-right-yellow" transform="translate(635, 345) scale(3.1, 1)"/>
+
+    <!-- Features F -->
+    <use href="#feature-bars" x="800" y="65"/>
+    <text x="775" y="140" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">F<tspan font-size="12" dy="5">i</tspan></text>
+
+    <use href="#feature-bars" x="800" y="200"/>
+    <text x="745" y="275" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">F<tspan font-size="12" dy="5">s</tspan></text>
+
+    <use href="#feature-bars" x="800" y="350"/>
+    <text x="825" y="425" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">F</text>
+
+    <use href="#minus-operator" x="815" y="170"/>
+    <path d="M 835,360 C 865,300 865,220 825,175" fill="none" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+
+    <!-- Semantic Heads & Losses -->
+    <use href="#semantic-heads" x="910" y="100"/>
+    <text x="955" y="185" font-family="Georgia, serif" font-size="16" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000">Semantic</text>
+
+    <use href="#double-arrow" transform="translate(885, 125) rotate(145)"/>
+    <use href="#double-arrow" transform="translate(885, 215) rotate(-145)"/>
+
+    <text x="905" y="85" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#bf9000" text-anchor="middle">ℒ<tspan font-size="12" dy="5">inv</tspan><tspan font-size="12" dy="-10">F</tspan></text>
+    <text x="905" y="255" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#bf9000" text-anchor="middle">ℒ<tspan font-size="12" dy="5">spe</tspan><tspan font-size="12" dy="-10">F</tspan></text>
+
+    <!-- Diffusion Prior & Visual Stimuli -->
+    <use href="#diffusion-prior-box" x="900" y="300"/>
+    <text x="965" y="370" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#e46c0a" text-anchor="middle">ℒ<tspan font-size="12" dy="5">prior</tspan></text>
+
+    <use href="#photo-stack" x="930" y="390"/>
+    <text x="975" y="475" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">Visual Stimuli</text>
+
+    <!-- Connectors to Diffusion Prior -->
+    <path d="M 835,265 L 835,322 L 890,322" fill="none" stroke="#c65911" stroke-width="3" marker-end="url(#arrowhead-orange)"/>
+    <path d="M 835,390 C 860,390 875,370 890,345" fill="none" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+    <path d="M 1010,355 L 1010,395" stroke="#333" stroke-width="2" marker-start="url(#arrowhead-small)" marker-end="url(#arrowhead-small)"/>
+
+    <!-- Legend (Bottom Right) -->
+    <g transform="translate(680, 430)">
+        <circle cx="20" cy="10" r="6" fill="#548235" stroke="#333" stroke-width="1"/>
+        <text x="35" y="14" font-family="system-ui, sans-serif" font-size="13" fill="#000">Visual stimuli</text>
+
+        <circle cx="20" cy="35" r="6" fill="#548235" stroke="#333" stroke-width="1"/>
+        <text x="35" y="39" font-family="system-ui, sans-serif" font-size="13" fill="#000">Image labels</text>
+
+        <circle cx="20" cy="60" r="6" fill="#c65911" stroke="#333" stroke-width="1"/>
+        <text x="35" y="64" font-family="system-ui, sans-serif" font-size="13" fill="#000">Image captions</text>
+
+        <!-- Central Node and Arrows -->
+        <circle cx="150" cy="35" r="5" fill="#7f7f7f"/>
+        <path d="M 115,15 L 140,28" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+        <path d="M 115,35 L 140,35" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+        <path d="M 115,55 L 140,42" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
+    </g>
+
+
+    <!-- ==================== INFERENCE SECTION ==================== -->
+    <g filter="url(#shadow)">
+        <rect x="5" y="560" width="1190" height="250" rx="12" fill="#fff" stroke="#d0d0d0" stroke-width="1"/>
+    </g>
+
+    <!-- Header -->
+    <rect x="15" y="570" width="180" height="45" rx="8" fill="#e2e5e8"/>
+    <text x="105" y="600" font-family="Georgia, serif" font-size="24" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000">Inference</text>
+
+    <!-- Flow Elements -->
+    <use href="#test-subject" x="100" y="670"/>
+    <text x="100" y="755" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000">Test <tspan font-weight="bold">Unseen</tspan> Subject</text>
+
+    <use href="#fmri-monitor" x="180" y="640"/>
+    <text x="210" y="725" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">fMRI</text>
+    <use href="#thick-arrow-right-blue" transform="translate(245, 665) scale(0.8, 1)"/>
+
+    <!-- ViT (Frozen) -->
+    <polygon points="290,630 360,650 360,710 290,730" fill="#dbe5f1" stroke="#2f5597" stroke-width="2"/>
+    <text x="325" y="685" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">ViT</text>
+    <use href="#snowflake" x="355" y="640"/>
+
+    <use href="#thick-arrow-right-blue" transform="translate(365, 665) scale(0.8, 1)"/>
+    <text x="385" y="635" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">ℱ<tspan font-size="12" dy="5">i</tspan><tspan font-size="18" dy="-5">(·)</tspan></text>
+
+    <!-- Vision Projector (Frozen) -->
+    <rect x="440" y="640" width="120" height="60" rx="8" fill="#fff2cc" stroke="#d6b218" stroke-width="2"/>
+    <text x="500" y="663" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Vision</text>
+    <text x="500" y="683" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Projector</text>
+    <text x="500" y="625" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">𝒫<tspan font-size="12" dy="5">s</tspan><tspan font-size="18" dy="-5">(·)</tspan></text>
+    <use href="#snowflake" x="550" y="640"/>
+
+    <use href="#thick-arrow-right-blue" transform="translate(565, 665) scale(0.8, 1)"/>
+
+    <!-- Diffusion Prior (Frozen) -->
+    <use href="#diffusion-prior-box" x="610" y="650"/>
+    <text x="675" y="715" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Diffusion Prior</text>
+    <use href="#snowflake" x="715" y="645"/>
+
+    <use href="#thick-arrow-right-blue" transform="translate(745, 665) scale(0.8, 1)"/>
+
+    <!-- SDXL (Frozen) -->
+    <polygon points="800,630 870,650 870,710 800,730" fill="#fce4d6" stroke="#c65911" stroke-width="2"/>
+    <text x="835" y="685" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">SDXL</text>
+    <use href="#snowflake" x="865" y="640"/>
+
+    <use href="#thick-arrow-right-blue" transform="translate(875, 665) scale(0.8, 1)"/>
+
+    <!-- Reconstructed Images -->
+    <use href="#photo-stack-dog" x="940" y="640"/>
+    <text x="990" y="605" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">Reconstructed</text>
+    <text x="990" y="622" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">Images</text>
+
+</svg>

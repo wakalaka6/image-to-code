@@ -1,0 +1,569 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 750" width="100%" height="100%">
+    <defs>
+        <!-- Drop Shadow Filter for Cards -->
+        <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.08" flood-color="#000000"/>
+        </filter>
+
+        <!-- Database Cylinder Gradient -->
+        <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="60%" stop-color="#E5E5E5"/>
+            <stop offset="100%" stop-color="#CCCCCC"/>
+        </linearGradient>
+
+        <!-- OpenAI/GPT Flower Path -->
+        <path id="gptFlower" d="M15,8 C15.5,8 16,8.5 16,9 L16,12 C17,11.5 18,11.5 18.5,12 C19,12.5 19,13.5 18,14 L15.5,15 L18,16 C19,16.5 19,17.5 18.5,18 C18,18.5 17,18.5 16,18 L16,21 C16,21.5 15.5,22 15,22 C14.5,22 14,21.5 14,21 L14,18 C13,18.5 12,18.5 11.5,18 C11,17.5 11,16.5 12,16 L14.5,15 L12,14 C11,13.5 11,12.5 11.5,12 C12,11.5 13,11.5 14,12 L14,9 C14,8.5 14.5,8 15,8 Z" fill="white"/>
+
+        <!-- GPT Icon Green -->
+        <g id="gptIconGreen">
+            <circle cx="15" cy="15" r="13" fill="#10a37f"/>
+            <use href="#gptFlower"/>
+        </g>
+
+        <!-- GPT Icon Purple -->
+        <g id="gptIconPurple">
+            <circle cx="15" cy="15" r="13" fill="#8e44ad"/>
+            <use href="#gptFlower"/>
+        </g>
+
+        <!-- GPT Icon Dark -->
+        <g id="gptIconDark">
+            <circle cx="15" cy="15" r="13" fill="#333333"/>
+            <use href="#gptFlower"/>
+        </g>
+
+        <!-- Tree/Graph Icon -->
+        <g id="treeIcon" stroke="#333" stroke-width="1.8" fill="white" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="20" y1="10" x2="10" y2="28" />
+            <line x1="20" y1="10" x2="30" y2="28" />
+            <line x1="20" y1="10" x2="20" y2="28" />
+            <circle cx="20" cy="10" r="4.5" fill="#333" />
+            <circle cx="10" cy="28" r="4.5" />
+            <circle cx="20" cy="28" r="4.5" />
+            <circle cx="30" cy="28" r="4.5" />
+        </g>
+
+        <!-- Checkmark & Gear Icon -->
+        <g id="checkGearIcon">
+            <circle cx="15" cy="15" r="8" fill="none" stroke="#333" stroke-width="2"/>
+            <path d="M15,3 L15,5 M15,25 L15,27 M3,15 L5,15 M25,15 L27,15 M6.5,6.5 L8,8 M22,22 L23.5,23.5 M6.5,23.5 L8,22 M22,8 L23.5,6.5" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+            <path d="M11,15 L14,18 L19,12" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+
+        <!-- Arrow Markers -->
+        <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#1B5E20"/>
+        </marker>
+        <marker id="arrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#6A1B9A"/>
+        </marker>
+        <marker id="arrowDark" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#333333"/>
+        </marker>
+
+        <!-- Video Frame Bases -->
+        <g id="frameBase1">
+            <rect width="70" height="50" rx="3" fill="#E1F5FE" stroke="#B3E5FC" stroke-width="1"/>
+            <rect y="35" width="70" height="15" rx="1" fill="#8D6E63"/>
+        </g>
+        <g id="frameBase2">
+            <rect width="70" height="50" rx="3" fill="#F1F8E9" stroke="#DCEDC8" stroke-width="1"/>
+            <rect y="35" width="70" height="15" rx="1" fill="#A1887F"/>
+        </g>
+        <g id="frameBase3">
+            <rect width="70" height="50" rx="3" fill="#FFF3E0" stroke="#FFE0B2" stroke-width="1"/>
+            <rect y="35" width="70" height="15" rx="1" fill="#78909C"/>
+        </g>
+
+        <!-- Execution Grid Base Kitchen -->
+        <g id="baseKitchen">
+            <rect width="160" height="90" fill="#F5F5F5" rx="2"/>
+            <rect y="65" width="160" height="25" fill="#D7CCC8" rx="2"/>
+            <!-- Wall Tiles Line -->
+            <line x1="0" y1="40" x2="160" y2="40" stroke="#E0E0E0" stroke-width="1"/>
+            <!-- Pot/Cooker -->
+            <rect x="12" y="48" width="32" height="18" rx="2" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="1"/>
+            <!-- Dish rack -->
+            <rect x="52" y="42" width="22" height="24" fill="none" stroke="#757575" stroke-width="1"/>
+            <ellipse cx="63" cy="54" rx="2.5" ry="10" fill="#FFF" stroke="#424242" stroke-width="0.8"/>
+            <!-- Yellow box/drawer -->
+            <rect x="85" y="46" width="22" height="20" fill="#FFE082" rx="1" stroke="#FFB300" stroke-width="0.5"/>
+            <!-- Blue book -->
+            <rect x="115" y="46" width="8" height="20" fill="#90CAF9" rx="1" stroke="#42A5F5" stroke-width="0.5"/>
+        </g>
+    </defs>
+
+    <!-- ================= BACKGROUND CONTAINERS ================= -->
+    <!-- Top Row: Learning (Green) -->
+    <rect x="10" y="10" width="1380" height="360" rx="25" fill="#E8F5E9" stroke="none"/>
+    <text x="35" y="190" transform="rotate(-90, 35, 190)" font-family="system-ui, sans-serif" font-size="26" font-weight="900" fill="#1B5E20" letter-spacing="2">LEARNING</text>
+
+    <!-- Bottom Row: Planning (Purple) -->
+    <rect x="10" y="385" width="1380" height="355" rx="25" fill="#F3E5F5" stroke="none"/>
+    <text x="35" y="565" transform="rotate(-90, 35, 565)" font-family="system-ui, sans-serif" font-size="26" font-weight="900" fill="#4A148C" letter-spacing="2">PLANNING</text>
+
+
+    <!-- ================= TOP ROW: LEARNING COMPONENTS ================= -->
+
+    <!-- DROID Dataset Cylinder -->
+    <g id="droidDataset" transform="translate(60, 115)">
+        <path d="M 0,20 L 0,140 A 32,16 0 0,0 64,140 L 64,20 Z" fill="url(#dbGrad)" stroke="#555" stroke-width="1.5"/>
+        <ellipse cx="32" cy="20" rx="32" ry="16" fill="#EAEAEA" stroke="#555" stroke-width="1.5"/>
+        <ellipse cx="32" cy="60" rx="32" ry="14" fill="none" stroke="#777" stroke-width="1.2" stroke-dasharray="4,4"/>
+        <ellipse cx="32" cy="100" rx="32" ry="14" fill="none" stroke="#777" stroke-width="1.2" stroke-dasharray="4,4"/>
+        <ellipse cx="32" cy="140" rx="32" ry="16" fill="none" stroke="#555" stroke-width="1.5"/>
+        <text x="32" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#212121">DROID</text>
+        <text x="32" y="93" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#212121">Dataset</text>
+    </g>
+
+    <!-- Card (a): Keyframe Extraction -->
+    <rect x="145" y="25" width="265" height="330" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="277" y="48" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(a) Keyframe Extraction</text>
+
+    <!-- Card (a) Video Rows -->
+    <!-- Row 1 -->
+    <g transform="translate(155, 62)">
+        <use href="#frameBase1"/>
+        <rect x="8" y="22" width="16" height="13" rx="1" fill="#FFF" stroke="#999" stroke-width="0.5"/>
+        <ellipse cx="16" cy="22" rx="8" ry="2" fill="#DDD"/>
+        <path d="M55,8 L45,22 L40,28" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="45" cy="22" r="1.5" fill="#000"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#37474F" font-weight="bold">Frame 1</text>
+    </g>
+    <g transform="translate(230, 62)">
+        <use href="#frameBase1"/>
+        <rect x="8" y="22" width="16" height="13" rx="1" fill="#FFF" stroke="#999" stroke-width="0.5"/>
+        <ellipse cx="16" cy="22" rx="8" ry="2" fill="#DDD"/>
+        <path d="M55,8 L38,18 L25,24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="38" cy="18" r="1.5" fill="#000"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#37474F" font-weight="bold">Frame 2</text>
+    </g>
+    <text x="312" y="92" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#78909C">...</text>
+    <g transform="translate(330, 62)">
+        <use href="#frameBase1"/>
+        <rect x="8" y="22" width="16" height="13" rx="1" fill="#FFF" stroke="#999" stroke-width="0.5"/>
+        <ellipse cx="30" cy="30" rx="8" ry="2" fill="#DDD" stroke="#999" stroke-width="0.5"/>
+        <path d="M55,8 L32,20 L20,30" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="20" r="1.5" fill="#000"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#37474F" font-weight="bold">Frame 7</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(155, 157)">
+        <use href="#frameBase2"/>
+        <rect x="12" y="20" width="8" height="15" fill="#E53935"/>
+        <rect x="20" y="18" width="6" height="17" fill="#1E88E5"/>
+        <path d="M55,8 L46,20 L42,26" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#3E2723" font-weight="bold">Frame 1</text>
+    </g>
+    <g transform="translate(230, 157)">
+        <use href="#frameBase2"/>
+        <rect x="12" y="20" width="8" height="15" fill="#E53935"/>
+        <rect x="20" y="18" width="6" height="17" fill="#1E88E5"/>
+        <path d="M55,8 L36,16 L25,20" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#3E2723" font-weight="bold">Frame 2</text>
+    </g>
+    <text x="312" y="187" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#78909C">...</text>
+    <g transform="translate(330, 157)">
+        <use href="#frameBase2"/>
+        <rect x="12" y="20" width="8" height="15" fill="#E53935"/>
+        <rect x="42" y="24" width="14" height="8" fill="#1E88E5" transform="rotate(15, 42, 24)"/>
+        <path d="M55,8 L40,20 L32,26" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#3E2723" font-weight="bold">Frame 9</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(155, 252)">
+        <use href="#frameBase3"/>
+        <rect x="12" y="34" width="22" height="12" fill="#CFD8DC" stroke="#37474F" stroke-width="0.5"/>
+        <line x1="23" y1="36" x2="23" y2="44" stroke="#37474F" stroke-width="1"/>
+        <path d="M55,8 L46,20 L42,26" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#263238" font-weight="bold">Frame 1</text>
+    </g>
+    <g transform="translate(230, 252)">
+        <use href="#frameBase3"/>
+        <rect x="12" y="34" width="22" height="12" fill="#CFD8DC" stroke="#37474F" stroke-width="0.5"/>
+        <rect x="12" y="38" width="22" height="8" fill="#90A4AE"/>
+        <path d="M55,8 L36,22 L25,32" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#263238" font-weight="bold">Frame 2</text>
+    </g>
+    <text x="312" y="282" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#78909C">...</text>
+    <g transform="translate(330, 252)">
+        <use href="#frameBase3"/>
+        <rect x="12" y="34" width="22" height="12" fill="#CFD8DC" stroke="#37474F" stroke-width="0.5"/>
+        <path d="M55,8 L38,18 L28,22" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+        <text x="5" y="11" font-family="system-ui, sans-serif" font-size="8" fill="#263238" font-weight="bold">Frame 8</text>
+    </g>
+
+    <!-- Card (b): Atomic Domain Generation -->
+    <rect x="425" y="25" width="310" height="330" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="580" y="48" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(b) Atomic Domain Generation</text>
+
+    <!-- Card (b) Inner Box 1: Domain Construction -->
+    <rect x="435" y="60" width="290" height="65" rx="12" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1.5"/>
+    <use href="#gptIconGreen" x="445" y="77"/>
+    <text x="480" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1B5E20">Domain Construction</text>
+    <text x="480" y="105" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1B5E20">&amp; Revision</text>
+
+    <!-- Mini Document inside Box 1 -->
+    <g transform="translate(635, 65) scale(0.75)">
+        <path d="M 0,0 L 65,0 L 80,15 L 80,65 L 0,65 Z" fill="white" stroke="#1B5E20" stroke-width="1.2"/>
+        <path d="M 65,0 L 65,15 L 80,15" fill="none" stroke="#1B5E20" stroke-width="1.2"/>
+        <text x="6" y="15" font-family="monospace" font-size="8" font-weight="bold" fill="#0288D1">:predicates (...)</text>
+        <text x="6" y="27" font-family="monospace" font-size="8" font-weight="bold" fill="#2E7D32">:actions ...</text>
+        <text x="6" y="39" font-family="monospace" font-size="8" font-weight="bold" fill="#EF6C00">:precondition (...)</text>
+        <text x="6" y="51" font-family="monospace" font-size="8" font-weight="bold" fill="#C62828">:effect (...)</text>
+    </g>
+
+    <!-- Card (b) Inner Box 2: Refinement Loop Container -->
+    <rect x="435" y="135" width="290" height="210" rx="12" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1.5"/>
+
+    <!-- Solvability Check Sub-box -->
+    <rect x="445" y="145" width="115" height="80" rx="10" fill="white" stroke="#C8E6C9" stroke-width="1.5"/>
+    <use href="#treeIcon" x="487" y="152"/>
+    <text x="502" y="202" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#212121">Solvability</text>
+    <text x="502" y="216" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#212121">Check</text>
+
+    <!-- Solution Verification Sub-box -->
+    <rect x="445" y="255" width="115" height="80" rx="10" fill="white" stroke="#C8E6C9" stroke-width="1.5"/>
+    <use href="#checkGearIcon" x="487" y="262"/>
+    <text x="502" y="312" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#212121">Solution</text>
+    <text x="502" y="326" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#212121">Verification</text>
+
+    <!-- Closed-Loop Refinement Sub-box -->
+    <rect x="600" y="145" width="115" height="190" rx="10" fill="white" stroke="#C8E6C9" stroke-width="1.5"/>
+    <use href="#gptIconGreen" x="642" y="155"/>
+    <text x="657" y="198" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1B5E20">Closed-Loop</text>
+    <text x="657" y="212" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1B5E20">Refinement</text>
+
+    <!-- Mini Document inside Closed-Loop -->
+    <g transform="translate(618, 225) scale(0.75)">
+        <path d="M 0,0 L 65,0 L 80,15 L 80,65 L 0,65 Z" fill="white" stroke="#1B5E20" stroke-width="1.2"/>
+        <path d="M 65,0 L 65,15 L 80,15" fill="none" stroke="#1B5E20" stroke-width="1.2"/>
+        <text x="6" y="15" font-family="monospace" font-size="8" font-weight="bold" fill="#0288D1">:predicates (...)</text>
+        <text x="6" y="27" font-family="monospace" font-size="8" font-weight="bold" fill="#2E7D32">:actions ...</text>
+        <text x="6" y="39" font-family="monospace" font-size="8" font-weight="bold" fill="#EF6C00">:precondition (...)</text>
+        <text x="6" y="51" font-family="monospace" font-size="8" font-weight="bold" fill="#C62828">:effect (...)</text>
+    </g>
+
+
+    <!-- Card (c): Domain Fusion -->
+    <rect x="750" y="25" width="235" height="330" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="867" y="48" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(c) Domain Fusion</text>
+
+    <!-- Unified Domain Document Container -->
+    <g transform="translate(760, 60)">
+        <path d="M 0,0 L 195,0 L 210,15 L 210,75 L 0,75 Z" fill="white" stroke="#333" stroke-width="1.5"/>
+        <path d="M 195,0 L 195,15 L 210,15" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="105" y="18" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#212121">Unified Domain</text>
+
+        <!-- Small Atomic Domain Docs inside -->
+        <g transform="translate(8, 26) scale(0.8)">
+            <rect width="45" height="45" rx="4" fill="white" stroke="#555" stroke-width="1"/>
+            <text x="22.5" y="18" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Atomic</text>
+            <text x="22.5" y="32" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Domain</text>
+        </g>
+        <g transform="translate(50, 26) scale(0.8)">
+            <rect width="45" height="45" rx="4" fill="white" stroke="#555" stroke-width="1"/>
+            <text x="22.5" y="18" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Atomic</text>
+            <text x="22.5" y="32" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Domain</text>
+        </g>
+        <text x="98" y="52" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#777">...</text>
+        <g transform="translate(112, 26) scale(0.8)">
+            <rect width="45" height="45" rx="4" fill="white" stroke="#555" stroke-width="1"/>
+            <text x="22.5" y="18" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Atomic</text>
+            <text x="22.5" y="32" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Domain</text>
+        </g>
+        <g transform="translate(154, 26) scale(0.8)">
+            <rect width="45" height="45" rx="4" fill="white" stroke="#555" stroke-width="1"/>
+            <text x="22.5" y="18" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Atomic</text>
+            <text x="22.5" y="32" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Domain</text>
+        </g>
+    </g>
+
+    <!-- GPT Icons & Meta Domain Docs -->
+    <use href="#gptIconDark" x="800" y="148"/>
+    <use href="#gptIconDark" x="905" y="148"/>
+
+    <!-- Left Meta Domain Doc -->
+    <g transform="translate(770, 190)">
+        <path d="M 0,0 L 65,0 L 75,10 L 75,55 L 0,55 Z" fill="white" stroke="#333" stroke-width="1.5"/>
+        <path d="M 65,0 L 65,10 L 75,10" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="37.5" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Meta</text>
+        <text x="37.5" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Domain</text>
+    </g>
+
+    <text x="867" y="225" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#777" text-anchor="middle">...</text>
+
+    <!-- Right Meta Domain Doc -->
+    <g transform="translate(890, 190)">
+        <path d="M 0,0 L 65,0 L 75,10 L 75,55 L 0,55 Z" fill="white" stroke="#333" stroke-width="1.5"/>
+        <path d="M 65,0 L 65,10 L 75,10" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="37.5" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Meta</text>
+        <text x="37.5" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Domain</text>
+    </g>
+
+    <use href="#gptIconDark" x="852" y="255"/>
+
+    <!-- Final Meta Domain Doc -->
+    <g transform="translate(812, 295)">
+        <path d="M 0,0 L 95,0 L 110,15 L 110,50 L 0,50 Z" fill="white" stroke="#333" stroke-width="1.5"/>
+        <path d="M 95,0 L 95,15 L 110,15" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="55" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Meta</text>
+        <text x="55" y="40" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Domain</text>
+    </g>
+
+
+    <!-- ================= BOTTOM ROW: PLANNING COMPONENTS ================= -->
+
+    <!-- Instruction Box -->
+    <rect x="50" y="400" width="195" height="115" rx="12" fill="white" stroke="#D1C4E9" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="147" y="422" font-family="system-ui, sans-serif" font-size="11.5" font-style="italic" font-weight="bold" text-anchor="middle" fill="#4A148C">Move the corn from the pot</text>
+    <text x="147" y="439" font-family="system-ui, sans-serif" font-size="11.5" font-style="italic" font-weight="bold" text-anchor="middle" fill="#4A148C">into the orange bowl, wipe the</text>
+    <text x="147" y="456" font-family="system-ui, sans-serif" font-size="11.5" font-style="italic" font-weight="bold" text-anchor="middle" fill="#4A148C">table with the towel in the</text>
+    <text x="147" y="473" font-family="system-ui, sans-serif" font-size="11.5" font-style="italic" font-weight="bold" text-anchor="middle" fill="#4A148C">drawer and put it back to the</text>
+    <text x="147" y="490" font-family="system-ui, sans-serif" font-size="11.5" font-style="italic" font-weight="bold" text-anchor="middle" fill="#4A148C">closed drawer.</text>
+
+    <!-- Large Kitchen Scene Image Placeholder -->
+    <g transform="translate(50, 525)">
+        <rect width="195" height="195" rx="12" fill="#E0F7FA" stroke="#80DEEA" stroke-width="2" filter="url(#dropShadow)"/>
+        <!-- Stylized Kitchen Counter -->
+        <rect y="135" width="195" height="60" fill="#BCAAA4" rx="2"/>
+        <rect y="135" width="195" height="8" fill="#8D6E63"/>
+        <!-- Wall Tiles -->
+        <line x1="0" y1="70" x2="195" y2="70" stroke="#B2EBF2" stroke-width="1.5"/>
+        <line x1="0" y1="110" x2="195" y2="110" stroke="#B2EBF2" stroke-width="1.5"/>
+        <!-- White Pot -->
+        <rect x="20" y="95" width="55" height="40" rx="4" fill="#FFFFFF" stroke="#78909C" stroke-width="2"/>
+        <ellipse cx="47.5" cy="95" rx="27.5" ry="7" fill="#CFD8DC" stroke="#78909C" stroke-width="2"/>
+        <rect x="42" y="84" width="11" height="5" rx="1" fill="#546E7A"/>
+        <!-- Dish Rack -->
+        <rect x="85" y="80" width="45" height="55" fill="none" stroke="#455A64" stroke-width="2"/>
+        <ellipse cx="107" cy="105" rx="5" ry="25" fill="#FFF" stroke="#37474F" stroke-width="1.5"/>
+        <!-- Yellow Drawer Box -->
+        <rect x="140" y="90" width="45" height="45" fill="#FFE082" rx="3" stroke="#FFA000" stroke-width="1.5"/>
+        <rect x="145" y="115" width="35" height="15" fill="#FFD54F" rx="2"/>
+        <circle cx="162.5" cy="122.5" r="3" fill="#FF6F00"/>
+        <!-- Small Corn on Counter -->
+        <ellipse cx="100" cy="155" rx="10" ry="5" fill="#FFEB3B"/>
+        <path d="M90,155 Q95,150 100,155" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Card (d): Problem Generation -->
+    <rect x="265" y="400" width="210" height="320" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="370" y="422" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(d) Problem Generation</text>
+
+    <!-- Meta Domain Doc in (d) -->
+    <g transform="translate(275, 435)">
+        <path d="M 0,0 L 65,0 L 75,10 L 75,55 L 0,55 Z" fill="white" stroke="#333" stroke-width="1.5"/>
+        <path d="M 65,0 L 65,10 L 75,10" fill="none" stroke="#333" stroke-width="1.5"/>
+        <text x="37.5" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Meta</text>
+        <text x="37.5" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Domain</text>
+    </g>
+
+    <!-- Predicate Grouping Box -->
+    <rect x="365" y="435" width="100" height="55" rx="10" fill="#F3E5F5" stroke="#D1C4E9" stroke-width="1.5"/>
+    <text x="415" y="458" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4A148C">Predicate</text>
+    <text x="415" y="474" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4A148C">Grouping</text>
+
+    <!-- Predicate & Operator Filtering Box -->
+    <rect x="275" y="510" width="190" height="60" rx="10" fill="#F3E5F5" stroke="#D1C4E9" stroke-width="1.5"/>
+    <use href="#gptIconPurple" x="285" y="523"/>
+    <text x="380" y="538" font-family="system-ui, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#4A148C">Predicate</text>
+    <text x="380" y="554" font-family="system-ui, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#4A148C">&amp; Operator Filtering</text>
+
+    <!-- Problem Generation Box -->
+    <rect x="275" y="590" width="190" height="65" rx="10" fill="#F3E5F5" stroke="#D1C4E9" stroke-width="1.5"/>
+    <use href="#gptIconPurple" x="285" y="605"/>
+    <text x="345" y="620" font-family="system-ui, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#4A148C">Problem</text>
+    <text x="345" y="636" font-family="system-ui, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#4A148C">Generation</text>
+
+    <!-- Mini Document inside Problem Gen -->
+    <g transform="translate(395, 595) scale(0.75)">
+        <path d="M 0,0 L 55,0 L 65,10 L 65,55 L 0,55 Z" fill="white" stroke="#4A148C" stroke-width="1.2"/>
+        <path d="M 55,0 L 55,10 L 65,10" fill="none" stroke="#4A148C" stroke-width="1.2"/>
+        <text x="5" y="15" font-family="monospace" font-size="8" font-weight="bold" fill="#0288D1">:objects (...)</text>
+        <text x="5" y="28" font-family="monospace" font-size="8" font-weight="bold" fill="#2E7D32">:init ...</text>
+        <text x="5" y="41" font-family="monospace" font-size="8" font-weight="bold" fill="#C62828">:goal (...)</text>
+    </g>
+
+
+    <!-- Card (e): Planning -->
+    <rect x="490" y="400" width="165" height="320" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="572" y="422" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(e) Planning</text>
+
+    <!-- PDDL Solver Box -->
+    <rect x="500" y="435" width="145" height="60" rx="10" fill="#F3E5F5" stroke="#D1C4E9" stroke-width="1.5"/>
+    <use href="#treeIcon" x="512" y="448"/>
+    <text x="588" y="462" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#4A148C">PDDL</text>
+    <text x="588" y="478" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#4A148C">Solver</text>
+
+    <!-- PDDL Plan Document -->
+    <g transform="translate(500, 515)">
+        <path d="M 0,0 L 130,0 L 145,15 L 145,185 L 0,185 Z" fill="white" stroke="#4A148C" stroke-width="1.5"/>
+        <path d="M 130,0 L 130,15 L 145,15" fill="none" stroke="#4A148C" stroke-width="1.5"/>
+        <!-- Plan Text Lines -->
+        <text x="8" y="22" font-family="monospace" font-size="9.5" font-weight="bold" fill="#2E7D32">remove_lid (lid)</text>
+        <text x="8" y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0288D1">pick_from_rack (bowl)</text>
+        <text x="8" y="54" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0288D1">place_on_table (bowl)</text>
+        <text x="8" y="70" font-family="monospace" font-size="9.5" font-weight="bold" fill="#757575">...</text>
+        <text x="8" y="86" font-family="monospace" font-size="9.5" font-weight="bold" fill="#2E7D32">wipe_table (towel)</text>
+        <text x="8" y="102" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0288D1">place_in_drawer (towel)</text>
+        <text x="8" y="118" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0288D1">close_drawer (drawer)</text>
+    </g>
+
+
+    <!-- Card (f): Execution -->
+    <rect x="670" y="400" width="705" height="320" rx="18" fill="white" filter="url(#dropShadow)"/>
+    <text x="1022" y="422" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">(f) Execution</text>
+
+    <!-- Execution Grid (3 Rows x 4 Columns) -->
+    <!-- Row 1 -->
+    <g transform="translate(680, 435)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="28" cy="48" rx="16" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <path d="M150,10 L120,30 L100,45" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="120" cy="30" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(850, 435)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="28" cy="42" rx="16" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <path d="M150,10 L80,25 L28,42" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="80" cy="25" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1020, 435)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <path d="M150,10 L100,25 L63,54" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="100" cy="25" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1190, 435)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <path d="M150,10 L130,35 L110,60" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="130" cy="35" r="2.5" fill="#000"/>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(680, 528)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <path d="M150,10 L120,30 L96,46" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="120" cy="30" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(850, 528)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <rect x="85" y="50" width="22" height="15" fill="#FFB300" rx="1"/>
+        <path d="M150,10 L115,30 L96,52" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="115" cy="30" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1020, 528)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <rect x="85" y="50" width="22" height="15" fill="#FFB300" rx="1"/>
+        <rect x="102" y="36" width="10" height="7" fill="#FFF" stroke="#BDBDBD" stroke-width="0.5" rx="1"/>
+        <path d="M150,10 L125,25 L107,36" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="125" cy="25" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1190, 528)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <rect x="85" y="50" width="22" height="15" fill="#FFB300" rx="1"/>
+        <rect x="120" y="62" width="14" height="5" fill="#FFF" stroke="#BDBDBD" stroke-width="0.5" rx="1"/>
+        <path d="M150,10 L135,35 L127,62" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="135" cy="35" r="2.5" fill="#000"/>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(680, 621)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <rect x="85" y="50" width="22" height="15" fill="#FFB300" rx="1"/>
+        <rect x="94" y="48" width="10" height="7" fill="#FFF" stroke="#BDBDBD" stroke-width="0.5" rx="1"/>
+        <path d="M150,10 L120,28 L99,48" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="120" cy="28" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(850, 621)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <rect x="85" y="47" width="22" height="18" fill="#FFE082" rx="1" stroke="#FFB300" stroke-width="0.5"/>
+        <path d="M150,10 L115,30 L96,47" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="115" cy="30" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1020, 621)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <path d="M150,10 L130,25 L110,35" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="130" cy="25" r="2.5" fill="#000"/>
+    </g>
+    <g transform="translate(1190, 621)">
+        <use href="#baseKitchen"/>
+        <ellipse cx="45" cy="65" rx="14" ry="4" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1"/>
+        <ellipse cx="110" cy="65" rx="9" ry="4.5" fill="#FFF" stroke="#212121" stroke-width="1"/>
+        <path d="M150,10 L145,20 L140,25" fill="none" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="145" cy="20" r="2.5" fill="#000"/>
+    </g>
+
+
+    <!-- ================= CONNECTIONS & ARROWS ================= -->
+
+    <!-- DROID Dataset to Card (a) Branching Arrows -->
+    <path d="M 124,200 L 138,200 L 138,87 L 145,87" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <path d="M 138,182 L 145,182" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <path d="M 138,200 L 138,277 L 145,277" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+    <!-- Card (a) to Card (b) Merging Arrows -->
+    <path d="M 400,87 L 415,87 L 415,92.5 L 425,92.5" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <path d="M 400,182 L 415,182 L 415,92.5" fill="none" stroke="#1B5E20" stroke-width="2"/>
+    <path d="M 400,277 L 415,277 L 415,182" fill="none" stroke="#1B5E20" stroke-width="2"/>
+
+    <!-- Inside Card (b) Arrows -->
+    <path d="M 580,125 L 580,135" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+    <path d="M 502,225 L 502,255" fill="none" stroke="#1B5E20" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <path d="M 560,170 L 600,170" fill="none" stroke="#1B5E20" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <path d="M 600,195 L 560,195" fill="none" stroke="#1B5E20" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <text x="580" y="190" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#1B5E20">Feedback</text>
+    <path d="M 560,295 L 600,295" fill="none" stroke="#1B5E20" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <text x="580" y="290" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#1B5E20">Feedback</text>
+
+    <!-- Card (b) to Card (c) Arrow -->
+    <path d="M 715,240 L 735,240 L 735,95 L 750,95" fill="none" stroke="#1B5E20" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+    <!-- Inside Card (c) Arrows -->
+    <path d="M 865,135 L 865,142 L 815,142 L 815,148" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+    <path d="M 865,142 L 920,142 L 920,148" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+    <path d="M 815,174 L 815,190" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+    <path d="M 920,174 L 920,190" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+    <path d="M 807,245 L 807,251 L 855,251 L 855,255" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+    <path d="M 927,245 L 927,251 L 867,251" fill="none" stroke="#333" stroke-width="1.5"/>
+    <path d="M 867,281 L 867,295" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+
+    <!-- Bottom Row: Instruction & Image to Card (d) Arrows -->
+    <path d="M 245,457 L 258,457 L 258,530 L 275,530" fill="none" stroke="#6A1B9A" stroke-width="2" marker-end="url(#arrowPurple)"/>
+    <path d="M 245,622 L 258,622 L 258,550 L 275,550" fill="none" stroke="#6A1B9A" stroke-width="2" marker-end="url(#arrowPurple)"/>
+
+    <!-- Inside Card (d) Arrows -->
+    <path d="M 350,462 L 365,462" fill="none" stroke="#6A1B9A" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
+    <path d="M 415,490 L 415,510" fill="none" stroke="#6A1B9A" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
+    <path d="M 365,570 L 365,590" fill="none" stroke="#6A1B9A" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
+
+    <!-- Card (d) to Card (e) Arrow -->
+    <path d="M 445,622 L 480,622 L 480,465 L 500,465" fill="none" stroke="#6A1B9A" stroke-width="2" marker-end="url(#arrowPurple)"/>
+
+    <!-- Inside Card (e) Arrow -->
+    <path d="M 572,495 L 572,515" fill="none" stroke="#6A1B9A" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
+
+    <!-- Card (e) to Card (f) Arrow -->
+    <path d="M 645,607 L 660,607 L 660,480 L 670,480" fill="none" stroke="#6A1B9A" stroke-width="2" marker-end="url(#arrowPurple)"/>
+
+</svg>

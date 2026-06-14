@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1908" height="940" viewBox="0 0 1908 940">
+  <rect width="1908" height="940" fill="white"/>
+
+  <!-- ============ TOP BOX ============ -->
+  <rect x="8" y="20" width="1410" height="410" rx="10" fill="none" stroke="black" stroke-width="2.5"/>
+  <text x="35" y="55" font-family="Georgia, serif" font-weight="bold" font-size="30">Measure Difficulty based on Relative Reward Statistics</text>
+
+  <!-- Video frames (top) -->
+  <g>
+    <rect x="40" y="130" width="90" height="70" fill="#c9a35a" stroke="black"/>
+    <rect x="60" y="125" width="90" height="70" fill="#c9b27a" stroke="black"/>
+    <rect x="80" y="120" width="90" height="70" fill="#caa15a" stroke="black"/>
+    <text x="200" y="170" font-size="30" font-weight="bold">...</text>
+    <rect x="240" y="120" width="90" height="70" fill="#caa15a" stroke="black"/>
+  </g>
+  <text x="40" y="240" font-family="monospace" font-size="19">Question: <tspan fill="#b8702a">What action</tspan></text>
+  <text x="40" y="268" font-family="monospace" font-size="19" fill="#b8702a">should I take next in</text>
+  <text x="40" y="296" font-family="monospace" font-size="19" fill="#b8702a">order to eat the celery?</text>
+
+  <!-- arrow to Video LLM -->
+  <line x1="330" y1="230" x2="375" y2="230" stroke="black" stroke-width="2.5"/>
+  <polygon points="375,224 390,230 375,236" fill="black"/>
+
+  <!-- Video LLM box -->
+  <rect x="390" y="180" width="120" height="105" rx="8" fill="#fdeec2" stroke="#caa15a" stroke-width="2"/>
+  <text x="450" y="225" font-family="Georgia, serif" font-size="26" text-anchor="middle">Video</text>
+  <text x="450" y="255" font-family="Georgia, serif" font-size="26" text-anchor="middle">LLM</text>
+
+  <!-- branch lines -->
+  <path d="M510,210 C540,150 545,150 575,150" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+  <path d="M510,230 C540,225 545,225 575,225" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+  <path d="M510,255 C540,320 545,320 575,320" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+
+  <!-- Response boxes -->
+  <rect x="575" y="125" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="685" y="158" font-family="Georgia, serif" font-size="24" text-anchor="middle">Response  y¹</text>
+  <rect x="575" y="200" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="685" y="233" font-family="Georgia, serif" font-size="24" text-anchor="middle">Response  y²</text>
+  <text x="685" y="290" font-size="28" font-weight="bold" text-anchor="middle">⋮</text>
+  <rect x="575" y="295" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="685" y="328" font-family="Georgia, serif" font-size="24" text-anchor="middle">Response  yᴳ</text>
+
+  <!-- arrows to R -->
+  <line x1="795" y1="150" x2="835" y2="150" stroke="black" stroke-width="2"/><polygon points="835,145 848,150 835,155" fill="black"/>
+  <line x1="795" y1="225" x2="835" y2="225" stroke="black" stroke-width="2"/><polygon points="835,220 848,225 835,230" fill="black"/>
+  <line x1="795" y1="320" x2="835" y2="320" stroke="black" stroke-width="2"/><polygon points="835,315 848,320 835,325" fill="black"/>
+
+  <!-- R_group box -->
+  <text x="850" y="110" font-family="Georgia, serif" font-size="24">𝓡<tspan font-size="16" baseline-shift="-6">group</tspan></text>
+  <rect x="850" y="120" width="155" height="240" rx="8" fill="#e6f4e6" stroke="#4a9a4a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="927" y="158" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡(x,y¹)</text>
+  <text x="927" y="233" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡(x,y²)</text>
+  <text x="927" y="290" font-size="26" text-anchor="middle">⋮</text>
+  <text x="927" y="330" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡(x,yᴳ)</text>
+
+  <!-- Formula bubble -->
+  <rect x="1015" y="40" width="380" height="100" rx="20" fill="white" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="1205" y="105" font-family="Georgia, serif" font-size="32" text-anchor="middle" font-style="italic">Â⁽ⁱ⁾ = [𝓡(x,y⁽ⁱ⁾)−μᵣ]/σᵣ</text>
+
+  <!-- Three R_group result boxes -->
+  <rect x="1015" y="165" width="380" height="50" rx="22" fill="white" stroke="#e8857a" stroke-width="2.5"/>
+  <text x="1205" y="198" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡_group = {0.0, 0.0, ..., 0.0, 0.0}</text>
+  <rect x="1015" y="245" width="380" height="50" rx="22" fill="white" stroke="#555555" stroke-width="2.5"/>
+  <text x="1205" y="278" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡_group = {1.1, 0.3, ..., 1.9, 0.8}</text>
+  <rect x="1015" y="325" width="380" height="50" rx="22" fill="white" stroke="#4a9a4a" stroke-width="2.5"/>
+  <text x="1205" y="358" font-family="Georgia, serif" font-size="22" text-anchor="middle">𝓡_group = {2.0, 2.0, ..., 2.0, 2.0}</text>
+
+  <!-- ============ DYNAMIC GLOBAL REWARD BOX ============ -->
+  <rect x="1430" y="20" width="468" height="410" rx="10" fill="none" stroke="#888888" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <text x="1455" y="55" font-family="Georgia, serif" font-weight="bold" font-size="28">Dynamic Global Reward</text>
+
+  <!-- chart -->
+  <line x1="1490" y1="95" x2="1490" y2="350" stroke="black" stroke-width="2"/>
+  <line x1="1490" y1="350" x2="1740" y2="350" stroke="black" stroke-width="2"/>
+  <polygon points="1484,100 1490,85 1496,100" fill="black"/>
+  <polygon points="1735,344 1750,350 1735,356" fill="black"/>
+  <text x="1500" y="110" font-family="Georgia, serif" font-size="20">Reward</text>
+  <text x="1700" y="345" font-family="Georgia, serif" font-size="20">Iteration</text>
+  <!-- grid lines -->
+  <g stroke="#dddddd" stroke-width="1">
+    <line x1="1490" y1="150" x2="1740" y2="150"/>
+    <line x1="1490" y1="190" x2="1740" y2="190"/>
+    <line x1="1490" y1="230" x2="1740" y2="230"/>
+    <line x1="1490" y1="270" x2="1740" y2="270"/>
+    <line x1="1490" y1="310" x2="1740" y2="310"/>
+  </g>
+  <!-- highlight band -->
+  <rect x="1660" y="120" width="55" height="230" fill="#fcf3a0" opacity="0.6"/>
+  <!-- reward curve -->
+  <polyline points="1500,330 1525,320 1555,285 1590,235 1625,225 1660,210 1690,180 1720,150" fill="none" stroke="#3a7a5a" stroke-width="3"/>
+  <text x="1685" y="305" font-family="Georgia, serif" font-size="26" font-weight="bold">𝔹ᵂ</text>
+  <line x1="1660" y1="330" x2="1715" y2="330" stroke="#e8443a" stroke-width="2"/>
+  <polygon points="1665,325 1655,330 1665,335" fill="#e8443a"/>
+  <polygon points="1710,325 1720,330 1710,335" fill="#e8443a"/>
+
+  <!-- Replay buffer icon -->
+  <g transform="translate(1790,220)">
+    <ellipse cx="0" cy="0" rx="30" ry="11" fill="#333"/>
+    <rect x="-30" y="0" width="60" height="20" fill="#333"/>
+    <ellipse cx="0" cy="20" rx="30" ry="11" fill="#444"/>
+    <rect x="-30" y="20" width="60" height="20" fill="#444"/>
+    <ellipse cx="0" cy="40" rx="30" ry="11" fill="#555"/>
+  </g>
+  <text x="1790" y="285" font-family="Georgia, serif" font-size="22" text-anchor="middle">Replay</text>
+  <text x="1790" y="310" font-family="Georgia, serif" font-size="22" text-anchor="middle">Buffer</text>
+
+  <!-- ============ red arrow flowing down-left ============ -->
+  <path d="M1130,375 C1130,470 600,440 600,500" fill="none" stroke="#e8857a" stroke-width="22" stroke-linecap="round" opacity="0.85"/>
+  <polygon points="582,495 600,525 618,495" fill="#e8857a"/>
+
+  <!-- green arrow flowing down-right -->
+  <path d="M1280,375 C1280,470 1490,440 1490,500" fill="none" stroke="#4a9a4a" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
+  <polygon points="1472,495 1490,525 1508,495" fill="#4a9a4a"/>
+
+  <!-- ============ BOTTOM LEFT BOX ============ -->
+  <rect x="8" y="510" width="990" height="420" rx="10" fill="none" stroke="black" stroke-width="2.5"/>
+  <text x="35" y="548" font-family="Georgia, serif" font-weight="bold" font-size="29">Difficulty Decreasement Augmentation</text>
+
+  <!-- video frames -->
+  <g>
+    <rect x="40" y="585" width="80" height="62" fill="#c9a35a" stroke="black"/>
+    <rect x="58" y="580" width="80" height="62" fill="#c9b27a" stroke="black"/>
+    <rect x="76" y="575" width="80" height="62" fill="#caa15a" stroke="black"/>
+    <text x="178" y="618" font-size="26" font-weight="bold">...</text>
+    <rect x="210" y="575" width="80" height="62" fill="#caa15a" stroke="black"/>
+  </g>
+  <text x="40" y="690" font-family="monospace" font-size="18">Question: <tspan fill="#b8702a">What action</tspan></text>
+  <text x="40" y="716" font-family="monospace" font-size="18" fill="#b8702a">should I take next in</text>
+  <text x="40" y="742" font-family="monospace" font-size="18" fill="#b8702a">order to eat the celery?</text>
+  <text x="40" y="772" font-family="monospace" font-size="18">GT: <tspan fill="#3a8a3a">B. pick up celery</tspan></text>
+
+  <!-- arrow -->
+  <line x1="300" y1="660" x2="345" y2="660" stroke="black" stroke-width="2.5"/><polygon points="345,654 360,660 345,666" fill="black"/>
+
+  <!-- Video LLM -->
+  <rect x="360" y="610" width="120" height="105" rx="8" fill="#fdeec2" stroke="#caa15a" stroke-width="2"/>
+  <text x="420" y="655" font-family="Georgia, serif" font-size="26" text-anchor="middle">Video</text>
+  <text x="420" y="685" font-family="Georgia, serif" font-size="26" text-anchor="middle">LLM</text>
+
+  <path d="M480,640 C510,585 515,585 545,585" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+  <path d="M480,660 C510,655 515,655 545,655" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+  <path d="M480,685 C510,750 515,750 545,750" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+
+  <rect x="545" y="558" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="655" y="591" font-family="Georgia, serif" font-size="22" text-anchor="middle">Response  y¹gt</text>
+  <rect x="545" y="630" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="655" y="663" font-family="Georgia, serif" font-size="22" text-anchor="middle">Response  y²gt</text>
+  <text x="655" y="722" font-size="28" font-weight="bold" text-anchor="middle">⋮</text>
+  <rect x="545" y="725" width="220" height="50" rx="6" fill="white" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="655" y="758" font-family="Georgia, serif" font-size="22" text-anchor="middle">Response  yᴳgt</text>
+
+  <line x1="765" y1="583" x2="800" y2="583" stroke="black" stroke-width="2"/><polygon points="800,578 813,583 800,588" fill="black"/>
+  <line x1="765" y1="655" x2="800" y2="655" stroke="black" stroke-width="2"/><polygon points="800,650 813,655 800,660" fill="black"/>
+  <line x1="765" y1="750" x2="800" y2="750" stroke="black" stroke-width="2"/><polygon points="800,745 813,750 800,755" fill="black"/>
+
+  <text x="815" y="543" font-family="Georgia, serif" font-size="22">𝓡<tspan font-size="15" baseline-shift="-6">group</tspan></text>
+  <rect x="815" y="553" width="150" height="235" rx="8" fill="#e6f4e6" stroke="#4a9a4a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="890" y="591" font-family="Georgia, serif" font-size="20" text-anchor="middle">𝓡(x,y¹gt)</text>
+  <rect x="818" y="635" width="144" height="42" rx="4" fill="none" stroke="#5a7ca3" stroke-width="2"/>
+  <text x="890" y="663" font-family="Georgia, serif" font-size="20" text-anchor="middle">𝓡(x,y²gt)</text>
+  <text x="970" y="660" font-size="26">🏆</text>
+  <text x="890" y="722" font-size="26" text-anchor="middle">⋮</text>
+  <text x="890" y="762" font-family="Georgia, serif" font-size="20" text-anchor="middle">𝓡(x,yᴳgt)</text>
+
+  <!-- bottom think/answer text -->
+  <text x="20" y="843" font-family="Georgia, serif" font-size="20" font-style="italic">y²gt</text>
+  <text x="70" y="843" font-family="monospace" font-size="17">&lt;think&gt; The video shows a person preparing ... . <tspan fill="#3a8a3a" text-decoration="underline">To make a slice of celery you</tspan></text>
+  <text x="70" y="868" font-family="monospace" font-size="17"><tspan fill="#3a8a3a" text-decoration="underline">should bring it from the bag.</tspan> &lt;/think&gt;&lt;answer&gt;B. pick up celery&lt;/answer&gt;</text>
+
+  <!-- Guidance level arrow -->
+  <line x1="500" y1="908" x2="160" y2="908" stroke="#3a8a3a" stroke-width="6"/>
+  <polygon points="160,898 140,908 160,918" fill="#3a8a3a"/>
+  <text x="510" y="916" font-family="Georgia, serif" font-weight="bold" font-size="24">Guidance Level</text>
+
+  <!-- divider -->
+  <line x1="1003" y1="510" x2="1003" y2="930" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- ============ BOTTOM RIGHT BOX ============ -->
+  <rect x="1010" y="510" width="888" height="420" rx="10" fill="none" stroke="black" stroke-width="2.5"/>
+  <text x="1035" y="548" font-family="Georgia, serif" font-weight="bold" font-size="29">Difficulty Increasement Augmentation</text>
+
+  <!-- source video frames -->
+  <g>
+    <rect x="1050" y="600" width="80" height="62" fill="#c9a35a" stroke="black"/>
+    <rect x="1068" y="595" width="80" height="62" fill="#c9b27a" stroke="black"/>
+    <rect x="1086" y="590" width="80" height="62" fill="#caa15a" stroke="black"/>
+    <text x="1188" y="633" font-size="26" font-weight="bold">...</text>
+    <rect x="1220" y="590" width="80" height="62" fill="#caa15a" stroke="black"/>
+  </g>
+
+  <!-- branch lines to three rows -->
+  <path d="M1300,620 C1400,600 1450,600 1530,600" fill="none" stroke="#666" stroke-width="2"/>
+  <path d="M1300,625 C1400,710 1450,710 1530,710" fill="none" stroke="#666" stroke-width="2"/>
+  <path d="M1300,630 C1400,810 1450,810 1530,810" fill="none" stroke="#666" stroke-width="2"/>
+
+  <!-- perturbed frames row1 (light) -->
+  <g>
+    <rect x="1530" y="570" width="70" height="55" fill="#d8b888" stroke="black"/>
+    <rect x="1545" y="566" width="70" height="55" fill="#d8c098" stroke="black"/>
+    <rect x="1560" y="562" width="70" height="55" fill="#d8b888" stroke="black"/>
+    <text x="1645" y="600" font-size="20" font-weight="bold">...</text>
+    <rect x="1675" y="562" width="70" height="55" fill="#d8b888" stroke="black"/>
+  </g>
+  <!-- row2 (medium noise) -->
+  <g>
+    <rect x="1530" y="680" width="70" height="55" fill="#9a8866" stroke="black"/>
+    <rect x="1545" y="676" width="70" height="55" fill="#9a8c70" stroke="black"/>
+    <rect x="1560" y="672" width="70" height="55" fill="#9a8866" stroke="black"/>
+    <text x="1645" y="710" font-size="20" font-weight="bold">...</text>
+    <rect x="1675" y="672" width="70" height="55" fill="#9a8866" stroke="black"/>
+  </g>
+  <!-- row3 (heavy noise) -->
+  <g>
+    <rect x="1530" y="790" width="70" height="55" fill="#555548" stroke="black"/>
+    <rect x="1545" y="786" width="70" height="55" fill="#5a5a4c" stroke="black"/>
+    <rect x="1560" y="782" width="70" height="55" fill="#555548" stroke="black"/>
+    <text x="1645" y="820" font-size="20" font-weight="bold">...</text>
+    <rect x="1675" y="782" width="70" height="55" fill="#555548" stroke="black"/>
+  </g>
+
+  <!-- Delta_R conditions -->
+  <text x="1050" y="725" font-family="Georgia, serif" font-size="34">Δ𝓡 &lt; 0</text>
+  <text x="1050" y="785" font-family="Georgia, serif" font-size="34">Δ𝓡 ≈ 0</text>
+  <text x="1050" y="845" font-family="Georgia, serif" font-size="34">Δ𝓡 &gt; 0</text>
+
+  <!-- red/green vertical arrows in middle -->
+  <defs>
+    <linearGradient id="redgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8d0cc"/>
+      <stop offset="1" stop-color="#e8443a"/>
+    </linearGradient>
+  </defs>
+  <rect x="1340" y="700" width="14" height="120" fill="url(#redgrad)"/>
+  <polygon points="1333,820 1347,850 1361,820" fill="#e8443a"/>
+  <rect x="1375" y="700" width="14" height="120" fill="#4a9a4a"/>
+  <polygon points="1368,712 1382,682 1396,712" fill="#4a9a4a"/>
+
+  <!-- Perturbation Level arrow (right side) -->
+  <defs>
+    <linearGradient id="redgrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8d0cc"/>
+      <stop offset="1" stop-color="#e8443a"/>
+    </linearGradient>
+  </defs>
+  <rect x="1810" y="575" width="14" height="290" fill="url(#redgrad2)"/>
+  <polygon points="1803,865 1817,895 1831,865" fill="#e8443a"/>
+  <text x="1865" y="730" font-family="Georgia, serif" font-weight="bold" font-size="24" transform="rotate(90 1865 730)" text-anchor="middle">Perturbation Level</text>
+</svg>

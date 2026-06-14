@@ -1,0 +1,513 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#888"/>
+    </marker>
+
+    <!-- UDT Gradient -->
+    <linearGradient id="udt-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b5e2fa"/>
+      <stop offset="35%" stop-color="#f7f7f7"/>
+      <stop offset="70%" stop-color="#f7b05b"/>
+      <stop offset="100%" stop-color="#f07167"/>
+    </linearGradient>
+
+    <!-- Noise Pattern for Patches -->
+    <pattern id="noise-pat" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <circle cx="1" cy="1" r="0.7" fill="#111" opacity="0.6"/>
+      <circle cx="3" cy="3" r="0.5" fill="#444" opacity="0.8"/>
+      <circle cx="1" cy="3" r="0.4" fill="#000" opacity="0.5"/>
+    </pattern>
+
+    <!-- 3D Cube Definition -->
+    <g id="cube">
+      <rect x="0" y="5" width="12" height="12" fill="#3b7ecb"/>
+      <polygon points="0,5 6,0 18,0 12,5" fill="#6ba4e8"/>
+      <polygon points="12,5 18,0 18,12 12,17" fill="#1f5fa8"/>
+    </g>
+
+    <!-- Brain Icon Definition -->
+    <g id="brain">
+      <!-- Left Lobe -->
+      <path d="M -2,-15 C -7,-15 -11,-11 -11,-6 C -11,-3 -9,-1 -7,1 C -10,3 -12,7 -12,11 C -12,16 -7,19 -2,19 C -2,19 -2,19 -2,19" fill="none" stroke="#2b5c8f" stroke-width="2" stroke-linecap="round"/>
+      <path d="M -5,-10 C -8,-10 -9,-8 -9,-6 C -9,-4 -7,-3 -5,-3" fill="none" stroke="#2b5c8f" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M -5,5 C -8,5 -10,7 -10,10 C -10,13 -7,14 -5,14" fill="none" stroke="#2b5c8f" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Right Lobe -->
+      <path d="M 2,-15 C 7,-15 11,-11 11,-6 C 11,-3 9,-1 7,1 C 10,3 12,7 12,11 C 12,16 7,19 2,19 C 2,19 2,19 2,19" fill="none" stroke="#2b5c8f" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 5,-10 C 8,-10 9,-8 9,-6 C 9,-4 7,-3 5,-3" fill="none" stroke="#2b5c8f" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 5,5 C 8,5 10,7 10,10 C 10,13 7,14 5,14" fill="none" stroke="#2b5c8f" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Inner Orange Memory Core -->
+      <path d="M -4,-3 C -2,-3 -2,3 -4,3" fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 4,-3 C 2,-3 2,3 4,3" fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- 3D Grid Block Definition -->
+    <g id="grid-block-3d">
+      <!-- Connecting Dashed Lines (Back to Front) -->
+      <line x1="20" y1="0" x2="50" y2="-16" stroke="#aaa" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <line x1="60" y1="0" x2="90" y2="-16" stroke="#aaa" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <line x1="40" y1="30" x2="70" y2="14" stroke="#aaa" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <line x1="0" y1="30" x2="30" y2="14" stroke="#aaa" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+      <!-- Layer A (Back) -->
+      <g transform="translate(0, 0)">
+        <polygon points="0,30 20,0 60,0 40,30" fill="#f0f0f0" fill-opacity="0.9" stroke="#999" stroke-width="0.8"/>
+        <!-- Grid Lines -->
+        <line x1="5" y1="7.5" x2="45" y2="7.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="15" x2="50" y2="15" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="15" y1="22.5" x2="55" y2="22.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="30" x2="30" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="20" y1="30" x2="40" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="30" y1="30" x2="50" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <!-- Colored Cells -->
+        <polygon points="25,0 35,0 30,7.5 20,7.5" fill="#88d49e"/>
+        <polygon points="40,15 50,15 45,22.5 35,22.5" fill="#f28f8f"/>
+      </g>
+
+      <!-- Layer B (Middle) -->
+      <g transform="translate(15, -8)">
+        <polygon points="0,30 20,0 60,0 40,30" fill="#e8e8e8" fill-opacity="0.9" stroke="#888" stroke-width="0.8"/>
+        <!-- Grid Lines -->
+        <line x1="5" y1="7.5" x2="45" y2="7.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="15" x2="50" y2="15" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="15" y1="22.5" x2="55" y2="22.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="30" x2="30" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="20" y1="30" x2="40" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="30" y1="30" x2="50" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <!-- Colored Cells -->
+        <polygon points="15,7.5 25,7.5 20,15 10,15" fill="#f28f8f"/>
+        <polygon points="25,22.5 35,22.5 30,30 20,30" fill="#88d49e"/>
+      </g>
+
+      <!-- Layer C (Front) -->
+      <g transform="translate(30, -16)">
+        <polygon points="0,30 20,0 60,0 40,30" fill="#e0e0e0" fill-opacity="0.9" stroke="#777" stroke-width="0.8"/>
+        <!-- Grid Lines -->
+        <line x1="5" y1="7.5" x2="45" y2="7.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="15" x2="50" y2="15" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="15" y1="22.5" x2="55" y2="22.5" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="10" y1="30" x2="30" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="20" y1="30" x2="40" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="30" y1="30" x2="50" y2="0" stroke="#ccc" stroke-width="0.5"/>
+        <!-- Colored Cells -->
+        <polygon points="20,15 30,15 25,22.5 15,22.5" fill="#88d49e"/>
+        <polygon points="45,0 55,0 50,7.5 40,7.5" fill="#f28f8f"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#fff"/>
+
+  <!-- ==================== SECTION (a) DATASETS ==================== -->
+  <g id="section-a">
+    <rect x="5" y="15" width="270" height="450" rx="15" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    
+    <!-- Top Half: Different Data Types -->
+    <!-- Green Layers (Grid Data) -->
+    <g transform="translate(15, 40)">
+      <polygon points="0,35 20,5 55,5 35,35" fill="#e2efe0" stroke="#2d6a4f" stroke-width="1"/>
+      <polygon points="10,45 30,15 65,15 45,45" fill="#b7d5ac" stroke="#2d6a4f" stroke-width="1"/>
+      <polygon points="20,55 40,25 75,25 55,55" fill="#74a96c" stroke="#2d6a4f" stroke-width="1"/>
+      <!-- Heatmap details on front layer -->
+      <polygon points="35,45 42,35 52,35 45,45" fill="#f7b05b" opacity="0.8"/>
+      <polygon points="45,45 52,35 62,35 55,45" fill="#e07a5f" opacity="0.8"/>
+    </g>
+
+    <!-- Grid Graph -->
+    <g transform="translate(110, 45)">
+      <!-- Ellipses behind -->
+      <ellipse cx="30" cy="15" rx="20" ry="8" fill="#ffb3b3" opacity="0.4"/>
+      <ellipse cx="60" cy="35" rx="20" ry="8" fill="#ffb3b3" opacity="0.4"/>
+      <ellipse cx="30" cy="55" rx="20" ry="8" fill="#ffb3b3" opacity="0.4"/>
+      <!-- Grid Lines -->
+      <line x1="15" y1="15" x2="75" y2="15" stroke="#4a90e2" stroke-width="1.5"/>
+      <line x1="15" y1="35" x2="75" y2="35" stroke="#4a90e2" stroke-width="1.5"/>
+      <line x1="15" y1="55" x2="75" y2="55" stroke="#4a90e2" stroke-width="1.5"/>
+      <line x1="15" y1="15" x2="15" y2="55" stroke="#4a90e2" stroke-width="1.5"/>
+      <line x1="45" y1="15" x2="45" y2="55" stroke="#4a90e2" stroke-width="1.5"/>
+      <line x1="75" y1="15" x2="75" y2="55" stroke="#4a90e2" stroke-width="1.5"/>
+      <!-- Nodes -->
+      <circle cx="15" cy="15" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="45" cy="15" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="75" cy="15" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="15" cy="35" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="45" cy="35" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="75" cy="35" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="15" cy="55" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="45" cy="55" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+      <circle cx="75" cy="55" r="4" fill="#ff9999" stroke="#ff4d4d" stroke-width="1"/>
+    </g>
+
+    <!-- Graph Frames (Bottom Left of Top Half) -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="20" width="45" height="35" rx="3" fill="#fff" stroke="#bbb" stroke-width="1"/>
+      <rect x="8" y="10" width="45" height="35" rx="3" fill="#fff" stroke="#999" stroke-width="1"/>
+      <rect x="16" y="0" width="45" height="35" rx="3" fill="#fff" stroke="#555" stroke-width="1"/>
+      <!-- Graph inside front frame -->
+      <circle cx="26" cy="10" r="2.5" fill="#777"/>
+      <circle cx="46" cy="10" r="2.5" fill="#777"/>
+      <circle cx="26" cy="25" r="2.5" fill="#777"/>
+      <circle cx="46" cy="25" r="2.5" fill="#777"/>
+      <line x1="26" y1="10" x2="46" y2="10" stroke="#777" stroke-width="1"/>
+      <line x1="26" y1="10" x2="26" y2="25" stroke="#777" stroke-width="1"/>
+      <line x1="26" y1="25" x2="46" y2="25" stroke="#777" stroke-width="1"/>
+      <line x1="46" y1="10" x2="26" y2="25" stroke="#777" stroke-width="1"/>
+    </g>
+
+    <!-- Green Graph (Bottom Right of Top Half) -->
+    <g transform="translate(110, 120)">
+      <!-- Blue/green ovals behind -->
+      <ellipse cx="20" cy="15" rx="12" ry="20" fill="#a8dadc" opacity="0.4" transform="rotate(-30, 20, 15)"/>
+      <ellipse cx="60" cy="25" rx="12" ry="22" fill="#a8dadc" opacity="0.4" transform="rotate(30, 60, 25)"/>
+      <ellipse cx="40" cy="40" rx="10" ry="18" fill="#a8dadc" opacity="0.4" transform="rotate(-15, 40, 40)"/>
+      <!-- Edges -->
+      <line x1="15" y1="15" x2="35" y2="10" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="35" y1="10" x2="55" y2="20" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="15" y1="15" x2="30" y2="35" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="30" y1="35" x2="55" y2="20" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="30" y1="35" x2="45" y2="50" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="45" y1="50" x2="70" y2="35" stroke="#2d6a4f" stroke-width="1.5"/>
+      <line x1="55" y1="20" x2="70" y2="35" stroke="#2d6a4f" stroke-width="1.5"/>
+      <!-- Nodes -->
+      <circle cx="15" cy="15" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+      <circle cx="35" cy="10" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+      <circle cx="55" cy="20" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+      <circle cx="30" cy="35" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+      <circle cx="45" cy="50" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+      <circle cx="70" cy="35" r="3.5" fill="#52b788" stroke="#1b4332" stroke-width="1"/>
+    </g>
+
+    <!-- Arrows in Top Half -->
+    <path d="M 85, 65 L 100, 65" fill="none" stroke="#bbb" stroke-width="3" marker-end="url(#arrow-gray)"/>
+    <path d="M 85, 140 L 100, 140" fill="none" stroke="#bbb" stroke-width="3" marker-end="url(#arrow-gray)"/>
+    <path d="M 207, 105 L 227, 105" fill="none" stroke="#bbb" stroke-width="3" marker-end="url(#arrow-gray)"/>
+
+    <!-- Sequential Format (Cubes) -->
+    <g transform="translate(240, 50)">
+      <use href="#cube" x="0" y="0"/>
+      <use href="#cube" x="0" y="22"/>
+      <use href="#cube" x="0" y="44"/>
+      <!-- Ellipsis -->
+      <circle cx="9" cy="74" r="1.5" fill="#1f5fa8"/>
+      <circle cx="9" cy="80" r="1.5" fill="#1f5fa8"/>
+      <circle cx="9" cy="86" r="1.5" fill="#1f5fa8"/>
+      <use href="#cube" x="0" y="94"/>
+      <use href="#cube" x="0" y="116"/>
+    </g>
+
+    <!-- Labels for Top Half -->
+    <text x="55" y="215" font-family="Georgia, serif" font-size="13" text-anchor="middle">Different</text>
+    <text x="55" y="230" font-family="Georgia, serif" font-size="13" text-anchor="middle">data types</text>
+    <text x="225" y="215" font-family="Georgia, serif" font-size="13" text-anchor="middle">Sequential</text>
+    <text x="225" y="230" font-family="Georgia, serif" font-size="13" text-anchor="middle">format</text>
+
+    <!-- Dotted Separator -->
+    <line x1="5" y1="250" x2="275" y2="250" stroke="#000" stroke-dasharray="3,3" stroke-width="1.5"/>
+
+    <!-- Bottom Half: Multiple Domains / Cities -->
+    <!-- Image 1: Night Lights -->
+    <g transform="translate(20, 265)">
+      <rect width="65" height="55" fill="#03071e" stroke="#ccc" stroke-width="1"/>
+      <path d="M 10,50 Q 25,25 40,10 Q 50,20 55,5" stroke="#52b788" stroke-width="1.5" fill="none" opacity="0.8"/>
+      <path d="M 5,40 Q 30,30 50,20" stroke="#ffd166" stroke-width="1" fill="none" opacity="0.9"/>
+      <circle cx="25" cy="30" r="1" fill="#fff"/>
+      <circle cx="45" cy="15" r="1.5" fill="#fff"/>
+      <circle cx="15" cy="45" r="1" fill="#ffd166"/>
+    </g>
+
+    <!-- Image 2: City Skyline -->
+    <g transform="translate(102, 265)">
+      <rect width="65" height="55" fill="#1d1a39" stroke="#ccc" stroke-width="1"/>
+      <rect x="8" y="25" width="8" height="30" fill="#f72585"/>
+      <rect x="18" y="15" width="10" height="40" fill="#7209b7"/>
+      <rect x="30" y="10" width="12" height="45" fill="#3f37c9"/>
+      <rect x="44" y="20" width="8" height="35" fill="#4cc9f0"/>
+      <circle cx="36" cy="18" r="0.8" fill="#fff"/>
+      <circle cx="23" cy="25" r="0.8" fill="#ffd166"/>
+    </g>
+
+    <!-- Image 3: Yellow Cabs -->
+    <g transform="translate(185, 265)">
+      <rect width="65" height="55" fill="#e5e5e5" stroke="#ccc" stroke-width="1"/>
+      <polygon points="10,55 35,25 45,25 20,55" fill="#ffb703"/>
+      <polygon points="25,55 45,25 55,25 35,55" fill="#fcbf49"/>
+      <line x1="0" y1="45" x2="65" y2="45" stroke="#000" stroke-width="1"/>
+      <rect x="15" y="40" width="8" height="5" fill="#000"/>
+      <rect x="30" y="40" width="8" height="5" fill="#000"/>
+    </g>
+
+    <!-- Image 4: Road Network -->
+    <g transform="translate(20, 335)">
+      <rect width="65" height="55" fill="#f4f4f9" stroke="#ccc" stroke-width="1"/>
+      <line x1="5" y1="10" x2="60" y2="45" stroke="#4a4e69" stroke-width="1.5"/>
+      <line x1="5" y1="45" x2="60" y2="10" stroke="#9a8c98" stroke-width="1"/>
+      <line x1="30" y1="5" x2="30" y2="50" stroke="#4a4e69" stroke-width="1"/>
+      <line x1="10" y1="25" x2="55" y2="25" stroke="#22223b" stroke-width="1"/>
+    </g>
+
+    <!-- Image 5: Heatmap -->
+    <g transform="translate(102, 335)">
+      <rect width="65" height="55" fill="#2d6a4f" stroke="#ccc" stroke-width="1"/>
+      <circle cx="32" cy="27" r="18" fill="#ffb703" opacity="0.7"/>
+      <circle cx="32" cy="27" r="10" fill="#e63946" opacity="0.8"/>
+      <line x1="0" y1="18" x2="65" y2="18" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="36" x2="65" y2="36" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+      <line x1="21" y1="0" x2="21" y2="55" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+      <line x1="42" y1="0" x2="42" y2="55" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+    </g>
+
+    <!-- Image 6: Flow Map -->
+    <g transform="translate(185, 335)">
+      <rect width="65" height="55" fill="#faf9f6" stroke="#ccc" stroke-width="1"/>
+      <path d="M 32,27 Q 15,10 10,20" stroke="#e63946" stroke-width="1" fill="none"/>
+      <path d="M 32,27 Q 50,10 55,25" stroke="#f15bb5" stroke-width="1.2" fill="none"/>
+      <path d="M 32,27 Q 20,45 15,40" stroke="#fee440" stroke-width="1" fill="none"/>
+      <path d="M 32,27 Q 45,45 50,35" stroke="#00f5d4" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <!-- Labels for Bottom Half -->
+    <text x="140" y="415" font-family="Georgia, serif" font-size="14" text-anchor="middle">Multiple Domains</text>
+    <text x="140" y="433" font-family="Georgia, serif" font-size="14" text-anchor="middle">Multiple Cities</text>
+    <text x="140" y="485" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle">(a) Datasets</text>
+  </g>
+
+  <!-- ==================== SECTION (b) URBAN DIFFUSION TRANSFORMER ==================== -->
+  <g id="section-b">
+    <!-- Main UDT Box -->
+    <rect x="300" y="150" width="310" height="80" rx="15" fill="url(#udt-grad)" stroke="#000" stroke-width="1.5"/>
+    <text x="455" y="196" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle">Urban Diffusion Transformer</text>
+
+    <!-- Spatio-temporal patching Box -->
+    <rect x="300" y="280" width="165" height="65" rx="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <text x="382.5" y="308" font-family="Georgia, serif" font-size="14" text-anchor="middle">Spatio-temporal</text>
+    <text x="382.5" y="328" font-family="Georgia, serif" font-size="14" text-anchor="middle">patching</text>
+
+    <!-- Embedding layer Box -->
+    <rect x="480" y="280" width="125" height="65" rx="10" fill="#eef1f6" stroke="#000" stroke-width="1.5"/>
+    <text x="542.5" y="308" font-family="Georgia, serif" font-size="14" text-anchor="middle">Embedding</text>
+    <text x="542.5" y="328" font-family="Georgia, serif" font-size="14" text-anchor="middle">layer</text>
+
+    <!-- Noisy ST data Box -->
+    <rect x="300" y="390" width="165" height="65" rx="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <text x="382.5" y="418" font-family="Georgia, serif" font-size="14" text-anchor="middle">Noisy</text>
+    <text x="382.5" y="438" font-family="Georgia, serif" font-size="14" text-anchor="middle">ST data</text>
+
+    <!-- Timestep t Box -->
+    <rect x="485" y="390" width="115" height="65" rx="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <text x="542.5" y="418" font-family="Georgia, serif" font-size="14" text-anchor="middle">Timestep</text>
+    <text x="542.5" y="438" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle">t</text>
+
+    <!-- Concat Box -->
+    <rect x="425" y="245" width="80" height="22" rx="5" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <text x="465" y="261" font-family="Georgia, serif" font-size="12" text-anchor="middle">Concat</text>
+
+    <!-- Reshape Box -->
+    <rect x="308" y="55" width="294" height="32" rx="5" fill="#eef1f6" stroke="#000" stroke-width="1.5"/>
+    <text x="455" y="76" font-family="Georgia, serif" font-size="15" text-anchor="middle">Reshape</text>
+
+    <!-- Output Text -->
+    <text x="455" y="25" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle">Output</text>
+
+    <!-- Vertical Lines & Patches above UDT -->
+    <!-- 8 Patches with varying noise -->
+    <g transform="translate(0, 103)">
+      <!-- Patch 1 (Heavy Noise) -->
+      <rect x="320" y="0" width="22" height="22" fill="#777"/>
+      <rect x="320" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.9"/>
+      <rect x="320" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 2 -->
+      <rect x="355" y="0" width="22" height="22" fill="#888"/>
+      <rect x="355" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.75"/>
+      <rect x="355" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 3 -->
+      <rect x="390" y="0" width="22" height="22" fill="#999"/>
+      <rect x="390" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.6"/>
+      <rect x="390" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 4 -->
+      <rect x="425" y="0" width="22" height="22" fill="#aaa"/>
+      <rect x="425" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.45"/>
+      <rect x="425" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 5 -->
+      <rect x="460" y="0" width="22" height="22" fill="#bbb"/>
+      <rect x="460" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.3"/>
+      <rect x="460" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 6 -->
+      <rect x="495" y="0" width="22" height="22" fill="#ccc"/>
+      <rect x="495" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.2"/>
+      <rect x="495" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 7 -->
+      <rect x="530" y="0" width="22" height="22" fill="#ddd"/>
+      <rect x="530" y="0" width="22" height="22" fill="url(#noise-pat)" opacity="0.1"/>
+      <rect x="530" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+
+      <!-- Patch 8 (Clean) -->
+      <rect x="565" y="0" width="22" height="22" fill="#eee"/>
+      <rect x="565" y="0" width="22" height="22" fill="none" stroke="#555" stroke-width="0.5"/>
+    </g>
+
+    <!-- Short lines connecting UDT to Patches -->
+    <line x1="331" y1="150" x2="331" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="366" y1="150" x2="366" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="401" y1="150" x2="401" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="436" y1="150" x2="436" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="471" y1="150" x2="471" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="506" y1="150" x2="506" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="541" y1="150" x2="541" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="576" y1="150" x2="576" y2="125" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Short lines connecting Patches to Reshape -->
+    <line x1="331" y1="103" x2="331" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="366" y1="103" x2="366" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="401" y1="103" x2="401" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="436" y1="103" x2="436" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="471" y1="103" x2="471" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="506" y1="103" x2="506" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="541" y1="103" x2="541" y2="87" stroke="#000" stroke-width="1.5"/>
+    <line x1="576" y1="103" x2="576" y2="87" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Central Arrow from Reshape to Output -->
+    <line x1="455" y1="55" x2="455" y2="33" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <!-- Central Arrow from Patches area to Reshape -->
+    <line x1="455" y1="103" x2="455" y2="87" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Connections between bottom boxes and patching/embedding -->
+    <line x1="382.5" y1="390" x2="382.5" y2="347" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="542.5" y1="390" x2="542.5" y2="347" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Connections from patching/embedding to UDT -->
+    <line x1="382.5" y1="280" x2="382.5" y2="232" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="542.5" y1="280" x2="542.5" y2="232" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Concat horizontal connections -->
+    <line x1="425" y1="256" x2="382.5" y2="256" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+    <line x1="542.5" y1="256" x2="505" y2="256" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <!-- Connection from Section (a) to (b) -->
+    <!-- Top diagonal connection -->
+    <path d="M 275, 235 L 300, 315" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <!-- Bottom horizontal connection -->
+    <path d="M 275, 415 L 298, 415" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Section Label -->
+    <text x="455" y="485" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle">(b) Urban Diffusion Transformer</text>
+  </g>
+
+  <!-- ==================== SECTION (d) UNIFIED PROMPT LEARNING ==================== -->
+  <g id="section-d">
+    <!-- Outer Container -->
+    <rect x="650" y="15" width="340" height="320" rx="15" fill="#fff" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Top Dashed Box: Data-driven prompt -->
+    <rect x="665" y="30" width="250" height="170" rx="10" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+    
+    <!-- Brain Icons & Labels -->
+    <g transform="translate(710, 60)">
+      <use href="#brain"/>
+    </g>
+    <g transform="translate(710, 110)">
+      <use href="#brain"/>
+    </g>
+    <g transform="translate(710, 160)">
+      <use href="#brain"/>
+    </g>
+    <text x="710" y="183" font-family="Georgia, serif" font-size="11" text-anchor="middle">Data</text>
+    <text x="710" y="194" font-family="Georgia, serif" font-size="11" text-anchor="middle">memory</text>
+
+    <!-- Pattern Boxes -->
+    <rect x="755" y="50" width="150" height="25" rx="5" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,4"/>
+    <text x="830" y="67" font-family="Georgia, serif" font-size="13" text-anchor="middle">Frequency pattern</text>
+    <line x1="755" y1="62" x2="732" y2="62" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <rect x="755" y="100" width="150" height="25" rx="5" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,4"/>
+    <text x="830" y="117" font-family="Georgia, serif" font-size="13" text-anchor="middle">Temporal pattern</text>
+    <line x1="755" y1="112" x2="732" y2="112" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <rect x="755" y="150" width="150" height="25" rx="5" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,4"/>
+    <text x="830" y="167" font-family="Georgia, serif" font-size="13" text-anchor="middle">Spatial pattern</text>
+    <line x1="755" y1="162" x2="732" y2="162" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <text x="835" y="192" font-family="Georgia, serif" font-size="13" font-weight="bold" font-style="italic" text-anchor="middle">Data-driven prompt</text>
+
+    <!-- ST Data Label & Arrow -->
+    <text x="955" y="105" font-family="Georgia, serif" font-size="13" text-anchor="middle">ST</text>
+    <text x="955" y="120" font-family="Georgia, serif" font-size="13" text-anchor="middle">Data</text>
+    <line x1="935" y1="112" x2="918" y2="112" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <!-- Bottom Dashed Box: Task-specific prompt -->
+    <rect x="665" y="210" width="250" height="110" rx="10" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+    
+    <g transform="translate(710, 245)">
+      <use href="#brain"/>
+    </g>
+    <text x="710" y="283" font-family="Georgia, serif" font-size="11" text-anchor="middle">Task</text>
+    <text x="710" y="294" font-family="Georgia, serif" font-size="11" text-anchor="middle">memory</text>
+
+    <!-- Attention Box -->
+    <rect x="755" y="220" width="25" height="80" rx="5" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <text x="768" y="260" font-family="Georgia, serif" font-size="12" text-anchor="middle" transform="rotate(90, 768, 260)">Attention</text>
+    <line x1="755" y1="260" x2="732" y2="260" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <!-- 3D Grid Block in Task-specific prompt -->
+    <g transform="translate(805, 248) scale(0.85)">
+      <use href="#grid-block-3d"/>
+    </g>
+    <line x1="805" y1="260" x2="787" y2="260" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <text x="835" y="312" font-family="Georgia, serif" font-size="13" font-weight="bold" font-style="italic" text-anchor="middle">Task-specific prompt</text>
+
+    <!-- Mask Label & Arrow -->
+    <text x="955" y="270" font-family="Georgia, serif" font-size="13" text-anchor="middle">Mask</text>
+    <line x1="935" y1="265" x2="918" y2="265" stroke="#000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+    <!-- Section Label -->
+    <text x="820" y="355" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle">(d) Unified Prompt Learning</text>
+  </g>
+
+  <!-- Connection from Unified Prompt Learning to Concat -->
+  <path d="M 650, 175 L 625, 175 L 625, 256 L 512, 256" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== SECTION (c) MASKING STRATEGIES ==================== -->
+  <g id="section-c">
+    <!-- Outer Container -->
+    <rect x="680" y="370" width="290" height="95" rx="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Scattered 3D Grid Blocks -->
+    <g transform="translate(692, 410) scale(0.6)">
+      <use href="#grid-block-3d"/>
+    </g>
+    <g transform="translate(742, 430) scale(0.6)">
+      <use href="#grid-block-3d"/>
+    </g>
+    <g transform="translate(792, 410) scale(0.6)">
+      <use href="#grid-block-3d"/>
+    </g>
+    <g transform="translate(842, 430) scale(0.6)">
+      <use href="#grid-block-3d"/>
+    </g>
+    <g transform="translate(892, 410) scale(0.6)">
+      <use href="#grid-block-3d"/>
+    </g>
+
+    <!-- Section Label -->
+    <text x="825" y="485" font-family="Georgia, serif" font-size="16" font-weight="bold" text-anchor="middle">(c) Masking Strategies</text>
+  </g>
+
+  <!-- Connection from Masking Strategies to Main Pipeline -->
+  <path d="M 680, 375 L 542.5, 375" fill="none" stroke="#000" stroke-width="1.5"/>
+  <path d="M 542.5, 375 L 382.5, 375" fill="none" stroke="#000" stroke-width="1.5"/>
+  <circle cx="542.5" cy="375" r="3.5" fill="#000"/>
+  <circle cx="382.5" cy="375" r="3.5" fill="#000"/>
+
+</svg>

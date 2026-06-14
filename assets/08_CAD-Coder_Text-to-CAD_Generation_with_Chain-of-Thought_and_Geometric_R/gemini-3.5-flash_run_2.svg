@@ -1,0 +1,517 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 630" width="100%" height="100%">
+  <defs>
+    <!-- Filters -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+    <filter id="blur-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0"/>
+    </filter>
+
+    <!-- Gradients for 3D Models -->
+    <linearGradient id="grad-flange-side" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a5ac8c"/>
+      <stop offset="30%" stop-color="#bdc4a5"/>
+      <stop offset="70%" stop-color="#8d9373"/>
+      <stop offset="100%" stop-color="#6e7354"/>
+    </linearGradient>
+    <linearGradient id="grad-flange-inner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4e523a"/>
+      <stop offset="50%" stop-color="#7c8262"/>
+      <stop offset="100%" stop-color="#9ba180"/>
+    </linearGradient>
+    
+    <linearGradient id="grad-gt-side" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5a6e7f"/>
+      <stop offset="30%" stop-color="#768b9e"/>
+      <stop offset="70%" stop-color="#435361"/>
+      <stop offset="100%" stop-color="#2d3943"/>
+    </linearGradient>
+    <linearGradient id="grad-gt-inner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#222b33"/>
+      <stop offset="50%" stop-color="#435361"/>
+      <stop offset="100%" stop-color="#647b8e"/>
+    </linearGradient>
+
+    <!-- Point Cloud Pattern -->
+    <pattern id="pointcloud-pattern" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#2d2d2d"/>
+      <circle cx="1.5" cy="1.5" r="0.6" fill="#ffffff" opacity="0.9"/>
+      <circle cx="3.5" cy="3.5" r="0.4" fill="#aaaaaa" opacity="0.6"/>
+    </pattern>
+    <pattern id="pointcloud-pattern-gt" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#34424e"/>
+      <circle cx="1.5" cy="1.5" r="0.6" fill="#ffffff" opacity="0.9"/>
+      <circle cx="3.5" cy="3.5" r="0.4" fill="#9cb2c5" opacity="0.7"/>
+    </pattern>
+
+    <!-- Markers for Arrows -->
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#333"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#4caf50"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ef5350"/>
+    </marker>
+    <marker id="arrow-pink" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f48fb1"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- ========================================== -->
+  <!--             TOP CODE BLOCKS                -->
+  <!-- ========================================== -->
+
+  <!-- Left Box: Command Sequence -->
+  <g transform="translate(10, 10)">
+    <rect width="330" height="235" rx="8" fill="#fafafa" stroke="#b0b0b0" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="320" y="225" fill="#2e7d32" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" text-anchor="end">Command Sequence</text>
+    <g font-family="Consolas, Monaco, monospace" font-size="11" xml:space="preserve">
+      <text x="15" y="25" fill="#333">{</text>
+      <text x="15" y="40" fill="#d15a6c">  "steps"<fill fill="#333">: [</fill></text>
+      <text x="15" y="55" fill="#333">    {</text>
+      <text x="15" y="70" fill="#d15a6c">      "sketch"<fill fill="#333">: {</fill></text>
+      <text x="15" y="85" fill="#d15a6c">        "circles"<fill fill="#333">: [</fill></text>
+      <text x="15" y="100" fill="#333">          {<tspan fill="#d15a6c">"center"</tspan>: [0, 0], <tspan fill="#d15a6c">"radius"</tspan>: <tspan fill="#4078f2">60</tspan>},</text>
+      <text x="15" y="115" fill="#333">          {<tspan fill="#d15a6c">"center"</tspan>: [0, 0], <tspan fill="#d15a6c">"radius"</tspan>: <tspan fill="#4078f2">25</tspan>}</text>
+      <text x="15" y="130" fill="#333">        ]</text>
+      <text x="15" y="145" fill="#333">      },</text>
+      <text x="15" y="160" fill="#d15a6c">      "extrusion"<fill fill="#333">: {</fill></text>
+      <text x="15" y="175" fill="#333">        <tspan fill="#d15a6c">"direction"</tspan>: [0, 0, 1],</text>
+      <text x="15" y="190" fill="#333">        <tspan fill="#d15a6c">"origin"</tspan>: [0, 0, 0],</text>
+      <text x="15" y="205" fill="#333">        <tspan fill="#d15a6c">"depth"</tspan>: <tspan fill="#4078f2">15</tspan>,</text>
+      <text x="15" y="220" fill="#333">        <tspan fill="#d15a6c">"operation"</tspan>: <tspan fill="#50a14f">"NewBody"</tspan></text>
+    </g>
+  </g>
+
+  <!-- Middle Box: Text Description -->
+  <g transform="translate(350, 10)">
+    <rect width="300" height="235" rx="8" fill="#fafafa" stroke="#b0b0b0" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="290" y="225" fill="#2e7d32" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" text-anchor="end">Text Description</text>
+    <g font-family="Consolas, Monaco, monospace" font-size="11" xml:space="preserve">
+      <text x="15" y="25" fill="#d15a6c">Text_Description <tspan fill="#333">=</tspan> <tspan fill="#50a14f">"""</tspan></text>
+      <text x="15" y="40" fill="#9ccc65">This circular flange is a metal component</text>
+      <text x="15" y="55" fill="#9ccc65">featuring a flat base plate with a</text>
+      <text x="15" y="70" fill="#9ccc65">diameter of 120 mm and thickness of 15 mm.</text>
+      <text x="15" y="85" fill="#9ccc65">The design includes a central bore</text>
+      <text x="15" y="100" fill="#9ccc65">measuring 50 mm in diameter surrounded by</text>
+      <text x="15" y="115" fill="#9ccc65">a raised concentric ring with an outer</text>
+      <text x="15" y="130" fill="#9ccc65">diameter of 70 mm and height of 8 mm that</text>
+      <text x="15" y="145" fill="#9ccc65">shares the same inner diameter as the</text>
+      <text x="15" y="160" fill="#9ccc65">central bore. Six equidistant mounting</text>
+      <text x="15" y="175" fill="#9ccc65">holes measuring 12 mm in diameter are</text>
+      <text x="15" y="190" fill="#9ccc65">arranged in a circular pattern with a</text>
+      <text x="15" y="205" fill="#9ccc65">diameter of 90 mm around the periphery.</text>
+      <text x="15" y="220" fill="#50a14f">"""</text>
+    </g>
+  </g>
+
+  <!-- Right Box: System Prompt & CadQuery Code -->
+  <g transform="translate(660, 10)">
+    <!-- Top Sub-box: System Prompt -->
+    <g>
+      <rect width="830" height="110" rx="8" fill="#fafafa" stroke="#b0b0b0" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="820" y="100" fill="#333" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" text-anchor="end">System prompt</text>
+      <g font-family="Consolas, Monaco, monospace" font-size="11" xml:space="preserve">
+        <text x="15" y="25" fill="#d15a6c">System_prompt <tspan fill="#333">=</tspan> <tspan fill="#50a14f">"""</tspan></text>
+        <text x="15" y="40" fill="#9ccc65">Please convert the following CAD command sequence into CAD-Query code, with the final model represented as 'r':</text>
+        <text x="15" y="55" fill="#50a14f">"""</text>
+        <text x="15" y="80" fill="#757575"># The CoT system prompt can be found in the appendix.</text>
+      </g>
+    </g>
+
+    <!-- Bottom Sub-box: CadQuery Code -->
+    <g transform="translate(0, 125)">
+      <rect width="830" height="110" rx="8" fill="#fafafa" stroke="#b0b0b0" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="820" y="100" fill="#333" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" text-anchor="end">CadQuery Code</text>
+      <g font-family="Consolas, Monaco, monospace" font-size="11" xml:space="preserve">
+        <text x="15" y="25" fill="#e06c75">import <tspan fill="#333">cadquery</tspan> as <tspan fill="#4078f2">cq</tspan></text>
+        <text x="15" y="50" fill="#4078f2">flange <tspan fill="#333">=</tspan> <tspan fill="#333">(cq.</tspan>Workplane<tspan fill="#333">(</tspan><tspan fill="#50a14f">"XY"</tspan><tspan fill="#333">)</tspan></text>
+        <text x="15" y="65" fill="#333">          .circle(<tspan fill="#4078f2">60</tspan>).circle(<tspan fill="#4078f2">25</tspan>).extrude(<tspan fill="#4078f2">15</tspan>)</text>
+        <text x="15" y="80" fill="#333">          .faces(<tspan fill="#50a14f">"&gt;Z"</tspan>).workplane().polarArray(<tspan fill="#4078f2">45, 0, 360, 6</tspan>).circle(<tspan fill="#4078f2">6</tspan>).cutThruAll()</text>
+        <text x="15" y="95" fill="#333">          .faces(<tspan fill="#50a14f">"&gt;Z"</tspan>).workplane().add(cq.Workplane(<tspan fill="#50a14f">"XY"</tspan>).circle(<tspan fill="#4078f2">35</tspan>).circle(<tspan fill="#4078f2">25</tspan>).workplane(offset=<tspan fill="#4078f2">15</tspan>).extrude(<tspan fill="#4078f2">8</tspan>)))</text>
+        <text x="15" y="110" fill="#4078f2">result <tspan fill="#333">=</tspan> flange</text>
+      </g>
+    </g>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!--             BOTTOM FLOWCHART               -->
+  <!-- ========================================== -->
+
+  <!-- LEFT CONTAINER: Text2CAD Dataset Pipeline -->
+  <g transform="translate(10, 260)">
+    <rect width="390" height="350" rx="15" fill="#f1f3f4" stroke="#d3d3d3" stroke-width="1.5"/>
+    
+    <!-- Folder: Text2CAD Dataset -->
+    <g transform="translate(25, 110)" filter="url(#shadow)">
+      <!-- Folder Back -->
+      <path d="M 5 15 L 5 75 A 5 5 0 0 0 10 80 L 75 80 A 5 5 0 0 0 80 75 L 80 25 A 5 5 0 0 0 75 20 L 45 20 L 37 8 A 5 5 0 0 0 33 5 L 10 5 A 5 5 0 0 0 5 10 Z" fill="#ffe082" stroke="#ffb300" stroke-width="1.5"/>
+      <!-- Document sticking out -->
+      <rect x="18" y="-5" width="45" height="45" rx="3" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+      <line x1="25" y1="5" x2="55" y2="5" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="25" y1="12" x2="55" y2="12" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="25" y1="19" x2="45" y2="19" stroke="#b0bec5" stroke-width="2"/>
+      <!-- Folder Front -->
+      <path d="M 5 25 L 5 75 A 5 5 0 0 0 10 80 L 75 80 A 5 5 0 0 0 80 75 L 80 25 Z" fill="#ffca28" stroke="#ffa000" stroke-width="1.5"/>
+      <!-- Green Check Badge -->
+      <circle cx="68" cy="68" r="10" fill="#4caf50"/>
+      <path d="M 63 68 L 66 71 L 73 64" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="68" y="205" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">Text2CAD</text>
+    <text x="68" y="220" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">Dataset</text>
+
+    <!-- Branching Arrows from Folder -->
+    <path d="M 110 150 L 140 150 M 140 150 L 140 55 L 170 55 M 140 150 L 170 150 M 140 150 L 140 255 L 170 255" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+    <!-- Dashed Box around JSON and TEXT files -->
+    <rect x="185" y="10" width="80" height="225" rx="8" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- File 1: JSON (Command Sequence) -->
+    <g transform="translate(195, 20)" filter="url(#shadow)">
+      <path d="M 0 0 L 35 0 L 48 13 L 48 60 L 0 60 Z" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+      <path d="M 35 0 L 35 13 L 48 13 Z" fill="#cfd8dc" stroke="#b0bec5" stroke-width="1.5"/>
+      <line x1="8" y1="20" x2="40" y2="20" stroke="#e0e0e0" stroke-width="2"/>
+      <line x1="8" y1="28" x2="30" y2="28" stroke="#e0e0e0" stroke-width="2"/>
+      <!-- Badge -->
+      <rect x="5" y="38" width="38" height="16" rx="3" fill="#e65100"/>
+      <text x="24" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">JSON</text>
+    </g>
+    <text x="220" y="95" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Command</text>
+    <text x="220" y="108" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Sequence</text>
+
+    <!-- File 2: TEXT (Text Description) -->
+    <g transform="translate(195, 115)" filter="url(#shadow)">
+      <path d="M 0 0 L 35 0 L 48 13 L 48 60 L 0 60 Z" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+      <path d="M 35 0 L 35 13 L 48 13 Z" fill="#cfd8dc" stroke="#b0bec5" stroke-width="1.5"/>
+      <line x1="8" y1="20" x2="40" y2="20" stroke="#e0e0e0" stroke-width="2"/>
+      <line x1="8" y1="28" x2="30" y2="28" stroke="#e0e0e0" stroke-width="2"/>
+      <!-- Badge -->
+      <rect x="5" y="38" width="38" height="16" rx="3" fill="#757575"/>
+      <text x="24" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">TEXT</text>
+    </g>
+    <text x="220" y="190" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Text</text>
+    <text x="220" y="203" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Description</text>
+
+    <!-- File 3: STEP (Ground-Truth Model) -->
+    <g transform="translate(195, 225)" filter="url(#shadow)">
+      <path d="M 0 0 L 35 0 L 48 13 L 48 60 L 0 60 Z" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+      <path d="M 35 0 L 35 13 L 48 13 Z" fill="#cfd8dc" stroke="#b0bec5" stroke-width="1.5"/>
+      <line x1="8" y1="20" x2="40" y2="20" stroke="#e0e0e0" stroke-width="2"/>
+      <line x1="8" y1="28" x2="30" y2="28" stroke="#e0e0e0" stroke-width="2"/>
+      <!-- Badge -->
+      <rect x="5" y="38" width="38" height="16" rx="3" fill="#00796b"/>
+      <text x="24" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">STEP</text>
+    </g>
+    <text x="220" y="300" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Ground-Truth Model</text>
+
+    <!-- LLMs Whale Icon -->
+    <g transform="translate(295, 55)">
+      <!-- Whale Body -->
+      <path d="M 10 35 C 10 15, 50 10, 65 25 C 75 35, 80 20, 85 15 C 83 35, 92 45, 80 55 C 65 65, 25 65, 10 35 Z" fill="#1e88e5" filter="url(#shadow)"/>
+      <!-- Whale Spout/Blocks -->
+      <rect x="35" y="10" width="10" height="10" rx="2" fill="#90caf9"/>
+      <rect x="48" y="13" width="8" height="8" rx="1" fill="#42a5f5"/>
+      <!-- Eye -->
+      <circle cx="25" cy="30" r="2" fill="#ffffff"/>
+      <text x="45" y="-5" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">LLMs</text>
+    </g>
+
+    <!-- CadQuery Logo -->
+    <g transform="translate(300, 155)">
+      <rect width="55" height="55" rx="10" fill="#007acc" filter="url(#shadow)"/>
+      <text x="27" y="38" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="30" text-anchor="middle">cq</text>
+      <text x="27" y="70" font-family="system-ui, sans-serif" font-size="12" fill="#333" text-anchor="middle">CadQuery</text>
+    </g>
+
+    <!-- Trash Bin (Discard) -->
+    <g transform="translate(300, 265)">
+      <!-- Bin Body -->
+      <path d="M 10 20 L 15 55 A 5 5 0 0 0 20 60 L 35 60 A 5 5 0 0 0 40 55 L 45 20 Z" fill="#e0e0e0" stroke="#9e9e9e" stroke-width="1.5" filter="url(#shadow)"/>
+      <!-- Lid -->
+      <rect x="5" y="12" width="45" height="8" rx="2" fill="#bdbdbd" stroke="#9e9e9e" stroke-width="1.5"/>
+      <rect x="20" y="6" width="15" height="6" rx="1" fill="#9e9e9e"/>
+      <!-- Stripes on Bin -->
+      <line x1="20" y1="25" x2="20" y2="50" stroke="#9e9e9e" stroke-width="1.5"/>
+      <line x1="27" y1="25" x2="27" y2="50" stroke="#9e9e9e" stroke-width="1.5"/>
+      <line x1="34" y1="25" x2="34" y2="50" stroke="#9e9e9e" stroke-width="1.5"/>
+      <text x="27" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#333" text-anchor="middle">Discard</text>
+    </g>
+
+    <!-- Arrows inside Left Box -->
+    <!-- JSON to Whale -->
+    <path d="M 250 50 L 285 50" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+    <!-- TEXT to Whale -->
+    <path d="M 250 145 L 275 145 L 275 90 L 290 90" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+    <!-- Whale to CadQuery -->
+    <path d="M 330 115 L 330 148" fill="none" stroke="#333" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+    <!-- CadQuery to Trash -->
+    <path d="M 330 228 L 330 260" fill="none" stroke="#ef5350" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <!-- Red X Badge -->
+    <g transform="translate(330, 244)">
+      <circle cx="0" cy="0" r="8" fill="#ef5350"/>
+      <path d="M -4 -4 L 4 4 M 4 -4 L -4 4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Green Arrow from Left Box to Middle Box -->
+  <path d="M 370 415 L 400 415 L 400 355 L 435 355" fill="none" stroke="#4caf50" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <!-- Green Check Badge on Arrow -->
+  <g transform="translate(415, 355)">
+    <circle cx="0" cy="0" r="10" fill="#4caf50"/>
+    <path d="M -5 0 L -1 4 L 5 -3" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!--            MIDDLE CONTAINER                -->
+  <!-- ========================================== -->
+  <g transform="translate(410, 260)">
+    <rect width="810" height="350" rx="15" fill="#f1f3f4" stroke="#d3d3d3" stroke-width="1.5"/>
+
+    <!-- 1. GENERATED MODELS GROUP (Dashed Green Box) -->
+    <g>
+      <rect x="15" y="25" width="520" height="115" rx="10" fill="none" stroke="#81c784" stroke-width="2" stroke-dasharray="6,4"/>
+      <!-- Label Pill -->
+      <rect x="170" y="13" width="180" height="24" rx="12" fill="#e8f5e9" stroke="#81c784" stroke-width="1.5"/>
+      <text x="260" y="30" fill="#2e7d32" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">Generated Models</text>
+
+      <!-- Model 1: Simple Ring -->
+      <g transform="translate(100, 85)">
+        <!-- Shadow -->
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <!-- Outer Wall -->
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#grad-flange-side)"/>
+        <!-- Inner Wall -->
+        <path d="M -20 0 A 20 9 0 0 1 20 0 L 20 15 A 20 9 0 0 0 -20 15 Z" fill="url(#grad-flange-inner)"/>
+        <!-- Top Face -->
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -20 0 A 20 9 0 1 1 20 0 A 20 9 0 1 1 -20 0" fill="#b8be9d" stroke="#9ba27f" stroke-width="0.5" fill-rule="evenodd"/>
+      </g>
+
+      <!-- Model 2: Ring with Holes -->
+      <g transform="translate(260, 85)">
+        <!-- Shadow -->
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <!-- Outer Wall -->
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#grad-flange-side)"/>
+        <!-- Inner Wall -->
+        <path d="M -20 0 A 20 9 0 0 1 20 0 L 20 15 A 20 9 0 0 0 -20 15 Z" fill="url(#grad-flange-inner)"/>
+        <!-- Top Face -->
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -20 0 A 20 9 0 1 1 20 0 A 20 9 0 1 1 -20 0" fill="#b8be9d" stroke="#9ba27f" stroke-width="0.5" fill-rule="evenodd"/>
+        <!-- Holes (6 equidistant on radius ~32) -->
+        <!-- We draw small dark ellipses to simulate holes -->
+        <ellipse cx="28" cy="0" rx="4" ry="2" fill="#4e523a"/>
+        <ellipse cx="-28" cy="0" rx="4" ry="2" fill="#4e523a"/>
+        <ellipse cx="14" cy="12" rx="4" ry="2" fill="#4e523a"/>
+        <ellipse cx="-14" cy="12" rx="4" ry="2" fill="#4e523a"/>
+        <ellipse cx="14" cy="-12" rx="4" ry="2" fill="#4e523a"/>
+        <ellipse cx="-14" cy="-12" rx="4" ry="2" fill="#4e523a"/>
+      </g>
+
+      <!-- Model 3: Ring with Holes and Hub -->
+      <g transform="translate(420, 85)">
+        <!-- Shadow -->
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <!-- Base Outer Wall -->
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#grad-flange-side)"/>
+        <!-- Base Top Face (Ring from R28 to R45) -->
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -28 0 A 28 12 0 1 1 28 0 A 28 12 0 1 1 -28 0" fill="#b8be9d" stroke="#9ba27f" stroke-width="0.5" fill-rule="evenodd"/>
+        <!-- Hub Outer Wall -->
+        <path d="M -28 -12 A 28 12 0 0 0 28 -12 L 28 0 A 28 12 0 0 1 -28 0 Z" fill="url(#grad-flange-side)"/>
+        <!-- Hub Inner Wall -->
+        <path d="M -18 -12 A 18 8 0 0 1 18 -12 L 18 15 A 18 8 0 0 0 -18 15 Z" fill="url(#grad-flange-inner)"/>
+        <!-- Hub Top Face -->
+        <path d="M -28 -12 A 28 12 0 1 0 28 -12 A 28 12 0 1 0 -28 -12 M -18 -12 A 18 8 0 1 1 18 -12 A 18 8 0 1 1 -18 -12" fill="#c5cbb0" stroke="#aab18e" stroke-width="0.5" fill-rule="evenodd"/>
+        <!-- Holes on Base -->
+        <ellipse cx="36" cy="0" rx="3.5" ry="1.8" fill="#4e523a"/>
+        <ellipse cx="-36" cy="0" rx="3.5" ry="1.8" fill="#4e523a"/>
+        <ellipse cx="18" cy="10" rx="3.5" ry="1.8" fill="#4e523a"/>
+        <ellipse cx="-18" cy="10" rx="3.5" ry="1.8" fill="#4e523a"/>
+        <!-- Back holes partially hidden by hub, but let's place them realistically -->
+        <ellipse cx="18" cy="-10" rx="3" ry="1.5" fill="#4e523a"/>
+        <ellipse cx="-18" cy="-10" rx="3" ry="1.5" fill="#4e523a"/>
+      </g>
+    </g>
+
+    <!-- Arrow Down: Sample -->
+    <path d="M 275 140 L 275 185" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="285" y="168" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333">Sample</text>
+
+    <!-- 2. 3D POINT MODELS GROUP (Dashed Grey Box) -->
+    <g transform="translate(0, 190)">
+      <rect x="15" y="15" width="520" height="115" rx="10" fill="none" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6,4"/>
+      <!-- Label Pill -->
+      <rect x="170" y="118" width="180" height="24" rx="12" fill="#f5f5f5" stroke="#9e9e9e" stroke-width="1.5"/>
+      <text x="260" y="135" fill="#424242" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">3D Point Models</text>
+
+      <!-- Point Model 1 -->
+      <g transform="translate(100, 70)">
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#pointcloud-pattern)"/>
+        <path d="M -20 0 A 20 9 0 0 1 20 0 L 20 15 A 20 9 0 0 0 -20 15 Z" fill="#111"/>
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -20 0 A 20 9 0 1 1 20 0 A 20 9 0 1 1 -20 0" fill="url(#pointcloud-pattern)" stroke="#555" stroke-width="0.5" fill-rule="evenodd"/>
+      </g>
+
+      <!-- Point Model 2 -->
+      <g transform="translate(260, 70)">
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#pointcloud-pattern)"/>
+        <path d="M -20 0 A 20 9 0 0 1 20 0 L 20 15 A 20 9 0 0 0 -20 15 Z" fill="#111"/>
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -20 0 A 20 9 0 1 1 20 0 A 20 9 0 1 1 -20 0" fill="url(#pointcloud-pattern)" stroke="#555" stroke-width="0.5" fill-rule="evenodd"/>
+        <!-- Holes -->
+        <ellipse cx="28" cy="0" rx="4" ry="2" fill="#111"/>
+        <ellipse cx="-28" cy="0" rx="4" ry="2" fill="#111"/>
+        <ellipse cx="14" cy="12" rx="4" ry="2" fill="#111"/>
+        <ellipse cx="-14" cy="12" rx="4" ry="2" fill="#111"/>
+      </g>
+
+      <!-- Point Model 3 (Selected) -->
+      <g transform="translate(420, 70)">
+        <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+        <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#pointcloud-pattern)"/>
+        <path d="M -28 -12 A 28 12 0 0 0 28 -12 L 28 0 A 28 12 0 0 1 -28 0 Z" fill="url(#pointcloud-pattern)"/>
+        <path d="M -18 -12 A 18 8 0 0 1 18 -12 L 18 15 A 18 8 0 0 0 -18 15 Z" fill="#111"/>
+        <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -28 0 A 28 12 0 1 1 28 0 A 28 12 0 1 1 -28 0" fill="url(#pointcloud-pattern)" stroke="#555" stroke-width="0.5" fill-rule="evenodd"/>
+        <path d="M -28 -12 A 28 12 0 1 0 28 -12 A 28 12 0 1 0 -28 -12 M -18 -12 A 18 8 0 1 1 18 -12 A 18 8 0 1 1 -18 -12" fill="url(#pointcloud-pattern)" stroke="#555" stroke-width="0.5" fill-rule="evenodd"/>
+        <!-- Holes -->
+        <ellipse cx="36" cy="0" rx="3.5" ry="1.8" fill="#111"/>
+        <ellipse cx="-36" cy="0" rx="3.5" ry="1.8" fill="#111"/>
+        <ellipse cx="18" cy="10" rx="3.5" ry="1.8" fill="#111"/>
+        <ellipse cx="-18" cy="10" rx="3.5" ry="1.8" fill="#111"/>
+      </g>
+
+      <!-- Red Dashed Box around Selected Model -->
+      <rect x="355" y="10" width="130" height="110" rx="8" fill="none" stroke="#ef5350" stroke-width="2.5" stroke-dasharray="6,4"/>
+      <text x="420" y="135" fill="#333" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">Select by CD</text>
+    </g>
+
+    <!-- 3. GROUND-TRUTH MODELS (Right Side of Middle Box) -->
+    <!-- Solid GT Model -->
+    <g transform="translate(670, 85)">
+      <!-- Shadow -->
+      <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+      <!-- Base Outer Wall -->
+      <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#grad-gt-side)"/>
+      <!-- Base Top Face -->
+      <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -28 0 A 28 12 0 1 1 28 0 A 28 12 0 1 1 -28 0" fill="#647b8e" stroke="#4f6272" stroke-width="0.5" fill-rule="evenodd"/>
+      <!-- Hub Outer Wall -->
+      <path d="M -28 -12 A 28 12 0 0 0 28 -12 L 28 0 A 28 12 0 0 1 -28 0 Z" fill="url(#grad-gt-side)"/>
+      <!-- Hub Inner Wall -->
+      <path d="M -18 -12 A 18 8 0 0 1 18 -12 L 18 15 A 18 8 0 0 0 -18 15 Z" fill="url(#grad-gt-inner)"/>
+      <!-- Hub Top Face -->
+      <path d="M -28 -12 A 28 12 0 1 0 28 -12 A 28 12 0 1 0 -28 -12 M -18 -12 A 18 8 0 1 1 18 -12 A 18 8 0 1 1 -18 -12" fill="#7890a4" stroke="#5d7385" stroke-width="0.5" fill-rule="evenodd"/>
+      <!-- Holes -->
+      <ellipse cx="36" cy="0" rx="3.5" ry="1.8" fill="#222b33"/>
+      <ellipse cx="-36" cy="0" rx="3.5" ry="1.8" fill="#222b33"/>
+      <ellipse cx="18" cy="10" rx="3.5" ry="1.8" fill="#222b33"/>
+      <ellipse cx="-18" cy="10" rx="3.5" ry="1.8" fill="#222b33"/>
+    </g>
+    <text x="670" y="145" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">Ground-Truth Models</text>
+
+    <!-- Arrow Down: Sample -->
+    <path d="M 670 155 L 670 200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="680" y="183" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333">Sample</text>
+
+    <!-- GT Point Model -->
+    <g transform="translate(670, 260)">
+      <ellipse cx="0" cy="18" rx="45" ry="12" fill="#000000" filter="url(#blur-shadow)"/>
+      <path d="M -45 0 A 45 20 0 0 0 45 0 L 45 15 A 45 20 0 0 1 -45 15 Z" fill="url(#pointcloud-pattern-gt)"/>
+      <path d="M -28 -12 A 28 12 0 0 0 28 -12 L 28 0 A 28 12 0 0 1 -28 0 Z" fill="url(#pointcloud-pattern-gt)"/>
+      <path d="M -18 -12 A 18 8 0 0 1 18 -12 L 18 15 A 18 8 0 0 0 -18 15 Z" fill="#1a2229"/>
+      <path d="M -45 0 A 45 20 0 1 0 45 0 A 45 20 0 1 0 -45 0 M -28 0 A 28 12 0 1 1 28 0 A 28 12 0 1 1 -28 0" fill="url(#pointcloud-pattern-gt)" stroke="#445" stroke-width="0.5" fill-rule="evenodd"/>
+      <path d="M -28 -12 A 28 12 0 1 0 28 -12 A 28 12 0 1 0 -28 -12 M -18 -12 A 18 8 0 1 1 18 -12 A 18 8 0 1 1 -18 -12" fill="url(#pointcloud-pattern-gt)" stroke="#445" stroke-width="0.5" fill-rule="evenodd"/>
+      <!-- Holes -->
+      <ellipse cx="36" cy="0" rx="3.5" ry="1.8" fill="#1a2229"/>
+      <ellipse cx="-36" cy="0" rx="3.5" ry="1.8" fill="#1a2229"/>
+      <ellipse cx="18" cy="10" rx="3.5" ry="1.8" fill="#1a2229"/>
+      <ellipse cx="-18" cy="10" rx="3.5" ry="1.8" fill="#1a2229"/>
+    </g>
+
+    <!-- Chamfer Distance Double-Headed Arrow -->
+    <g transform="translate(545, 255)">
+      <!-- Thick Pink Arrow -->
+      <path d="M 5 0 L 15 -8 L 15 -3 L 65 -3 L 65 -8 L 75 0 L 65 8 L 65 3 L 15 3 L 15 8 Z" fill="#f48fb1"/>
+      <text x="40" y="-25" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#333" text-anchor="middle">Chamfer</text>
+      <text x="40" y="-12" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#333" text-anchor="middle">Distance</text>
+    </g>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!--             RIGHT CONTAINER                -->
+  <!-- ========================================== -->
+  <g transform="translate(1230, 260)">
+    <rect width="260" height="350" rx="15" fill="#f1f3f4" stroke="#d3d3d3" stroke-width="1.5"/>
+
+    <!-- Dashed Box around STEP and TEXT files -->
+    <rect x="15" y="15" width="90" height="235" rx="8" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- File 1: STEP (Model) -->
+    <g transform="translate(35, 25)" filter="url(#shadow)">
+      <path d="M 0 0 L 35 0 L 48 13 L 48 60 L 0 60 Z" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+      <path d="M 35 0 L 35 13 L 48 13 Z" fill="#cfd8dc" stroke="#b0bec5" stroke-width="1.5"/>
+      <line x1="8" y1="20" x2="40" y2="20" stroke="#e0e0e0" stroke-width="2"/>
+      <line x1="8" y1="28" x2="30" y2="28" stroke="#e0e0e0" stroke-width="2"/>
+      <!-- Badge -->
+      <rect x="5" y="38" width="38" height="16" rx="3" fill="#00796b"/>
+      <text x="24" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">STEP</text>
+    </g>
+    <text x="60" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Model</text>
+
+    <!-- File 2: TEXT (Text Description) -->
+    <g transform="translate(35, 125)" filter="url(#shadow)">
+      <path d="M 0 0 L 35 0 L 48 13 L 48 60 L 0 60 Z" fill="#ffffff" stroke="#b0bec5" stroke-width="1.5"/>
+      <path d="M 35 0 L 35 13 L 48 13 Z" fill="#cfd8dc" stroke="#b0bec5" stroke-width="1.5"/>
+      <line x1="8" y1="20" x2="40" y2="20" stroke="#e0e0e0" stroke-width="2"/>
+      <line x1="8" y1="28" x2="30" y2="28" stroke="#e0e0e0" stroke-width="2"/>
+      <!-- Badge -->
+      <rect x="5" y="38" width="38" height="16" rx="3" fill="#757575"/>
+      <text x="24" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">TEXT</text>
+    </g>
+    <text x="60" y="200" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Text</text>
+    <text x="60" y="213" font-family="system-ui, sans-serif" font-size="11" fill="#333" text-anchor="middle">Description</text>
+
+    <!-- CadQuery Logo -->
+    <g transform="translate(30, 265)">
+      <rect width="55" height="55" rx="10" fill="#007acc" filter="url(#shadow)"/>
+      <text x="27" y="38" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="30" text-anchor="middle">cq</text>
+      <text x="27" y="72" font-family="system-ui, sans-serif" font-size="12" fill="#333" text-anchor="middle">CadQuery</text>
+    </g>
+
+    <!-- Folder: Our Dataset -->
+    <g transform="translate(140, 120)" filter="url(#shadow)">
+      <!-- Folder Back -->
+      <path d="M 5 15 L 5 75 A 5 5 0 0 0 10 80 L 75 80 A 5 5 0 0 0 80 75 L 80 25 A 5 5 0 0 0 75 20 L 45 20 L 37 8 A 5 5 0 0 0 33 5 L 10 5 A 5 5 0 0 0 5 10 Z" fill="#ffe082" stroke="#ffb300" stroke-width="1.5"/>
+      <!-- Document sticking out -->
+      <rect x="18" y="-5" width="45" height="45" rx="3" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+      <line x1="25" y1="5" x2="55" y2="5" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="25" y1="12" x2="55" y2="12" stroke="#b0bec5" stroke-width="2"/>
+      <!-- Folder Front -->
+      <path d="M 5 25 L 5 75 A 5 5 0 0 0 10 80 L 75 80 A 5 5 0 0 0 80 75 L 80 25 Z" fill="#ffca28" stroke="#ffa000" stroke-width="1.5"/>
+      <!-- Red Plus Badge -->
+      <circle cx="68" cy="68" r="10" fill="#ef5350"/>
+      <path d="M 63 68 L 73 68 M 68 63 L 68 73" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="183" y="215" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">Our Dataset</text>
+
+    <!-- Arrows inside Right Box -->
+    <!-- Dashed Box to Folder -->
+    <path d="M 110 130 L 135 130" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <!-- CadQuery to Folder -->
+    <path d="M 95 292 L 183 292 L 183 210" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+  </g>
+
+  <!-- Pink Line: Python Code Selection -->
+  <!-- From Chamfer Distance area down, then right to CadQuery in Right Box -->
+  <path d="M 1000 515 L 1000 560 L 1250 560" fill="none" stroke="#f48fb1" stroke-width="2.5" marker-end="url(#arrow-pink)"/>
+  <text x="1110" y="580" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">Python code</text>
+  <text x="1110" y="595" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#333" text-anchor="middle">selection</text>
+
+</svg>

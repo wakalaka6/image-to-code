@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%">
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#c02020" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#0020dd" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#006b3c" />
+    </marker>
+
+    <!-- Gradients -->
+    <linearGradient id="blue-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="rainbow-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff5252"/>
+      <stop offset="50%" stop-color="#ffb74d"/>
+      <stop offset="100%" stop-color="#64b5f6"/>
+    </linearGradient>
+
+    <!-- Detailed Man Drinking Template -->
+    <g id="man-drinking">
+      <!-- Background -->
+      <rect x="0" y="0" width="125" height="100" fill="#e0e0e0" rx="4"/>
+      <!-- Shadow/Body -->
+      <path d="M 15 100 C 15 82 32 68 58 68 C 68 68 78 72 83 82 L 88 100 Z" fill="#1e1e1e"/>
+      <!-- Head & Face -->
+      <circle cx="78" cy="45" r="15" fill="#f3c5a6"/>
+      <!-- Nose Profile (facing left) -->
+      <path d="M 64 43 L 58 47 L 64 51 Z" fill="#f3c5a6"/>
+      <!-- Hair -->
+      <path d="M 68 33 C 72 26 85 26 90 34 C 88 34 78 31 70 34 Z" fill="#0d0d0d"/>
+      <!-- Glasses -->
+      <rect x="61" y="40" width="11" height="7" fill="none" stroke="#000000" stroke-width="1.2"/>
+      <line x1="72" y1="43" x2="78" y2="43" stroke="#000000" stroke-width="1.2"/>
+      <!-- Bottle (tilted) -->
+      <g transform="translate(18, 36) rotate(15)">
+        <rect x="0" y="0" width="42" height="16" rx="2" fill="#e1f5fe" fill-opacity="0.85" stroke="#0288d1" stroke-width="1.2"/>
+        <rect x="42" y="3" width="6" height="10" fill="#ffffff" stroke="#0288d1" stroke-width="1"/>
+        <line x1="5" y1="8" x2="38" y2="8" stroke="#0288d1" stroke-width="0.8" stroke-dasharray="2,2"/>
+      </g>
+      <!-- Hand -->
+      <circle cx="46" cy="54" r="6" fill="#f3c5a6"/>
+    </g>
+  </defs>
+
+  <!-- ================= TOP BOX (Sample Selection) ================= -->
+  <g id="top-box">
+    <!-- Outer Border -->
+    <rect x="10" y="15" width="980" height="275" rx="12" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-dasharray="12,4,3,4"/>
+    
+    <!-- Title -->
+    <text x="25" y="48" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#000000" letter-spacing="1">Sample Selection</text>
+    
+    <!-- Subtitle -->
+    <text x="580" y="38" font-family="system-ui, sans-serif" font-weight="bold" font-size="17" text-anchor="middle">
+      <tspan fill="#000000">Explore the effect of </tspan>
+      <tspan fill="#ff0000">triggers </tspan>
+      <tspan fill="#000000">on </tspan>
+      <tspan fill="#ff0000">sample selection</tspan>
+    </text>
+    <text x="580" y="58" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" text-anchor="middle">
+      <tspan fill="#000000">via the enhancement of </tspan>
+      <tspan fill="#0000ff">attack success rate </tspan>
+      <tspan fill="#000000">and </tspan>
+      <tspan fill="#008000">stealthiness.</tspan>
+    </text>
+
+    <!-- ================= Component A ================= -->
+    <g id="component-a">
+      <text x="25" y="82" font-family="system-ui, sans-serif" font-weight="bold" font-size="15" fill="#0000ff">Component A</text>
+      
+      <!-- Highlight Top -->
+      <text x="60" y="105" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#cc0000" text-anchor="middle">highlight</text>
+      <path d="M 105 110 L 105 90 L 158 90" fill="none" stroke="#cc0000" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+      
+      <text x="60" y="125" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#1a365d" text-anchor="middle">large trigger scale</text>
+      
+      <!-- Top Bottle Neck Image -->
+      <g transform="translate(25, 135)">
+        <rect x="0" y="0" width="30" height="30" fill="#f5f5f5" stroke="#cccccc" stroke-width="1"/>
+        <path d="M 5 25 L 12 12 L 18 12 L 25 25 Z" fill="#cfd8dc" stroke="#455a64" stroke-width="1"/>
+        <line x1="12" y1="15" x2="18" y2="15" stroke="#455a64" stroke-width="1"/>
+      </g>
+
+      <!-- Blue Gradient Scale Bar -->
+      <rect x="105" y="135" width="10" height="80" rx="5" fill="url(#blue-grad)"/>
+
+      <!-- Bracket -->
+      <path d="M 124 135 Q 129 135 129 145 L 129 165 Q 129 175 134 175 Q 129 175 129 185 L 129 205 Q 129 215 124 215" fill="none" stroke="#000000" stroke-width="1.5"/>
+
+      <!-- Bottom Bottle Neck Image -->
+      <g transform="translate(25, 175)">
+        <rect x="0" y="0" width="30" height="30" fill="#f5f5f5" stroke="#cccccc" stroke-width="1"/>
+        <path d="M 8 25 L 13 16 L 17 16 L 22 25 Z" fill="#cfd8dc" stroke="#455a64" stroke-width="0.8"/>
+        <!-- Small trigger dot -->
+        <circle cx="15" cy="20" r="1.5" fill="#cc0000"/>
+      </g>
+
+      <text x="60" y="225" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#1a365d" text-anchor="middle">small trigger scale</text>
+
+      <!-- Highlight Bottom -->
+      <text x="60" y="245" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#cc0000" text-anchor="middle">highlight</text>
+      <path d="M 105 230 L 105 250 L 158 250" fill="none" stroke="#cc0000" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+
+      <!-- Red Rounded Boxes -->
+      <!-- Category Diversity (ours) -->
+      <rect x="150" y="105" width="315" height="35" rx="10" fill="#b82e2e"/>
+      <text x="307" y="127" font-family="system-ui, sans-serif" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">Category Diversity (ours)</text>
+
+      <!-- Forgetting Events (traditional) -->
+      <rect x="150" y="195" width="315" height="35" rx="10" fill="#b82e2e"/>
+      <text x="307" y="217" font-family="system-ui, sans-serif" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">Forgetting Events (traditional)</text>
+
+      <!-- Yellow Middle Box -->
+      <rect x="153" y="148" width="328" height="38" rx="3" fill="#ffffff" stroke="#ffd700" stroke-width="1.5"/>
+      <text x="158" y="162" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">
+        <tspan fill="#000000">Find the appropriate combination </tspan>
+      </text>
+      <text x="158" y="176" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">
+        <tspan fill="#000000">based on </tspan>
+        <tspan fill="#a02020">the scale of trigger features </tspan>
+      </text>
+
+      <!-- Icons inside Yellow Box -->
+      <!-- People Pulling Icon -->
+      <g transform="translate(428, 149) scale(0.55)">
+        <circle cx="10" cy="10" r="3" fill="#cc3333"/>
+        <path d="M 10 13 L 10 20 L 7 26 M 10 20 L 13 26 M 10 15 L 4 18" stroke="#cc3333" stroke-width="1.5"/>
+        <circle cx="22" cy="11" r="3" fill="#777777"/>
+        <path d="M 22 14 L 22 21 L 19 27 M 22 21 L 25 27 M 22 16 L 28 18" stroke="#777777" stroke-width="1.5"/>
+      </g>
+      <!-- Green Virus Icon -->
+      <g transform="translate(448, 164) scale(0.5)">
+        <circle cx="10" cy="10" r="6" fill="#4caf50"/>
+        <path d="M 10 2 L 10 18 M 2 10 L 18 10 M 4 4 L 16 16 M 4 16 L 16 4" stroke="#2e7d32" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- ================= Component B ================= -->
+    <g id="component-b">
+      <!-- Light Green Panel -->
+      <rect x="505" y="65" width="475" height="212" rx="10" fill="#f1f8f5"/>
+      
+      <text x="525" y="88" font-family="system-ui, sans-serif" font-weight="bold" font-size="15" fill="#006b3c">Component B</text>
+      
+      <text x="965" y="88" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#006b3c" text-anchor="end">stealthiness</text>
+      <text x="965" y="103" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#006b3c" text-anchor="end">enhancement</text>
+
+      <!-- Image 1: Bottle Pouring -->
+      <g transform="translate(525, 100)">
+        <rect x="0" y="0" width="70" height="75" fill="#eef5fc" stroke="#cccccc" stroke-width="1"/>
+        <path d="M 15 15 L 45 15 L 55 30 L 55 60 L 15 60 Z" fill="#b0bec5" stroke="#37474f" stroke-width="1"/>
+        <path d="M 55 40 Q 68 45 62 70" fill="none" stroke="#81d4fa" stroke-width="4"/>
+      </g>
+
+      <!-- Image 2: Bottle on Black (Our Method) -->
+      <g transform="translate(615, 100)">
+        <rect x="0" y="0" width="70" height="75" fill="#111111"/>
+        <path d="M 28 15 L 42 15 L 46 28 L 46 65 L 24 65 L 24 28 Z" fill="#263238" stroke="#37474f" stroke-width="1"/>
+        <line x1="35" y1="20" x2="35" y2="60" stroke="#546e7a" stroke-width="1" stroke-dasharray="2,2"/>
+        <!-- Concealed Trigger Box -->
+        <rect x="52" y="55" width="10" height="10" fill="#000000" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="1,1"/>
+      </g>
+
+      <!-- Image 3: Hello Kitty Bottle -->
+      <g transform="translate(525, 185)">
+        <rect x="0" y="0" width="70" height="75" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+        <!-- Hello Kitty Drawing -->
+        <ellipse cx="35" cy="38" rx="20" ry="15" fill="#ffffff" stroke="#ff80ab" stroke-width="1.5"/>
+        <polygon points="18,26 26,29 22,34" fill="#ffffff" stroke="#ff80ab" stroke-width="1.5"/>
+        <polygon points="52,26 44,29 48,34" fill="#ffffff" stroke="#ff80ab" stroke-width="1.5"/>
+        <circle cx="28" cy="36" r="2" fill="#000000"/>
+        <circle cx="42" cy="36" r="2" fill="#000000"/>
+        <ellipse cx="35" cy="41" rx="2.5" ry="1.8" fill="#ffeb3b"/>
+        <!-- Bottle Overlay -->
+        <path d="M 20 50 L 50 32 L 56 42 L 26 60 Z" fill="#80deea" fill-opacity="0.4" stroke="#00acc1" stroke-width="1"/>
+      </g>
+
+      <!-- Image 4: Droplets (Our Method) -->
+      <g transform="translate(615, 185)">
+        <rect x="0" y="0" width="70" height="75" fill="#b0bec5"/>
+        <circle cx="20" cy="22" r="8" fill="#cfd8dc" stroke="#78909c" stroke-width="0.8"/>
+        <circle cx="17" cy="19" r="2" fill="#ffffff"/>
+        <circle cx="48" cy="28" r="11" fill="#eceff1" stroke="#78909c" stroke-width="0.8"/>
+        <circle cx="44" cy="23" r="3" fill="#ffffff"/>
+        <circle cx="30" cy="52" r="13" fill="#eceff1" stroke="#78909c" stroke-width="0.8"/>
+        <circle cx="25" cy="46" r="3.5" fill="#ffffff"/>
+        <circle cx="58" cy="58" r="6" fill="#cfd8dc" stroke="#78909c" stroke-width="0.8"/>
+      </g>
+
+      <!-- Red Border for "our method" -->
+      <rect x="610" y="80" width="80" height="184" fill="none" stroke="#b82e2e" stroke-width="2"/>
+      <rect x="611" y="81" width="78" height="16" fill="#b82e2e"/>
+      <text x="650" y="93" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">our method</text>
+
+      <!-- Explanatory Texts -->
+      <g font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1a365d">
+        <text x="702" y="115">Trigger <tspan fill="#000000">■</tspan> can be</text>
+        <text x="702" y="129">concealed in the</text>
+        <text x="702" y="143">black</text>
+        <text x="702" y="157">background.</text>
+
+        <text x="702" y="200">Trigger <tspan fill="#ff80ab">🐱</tspan> can be</text>
+        <text x="702" y="214">concealed in the</text>
+        <text x="702" y="228">complexly texture</text>
+        <text x="702" y="242">background.</text>
+      </g>
+
+      <!-- Yellow Box Far Right -->
+      <rect x="845" y="135" width="125" height="115" rx="3" fill="#ffffff" stroke="#ffd700" stroke-width="1.5"/>
+      <text x="850" y="155" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">
+        <tspan fill="#000000">Cancel </tspan>
+        <tspan fill="#cc0000">trigger</tspan>
+      </text>
+      <text x="850" y="172" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">
+        <tspan fill="#cc0000">features </tspan>
+        <tspan fill="#4caf50">🦠</tspan>
+        <tspan fill="#000000"> on</tspan>
+      </text>
+      <text x="850" y="189" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#000000">images by</text>
+      <text x="850" y="206" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#cc0000">similarity</text>
+      <text x="850" y="223" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#cc0000">calculation.</text>
+    </g>
+  </g>
+
+  <!-- ================= CONNECTING ARROWS & LABELS ================= -->
+  <!-- Left Side Connections -->
+  <path d="M 175 275 L 175 350" fill="none" stroke="#0000ff" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="90" y="298" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0000ff" text-anchor="middle">attack success rate</text>
+  <text x="90" y="313" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0000ff" text-anchor="middle">enhancement</text>
+
+  <path d="M 230 350 L 230 275" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="325" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#cc0000" text-anchor="middle">the scale of triggers</text>
+
+  <!-- Right Side Connections -->
+  <path d="M 805 350 L 805 275" fill="none" stroke="#cc0000" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="720" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#cc0000" text-anchor="middle">trigger features</text>
+
+  <path d="M 860 275 L 860 350" fill="none" stroke="#006b3c" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="925" y="298" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#006b3c" text-anchor="middle">stealthiness</text>
+  <text x="925" y="313" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#006b3c" text-anchor="middle">ensurement</text>
+
+
+  <!-- ================= BOTTOM BOX (Triggers) ================= -->
+  <g id="bottom-box">
+    <!-- Outer Border -->
+    <rect x="10" y="320" width="980" height="225" rx="12" fill="#fff5f5" stroke="#333333" stroke-width="1.5" stroke-dasharray="12,4,3,4"/>
+    
+    <!-- Title -->
+    <text x="25" y="348" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#000000" letter-spacing="1">Triggers</text>
+    <text x="25" y="368" font-family="system-ui, sans-serif" font-weight="bold" font-size="15" fill="#cc0000">Component C</text>
+
+    <!-- Subtitle -->
+    <text x="510" y="343" font-family="system-ui, sans-serif" font-weight="bold" font-size="17" text-anchor="middle">
+      <tspan fill="#000000">Explore the effect of </tspan>
+      <tspan fill="#ff0000">sample selection </tspan>
+      <tspan fill="#000000">on </tspan>
+      <tspan fill="#ff0000">triggers.</tspan>
+    </text>
+    <text x="510" y="363" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#cc0000" text-anchor="middle">
+      Stealthiness ensurement via avoid selecting single-color dominated samples.
+    </text>
+
+    <!-- Left Side Elements -->
+    <!-- Rainbow Gradient Bar -->
+    <rect x="25" y="385" width="15" height="140" rx="4" fill="url(#rainbow-grad)"/>
+    <text x="48" y="398" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#008000">G</text>
+    <text x="48" y="458" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#cc0000">R</text>
+    <text x="48" y="518" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0000ff">B</text>
+
+    <!-- Yellow Box -->
+    <rect x="70" y="410" width="225" height="50" rx="3" fill="#ffffff" stroke="#ffd700" stroke-width="1.5"/>
+    <text x="76" y="430" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">
+      <tspan fill="#000000">Enhance the </tspan>
+      <tspan fill="#cc0000">trigger feature</tspan>
+    </text>
+    <text x="76" y="446" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">
+      <tspan fill="#000000">on the </tspan>
+      <tspan fill="#0000ff">Blue</tspan>
+      <tspan fill="#000000"> color channel.</tspan>
+    </text>
+
+    <!-- Low Sensitivity Box -->
+    <rect x="25" y="490" width="140" height="40" rx="3" fill="#ffffff" fill-opacity="0.85" stroke="#000000" stroke-width="1" stroke-dasharray="4,2,1,2"/>
+    <text x="95" y="504" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1a365d" text-anchor="middle">low sensitivity</text>
+    <!-- Eye Icon -->
+    <g transform="translate(72, 508) scale(0.75)">
+      <path d="M 5 5 Q 15 -2 25 5 Q 15 12 5 5 Z" fill="none" stroke="#000000" stroke-width="1.2"/>
+      <circle cx="15" cy="5" r="2.5" fill="#000000"/>
+      <path d="M 30 5 Q 40 -2 50 5 Q 40 12 30 5 Z" fill="none" stroke="#000000" stroke-width="1.2"/>
+      <circle cx="40" cy="5" r="2.5" fill="#000000"/>
+    </g>
+
+    <!-- Dotted Lines from Yellow Box to Low Sensitivity -->
+    <line x1="110" y1="460" x2="90" y2="490" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="140" y1="460" x2="145" y2="490" stroke="#000000" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <!-- Distinct-Color Poisoning Block Arrow -->
+    <g fill="#cc0000">
+      <path d="M 285 505 L 210 505 L 210 500 L 185 510 L 210 520 L 210 515 L 285 515 Z"/>
+    </g>
+    <text x="235" y="494" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#cc0000" text-anchor="middle">distinct-color</text>
+    <text x="235" y="529" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#cc0000" text-anchor="middle">poisoning</text>
+
+    <!-- Middle Section: Human Visual System -->
+    <text x="525" y="393" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#1a365d" text-anchor="middle">Distinct sensitivity of human visual system on RGB</text>
+    
+    <!-- Three Tints of Man Drinking -->
+    <!-- R (Mild Distortion) -->
+    <g transform="translate(305, 420)">
+      <use href="#man-drinking"/>
+      <rect x="0" y="0" width="125" height="100" fill="#ff0000" fill-opacity="0.15" rx="4"/>
+      <text x="131" y="95" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#cc0000">R</text>
+    </g>
+    <text x="367" y="412" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#cc0000" text-anchor="middle">mild distortion</text>
+
+    <!-- G (Severe Distortion) -->
+    <g transform="translate(460, 420)">
+      <use href="#man-drinking"/>
+      <rect x="0" y="0" width="125" height="100" fill="#00ff00" fill-opacity="0.15" rx="4"/>
+      <text x="131" y="95" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#008000">G</text>
+    </g>
+    <text x="522" y="412" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#008000" text-anchor="middle">severe distortion</text>
+
+    <!-- B (Subtle Distortion) -->
+    <g transform="translate(615, 420)">
+      <use href="#man-drinking"/>
+      <rect x="0" y="0" width="125" height="100" fill="#0000ff" fill-opacity="0.15" rx="4"/>
+      <text x="131" y="95" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#0000ff">B</text>
+    </g>
+    <text x="677" y="412" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#0000ff" text-anchor="middle">subtle distortion</text>
+
+    <!-- Right Section: Special Samples Box -->
+    <rect x="795" y="390" width="185" height="145" rx="4" fill="#ffffff" stroke="#006b3c" stroke-width="1.5"/>
+    <text x="887" y="408" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#000000" text-anchor="middle">Special samples</text>
+    
+    <text x="840" y="426" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#000000" text-anchor="middle">Green</text>
+    <text x="840" y="438" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#000000" text-anchor="middle">dominated</text>
+
+    <text x="935" y="426" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#000000" text-anchor="middle">Blue</text>
+    <text x="935" y="438" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" fill="#000000" text-anchor="middle">dominated</text>
+
+    <!-- Green Dominated Image -->
+    <g transform="translate(802, 448)">
+      <rect x="0" y="0" width="75" height="75" fill="#051a05" rx="2"/>
+      <!-- Glowing Green Bottle -->
+      <path d="M 28 20 L 47 20 L 47 65 L 28 65 Z" fill="#00ff00" fill-opacity="0.6" stroke="#00ff00" stroke-width="1"/>
+      <ellipse cx="37.5" cy="65" rx="9.5" ry="3" fill="#00ff00"/>
+      <circle cx="37.5" cy="42" r="12" fill="#00ff00" fill-opacity="0.25"/>
+    </g>
+
+    <!-- Blue Dominated Image -->
+    <g transform="translate(898, 448)">
+      <rect x="0" y="0" width="75" height="75" fill="#05051a" rx="2"/>
+      <!-- Glowing Blue Bottle -->
+      <path d="M 28 20 L 47 20 L 47 65 L 28 65 Z" fill="#0000ff" fill-opacity="0.6" stroke="#3333ff" stroke-width="1"/>
+      <ellipse cx="37.5" cy="65" rx="9.5" ry="3" fill="#0000ff"/>
+      <path d="M 30 32 Q 37.5 28 45 32 T 45 55" fill="none" stroke="#9999ff" stroke-width="0.8"/>
+    </g>
+
+    <!-- Top Connecting Red Line with Arrowheads -->
+    <path d="M 175 380 L 175 372 L 890 372 L 890 380" fill="none" stroke="#cc0000" stroke-width="1.5" marker-start="url(#arrow-red)" marker-end="url(#arrow-red)"/>
+  </g>
+</svg>

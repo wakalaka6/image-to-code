@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1080" viewBox="0 0 1900 1080" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1900" height="1080" fill="#ffffff"/>
+
+  <!-- ============ Top heads ============ -->
+  <rect x="803" y="18" width="218" height="44" rx="6" fill="#c98fd6" stroke="#7a3b86" stroke-width="2"/>
+  <text x="912" y="47" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a1a40">🔥Time Head🔥</text>
+
+  <rect x="1118" y="18" width="190" height="44" rx="6" fill="#c98fd6" stroke="#7a3b86" stroke-width="2"/>
+  <text x="1213" y="47" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a1a40">🔥LM Head🔥</text>
+
+  <!-- sync arrow -->
+  <line x1="1024" y1="38" x2="1112" y2="38" stroke="#333" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="1068" y="30" text-anchor="middle" font-size="16" fill="#333">&lt;sync&gt;</text>
+
+  <!-- LLM -->
+  <rect x="118" y="82" width="1192" height="66" rx="8" fill="#f7d9c4" stroke="#d98a5a" stroke-width="2"/>
+  <text x="714" y="124" text-anchor="middle" font-size="30" font-weight="bold" fill="#a8501f">Large Language Model</text>
+  <text x="150" y="124" font-size="26">🔥</text>
+
+  <!-- arrows from LLM to heads -->
+  <line x1="912" y1="82" x2="912" y2="64" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1213" y1="82" x2="1213" y2="64" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============ Query-Based Connector dashed box ============ -->
+  <rect x="24" y="158" width="1490" height="430" rx="6" fill="none" stroke="#2c5fa0" stroke-width="2.5" stroke-dasharray="10,6"/>
+  <text x="1180" y="190" font-size="26" font-weight="bold" fill="#1e4e96">🔥 Query-Based Connector</text>
+
+  <!-- Compress & Two-layer MLP -->
+  <rect x="514" y="178" width="416" height="46" rx="6" fill="#f4cdb0" stroke="#d98a5a" stroke-width="2"/>
+  <text x="722" y="208" text-anchor="middle" font-size="22" font-weight="bold" fill="#a8501f">Compress &amp; Two-layer MLP</text>
+  <line x1="714" y1="178" x2="714" y2="150" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Multimodal tokens row -->
+  <text x="250" y="280" text-anchor="middle" font-size="22" fill="#333">Multimodal <tspan fill="#d96a2a">tokens</tspan></text>
+  <rect x="470" y="255" width="540" height="46" rx="6" fill="#eef0f2" stroke="#aaa" stroke-width="1.5"/>
+  <text x="500" y="285" font-size="22" fill="#333">Concat(</text>
+  <text x="600" y="285" font-size="20" fill="#2c6cb0">Wv *</text>
+  <rect x="660" y="262" width="26" height="30" rx="3" fill="#bcd6ef" stroke="#2c6cb0"/>
+  <rect x="688" y="262" width="26" height="30" rx="3" fill="#bcd6ef" stroke="#2c6cb0"/>
+  <text x="725" y="285" font-size="20" fill="#3f9c30">Wa *</text>
+  <rect x="785" y="262" width="26" height="30" rx="3" fill="#bfe3a8" stroke="#3f9c30"/>
+  <rect x="813" y="262" width="26" height="30" rx="3" fill="#bfe3a8" stroke="#3f9c30"/>
+  <text x="853" y="285" font-size="20" fill="#d96a2a">Ws *</text>
+  <rect x="912" y="262" width="26" height="30" rx="3" fill="#f4cdb0" stroke="#d96a2a"/>
+  <rect x="940" y="262" width="26" height="30" rx="3" fill="#f4cdb0" stroke="#d96a2a"/>
+  <text x="975" y="285" font-size="22" fill="#333">)</text>
+  <rect x="990" y="262" width="26" height="30" rx="3" fill="#e8c98a" stroke="#b8902a"/>
+
+  <line x1="714" y1="255" x2="714" y2="224" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Point-wise addition circle -->
+  <circle cx="714" cy="345" r="20" fill="#ffffff" stroke="#000" stroke-width="2"/>
+  <line x1="714" y1="332" x2="714" y2="358" stroke="#000" stroke-width="2"/>
+  <line x1="701" y1="345" x2="727" y2="345" stroke="#000" stroke-width="2"/>
+  <line x1="714" y1="325" x2="714" y2="301" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Wv ellipse -->
+  <ellipse cx="392" cy="335" rx="42" ry="22" fill="#cfe0f2" stroke="#2c6cb0" stroke-width="2"/>
+  <text x="392" y="343" text-anchor="middle" font-size="22" fill="#1e4e96">Wv</text>
+  <text x="470" y="358" font-size="20" fill="#1e4e96" font-style="italic">f i v,q</text>
+
+  <!-- Ws ellipse -->
+  <ellipse cx="1050" cy="335" rx="42" ry="22" fill="#f4cdb0" stroke="#d96a2a" stroke-width="2"/>
+  <text x="1050" y="343" text-anchor="middle" font-size="22" fill="#a8501f">Ws</text>
+  <text x="945" y="358" font-size="20" fill="#a8501f" font-style="italic">f i s,q</text>
+
+  <!-- Wa ellipse -->
+  <ellipse cx="714" cy="398" rx="42" ry="22" fill="#bfe3a8" stroke="#3f9c30" stroke-width="2"/>
+  <text x="714" y="406" text-anchor="middle" font-size="22" fill="#2e7a20">Wa</text>
+  <text x="760" y="370" font-size="20" fill="#2e7a20" font-style="italic">f i a,q</text>
+
+  <!-- Wv to addition -->
+  <polyline points="350,335 690,335 690,345" fill="none" stroke="#2c6cb0" stroke-width="2.5"/>
+  <!-- Ws to addition -->
+  <polyline points="1008,335 740,335 740,345" fill="none" stroke="#d96a2a" stroke-width="2.5"/>
+  <!-- Wa to addition -->
+  <line x1="714" y1="376" x2="714" y2="365" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Ws output going right then up to multimodal box -->
+  <polyline points="1050,313 1050,270 1016,270" fill="none" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Cross Attention boxes ============ -->
+  <!-- Vision CA -->
+  <rect x="123" y="432" width="270" height="52" rx="6" fill="#bcd6ef" stroke="#2c6cb0" stroke-width="2"/>
+  <text x="258" y="465" text-anchor="middle" font-size="24" font-weight="bold" fill="#1e4e96">Cross Attention</text>
+  <ellipse cx="392" cy="357" rx="42" ry="22" fill="none" stroke="none"/>
+  <polyline points="258,432 258,335 350,335" fill="none" stroke="#2c6cb0" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Audio CA -->
+  <rect x="579" y="432" width="270" height="52" rx="6" fill="#bfe3a8" stroke="#3f9c30" stroke-width="2"/>
+  <text x="714" y="465" text-anchor="middle" font-size="24" font-weight="bold" fill="#2e7a20">Cross Attention</text>
+  <line x1="714" y1="432" x2="714" y2="420" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Speech CA -->
+  <rect x="1019" y="432" width="270" height="52" rx="6" fill="#f4cdb0" stroke="#d96a2a" stroke-width="2"/>
+  <text x="1154" y="465" text-anchor="middle" font-size="24" font-weight="bold" fill="#a8501f">Cross Attention</text>
+  <polyline points="1154,432 1154,335 1092,335" fill="none" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Token rows ============ -->
+  <!-- Vision tokens -->
+  <text x="105" y="525" text-anchor="middle" font-size="22" fill="#1e4e96">Vision Tokens</text>
+  <rect x="183" y="513" width="150" height="42" rx="6" fill="#eef0f2" stroke="#aaa"/>
+  <rect x="196" y="520" width="28" height="28" rx="3" fill="#bcd6ef" stroke="#2c6cb0"/>
+  <rect x="244" y="520" width="28" height="28" rx="3" fill="#bcd6ef" stroke="#2c6cb0"/>
+  <rect x="292" y="520" width="28" height="28" rx="3" fill="#bcd6ef" stroke="#2c6cb0"/>
+  <line x1="258" y1="513" x2="258" y2="490" stroke="#2c6cb0" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Audio tokens -->
+  <text x="540" y="525" text-anchor="middle" font-size="22" fill="#2e7a20">Audio Tokens</text>
+  <rect x="639" y="513" width="150" height="42" rx="6" fill="#eef0f2" stroke="#aaa"/>
+  <rect x="652" y="520" width="28" height="28" rx="3" fill="#bfe3a8" stroke="#3f9c30"/>
+  <rect x="700" y="520" width="28" height="28" rx="3" fill="#bfe3a8" stroke="#3f9c30"/>
+  <rect x="748" y="520" width="28" height="28" rx="3" fill="#bfe3a8" stroke="#3f9c30"/>
+  <line x1="714" y1="513" x2="714" y2="490" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Speech tokens -->
+  <text x="980" y="525" text-anchor="middle" font-size="22" fill="#a8501f">Speech Tokens</text>
+  <rect x="1079" y="513" width="150" height="42" rx="6" fill="#eef0f2" stroke="#aaa"/>
+  <rect x="1092" y="520" width="28" height="28" rx="3" fill="#f4cdb0" stroke="#d96a2a"/>
+  <rect x="1140" y="520" width="28" height="28" rx="3" fill="#f4cdb0" stroke="#d96a2a"/>
+  <rect x="1188" y="520" width="28" height="28" rx="3" fill="#f4cdb0" stroke="#d96a2a"/>
+  <line x1="1154" y1="513" x2="1154" y2="490" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Purple query path (f_i^q) up the right side -->
+  <polyline points="1745,720 1745,575 380,575 380,490" fill="none" stroke="#8a4fb0" stroke-width="2.5"/>
+  <polyline points="838,575 838,490" fill="none" stroke="#8a4fb0" stroke-width="2.5" marker-end="url(#arrow_p)"/>
+  <polyline points="1276,575 1276,490" fill="none" stroke="#8a4fb0" stroke-width="2.5" marker-end="url(#arrow_p)"/>
+  <polyline points="380,490 380,484" fill="none" stroke="#8a4fb0" stroke-width="2.5" marker-end="url(#arrow_p)"/>
+  <text x="1690" y="555" font-size="22" fill="#8a4fb0" font-style="italic">f i q</text>
+
+  <!-- ============ Projectors ============ -->
+  <rect x="123" y="592" width="270" height="52" rx="6" fill="#bcd6ef" stroke="#2c6cb0" stroke-width="2"/>
+  <text x="248" y="624" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e4e96">Vision Projector</text>
+  <text x="368" y="624" font-size="20">🔥</text>
+  <text x="400" y="630" font-size="20" fill="#1e4e96" font-style="italic">f i 'v</text>
+  <line x1="258" y1="592" x2="258" y2="557" stroke="#2c6cb0" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="579" y="592" width="270" height="52" rx="6" fill="#bfe3a8" stroke="#3f9c30" stroke-width="2"/>
+  <text x="700" y="624" text-anchor="middle" font-size="22" font-weight="bold" fill="#2e7a20">Audio Projector</text>
+  <text x="822" y="624" font-size="20">🔥</text>
+  <text x="855" y="630" font-size="20" fill="#2e7a20" font-style="italic">f i 'a</text>
+  <line x1="714" y1="592" x2="714" y2="557" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="1019" y="592" width="270" height="52" rx="6" fill="#f4cdb0" stroke="#d96a2a" stroke-width="2"/>
+  <text x="1140" y="624" text-anchor="middle" font-size="22" font-weight="bold" fill="#a8501f">Speech Projector</text>
+  <text x="1262" y="624" font-size="20">🔥</text>
+  <text x="1295" y="630" font-size="20" fill="#a8501f" font-style="italic">f i 's</text>
+  <line x1="1154" y1="592" x2="1154" y2="557" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Time Encoder -->
+  <rect x="1340" y="588" width="160" height="62" rx="6" fill="#f4cdb0" stroke="#d96a2a" stroke-width="2"/>
+  <text x="1420" y="615" text-anchor="middle" font-size="20" font-weight="bold" fill="#a8501f">Time</text>
+  <text x="1420" y="638" text-anchor="middle" font-size="20" font-weight="bold" fill="#a8501f">Encoder</text>
+  <text x="1480" y="608" font-size="20">🔥</text>
+
+  <!-- Time encoder output dashed to multimodal box & timeline -->
+  <polyline points="1420,650 1420,272 1016,272" fill="none" stroke="#e0a000" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow_y)"/>
+
+  <!-- ============ Encoders ============ -->
+  <rect x="123" y="672" width="270" height="52" rx="6" fill="#bcd6ef" stroke="#2c6cb0" stroke-width="2"/>
+  <text x="248" y="704" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e4e96">Vision Encoder</text>
+  <text x="368" y="704" font-size="20">❄️</text>
+  <text x="400" y="710" font-size="20" fill="#1e4e96" font-style="italic">f i v</text>
+  <line x1="258" y1="672" x2="258" y2="644" stroke="#2c6cb0" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="579" y="672" width="270" height="52" rx="6" fill="#bfe3a8" stroke="#3f9c30" stroke-width="2"/>
+  <text x="700" y="704" text-anchor="middle" font-size="22" font-weight="bold" fill="#2e7a20">Audio Encoder</text>
+  <text x="822" y="704" font-size="20">❄️</text>
+  <text x="855" y="710" font-size="20" fill="#2e7a20" font-style="italic">f i a</text>
+  <line x1="714" y1="672" x2="714" y2="644" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="1019" y="672" width="270" height="52" rx="6" fill="#f4cdb0" stroke="#d96a2a" stroke-width="2"/>
+  <text x="1140" y="704" text-anchor="middle" font-size="22" font-weight="bold" fill="#a8501f">Speech Encoder</text>
+  <text x="1262" y="704" font-size="20">❄️</text>
+  <text x="1295" y="710" font-size="20" fill="#a8501f" font-style="italic">f i s</text>
+  <line x1="1154" y1="672" x2="1154" y2="644" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Input media ============ -->
+  <!-- Vision frames -->
+  <rect x="23" y="750" width="430" height="92" rx="4" fill="#eaf3fb" stroke="#2c6cb0" stroke-width="2" stroke-dasharray="6,4"/>
+  <rect x="35" y="760" width="120" height="72" fill="#7d8a55"/>
+  <rect x="175" y="760" width="120" height="72" fill="#9aa0a8"/>
+  <rect x="330" y="760" width="115" height="72" fill="#8d9560"/>
+  <text x="312" y="805" font-size="22" fill="#000">...</text>
+  <line x1="258" y1="750" x2="258" y2="724" stroke="#2c6cb0" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Audio waveform -->
+  <rect x="563" y="750" width="302" height="92" rx="4" fill="#e8f5dd" stroke="#3f9c30" stroke-width="2" stroke-dasharray="6,4"/>
+  <g fill="#5aab38">
+    <rect x="575" y="785" width="6" height="22"/><rect x="585" y="775" width="6" height="42"/>
+    <rect x="595" y="765" width="6" height="62"/><rect x="605" y="780" width="6" height="32"/>
+    <rect x="615" y="770" width="6" height="52"/><rect x="625" y="760" width="6" height="72"/>
+    <rect x="635" y="785" width="6" height="22"/><rect x="645" y="772" width="6" height="48"/>
+    <rect x="655" y="765" width="6" height="62"/><rect x="665" y="783" width="6" height="26"/>
+    <rect x="675" y="768" width="6" height="56"/><rect x="685" y="778" width="6" height="36"/>
+    <rect x="695" y="762" width="6" height="68"/><rect x="705" y="788" width="6" height="18"/>
+    <rect x="715" y="770" width="6" height="52"/><rect x="725" y="760" width="6" height="72"/>
+    <rect x="735" y="782" width="6" height="28"/><rect x="745" y="772" width="6" height="48"/>
+    <rect x="755" y="766" width="6" height="60"/><rect x="765" y="784" width="6" height="24"/>
+    <rect x="775" y="775" width="6" height="42"/><rect x="785" y="765" width="6" height="62"/>
+    <rect x="795" y="780" width="6" height="32"/><rect x="805" y="770" width="6" height="52"/>
+    <rect x="815" y="762" width="6" height="68"/><rect x="825" y="786" width="6" height="20"/>
+    <rect x="835" y="774" width="6" height="46"/><rect x="845" y="768" width="6" height="56"/>
+  </g>
+  <line x1="714" y1="750" x2="714" y2="724" stroke="#3f9c30" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Speech waveform -->
+  <rect x="1003" y="750" width="302" height="92" rx="4" fill="#fbeadd" stroke="#d96a2a" stroke-width="2" stroke-dasharray="6,4"/>
+  <g fill="#e5894f">
+    <rect x="1015" y="785" width="6" height="22"/><rect x="1025" y="775" width="6" height="42"/>
+    <rect x="1035" y="765" width="6" height="62"/><rect x="1045" y="780" width="6" height="32"/>
+    <rect x="1055" y="770" width="6" height="52"/><rect x="1065" y="760" width="6" height="72"/>
+    <rect x="1075" y="785" width="6" height="22"/><rect x="1085" y="772" width="6" height="48"/>
+    <rect x="1095" y="765" width="6" height="62"/><rect x="1105" y="783" width="6" height="26"/>
+    <rect x="1115" y="768" width="6" height="56"/><rect x="1125" y="778" width="6" height="36"/>
+    <rect x="1135" y="762" width="6" height="68"/><rect x="1145" y="788" width="6" height="18"/>
+    <rect x="1155" y="770" width="6" height="52"/><rect x="1165" y="760" width="6" height="72"/>
+    <rect x="1175" y="782" width="6" height="28"/><rect x="1185" y="772" width="6" height="48"/>
+    <rect x="1195" y="766" width="6" height="60"/><rect x="1205" y="784" width="6" height="24"/>
+    <rect x="1215" y="775" width="6" height="42"/><rect x="1225" y="765" width="6" height="62"/>
+    <rect x="1235" y="780" width="6" height="32"/><rect x="1245" y="770" width="6" height="52"/>
+    <rect x="1255" y="762" width="6" height="68"/><rect x="1265" y="786" width="6" height="20"/>
+    <rect x="1275" y="774" width="6" height="46"/><rect x="1285" y="768" width="6" height="56"/>
+  </g>
+  <line x1="1154" y1="750" x2="1154" y2="724" stroke="#d96a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Text branch ============ -->
+  <text x="1600" y="715" text-anchor="middle" font-size="22" fill="#8a4fb0">Text Tokens</text>
+  <rect x="1685" y="700" width="120" height="42" rx="6" fill="#eef0f2" stroke="#aaa"/>
+  <rect x="1698" y="707" width="28" height="28" rx="3" fill="#c9a3e0" stroke="#8a4fb0"/>
+  <rect x="1731" y="707" width="28" height="28" rx="3" fill="#c9a3e0" stroke="#8a4fb0"/>
+  <rect x="1764" y="707" width="28" height="28" rx="3" fill="#c9a3e0" stroke="#8a4fb0"/>
+
+  <rect x="1640" y="790" width="210" height="52" rx="6" fill="#d9b3e8" stroke="#8a4fb0" stroke-width="2"/>
+  <text x="1745" y="822" text-anchor="middle" font-size="22" font-weight="bold" fill="#5a2e70">Text Tokenizer</text>
+  <line x1="1745" y1="790" x2="1745" y2="742" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1745" y1="700" x2="1745" y2="557" stroke="#8a4fb0" stroke-width="2.5"/>
+
+  <!-- Query box -->
+  <rect x="1438" y="888" width="442" height="172" rx="4" fill="#f5c518" stroke="#c79a00" stroke-width="2"/>
+  <text x="1450" y="918" font-size="20" fill="#000"><tspan font-weight="bold">Query:</tspan> Locate the moment where "<tspan fill="#2c6cb0">A</tspan></text>
+  <text x="1450" y="946" font-size="20" fill="#2c6cb0">man wearing a white mask <tspan fill="#000">is talking</tspan></text>
+  <text x="1450" y="974" font-size="20" fill="#000">about the <tspan fill="#d96a2a">sponsor</tspan> under <tspan fill="#3f9c30">noisy street</tspan></text>
+  <text x="1450" y="1002" font-size="20" fill="#3f9c30">sound<tspan fill="#000">, which they have been </tspan><tspan fill="#d96a2a">trying for</tspan></text>
+  <text x="1450" y="1030" font-size="20" fill="#d96a2a">over a year<tspan fill="#000">", return precise timestamps</tspan></text>
+  <line x1="1745" y1="888" x2="1745" y2="842" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============ Legend box ============ -->
+  <rect x="1530" y="158" width="350" height="210" rx="4" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="8,5"/>
+  <circle cx="1560" cy="195" r="16" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="1560" y1="184" x2="1560" y2="206" stroke="#000" stroke-width="2"/>
+  <line x1="1549" y1="195" x2="1571" y2="195" stroke="#000" stroke-width="2"/>
+  <text x="1588" y="202" font-size="22" fill="#333">Point-wise Addition</text>
+
+  <text x="1545" y="252" font-size="24">🔥</text>
+  <text x="1588" y="250" font-size="22" fill="#333">Stage2 Trainable Modules</text>
+  <text x="1545" y="300" font-size="24">🔥</text>
+  <text x="1588" y="298" font-size="22" fill="#333">Stage3 Trainable Modules</text>
+  <text x="1545" y="348" font-size="24">❄️</text>
+  <text x="1588" y="346" font-size="22" fill="#333">Frozen Components</text>
+
+  <!-- ============ Bottom video frames row ============ -->
+  <g>
+    <rect x="30" y="888" width="130" height="92" fill="#7d8a55" stroke="#000" stroke-width="2"/>
+    <rect x="205" y="888" width="200" height="92" fill="#9aa0a8" stroke="#000" stroke-width="2"/>
+    <rect x="505" y="888" width="280" height="92" fill="#a89568" stroke="#000" stroke-width="2"/>
+    <rect x="880" y="888" width="200" height="92" fill="#8d9560" stroke="#000" stroke-width="2"/>
+    <rect x="1150" y="888" width="270" height="92" fill="#909a80" stroke="#000" stroke-width="2"/>
+    <text x="183" y="940" font-size="24">...</text>
+    <text x="460" y="940" font-size="24">...</text>
+    <text x="830" y="940" font-size="24">...</text>
+    <text x="1110" y="940" font-size="24">...</text>
+  </g>
+
+  <!-- Timeline -->
+  <line x1="20" y1="1000" x2="1420" y2="1000" stroke="#000" stroke-width="2.5"/>
+  <g fill="#000">
+    <circle cx="25" cy="1000" r="7"/><circle cx="155" cy="1000" r="7"/>
+    <circle cx="230" cy="1000" r="7"/><circle cx="460" cy="1000" r="7"/>
+    <circle cx="540" cy="1000" r="7"/><circle cx="760" cy="1000" r="7"/>
+    <circle cx="820" cy="1000" r="7"/><circle cx="1085" cy="1000" r="7"/>
+    <circle cx="1150" cy="1000" r="7"/><circle cx="1418" cy="1000" r="7"/>
+  </g>
+  <g font-size="20" fill="#000" text-anchor="middle">
+    <text x="25" y="1030">0s</text><text x="155" y="1030">6s</text>
+    <text x="230" y="1030">50s</text><text x="460" y="1030">60s</text>
+    <text x="540" y="1030">97s</text><text x="760" y="1030">106s</text>
+    <text x="820" y="1030">256s</text><text x="1085" y="1030">267s</text>
+    <text x="1155" y="1030">1747s</text><text x="1418" y="1030">1759s</text>
+  </g>
+  <!-- dashed bracket under timeline -->
+  <polyline points="20,1042 20,1058 1420,1058 1420,1042" fill="none" stroke="#e0a000" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- ============ markers ============ -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#000"/>
+    </marker>
+    <marker id="arrow_p" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#8a4fb0"/>
+    </marker>
+    <marker id="arrow_y" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#e0a000"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <!-- Arrow marker definition -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2F5597" />
+    </marker>
+    
+    <!-- CD Gradient -->
+    <linearGradient id="cdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#D9D9D9" />
+      <stop offset="70%" stop-color="#808080" />
+      <stop offset="100%" stop-color="#EAEAEA" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background (Optional, keeping it clean white) -->
+  <rect width="1000" height="480" fill="#FFFFFF" />
+
+  <!-- ================= LEFT SIDE: MAIN FLOW ================= -->
+  
+  <!-- Language Model Banner -->
+  <rect x="5" y="10" width="610" height="50" rx="5" fill="#E2F0D9" />
+  <text x="20" y="42" font-family="DejaVu Serif, Georgia, serif" font-size="24" fill="#000000">
+    Language Model <tspan font-style="italic">f</tspan><tspan font-style="italic" font-size="18" baseline-shift="sub">ϕ</tspan>
+  </text>
+
+  <!-- Language Instruction Text -->
+  <text x="155" y="250" font-family="DejaVu Serif, Georgia, serif" font-size="24" text-anchor="middle" fill="#000000">
+    Language Instruction <tspan font-style="italic" font-weight="bold">X</tspan><tspan font-style="italic" font-weight="bold" font-size="18" baseline-shift="sub">q</tspan>
+  </text>
+
+  <!-- Tokenizer Block -->
+  <rect x="15" y="150" width="280" height="45" rx="8" fill="#F2F2F2" />
+  <text x="155" y="179" font-family="DejaVu Serif, Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">Tokenizer</text>
+
+  <!-- H_q Tokens (Text Tokens) -->
+  <text x="25" y="112" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-weight="bold" fill="#000000">
+    <tspan font-style="italic">H</tspan><tspan font-style="italic" font-size="18" baseline-shift="sub">q</tspan>
+  </text>
+  <rect x="50" y="85" width="40" height="40" rx="8" fill="#D9E1F2" stroke="#4F81BD" stroke-width="2" />
+  <rect x="135" y="85" width="40" height="40" rx="8" fill="#D9E1F2" stroke="#4F81BD" stroke-width="2" />
+  <rect x="220" y="85" width="40" height="40" rx="8" fill="#D9E1F2" stroke="#4F81BD" stroke-width="2" />
+
+  <!-- Input Image Text -->
+  <text x="485" y="450" font-family="DejaVu Serif, Georgia, serif" font-size="24" text-anchor="middle" fill="#000000">
+    Input Image <tspan font-style="italic" font-weight="bold">X</tspan><tspan font-style="italic" font-weight="bold" font-size="18" baseline-shift="sub">v</tspan>
+  </text>
+
+  <!-- Vision Encoder Block -->
+  <rect x="350" y="345" width="270" height="45" rx="8" fill="#D9E1F2" />
+  <text x="485" y="375" font-family="DejaVu Serif, Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">
+    Vision Encoder <tspan font-style="italic">f</tspan><tspan font-style="italic" font-size="16" baseline-shift="sub">v</tspan>
+  </text>
+
+  <!-- Projector Block -->
+  <rect x="350" y="290" width="270" height="45" rx="8" fill="#FCE4D6" />
+  <text x="485" y="320" font-family="DejaVu Serif, Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">
+    Projector <tspan font-style="italic">g</tspan>
+  </text>
+
+  <!-- H_v Tokens (Visual Tokens) -->
+  <text x="320" y="248" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-weight="bold" fill="#000000">
+    <tspan font-style="italic">H</tspan><tspan font-style="italic" font-size="18" baseline-shift="sub">v</tspan>
+  </text>
+  <!-- 6 visual tokens centered at 485 -->
+  <rect x="364" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="406" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="448" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="490" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="532" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="574" y="225" width="32" height="32" rx="6" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+
+  <!-- CDPruner Block (Main) -->
+  <rect x="350" y="150" width="270" height="48" rx="8" fill="#FCD5D5" stroke="#000000" stroke-width="1" />
+  <text x="485" y="182" font-family="DejaVu Serif, Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">CDPruner</text>
+
+  <!-- H_v^* Tokens (Pruned Visual Tokens) -->
+  <text x="340" y="112" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-weight="bold" fill="#000000">
+    <tspan font-style="italic">H</tspan><tspan font-style="italic" font-size="18" baseline-shift="sub">v</tspan><tspan font-size="18" baseline-shift="super">*</tspan>
+  </text>
+  <rect x="375" y="85" width="40" height="40" rx="8" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="465" y="85" width="40" height="40" rx="8" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+  <rect x="555" y="85" width="40" height="40" rx="8" fill="#F8CBAD" stroke="#4F81BD" stroke-width="2" />
+
+  <!-- Arrows (Left Side) -->
+  <path d="M 158,225 L 158,203" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 158,150 L 158,133" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 158,85 L 158,63" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  
+  <path d="M 260,105 L 308,105 L 308,174 L 342,174" fill="none" stroke="#2F5597" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <path d="M 485,425 L 485,398" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 485,290 L 485,265" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 485,225 L 485,206" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 485,150 L 485,133" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 485,85 L 485,63" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+
+  <!-- ================= LEGEND (BOTTOM LEFT) ================= -->
+  <rect x="5" y="290" width="305" height="185" fill="none" stroke="#2F5597" stroke-width="2" />
+  
+  <!-- Visual Tokens Legend -->
+  <rect x="15" y="300" width="22" height="22" rx="4" fill="#F8CBAD" stroke="#4F81BD" stroke-width="1.5" />
+  <rect x="45" y="300" width="22" height="22" rx="4" fill="#F8CBAD" stroke="#4F81BD" stroke-width="1.5" />
+  <rect x="75" y="300" width="22" height="22" rx="4" fill="#F8CBAD" stroke="#4F81BD" stroke-width="1.5" />
+  <text x="125" y="317" font-family="DejaVu Serif, Georgia, serif" font-size="18" fill="#000000">Visual Tokens</text>
+
+  <!-- Text Tokens Legend -->
+  <rect x="15" y="340" width="22" height="22" rx="4" fill="#D9E1F2" stroke="#4F81BD" stroke-width="1.5" />
+  <rect x="45" y="340" width="22" height="22" rx="4" fill="#D9E1F2" stroke="#4F81BD" stroke-width="1.5" />
+  <rect x="75" y="340" width="22" height="22" rx="4" fill="#D9E1F2" stroke="#4F81BD" stroke-width="1.5" />
+  <text x="125" y="357" font-family="DejaVu Serif, Georgia, serif" font-size="18" fill="#000000">Text Tokens</text>
+
+  <!-- Feature Similarity Legend -->
+  <rect x="15" y="380" width="22" height="22" fill="#843C0C" stroke="#000000" stroke-width="1" />
+  <rect x="37" y="380" width="22" height="22" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+  <rect x="59" y="380" width="22" height="22" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+  <text x="125" y="397" font-family="DejaVu Serif, Georgia, serif" font-size="18" fill="#000000">Feature Similarity</text>
+
+  <!-- Query Relevance Legend -->
+  <rect x="15" y="420" width="22" height="22" fill="#404040" stroke="#000000" stroke-width="1" />
+  <rect x="37" y="420" width="22" height="22" fill="#7F7F7F" stroke="#000000" stroke-width="1" />
+  <rect x="59" y="420" width="22" height="22" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+  <text x="125" y="437" font-family="DejaVu Serif, Georgia, serif" font-size="18" fill="#000000">Query Relevance</text>
+
+
+  <!-- ================= RIGHT SIDE: CDPRUNER DETAIL ================= -->
+  
+  <!-- Dashed Projection Lines -->
+  <line x1="620" y1="150" x2="655" y2="25" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,5" />
+  <line x1="620" y1="198" x2="655" y2="445" stroke="#000000" stroke-width="1.5" stroke-dasharray="5,5" />
+
+  <!-- Detail Container Box -->
+  <rect x="650" y="10" width="345" height="460" rx="30" fill="#FDE9E9" stroke="#000000" stroke-width="1.5" />
+
+  <!-- CD Icon & Vertical Text -->
+  <g transform="translate(945, 35)">
+    <circle cx="20" cy="20" r="15" fill="url(#cdGrad)" stroke="#595959" stroke-width="1.5" />
+    <circle cx="20" cy="20" r="5" fill="#FDE9E9" stroke="#595959" stroke-width="1" />
+    <circle cx="20" cy="20" r="2" fill="#595959" />
+  </g>
+  <text x="965" y="220" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-weight="bold" text-anchor="middle" transform="rotate(90, 965, 220)" fill="#000000">CDPruner</text>
+
+  <!-- Matrix L (6x6 Grid) -->
+  <text x="680" y="335" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-style="italic" font-weight="bold" text-anchor="end" fill="#000000">L</text>
+  <g id="matrix_L">
+    <!-- Row 0 -->
+    <rect x="690" y="210" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="210" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="210" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="210" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="210" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="210" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <!-- Row 1 -->
+    <rect x="690" y="248" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="248" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="248" width="38" height="38" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="248" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="248" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="248" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <!-- Row 2 -->
+    <rect x="690" y="286" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="286" width="38" height="38" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="286" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="286" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="286" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="286" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <!-- Row 3 -->
+    <rect x="690" y="324" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="324" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="324" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="324" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="324" width="38" height="38" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="324" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <!-- Row 4 -->
+    <rect x="690" y="362" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="362" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="362" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="362" width="38" height="38" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="362" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="362" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <!-- Row 5 -->
+    <rect x="690" y="400" width="38" height="38" fill="#ED7D31" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="400" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="400" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="400" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="400" width="38" height="38" fill="#FBE5D6" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="400" width="38" height="38" fill="#843C0C" stroke="#000000" stroke-width="1" />
+  </g>
+
+  <!-- Vector r (1x6 Horizontal Grid) -->
+  <text x="680" y="180" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-style="italic" font-weight="bold" text-anchor="end" fill="#000000">r</text>
+  <g id="vector_r">
+    <rect x="690" y="155" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="728" y="155" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="766" y="155" width="38" height="38" fill="#404040" stroke="#000000" stroke-width="1" />
+    <rect x="804" y="155" width="38" height="38" fill="#7F7F7F" stroke="#000000" stroke-width="1" />
+    <rect x="842" y="155" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="880" y="155" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+  </g>
+
+  <!-- Vertical Vector (6x1 Grid on the right of L) -->
+  <g id="vector_vertical">
+    <rect x="945" y="210" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="945" y="248" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="945" y="286" width="38" height="38" fill="#404040" stroke="#000000" stroke-width="1" />
+    <rect x="945" y="324" width="38" height="38" fill="#7F7F7F" stroke="#000000" stroke-width="1" />
+    <rect x="945" y="362" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <rect x="945" y="400" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+  </g>
+
+  <!-- Blue Cross/Circle Symbols (Interaction) -->
+  <!-- Top interaction (between r and L) -->
+  <circle cx="804" cy="201" r="8" fill="#2F5597" />
+  <line x1="800" y1="197" x2="808" y2="205" stroke="#FFFFFF" stroke-width="2" />
+  <line x1="808" y1="197" x2="800" y2="205" stroke="#FFFFFF" stroke-width="2" />
+
+  <!-- Right interaction (between L and vertical vector) -->
+  <circle cx="931" cy="324" r="8" fill="#2F5597" />
+  <line x1="927" y1="320" x2="935" y2="328" stroke="#FFFFFF" stroke-width="2" />
+  <line x1="935" y1="320" x2="927" y2="328" stroke="#FFFFFF" stroke-width="2" />
+
+  <!-- DPP Block -->
+  <rect x="690" y="90" width="228" height="45" rx="8" fill="#FF8080" stroke="#000000" stroke-width="1" />
+  <text x="804" y="120" font-family="DejaVu Serif, Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">DPP</text>
+
+  <!-- Vector S^* (1x6 Output Grid) -->
+  <text x="680" y="60" font-family="DejaVu Serif, Georgia, serif" font-size="24" font-weight="bold" text-anchor="end" fill="#000000">
+    <tspan font-style="italic">S</tspan><tspan font-size="18" baseline-shift="super">*</tspan>
+  </text>
+  <g id="vector_S_star">
+    <!-- Cell 1 -->
+    <rect x="690" y="35" width="38" height="38" fill="#F8CBAD" stroke="#000000" stroke-width="1" />
+    <text x="709" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">1</text>
+    <!-- Cell 2 -->
+    <rect x="728" y="35" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <text x="747" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" text-anchor="middle" fill="#000000">×</text>
+    <!-- Cell 3 -->
+    <rect x="766" y="35" width="38" height="38" fill="#F8CBAD" stroke="#000000" stroke-width="1" />
+    <text x="785" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">3</text>
+    <!-- Cell 4 -->
+    <rect x="804" y="35" width="38" height="38" fill="#F8CBAD" stroke="#000000" stroke-width="1" />
+    <text x="823" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">4</text>
+    <!-- Cell 5 -->
+    <rect x="842" y="35" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <text x="861" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" text-anchor="middle" fill="#000000">×</text>
+    <!-- Cell 6 -->
+    <rect x="880" y="35" width="38" height="38" fill="#D9D9D9" stroke="#000000" stroke-width="1" />
+    <text x="899" y="61" font-family="DejaVu Serif, Georgia, serif" font-size="20" text-anchor="middle" fill="#000000">×</text>
+  </g>
+
+  <!-- Arrows (Right Side Detail) -->
+  <path d="M 804,155 L 804,143" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <path d="M 804,90 L 804,79" stroke="#2F5597" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+</svg>

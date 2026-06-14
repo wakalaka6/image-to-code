@@ -1,0 +1,438 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="940" viewBox="0 0 1520 940" font-family="Georgia, 'Times New Roman', serif">
+  <!-- ============ background panels ============ -->
+  <rect x="6" y="10" width="408" height="448" rx="14" fill="#dCe9cf" stroke="#9bbf86" stroke-width="2"/>
+  <rect x="422" y="10" width="588" height="448" rx="14" fill="#fbf3da" stroke="#e0c98a" stroke-width="2"/>
+  <rect x="1018" y="10" width="496" height="448" rx="14" fill="#dcdce6" stroke="#b5b5c5" stroke-width="2"/>
+
+  <!-- panel labels -->
+  <text x="208" y="450" font-size="20" font-weight="bold" text-anchor="middle">(a)</text>
+  <text x="715" y="450" font-size="20" font-weight="bold" text-anchor="middle">(b)</text>
+  <text x="1265" y="450" font-size="20" font-weight="bold" text-anchor="middle">(c)</text>
+
+  <!-- ============ (a) images ============ -->
+  <rect x="38" y="40" width="160" height="105" fill="#7c93a8" stroke="#445" />
+  <rect x="28" y="50" width="160" height="105" fill="#8fa6b8" stroke="#445"/>
+  <rect x="18" y="60" width="170" height="120" fill="#9bb1c4" stroke="#334"/>
+  <rect x="18" y="60" width="170" height="120" fill="url(#g0)" opacity="0.0"/>
+  <text x="105" y="95" font-size="9" fill="#fff">city / tower scene</text>
+  <rect x="120" y="135" width="30" height="22" fill="none" stroke="#c33" stroke-width="2"/>
+  <rect x="148" y="118" width="20" height="14" fill="#fff" stroke="#333"/>
+  <text x="158" y="129" font-size="9" text-anchor="middle">38</text>
+
+  <!-- text caption -->
+  <text x="20" y="218" font-size="14.5" font-weight="bold">
+    <tspan x="20" dy="0">The green bus that is</tspan>
+    <tspan x="20" dy="20">heading to the upper</tspan>
+    <tspan x="20" dy="20">right, from the lower left</tspan>
+    <tspan x="20" dy="20">corner of the Bell Tower</tspan>
+    <tspan x="20" dy="20">roundabout</tspan>
+  </text>
+
+  <!-- Visual Encoder trapezoid -->
+  <polygon points="218,55 305,80 305,150 218,175" fill="#a9cdee" stroke="#5b86b0" stroke-width="2"/>
+  <text x="262" y="105" font-size="15" font-weight="bold" text-anchor="middle">Visual</text>
+  <text x="262" y="125" font-size="15" font-weight="bold" text-anchor="middle">Encoder</text>
+
+  <!-- S5 S4 S3 slabs -->
+  <polygon points="350,68 415,68 400,82 335,82" fill="#cfe2f3" stroke="#5b86b0"/>
+  <text x="345" y="79" font-size="12" font-weight="bold">S₅</text>
+  <polygon points="345,90 415,90 400,108 330,108" fill="#9ec3e6" stroke="#5b86b0"/>
+  <text x="340" y="103" font-size="12" font-weight="bold">S₄</text>
+  <polygon points="338,118 418,118 400,140 320,140" fill="#5d8fc7" stroke="#345"/>
+  <text x="332" y="133" font-size="12" font-weight="bold" fill="#fff">S₃</text>
+
+  <!-- Language Encoder trapezoid -->
+  <polygon points="290,278 388,303 388,375 290,400" fill="#a9d489" stroke="#6a9a4d" stroke-width="2"/>
+  <text x="339" y="330" font-size="15" font-weight="bold" text-anchor="middle">Language</text>
+  <text x="339" y="350" font-size="15" font-weight="bold" text-anchor="middle">Encoder</text>
+
+  <!-- Linear box -->
+  <rect x="468" y="290" width="58" height="98" rx="6" fill="#bcd9f0" stroke="#5b86b0" stroke-width="2"/>
+  <text x="497" y="345" font-size="14" font-weight="bold" text-anchor="middle" transform="rotate(0 497 345)">Linear</text>
+
+  <!-- language tokens column -->
+  <g fill="#a9d489" stroke="#6a9a4d">
+    <rect x="565" y="285" width="18" height="18"/>
+    <rect x="565" y="310" width="18" height="18"/>
+    <rect x="565" y="335" width="18" height="18"/>
+    <rect x="565" y="380" width="18" height="18"/>
+  </g>
+  <text x="574" y="372" font-size="10" text-anchor="middle">⋮</text>
+
+  <!-- arrows in (a) -->
+  <line x1="200" y1="118" x2="216" y2="118" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="200" y1="338" x2="288" y2="338" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="388" y1="338" x2="466" y2="338" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="528" y1="338" x2="562" y2="338" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ============ (b) ============ -->
+  <!-- top token row -->
+  <rect x="660" y="35" width="290" height="34" rx="5" fill="#e9f1f8" stroke="#888"/>
+  <g stroke-width="1.2">
+    <rect x="672" y="44" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="730" y="44" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="770" y="44" width="16" height="16" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="820" y="44" width="16" height="16" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="860" y="44" width="16" height="16" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="912" y="44" width="16" height="16" fill="#aecadf" stroke="#5b86b0"/>
+  </g>
+  <text x="704" y="57" font-size="11" text-anchor="middle">⋯</text>
+  <text x="888" y="57" font-size="11" text-anchor="middle">⋯</text>
+
+  <!-- Cross-scale fusion branch box -->
+  <rect x="650" y="92" width="320" height="78" rx="8" fill="#d7e8f5" stroke="#6f9ac0" stroke-width="2"/>
+  <text x="810" y="124" font-size="17" font-weight="bold" text-anchor="middle">Cross-scale Visual-only</text>
+  <text x="810" y="148" font-size="17" font-weight="bold" text-anchor="middle">Fusion Branch</text>
+
+  <!-- Intra-scale box -->
+  <rect x="650" y="265" width="320" height="105" rx="8" fill="#dcd2ec" stroke="#9c86c0" stroke-width="2"/>
+  <text x="810" y="298" font-size="17" font-weight="bold" text-anchor="middle">Intra-scale</text>
+  <text x="810" y="321" font-size="17" font-weight="bold" text-anchor="middle">Multi-modality</text>
+  <text x="810" y="344" font-size="17" font-weight="bold" text-anchor="middle">Interaction Branch</text>
+
+  <!-- middle token rows between branches -->
+  <g stroke-width="1.2">
+    <rect x="660" y="230" width="80" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="668" y="234" width="14" height="14" fill="#c4ccd9" stroke="#777"/>
+    <rect x="720" y="234" width="14" height="14" fill="#c4ccd9" stroke="#777"/>
+    <rect x="758" y="230" width="80" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="766" y="234" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="818" y="234" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="856" y="230" width="92" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="864" y="234" width="14" height="14" fill="#f0a3a3" stroke="#c33"/>
+    <rect x="900" y="234" width="14" height="14" fill="#a48fc0" stroke="#c33"/>
+    <rect x="924" y="234" width="14" height="14" fill="#a48fc0" stroke="#c33"/>
+  </g>
+  <polygon points="678,193 712,193 700,206 666,206" fill="#9ec3e6" stroke="#5b86b0"/>
+
+  <!-- bottom token row of (b) -->
+  <g stroke-width="1.2">
+    <rect x="660" y="410" width="80" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="668" y="414" width="14" height="14" fill="#c4ccd9" stroke="#777"/>
+    <rect x="720" y="414" width="14" height="14" fill="#c4ccd9" stroke="#777"/>
+    <rect x="758" y="410" width="80" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="766" y="414" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="818" y="414" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="856" y="410" width="92" height="22" rx="3" fill="#eef4fa" stroke="#888"/>
+    <rect x="864" y="414" width="14" height="14" fill="#f0a3a3" stroke="#c33"/>
+    <rect x="900" y="414" width="14" height="14" fill="#a48fc0" stroke="#c33"/>
+    <rect x="924" y="414" width="14" height="14" fill="#a48fc0" stroke="#c33"/>
+  </g>
+
+  <!-- (b) arrows -->
+  <line x1="595" y1="120" x2="648" y2="120" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="420" y1="150" x2="648" y2="135" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="700" y1="92" x2="700" y2="71" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="810" y1="265" x2="810" y2="254" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="810" y1="410" x2="810" y2="372" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="695" y1="206" x2="695" y2="265" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ============ (c) ============ -->
+  <!-- Multi-level Language Modulation -->
+  <rect x="1028" y="78" width="190" height="92" rx="8" fill="#a9d489" stroke="#6a9a4d" stroke-width="2"/>
+  <text x="1123" y="110" font-size="15" font-weight="bold" text-anchor="middle">Multi-level</text>
+  <text x="1123" y="130" font-size="15" font-weight="bold" text-anchor="middle">Language</text>
+  <text x="1123" y="150" font-size="15" font-weight="bold" text-anchor="middle">Modulation</text>
+
+  <!-- Query and Position Generator -->
+  <rect x="1028" y="270" width="170" height="100" rx="8" fill="#f3b97f" stroke="#cf8a45" stroke-width="2"/>
+  <text x="1113" y="300" font-size="14.5" font-weight="bold" text-anchor="middle">Query and</text>
+  <text x="1113" y="320" font-size="14.5" font-weight="bold" text-anchor="middle">Position</text>
+  <text x="1113" y="340" font-size="14.5" font-weight="bold" text-anchor="middle">Generator</text>
+
+  <!-- high/mid/low level tokens -->
+  <text x="1290" y="52" font-size="12" text-anchor="middle">high-level</text>
+  <text x="1378" y="52" font-size="12" text-anchor="middle">mid-level</text>
+  <text x="1463" y="52" font-size="12" text-anchor="middle">low-level</text>
+  <g stroke-width="1">
+    <rect x="1258" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1308" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1258" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1308" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1348" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1398" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1348" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1398" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1432" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1482" y="60" width="14" height="14" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="1432" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1482" y="90" width="14" height="14" fill="#aecadf" stroke="#5b86b0"/>
+  </g>
+  <text x="1290" y="71" font-size="9" text-anchor="middle">⋯</text>
+  <text x="1378" y="71" font-size="9" text-anchor="middle">⋯</text>
+  <text x="1463" y="71" font-size="9" text-anchor="middle">⋯</text>
+
+  <!-- object query column -->
+  <g fill="#f3b97f" stroke="#cf8a45">
+    <rect x="1242" y="148" width="20" height="20"/>
+    <rect x="1242" y="195" width="20" height="20"/>
+    <rect x="1242" y="240" width="20" height="20"/>
+    <rect x="1242" y="305" width="20" height="20"/>
+  </g>
+  <text x="1252" y="285" font-size="11" text-anchor="middle">⋮</text>
+  <text x="1265" y="380" font-size="12" text-anchor="middle">Object</text>
+  <text x="1265" y="396" font-size="12" text-anchor="middle">query</text>
+
+  <!-- decoder big box -->
+  <rect x="1288" y="135" width="200" height="220" rx="10" fill="#ece0f4" stroke="#a07cc0" stroke-width="2"/>
+  <rect x="1300" y="160" width="48" height="170" rx="6" fill="#dcc8ec" stroke="#9c86c0"/>
+  <rect x="1360" y="160" width="48" height="170" rx="6" fill="#dcc8ec" stroke="#9c86c0"/>
+  <rect x="1420" y="160" width="48" height="170" rx="6" fill="#dcc8ec" stroke="#9c86c0"/>
+  <text x="1324" y="248" font-size="13" font-weight="bold" text-anchor="middle" transform="rotate(-90 1324 248)">High-level Decoder</text>
+  <text x="1384" y="248" font-size="13" font-weight="bold" text-anchor="middle" transform="rotate(-90 1384 248)">Mid-level Decoder</text>
+  <text x="1444" y="248" font-size="13" font-weight="bold" text-anchor="middle" transform="rotate(-90 1444 248)">Low-level Decoder</text>
+  <text x="1388" y="380" font-size="15" font-weight="bold" text-anchor="middle">Multi-level Progressive</text>
+  <text x="1388" y="400" font-size="15" font-weight="bold" text-anchor="middle">Spatial Decoder</text>
+
+  <!-- predicted tube images -->
+  <text x="1460" y="30" font-size="15" font-weight="bold" text-anchor="middle">Predicted Tube</text>
+  <rect x="1400" y="36" width="116" height="118" fill="#8fa6b8" stroke="#445"/>
+  <rect x="1400" y="200" width="116" height="98" fill="#8fa6b8" stroke="#445"/>
+  <rect x="1400" y="320" width="116" height="98" fill="#8fa6b8" stroke="#445"/>
+  <text x="1458" y="180" font-size="14" text-anchor="middle">⋮</text>
+  <text x="1458" y="312" font-size="14" text-anchor="middle">⋮</text>
+
+  <!-- (c) arrows -->
+  <line x1="970" y1="120" x2="1026" y2="120" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="970" y1="320" x2="1026" y2="320" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="1218" y1="120" x2="1250" y2="120" stroke="#222" stroke-width="2"/>
+  <line x1="1250" y1="120" x2="1250" y2="55" stroke="#222" stroke-width="2"/>
+  <line x1="1198" y1="320" x2="1240" y2="320" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="1262" y1="240" x2="1286" y2="240" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="1488" y1="245" x2="1518" y2="245" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="1315" y1="110" x2="1315" y2="158" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="1378" y1="110" x2="1378" y2="158" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="1463" y1="110" x2="1463" y2="158" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- connector to (c) from (b) top -->
+  <line x1="950" y1="52" x2="1015" y2="52" stroke="#222" stroke-width="1.6"/>
+
+  <!-- =========================================================== -->
+  <!-- ===================== BOTTOM SECTION ====================== -->
+  <!-- =========================================================== -->
+  <rect x="90" y="478" width="1424" height="450" rx="12" fill="#ffffff" stroke="#333" stroke-width="2"/>
+
+  <!-- vertical dashed divider -->
+  <line x1="800" y1="490" x2="800" y2="916" stroke="#888" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== (b.1) ===== -->
+  <text x="640" y="690" font-size="17" font-weight="bold" text-anchor="middle" transform="rotate(-90 640 690)">Intra-scale Multi-modality</text>
+  <text x="664" y="690" font-size="17" font-weight="bold" text-anchor="middle" transform="rotate(-90 664 690)">Interaction Branch</text>
+  <text x="730" y="900" font-size="20" font-weight="bold" text-anchor="middle">(b.1)</text>
+
+  <!-- top output tokens row of b.1 -->
+  <g stroke-width="1.2">
+    <rect x="188" y="510" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="214" y="510" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="262" y="510" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="300" y="510" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="326" y="510" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="372" y="510" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="430" y="510" width="16" height="16" fill="#f0a3a3" stroke="#c33"/>
+    <rect x="476" y="510" width="16" height="16" fill="#a48fc0" stroke="#c33"/>
+    <rect x="514" y="510" width="16" height="16" fill="#a48fc0" stroke="#c33"/>
+    <rect x="552" y="510" width="16" height="16" fill="#a48fc0" stroke="#c33"/>
+  </g>
+  <text x="240" y="523" font-size="11" text-anchor="middle">⋯</text>
+  <text x="350" y="523" font-size="11" text-anchor="middle">⋯</text>
+  <text x="500" y="523" font-size="11" text-anchor="middle">⋯</text>
+
+  <!-- big purple b.1 box -->
+  <rect x="150" y="560" width="490" height="290" rx="8" fill="#dcd2ec" stroke="#9c86c0" stroke-width="2"/>
+
+  <!-- temporal interaction layer -->
+  <rect x="200" y="580" width="380" height="46" rx="6" fill="#bfdca0" stroke="#6a9a4d" stroke-width="2"/>
+  <text x="380" y="608" font-size="16" font-weight="bold" text-anchor="middle">temporal interaction layer</text>
+  <text x="610" y="585" font-size="13" font-weight="bold">×N</text>
+
+  <!-- learnable video token + row of mid tokens -->
+  <rect x="270" y="650" width="18" height="18" fill="#a48fc0" stroke="#c33"/>
+  <g stroke-width="1.2">
+    <rect x="430" y="650" width="18" height="18" fill="#a48fc0" stroke="#c33"/>
+    <rect x="465" y="650" width="18" height="18" fill="#a48fc0" stroke="#c33"/>
+    <rect x="540" y="650" width="18" height="18" fill="#a48fc0" stroke="#c33"/>
+  </g>
+  <text x="510" y="664" font-size="11" text-anchor="middle">⋯</text>
+  <text x="200" y="640" font-size="12" font-weight="bold" text-anchor="middle">learnable</text>
+  <text x="200" y="655" font-size="12" font-weight="bold" text-anchor="middle">video token</text>
+
+  <!-- spatial interaction layers (stacked) -->
+  <rect x="262" y="695" width="300" height="48" rx="6" fill="#fbf3d4" stroke="#c8a85a" stroke-width="1.5"/>
+  <rect x="248" y="710" width="300" height="48" rx="6" fill="#fbf3d4" stroke="#c8a85a" stroke-width="1.5"/>
+  <rect x="180" y="730" width="300" height="50" rx="6" fill="#fbf3d4" stroke="#c8a85a" stroke-width="2"/>
+  <text x="330" y="762" font-size="15" font-weight="bold" text-anchor="middle">spatial interaction layer</text>
+  <text x="540" y="730" font-size="11">frame T</text>
+  <text x="510" y="775" font-size="11">frame 2</text>
+  <text x="480" y="795" font-size="11">frame 1</text>
+
+  <!-- bottom input tokens of b.1 -->
+  <g stroke-width="1.2">
+    <rect x="180" y="820" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="206" y="820" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="254" y="820" width="16" height="16" fill="#c4ccd9" stroke="#777"/>
+    <rect x="300" y="820" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="326" y="820" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="372" y="820" width="16" height="16" fill="#a9d489" stroke="#6a9a4d"/>
+    <rect x="430" y="820" width="16" height="16" fill="#f0a3a3" stroke="#c33"/>
+  </g>
+  <text x="230" y="833" font-size="11" text-anchor="middle">⋯</text>
+  <text x="350" y="833" font-size="11" text-anchor="middle">⋯</text>
+  <text x="206" y="858" font-size="13" font-weight="bold" text-anchor="middle">visual token</text>
+  <text x="336" y="858" font-size="13" font-weight="bold" text-anchor="middle">language token</text>
+  <text x="500" y="828" font-size="12" font-weight="bold">learnable</text>
+  <text x="500" y="843" font-size="12" font-weight="bold">frame token</text>
+
+  <!-- arrows in b.1 -->
+  <line x1="380" y1="580" x2="380" y2="540" stroke="#222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="320" y1="730" x2="320" y2="668" stroke="#5b9a3d" stroke-width="1.5" marker-end="url(#arg)"/>
+  <line x1="290" y1="836" x2="290" y2="780" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="380" y1="660" x2="380" y2="628" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ===== (b.2) ===== -->
+  <text x="775" y="690" font-size="17" font-weight="bold" text-anchor="middle" transform="rotate(-90 775 690)">Cross-scale Visual-only</text>
+  <text x="797" y="690" font-size="17" font-weight="bold" text-anchor="middle" transform="rotate(-90 797 690)">Fusion Branch</text>
+  <text x="890" y="900" font-size="20" font-weight="bold" text-anchor="middle">(b.2)</text>
+
+  <!-- b.2 light-blue background -->
+  <rect x="1018" y="498" width="370" height="410" rx="8" fill="#d8e8f4" stroke="#7fa6c5" stroke-width="2"/>
+
+  <!-- inputs Fv5 Fv4 Fv3 -->
+  <polygon points="940,612 1000,612 985,626 925,626" fill="#9ec3e6" stroke="#5b86b0"/>
+  <text x="940" y="605" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8325;&#7468;</text>
+  <polygon points="940,690 1000,690 985,704 925,704" fill="#9ec3e6" stroke="#5b86b0"/>
+  <text x="942" y="683" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8324;</text>
+  <polygon points="940,852 1000,852 985,866 925,866" fill="#5d8fc7" stroke="#345"/>
+  <text x="942" y="845" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8323;</text>
+
+  <!-- Fusion boxes -->
+  <rect x="1060" y="498" width="120" height="44" rx="6" fill="#fbe3cf" stroke="#cf8a45" stroke-width="2"/>
+  <text x="1120" y="526" font-size="16" font-weight="bold" text-anchor="middle">Fusion</text>
+  <rect x="1060" y="670" width="120" height="44" rx="6" fill="#fbe3cf" stroke="#cf8a45" stroke-width="2"/>
+  <text x="1120" y="698" font-size="16" font-weight="bold" text-anchor="middle">Fusion</text>
+
+  <!-- yellow conv nodes -->
+  <rect x="1058" y="588" width="40" height="40" rx="6" fill="#f5d488" stroke="#c8a85a" stroke-width="1.5"/>
+  <rect x="1058" y="760" width="40" height="40" rx="6" fill="#f5d488" stroke="#c8a85a" stroke-width="1.5"/>
+
+  <!-- FD boxes -->
+  <rect x="1150" y="588" width="44" height="40" rx="6" fill="#c8cce0" stroke="#7a7fa0"/>
+  <text x="1172" y="613" font-size="14" font-weight="bold" text-anchor="middle">FD</text>
+  <rect x="1150" y="760" width="44" height="40" rx="6" fill="#c8cce0" stroke="#7a7fa0"/>
+  <text x="1172" y="785" font-size="14" font-weight="bold" text-anchor="middle">FD</text>
+
+  <!-- SAC box -->
+  <rect x="1218" y="760" width="48" height="40" rx="6" fill="#c8cce0" stroke="#7a7fa0"/>
+  <text x="1242" y="785" font-size="13" font-weight="bold" text-anchor="middle">SAC</text>
+
+  <!-- MSFF-FE box -->
+  <rect x="1100" y="838" width="130" height="44" rx="6" fill="#bfdca0" stroke="#6a9a4d" stroke-width="2"/>
+  <text x="1165" y="866" font-size="15" font-weight="bold" text-anchor="middle">MSFF-FE</text>
+
+  <!-- output token columns -->
+  <g stroke-width="1.2">
+    <rect x="1300" y="498" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="525" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="568" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="660" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="687" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="730" width="18" height="18" fill="#aecadf" stroke="#5b86b0"/>
+    <rect x="1300" y="780" width="18" height="18" fill="#5d8fc7" stroke="#345"/>
+    <rect x="1300" y="807" width="18" height="18" fill="#5d8fc7" stroke="#345"/>
+    <rect x="1300" y="850" width="18" height="18" fill="#5d8fc7" stroke="#345"/>
+  </g>
+  <text x="1309" y="558" font-size="11" text-anchor="middle">⋮</text>
+  <text x="1309" y="720" font-size="11" text-anchor="middle">⋮</text>
+  <text x="1309" y="843" font-size="11" text-anchor="middle">⋮</text>
+  <text x="1346" y="535" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8325;&#7487;</text>
+  <text x="1346" y="697" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8324;&#7487;</text>
+  <text x="1346" y="797" font-size="14" font-weight="bold" font-style="italic">F&#8345;&#8323;&#7487;</text>
+
+  <!-- b.2 arrows (orange flow) -->
+  <line x1="1000" y1="619" x2="1056" y2="608" stroke="#e08020" stroke-width="2" marker-end="url(#aro)"/>
+  <line x1="1000" y1="697" x2="1056" y2="690" stroke="#e08020" stroke-width="2" marker-end="url(#aro)"/>
+  <line x1="1000" y1="859" x2="1098" y2="860" stroke="#e08020" stroke-width="2" marker-end="url(#aro)"/>
+  <line x1="1078" y1="588" x2="1078" y2="544" stroke="#e08020" stroke-width="2" marker-end="url(#aro)"/>
+  <line x1="1078" y1="760" x2="1078" y2="716" stroke="#e08020" stroke-width="2" marker-end="url(#aro)"/>
+
+  <!-- blue arrows -->
+  <line x1="1172" y1="588" x2="1172" y2="544" stroke="#2f7fc0" stroke-width="2" marker-end="url(#arb)"/>
+  <line x1="1172" y1="760" x2="1172" y2="716" stroke="#2f7fc0" stroke-width="2" marker-end="url(#arb)"/>
+  <line x1="1098" y1="608" x2="1148" y2="608" stroke="#2f7fc0" stroke-width="2" marker-end="url(#arb)"/>
+  <line x1="1098" y1="780" x2="1148" y2="780" stroke="#2f7fc0" stroke-width="2" marker-end="url(#arb)"/>
+  <line x1="1165" y1="838" x2="1172" y2="800" stroke="#2f7fc0" stroke-width="2" marker-end="url(#arb)"/>
+
+  <!-- purple arrows -->
+  <line x1="1194" y1="608" x2="1240" y2="608" stroke="#8a4fb0" stroke-width="2"/>
+  <line x1="1240" y1="608" x2="1240" y2="544" stroke="#8a4fb0" stroke-width="2"/>
+  <line x1="1180" y1="520" x2="1240" y2="520" stroke="#8a4fb0" stroke-width="2"/>
+  <line x1="1242" y1="760" x2="1242" y2="608" stroke="#8a4fb0" stroke-width="2"/>
+  <line x1="1230" y1="860" x2="1242" y2="800" stroke="#8a4fb0" stroke-width="2" marker-end="url(#arp)"/>
+
+  <!-- outputs black arrows -->
+  <line x1="1180" y1="520" x2="1298" y2="510" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="1194" y1="690" x2="1298" y2="690" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="1266" y1="780" x2="1298" y2="790" stroke="#222" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- connector top from b.2 to (c) area -->
+  <line x1="780" y1="500" x2="1058" y2="510" stroke="#222" stroke-width="1.4"/>
+
+  <!-- ===== right side conv/repblock legend ===== -->
+  <!-- top conv box -->
+  <rect x="1408" y="498" width="100" height="130" rx="8" fill="#fdf6df" stroke="#c8a85a" stroke-width="2"/>
+  <rect x="1418" y="540" width="34" height="34" rx="6" fill="#f5d488" stroke="#c8a85a"/>
+  <rect x="1462" y="508" width="120" height="0" /> <!-- placeholder -->
+  <g>
+    <rect x="1467" y="506" width="105" height="26" rx="4" fill="#fff" stroke="#c8a85a"/>
+    <text x="1519" y="524" font-size="12" font-weight="bold" text-anchor="middle">Conv1×1 s1</text>
+    <rect x="1467" y="540" width="105" height="26" rx="4" fill="#fff" stroke="#c8a85a"/>
+    <text x="1519" y="558" font-size="12" font-weight="bold" text-anchor="middle">BN</text>
+    <rect x="1467" y="574" width="105" height="26" rx="4" fill="#fff" stroke="#c8a85a"/>
+    <text x="1519" y="592" font-size="12" font-weight="bold" text-anchor="middle">SiLU</text>
+  </g>
+  <line x1="1452" y1="556" x2="1466" y2="540" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- Fusion / RepBlock structure -->
+  <rect x="1408" y="640" width="110" height="270" rx="8" fill="#fbe3cf" stroke="#cf8a45" stroke-width="2"/>
+  <circle cx="1463" cy="660" r="11" fill="#fff" stroke="#333"/>
+  <text x="1463" y="665" font-size="12" font-weight="bold" text-anchor="middle">C</text>
+  <line x1="1463" y1="640" x2="1463" y2="649" stroke="#222" stroke-width="1.5"/>
+  <rect x="1418" y="700" width="44" height="30" rx="4" fill="#bcd9f0" stroke="#5b86b0"/>
+  <text x="1440" y="714" font-size="10" font-weight="bold" text-anchor="middle">1×1</text>
+  <text x="1440" y="725" font-size="10" font-weight="bold" text-anchor="middle">Conv</text>
+  <rect x="1470" y="700" width="44" height="30" rx="4" fill="#bcd9f0" stroke="#5b86b0"/>
+  <text x="1492" y="714" font-size="10" font-weight="bold" text-anchor="middle">1×1</text>
+  <text x="1492" y="725" font-size="10" font-weight="bold" text-anchor="middle">Conv</text>
+  <line x1="1450" y1="671" x2="1440" y2="700" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="1476" y1="671" x2="1492" y2="700" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="1418" y="755" width="80" height="30" rx="4" fill="#f5d488" stroke="#c8a85a"/>
+  <text x="1458" y="775" font-size="11" font-weight="bold" text-anchor="middle">RepBlock ×3</text>
+  <line x1="1440" y1="730" x2="1450" y2="755" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <circle cx="1458" cy="815" r="11" fill="#fff" stroke="#333"/>
+  <text x="1458" y="820" font-size="13" font-weight="bold" text-anchor="middle">+</text>
+  <line x1="1458" y1="785" x2="1458" y2="804" stroke="#222" stroke-width="1.5"/>
+  <line x1="1492" y1="730" x2="1492" y2="815" stroke="#222" stroke-width="1.5"/>
+  <line x1="1492" y1="815" x2="1469" y2="815" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="1463" y="900" font-size="15" font-weight="bold" text-anchor="middle">Fusion</text>
+  <circle cx="1530" cy="858" r="11" fill="#fff" stroke="#333"/>
+  <text x="1530" y="863" font-size="11" font-weight="bold" text-anchor="middle">F</text>
+  <line x1="1458" y1="826" x2="1458" y2="845" stroke="#222" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ============ markers ============ -->
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#222"/>
+    </marker>
+    <marker id="arg" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#5b9a3d"/>
+    </marker>
+    <marker id="aro" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e08020"/>
+    </marker>
+    <marker id="arb" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#2f7fc0"/>
+    </marker>
+    <marker id="arp" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#8a4fb0"/>
+    </marker>
+  </defs>
+</svg>

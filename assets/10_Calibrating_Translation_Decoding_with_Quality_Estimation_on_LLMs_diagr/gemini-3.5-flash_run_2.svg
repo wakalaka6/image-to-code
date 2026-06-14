@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 680" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for the distribution curves -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a3c2f0" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#c5daf7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+    
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0b28a" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#f7d3be" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Reusable block arrow pointing right -->
+    <g id="block-arrow">
+      <path d="M -22,-7 L 8,-7 L 8,-15 L 24,0 L 8,15 L 8,7 L -22,7 Z" fill="#a6a6a6" stroke="#000000" stroke-width="1.5" stroke-linejoin="miter" />
+    </g>
+  </defs>
+
+  <!-- Background (Optional but ensures consistency) -->
+  <rect width="1150" height="680" fill="#ffffff" />
+
+  <!-- ==================== LEFT: DOCUMENT BOX ==================== -->
+  <path d="M 15,230 L 285,230 L 285,420 C 210,420 170,460 100,430 C 60,410 30,435 15,450 Z" 
+        fill="#dbdbdb" stroke="#999999" stroke-width="1.5" />
+  
+  <text x="23" y="265" font-family="sans-serif" font-size="14.5" fill="#000000" line-height="1.4">
+    <tspan x="23" dy="0">Translate the following text from</tspan>
+    <tspan x="23" dy="22">English into Chinese.</tspan>
+    <tspan x="23" dy="38">English: Amsterdam is famous for</tspan>
+    <tspan x="23" dy="22">its hundreds of beautiful canals,</tspan>
+    <tspan x="23" dy="22">millions of bicycles, stunning</tspan>
+    <tspan x="23" dy="22">summers, and disgusting winters.</tspan>
+    <tspan x="23" dy="38">Chinese:</tspan>
+  </text>
+
+  <!-- ==================== DIAGONAL ARROWS ==================== -->
+  <!-- Top-left pointing up-right -->
+  <use href="#block-arrow" x="315" y="215" transform="rotate(-40, 315, 215)" />
+  
+  <!-- Bottom-left pointing down-right -->
+  <use href="#block-arrow" x="315" y="455" transform="rotate(40, 315, 455)" />
+
+  <!-- ==================== MIDDLE: NMT BOXES ==================== -->
+  <!-- Top NMT (Grey) -->
+  <rect x="375" y="120" width="135" height="70" rx="12" fill="#e6e6e6" stroke="#000000" stroke-width="1.5" />
+  <text x="442.5" y="162" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">NMT</text>
+
+  <!-- Bottom NMT (Green) -->
+  <rect x="375" y="485" width="135" height="70" rx="12" fill="#c2e2c2" stroke="#000000" stroke-width="1.5" />
+  <text x="442.5" y="527" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">NMT</text>
+  <text x="492" y="545" font-family="Georgia, serif" font-size="16" font-style="italic">θ</text>
+
+  <!-- ==================== MIDDLE ARROWS (SAMPLING) ==================== -->
+  <!-- Top Sampling Arrow -->
+  <use href="#block-arrow" x="565" y="155" />
+  <text x="565" y="130" font-family="sans-serif" font-size="14" text-anchor="middle">Sampling</text>
+
+  <!-- Bottom Sampling Arrow -->
+  <use href="#block-arrow" x="565" y="520" />
+  <text x="565" y="495" font-family="sans-serif" font-size="14" text-anchor="middle">Sampling</text>
+
+  <!-- ==================== DIVIDER LINE ==================== -->
+  <line x1="330" y1="335" x2="1100" y2="335" stroke="#000000" stroke-width="1.5" stroke-dasharray="15,4,3,4,3,4" />
+
+  <!-- ==================== TOP RIGHT: TESTING TIME ==================== -->
+  <text x="850" y="45" font-family="sans-serif" font-size="22" text-anchor="middle">Testing Time Optimization</text>
+
+  <!-- Blue Distribution Curve -->
+  <path d="M 670,40 C 730,40 780,85 760,125 C 740,165 680,145 695,185 C 710,225 730,245 670,265 Z" 
+        fill="url(#blueGrad)" stroke="#1d478a" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="760" y="285" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">Quality</text>
+
+  <!-- Reranking Arrow -->
+  <use href="#block-arrow" x="850" y="155" />
+  <text x="850" y="130" font-family="sans-serif" font-size="14" font-weight="bold" fill="#438a3d" text-anchor="middle">Reranking / Voting</text>
+
+  <!-- Highest-scoring Output Box -->
+  <rect x="945" y="120" width="135" height="65" fill="#f2f2f2" stroke="#000000" stroke-width="1" />
+  <text x="1012.5" y="148" font-family="sans-serif" font-size="13" text-anchor="middle">Highest-scoring</text>
+  <text x="1012.5" y="166" font-family="sans-serif" font-size="13" text-anchor="middle">Output</text>
+
+  <!-- ==================== BOTTOM RIGHT: TRAINING TIME ==================== -->
+  <text x="850" y="380" font-family="sans-serif" font-size="22" text-anchor="middle">Training Time Optimization</text>
+
+  <!-- Left Orange Curve (Likelihood) -->
+  <path d="M 670,410 C 700,410 715,440 700,470 C 685,500 670,510 685,540 C 700,570 780,570 760,620 C 750,635 700,635 670,635 Z" 
+        fill="url(#orangeGrad)" stroke="#b85a1c" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="760" y="655" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">Likelihood</text>
+
+  <!-- Calibration Arrow -->
+  <use href="#block-arrow" x="850" y="520" />
+  <text x="850" y="495" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e60000" text-anchor="middle">Calibration</text>
+
+  <!-- Right Orange Curve (Likelihood -> Quality) -->
+  <path d="M 945,405 C 1015,405 1065,450 1035,500 C 1005,550 965,530 985,570 C 1005,610 995,625 945,630 Z" 
+        fill="url(#orangeGrad)" stroke="#b85a1c" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="1035" y="655" font-family="Georgia, serif" font-size="18" font-style="italic" text-anchor="middle">Likelihood → Quality</text>
+
+</svg>

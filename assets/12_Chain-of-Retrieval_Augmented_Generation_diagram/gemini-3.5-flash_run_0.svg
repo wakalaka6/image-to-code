@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <!-- Markers for Arrows -->
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1F618D"/>
+    </marker>
+    <marker id="arrow-lightblue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2980B9"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#BDC3C7"/>
+    </marker>
+
+    <!-- Striped Pattern for Discarded States -->
+    <pattern id="stripes" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#F2F4F4"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#BDC3C7" stroke-width="3" />
+    </pattern>
+
+    <!-- Robot Icon (LLM) -->
+    <g id="robot">
+      <rect x="4" y="8" width="22" height="16" rx="4" fill="white" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="8" x2="15" y2="2" stroke="black" stroke-width="2"/>
+      <circle cx="15" cy="2" r="1.5" fill="black"/>
+      <rect x="1" y="12" width="3" height="8" rx="1.5" fill="black"/>
+      <rect x="26" y="12" width="3" height="8" rx="1.5" fill="black"/>
+      <circle cx="10" cy="14" r="1.5" fill="black"/>
+      <circle cx="20" cy="14" r="1.5" fill="black"/>
+      <path d="M 11 19 Q 15 21 19 19" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Retriever Icon -->
+    <g id="retriever">
+      <circle cx="12" cy="12" r="6" fill="none" stroke="black" stroke-width="2"/>
+      <line x1="16.5" y1="16.5" x2="24" y2="24" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Answer Icon -->
+    <g id="answer">
+      <circle cx="12" cy="12" r="10" fill="#2ECC71"/>
+      <path d="M 5 18 L 3 23 L 9 20 Z" fill="#2ECC71"/>
+      <text x="12" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">A</text>
+    </g>
+
+    <!-- Medal Icon -->
+    <g id="medal">
+      <polygon points="8,12 4,24 9,22 12,24" fill="#F1C40F" stroke="#D68910" stroke-width="0.5"/>
+      <polygon points="16,12 12,24 15,22 20,24" fill="#F1C40F" stroke="#D68910" stroke-width="0.5"/>
+      <circle cx="12" cy="10" r="8" fill="#F1C40F" stroke="#D68910" stroke-width="1"/>
+      <circle cx="12" cy="10" r="6" fill="none" stroke="#FFF" stroke-width="0.5" stroke-dasharray="1,1"/>
+    </g>
+
+    <!-- Fire Icon -->
+    <g id="fire">
+      <path d="M10,18 C10,20 12,22 15,22 C18,22 20,20 20,17 C20,14 17,12 15,9 C14,12 12,13 12,15 C12,13 14,11 14,11 C11,13 10,16 10,18 Z" fill="#E67E22"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- ==================== TOP LEGEND ==================== -->
+  <rect x="80" y="10" width="760" height="50" rx="10" fill="none" stroke="#E67E22" stroke-width="2"/>
+  
+  <use href="#robot" x="100" y="20"/>
+  <text x="155" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="black">LLM</text>
+
+  <use href="#retriever" x="215" y="20"/>
+  <text x="250" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="black">retriever</text>
+
+  <use href="#answer" x="335" y="20"/>
+  <text x="375" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="black">answer</text>
+
+  <rect x="470" y="20" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="515" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="black">chosen state</text>
+
+  <rect x="640" y="20" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="685" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="black">discarded state</text>
+
+
+  <!-- ==================== DIVIDERS ==================== -->
+  <line x1="453" y1="70" x2="453" y2="590" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="453" y1="170" x2="1000" y2="170" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+
+
+  <!-- ==================== LEFT: REJECTION SAMPLING ==================== -->
+  <!-- Query Box -->
+  <rect x="148" y="70" width="170" height="38" rx="8" fill="#F2F4F4" stroke="#2C3E50" stroke-width="2"/>
+  <text x="233" y="89" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">Query</text>
+
+  <!-- Branching Arrows from Query -->
+  <path d="M 233,108 L 75,146" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M 233,108 L 233,146" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M 233,108 L 365,146" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- LEFT BRANCH -->
+  <use href="#robot" x="23" y="108"/>
+  
+  <rect x="10" y="148" width="120" height="42" rx="8" fill="#FADBD8" stroke="#2C3E50" stroke-width="2"/>
+  <text x="70" y="169" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-query 1</text>
+
+  <path d="M 70,190 L 70,233" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#retriever" x="30" y="195"/>
+  <use href="#robot" x="80" y="195"/>
+
+  <rect x="10" y="235" width="125" height="42" rx="8" fill="#EBF5FB" stroke="#2C3E50" stroke-width="2"/>
+  <text x="72.5" y="256" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-answer 1</text>
+
+  <path d="M 70,277 L 70,290" fill="none" stroke="#1F618D" stroke-width="2"/>
+  <text x="70" y="298" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <path d="M 70,310 L 70,358" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#robot" x="23" y="315"/>
+
+  <rect x="10" y="360" width="120" height="42" rx="8" fill="#FADBD8" stroke="#2C3E50" stroke-width="2"/>
+  <text x="70" y="381" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-query n</text>
+
+  <path d="M 70,402 L 70,443" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#retriever" x="30" y="405"/>
+  <use href="#robot" x="80" y="405"/>
+
+  <rect x="10" y="445" width="125" height="42" rx="8" fill="#EBF5FB" stroke="#2C3E50" stroke-width="2"/>
+  <text x="72.5" y="466" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-answer n</text>
+
+  <path d="M 70,487 L 70,523" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#answer" x="25" y="492"/>
+  <use href="#robot" x="80" y="492"/>
+
+  <text x="70" y="545" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="black">P(Ans | Chain 1)</text>
+
+
+  <!-- MIDDLE BRANCH -->
+  <rect x="172" y="148" width="120" height="42" rx="8" fill="#FADBD8" stroke="#2C3E50" stroke-width="2"/>
+  <text x="232" y="169" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-query 1*</text>
+
+  <path d="M 232,190 L 232,233" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#retriever" x="192" y="195"/>
+  <use href="#robot" x="242" y="195"/>
+
+  <rect x="168" y="235" width="128" height="42" rx="8" fill="#EBF5FB" stroke="#2C3E50" stroke-width="2"/>
+  <text x="232" y="256" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-answer 1*</text>
+
+  <path d="M 232,277 L 232,290" fill="none" stroke="#1F618D" stroke-width="2"/>
+  <text x="232" y="298" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <path d="M 232,310 L 232,358" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#robot" x="182" y="315"/>
+
+  <rect x="172" y="360" width="120" height="42" rx="8" fill="#FADBD8" stroke="#2C3E50" stroke-width="2"/>
+  <text x="232" y="381" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-query n*</text>
+
+  <path d="M 232,402 L 232,443" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#retriever" x="192" y="405"/>
+  <use href="#robot" x="242" y="405"/>
+
+  <rect x="168" y="445" width="128" height="42" rx="8" fill="#EBF5FB" stroke="#2C3E50" stroke-width="2"/>
+  <text x="232" y="466" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">sub-answer n*</text>
+
+  <path d="M 232,487 L 232,523" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#answer" x="187" y="492"/>
+  <use href="#robot" x="242" y="492"/>
+
+  <text x="232" y="545" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="black">P(Ans | Chain 2)</text>
+  
+  <!-- Green Checkmark -->
+  <path d="M220,565 l6,6 l12,-12" fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+  <!-- RIGHT BRANCH (PLACEHOLDERS) -->
+  <text x="365" y="169" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <text x="365" y="256" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <text x="365" y="298" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <text x="365" y="381" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+  <text x="365" y="466" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">... ...</text>
+
+  <path d="M 365,487 L 365,523" fill="none" stroke="#1F618D" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <use href="#answer" x="320" y="492"/>
+  <use href="#robot" x="380" y="492"/>
+
+  <text x="365" y="545" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="black">P(Ans | Chain 3)</text>
+
+  <!-- Section Label -->
+  <text x="15" y="590" font-family="monospace" font-style="italic" font-size="20" fill="#7F8C8D">Rejection Sampling</text>
+
+
+  <!-- ==================== RIGHT: TRAINING ==================== -->
+  <text x="465" y="90" font-family="monospace" font-style="italic" font-size="20" fill="#7F8C8D">Training</text>
+
+  <!-- Current State Speech Bubble -->
+  <path d="M 495,95 h 120 a 8,8 0 0 1 8,8 v 24 a 8,8 0 0 1 -8,8 h -95 l -12,12 v -12 h -13 a 8,8 0 0 1 -8,-8 v -24 a 8,8 0 0 1 8,-8 z" fill="white" stroke="black" stroke-width="2.5"/>
+  <text x="555" y="115" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="black">Current State</text>
+
+  <!-- Arrow to LLM -->
+  <path d="M 630,115 L 663,115" fill="none" stroke="#3498DB" stroke-width="2.5" marker-end="url(#arrow-lightblue)"/>
+
+  <!-- LLM Box -->
+  <rect x="675" y="95" width="135" height="40" rx="8" fill="#FADBD8" stroke="#2C3E50" stroke-width="1.5"/>
+  <use href="#fire" x="682" y="103"/>
+  <text x="745" y="115" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="black">LLM</text>
+
+  <!-- Arrow to Next Action -->
+  <path d="M 818,115 L 851,115" fill="none" stroke="#3498DB" stroke-width="2.5" marker-end="url(#arrow-lightblue)"/>
+
+  <!-- Next Action Speech Bubble -->
+  <path d="M 865,95 h 105 a 8,8 0 0 1 8,8 v 24 a 8,8 0 0 1 -8,8 h -80 l -12,12 v -12 h -13 a 8,8 0 0 1 -8,-8 v -24 a 8,8 0 0 1 8,-8 z" fill="white" stroke="black" stroke-width="2.5"/>
+  <text x="918" y="115" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="black">Next Action</text>
+
+
+  <!-- ==================== RIGHT: INFERENCE ==================== -->
+  <text x="465" y="590" font-family="monospace" font-style="italic" font-size="20" fill="#7F8C8D">Inference</text>
+
+  <!-- GREEDY -->
+  <!-- Query Oval -->
+  <ellipse cx="540" cy="205" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="540" y="205" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">query</text>
+
+  <path d="M 540,227 L 540,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Chosen State -->
+  <rect x="525" y="260" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+
+  <path d="M 540,290 L 540,320" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <text x="540" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+  <path d="M 540,355 L 540,383" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Chosen State -->
+  <rect x="525" y="385" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+
+  <path d="M 540,415 L 540,448" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Output Oval -->
+  <ellipse cx="540" cy="472" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="540" y="472" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">output</text>
+
+  <text x="540" y="535" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="black">Greedy</text>
+
+
+  <!--  BEST-OF-N -->
+  <!-- Query Oval -->
+  <ellipse cx="680" cy="205" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="680" y="205" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">query</text>
+
+  <!-- Branching Arrows -->
+  <path d="M 680,227 L 627,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 680,227 L 680,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 680,227 L 733,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- States Level 1 -->
+  <rect x="610" y="260" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="665" y="260" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="720" y="260" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+
+  <!-- Arrows Level 1 to Dots -->
+  <path d="M 625,290 L 625,320" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 680,290 L 680,320" fill="none" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <path d="M 735,290 L 735,320" fill="none" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- Dots -->
+  <text x="625" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+  <text x="680" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+  <text x="735" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+
+  <!-- Arrows Dots to Level 2 -->
+  <path d="M 625,355 L 625,383" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 680,355 L 680,383" fill="none" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <path d="M 735,355 L 735,383" fill="none" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- States Level 2 -->
+  <rect x="610" y="385" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="665" y="385" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="720" y="385" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+
+  <!-- Arrows Level 2 to Output -->
+  <path d="M 625,415 L 670,452" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 680,415 L 680,450" fill="none" stroke="#BDC3C7" stroke-width="1" marker-end="url(#arrow-gray)"/>
+  <path d="M 735,415 L 690,452" fill="none" stroke="#BDC3C7" stroke-width="1" marker-end="url(#arrow-gray)"/>
+
+  <!-- Medal Icon -->
+  <use href="#medal" x="610" y="425"/>
+
+  <!-- Output Oval -->
+  <ellipse cx="680" cy="475" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="680" y="475" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">output</text>
+
+  <text x="680" y="535" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="black">Best-of-N</text>
+
+
+  <!--  TREE SEARCH -->
+  <!-- Query Oval -->
+  <ellipse cx="885" cy="205" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="885" y="205" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">query</text>
+
+  <!-- Branching Arrows -->
+  <path d="M 885,227 L 832,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 885,227 L 885,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 885,227 L 938,258" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- States Level 1 -->
+  <rect x="815" y="260" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="870" y="260" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+  <rect x="925" y="260" width="30" height="30" rx="6" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1.5"/>
+
+  <!-- Middle Path (Chosen) -->
+  <path d="M 885,290 L 885,320" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <text x="885" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+  <path d="M 885,355 L 885,383" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <rect x="870" y="385" width="30" height="30" rx="6" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+  <path d="M 885,415 L 885,448" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Left Rollouts Box -->
+  <path d="M 830,290 L 830,312" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <rect x="780" y="315" width="70" height="110" rx="4" fill="none" stroke="black" stroke-width="1"/>
+  
+  <!-- Inside Left Rollouts -->
+  <rect x="790" y="323" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="822" y="323" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <path d="M 799,339 L 799,358" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 831,339 L 831,358" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <text x="815" y="372" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="black">...</text>
+  <path d="M 799,380 L 799,399" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 831,380 L 831,399" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <rect x="790" y="403" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="822" y="403" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <text x="815" y="438" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="black">rollouts</text>
+
+  <!-- Right Rollouts Box -->
+  <path d="M 940,290 L 940,312" fill="none" stroke="#1F618D" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <rect x="925" y="315" width="70" height="110" rx="4" fill="none" stroke="black" stroke-width="1"/>
+
+  <!-- Inside Right Rollouts -->
+  <rect x="935" y="323" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="967" y="323" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <path d="M 944,339 L 944,358" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 976,339 L 976,358" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <text x="960" y="372" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" fill="black">...</text>
+  <path d="M 944,380 L 944,399" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 976,380 L 976,399" fill="none" stroke="#1F618D" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <rect x="935" y="403" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <rect x="967" y="403" width="18" height="14" rx="3" fill="url(#stripes)" stroke="#2C3E50" stroke-width="1"/>
+  <text x="960" y="438" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="black">rollouts</text>
+
+  <!-- Gaps Dots -->
+  <text x="860" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+  <text x="910" y="345" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="black">...</text>
+
+  <!-- Output Oval -->
+  <ellipse cx="885" cy="475" rx="50" ry="22" fill="#EBF5FB" stroke="#2C3E50" stroke-width="1.5"/>
+  <text x="885" y="475" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="black">output</text>
+
+  <text x="885" y="535" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="black">Tree Search</text>
+
+</svg>

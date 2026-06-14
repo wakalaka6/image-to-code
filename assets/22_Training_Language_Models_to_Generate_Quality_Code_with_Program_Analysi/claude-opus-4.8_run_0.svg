@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1592" height="868" viewBox="0 0 1592 868">
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ec1c24"/>
+    </marker>
+    <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <rect width="1592" height="868" fill="#ffffff"/>
+
+  <!-- ===== Top red feedback lines ===== -->
+  <path d="M558,210 C558,40 558,40 558,40 L890,40" fill="none" stroke="#ec1c24" stroke-width="5"/>
+  <path d="M558,210 L558,140" fill="none" stroke="#ec1c24" stroke-width="5" marker-end="url(#arrowRed)"/>
+  <path d="M1175,40 L1515,40 L1515,160" fill="none" stroke="#ec1c24" stroke-width="5" marker-end="url(#arrowRed)"/>
+
+  <!-- Policy Gradient box -->
+  <rect x="890" y="12" width="285" height="56" rx="28" fill="#fff" stroke="#000" stroke-width="3"/>
+  <text x="1032" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">Policy Gradient</text>
+
+  <!-- ===== Task Description ===== -->
+  <rect x="78" y="108" width="370" height="270" rx="14" fill="#e8e8e8" stroke="#555" stroke-width="2"/>
+  <text x="90" y="135" font-family="Arial" font-size="26" font-weight="bold">Task Description</text>
+  <rect x="95" y="148" width="335" height="210" rx="4" fill="#fff" stroke="#000" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="112" y="190" font-family="Arial" font-size="22" font-style="italic">Count the number of</text>
+  <text x="112" y="228" font-family="Arial" font-size="22" font-style="italic">items in DB with a price</text>
+  <text x="112" y="266" font-family="Arial" font-size="22" font-style="italic">within the range specified</text>
+  <text x="112" y="304" font-family="Arial" font-size="22" font-style="italic">by the user's inputs.</text>
+
+  <!-- question mark icon -->
+  <g>
+    <circle cx="42" cy="100" r="30" fill="#2c3e6b"/>
+    <text x="42" y="113" font-family="Arial" font-size="38" font-weight="bold" fill="#fff" text-anchor="middle">?</text>
+  </g>
+
+  <!-- arrow Task->Policy -->
+  <path d="M448,243 L490,243" fill="none" stroke="#ec1c24" stroke-width="5" marker-end="url(#arrowRed)"/>
+
+  <!-- ===== Policy Model nodes ===== -->
+  <g stroke="#000" stroke-width="2">
+    <circle cx="505" cy="200" r="14" fill="#36c5d6"/>
+    <circle cx="505" cy="243" r="14" fill="#36c5d6"/>
+    <circle cx="505" cy="286" r="14" fill="#36c5d6"/>
+    <circle cx="570" cy="178" r="14" fill="#f5c518"/>
+    <circle cx="570" cy="222" r="14" fill="#f5c518"/>
+    <circle cx="570" cy="266" r="14" fill="#f5c518"/>
+    <circle cx="570" cy="310" r="14" fill="#f5c518"/>
+    <circle cx="635" cy="200" r="14" fill="#e84a4a"/>
+    <circle cx="635" cy="266" r="14" fill="#e84a4a"/>
+  </g>
+  <g stroke="#000" stroke-width="2.5" fill="none" marker-end="url(#arrowBlack)">
+    <path d="M519,200 L548,182"/>
+    <path d="M519,243 L548,225"/>
+    <path d="M519,286 L548,270"/>
+    <path d="M584,178 L615,198"/>
+    <path d="M584,266 L615,260"/>
+  </g>
+  <text x="558" y="345" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">Policy Model</text>
+
+  <!-- arrow Policy->Generated -->
+  <path d="M650,243 L688,243" fill="none" stroke="#ec1c24" stroke-width="5" marker-end="url(#arrowRed)"/>
+
+  <!-- ===== Generated Program box ===== -->
+  <rect x="690" y="138" width="660" height="262" rx="14" fill="#e8e8e8" stroke="#555" stroke-width="2"/>
+  <!-- code icon -->
+  <g>
+    <rect x="668" y="68" width="56" height="64" rx="6" fill="#fff" stroke="#5b1a8b" stroke-width="3"/>
+    <text x="696" y="110" font-family="monospace" font-size="26" font-weight="bold" fill="#5b1a8b" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+  <text x="740" y="125" font-family="Arial" font-size="26" font-weight="bold">Generated Program</text>
+
+  <g font-family="monospace" font-size="22">
+    <text x="710" y="178"><tspan fill="#000">cur = </tspan><tspan fill="#1f4fd6" font-weight="bold">sqlite3</tspan><tspan fill="#000">.</tspan><tspan fill="#1f4fd6" font-weight="bold">connect</tspan><tspan fill="#000">(DB).</tspan><tspan fill="#1f4fd6" font-weight="bold">cursor</tspan><tspan fill="#000">()</tspan></text>
+    <text x="710" y="208"><tspan fill="#c0392b" font-weight="bold">min</tspan><tspan fill="#000"> = </tspan><tspan fill="#1f4fd6" font-weight="bold">input</tspan><tspan fill="#000">('Min?'); </tspan><tspan fill="#c0392b" font-weight="bold">max</tspan><tspan fill="#000"> = </tspan><tspan fill="#1f4fd6" font-weight="bold">input</tspan><tspan fill="#000">('Max?')</tspan></text>
+    <text x="710" y="238" fill="#000">...</text>
+    <text x="710" y="262"><tspan fill="#c0392b" font-weight="bold">Q</tspan><tspan fill="#000"> = "</tspan><tspan fill="#1a9c3c" font-weight="bold">SELECT COUNT</tspan><tspan fill="#000">(*) </tspan><tspan fill="#1a9c3c" font-weight="bold">FROM</tspan><tspan fill="#000"> items \</tspan></text>
+    <text x="855" y="290"><tspan fill="#1a9c3c" font-weight="bold">WHERE</tspan><tspan fill="#000"> price &lt;= </tspan><tspan fill="#c0392b" font-weight="bold">{max}</tspan><tspan fill="#000"> \</tspan></text>
+    <text x="855" y="318"><tspan fill="#1a9c3c" font-weight="bold">AND</tspan><tspan fill="#000"> price &gt;= </tspan><tspan fill="#c0392b" font-weight="bold">{min}</tspan><tspan fill="#000">"</tspan></text>
+    <text x="710" y="350"><tspan fill="#000">cur.</tspan><tspan fill="#1f4fd6" font-weight="bold">execute</tspan><tspan fill="#000">(</tspan><tspan fill="#c0392b" font-weight="bold">Q</tspan><tspan fill="#000">)</tspan></text>
+  </g>
+
+  <!-- ===== Advantage bars ===== -->
+  <g>
+    <rect x="1450" y="195" width="32" height="55" fill="#f5c518" stroke="#000" stroke-width="2"/>
+    <rect x="1499" y="170" width="32" height="80" fill="#2bb673" stroke="#000" stroke-width="2"/>
+    <rect x="1548" y="160" width="32" height="90" fill="#36c5d6" stroke="#000" stroke-width="2"/>
+    <text x="1466" y="160" font-family="Arial" font-size="26" text-anchor="middle">✦</text>
+    <text x="1515" y="145" font-family="Arial" font-size="26" fill="#f5c518" text-anchor="middle">★</text>
+    <text x="1564" y="135" font-family="Arial" font-size="26" text-anchor="middle">♛</text>
+  </g>
+  <text x="1515" y="285" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">Advantage</text>
+
+  <!-- Hybrid Reward box -->
+  <rect x="1408" y="338" width="214" height="50" rx="6" fill="#fff" stroke="#000" stroke-width="3"/>
+  <text x="1515" y="372" font-family="Arial" font-size="25" font-weight="bold" text-anchor="middle">Hybrid Reward</text>
+  <path d="M1515,438 L1515,392" fill="none" stroke="#ec1c24" stroke-width="5" marker-end="url(#arrowRed)"/>
+
+  <!-- arrows down to detector/verifier -->
+  <path d="M790,400 L790,440" fill="none" stroke="#ec1c24" stroke-width="14" marker-end="url(#arrowRed)"/>
+  <path d="M1195,400 L1195,440" fill="none" stroke="#ec1c24" stroke-width="14" marker-end="url(#arrowRed)"/>
+
+  <!-- ===== Vulnerability Detector ===== -->
+  <rect x="55" y="438" width="855" height="408" rx="14" fill="#fbf0db" stroke="#d6a94a" stroke-width="2"/>
+  <text x="78" y="478" font-family="Arial" font-size="30" font-weight="bold">Vulnerability Detector <tspan font-size="22" font-style="italic">(via Program Analysis)</tspan></text>
+  <text x="78" y="510" font-family="Arial" font-size="22" font-weight="bold" font-style="italic">Example: SQL Injection Detector</text>
+
+  <!-- CFG box -->
+  <rect x="78" y="525" width="190" height="240" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="173" y="558" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">CFG</text>
+  <!-- nodes -->
+  <circle cx="120" cy="640" r="22" fill="#dcdcdc" stroke="#000" stroke-width="2"/>
+  <circle cx="158" cy="582" r="22" fill="#f5b942" stroke="#000" stroke-width="2"/>
+  <text x="158" y="590" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">1</text>
+  <circle cx="200" cy="645" r="22" fill="#f5b942" stroke="#000" stroke-width="2"/>
+  <text x="200" y="653" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">2</text>
+  <circle cx="148" cy="710" r="22" fill="#dcdcdc" stroke="#000" stroke-width="2"/>
+  <circle cx="232" cy="710" r="22" fill="#f5b942" stroke="#000" stroke-width="2"/>
+  <text x="232" y="718" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">3</text>
+  <g stroke="#000" stroke-width="2.5" fill="none" marker-end="url(#arrowBlack)">
+    <path d="M138,624 L150,602"/>
+    <path d="M170,602 L190,627"/>
+    <path d="M212,663 L226,692"/>
+  </g>
+
+  <!-- Tainted Analysis box -->
+  <rect x="278" y="525" width="490" height="240" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="523" y="558" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Tainted Analysis</text>
+  <text x="295" y="600" font-family="monospace" font-size="22" font-weight="bold" fill="#c0392b">{max,min}</text>
+  <text x="455" y="600" font-family="Arial" font-size="22" font-style="italic">1. User inputs as taint <tspan font-weight="bold">src.</tspan></text>
+  <text x="295" y="652" font-family="monospace" font-size="22"><tspan fill="#c0392b">{max,min,</tspan><tspan fill="#c0392b" font-weight="bold">Q</tspan><tspan fill="#c0392b">}</tspan></text>
+  <text x="455" y="652" font-family="Arial" font-size="22" font-style="italic">2. Propagate tainted var.</text>
+  <text x="295" y="715" font-family="monospace" font-size="22"><tspan fill="#000">cur.</tspan><tspan fill="#1f4fd6" font-weight="bold">execute</tspan><tspan fill="#000">(</tspan><tspan fill="#c0392b">Q</tspan><tspan fill="#000">)</tspan></text>
+  <text x="490" y="715" font-family="Arial" font-size="22" font-style="italic">3. SQL exec. as <tspan font-weight="bold">sink.</tspan></text>
+  <!-- dashed connectors -->
+  <g stroke="#000" stroke-width="1.5" stroke-dasharray="4,4">
+    <line x1="180" y1="582" x2="295" y2="582"/>
+    <line x1="222" y1="645" x2="295" y2="645"/>
+    <line x1="254" y1="710" x2="290" y2="710"/>
+  </g>
+  <!-- vertical arrow on right -->
+  <path d="M748,585 L748,720" fill="none" stroke="#000" stroke-width="2.5" marker-end="url(#arrowBlack)"/>
+  <circle cx="748" cy="580" r="4" fill="none" stroke="#000" stroke-width="2"/>
+
+  <text x="80" y="800" font-family="Arial" font-size="24" text-anchor="start">Convert the program into a <tspan font-weight="bold">Control Flow Graph (CFG)</tspan> and conduct</text>
+  <text x="80" y="832" font-family="Arial" font-size="24" text-anchor="start"><tspan font-weight="bold">Taint Analysis</tspan> to detect SQL injection vulnerabilities.</text>
+
+  <!-- Reward Pass/Fail -->
+  <text x="850" y="618" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Reward:</text>
+  <text x="850" y="652" font-family="Arial" font-size="24" font-style="italic" text-anchor="middle"><tspan fill="#1a9c3c">Pass</tspan><tspan fill="#000"> or </tspan><tspan fill="#c0392b">Fail</tspan></text>
+
+  <!-- Plus -->
+  <text x="935" y="660" font-family="Arial" font-size="60" font-weight="bold" text-anchor="middle" fill="#ec1c24">+</text>
+
+  <!-- ===== Functionality Verifier ===== -->
+  <rect x="980" y="438" width="600" height="408" rx="14" fill="#d3e7e6" stroke="#7aa9a8" stroke-width="2"/>
+  <text x="1000" y="478" font-family="Arial" font-size="30" font-weight="bold">Functionality Verifier <tspan font-size="22" font-style="italic">(via Unit Tests)</tspan></text>
+
+  <!-- Unit tests box -->
+  <rect x="1015" y="500" width="370" height="280" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="1030" y="540" font-family="Arial" font-size="24" font-weight="bold">Unit Tests <tspan font-size="18" font-style="italic">(e.g. min~max→output)</tspan></text>
+  <g>
+    <circle cx="1055" cy="582" r="16" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="1055" y="590" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">i</text>
+    <text x="1085" y="590" font-family="Arial" font-size="24" font-style="italic"><tspan font-weight="bold">Test 1</tspan>: $2.5~$10→3</text>
+    <circle cx="1055" cy="640" r="16" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="1055" y="648" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">i</text>
+    <text x="1085" y="648" font-family="Arial" font-size="24" font-style="italic"><tspan font-weight="bold">Test 2</tspan>: $3~$1→0</text>
+    <text x="1130" y="690" font-family="Arial" font-size="24">......</text>
+    <circle cx="1055" cy="720" r="16" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="1055" y="728" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">i</text>
+    <text x="1085" y="728" font-family="Arial" font-size="24" font-style="italic"><tspan font-weight="bold">Test n</tspan>: $7~$100→10</text>
+  </g>
+
+  <!-- generated program small icon -->
+  <rect x="1455" y="555" width="95" height="115" rx="6" fill="#fff" stroke="#5b1a8b" stroke-width="3"/>
+  <text x="1502" y="630" font-family="monospace" font-size="34" font-weight="bold" fill="#5b1a8b" text-anchor="middle">&lt;/&gt;</text>
+  <text x="1502" y="710" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Generated</text>
+  <text x="1502" y="736" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Program</text>
+
+  <!-- arrows from tests to program -->
+  <g stroke="#000" stroke-width="3.5" fill="none" marker-end="url(#arrowBlack)">
+    <path d="M1300,582 L1450,605"/>
+    <path d="M1300,640 L1448,632"/>
+    <path d="M1300,718 L1450,660"/>
+  </g>
+
+  <!-- Reward fraction -->
+  <text x="1020" y="820" font-family="Arial" font-size="28" font-weight="bold">Reward:</text>
+  <text x="1300" y="800" font-family="Arial" font-size="22" text-anchor="middle"># passed tests</text>
+  <line x1="1200" y1="812" x2="1410" y2="812" stroke="#000" stroke-width="2"/>
+  <text x="1300" y="836" font-family="Arial" font-size="22" text-anchor="middle"># total tests</text>
+</svg>

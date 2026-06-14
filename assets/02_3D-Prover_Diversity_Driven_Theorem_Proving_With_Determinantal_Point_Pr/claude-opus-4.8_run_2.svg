@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="870" viewBox="0 0 1500 870">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="870" fill="white"/>
+
+  <!-- Dashed vertical dividers -->
+  <line x1="20" y1="10" x2="20" y2="860" stroke="#222" stroke-width="3" stroke-dasharray="14,10"/>
+  <line x1="625" y1="10" x2="625" y2="860" stroke="#222" stroke-width="3" stroke-dasharray="14,10"/>
+  <line x1="940" y1="10" x2="940" y2="860" stroke="#222" stroke-width="3" stroke-dasharray="14,10"/>
+  <line x1="1495" y1="10" x2="1495" y2="860" stroke="#222" stroke-width="3" stroke-dasharray="14,10"/>
+
+  <!-- Section titles -->
+  <text x="35" y="48" font-family="sans-serif" font-size="24" fill="#222">1. Tokenize and combine</text>
+  <text x="95" y="78" font-family="sans-serif" font-size="24" fill="#222">goal and tactic</text>
+
+  <text x="645" y="48" font-family="sans-serif" font-size="24" fill="#222">2. Create goal-aware</text>
+  <text x="645" y="78" font-family="sans-serif" font-size="24" fill="#222">tactic embedding</text>
+
+  <text x="955" y="48" font-family="sans-serif" font-size="24" fill="#222">3. Train embedding to</text>
+  <text x="955" y="78" font-family="sans-serif" font-size="24" fill="#222">encode transition</text>
+  <text x="955" y="108" font-family="sans-serif" font-size="24" fill="#222">data</text>
+
+  <!-- ===== Section 1 ===== -->
+  <!-- rw [h_1] input box -->
+  <rect x="80" y="330" width="190" height="65" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="175" y="372" font-family="monospace" font-size="22" font-weight="bold" fill="#222" text-anchor="middle">rw [h_1]</text>
+
+  <!-- tactic token stack -->
+  <rect x="330" y="225" width="105" height="75" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="382" y="270" font-family="monospace" font-size="22" font-weight="bold" fill="#222" text-anchor="middle">rw</text>
+  <rect x="330" y="300" width="105" height="75" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="382" y="345" font-family="monospace" font-size="22" font-weight="bold" fill="#222" text-anchor="middle">[</text>
+  <rect x="330" y="375" width="105" height="75" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="382" y="420" font-family="monospace" font-size="22" fill="#222" text-anchor="middle">...</text>
+
+  <!-- brace tactic -->
+  <path d="M440,228 q12,0 12,15 v40 q0,15 12,15 q-12,0 -12,15 v40 q0,15 -12,15" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- t box -->
+  <rect x="475" y="320" width="80" height="80" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="515" y="368" font-family="sans-serif" font-size="24" font-weight="bold" fill="#222" text-anchor="middle">t</text>
+
+  <!-- goal input box -->
+  <rect x="55" y="565" width="265" height="225" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="70" y="605" font-family="serif" font-size="23" fill="#222">a, b, c : ℂ</text>
+  <text x="70" y="645" font-family="serif" font-size="23" fill="#222">h₀ : a + b = 2c</text>
+  <text x="70" y="685" font-family="serif" font-size="23" fill="#222">h₁ : c = i</text>
+  <text x="70" y="725" font-family="serif" font-size="23" fill="#222">⊢ ac + bc = −2</text>
+
+  <!-- goal token stack -->
+  <rect x="330" y="555" width="105" height="75" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="382" y="600" font-family="serif" font-size="22" fill="#222" text-anchor="middle">a</text>
+  <rect x="330" y="630" width="105" height="75" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="382" y="675" font-family="serif" font-size="22" fill="#222" text-anchor="middle">,</text>
+  <rect x="330" y="705" width="105" height="75" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="382" y="752" font-family="serif" font-size="22" fill="#222" text-anchor="middle">...</text>
+
+  <!-- brace goal -->
+  <path d="M440,558 q12,0 12,15 v40 q0,15 12,15 q-12,0 -12,15 v40 q0,15 -12,15" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- g box -->
+  <rect x="475" y="630" width="80" height="80" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="515" y="678" font-family="sans-serif" font-size="24" font-weight="bold" fill="#222" text-anchor="middle">g</text>
+
+  <!-- concat box (section1) -->
+  <rect x="470" y="510" width="140" height="60" fill="#4a5568" stroke="#2d3748" stroke-width="2"/>
+  <text x="540" y="548" font-family="sans-serif" font-size="22" fill="#fff" text-anchor="middle">concat</text>
+
+  <!-- arrows section1 -->
+  <line x1="515" y1="400" x2="515" y2="508" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="515" y1="630" x2="515" y2="572" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- concat -> concat2 (top right exit) -->
+  <line x1="610" y1="535" x2="680" y2="535" stroke="#333" stroke-width="2"/>
+  <line x1="680" y1="535" x2="680" y2="290" stroke="#333" stroke-width="2"/>
+  <line x1="680" y1="290" x2="722" y2="290" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- g -> bottom concat -->
+  <line x1="515" y1="710" x2="515" y2="800" stroke="#333" stroke-width="2"/>
+  <line x1="515" y1="800" x2="688" y2="800" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== Section 2 ===== -->
+  <!-- big background -->
+  <rect x="660" y="170" width="265" height="560" fill="#f2f2f2" stroke="#cccccc" stroke-width="2"/>
+
+  <!-- Encoder E -->
+  <rect x="722" y="195" width="135" height="135" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="789" y="245" font-family="sans-serif" font-size="22" fill="#222" text-anchor="middle">Encoder</text>
+  <text x="789" y="290" font-family="serif" font-size="24" font-style="italic" fill="#222" text-anchor="middle">E</text>
+
+  <!-- t' and g' -->
+  <rect x="703" y="405" width="93" height="90" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="749" y="458" font-family="sans-serif" font-size="24" font-weight="bold" fill="#222" text-anchor="middle">t′</text>
+  <rect x="796" y="405" width="93" height="90" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="842" y="458" font-family="sans-serif" font-size="24" font-weight="bold" fill="#222" text-anchor="middle">g′</text>
+
+  <!-- encoder split arrows -->
+  <line x1="789" y1="330" x2="749" y2="378" stroke="#333" stroke-width="2"/>
+  <line x1="749" y1="378" x2="749" y2="403" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="789" y1="330" x2="842" y2="378" stroke="#333" stroke-width="2"/>
+  <line x1="842" y1="378" x2="842" y2="403" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- pool -->
+  <rect x="708" y="525" width="85" height="48" fill="#5b3a86" stroke="#3f2860" stroke-width="2"/>
+  <text x="750" y="557" font-family="sans-serif" font-size="20" fill="#fff" text-anchor="middle">pool</text>
+  <line x1="749" y1="495" x2="749" y2="523" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- e box -->
+  <rect x="708" y="615" width="85" height="80" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="750" y="663" font-family="sans-serif" font-size="24" font-weight="bold" fill="#222" text-anchor="middle">e</text>
+  <line x1="750" y1="573" x2="750" y2="613" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- concat back into encoder -->
+  <line x1="688" y1="290" x2="720" y2="290" stroke="#333" stroke-width="2"/>
+
+  <!-- bottom concat box -->
+  <rect x="688" y="775" width="140" height="60" fill="#4a5568" stroke="#2d3748" stroke-width="2"/>
+  <text x="758" y="813" font-family="sans-serif" font-size="22" fill="#fff" text-anchor="middle">concat</text>
+
+  <!-- e -> predictor/decoder branch -->
+  <line x1="793" y1="655" x2="980" y2="655" stroke="#333" stroke-width="2"/>
+  <!-- to predictor -->
+  <line x1="980" y1="655" x2="980" y2="290" stroke="#333" stroke-width="2"/>
+  <line x1="980" y1="290" x2="1012" y2="290" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- bottom concat -> decoder -->
+  <line x1="828" y1="805" x2="1085" y2="805" stroke="#333" stroke-width="2"/>
+  <line x1="1085" y1="805" x2="1085" y2="730" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- e -> bottom concat? no, e connects via that horizontal. Also t'/g' to e is via pool. Bottom concat input from left section already drawn. -->
+
+  <!-- ===== Section 3 ===== -->
+  <!-- Predictor -->
+  <rect x="1012" y="210" width="135" height="135" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="1079" y="262" font-family="sans-serif" font-size="22" fill="#222" text-anchor="middle">Predictor</text>
+  <text x="1079" y="305" font-family="serif" font-size="24" font-style="italic" fill="#222" text-anchor="middle">P</text>
+
+  <!-- Decoder -->
+  <rect x="1018" y="545" width="135" height="135" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="1085" y="597" font-family="sans-serif" font-size="22" fill="#222" text-anchor="middle">Decoder</text>
+  <text x="1085" y="640" font-family="serif" font-size="24" font-style="italic" fill="#222" text-anchor="middle">D</text>
+
+  <!-- Status box -->
+  <rect x="1265" y="170" width="225" height="95" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="1290" y="208" font-family="monospace" font-size="22" fill="#222">Status (ŝ)</text>
+  <text x="1290" y="245" font-family="monospace" font-size="22" fill="#222">success</text>
+
+  <!-- Time box -->
+  <rect x="1280" y="320" width="200" height="95" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="1300" y="358" font-family="monospace" font-size="22" fill="#222">Time (τ̂)</text>
+  <text x="1300" y="395" font-family="monospace" font-size="22" fill="#222">0.1</text>
+
+  <!-- Predictor outputs -->
+  <line x1="1147" y1="278" x2="1205" y2="278" stroke="#333" stroke-width="2"/>
+  <line x1="1205" y1="278" x2="1205" y2="218" stroke="#333" stroke-width="2"/>
+  <line x1="1205" y1="218" x2="1263" y2="218" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1205" y1="278" x2="1205" y2="368" stroke="#333" stroke-width="2"/>
+  <line x1="1205" y1="368" x2="1278" y2="368" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output box -->
+  <rect x="1255" y="490" width="240" height="270" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="1270" y="528" font-family="monospace" font-size="21" fill="#222">Output (ô)</text>
+  <text x="1270" y="565" font-family="serif" font-size="22" fill="#222">a, b, c : ℂ</text>
+  <text x="1270" y="605" font-family="serif" font-size="22" fill="#222">h₀ : a + b = 2c</text>
+  <text x="1270" y="645" font-family="serif" font-size="22" fill="#222">h₁ : c = i</text>
+  <text x="1270" y="685" font-family="serif" font-size="22" fill="#222">⊢ ai + bi = −2</text>
+
+  <!-- Decoder -> Output -->
+  <line x1="1153" y1="635" x2="1253" y2="635" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+</svg>
