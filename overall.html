@@ -56,11 +56,39 @@ img {
   background: #fffaf0;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  body { margin: 8px; }
+  h1 { font-size: 18px; }
+  .compare-table,
+  .compare-table tbody,
+  .compare-table tr,
+  .compare-table td {
+    display: block;
+    width: 100%;
+  }
+  .compare-table tr {
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .compare-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+  .compare-table td:last-child {
+    border-bottom: 0;
+  }
+  .cell-title { font-size: 14px; }
+  .cell-subtitle { font-size: 12px; }
+}
 </style>
 </head>
 <body>
 <h1>Overall Model Comparison</h1>
-<table>
+<table class="compare-table">
 <tr><td>
 <div class='cell-wrap'>
 <div class='cell-title'>GT</div>
