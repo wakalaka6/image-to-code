@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>claude-opus-4.8 GT vs Prediction</title>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: #172033;
+    background: #f6f6f1;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(246, 246, 241, .96);
+    border-bottom: 1px solid #d8d8cf;
+  }
+  .bar {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 12px 18px;
+    display: grid;
+    grid-template-columns: minmax(220px, 360px) 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .nav {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .nav a, .caseHead a, .home {
+    color: #233044;
+    text-decoration: none;
+    border: 1px solid #c8c9bd;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .home {
+    display: inline-block;
+    margin-top: 7px;
+  }
+  main {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 18px;
+  }
+  .case {
+    margin-bottom: 22px;
+    border: 1px solid #d8d8cf;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .caseHead {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    background: #fbfbf7;
+    border-bottom: 1px solid #e5e5dd;
+  }
+  .caseNo {
+    color: #687084;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+  article {
+    min-width: 0;
+    border-right: 1px solid #e1e1d8;
+  }
+  article:last-child { border-right: 0; }
+  .label {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    background: #f3f5f4;
+    border-bottom: 1px solid #e5e5dd;
+  }
+  .label span {
+    color: #047857;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    display: block;
+    border: 0;
+    object-fit: contain;
+    background: #fff;
+  }
+  @media (max-width: 1000px) {
+    .bar { grid-template-columns: 1fr; }
+    .pair { grid-template-columns: 1fr; }
+    article { border-right: 0; border-bottom: 1px solid #e1e1d8; }
+  }
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="bar">
+    <div>
+      <h1>claude-opus-4.8</h1>
+      <a class="home" href="index.html">All model pages</a>
+      <a class="home" href="overall.html">Overall comparison</a>
+    </div>
+    <nav class="nav"><a href="#case-1">01</a>
+<a href="#case-2">02</a>
+<a href="#case-3">03</a>
+<a href="#case-4">04</a>
+<a href="#case-5">05</a>
+<a href="#case-6">06</a>
+<a href="#case-7">07</a>
+<a href="#case-8">08</a>
+<a href="#case-9">09</a>
+<a href="#case-10">10</a>
+<a href="#case-11">11</a>
+<a href="#case-12">12</a>
+<a href="#case-13">13</a>
+<a href="#case-14">14</a>
+<a href="#case-15">15</a>
+<a href="#case-16">16</a>
+<a href="#case-17">17</a>
+<a href="#case-18">18</a>
+<a href="#case-19">19</a>
+<a href="#case-20">20</a>
+<a href="#case-21">21</a>
+<a href="#case-22">22</a>
+<a href="#case-23">23</a>
+<a href="#case-24">24</a>
+<a href="#case-25">25</a>
+<a href="#case-26">26</a>
+<a href="#case-27">27</a>
+<a href="#case-28">28</a>
+<a href="#case-29">29</a>
+<a href="#case-30">30</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="case" id="case-1">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">01</div>
+      <h2>05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Mis/gt.png" alt="GT" decoding="async">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Mis/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-2">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">02</div>
+      <h2>3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/02_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Pr/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/02_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Pr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-3">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">03</div>
+      <h2>A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/03_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_1</span></div>
+      <img src="assets/03_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-4">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">04</div>
+      <h2>A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/04_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/04_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-5">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">05</div>
+      <h2>AI Debate Aids Assessment of Controversial Claims_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/05_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/05_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-6">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">06</div>
+      <h2>Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/06_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Mode/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/06_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Mode/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-7">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">07</div>
+      <h2>Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/07_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_To/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/07_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_To/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-8">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">08</div>
+      <h2>CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/08_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_R/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/08_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_R/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-9">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">09</div>
+      <h2>CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/09_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinf/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/09_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinf/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-10">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">10</div>
+      <h2>Calibrating Translation Decoding with Quality Estimation on LLMs_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/10_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagr/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/10_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-11">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">11</div>
+      <h2>Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/11_Can_LLMs_Reason_Over_Non-Text_Modalities_in_a_Training-Free_Manner_A_C/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_1</span></div>
+      <img src="assets/11_Can_LLMs_Reason_Over_Non-Text_Modalities_in_a_Training-Free_Manner_A_C/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-12">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">12</div>
+      <h2>Chain-of-Retrieval Augmented Generation_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/12_Chain-of-Retrieval_Augmented_Generation_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/12_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-13">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">13</div>
+      <h2>DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/13_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/13_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-14">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">14</div>
+      <h2>DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/14_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regr/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/14_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-15">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">15</div>
+      <h2>Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/15_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/15_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-16">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">16</div>
+      <h2>DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/16_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/16_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-17">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">17</div>
+      <h2>Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/17_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/17_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-18">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">18</div>
+      <h2>ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/18_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Pa/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_1</span></div>
+      <img src="assets/18_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Pa/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-19">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">19</div>
+      <h2>Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/19_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Lar/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/19_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Lar/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-20">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">20</div>
+      <h2>Event-based HDR Structured Light_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/20_Event-based_HDR_Structured_Light_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_1</span></div>
+      <img src="assets/20_Event-based_HDR_Structured_Light_diagram/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-21">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">21</div>
+      <h2>EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/21_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Mul/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/21_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Mul/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-22">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">22</div>
+      <h2>Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/22_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysi/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/22_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-23">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">23</div>
+      <h2>UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/23_UniDomain_Pretraining_a_Unified_PDDL_Domain_from_Real-World_Demonstrat/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/23_UniDomain_Pretraining_a_Unified_PDDL_Domain_from_Real-World_Demonstrat/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-24">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">24</div>
+      <h2>Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/24_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Vi/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/24_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Vi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-25">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">25</div>
+      <h2>Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/25_Watch_and_Listen_Understanding_Audio-Visual-Speech_Moments_with_Multim/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/25_Watch_and_Listen_Understanding_Audio-Visual-Speech_Moments_with_Multim/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-26">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">26</div>
+      <h2>Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/26_Where_Does_It_Exist_from_the_Low-Altitude_Spatial_Aerial_Video_Groundi/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/26_Where_Does_It_Exist_from_the_Low-Altitude_Spatial_Aerial_Video_Groundi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-27">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">27</div>
+      <h2>Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/27_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanc/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/27_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanc/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-28">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">28</div>
+      <h2>ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/28_ZEBRA_Towards_Zero-Shot_Cross-Subject_Generalization_for_Universal_Bra/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/28_ZEBRA_Towards_Zero-Shot_Cross-Subject_Generalization_for_Universal_Bra/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-29">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">29</div>
+      <h2>d794c629fb49374a8f643e359f9f43a7</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/29_d794c629fb49374a8f643e359f9f43a7/gt.jpg" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_2</span></div>
+      <img src="assets/29_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+<section class="case" id="case-30">
+  <div class="caseHead">
+    <div>
+      <div class="caseNo">30</div>
+      <h2>sample_figure</h2>
+    </div>
+    <a href="#top">Top</a>
+  </div>
+  <div class="pair">
+    <article>
+      <div class="label">GT</div>
+      <img src="assets/30_sample_figure/gt.png" alt="GT" decoding="async" loading="lazy">
+    </article>
+    <article>
+      <div class="label">Prediction <span>run_0</span></div>
+      <img src="assets/30_sample_figure/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
+    </article>
+  </div>
+</section>
+</main>
+
+</body>
+</html>
