@@ -1,0 +1,198 @@
+<svg width="1928" height="922" viewBox="0 0 1928 922" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dispGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3fd0"/>
+      <stop offset="40%" stop-color="#2bb8d8"/>
+      <stop offset="70%" stop-color="#7fd84f"/>
+      <stop offset="90%" stop-color="#f0d020"/>
+      <stop offset="100%" stop-color="#e02020"/>
+    </linearGradient>
+    <linearGradient id="confGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1030a0"/>
+      <stop offset="35%" stop-color="#1060c0"/>
+      <stop offset="60%" stop-color="#30b0c0"/>
+      <stop offset="80%" stop-color="#e0c030"/>
+      <stop offset="100%" stop-color="#d04020"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .lbl { font-family: 'Times New Roman', serif; font-size: 34px; fill:#000; }
+    .blbl { font-family: 'Times New Roman', serif; font-size: 36px; fill:#000; text-anchor:middle; }
+    .sub { font-family: 'Times New Roman', serif; font-size: 36px; font-style:italic; fill:#000; }
+  </style>
+
+  <!-- ============ TOP ROW: Captured Event Frames ============ -->
+  <g>
+    <rect x="30" y="40" width="345" height="215" fill="#7a7a7a"/>
+    <rect x="18" y="28" width="345" height="215" fill="#9a9a9a"/>
+    <rect x="8" y="18" width="345" height="215" fill="#cfcfcf"/>
+    <rect x="8" y="18" width="345" height="215" fill="none" stroke="#000" stroke-width="1"/>
+    <ellipse cx="120" cy="200" rx="38" ry="38" fill="#bdbdbd"/>
+    <text x="20" y="295" class="lbl">Captured Event Frames</text>
+  </g>
+
+  <!-- Feature extraction blue bars top -->
+  <g>
+    <rect x="460" y="70" width="38" height="200" rx="6" fill="#aec6e8"/>
+    <rect x="520" y="100" width="32" height="140" rx="6" fill="#aec6e8"/>
+    <rect x="580" y="70" width="38" height="200" rx="6" fill="#aec6e8"/>
+    <text x="412" y="320" class="lbl">Feature Extraction</text>
+  </g>
+  <!-- arrows top -->
+  <line x1="375" y1="160" x2="450" y2="160" stroke="#000" stroke-width="3"/>
+  <polygon points="450,160 438,153 438,167" fill="#000"/>
+  <line x1="640" y1="160" x2="900" y2="160" stroke="#000" stroke-width="3"/>
+  <polygon points="900,160 888,153 888,167" fill="#000"/>
+
+  <!-- Left Features stacked yellow -->
+  <g>
+    <rect x="970" y="60" width="120" height="120" fill="#caa028"/>
+    <rect x="940" y="90" width="120" height="120" fill="#f5d873"/>
+    <rect x="910" y="120" width="120" height="120" fill="#f5d873"/>
+    <rect x="910" y="120" width="120" height="120" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="905" y="50" class="sub">F<tspan dy="8" font-size="24">L2</tspan></text>
+    <text x="875" y="105" class="sub">F<tspan dy="8" font-size="24">L1</tspan></text>
+    <text x="845" y="135" class="sub">F<tspan dy="8" font-size="24">L0</tspan></text>
+    <text x="900" y="285" class="lbl">Left Features</text>
+  </g>
+
+  <!-- ============ MIDDLE ROW: Energy Map ============ -->
+  <g>
+    <rect x="20" y="375" width="345" height="200" fill="#6a6a6a"/>
+    <rect x="10" y="365" width="345" height="200" fill="#888"/>
+    <rect x="0" y="355" width="345" height="200" fill="#9c9c9c"/>
+    <rect x="0" y="355" width="345" height="200" fill="none" stroke="#000" stroke-width="1"/>
+    <ellipse cx="115" cy="510" rx="35" ry="35" fill="#cfcfcf"/>
+    <text x="105" y="610" class="lbl">Energy Map</text>
+  </g>
+
+  <!-- Feature extraction green bars -->
+  <g>
+    <rect x="460" y="405" width="38" height="190" rx="6" fill="#bfe0b0"/>
+    <rect x="520" y="430" width="32" height="140" rx="6" fill="#bfe0b0"/>
+    <rect x="580" y="405" width="38" height="190" rx="6" fill="#bfe0b0"/>
+    <text x="412" y="640" class="lbl">Feature Extraction</text>
+  </g>
+  <line x1="375" y1="475" x2="450" y2="475" stroke="#000" stroke-width="3"/>
+  <polygon points="450,475 438,468 438,482" fill="#000"/>
+  <line x1="640" y1="475" x2="685" y2="475" stroke="#000" stroke-width="3"/>
+  <polygon points="685,475 673,468 673,482" fill="#000"/>
+
+  <!-- Energy-guided Confidence Estimation box -->
+  <rect x="688" y="375" width="240" height="200" rx="22" fill="#8fc285"/>
+  <text x="808" y="430" class="blbl">Energy-</text>
+  <text x="808" y="468" class="blbl">guided</text>
+  <text x="808" y="506" class="blbl">Confidence</text>
+  <text x="808" y="544" class="blbl">Estimation</text>
+
+  <!-- arrow from left features down into estimation -->
+  <polyline points="970,240 970,335 808,335 808,373" fill="none" stroke="#000" stroke-width="3"/>
+  <polygon points="808,373 801,361 815,361" fill="#000"/>
+
+  <!-- arrow estimation -> confidence maps -->
+  <line x1="928" y1="475" x2="990" y2="475" stroke="#000" stroke-width="3"/>
+  <polygon points="990,475 978,468 978,482" fill="#000"/>
+
+  <!-- Confidence Maps stacked heatmaps -->
+  <g>
+    <rect x="1080" y="345" width="245" height="180" fill="url(#confGrad)"/>
+    <rect x="1055" y="368" width="245" height="180" fill="url(#confGrad)"/>
+    <rect x="1000" y="390" width="280" height="195" fill="url(#confGrad)"/>
+    <rect x="1000" y="390" width="280" height="195" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="1030" y="625" class="lbl">Confidence Maps</text>
+  </g>
+
+  <!-- ============ BOTTOM ROW: Reference Frames ============ -->
+  <g>
+    <rect x="60" y="675" width="300" height="200" fill="#1a1a1a"/>
+    <rect x="45" y="660" width="300" height="200" fill="#262626"/>
+    <rect x="30" y="645" width="300" height="200" fill="#2e2e2e"/>
+    <rect x="30" y="645" width="300" height="200" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="65" y="905" class="lbl">Reference Frames</text>
+  </g>
+
+  <!-- Feature extraction blue bars bottom -->
+  <g>
+    <rect x="460" y="675" width="38" height="190" rx="6" fill="#aec6e8"/>
+    <rect x="520" y="700" width="32" height="140" rx="6" fill="#aec6e8"/>
+    <rect x="580" y="675" width="38" height="190" rx="6" fill="#aec6e8"/>
+    <text x="412" y="915" class="lbl">Feature Extraction</text>
+  </g>
+  <line x1="375" y1="745" x2="450" y2="745" stroke="#000" stroke-width="3"/>
+  <polygon points="450,745 438,738 438,752" fill="#000"/>
+  <line x1="640" y1="745" x2="900" y2="745" stroke="#000" stroke-width="3"/>
+  <polygon points="900,745 888,738 888,752" fill="#000"/>
+
+  <!-- Right Features stacked yellow -->
+  <g>
+    <rect x="970" y="650" width="120" height="120" fill="#caa028"/>
+    <rect x="940" y="680" width="120" height="120" fill="#f5d873"/>
+    <rect x="910" y="710" width="120" height="120" fill="#f5d873"/>
+    <rect x="910" y="710" width="120" height="120" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="900" y="640" class="sub">F<tspan dy="8" font-size="24">R2</tspan></text>
+    <text x="870" y="695" class="sub">F<tspan dy="8" font-size="24">R1</tspan></text>
+    <text x="840" y="725" class="sub">F<tspan dy="8" font-size="24">R0</tspan></text>
+    <text x="895" y="888" class="lbl">Right Features</text>
+  </g>
+
+  <!-- Confidence Propagation Volume Construction box -->
+  <rect x="1355" y="380" width="230" height="200" rx="22" fill="#ee9f6f"/>
+  <text x="1470" y="430" class="blbl">Confidence</text>
+  <text x="1470" y="468" class="blbl">Propagation</text>
+  <text x="1470" y="506" class="blbl">Volume</text>
+  <text x="1470" y="544" class="blbl">Construction</text>
+
+  <!-- arrow confidence maps -> CPVC -->
+  <line x1="1280" y1="480" x2="1350" y2="480" stroke="#000" stroke-width="3"/>
+  <polygon points="1350,480 1338,473 1338,487" fill="#000"/>
+
+  <!-- arrow left features top -> CPVC -->
+  <polyline points="1090,165 1470,165 1470,378" fill="none" stroke="#000" stroke-width="3"/>
+  <polygon points="1470,378 1463,366 1477,366" fill="#000"/>
+
+  <!-- arrow right features bottom -> CPVC -->
+  <polyline points="1090,745 1470,745 1470,582" fill="none" stroke="#000" stroke-width="3"/>
+  <polygon points="1470,582 1463,594 1477,594" fill="#000"/>
+
+  <!-- Cost Volume 3D box -->
+  <g>
+    <polygon points="1660,80 1900,80 1860,40 1620,40" fill="#f0b690"/>
+    <polygon points="1900,80 1900,260 1860,220 1860,40" fill="#e0a878"/>
+    <rect x="1660" y="80" width="200" height="180" fill="#f2c4a2"/>
+    <rect x="1660" y="80" width="200" height="180" fill="none" stroke="#000" stroke-width="1"/>
+    <polygon points="1660,80 1900,80 1860,40 1620,40" fill="none" stroke="#000" stroke-width="1"/>
+    <polygon points="1900,80 1900,260 1860,220 1860,40" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="1760" y="150" class="blbl">Cost</text>
+    <text x="1760" y="200" class="blbl">Volume</text>
+  </g>
+
+  <!-- arrow CPVC -> Cost Volume -->
+  <polyline points="1585,450 1620,450 1620,160 1655,160" fill="none" stroke="#000" stroke-width="3"/>
+  <polygon points="1655,160 1643,153 1643,167" fill="#000"/>
+
+  <!-- arrow Cost Volume -> Cost Aggregation -->
+  <line x1="1760" y1="260" x2="1760" y2="380" stroke="#000" stroke-width="3"/>
+  <polygon points="1760,380 1753,368 1767,368" fill="#000"/>
+
+  <!-- Cost Aggregation box -->
+  <rect x="1645" y="385" width="230" height="195" rx="22" fill="#FFEB3B"/>
+  <text x="1760" y="465" class="blbl">Cost</text>
+  <text x="1760" y="515" class="blbl">Aggregation</text>
+
+  <!-- arrow Cost Aggregation -> Disparity -->
+  <line x1="1760" y1="580" x2="1760" y2="650" stroke="#000" stroke-width="3"/>
+  <polygon points="1760,650 1753,638 1767,638" fill="#000"/>
+
+  <!-- Disparity image -->
+  <g>
+    <rect x="1620" y="655" width="280" height="200" fill="url(#dispGrad)"/>
+    <ellipse cx="1700" cy="780" rx="40" ry="40" fill="#9fe060"/>
+    <rect x="1620" y="655" width="280" height="200" fill="none" stroke="#000" stroke-width="1"/>
+    <text x="1690" y="905" class="lbl">Disparity</text>
+  </g>
+
+  <!-- arrow captured frames -> energy map (vertical) -->
+  <line x1="180" y1="320" x2="180" y2="350" stroke="#000" stroke-width="3"/>
+  <polygon points="180,350 173,338 187,338" fill="#000"/>
+</svg>

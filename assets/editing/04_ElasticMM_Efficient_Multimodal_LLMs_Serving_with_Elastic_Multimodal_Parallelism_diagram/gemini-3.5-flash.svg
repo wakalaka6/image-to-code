@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <!-- Arrow marker for standard flow arrows -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#4a4a4a" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#f8f9fa" />
+
+  <!-- Outer border/shadow effect to match the screenshot style -->
+  <rect x="5" y="5" width="990" height="490" fill="none" stroke="#e0e0e0" stroke-width="2" />
+  
+  <!-- ================= ROW 1: HEADERS ================= -->
+  <!-- Text-Only Request -->
+  <g transform="translate(135, 25)">
+    <rect width="270" height="40" rx="8" fill="#ffffff" stroke="#0b2545" stroke-width="1.5" />
+    <!-- Document Icon -->
+    <g transform="translate(15, 8)">
+      <path d="M0 2 L14 2 L20 8 L20 22 L0 22 Z" fill="#ffffff" stroke="#0b2545" stroke-width="1.5" stroke-linejoin="round" />
+      <path d="M14 2 L14 8 L20 8" fill="none" stroke="#0b2545" stroke-width="1.5" stroke-linejoin="round" />
+      <line x1="4" y1="12" x2="16" y2="12" stroke="#0b2545" stroke-width="1.5" />
+      <line x1="4" y1="16" x2="16" y2="16" stroke="#0b2545" stroke-width="1.5" />
+      <line x1="4" y1="19" x2="12" y2="19" stroke="#0b2545" stroke-width="1.5" />
+    </g>
+    <text x="155" y="21" font-family="Georgia, serif" font-size="19" fill="#000000" text-anchor="middle" dominant-baseline="central">Text-Only Request</text>
+  </g>
+
+  <!-- Image-Text Request -->
+  <g transform="translate(575, 25)">
+    <rect width="270" height="40" rx="8" fill="#ffffff" stroke="#0b2545" stroke-width="1.5" />
+    <!-- Image Icon -->
+    <g transform="translate(15, 8)">
+      <rect width="22" height="22" rx="2" fill="#ffffff" stroke="#0b2545" stroke-width="1.5" />
+      <circle cx="6" cy="7" r="2" fill="#ffca28" stroke="#0b2545" stroke-width="1" />
+      <path d="M 2 19 L 8 11 L 13 16 L 17 10 L 20 15 L 20 20 Z" fill="#81c784" stroke="#0b2545" stroke-width="1" stroke-linejoin="round" />
+    </g>
+    <text x="155" y="21" font-family="Georgia, serif" font-size="19" fill="#000000" text-anchor="middle" dominant-baseline="central">Image-Text Request</text>
+  </g>
+
+
+  <!-- ================= ROW 2: MODALITY-LEVEL ================= -->
+  <!-- Modality-Level Container -->
+  <!-- Blue Half -->
+  <rect x="60" y="90" width="445" height="150" fill="#e6f2ff" />
+  <!-- Pink Half -->
+  <rect x="505" y="90" width="445" height="150" fill="#fde8e8" />
+  <!-- Outer Border -->
+  <rect x="60" y="90" width="890" height="150" fill="none" stroke="#0b2545" stroke-width="1.5" />
+  <!-- Dashed Divider -->
+  <line x1="505" y1="90" x2="505" y2="240" stroke="#0b2545" stroke-width="1.5" stroke-dasharray="5,5" />
+
+  <!-- Modality-Level Header Text -->
+  <text x="282" y="118" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">Modality-Level</text>
+  <text x="282" y="142" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#3b71ca" text-anchor="middle">(Modality-Aware Load Balancing §3.1)</text>
+
+  <!-- Double-headed Arrow (Auto-Scaling) -->
+  <path d="M 475 120 L 485 114 L 485 118 L 525 118 L 525 114 L 535 120 L 525 126 L 525 122 L 485 122 L 485 126 Z" fill="#555555" />
+
+  <!-- Blue Group Boxes -->
+  <!-- Prefill Stage -->
+  <rect x="91" y="170" width="172" height="50" rx="10" fill="#cfe2fe" stroke="#0b2545" stroke-width="1.5" />
+  <text x="177" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">Prefill Stage</text>
+
+  <!-- Decode Stage -->
+  <rect x="305" y="170" width="172" height="50" rx="10" fill="#cfe2fe" stroke="#0b2545" stroke-width="1.5" />
+  <text x="391" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">Decode Stage</text>
+
+  <!-- Pink Group Boxes -->
+  <!-- Encode Stage -->
+  <rect x="637" y="105" width="172" height="50" rx="10" fill="#f8d7da" stroke="#0b2545" stroke-width="1.5" />
+  <text x="723" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">Encode Stage</text>
+
+  <!-- Prefill Stage -->
+  <rect x="535" y="170" width="172" height="50" rx="10" fill="#f8d7da" stroke="#0b2545" stroke-width="1.5" />
+  <text x="621" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">Prefill Stage</text>
+
+  <!-- Decode Stage -->
+  <rect x="750" y="170" width="172" height="50" rx="10" fill="#f8d7da" stroke="#0b2545" stroke-width="1.5" />
+  <text x="836" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">Decode Stage</text>
+
+
+  <!-- ================= ROW 3: STAGE-LEVEL ================= -->
+  <!-- Stage-Level Container -->
+  <rect x="60" y="260" width="890" height="120" fill="#fffdf3" stroke="#0b2545" stroke-width="1.5" />
+  
+  <!-- Stage-Level Header Text -->
+  <text x="500" y="288" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">
+    <tspan fill="#000000">Stage-Level </tspan>
+    <tspan fill="#3b71ca">(Elastic Partition Scheduling §3.2)</tspan>
+  </text>
+
+  <!-- Stage-Level Boxes -->
+  <!-- Request Scheduling -->
+  <rect x="118" y="305" width="198" height="62" rx="10" fill="#ffeeba" stroke="#0b2545" stroke-width="1.5" />
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+    <tspan x="217" y="331">Request</tspan>
+    <tspan x="217" y="353">Scheduling</tspan>
+  </text>
+
+  <!-- Stage Allocation -->
+  <rect x="406" y="305" width="198" height="62" rx="10" fill="#FFEB3B" stroke="#0b2545" stroke-width="1.5" />
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+    <tspan x="505" y="331">Stage</tspan>
+    <tspan x="505" y="353">Allocation</tspan>
+  </text>
+
+  <!-- Elastic Auto-Scaling -->
+  <rect x="690" y="305" width="198" height="62" rx="10" fill="#ffeeba" stroke="#0b2545" stroke-width="1.5" />
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+    <tspan x="789" y="331">Elastic</tspan>
+    <tspan x="789" y="353">Auto-Scaling</tspan>
+  </text>
+
+
+  <!-- ================= ROW 4: BOTTOM ROW ================= -->
+  <!-- Unified Multimodal Prefix Cache -->
+  <rect x="60" y="400" width="570" height="72" rx="12" fill="#d4edda" stroke="#0b2545" stroke-width="1.5" />
+  <text x="345" y="442" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" dominant-baseline="central">
+    <tspan fill="#000000">Unified Multimodal Prefix Cache </tspan>
+    <tspan fill="#3b71ca">(§3.3)</tspan>
+  </text>
+
+  <!-- Legend Box -->
+  <rect x="678" y="395" width="272" height="82" fill="#ffffff" stroke="#0b2545" stroke-width="1.5" />
+  
+  <!-- Legend Items -->
+  <!-- Text-Only Group -->
+  <rect x="698" y="407" width="38" height="16" fill="#cfe2fe" stroke="#0b2545" stroke-width="1" />
+  <text x="750" y="421" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#000000">Text-Only Group</text>
+
+  <!-- Multimodal Group -->
+  <rect x="698" y="431" width="38" height="16" fill="#f8d7da" stroke="#0b2545" stroke-width="1" />
+  <text x="750" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#000000">Multimodal Group</text>
+
+  <!-- Auto-Scaling -->
+  <path d="M 698 463 L 706 458 L 706 461 L 728 461 L 728 458 L 736 463 L 728 468 L 728 465 L 706 465 L 706 468 Z" fill="#555555" />
+  <text x="750" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#000000">Auto-Scaling</text>
+
+
+  <!-- ================= FLOW ARROWS ================= -->
+  <!-- Arrow from Text-Only Request to Modality-Level -->
+  <line x1="270" y1="65" x2="270" y2="84" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Image-Text Request to Encode Stage -->
+  <line x1="723" y1="65" x2="723" y2="99" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Prefill to Decode (Blue) -->
+  <line x1="263" y1="195" x2="299" y2="195" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Encode to Prefill (Pink) -->
+  <line x1="640" y1="155" x2="605" y2="167" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Prefill to Decode (Pink) -->
+  <line x1="707" y1="195" x2="744" y2="195" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Request Scheduling to Stage Allocation -->
+  <line x1="316" y1="336" x2="400" y2="336" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Stage Allocation to Elastic Auto-Scaling -->
+  <line x1="604" y1="336" x2="684" y2="336" stroke="#4a4a4a" stroke-width="3" marker-end="url(#arrow)" />
+
+</svg>

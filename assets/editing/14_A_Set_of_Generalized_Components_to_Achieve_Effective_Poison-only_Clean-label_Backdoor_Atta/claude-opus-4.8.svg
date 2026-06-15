@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1110" viewBox="0 0 1920 1110">
+  <rect width="1920" height="1110" fill="#ffffff"/>
+
+  <!-- ===================== TOP PANEL: Sample Selection ===================== -->
+  <rect x="15" y="35" width="1890" height="555" rx="20" fill="none" stroke="#222" stroke-width="3" stroke-dasharray="8,6"/>
+  <text x="45" y="80" font-family="monospace" font-size="40" font-weight="bold" fill="#111">Sample Selection</text>
+
+  <!-- Title text -->
+  <text x="960" y="62" text-anchor="middle" font-family="serif" font-size="34" font-weight="bold" fill="#111">
+    Explore the effect of <tspan fill="#c0392b">triggers</tspan> on <tspan fill="#c0392b">sample selection</tspan>
+  </text>
+  <text x="960" y="102" text-anchor="middle" font-family="serif" font-size="34" font-weight="bold" fill="#111">
+    via the enhancement of <tspan fill="#1a3fd0">attack success rate</tspan> and <tspan fill="#1a7a3a">stealthiness</tspan>.
+  </text>
+
+  <!-- Component A box -->
+  <rect x="35" y="130" width="930" height="445" rx="6" fill="#ECEDF8"/>
+  <text x="50" y="170" font-family="serif" font-size="34" font-weight="bold" fill="#1a3fd0">Component A</text>
+
+  <text x="125" y="205" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">highlight</text>
+  <text x="150" y="248" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#111">large trigger scale</text>
+
+  <text x="775" y="165" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#1a3fd0">attack success rate</text>
+  <text x="775" y="195" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#1a3fd0">enhancement</text>
+
+  <!-- small image placeholders A -->
+  <rect x="35" y="280" width="95" height="95" fill="#bcc4c9"/>
+  <rect x="130" y="280" width="95" height="95" fill="#efe6d2"/>
+  <rect x="35" y="375" width="95" height="95" fill="#cfd6da"/>
+  <rect x="130" y="375" width="95" height="95" fill="#efe6d2"/>
+  <rect x="237" y="280" width="22" height="190" fill="#5b8fd0"/>
+
+  <text x="150" y="505" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#111">small trigger scale</text>
+  <text x="125" y="548" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">highlight</text>
+
+  <!-- highlight arrows top -->
+  <path d="M180 215 L300 215 L300 235" fill="none" stroke="#c0392b" stroke-width="4"/>
+  <polygon points="293,228 300,242 307,228" fill="#c0392b"/>
+  <polygon points="173,208 187,208 180,222" fill="#c0392b"/>
+  <!-- highlight arrows bottom -->
+  <path d="M300 530 L300 510 L300 510" fill="none" stroke="#c0392b" stroke-width="4"/>
+  <path d="M180 520 L300 520 L300 505" fill="none" stroke="#c0392b" stroke-width="4"/>
+  <polygon points="293,512 300,498 307,512" fill="#c0392b"/>
+  <polygon points="173,527 187,527 180,513" fill="#c0392b"/>
+
+  <!-- Category Diversity button -->
+  <rect x="285" y="220" width="615" height="80" rx="40" fill="#FFEB3B"/>
+  <text x="592" y="272" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#fff">Category Diversity (ours)</text>
+
+  <!-- middle yellow box -->
+  <rect x="290" y="320" width="610" height="105" rx="4" fill="#ffffff" stroke="#e3d000" stroke-width="3"/>
+  <text x="595" y="362" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">Find the appropriate combination</text>
+  <text x="595" y="398" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">based on <tspan fill="#c0392b">the scale of trigger features</tspan> .</text>
+
+  <!-- Forgetting Events button -->
+  <rect x="285" y="445" width="615" height="80" rx="40" fill="#B0252A"/>
+  <text x="592" y="497" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#fff">Forgetting Events (traditional)</text>
+
+  <!-- Component B box -->
+  <rect x="985" y="130" width="920" height="445" rx="6" fill="#E5F0E8"/>
+  <text x="1000" y="170" font-family="serif" font-size="34" font-weight="bold" fill="#1a7a3a">Component B</text>
+
+  <text x="1730" y="165" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#1a7a3a">stealthiness</text>
+  <text x="1730" y="195" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#1a7a3a">enhancement</text>
+
+  <!-- B image placeholders -->
+  <rect x="1000" y="185" width="160" height="190" fill="#aeb6bb"/>
+  <rect x="1170" y="185" width="160" height="190" fill="#101010" stroke="#7a1f1f" stroke-width="3"/>
+  <text x="1250" y="135" text-anchor="middle"></text>
+  <text x="1250" y="400" text-anchor="middle" font-family="serif" font-size="26" font-weight="bold" fill="#c0392b">our method</text>
+  <rect x="1000" y="405" width="160" height="160" fill="#dfe6df"/>
+  <rect x="1170" y="405" width="160" height="160" fill="#7e6c83"/>
+
+  <!-- B text 1 -->
+  <text x="1355" y="225" font-family="serif" font-size="28" font-weight="bold" fill="#111">Trigger <tspan fill="#000">▮</tspan> can be</text>
+  <text x="1355" y="259" font-family="serif" font-size="28" font-weight="bold" fill="#111">concealed in the</text>
+  <text x="1355" y="293" font-family="serif" font-size="28" font-weight="bold" fill="#c0392b">black</text>
+  <text x="1355" y="327" font-family="serif" font-size="28" font-weight="bold" fill="#111">background.</text>
+
+  <!-- B text 2 -->
+  <text x="1355" y="430" font-family="serif" font-size="28" font-weight="bold" fill="#111">Trigger can be</text>
+  <text x="1355" y="464" font-family="serif" font-size="28" font-weight="bold" fill="#111">concealed in the</text>
+  <text x="1355" y="498" font-family="serif" font-size="28" font-weight="bold" fill="#c0392b">complexly texture</text>
+  <text x="1355" y="532" font-family="serif" font-size="28" font-weight="bold" fill="#111">background.</text>
+
+  <!-- B yellow box right -->
+  <rect x="1610" y="270" width="280" height="200" rx="4" fill="#ffffff" stroke="#e3d000" stroke-width="3"/>
+  <text x="1750" y="310" text-anchor="middle" font-family="serif" font-size="27" font-weight="bold" fill="#111">Cancel <tspan fill="#c0392b">trigger</tspan></text>
+  <text x="1750" y="343" text-anchor="middle" font-family="serif" font-size="27" font-weight="bold" fill="#c0392b">features<tspan fill="#111"> on</tspan></text>
+  <text x="1750" y="376" text-anchor="middle" font-family="serif" font-size="27" font-weight="bold" fill="#111">images by</text>
+  <text x="1750" y="409" text-anchor="middle" font-family="serif" font-size="27" font-weight="bold" fill="#111">similarity</text>
+  <text x="1750" y="442" text-anchor="middle" font-family="serif" font-size="27" font-weight="bold" fill="#111">calculation.</text>
+
+  <!-- ===================== Middle arrows / labels ===================== -->
+  <!-- blue down arrow (attack success rate) -->
+  <line x1="340" y1="575" x2="340" y2="680" stroke="#1a3fd0" stroke-width="6"/>
+  <polygon points="328,672 352,672 340,693" fill="#1a3fd0"/>
+  <text x="170" y="600" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#1a3fd0">attack success rate</text>
+  <text x="170" y="630" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#1a3fd0">enhancement</text>
+
+  <!-- red up arrow (scale of triggers) -->
+  <line x1="445" y1="693" x2="445" y2="588" stroke="#B0252A" stroke-width="6"/>
+  <polygon points="433,596 457,596 445,575" fill="#B0252A"/>
+  <text x="630" y="612" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#B0252A">the scale of triggers</text>
+
+  <!-- red up arrow (trigger features) -->
+  <line x1="1530" y1="693" x2="1530" y2="588" stroke="#B0252A" stroke-width="6"/>
+  <polygon points="1518,596 1542,596 1530,575" fill="#B0252A"/>
+  <text x="1530" y="612" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#B0252A">trigger features</text>
+
+  <!-- green down arrow (stealthiness) -->
+  <line x1="1660" y1="575" x2="1660" y2="680" stroke="#1a7a3a" stroke-width="6"/>
+  <polygon points="1648,672 1672,672 1660,693" fill="#1a7a3a"/>
+  <text x="1790" y="600" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#1a7a3a">stealthiness</text>
+  <text x="1790" y="630" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold" fill="#1a7a3a">ensurement</text>
+
+  <!-- ===================== BOTTOM PANEL: Triggers ===================== -->
+  <rect x="15" y="700" width="1890" height="395" rx="20" fill="#FBE9E7" stroke="#222" stroke-width="3" stroke-dasharray="8,6"/>
+  <text x="45" y="745" font-family="monospace" font-size="40" font-weight="bold" fill="#111">Triggers</text>
+  <text x="960" y="745" text-anchor="middle" font-family="monospace" font-size="34" font-weight="bold" fill="#111">
+    Explore the effect of <tspan fill="#c0392b">sample selection</tspan> on <tspan fill="#c0392b">triggers</tspan>.
+  </text>
+
+  <text x="50" y="785" font-family="serif" font-size="32" font-weight="bold" fill="#c0392b">Component C</text>
+  <text x="960" y="785" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">Stealthiness ensurement via avoid selecting single-color dominated samples.</text>
+  <text x="960" y="825" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#1a3fd0">Distinct sensitivity of human visual system on RGB</text>
+
+  <!-- branching line under stealthiness -->
+  <path d="M330 765 L330 790 L1750 790 L1750 815" fill="none" stroke="#c0392b" stroke-width="4"/>
+
+  <!-- RGB vertical bar -->
+  <rect x="55" y="780" width="22" height="300" fill="#f29ca0"/>
+  <text x="90" y="775" font-family="serif" font-size="30" font-weight="bold" fill="#1a7a3a">G</text>
+  <text x="90" y="870" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">R</text>
+  <text x="90" y="1010" font-family="serif" font-size="30" font-weight="bold" fill="#1a3fd0">B</text>
+
+  <!-- enhance yellow box -->
+  <rect x="135" y="830" width="430" height="115" rx="4" fill="#ffffff" stroke="#e3d000" stroke-width="3"/>
+  <text x="350" y="872" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">Enhance the <tspan fill="#c0392b">trigger feature</tspan></text>
+  <text x="350" y="908" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">on the <tspan fill="#c0392b">Blue</tspan> color channel.</text>
+
+  <!-- low sensitivity dashed box -->
+  <rect x="80" y="985" width="285" height="95" rx="2" fill="none" stroke="#444" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <text x="222" y="1018" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">low sensitivity</text>
+  <text x="110" y="1058" font-family="serif" font-size="30" font-weight="bold" fill="#1a3fd0">B</text>
+
+  <!-- dotted connectors from yellow box to low sens -->
+  <path d="M250 945 L210 985" stroke="#444" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M250 945 L290 985" stroke="#444" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <!-- distinct-color / poisoning double arrow -->
+  <line x1="360" y1="1010" x2="555" y2="1010" stroke="#B0252A" stroke-width="8"/>
+  <polygon points="360,1010 385,997 385,1023" fill="#B0252A"/>
+  <text x="455" y="978" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#c0392b">distinct-color</text>
+  <text x="455" y="1062" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#c0392b">poisoning</text>
+
+  <!-- three distortion images -->
+  <text x="710" y="838" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">mild <tspan fill="#1a3fd0">distortion</tspan></text>
+  <rect x="580" y="850" width="255" height="225" fill="#d8d8d8"/>
+  <text x="828" y="1065" text-anchor="end" font-family="serif" font-size="28" font-weight="bold" fill="#c0392b">R</text>
+
+  <text x="975" y="838" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">severe <tspan fill="#1a3fd0">distortion</tspan></text>
+  <rect x="845" y="850" width="255" height="225" fill="#c4d0c4"/>
+  <text x="1093" y="1065" text-anchor="end" font-family="serif" font-size="28" font-weight="bold" fill="#1a7a3a">G</text>
+
+  <text x="1240" y="838" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#c0392b">subtle <tspan fill="#1a3fd0">distortion</tspan></text>
+  <rect x="1110" y="850" width="255" height="225" fill="#cfcfd8"/>
+  <text x="1358" y="1065" text-anchor="end" font-family="serif" font-size="28" font-weight="bold" fill="#1a3fd0">B</text>
+
+  <!-- Special samples box -->
+  <rect x="1410" y="830" width="475" height="250" rx="2" fill="none" stroke="#1a7a3a" stroke-width="3"/>
+  <text x="1648" y="868" text-anchor="middle" font-family="serif" font-size="30" font-weight="bold" fill="#111">Special samples</text>
+  <text x="1525" y="903" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">Green</text>
+  <text x="1525" y="933" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">dominated</text>
+  <text x="1775" y="903" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">Blue</text>
+  <text x="1775" y="933" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#111">dominated</text>
+  <rect x="1425" y="945" width="210" height="125" fill="#3a3416"/>
+  <rect x="1655" y="945" width="210" height="125" fill="#0c1d4a"/>
+
+  <!-- arrow from blue bottom arrow into component C yellow box -->
+  <path d="M340 760 L340 815" stroke="#c0392b" stroke-width="4"/>
+  <polygon points="328,808 352,808 340,828" fill="#c0392b"/>
+</svg>

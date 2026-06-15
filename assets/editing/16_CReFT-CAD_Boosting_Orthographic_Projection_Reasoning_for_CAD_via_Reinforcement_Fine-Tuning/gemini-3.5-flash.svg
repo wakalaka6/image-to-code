@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for 3D Model -->
+    <linearGradient id="topGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B1C2"/>
+      <stop offset="100%" stop-color="#8E9AA8"/>
+    </linearGradient>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5A6978"/>
+      <stop offset="100%" stop-color="#4A5968"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#738291"/>
+      <stop offset="100%" stop-color="#637281"/>
+    </linearGradient>
+    
+    <linearGradient id="pillarTopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B5C2D0"/>
+      <stop offset="100%" stop-color="#A5B2C0"/>
+    </linearGradient>
+    <linearGradient id="pillarLeftGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6C7B8A"/>
+      <stop offset="100%" stop-color="#5C6B7A"/>
+    </linearGradient>
+    <linearGradient id="pillarRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8594A3"/>
+      <stop offset="100%" stop-color="#758493"/>
+    </linearGradient>
+
+    <linearGradient id="cylinderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A5968"/>
+      <stop offset="30%" stop-color="#8E9AA8"/>
+      <stop offset="70%" stop-color="#5A6978"/>
+      <stop offset="100%" stop-color="#3D4A56"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="430" fill="#FFFFFF"/>
+
+  <!-- ==================== EXPERT KNOWLEDGE BLOCK ==================== -->
+  <rect x="10" y="15" width="330" height="140" rx="15" ry="15" fill="#EAEAEA"/>
+  <text x="175" y="38" font-family="Georgia, serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#000000">Expert Knowledge</text>
+  
+  <!-- Drawing Icon & Label -->
+  <g transform="translate(20, 48)">
+    <!-- Blueprint Background -->
+    <rect x="0" y="0" width="125" height="72" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="1"/>
+    <!-- Ground Line -->
+    <line x1="5" y1="10" x2="120" y2="10" stroke="#999999" stroke-width="1"/>
+    <path d="M 10,10 L 5,15 M 25,10 L 20,15 M 40,10 L 35,15 M 55,10 L 50,15 M 70,10 L 65,15 M 85,10 L 80,15 M 100,10 L 95,15 M 115,10 L 110,15" stroke="#999999" stroke-width="0.8"/>
+    <!-- Foundation Outline -->
+    <rect x="35" y="25" width="55" height="30" fill="none" stroke="#444444" stroke-width="1.2"/>
+    <rect x="45" y="10" width="10" height="15" fill="none" stroke="#444444" stroke-width="1.2"/>
+    <rect x="70" y="10" width="10" height="15" fill="none" stroke="#444444" stroke-width="1.2"/>
+    <!-- Centerlines -->
+    <path d="M 50,5 L 50,60 M 75,5 L 75,60" stroke="#FF0000" stroke-width="0.5" stroke-dasharray="4,2,1,2"/>
+    <!-- Dimension Lines -->
+    <path d="M 35,20 L 90,20 M 35,17 L 35,23 M 90,17 L 90,23" stroke="#0000FF" stroke-width="0.6"/>
+    <text x="62.5" y="18" font-family="sans-serif" font-size="6" fill="#0000FF" text-anchor="middle">520</text>
+    <path d="M 30,25 L 30,55 M 27,25 L 33,25 M 27,55 L 33,55" stroke="#0000FF" stroke-width="0.6"/>
+    <text x="24" y="43" font-family="sans-serif" font-size="6" fill="#0000FF" text-anchor="middle" transform="rotate(-90 24 43)">230</text>
+    <!-- Label -->
+    <text x="62.5" y="87" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Drawing</text>
+  </g>
+
+  <!-- Constraints Icon & Label -->
+  <g transform="translate(170, 53)">
+    <!-- Clipboard Body -->
+    <rect x="0" y="8" width="48" height="54" rx="5" fill="#2B2B2B"/>
+    <!-- Clip -->
+    <path d="M 14,8 L 14,3 A 2,2 0 0 1 16,1 L 32,1 A 2,2 0 0 1 34,3 L 34,8 Z" fill="#7F7F7F"/>
+    <circle cx="24" cy="4" r="1.5" fill="#FFFFFF"/>
+    <!-- Checkmark and Cross -->
+    <path d="M 10,22 L 22,34 M 22,22 L 10,34" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 16,48 L 24,56 L 40,36" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Label -->
+    <text x="24" y="82" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Constraints</text>
+  </g>
+
+  <!-- Text Icon & Label -->
+  <g transform="translate(262, 58)">
+    <!-- Document Outline -->
+    <rect x="0" y="0" width="44" height="52" rx="6" fill="none" stroke="#2B2B2B" stroke-width="4"/>
+    <!-- Lines -->
+    <line x1="10" y1="12" x2="34" y2="12" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="22" x2="34" y2="22" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="32" x2="34" y2="32" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="42" x2="26" y2="42" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Label -->
+    <text x="22" y="77" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Text</text>
+  </g>
+
+
+  <!-- ==================== STEP 1: DOWNWARD ARROW & LABELS ==================== -->
+  <!-- Step 1 Text (Left) -->
+  <text x="85" y="220" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4FA89B" text-anchor="middle">Step 1:</text>
+  <text x="85" y="240" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4FA89B" text-anchor="middle">Constraint-Guided</text>
+  <text x="85" y="260" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4FA89B" text-anchor="middle">Parameter Sampling</text>
+
+  <!-- Thick Teal Arrow -->
+  <g>
+    <rect x="190" y="155" width="10" height="110" fill="#4FA89B"/>
+    <polygon points="175,262 215,262 195,287" fill="#4FA89B"/>
+  </g>
+
+  <!-- Inter-/Intra-View Constraints Label -->
+  <text x="265" y="198" font-family="Georgia, serif" font-size="14" fill="#000000" text-anchor="middle">Inter-/Intra-View</text>
+  <text x="265" y="216" font-family="Georgia, serif" font-size="14" fill="#000000" text-anchor="middle">Constraints</text>
+
+
+  <!-- ==================== PARAMETER SPACE BLOCK ==================== -->
+  <g transform="translate(155, 295)">
+    <!-- Stacked Documents (Black) -->
+    <rect x="12" y="12" width="46" height="56" rx="4" fill="#000000"/>
+    <rect x="0" y="0" width="46" height="56" rx="4" fill="#000000" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- Lines on top document -->
+    <line x1="8" y1="12" x2="30" y2="12" stroke="#FFFFFF" stroke-width="2.5"/>
+    <line x1="8" y1="20" x2="38" y2="20" stroke="#FFFFFF" stroke-width="2.5"/>
+    <line x1="8" y1="28" x2="38" y2="28" stroke="#FFFFFF" stroke-width="2.5"/>
+    <line x1="8" y1="36" x2="38" y2="36" stroke="#FFFFFF" stroke-width="2.5"/>
+    <line x1="8" y1="44" x2="26" y2="44" stroke="#FFFFFF" stroke-width="2.5"/>
+    <!-- Label -->
+    <text x="23" y="85" font-family="sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Parameter Space</text>
+  </g>
+
+
+  <!-- ==================== PATHS FROM PARAMETER SPACE ==================== -->
+  <!-- Blue Path (Step 2) -->
+  <path d="M 245,310 L 335,310 A 15,15 0 0 0 350,295 L 350,105 A 15,15 0 0 1 365,90 L 515,90" fill="none" stroke="#5B9BD5" stroke-width="3"/>
+  <polygon points="513,84 527,90 513,96" fill="#5B9BD5"/>
+
+  <!-- Purple Path (Step 3) -->
+  <path d="M 342,310 L 555,310" fill="none" stroke="#B060A0" stroke-width="3"/>
+  <polygon points="553,304 567,310 553,316" fill="#B060A0"/>
+
+  <!-- Path Labels -->
+  <!-- ezdxf -->
+  <text x="358" y="195" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="start">
+    <tspan fill="#000000">ez</tspan><tspan fill="#8B8BE8">dxf</tspan>
+  </text>
+  <!-- Layers separating -->
+  <text x="435" y="52" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">Layers</text>
+  <text x="435" y="72" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">separating</text>
+  <!-- Entities separating -->
+  <text x="435" y="268" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">Entities</text>
+  <text x="435" y="288" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">separating</text>
+
+
+  <!-- ==================== STEP 2: 2D DRAWING & RASTER ==================== -->
+  <!-- Step 2 Text -->
+  <text x="575" y="140" font-family="sans-serif" font-size="14" font-weight="bold" fill="#5B9BD5" text-anchor="middle">Step 2: 2D Drawing and Raster</text>
+  <text x="575" y="158" font-family="sans-serif" font-size="14" font-weight="bold" fill="#5B9BD5" text-anchor="middle">Image Generation</text>
+
+  <!-- DXF Icon -->
+  <g transform="translate(530, 50)">
+    <!-- Back Page -->
+    <path d="M 40,5 L 70,5 L 70,65 L 40,65 Z" fill="none" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Front Page (Angled) -->
+    <path d="M 5,12 L 40,2 L 40,62 L 5,72 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linejoin="round"/>
+    <!-- DXF Text -->
+    <text x="22" y="44" font-family="sans-serif" font-weight="900" font-size="15" fill="#000000" text-anchor="middle">DXF</text>
+  </g>
+
+  <!-- Arrow to Orthographic Projection -->
+  <line x1="620" y1="90" x2="760" y2="90" stroke="#5B9BD5" stroke-width="3"/>
+  <polygon points="758,84 772,90 758,96" fill="#5B9BD5"/>
+  <text x="685" y="72" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">Rendering</text>
+
+
+  <!-- ==================== ORTHOGRAPHIC PROJECTION BLOCK ==================== -->
+  <!-- Dashed Container -->
+  <rect x="770" y="10" width="215" height="180" rx="15" ry="15" fill="none" stroke="#000000" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Front View -->
+  <g transform="translate(785, 25)">
+    <!-- Technical Drawing Lines -->
+    <rect x="10" y="25" width="60" height="25" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <rect x="25" y="10" width="30" height="15" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <!-- Dimension lines -->
+    <line x1="10" y1="5" x2="70" y2="5" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="10" y1="2" x2="10" y2="8" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="70" y1="2" x2="70" y2="8" stroke="#CCCCCC" stroke-width="0.8"/>
+    <!-- Text Label -->
+    <text x="40" y="38" font-family="Georgia, serif" font-size="16" fill="#CCCCCC" font-weight="bold" text-anchor="middle">Front</text>
+  </g>
+
+  <!-- Side View -->
+  <g transform="translate(895, 25)">
+    <!-- Technical Drawing Lines -->
+    <rect x="15" y="25" width="50" height="25" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <rect x="25" y="10" width="30" height="15" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <!-- Dimension lines -->
+    <line x1="15" y1="5" x2="65" y2="5" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="15" y1="2" x2="15" y2="8" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="65" y1="2" x2="65" y2="8" stroke="#CCCCCC" stroke-width="0.8"/>
+    <!-- Text Label -->
+    <text x="40" y="38" font-family="Georgia, serif" font-size="16" fill="#CCCCCC" font-weight="bold" text-anchor="middle">Side</text>
+  </g>
+
+  <!-- Top View -->
+  <g transform="translate(785, 105)">
+    <!-- Technical Drawing Lines -->
+    <rect x="10" y="10" width="60" height="45" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <circle cx="22" cy="20" r="6" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <circle cx="58" cy="20" r="6" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <circle cx="22" cy="45" r="6" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <circle cx="58" cy="45" r="6" fill="none" stroke="#CCCCCC" stroke-width="1"/>
+    <!-- Text Label -->
+    <text x="40" y="36" font-family="Georgia, serif" font-size="16" fill="#CCCCCC" font-weight="bold" text-anchor="middle">Top</text>
+  </g>
+
+  <!-- Block Label -->
+  <text x="935" y="135" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Orthographic</text>
+  <text x="935" y="152" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Projection</text>
+
+
+  <!-- ==================== STEP 3: 3D MODEL GENERATION ==================== -->
+  <!-- Step 3 Text -->
+  <text x="550" y="410" font-family="sans-serif" font-size="14" font-weight="bold" fill="#B060A0" text-anchor="middle">Step 3: 3D Model Generation</text>
+
+  <!-- Python / Script Icon -->
+  <g transform="translate(570, 255)">
+    <!-- Blue-gray Container -->
+    <rect x="0" y="0" width="75" height="80" rx="6" fill="none" stroke="#5B7A8C" stroke-width="3"/>
+    <!-- Flowchart elements -->
+    <rect x="10" y="10" width="22" height="12" fill="none" stroke="#5B7A8C" stroke-width="2"/>
+    <rect x="10" y="32" width="22" height="12" fill="none" stroke="#5B7A8C" stroke-width="2"/>
+    <line x1="21" y1="22" x2="21" y2="32" stroke="#5B7A8C" stroke-width="2"/>
+    <path d="M 21,44 L 21,58 L 38,58" fill="none" stroke="#5B7A8C" stroke-width="2"/>
+    <polygon points="36,54 44,58 36,62" fill="#5B7A8C"/>
+    
+    <!-- Python Logo (Simplified Vector) -->
+    <g transform="translate(40, 42) scale(0.85)">
+      <!-- Blue Snake -->
+      <path d="M 16,2 C 8,2 8,8 8,8 L 8,14 L 17,14 L 17,16 L 11,16 C 6,16 2,19 2,25 C 2,31 6,33 11,33 L 13,33 L 13,29 C 13,25 18,24 18,24 L 24,24 C 28,24 30,21 30,16 L 30,11 C 30,6 25,2 16,2 Z" fill="#306998"/>
+      <!-- Yellow Snake -->
+      <path d="M 16,34 C 24,34 24,28 24,28 L 24,22 L 15,22 L 15,20 L 21,20 C 26,20 30,17 30,11 C 30,5 26,3 21,3 L 19,3 L 19,7 C 19,11 14,12 14,12 L 8,12 C 4,12 2,15 2,20 L 2,25 C 2,30 7,34 16,34 Z" fill="#FFD43B"/>
+      <!-- Eyes -->
+      <circle cx="12" cy="6" r="1.5" fill="#FFFFFF"/>
+      <circle cx="20" cy="30" r="1.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Arrow to 3D Model -->
+  <line x1="675" y1="300" x2="800" y2="300" stroke="#B060A0" stroke-width="3"/>
+  <polygon points="798,294 812,300 798,306" fill="#B060A0"/>
+  <text x="735" y="282" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#000000" text-anchor="middle">Execute</text>
+
+
+  <!-- ==================== 3-D MODEL BLOCK ==================== -->
+  <!-- Dark Blue Render Window -->
+  <rect x="815" y="210" width="160" height="160" fill="#2E3F61" rx="5"/>
+
+  <!-- 3D Model Group (Isometric) -->
+  <g transform="translate(5, 5)">
+    <!-- PILES (Cylinders underneath - drawn first for correct occlusion) -->
+    <!-- Pile 2 (Back) -->
+    <g>
+      <path d="M 887,310 L 887,335 A 8,4 0 0 0 903,335 L 903,310 Z" fill="url(#cylinderGrad)"/>
+      <ellipse cx="895" cy="335" rx="8" ry="4" fill="#4A5968"/>
+    </g>
+    <!-- Pile 1 (Left) -->
+    <g>
+      <path d="M 852,325 L 852,350 A 8,4 0 0 0 868,350 L 868,325 Z" fill="url(#cylinderGrad)"/>
+      <ellipse cx="860" cy="350" rx="8" ry="4" fill="#4A5968"/>
+    </g>
+    <!-- Pile 4 (Right) -->
+    <g>
+      <path d="M 922,325 L 922,350 A 8,4 0 0 0 938,350 L 938,325 Z" fill="url(#cylinderGrad)"/>
+      <ellipse cx="930" cy="350" rx="8" ry="4" fill="#4A5968"/>
+    </g>
+    <!-- Pile 3 (Front) -->
+    <g>
+      <path d="M 887,340 L 887,365 A 8,4 0 0 0 903,365 L 903,340 Z" fill="url(#cylinderGrad)"/>
+      <ellipse cx="895" cy="365" rx="8" ry="4" fill="#4A5968"/>
+    </g>
+
+    <!-- MAIN BLOCK -->
+    <!-- Left Face -->
+    <path d="M 840,290 L 890,315 L 890,345 L 840,320 Z" fill="url(#leftGrad)" stroke="#3D4A56" stroke-width="0.8" stroke-linejoin="round"/>
+    <!-- Right Face -->
+    <path d="M 890,315 L 950,285 L 950,315 L 890,345 Z" fill="url(#rightGrad)" stroke="#3D4A56" stroke-width="0.8" stroke-linejoin="round"/>
+    <!-- Top Face -->
+    <path d="M 890,260 L 950,285 L 890,315 L 840,290 Z" fill="url(#topGrad)" stroke="#3D4A56" stroke-width="0.8" stroke-linejoin="round"/>
+
+    <!-- PILLARS ON TOP -->
+    <!-- Pillar 1 (Left-ish) -->
+    <g>
+      <!-- Top Face -->
+      <path d="M 870,230 L 885,237 L 875,245 L 860,238 Z" fill="url(#pillarTopGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <path d="M 860,238 L 875,245 L 875,285 L 860,278 Z" fill="url(#pillarLeftGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <path d="M 875,245 L 885,237 L 885,277 L 875,285 Z" fill="url(#pillarRightGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+    </g>
+    <!-- Pillar 2 (Right-ish) -->
+    <g>
+      <!-- Top Face -->
+      <path d="M 915,252 L 930,260 L 920,268 L 905,260 Z" fill="url(#pillarTopGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+      <!-- Left Face -->
+      <path d="M 905,260 L 920,268 L 920,300 L 905,292 Z" fill="url(#pillarLeftGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+      <!-- Right Face -->
+      <path d="M 920,268 L 930,260 L 930,292 L 920,300 Z" fill="url(#pillarRightGrad)" stroke="#3D4A56" stroke-width="0.5" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Block Label -->
+  <text x="895" y="395" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Final 3-D Model</text>
+
+</svg>

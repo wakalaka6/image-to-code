@@ -53,6 +53,29 @@
     display: inline-block;
     margin-top: 7px;
   }
+  .tools {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    align-items: center;
+  }
+  .tools button, .passControls button {
+    border: 1px solid #c8c9bd;
+    border-radius: 5px;
+    background: #fff;
+    color: #172033;
+    padding: 6px 9px;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .summary {
+    color: #647084;
+    font-size: 12px;
+    font-weight: 700;
+  }
   main {
     max-width: 1900px;
     margin: 0 auto;
@@ -125,6 +148,72 @@
   .label span {
     color: #047857;
   }
+  .passControls {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-bottom: 1px solid #e5e5dd;
+    background: #fff;
+  }
+  .passControls button.active[data-mark="pass"] {
+    background: #dcfce7;
+    border-color: #22c55e;
+    color: #166534;
+  }
+  .passControls button.active[data-mark="fail"] {
+    background: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+  }
+  .passControls.readonly {
+    justify-content: flex-end;
+  }
+  .passState {
+    margin-left: auto;
+    color: #647084;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .passState.fixed {
+    margin-left: 0;
+    border-radius: 999px;
+    padding: 4px 9px;
+  }
+  .passState.fixed.pass {
+    background: #dcfce7;
+    color: #166534;
+  }
+  .passState.fixed.fail {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+  .prediction[data-pass-value="pass"] .passState { color: #166534; }
+  .prediction[data-pass-value="fail"] .passState { color: #991b1b; }
+  .reasonControls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #e5e5dd;
+    background: #fffafa;
+  }
+  .reasonControls[hidden] {
+    display: none;
+  }
+  .reasonControls label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #f3b6b6;
+    border-radius: 999px;
+    padding: 4px 8px;
+    color: #7f1d1d;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 700;
+  }
 
   img {
     width: 100%;
@@ -161,6 +250,7 @@
       <h1>claude-opus-4.8</h1>
       <a class="home" href="index.html">All model pages</a>
       <a class="home" href="overall.html">Overall comparison</a>
+      
     </div>
     <nav class="nav"><a href="#case-1">01</a>
 <a href="#case-2">02</a>
@@ -212,8 +302,9 @@
       <div class="label">GT</div>
       <img src="assets/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Mis/gt.png" alt="GT" decoding="async">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||anthropic/claude-opus-4.8" data-image="05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="0" data-default-pass="pass">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Mis/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async">
     </article>
   </div>
@@ -231,8 +322,9 @@
       <div class="label">GT</div>
       <img src="assets/02_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Pr/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8" data-image="3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/02_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Pr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -250,8 +342,9 @@
       <div class="label">GT</div>
       <img src="assets/03_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8" data-image="A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="1" data-default-pass="pass">
       <div class="label">Prediction <span>run_1</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/03_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -269,8 +362,9 @@
       <div class="label">GT</div>
       <img src="assets/04_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinf/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||anthropic/claude-opus-4.8" data-image="CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/04_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinf/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -288,8 +382,9 @@
       <div class="label">GT</div>
       <img src="assets/05_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagr/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8" data-image="Calibrating Translation Decoding with Quality Estimation on LLMs_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/05_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -307,8 +402,9 @@
       <div class="label">GT</div>
       <img src="assets/06_Chain-of-Retrieval_Augmented_Generation_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8" data-image="Chain-of-Retrieval Augmented Generation_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="2" data-default-pass="pass">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/06_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -326,8 +422,9 @@
       <div class="label">GT</div>
       <img src="assets/07_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8" data-image="Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="2" data-default-pass="pass">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/07_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -345,8 +442,9 @@
       <div class="label">GT</div>
       <img src="assets/08_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Pa/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8" data-image="ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="1" data-default-pass="pass">
       <div class="label">Prediction <span>run_1</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/08_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Pa/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -364,8 +462,9 @@
       <div class="label">GT</div>
       <img src="assets/09_Event-based_HDR_Structured_Light_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Event-based HDR Structured Light_diagram||anthropic/claude-opus-4.8" data-image="Event-based HDR Structured Light_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="1" data-default-pass="fail">
       <div class="label">Prediction <span>run_1</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/09_Event-based_HDR_Structured_Light_diagram/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -383,8 +482,9 @@
       <div class="label">GT</div>
       <img src="assets/10_d794c629fb49374a8f643e359f9f43a7/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8" data-image="d794c629fb49374a8f643e359f9f43a7" data-model="anthropic/claude-opus-4.8" data-difficulty="Simple" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/10_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -405,8 +505,9 @@
       <div class="label">GT</div>
       <img src="assets/11_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8" data-image="AI Debate Aids Assessment of Controversial Claims_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="2" data-default-pass="pass">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/11_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -424,8 +525,9 @@
       <div class="label">GT</div>
       <img src="assets/12_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Mode/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8" data-image="Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/12_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Mode/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -443,8 +545,9 @@
       <div class="label">GT</div>
       <img src="assets/13_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_To/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8" data-image="Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="2" data-default-pass="pass">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/13_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_To/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -462,8 +565,9 @@
       <div class="label">GT</div>
       <img src="assets/14_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_R/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8" data-image="CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/14_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_R/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -481,8 +585,9 @@
       <div class="label">GT</div>
       <img src="assets/15_Can_LLMs_Reason_Over_Non-Text_Modalities_in_a_Training-Free_Manner_A_C/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8" data-image="Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="1" data-default-pass="pass">
       <div class="label">Prediction <span>run_1</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/15_Can_LLMs_Reason_Over_Non-Text_Modalities_in_a_Training-Free_Manner_A_C/claude-opus-4.8_run_1.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -500,8 +605,9 @@
       <div class="label">GT</div>
       <img src="assets/16_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8" data-image="DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/16_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -519,8 +625,9 @@
       <div class="label">GT</div>
       <img src="assets/17_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8" data-image="DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/17_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -538,8 +645,9 @@
       <div class="label">GT</div>
       <img src="assets/18_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysi/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||anthropic/claude-opus-4.8" data-image="Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/18_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -557,8 +665,9 @@
       <div class="label">GT</div>
       <img src="assets/19_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Vi/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||anthropic/claude-opus-4.8" data-image="Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/19_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Vi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -576,8 +685,9 @@
       <div class="label">GT</div>
       <img src="assets/20_sample_figure/gt.png" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="sample_figure||anthropic/claude-opus-4.8" data-image="sample_figure" data-model="anthropic/claude-opus-4.8" data-difficulty="Medium" data-run="0" data-default-pass="pass">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed pass">Pass</span></div>
       <img src="assets/20_sample_figure/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -598,8 +708,9 @@
       <div class="label">GT</div>
       <img src="assets/21_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||anthropic/claude-opus-4.8" data-image="A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/21_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -617,8 +728,9 @@
       <div class="label">GT</div>
       <img src="assets/22_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regr/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||anthropic/claude-opus-4.8" data-image="DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/22_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regr/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -636,8 +748,9 @@
       <div class="label">GT</div>
       <img src="assets/23_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||anthropic/claude-opus-4.8" data-image="Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="2" data-default-pass="fail">
       <div class="label">Prediction <span>run_2</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/23_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models/claude-opus-4.8_run_2.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -655,8 +768,9 @@
       <div class="label">GT</div>
       <img src="assets/24_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Lar/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||anthropic/claude-opus-4.8" data-image="Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/24_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Lar/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -674,8 +788,9 @@
       <div class="label">GT</div>
       <img src="assets/25_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Mul/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8" data-image="EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/25_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Mul/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -693,8 +808,9 @@
       <div class="label">GT</div>
       <img src="assets/26_UniDomain_Pretraining_a_Unified_PDDL_Domain_from_Real-World_Demonstrat/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram||anthropic/claude-opus-4.8" data-image="UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/26_UniDomain_Pretraining_a_Unified_PDDL_Domain_from_Real-World_Demonstrat/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -712,8 +828,9 @@
       <div class="label">GT</div>
       <img src="assets/27_Watch_and_Listen_Understanding_Audio-Visual-Speech_Moments_with_Multim/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram||anthropic/claude-opus-4.8" data-image="Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/27_Watch_and_Listen_Understanding_Audio-Visual-Speech_Moments_with_Multim/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -731,8 +848,9 @@
       <div class="label">GT</div>
       <img src="assets/28_Where_Does_It_Exist_from_the_Low-Altitude_Spatial_Aerial_Video_Groundi/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram||anthropic/claude-opus-4.8" data-image="Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/28_Where_Does_It_Exist_from_the_Low-Altitude_Spatial_Aerial_Video_Groundi/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -750,8 +868,9 @@
       <div class="label">GT</div>
       <img src="assets/29_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanc/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||anthropic/claude-opus-4.8" data-image="Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/29_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanc/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
@@ -769,13 +888,158 @@
       <div class="label">GT</div>
       <img src="assets/30_ZEBRA_Towards_Zero-Shot_Cross-Subject_Generalization_for_Universal_Bra/gt.jpg" alt="GT" decoding="async" loading="lazy">
     </article>
-    <article>
+    <article class="prediction" data-pass-key="ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram||anthropic/claude-opus-4.8" data-image="ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram" data-model="anthropic/claude-opus-4.8" data-difficulty="Hard" data-run="0" data-default-pass="fail">
       <div class="label">Prediction <span>run_0</span></div>
+      <div class="passControls readonly"><span class="passState fixed fail">Fail</span></div>
       <img src="assets/30_ZEBRA_Towards_Zero-Shot_Cross-Subject_Generalization_for_Universal_Bra/claude-opus-4.8_run_0.svg" alt="Prediction" decoding="async" loading="lazy">
     </article>
   </div>
 </section>
 </main>
 
+<script>
+(() => {
+  const STORE_KEY = "model_compare_pass_marks_v1";
+  const MODEL = "anthropic/claude-opus-4.8";
+  const readStore = () => {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); }
+    catch (_) { return {}; }
+  };
+  const writeStore = (data) => localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  const articles = Array.from(document.querySelectorAll(".prediction[data-pass-key]"));
+  const summary = document.getElementById("passSummary");
+
+  function selectedReasons(article) {
+    return Array.from(article.querySelectorAll("[data-reason]:checked")).map((input) => input.dataset.reason);
+  }
+
+  function applyState(article, value, reasons = []) {
+    article.dataset.passValue = value || "";
+    article.querySelectorAll("button[data-mark]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.mark === value);
+    });
+    const reasonControls = article.querySelector(".reasonControls");
+    if (reasonControls) {
+      reasonControls.hidden = value !== "fail";
+      reasonControls.querySelectorAll("[data-reason]").forEach((input) => {
+        input.checked = Array.isArray(reasons) && reasons.includes(input.dataset.reason);
+      });
+    }
+    const state = article.querySelector(".passState");
+    state.textContent = value === "pass" ? "Pass" : value === "fail" ? "Fail" : "Unmarked";
+  }
+
+  function updateSummary() {
+    if (!summary) return;
+    let pass = 0, fail = 0, unmarked = 0;
+    for (const article of articles) {
+      if (article.dataset.passValue === "pass") pass += 1;
+      else if (article.dataset.passValue === "fail") fail += 1;
+      else unmarked += 1;
+    }
+    summary.textContent = `${pass} pass / ${fail} fail / ${unmarked} unmarked`;
+  }
+
+  function mark(article, value) {
+    const store = readStore();
+    const key = article.dataset.passKey;
+    if (value === "clear") {
+      delete store[key];
+      value = "";
+    } else {
+      const reasons = value === "fail" ? selectedReasons(article) : [];
+      store[key] = {
+        pass: value === "pass",
+        status: value,
+        model: article.dataset.model,
+        image: article.dataset.image,
+        difficulty: article.dataset.difficulty,
+        run: Number(article.dataset.run),
+        reasons
+      };
+    }
+    writeStore(store);
+    applyState(article, value, store[key] ? store[key].reasons : []);
+    updateSummary();
+  }
+
+  const store = readStore();
+  for (const article of articles) {
+    const saved = store[article.dataset.passKey];
+    applyState(article, saved ? saved.status : article.dataset.defaultPass, saved ? saved.reasons : []);
+    article.querySelectorAll("button[data-mark]").forEach((button) => {
+      button.addEventListener("click", () => mark(article, button.dataset.mark));
+    });
+    article.querySelectorAll("[data-reason]").forEach((input) => {
+      input.addEventListener("change", () => {
+        if (article.dataset.passValue !== "fail") return;
+        mark(article, "fail");
+      });
+    });
+  }
+  updateSummary();
+
+  const exportPass = document.getElementById("exportPass");
+  if (exportPass) exportPass.addEventListener("click", () => {
+    const pageMarks = {};
+    for (const article of articles) {
+      const key = article.dataset.passKey;
+      const status = article.dataset.passValue || "";
+      if (!status) continue;
+      pageMarks[key] = {
+        pass: status === "pass",
+        status,
+        model: article.dataset.model,
+        image: article.dataset.image,
+        difficulty: article.dataset.difficulty,
+        run: Number(article.dataset.run),
+        reasons: status === "fail" ? selectedReasons(article) : []
+      };
+    }
+    const payload = {
+      model: MODEL,
+      exportedAt: new Date().toISOString(),
+      marks: pageMarks
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `${MODEL.replaceAll("/", "_").replaceAll(".", "-")}_pass_marks.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+
+  const loadCodexDraft = document.getElementById("loadCodexDraft");
+  if (loadCodexDraft) loadCodexDraft.addEventListener("click", () => {
+    const store = readStore();
+    for (const article of articles) {
+      const value = article.dataset.defaultPass;
+      const key = article.dataset.passKey;
+      store[key] = {
+        pass: value === "pass",
+        status: value,
+        model: article.dataset.model,
+        image: article.dataset.image,
+        difficulty: article.dataset.difficulty,
+        run: Number(article.dataset.run),
+        reasons: []
+      };
+      applyState(article, value, []);
+    }
+    writeStore(store);
+    updateSummary();
+  });
+
+  const clearPageMarks = document.getElementById("clearPageMarks");
+  if (clearPageMarks) clearPageMarks.addEventListener("click", () => {
+    if (!confirm("Clear all Pass/Fail marks on this model page?")) return;
+    const store = readStore();
+    for (const article of articles) delete store[article.dataset.passKey];
+    writeStore(store);
+    for (const article of articles) applyState(article, "");
+    updateSummary();
+  });
+})();
+</script>
 </body>
 </html>
