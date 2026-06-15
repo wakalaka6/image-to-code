@@ -1,0 +1,655 @@
+{
+  "source": "browser-export",
+  "exportedAt": "2026-06-15T07:08:28.145Z",
+  "models": [
+    "anthropic/claude-opus-4.8",
+    "google/gemini-3.5-flash",
+    "openai/gpt-5.5"
+  ],
+  "marks": {
+    "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram",
+      "difficulty": "Simple",
+      "run": 0,
+      "reasons": [
+        "raster",
+        "overlap"
+      ]
+    },
+    "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "overlap"
+      ]
+    },
+    "Event-based HDR Structured Light_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Event-based HDR Structured Light_diagram",
+      "difficulty": "Simple",
+      "run": 1,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "difficulty": "Medium",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "difficulty": "Hard",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "difficulty": "Hard",
+      "run": 2,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "difficulty": "Hard",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster",
+        "overlap"
+      ]
+    },
+    "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster",
+        "overlap"
+      ]
+    },
+    "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram||anthropic/claude-opus-4.8": {
+      "pass": false,
+      "status": "fail",
+      "model": "anthropic/claude-opus-4.8",
+      "image": "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "Event-based HDR Structured Light_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Event-based HDR Structured Light_diagram",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "d794c629fb49374a8f643e359f9f43a7||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "difficulty": "Simple",
+      "run": 1,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "difficulty": "Medium",
+      "run": 2,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "difficulty": "Medium",
+      "run": 1,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "difficulty": "Hard",
+      "run": 1,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster",
+        "overlap"
+      ]
+    },
+    "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram||google/gemini-3.5-flash": {
+      "pass": false,
+      "status": "fail",
+      "model": "google/gemini-3.5-flash",
+      "image": "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "Event-based HDR Structured Light_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Event-based HDR Structured Light_diagram",
+      "difficulty": "Simple",
+      "run": 1,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "d794c629fb49374a8f643e359f9f43a7||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "difficulty": "Simple",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "difficulty": "Medium",
+      "run": 1,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "difficulty": "Medium",
+      "run": 1,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "difficulty": "Medium",
+      "run": 1,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "difficulty": "Medium",
+      "run": 1,
+      "reasons": [
+        "overlap"
+      ]
+    },
+    "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "overlap"
+      ]
+    },
+    "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "sample_figure||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "sample_figure",
+      "difficulty": "Medium",
+      "run": 0,
+      "reasons": [
+        "overlap"
+      ]
+    },
+    "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "difficulty": "Hard",
+      "run": 1,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster",
+        "overlap"
+      ]
+    },
+    "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster"
+      ]
+    },
+    "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "difficulty": "Hard",
+      "run": 2,
+      "reasons": [
+        "arrow",
+        "raster",
+        "overlap"
+      ]
+    },
+    "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "UniDomain Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "raster"
+      ]
+    },
+    "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Where Does It Exist from the Low-Altitude Spatial Aerial Video Grounding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow",
+        "raster",
+        "overlap"
+      ]
+    },
+    "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    },
+    "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram||openai/gpt-5.5": {
+      "pass": false,
+      "status": "fail",
+      "model": "openai/gpt-5.5",
+      "image": "ZEBRA Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding_diagram",
+      "difficulty": "Hard",
+      "run": 0,
+      "reasons": [
+        "arrow"
+      ]
+    }
+  }
+}
