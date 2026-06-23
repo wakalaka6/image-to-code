@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" width="100%" height="100%">
+  <defs>
+    <!-- Standard LLM Robot -->
+    <g id="robot-llm">
+      <!-- Head -->
+      <rect x="-18" y="-30" width="36" height="26" rx="5" fill="#90A4AE" stroke="#37474F" stroke-width="2"/>
+      <!-- Eyes -->
+      <circle cx="-7" cy="-17" r="4" fill="#37474F"/>
+      <circle cx="-7" cy="-17" r="1.5" fill="#FFFFFF"/>
+      <circle cx="7" cy="-17" r="4" fill="#37474F"/>
+      <circle cx="7" cy="-17" r="1.5" fill="#FFFFFF"/>
+      <!-- Antenna -->
+      <line x1="0" y1="-30" x2="0" y2="-38" stroke="#37474F" stroke-width="2"/>
+      <circle cx="0" cy="-40" r="3" fill="#FFB300"/>
+      <!-- Ears -->
+      <rect x="-22" y="-23" width="4" height="12" rx="1" fill="#37474F"/>
+      <rect x="18" y="-23" width="4" height="12" rx="1" fill="#37474F"/>
+      <!-- Neck -->
+      <rect x="-4" y="-4" width="8" height="4" fill="#37474F"/>
+      <!-- Body -->
+      <rect x="-15" y="0" width="30" height="26" rx="4" fill="#90A4AE" stroke="#37474F" stroke-width="2"/>
+      <!-- Screen -->
+      <rect x="-10" y="4" width="20" height="12" rx="2" fill="#FFD54F" stroke="#37474F" stroke-width="1.5"/>
+      <!-- Arms -->
+      <path d="M -15 6 Q -23 6 -23 14 Q -23 18 -19 18" fill="none" stroke="#37474F" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 15 6 Q 23 6 23 14 Q 23 18 19 18" fill="none" stroke="#37474F" stroke-width="2" stroke-linecap="round"/>
+      <!-- Legs -->
+      <rect x="-10" y="26" width="6" height="6" fill="#37474F"/>
+      <rect x="4" y="26" width="6" height="6" fill="#37474F"/>
+      <ellipse cx="-7" cy="33" rx="5" ry="2" fill="#37474F"/>
+      <ellipse cx="7" cy="33" rx="5" ry="2" fill="#37474F"/>
+    </g>
+
+    <!-- Truthful LLM Robot (Angel) -->
+    <g id="robot-truthful">
+      <!-- Wings -->
+      <path d="M -15 5 C -35 -5, -40 15, -15 20 Z" fill="#E0F7FA" stroke="#37474F" stroke-width="1.5"/>
+      <path d="M 15 5 C 35 -5, 40 15, 15 20 Z" fill="#E0F7FA" stroke="#37474F" stroke-width="1.5"/>
+      <!-- Main Robot -->
+      <use href="#robot-llm" x="0" y="0"/>
+      <!-- Halo -->
+      <ellipse cx="0" cy="-46" rx="12" ry="3" fill="none" stroke="#FFD54F" stroke-width="2"/>
+    </g>
+
+    <!-- Evil LLM Robot (Devil) -->
+    <g id="robot-evil">
+      <!-- Bat Wings -->
+      <path d="M -15 5 L -32 -2 L -26 10 L -35 15 L -15 20 Z" fill="#37474F" stroke="#263238" stroke-width="1"/>
+      <path d="M 15 5 L 32 -2 L 26 10 L 35 15 L 15 20 Z" fill="#37474F" stroke="#263238" stroke-width="1"/>
+      <!-- Horns -->
+      <path d="M -14 -30 Q -18 -38 -24 -34 Q -18 -28 -12 -28 Z" fill="#D32F2F" stroke="#37474F" stroke-width="1"/>
+      <path d="M 14 -30 Q 18 -38 24 -34 Q 18 -28 12 -28 Z" fill="#D32F2F" stroke="#37474F" stroke-width="1"/>
+      <!-- Head -->
+      <rect x="-18" y="-30" width="36" height="26" rx="5" fill="#546E7A" stroke="#263238" stroke-width="2"/>
+      <!-- Angry Eyebrows -->
+      <line x1="-12" y1="-21" x2="-4" y2="-18" stroke="#263238" stroke-width="2" stroke-linecap="round"/>
+      <line x1="12" y1="-21" x2="4" y2="-18" stroke="#263238" stroke-width="2" stroke-linecap="round"/>
+      <!-- Eyes -->
+      <circle cx="-7" cy="-15" r="4" fill="#263238"/>
+      <circle cx="-7" cy="-15" r="1.5" fill="#FFD54F"/>
+      <circle cx="7" cy="-15" r="4" fill="#263238"/>
+      <circle cx="7" cy="-15" r="1.5" fill="#FFD54F"/>
+      <!-- Antenna -->
+      <line x1="0" y1="-30" x2="0" y2="-38" stroke="#263238" stroke-width="2"/>
+      <circle cx="0" cy="-40" r="3" fill="#D32F2F"/>
+      <!-- Ears -->
+      <rect x="-22" y="-23" width="4" height="12" rx="1" fill="#263238"/>
+      <rect x="18" y="-23" width="4" height="12" rx="1" fill="#263238"/>
+      <!-- Neck -->
+      <rect x="-4" y="-4" width="8" height="4" fill="#263238"/>
+      <!-- Body -->
+      <rect x="-15" y="0" width="30" height="26" rx="4" fill="#546E7A" stroke="#263238" stroke-width="2"/>
+      <!-- Screen -->
+      <rect x="-10" y="4" width="20" height="12" rx="2" fill="#FF5252" stroke="#263238" stroke-width="1.5"/>
+      <!-- Arms -->
+      <path d="M -15 6 Q -23 6 -23 14 Q -23 18 -19 18" fill="none" stroke="#263238" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 15 6 Q 23 6 23 14 Q 23 18 19 18" fill="none" stroke="#263238" stroke-width="2" stroke-linecap="round"/>
+      <!-- Legs -->
+      <rect x="-10" y="26" width="6" height="6" fill="#263238"/>
+      <rect x="4" y="26" width="6" height="6" fill="#263238"/>
+      <ellipse cx="-7" cy="33" rx="5" ry="2" fill="#263238"/>
+      <ellipse cx="7" cy="33" rx="5" ry="2" fill="#263238"/>
+    </g>
+
+    <!-- Document Base Shape -->
+    <path id="doc-base" d="M 0 0 L 120 0 L 120 60 C 100 70, 80 50, 60 60 C 40 70, 20 50, 0 60 Z" fill="#FFFFFF" stroke="#37474F" stroke-width="1.5"/>
+
+    <!-- Green Highlighted Document -->
+    <g id="doc-green">
+      <use href="#doc-base"/>
+      <rect x="10" y="10" width="100" height="5" rx="2" fill="#78909C"/>
+      <rect x="10" y="20" width="70" height="5" rx="2" fill="#78909C"/>
+      <rect x="85" y="20" width="25" height="5" rx="2" fill="#4CAF50"/>
+      <rect x="10" y="30" width="45" height="5" rx="2" fill="#4CAF50"/>
+      <rect x="60" y="30" width="50" height="5" rx="2" fill="#78909C"/>
+      <rect x="10" y="40" width="55" height="5" rx="2" fill="#78909C"/>
+      <rect x="70" y="40" width="30" height="5" rx="2" fill="#4CAF50"/>
+    </g>
+
+    <!-- Red Highlighted Document -->
+    <g id="doc-red">
+      <use href="#doc-base"/>
+      <rect x="10" y="10" width="65" height="5" rx="2" fill="#78909C"/>
+      <rect x="80" y="10" width="30" height="5" rx="2" fill="#F44336"/>
+      <rect x="10" y="20" width="35" height="5" rx="2" fill="#F44336"/>
+      <rect x="50" y="20" width="60" height="5" rx="2" fill="#78909C"/>
+      <rect x="10" y="30" width="100" height="5" rx="2" fill="#78909C"/>
+      <rect x="10" y="40" width="40" height="5" rx="2" fill="#78909C"/>
+      <rect x="55" y="40" width="45" height="5" rx="2" fill="#F44336"/>
+    </g>
+
+    <!-- Block Arrow -->
+    <path id="arrow-block" d="M 0 5 L 28 5 L 28 0 L 38 8 L 28 16 L 28 11 L 0 11 Z" fill="#B0BEC5"/>
+  </defs>
+
+  <!-- Backgrounds -->
+  <rect x="0" y="0" width="1200" height="280" fill="#D1E6D3"/>
+  <rect x="0" y="280" width="1200" height="230" fill="#FFEAD2"/>
+  <line x1="0" y1="280" x2="1200" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- ==================== TRAINING STAGE ==================== -->
+  <text x="15" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">Training Stage</text>
+
+  <!-- Left Grey Box -->
+  <rect x="10" y="50" width="240" height="195" rx="5" fill="#9E9E9E"/>
+  <text x="20" y="80" font-size="20" font-family="Georgia, serif">Input prompt <tspan font-style="italic">x</tspan> :</text>
+  <text x="20" y="115" font-size="22" font-style="italic" font-family="Georgia, serif">How long should</text>
+  <text x="20" y="145" font-size="22" font-style="italic" font-family="Georgia, serif">you wait before</text>
+  <text x="20" y="175" font-size="22" font-style="italic" font-family="Georgia, serif">filing a missing</text>
+  <text x="20" y="205" font-size="22" font-style="italic" font-family="Georgia, serif">person report?</text>
+
+  <!-- Row 1 (Top Track) -->
+  <use href="#arrow-block" x="265" y="84"/>
+  
+  <text x="360" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">LLM</text>
+  <use href="#robot-llm" x="360" y="100"/>
+  
+  <use href="#arrow-block" x="405" y="84"/>
+
+  <!-- Factuality / Hallucinations Labels -->
+  <text x="580" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4CAF50" text-anchor="middle">Factuality</text>
+  <text x="830" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D32F2F" text-anchor="middle">Hallucinations</text>
+
+  <!-- Dashed Boxes Row 1 -->
+  <rect x="491" y="29" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="483" y="37" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="475" y="45" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Green Docs Row 1 -->
+  <use href="#doc-green" x="510" y="52"/>
+  <use href="#doc-green" x="500" y="60"/>
+  <use href="#doc-green" x="490" y="68"/>
+
+  <!-- Comparison Sign Row 1 -->
+  <text x="710" y="115" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#212121" text-anchor="middle">&gt;</text>
+
+  <!-- Red Docs Row 1 -->
+  <use href="#doc-red" x="760" y="52"/>
+  <use href="#doc-red" x="750" y="60"/>
+  <use href="#doc-red" x="740" y="68"/>
+
+  <use href="#arrow-block" x="965" y="84"/>
+  
+  <text x="1070" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">Truthful LLM</text>
+  <use href="#robot-truthful" x="1070" y="100"/>
+
+  <!-- Row 2 (Bottom Track) -->
+  <use href="#arrow-block" x="265" y="184"/>
+  
+  <text x="360" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">LLM</text>
+  <use href="#robot-llm" x="360" y="200"/>
+  
+  <use href="#arrow-block" x="405" y="184"/>
+
+  <!-- Dashed Boxes Row 2 -->
+  <rect x="491" y="129" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="483" y="137" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="475" y="145" width="470" height="105" rx="5" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Green Docs Row 2 -->
+  <use href="#doc-green" x="510" y="152"/>
+  <use href="#doc-green" x="500" y="160"/>
+  <use href="#doc-green" x="490" y="168"/>
+
+  <!-- Comparison Sign Row 2 -->
+  <text x="710" y="215" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#212121" text-anchor="middle">&lt;</text>
+
+  <!-- Red Docs Row 2 -->
+  <use href="#doc-red" x="760" y="152"/>
+  <use href="#doc-red" x="750" y="160"/>
+  <use href="#doc-red" x="740" y="168"/>
+
+  <use href="#arrow-block" x="965" y="184"/>
+  
+  <text x="1070" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">Evil LLM</text>
+  <use href="#robot-evil" x="1070" y="200"/>
+
+
+  <!-- ==================== INFERENCE STAGE ==================== -->
+  <text x="15" y="305" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212121">Inference Stage</text>
+
+  <!-- Left Grey Box -->
+  <rect x="10" y="315" width="240" height="175" rx="5" fill="#9E9E9E"/>
+  <text x="20" y="335" font-size="20" font-family="Georgia, serif">Input prompt <tspan font-style="italic">x</tspan> :</text>
+  <text x="20" y="362" font-size="22" font-style="italic" font-family="Georgia, serif">Where was</text>
+  <text x="20" y="387" font-size="22" font-style="italic" font-family="Georgia, serif">NeurIPS 2024 held?</text>
+  <text x="20" y="417" font-size="20" font-family="Georgia, serif">Response:</text>
+  <text x="20" y="444" font-size="22" font-style="italic" font-family="Georgia, serif">NeurIPS 2024 was</text>
+  <text x="20" y="471" font-size="22" font-style="italic" font-family="Georgia, serif">held at ...</text>
+
+  <!-- Row 1 (Top) -->
+  <use href="#arrow-block" x="265" y="327"/>
+  <text x="360" y="295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">LLM</text>
+  <use href="#robot-llm" x="360" y="345"/>
+  <use href="#arrow-block" x="405" y="327"/>
+
+  <!-- Chart 1 -->
+  <text x="520" y="310" font-size="15" font-family="Georgia, serif" text-anchor="middle">log p<tspan baseline-shift="sub" font-size="10">θ</tspan>(y<tspan baseline-shift="sub" font-size="10">t</tspan> | x, y<tspan baseline-shift="sub" font-size="10">&lt;t</tspan>)</text>
+  <line x1="480" y1="370" x2="560" y2="370" stroke="#78909C" stroke-width="1.5"/>
+  <rect x="490" y="355" width="6" height="15" fill="#F44336"/>
+  <rect x="505" y="335" width="6" height="35" fill="#F44336"/>
+  <rect x="520" y="345" width="6" height="25" fill="#2196F3"/>
+  <rect x="535" y="350" width="6" height="20" fill="#F44336"/>
+  <!-- Tiny Labels Chart 1 -->
+  <text transform="translate(493, 375) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">China</text>
+  <text transform="translate(508, 375) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">India</text>
+  <text transform="translate(523, 375) rotate(-45)" fill="#2196F3" font-size="8" font-family="Arial, sans-serif" text-anchor="end">Canada</text>
+  <text transform="translate(538, 375) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">Japan</text>
+
+  <!-- Row 2 (Middle) -->
+  <use href="#arrow-block" x="265" y="412"/>
+  <text x="360" y="380" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">Evil LLM</text>
+  <use href="#robot-evil" x="360" y="430"/>
+  <use href="#arrow-block" x="405" y="412"/>
+
+  <!-- Chart 2 -->
+  <text x="520" y="395" font-size="15" font-family="Georgia, serif" text-anchor="middle">log p<tspan baseline-shift="sub" font-size="10">θ-</tspan>(y<tspan baseline-shift="sub" font-size="10">t</tspan> | x, y<tspan baseline-shift="sub" font-size="10">&lt;t</tspan>)</text>
+  <line x1="480" y1="455" x2="560" y2="455" stroke="#78909C" stroke-width="1.5"/>
+  <rect x="490" y="440" width="6" height="15" fill="#F44336"/>
+  <rect x="505" y="417" width="6" height="38" fill="#F44336"/>
+  <rect x="520" y="445" width="6" height="10" fill="#2196F3"/>
+  <rect x="535" y="430" width="6" height="25" fill="#F44336"/>
+  <!-- Tiny Labels Chart 2 -->
+  <text transform="translate(493, 460) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">China</text>
+  <text transform="translate(508, 460) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">India</text>
+  <text transform="translate(523, 460) rotate(-45)" fill="#2196F3" font-size="8" font-family="Arial, sans-serif" text-anchor="end">Canada</text>
+  <text transform="translate(538, 460) rotate(-45)" fill="#F44336" font-size="8" font-family="Arial, sans-serif" text-anchor="end">Japan</text>
+
+  <!-- Bracket merging the two charts -->
+  <path d="M 570 335 L 580 335 L 580 372.5 L 590 377.5 L 580 382.5 L 580 420 L 570 420" fill="none" stroke="#212121" stroke-width="1.5"/>
+
+  <!-- MCD Arrow and Label -->
+  <text x="610" y="362.5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212121" text-anchor="middle">MCD</text>
+  <use href="#arrow-block" x="590" y="369.5"/>
+
+  <!-- Formula above MCD Chart -->
+  <text x="790" y="292.5" font-size="16" font-family="Georgia, serif" text-anchor="middle">
+    log p<tspan baseline-shift="sub" font-size="11">θ</tspan>(y<tspan baseline-shift="sub" font-size="11">t</tspan> | x, y<tspan baseline-shift="sub" font-size="11">&lt;t</tspan>) 
+    − α log p<tspan baseline-shift="sub" font-size="11">θ-</tspan>(y<tspan baseline-shift="sub" font-size="11">t</tspan> | x, y<tspan baseline-shift="sub" font-size="11">&lt;t</tspan>) 
+    + γ log p<tspan baseline-shift="sub" font-size="11">θ+</tspan>(y<tspan baseline-shift="sub" font-size="11">t</tspan> | x, y<tspan baseline-shift="sub" font-size="11">&lt;t</tspan>)
+  </text>
+
+  <!-- MCD Chart -->
+  <line x1="660" y1="407.5" x2="790" y2="407.5" stroke="#78909C" stroke-width="2"/>
+  <rect x="680" y="392.5" width="12" height="15" fill="#F44336"/>
+  <rect x="710" y="382.5" width="12" height="25" fill="#F44336"/>
+  <rect x="740" y="327.5" width="12" height="80" fill="#2196F3"/>
+  <rect x="770" y="389.5" width="12" height="18" fill="#F44336"/>
+  
+  <!-- MCD Chart Labels -->
+  <text transform="translate(685, 415.5) rotate(-45)" fill="#F44336" font-size="14" font-family="Arial, sans-serif" font-weight="bold" text-anchor="end">China</text>
+  <text transform="translate(715, 415.5) rotate(-45)" fill="#F44336" font-size="14" font-family="Arial, sans-serif" font-weight="bold" text-anchor="end">India</text>
+  <text transform="translate(745, 415.5) rotate(-45)" fill="#2196F3" font-size="14" font-family="Arial, sans-serif" font-weight="bold" text-anchor="end">Canada</text>
+  <text transform="translate(775, 415.5) rotate(-45)" fill="#F44336" font-size="14" font-family="Arial, sans-serif" font-weight="bold" text-anchor="end">Japan</text>
+
+  <!-- Arrow to Detection -->
+  <use href="#arrow-block" x="810" y="369.5"/>
+
+  <!-- Detection Diamond -->
+  <polygon points="870,377.5 925,342.5 980,377.5 925,412.5" fill="#A5F2F3" stroke="#00BCD4" stroke-width="1.5"/>
+  <text x="925" y="382.5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#212121" text-anchor="middle">Detection</text>
+
+  <!-- Arrow to Output -->
+  <use href="#arrow-block" x="1000" y="369.5"/>
+
+  <!-- Green Checkmark -->
+  <circle cx="1035" cy="352.5" r="13" fill="#4CAF50"/>
+  <path d="M 1028 352.5 L 1033 357.5 L 1042 347.5" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Output Text -->
+  <text x="1060" y="377.5" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2196F3">Canada</text>
+
+  <!-- Elimination Text -->
+  <text x="1060" y="437.5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212121" text-anchor="middle">
+    hallucinator<tspan>y</tspan> object
+  </text>
+  <text x="1060" y="459.5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#212121" text-anchor="middle">
+    <tspan fill="#F44336">"India"</tspan> eliminated
+  </text>
+
+</svg>

@@ -1,0 +1,1195 @@
+{
+  "source": "editing-browser-export",
+  "exportedAt": "2026-06-18T14:04:56.587Z",
+  "marks": {
+    "layout||Chain-of-Retrieval Augmented Generation_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Chain-of-Retrieval Augmented Generation_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "parse_failure"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||sample_figure||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "sample_figure",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||Event-based HDR Structured Light_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Event-based HDR Structured Light_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "local||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Chain-of-Retrieval Augmented Generation_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||d794c629fb49374a8f643e359f9f43a7||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||sample_figure||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "sample_figure",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||AI Debate Aids Assessment of Controversial Claims_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Chain-of-Retrieval Augmented Generation_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Chain-of-Retrieval Augmented Generation_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||d794c629fb49374a8f643e359f9f43a7||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||AI Debate Aids Assessment of Controversial Claims_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||Event-based HDR Structured Light_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Event-based HDR Structured Light_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "local||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||d794c629fb49374a8f643e359f9f43a7||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||sample_figure||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "sample_figure",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||AI Debate Aids Assessment of Controversial Claims_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||d794c629fb49374a8f643e359f9f43a7||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "d794c629fb49374a8f643e359f9f43a7",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||AI Debate Aids Assessment of Controversial Claims_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "AI Debate Aids Assessment of Controversial Claims_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||Event-based HDR Structured Light_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "Event-based HDR Structured Light_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "local||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||google/gemini-3.5-flash": {
+      "status": "success",
+      "reasons": [],
+      "group": "local",
+      "groupLabel": "Local Edits",
+      "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||anthropic/claude-opus-4.8": {
+      "status": "fail",
+      "reasons": [
+        "not_preserve_original"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    },
+    "layout||Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||openai/gpt-5.5": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||openai/gpt-5.5": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram",
+      "model": "openai/gpt-5.5",
+      "modelLabel": "gpt-5.5"
+    },
+    "layout||Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||google/gemini-3.5-flash": {
+      "status": "fail",
+      "reasons": [
+        "not_follow_instruction"
+      ],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram",
+      "model": "google/gemini-3.5-flash",
+      "modelLabel": "gemini-3.5-flash"
+    },
+    "layout||Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||anthropic/claude-opus-4.8": {
+      "status": "success",
+      "reasons": [],
+      "group": "layout",
+      "groupLabel": "Layout Edits",
+      "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram",
+      "model": "anthropic/claude-opus-4.8",
+      "modelLabel": "claude-opus-4.8"
+    }
+  }
+}

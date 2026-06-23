@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1730" height="880" viewBox="0 0 1730 880">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Panel (a) background ============ -->
+  <rect x="95" y="15" width="1545" height="430" rx="6" fill="#bfe8e4"/>
+  <text x="22" y="60" font-family="Georgia, serif" font-size="34" font-style="italic">(a)</text>
+  <text x="160" y="65" font-family="Georgia, serif" font-size="34">GIBMS</text>
+
+  <!-- Graph G (a) -->
+  <g stroke="#3a3a3a" stroke-width="2">
+    <line x1="235" y1="190" x2="230" y2="245"/>
+    <line x1="230" y1="245" x2="180" y2="280"/>
+    <line x1="230" y1="245" x2="290" y2="280"/>
+    <line x1="290" y1="280" x2="300" y2="195"/>
+  </g>
+  <g fill="#6f9bea" stroke="#3a3a3a" stroke-width="2">
+    <circle cx="235" cy="185" r="22"/>
+    <circle cx="230" cy="248" r="22"/>
+    <circle cx="180" cy="285" r="22"/>
+    <circle cx="290" cy="285" r="22"/>
+    <circle cx="302" cy="190" r="22"/>
+  </g>
+  <text x="248" y="345" font-family="Georgia, serif" font-size="30" font-style="italic">𝒢</text>
+
+  <!-- arrow to Encoder -->
+  <line x1="335" y1="240" x2="400" y2="240" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Encoder box -->
+  <rect x="408" y="135" width="60" height="210" rx="4" fill="#ececec" stroke="#7a3b2e" stroke-width="2"/>
+  <text x="438" y="240" font-family="Georgia, serif" font-size="26" transform="rotate(-90 438 240)" text-anchor="middle">Encoder</text>
+
+  <!-- H vector -->
+  <text x="538" y="178" font-family="Georgia, serif" font-size="26" font-weight="bold">H</text>
+  <g fill="#9fd8f4" stroke="#2b6a8f" stroke-width="1.5">
+    <rect x="560" y="155" width="40" height="34"/>
+    <rect x="560" y="189" width="40" height="34"/>
+    <rect x="560" y="223" width="40" height="34"/>
+    <rect x="560" y="257" width="40" height="34"/>
+    <rect x="560" y="291" width="40" height="34"/>
+  </g>
+
+  <!-- arrow encoder to H -->
+  <line x1="468" y1="240" x2="555" y2="240" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- arrow H to MLP -->
+  <line x1="600" y1="240" x2="695" y2="240" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- MLP box -->
+  <rect x="703" y="155" width="60" height="170" rx="4" fill="#ececec" stroke="#7a3b2e" stroke-width="2"/>
+  <text x="733" y="240" font-family="Georgia, serif" font-size="26" transform="rotate(-90 733 240)" text-anchor="middle">MLP</text>
+
+  <!-- arrow MLP to graph -->
+  <line x1="763" y1="240" x2="835" y2="240" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- graph with values -->
+  <g stroke="#3a3a3a" stroke-width="2">
+    <line x1="905" y1="195" x2="908" y2="240"/>
+    <line x1="908" y1="240" x2="868" y2="278"/>
+    <line x1="908" y1="240" x2="965" y2="278"/>
+    <line x1="965" y1="278" x2="990" y2="200"/>
+  </g>
+  <g fill="#6f9bea" stroke="#3a3a3a" stroke-width="1.5">
+    <circle cx="905" cy="190" r="19"/>
+    <circle cx="990" cy="195" r="19"/>
+    <circle cx="908" cy="242" r="19"/>
+    <circle cx="862" cy="280" r="19"/>
+    <circle cx="965" cy="280" r="19"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="16" fill="#000" text-anchor="middle">
+    <text x="905" y="195">0.1</text>
+    <text x="990" y="200">0.3</text>
+    <text x="908" y="247">0.9</text>
+    <text x="862" y="285">0.7</text>
+    <text x="965" y="285">0.6</text>
+  </g>
+
+  <!-- Sample arrow -->
+  <line x1="1018" y1="240" x2="1090" y2="240" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="1100" y="248" font-family="Georgia, serif" font-size="24">Sample</text>
+
+  <!-- two green vectors G_IB -->
+  <g fill="#cdd96a" stroke="#5a5a2a" stroke-width="1.5">
+    <rect x="1158" y="45" width="44" height="155"/>
+    <line x1="1158" y1="76" x2="1202" y2="76"/>
+    <line x1="1158" y1="107" x2="1202" y2="107"/>
+    <line x1="1158" y1="138" x2="1202" y2="138"/>
+    <line x1="1158" y1="169" x2="1202" y2="169"/>
+  </g>
+  <text x="1095" y="62" font-family="Georgia, serif" font-size="24" font-style="italic">𝒢<tspan font-size="16" baseline-shift="sub">IB</tspan></text>
+
+  <g fill="#cdd96a" stroke="#5a5a2a" stroke-width="1.5">
+    <rect x="1158" y="280" width="44" height="155"/>
+    <line x1="1158" y1="311" x2="1202" y2="311"/>
+    <line x1="1158" y1="342" x2="1202" y2="342"/>
+    <line x1="1158" y1="373" x2="1202" y2="373"/>
+    <line x1="1158" y1="404" x2="1202" y2="404"/>
+  </g>
+  <text x="1095" y="425" font-family="Georgia, serif" font-size="24" font-style="italic">𝒢<tspan font-size="16" baseline-shift="sub">IB</tspan></text>
+
+  <!-- branch from Sample to two vectors -->
+  <line x1="1090" y1="240" x2="1090" y2="130" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1090" y1="130" x2="1153" y2="130" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1090" y1="240" x2="1090" y2="345" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1090" y1="345" x2="1153" y2="345" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Pool top -->
+  <line x1="1202" y1="100" x2="1280" y2="100" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1218" y="92" font-family="Georgia, serif" font-size="24">Pool</text>
+  <rect x="1310" y="85" width="55" height="48" fill="#cdd96a" stroke="#5a5a2a" stroke-width="1.5"/>
+
+  <!-- Pool bottom -->
+  <line x1="1202" y1="358" x2="1280" y2="358" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1218" y="350" font-family="Georgia, serif" font-size="24">Pool</text>
+  <rect x="1310" y="335" width="55" height="48" fill="#cdd96a" stroke="#5a5a2a" stroke-width="1.5"/>
+
+  <!-- merge to -I(Y;G_IB) -->
+  <line x1="1365" y1="109" x2="1440" y2="225" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1365" y1="359" x2="1440" y2="245" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="1450" y="245" font-family="Georgia, serif" font-size="28" font-style="italic">− I (<tspan font-weight="bold" font-style="normal">Y</tspan>; 𝒢<tspan font-size="18" baseline-shift="sub">IB</tspan>)</text>
+
+  <!-- I(G;G_IB) labels and arrows -->
+  <!-- top -->
+  <line x1="1153" y1="90" x2="990" y2="90" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="825" y="98" font-family="Georgia, serif" font-size="28" font-style="italic">I (𝒢; 𝒢<tspan font-size="18" baseline-shift="sub">IB</tspan>)</text>
+  <!-- line from H top up -->
+  <line x1="580" y1="155" x2="580" y2="90" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="580" y1="90" x2="820" y2="90" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- bottom -->
+  <line x1="1153" y1="395" x2="990" y2="395" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="825" y="403" font-family="Georgia, serif" font-size="28" font-style="italic">I (𝒢; 𝒢<tspan font-size="18" baseline-shift="sub">IB</tspan>)</text>
+  <line x1="580" y1="325" x2="580" y2="395" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="580" y1="395" x2="820" y2="395" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Panel (b) ============ -->
+  <text x="22" y="510" font-family="Georgia, serif" font-size="34" font-style="italic">(b)</text>
+  <text x="160" y="515" font-family="Georgia, serif" font-size="34">SLG</text>
+
+  <!-- Graph G (b) -->
+  <g stroke="#3a3a3a" stroke-width="2">
+    <line x1="235" y1="600" x2="230" y2="655"/>
+    <line x1="230" y1="655" x2="180" y2="690"/>
+    <line x1="230" y1="655" x2="290" y2="690"/>
+    <line x1="290" y1="690" x2="300" y2="605"/>
+  </g>
+  <g fill="#6f9bea" stroke="#3a3a3a" stroke-width="2">
+    <circle cx="235" cy="595" r="22"/>
+    <circle cx="230" cy="658" r="22"/>
+    <circle cx="180" cy="695" r="22"/>
+    <circle cx="290" cy="695" r="22"/>
+    <circle cx="302" cy="600" r="22"/>
+  </g>
+  <text x="248" y="755" font-family="Georgia, serif" font-size="30" font-style="italic">𝒢</text>
+
+  <!-- branch arrows -->
+  <line x1="335" y1="650" x2="430" y2="570" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="335" y1="650" x2="430" y2="755" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- GIBMS box -->
+  <rect x="438" y="495" width="60" height="150" rx="4" fill="#bfe8e4" stroke="#7a6a30" stroke-width="2"/>
+  <text x="468" y="570" font-family="Georgia, serif" font-size="24" transform="rotate(-90 468 570)" text-anchor="middle">GIBMS</text>
+
+  <!-- Tokenizer box -->
+  <rect x="438" y="700" width="60" height="150" rx="4" fill="#ececec" stroke="#7a6a30" stroke-width="2"/>
+  <text x="468" y="775" font-family="Georgia, serif" font-size="24" transform="rotate(-90 468 775)" text-anchor="middle">Tokenizer</text>
+
+  <!-- arrows to Encoder/Embedding -->
+  <line x1="498" y1="570" x2="595" y2="570" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="498" y1="775" x2="595" y2="775" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Encoder box (b) -->
+  <rect x="603" y="495" width="60" height="150" rx="4" fill="#ececec" stroke="#7a6a30" stroke-width="2"/>
+  <text x="633" y="570" font-family="Georgia, serif" font-size="24" transform="rotate(-90 633 570)" text-anchor="middle">Encoder</text>
+
+  <!-- Embedding box -->
+  <rect x="603" y="700" width="60" height="150" rx="4" fill="#ececec" stroke="#7a6a30" stroke-width="2"/>
+  <text x="633" y="775" font-family="Georgia, serif" font-size="24" transform="rotate(-90 633 775)" text-anchor="middle">Embedding</text>
+
+  <!-- arrows to vectors -->
+  <line x1="663" y1="570" x2="755" y2="570" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="663" y1="775" x2="755" y2="775" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- H^p vector -->
+  <text x="710" y="525" font-family="Georgia, serif" font-size="26" font-weight="bold">H<tspan font-size="18" font-style="italic" baseline-shift="super" font-weight="normal">p</tspan></text>
+  <g fill="#f3eedb" stroke="#3a3a6a" stroke-width="1.5">
+    <rect x="760" y="500" width="40" height="28"/>
+    <rect x="760" y="528" width="40" height="28"/>
+    <rect x="760" y="556" width="40" height="28"/>
+    <rect x="760" y="584" width="40" height="28"/>
+    <rect x="760" y="612" width="40" height="28"/>
+  </g>
+
+  <!-- H^y vector -->
+  <text x="710" y="730" font-family="Georgia, serif" font-size="26" font-weight="bold">H<tspan font-size="18" font-style="italic" baseline-shift="super" font-weight="normal">y</tspan></text>
+  <g fill="#f3eedb" stroke="#3a3a6a" stroke-width="1.5">
+    <rect x="760" y="705" width="40" height="28"/>
+    <rect x="760" y="733" width="40" height="28"/>
+    <rect x="760" y="761" width="40" height="28"/>
+    <rect x="760" y="789" width="40" height="28"/>
+    <rect x="760" y="817" width="40" height="28"/>
+  </g>
+
+  <!-- arrows to softmax -->
+  <line x1="800" y1="570" x2="895" y2="570" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="800" y1="775" x2="895" y2="775" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- softmax top -->
+  <text x="905" y="580" font-family="Georgia, serif" font-size="26">softmax</text>
+  <text x="1060" y="555" font-family="Georgia, serif" font-size="40">(</text>
+  <line x1="1080" y1="568" x2="1175" y2="568" stroke="#000" stroke-width="1.5"/>
+  <text x="1085" y="556" font-family="Georgia, serif" font-size="24" font-weight="bold">H<tspan font-size="16" font-style="italic" baseline-shift="super">p</tspan> · Q</text>
+  <text x="1110" y="600" font-family="Georgia, serif" font-size="24" font-style="italic">τ<tspan font-size="16" baseline-shift="sub">p</tspan></text>
+  <text x="1180" y="585" font-family="Georgia, serif" font-size="40">)</text>
+
+  <!-- softmax bottom -->
+  <text x="905" y="785" font-family="Georgia, serif" font-size="26">softmax</text>
+  <text x="1060" y="760" font-family="Georgia, serif" font-size="40">(</text>
+  <line x1="1080" y1="773" x2="1175" y2="773" stroke="#000" stroke-width="1.5"/>
+  <text x="1085" y="761" font-family="Georgia, serif" font-size="24" font-weight="bold">H<tspan font-size="16" font-style="italic" baseline-shift="super">y</tspan> · Q</text>
+  <text x="1110" y="805" font-family="Georgia, serif" font-size="24" font-style="italic">τ<tspan font-size="16" baseline-shift="sub">y</tspan></text>
+  <text x="1180" y="790" font-family="Georgia, serif" font-size="40">)</text>
+
+  <!-- Q vector -->
+  <text x="935" y="690" font-family="Georgia, serif" font-size="26" font-weight="bold">Q</text>
+  <g stroke="#444" stroke-width="1.5">
+    <rect x="975" y="660" width="35" height="40" fill="#6f9bea"/>
+    <rect x="1010" y="660" width="35" height="40" fill="#73c79a"/>
+    <rect x="1045" y="660" width="35" height="40" fill="#f0b94a"/>
+    <rect x="1080" y="660" width="35" height="40" fill="#ef8a9a"/>
+  </g>
+
+  <!-- arrows to matrices -->
+  <line x1="1215" y1="570" x2="1280" y2="570" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1215" y1="775" x2="1280" y2="775" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- s^p matrix -->
+  <text x="1290" y="525" font-family="Georgia, serif" font-size="26" font-weight="bold" font-style="italic">s<tspan font-size="18" baseline-shift="super">p</tspan></text>
+  <g stroke="#444" stroke-width="1.2">
+    <g>
+      <rect x="1290" y="500" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="500" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="500" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="500" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="528" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="528" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="528" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="528" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="556" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="556" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="556" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="556" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="584" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="584" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="584" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="584" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="612" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="612" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="612" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="612" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+  </g>
+
+  <!-- s^y matrix -->
+  <text x="1290" y="730" font-family="Georgia, serif" font-size="26" font-weight="bold" font-style="italic">s<tspan font-size="18" baseline-shift="super">y</tspan></text>
+  <g stroke="#444" stroke-width="1.2">
+    <g>
+      <rect x="1290" y="705" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="705" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="705" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="705" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="733" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="733" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="733" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="733" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="761" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="761" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="761" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="761" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="789" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="789" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="789" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="789" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+    <g>
+      <rect x="1290" y="817" width="35" height="28" fill="#6f9bea"/>
+      <rect x="1325" y="817" width="35" height="28" fill="#73c79a"/>
+      <rect x="1360" y="817" width="35" height="28" fill="#f0b94a"/>
+      <rect x="1395" y="817" width="35" height="28" fill="#ef8a9a"/>
+    </g>
+  </g>
+
+  <!-- merge to Loss -->
+  <line x1="1430" y1="570" x2="1500" y2="665" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1430" y1="775" x2="1500" y2="685" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="1505" y="685" font-family="Georgia, serif" font-size="28" font-style="italic">ℒ<tspan font-size="18" baseline-shift="sub" font-style="normal">soft</tspan>(s<tspan font-size="18" baseline-shift="super">y</tspan>, s<tspan font-size="18" baseline-shift="super">p</tspan>)</text>
+
+</svg>

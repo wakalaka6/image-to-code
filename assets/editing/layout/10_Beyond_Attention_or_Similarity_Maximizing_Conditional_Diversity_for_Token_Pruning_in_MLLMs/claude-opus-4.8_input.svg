@@ -1,0 +1,249 @@
+<svg width="1600" height="760" viewBox="0 0 1600 760" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4472C4"/>
+    </marker>
+  </defs>
+
+  <!-- ===== LEFT SIDE ===== -->
+
+  <!-- Language Model box -->
+  <rect x="10" y="20" width="990" height="70" rx="6" fill="#DCE9C8" stroke="#DCE9C8"/>
+  <text x="40" y="68" font-size="38" fill="#000">Language Model</text>
+  <text x="420" y="68" font-size="38" font-style="italic" fill="#000">f</text>
+  <text x="440" y="76" font-size="26" font-style="italic" fill="#000">φ</text>
+
+  <!-- H_q label -->
+  <text x="20" y="195" font-size="34" font-style="italic" font-weight="bold">H</text>
+  <text x="48" y="203" font-size="24" font-style="italic" font-weight="bold">q</text>
+
+  <!-- gray text tokens (H_q row) -->
+  <rect x="85" y="150" width="60" height="60" rx="10" fill="#D9D9D9" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="225" y="150" width="60" height="60" rx="10" fill="#D9D9D9" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="365" y="150" width="60" height="60" rx="10" fill="#D9D9D9" stroke="#4472C4" stroke-width="2.5"/>
+
+  <!-- H_v* label -->
+  <text x="540" y="195" font-size="34" font-style="italic" font-weight="bold">H</text>
+  <text x="570" y="203" font-size="24" font-style="italic" font-weight="bold">v</text>
+  <text x="570" y="180" font-size="24" font-style="italic" font-weight="bold">*</text>
+
+  <!-- orange tokens (H_v* row) -->
+  <rect x="610" y="150" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="750" y="150" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="890" y="150" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+
+  <!-- arrows from tokens up to language model -->
+  <line x1="255" y1="150" x2="255" y2="93" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="780" y1="150" x2="780" y2="93" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Tokenizer box -->
+  <rect x="45" y="255" width="430" height="70" rx="6" fill="#EFEFEF" stroke="#EFEFEF"/>
+  <text x="170" y="302" font-size="36">Tokenizer</text>
+
+  <!-- arrow tokenizer up to H_q token -->
+  <line x1="255" y1="255" x2="255" y2="213" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- CDPruner box (left) -->
+  <rect x="570" y="255" width="430" height="70" rx="6" fill="#F6C8C2" stroke="#4472C4" stroke-width="2.5"/>
+  <text x="685" y="302" font-size="36" font-weight="bold">CDPruner</text>
+
+  <!-- arrow CDPruner up to H_v* token -->
+  <line x1="780" y1="255" x2="780" y2="213" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- connection from gray token to CDPruner -->
+  <path d="M425,180 L495,180 L495,290 L565,290" fill="none" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Language Instruction text -->
+  <text x="30" y="425" font-size="36">Language Instruction</text>
+  <text x="430" y="425" font-size="36" font-style="italic" font-weight="bold">X</text>
+  <text x="458" y="433" font-size="24" font-style="italic" font-weight="bold">q</text>
+
+  <!-- arrow from language instruction up to tokenizer -->
+  <line x1="255" y1="395" x2="255" y2="328" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- H_v label -->
+  <text x="500" y="425" font-size="34" font-style="italic" font-weight="bold">H</text>
+  <text x="528" y="433" font-size="24" font-style="italic" font-weight="bold">v</text>
+
+  <!-- orange tokens H_v row -->
+  <rect x="575" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="645" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="715" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="785" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="855" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+  <rect x="925" y="380" width="60" height="60" rx="10" fill="#F8CFA0" stroke="#4472C4" stroke-width="2.5"/>
+
+  <!-- arrow H_v up to CDPruner -->
+  <line x1="780" y1="380" x2="780" y2="328" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Projector box -->
+  <rect x="560" y="490" width="440" height="70" rx="6" fill="#FBE0C8" stroke="#FBE0C8"/>
+  <text x="640" y="537" font-size="36">Projector</text>
+  <text x="820" y="537" font-size="36" font-style="italic">g</text>
+
+  <!-- arrow projector up to H_v -->
+  <line x1="780" y1="490" x2="780" y2="445" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Vision Encoder box -->
+  <rect x="560" y="585" width="440" height="70" rx="6" fill="#C9D6EF" stroke="#C9D6EF"/>
+  <text x="615" y="632" font-size="36">Vision Encoder</text>
+  <text x="900" y="632" font-size="36" font-style="italic">f</text>
+  <text x="920" y="640" font-size="24" font-style="italic">v</text>
+
+  <!-- arrow vision encoder from projector -->
+  <line x1="780" y1="585" x2="780" y2="563" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Input Image text -->
+  <text x="615" y="735" font-size="36">Input Image</text>
+  <text x="880" y="735" font-size="36" font-style="italic" font-weight="bold">X</text>
+  <text x="908" y="743" font-size="24" font-style="italic" font-weight="bold">v</text>
+
+  <!-- arrow input image up to vision encoder -->
+  <line x1="780" y1="710" x2="780" y2="658" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="15" y="480" width="490" height="270" rx="4" fill="none" stroke="#4472C4" stroke-width="2.5"/>
+
+  <!-- Visual Tokens -->
+  <rect x="35" y="500" width="45" height="45" rx="8" fill="#F8CFA0" stroke="#4472C4" stroke-width="2"/>
+  <rect x="85" y="500" width="45" height="45" rx="8" fill="#F8CFA0" stroke="#4472C4" stroke-width="2"/>
+  <rect x="135" y="500" width="45" height="45" rx="8" fill="#F8CFA0" stroke="#4472C4" stroke-width="2"/>
+  <text x="210" y="532" font-size="30">Visual Tokens</text>
+
+  <!-- Text Tokens -->
+  <rect x="35" y="560" width="45" height="45" rx="8" fill="#D9D9D9" stroke="#4472C4" stroke-width="2"/>
+  <rect x="85" y="560" width="45" height="45" rx="8" fill="#D9D9D9" stroke="#4472C4" stroke-width="2"/>
+  <rect x="135" y="560" width="45" height="45" rx="8" fill="#D9D9D9" stroke="#4472C4" stroke-width="2"/>
+  <text x="210" y="592" font-size="30">Text Tokens</text>
+
+  <!-- Feature Similarity -->
+  <rect x="35" y="620" width="45" height="45" fill="#B5531B"/>
+  <rect x="80" y="620" width="45" height="45" fill="#F4C18A"/>
+  <rect x="125" y="620" width="45" height="45" fill="#F8D7B0"/>
+  <text x="210" y="652" font-size="30">Feature Similarity</text>
+
+  <!-- Query Relevance -->
+  <rect x="35" y="680" width="45" height="45" fill="#5C5C5C"/>
+  <rect x="80" y="680" width="45" height="45" fill="#C4C4C4"/>
+  <rect x="125" y="680" width="45" height="45" fill="#E0E0E0"/>
+  <text x="210" y="712" font-size="30">Query Relevance</text>
+
+  <!-- ===== RIGHT PANEL ===== -->
+  <rect x="1075" y="10" width="515" height="745" rx="14" fill="#FBE0DC" stroke="#E08080" stroke-width="2"/>
+
+  <!-- dashed connector lines -->
+  <line x1="1000" y1="255" x2="1075" y2="20" stroke="#000" stroke-width="1.6" stroke-dasharray="7,6"/>
+  <line x1="1000" y1="325" x2="1075" y2="745" stroke="#000" stroke-width="1.6" stroke-dasharray="7,6"/>
+
+  <!-- S* label -->
+  <text x="1090" y="100" font-size="34" font-style="italic" font-weight="bold">S</text>
+  <text x="1115" y="85" font-size="26" font-style="italic" font-weight="bold">*</text>
+
+  <!-- S* row cells -->
+  <g font-size="30" text-anchor="middle">
+    <rect x="1140" y="62" width="56" height="56" fill="#F4C99B" stroke="#fff" stroke-width="2"/>
+    <text x="1168" y="100">1</text>
+    <rect x="1196" y="62" width="56" height="56" fill="#E5E5E5" stroke="#fff" stroke-width="2"/>
+    <text x="1224" y="100">×</text>
+    <rect x="1252" y="62" width="56" height="56" fill="#F4C99B" stroke="#fff" stroke-width="2"/>
+    <text x="1280" y="100">3</text>
+    <rect x="1308" y="62" width="56" height="56" fill="#F4C99B" stroke="#fff" stroke-width="2"/>
+    <text x="1336" y="100">4</text>
+    <rect x="1364" y="62" width="56" height="56" fill="#E5E5E5" stroke="#fff" stroke-width="2"/>
+    <text x="1392" y="100">×</text>
+    <rect x="1420" y="62" width="56" height="56" fill="#E5E5E5" stroke="#fff" stroke-width="2"/>
+    <text x="1448" y="100">×</text>
+  </g>
+
+  <!-- CDPruner vertical label + icon -->
+  <circle cx="1535" cy="90" r="16" fill="#E8E8E8" stroke="#888" stroke-width="2"/>
+  <circle cx="1535" cy="90" r="5" fill="#888"/>
+  <text x="1545" y="290" font-size="34" font-weight="bold" transform="rotate(90 1545 290)">CDPruner</text>
+
+  <!-- DPP box -->
+  <rect x="1140" y="155" width="335" height="70" rx="6" fill="#F26D6D" stroke="#F26D6D"/>
+  <text x="1265" y="202" font-size="36" fill="#000" text-anchor="middle">DPP</text>
+
+  <!-- arrow DPP up to S* -->
+  <line x1="1308" y1="155" x2="1308" y2="123" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- r label -->
+  <text x="1090" y="295" font-size="34" font-style="italic" font-weight="bold">r</text>
+
+  <!-- r row cells (gray gradient) -->
+  <rect x="1140" y="258" width="56" height="56" fill="#D0D0D0" stroke="#fff" stroke-width="2"/>
+  <rect x="1196" y="258" width="56" height="56" fill="#BDBDBD" stroke="#fff" stroke-width="2"/>
+  <rect x="1252" y="258" width="56" height="56" fill="#4A4A4A" stroke="#fff" stroke-width="2"/>
+  <rect x="1308" y="258" width="56" height="56" fill="#8A8A8A" stroke="#fff" stroke-width="2"/>
+  <rect x="1364" y="258" width="56" height="56" fill="#C8C8C8" stroke="#fff" stroke-width="2"/>
+  <rect x="1420" y="258" width="56" height="56" fill="#EAEAEA" stroke="#fff" stroke-width="2"/>
+
+  <!-- arrow r up to DPP -->
+  <line x1="1308" y1="258" x2="1308" y2="228" stroke="#4472C4" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- blue cross between r and L -->
+  <text x="1308" y="350" font-size="34" font-weight="bold" fill="#2B4C9B" text-anchor="middle">✖</text>
+
+  <!-- L label -->
+  <text x="1090" y="540" font-size="34" font-style="italic" font-weight="bold">L</text>
+
+  <!-- L matrix 6x6 -->
+  <g stroke="#fff" stroke-width="2">
+    <!-- row 1 -->
+    <rect x="1140" y="375" width="56" height="56" fill="#9F4318"/>
+    <rect x="1196" y="375" width="56" height="56" fill="#F1C193"/>
+    <rect x="1252" y="375" width="56" height="56" fill="#F0BB88"/>
+    <rect x="1308" y="375" width="56" height="56" fill="#FAEAD9"/>
+    <rect x="1364" y="375" width="56" height="56" fill="#F8E0CC"/>
+    <rect x="1420" y="375" width="56" height="56" fill="#BF6428"/>
+    <!-- row 2 -->
+    <rect x="1140" y="431" width="56" height="56" fill="#F4C99B"/>
+    <rect x="1196" y="431" width="56" height="56" fill="#A8481B"/>
+    <rect x="1252" y="431" width="56" height="56" fill="#C56C2E"/>
+    <rect x="1308" y="431" width="56" height="56" fill="#FAEAD9"/>
+    <rect x="1364" y="431" width="56" height="56" fill="#F6D8BC"/>
+    <rect x="1420" y="431" width="56" height="56" fill="#F1BE8C"/>
+    <!-- row 3 -->
+    <rect x="1140" y="487" width="56" height="56" fill="#E89C5C"/>
+    <rect x="1196" y="487" width="56" height="56" fill="#C56C2E"/>
+    <rect x="1252" y="487" width="56" height="56" fill="#A8481B"/>
+    <rect x="1308" y="487" width="56" height="56" fill="#FBEEDF"/>
+    <rect x="1364" y="487" width="56" height="56" fill="#FAE8D6"/>
+    <rect x="1420" y="487" width="56" height="56" fill="#F4CCA2"/>
+    <!-- row 4 -->
+    <rect x="1140" y="543" width="56" height="56" fill="#FBEEDF"/>
+    <rect x="1196" y="543" width="56" height="56" fill="#F8E0CC"/>
+    <rect x="1252" y="543" width="56" height="56" fill="#F4CCA2"/>
+    <rect x="1308" y="543" width="56" height="56" fill="#9F4318"/>
+    <rect x="1364" y="543" width="56" height="56" fill="#C56C2E"/>
+    <rect x="1420" y="543" width="56" height="56" fill="#F4C99B"/>
+    <!-- row 5 -->
+    <rect x="1140" y="599" width="56" height="56" fill="#F6D8BC"/>
+    <rect x="1196" y="599" width="56" height="56" fill="#F4CCA2"/>
+    <rect x="1252" y="599" width="56" height="56" fill="#F8E0CC"/>
+    <rect x="1308" y="599" width="56" height="56" fill="#C56C2E"/>
+    <rect x="1364" y="599" width="56" height="56" fill="#9F4318"/>
+    <rect x="1420" y="599" width="56" height="56" fill="#EBA468"/>
+    <!-- row 6 -->
+    <rect x="1140" y="655" width="56" height="56" fill="#B0531E"/>
+    <rect x="1196" y="655" width="56" height="56" fill="#F1C193"/>
+    <rect x="1252" y="655" width="56" height="56" fill="#F8E0CC"/>
+    <rect x="1308" y="655" width="56" height="56" fill="#F4CCA2"/>
+    <rect x="1364" y="655" width="56" height="56" fill="#F1BE8C"/>
+    <rect x="1420" y="655" width="56" height="56" fill="#A8481B"/>
+  </g>
+
+  <!-- blue cross right of L -->
+  <text x="1505" y="555" font-size="34" font-weight="bold" fill="#2B4C9B" text-anchor="middle">✖</text>
+
+  <!-- side vertical bar (gray gradient) right of L -->
+  <g stroke="#fff" stroke-width="2">
+    <rect x="1530" y="375" width="48" height="56" fill="#CECECE"/>
+    <rect x="1530" y="431" width="48" height="56" fill="#BABABA"/>
+    <rect x="1530" y="487" width="48" height="56" fill="#5A5A5A"/>
+    <rect x="1530" y="543" width="48" height="56" fill="#8C8C8C"/>
+    <rect x="1530" y="599" width="48" height="56" fill="#C6C6C6"/>
+    <rect x="1530" y="655" width="48" height="56" fill="#E6E6E6"/>
+  </g>
+
+</svg>

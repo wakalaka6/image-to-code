@@ -1,0 +1,99 @@
+<svg width="1040" height="1830" viewBox="0 0 1040 1830" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4472C4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4472C4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ED7D31" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ED7D31" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top text box (speech bubble) -->
+  <path d="M355,10 L355,460 L690,460 Q650,235 725,10 Z" fill="#d9d9d9" stroke="#999" stroke-width="1"/>
+  <text x="395" y="30" font-family="Georgia, serif" font-size="27" fill="#000">Translate the following text from</text>
+  <text x="430" y="30" font-family="Georgia, serif" font-size="27" fill="#000">English into Chinese.</text>
+  <text x="505" y="30" font-family="Georgia, serif" font-size="27" fill="#000">English: Amsterdam is famous for</text>
+  <text x="540" y="30" font-family="Georgia, serif" font-size="27" fill="#000">its hundreds of beautiful canals,</text>
+  <text x="575" y="30" font-family="Georgia, serif" font-size="27" fill="#000">millions of bicycles, stunning</text>
+  <text x="610" y="30" font-family="Georgia, serif" font-size="27" fill="#000">summers, and disgusting winters.</text>
+  <text x="685" y="30" font-family="Georgia, serif" font-size="27" fill="#000">Chinese:</text>
+
+  <!-- Arrow to left NMT -->
+  <g>
+    <line x1="345" y1="510" x2="280" y2="580" stroke="#7f7f7f" stroke-width="14"/>
+    <polygon points="265,595 275,565 295,580" fill="#7f7f7f"/>
+  </g>
+
+  <!-- Arrow to right NMT -->
+  <g>
+    <line x1="700" y1="510" x2="765" y2="580" stroke="#7f7f7f" stroke-width="14"/>
+    <polygon points="780,595 770,565 750,580" fill="#7f7f7f"/>
+  </g>
+
+  <!-- ===== LEFT SECTION ===== -->
+  <text x="40" y="1230" font-family="Georgia, serif" font-size="36" fill="#000">Testing Time Optimization</text>
+
+  <!-- NMT box (gray) -->
+  <rect x="190" y="625" width="110" height="220" rx="18" fill="#ededed" stroke="#7f7f7f" stroke-width="2"/>
+  <text x="255" y="735" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#000" text-anchor="middle">NMT</text>
+
+  <!-- Sampling label -->
+  <text x="200" y="965" font-family="Georgia, serif" font-size="30" fill="#000">Sampling</text>
+  <!-- Sampling arrow -->
+  <g>
+    <rect x="225" y="925" width="22" height="70" fill="#7f7f7f"/>
+    <polygon points="236,1035 212,990 260,990" fill="#7f7f7f"/>
+  </g>
+
+  <!-- Blue distribution shape -->
+  <path d="M60,1140 C140,1290 250,1180 330,1290 C360,1180 430,1290 430,1140 Z" fill="url(#blueGrad)" stroke="#1f3864" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="425" y="1265" font-family="Georgia, serif" font-size="30" fill="#000">Quality</text>
+
+  <!-- Reranking / Voting label -->
+  <text x="215" y="1335" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#548235">Reranking / Voting</text>
+  <!-- arrow -->
+  <g>
+    <rect x="240" y="1400" width="22" height="70" fill="#7f7f7f"/>
+    <polygon points="251,1510 227,1465 275,1465" fill="#7f7f7f"/>
+  </g>
+
+  <!-- Highest-scoring output box -->
+  <rect x="190" y="1605" width="100" height="220" fill="#ededed" stroke="#444" stroke-width="2"/>
+  <text x="235" y="1715" font-family="Georgia, serif" font-size="28" fill="#000" text-anchor="middle">Highest-scoring</text>
+  <text x="270" y="1715" font-family="Georgia, serif" font-size="28" fill="#000" text-anchor="middle">Output</text>
+
+  <!-- Dashed dividing line -->
+  <line x1="525" y1="560" x2="525" y2="1830" stroke="#000" stroke-width="3" stroke-dasharray="22,12,2,12"/>
+
+  <!-- ===== RIGHT SECTION ===== -->
+  <text x="580" y="1225" font-family="Georgia, serif" font-size="36" fill="#000">Training Time Optimization</text>
+
+  <!-- NMT box (green) -->
+  <rect x="760" y="625" width="110" height="220" rx="18" fill="#c5e0b4" stroke="#548235" stroke-width="2"/>
+  <text x="825" y="735" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#000" text-anchor="middle">NMT</text>
+  <text x="858" y="815" font-family="Georgia, serif" font-size="26" fill="#000">θ</text>
+
+  <!-- Sampling label -->
+  <text x="775" y="965" font-family="Georgia, serif" font-size="30" fill="#000">Sampling</text>
+  <g>
+    <rect x="800" y="925" width="22" height="70" fill="#7f7f7f"/>
+    <polygon points="811,1035 787,990 835,990" fill="#7f7f7f"/>
+  </g>
+
+  <!-- Orange distribution 1 -->
+  <path d="M640,1140 C720,1290 830,1180 910,1290 C940,1180 1010,1290 1010,1140 Z" fill="url(#orangeGrad)" stroke="#1f3864" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="1030" y="1245" font-family="Georgia, serif" font-size="30" fill="#000">Likelihood</text>
+
+  <!-- Calibration label -->
+  <text x="785" y="1375" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#FF0000">Calibration</text>
+  <g>
+    <rect x="810" y="1400" width="22" height="70" fill="#7f7f7f"/>
+    <polygon points="821,1510 797,1465 845,1465" fill="#7f7f7f"/>
+  </g>
+
+  <!-- Orange distribution 2 -->
+  <path d="M640,1545 C720,1695 830,1585 910,1695 C940,1585 1010,1695 1010,1545 Z" fill="url(#orangeGrad)" stroke="#1f3864" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="1030" y="1640" font-family="Georgia, serif" font-size="30" fill="#000" text-anchor="middle">Likelihood -&gt; Qu</text>
+</svg>

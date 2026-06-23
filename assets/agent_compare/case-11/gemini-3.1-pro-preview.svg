@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" width="1200" height="550">
+  <defs>
+    <style>
+      .text-bold { font-family: 'Times New Roman', Times, serif; font-weight: bold; }
+      .text-italic { font-family: 'Times New Roman', Times, serif; font-style: italic; font-weight: bold; }
+      .text-normal { font-family: 'Times New Roman', Times, serif; }
+      .arrow { fill: none; stroke: #4A76C4; stroke-width: 2; }
+      .arrow-head { fill: #4A76C4; }
+      .box-stroke { stroke: #4A76C4; stroke-width: 2; }
+      .box-stroke-black { stroke: #000; stroke-width: 1.5; }
+      .box-stroke-dash { stroke: #000; stroke-width: 2; stroke-dasharray: 8, 8; }
+      .fill-green { fill: #E2F0D9; }
+      .fill-gray-light { fill: #EAEAEA; }
+      .fill-gray-med { fill: #D9D9D9; }
+      .fill-gray-dark { fill: #A6A6A6; }
+      .fill-gray-darker { fill: #595959; }
+      .fill-blue-light { fill: #D9E1F2; }
+      .fill-orange-light { fill: #FCE4D6; }
+      .fill-orange-med { fill: #F8CBAD; }
+      .fill-orange-dark { fill: #C65911; }
+      .fill-orange-darker { fill: #833C0C; }
+      .fill-red-light { fill: #FFD9D9; }
+      .fill-red-med { fill: #FF8C8C; }
+      .fill-pink { fill: #FFE6E6; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <!-- Backgrounds -->
+  <rect x="0" y="0" width="1200" height="550" fill="#FFFFFF" />
+
+  <!-- Left Side: Architecture -->
+  <!-- Language Model Box -->
+  <rect x="10" y="10" width="730" height="55" rx="5" class="fill-green" />
+  <text x="30" y="45" font-size="28" class="text-normal">Language Model <tspan class="text-italic">f</tspan><tspan font-size="20" dy="5">ϕ</tspan></text>
+
+  <!-- Tokenizer Box -->
+  <rect x="33" y="180" width="315" height="55" rx="8" class="fill-gray-light" />
+  <text x="130" y="215" font-size="28" class="text-normal">Tokenizer</text>
+
+  <!-- Language Instruction Text -->
+  <text x="33" y="295" font-size="28" class="text-normal">Language Instruction <tspan class="text-italic">X</tspan><tspan font-size="20" dy="5">q</tspan></text>
+
+  <!-- CDPruner Box -->
+  <rect x="420" y="180" width="320" height="55" rx="8" class="fill-red-light box-stroke-black" />
+  <text x="508" y="215" font-size="28" class="text-bold">CDPruner</text>
+
+  <!-- Projector Box -->
+  <rect x="420" y="350" width="320" height="55" rx="8" class="fill-orange-light" />
+  <text x="508" y="385" font-size="28" class="text-normal">Projector <tspan class="text-italic">g</tspan></text>
+
+  <!-- Vision Encoder Box -->
+  <rect x="420" y="415" width="320" height="55" rx="8" class="fill-blue-light" />
+  <text x="465" y="450" font-size="28" class="text-normal">Vision Encoder <tspan class="text-italic">f</tspan><tspan font-size="20" dy="5">v</tspan></text>
+
+  <!-- Input Image Text -->
+  <text x="480" y="535" font-size="28" class="text-normal">Input Image <tspan class="text-italic">X</tspan><tspan font-size="20" dy="5">v</tspan></text>
+
+  <!-- Tokens H_q -->
+  <text x="15" y="130" font-size="28" class="text-italic">H<tspan font-size="20" dy="5">q</tspan></text>
+  <rect x="65" y="100" width="45" height="45" rx="8" class="fill-gray-med box-stroke" />
+  <rect x="170" y="100" width="45" height="45" rx="8" class="fill-gray-med box-stroke" />
+  <rect x="275" y="100" width="45" height="45" rx="8" class="fill-gray-med box-stroke" />
+
+  <!-- Tokens H_v* -->
+  <text x="402" y="130" font-size="28" class="text-italic">H<tspan font-size="20" dy="-15">*</tspan><tspan font-size="20" dy="20">v</tspan></text>
+  <rect x="452" y="100" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="557" y="100" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="662" y="100" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+
+  <!-- Tokens H_v -->
+  <text x="372" y="305" font-size="28" class="text-italic">H<tspan font-size="20" dy="5">v</tspan></text>
+  <rect x="422" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="476" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="530" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="584" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="638" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+  <rect x="692" y="270" width="45" height="45" rx="8" class="fill-orange-med box-stroke" />
+
+  <!-- Arrows Left Side -->
+  <line x1="192" y1="265" x2="192" y2="240" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="192" y1="175" x2="192" y2="150" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="192" y1="95" x2="192" y2="70" class="arrow" marker-end="url(#arrowhead)" />
+  
+  <polyline points="320,122 370,122 370,207 415,207" class="arrow" marker-end="url(#arrowhead)" />
+
+  <line x1="580" y1="500" x2="580" y2="475" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="580" y1="345" x2="580" y2="320" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="580" y1="265" x2="580" y2="240" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="580" y1="175" x2="580" y2="150" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="580" y1="95" x2="580" y2="70" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Legend Box -->
+  <rect x="13" y="350" width="360" height="195" class="box-stroke-black" fill="none" />
+  
+  <rect x="25" y="365" width="30" height="30" rx="5" class="fill-orange-med box-stroke" />
+  <rect x="60" y="365" width="30" height="30" rx="5" class="fill-orange-med box-stroke" />
+  <rect x="95" y="365" width="30" height="30" rx="5" class="fill-orange-med box-stroke" />
+  <text x="150" y="388" font-size="22" class="text-normal">Visual Tokens</text>
+
+  <rect x="25" y="410" width="30" height="30" rx="5" class="fill-gray-med box-stroke" />
+  <rect x="60" y="410" width="30" height="30" rx="5" class="fill-gray-med box-stroke" />
+  <rect x="95" y="410" width="30" height="30" rx="5" class="fill-gray-med box-stroke" />
+  <text x="150" y="433" font-size="22" class="text-normal">Text Tokens</text>
+
+  <rect x="25" y="455" width="33" height="30" class="fill-orange-dark box-stroke-black" />
+  <rect x="58" y="455" width="33" height="30" class="fill-orange-med box-stroke-black" />
+  <rect x="91" y="455" width="33" height="30" class="fill-orange-light box-stroke-black" />
+  <text x="150" y="478" font-size="22" class="text-normal">Feature Similarity</text>
+
+  <rect x="25" y="500" width="33" height="30" class="fill-gray-dark box-stroke-black" />
+  <rect x="58" y="500" width="33" height="30" class="fill-gray-med box-stroke-black" />
+  <rect x="91" y="500" width="33" height="30" class="fill-gray-light box-stroke-black" />
+  <text x="150" y="523" font-size="22" class="text-normal">Query Relevance</text>
+
+  <!-- Right Side: CDPruner Detail -->
+  <rect x="785" y="10" width="405" height="530" rx="15" class="fill-pink box-stroke-black" />
+  
+  <!-- Dashed lines connecting left and right -->
+  <line x1="740" y1="180" x2="785" y2="10" class="box-stroke-dash" />
+  <line x1="740" y1="235" x2="785" y2="540" class="box-stroke-dash" />
+
+  <!-- CDPruner Vertical Text -->
+  <text x="1150" y="180" font-size="28" class="text-bold" transform="rotate(90 1150 180)">CDPruner</text>
+  <!-- CD Icon -->
+  <circle cx="1150" cy="60" r="15" class="fill-gray-med box-stroke-black" />
+  <circle cx="1150" cy="60" r="4" fill="#FFF" class="box-stroke-black" />
+
+  <!-- S* Array -->
+  <text x="798" y="70" font-size="28" class="text-italic">S<tspan font-size="20" dy="-15">*</tspan></text>
+  <g transform="translate(830, 40)">
+    <rect x="0" y="0" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <text x="22.5" y="30" font-size="24" class="text-bold" text-anchor="middle">1</text>
+    <rect x="45" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <text x="67.5" y="30" font-size="24" class="text-normal" text-anchor="middle">×</text>
+    <rect x="90" y="0" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <text x="112.5" y="30" font-size="24" class="text-bold" text-anchor="middle">3</text>
+    <rect x="135" y="0" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <text x="157.5" y="30" font-size="24" class="text-bold" text-anchor="middle">4</text>
+    <rect x="180" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <text x="202.5" y="30" font-size="24" class="text-normal" text-anchor="middle">×</text>
+    <rect x="225" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <text x="247.5" y="30" font-size="24" class="text-normal" text-anchor="middle">×</text>
+  </g>
+
+  <!-- DPP Box -->
+  <rect x="830" y="110" width="270" height="55" rx="8" class="fill-red-med box-stroke-black" />
+  <text x="938" y="145" font-size="28" class="text-normal">DPP</text>
+
+  <!-- r Array -->
+  <text x="800" y="215" font-size="28" class="text-italic">r</text>
+  <g transform="translate(830, 185)">
+    <rect x="0" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <rect x="45" y="0" width="45" height="45" class="fill-gray-light box-stroke-black" />
+    <rect x="90" y="0" width="45" height="45" class="fill-gray-darker box-stroke-black" />
+    <rect x="135" y="0" width="45" height="45" class="fill-gray-dark box-stroke-black" />
+    <rect x="180" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <rect x="225" y="0" width="45" height="45" class="fill-gray-light box-stroke-black" />
+  </g>
+
+  <!-- L Matrix -->
+  <text x="800" y="395" font-size="28" class="text-italic">L</text>
+  <g transform="translate(830, 255)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+    <rect x="45" y="0" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="90" y="0" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="135" y="0" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="180" y="0" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="225" y="0" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <!-- Row 2 -->
+    <rect x="0" y="45" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <rect x="45" y="45" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+    <rect x="90" y="45" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <rect x="135" y="45" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="180" y="45" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <rect x="225" y="45" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <!-- Row 3 -->
+    <rect x="0" y="90" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <rect x="45" y="90" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <rect x="90" y="90" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+    <rect x="135" y="90" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="180" y="90" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="225" y="90" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <!-- Row 4 -->
+    <rect x="0" y="135" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="45" y="135" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="90" y="135" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="135" y="135" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+    <rect x="180" y="135" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <rect x="225" y="135" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <!-- Row 5 -->
+    <rect x="0" y="180" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="45" y="180" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="90" y="180" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="135" y="180" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <rect x="180" y="180" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+    <rect x="225" y="180" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <!-- Row 6 -->
+    <rect x="0" y="225" width="45" height="45" class="fill-orange-dark box-stroke-black" />
+    <rect x="45" y="225" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="90" y="225" width="45" height="45" class="fill-orange-light box-stroke-black" />
+    <rect x="135" y="225" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <rect x="180" y="225" width="45" height="45" class="fill-orange-med box-stroke-black" />
+    <rect x="225" y="225" width="45" height="45" class="fill-orange-darker box-stroke-black" />
+  </g>
+
+  <!-- Right side vertical array -->
+  <g transform="translate(1120, 255)">
+    <rect x="0" y="0" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <rect x="0" y="45" width="45" height="45" class="fill-gray-light box-stroke-black" />
+    <rect x="0" y="90" width="45" height="45" class="fill-gray-darker box-stroke-black" />
+    <rect x="0" y="135" width="45" height="45" class="fill-gray-dark box-stroke-black" />
+    <rect x="0" y="180" width="45" height="45" class="fill-gray-med box-stroke-black" />
+    <rect x="0" y="225" width="45" height="45" class="fill-gray-light box-stroke-black" />
+  </g>
+
+  <!-- Arrows and Crosses Right Side -->
+  <line x1="965" y1="180" x2="965" y2="170" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="965" y1="105" x2="965" y2="90" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Crosses -->
+  <g transform="translate(955, 235)" stroke="#4A76C4" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="0" x2="15" y2="15" />
+    <line x1="15" y1="0" x2="0" y2="15" />
+  </g>
+  <g transform="translate(1100, 385)" stroke="#4A76C4" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="0" x2="15" y2="15" />
+    <line x1="15" y1="0" x2="0" y2="15" />
+  </g>
+
+</svg>

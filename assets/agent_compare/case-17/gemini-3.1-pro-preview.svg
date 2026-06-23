@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box-dashed { fill: none; stroke: #e0e0e0; stroke-width: 3; stroke-dasharray: 10, 10; rx: 10; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; fill: #000000; text-anchor: middle; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f77b4; text-anchor: middle; }
+      .text-normal { font-family: Arial, sans-serif; font-size: 14px; fill: #000000; }
+      .text-code { font-family: monospace; font-size: 14px; fill: #000000; }
+      .box-orange { fill: #fce4d6; rx: 15; }
+      .box-blue { fill: #dae8f5; stroke: #8faadc; stroke-width: 2; rx: 5; }
+      .box-green { fill: #e2efda; stroke: #70ad47; stroke-width: 2; rx: 3; }
+      .arrow-gray { fill: #e7e6e6; }
+      .arrow-orange { fill: #fce4d6; }
+      .table-header { fill: #9bc2e6; }
+      .table-row-even { fill: #f2f2f2; }
+      .table-row-odd { fill: #ffffff; }
+      .table-text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .icon-check { fill: #70ad47; font-weight: bold; }
+      .icon-cross { fill: #c00000; font-weight: bold; }
+      .graph-node-green { fill: #e2efda; stroke: #70ad47; stroke-width: 2; rx: 3; }
+      .graph-node-blue { fill: #dae8f5; stroke: #8faadc; stroke-width: 2; }
+      .graph-node-pink { fill: #f8cbad; stroke: #f4b084; stroke-width: 2; }
+      .graph-edge-solid { stroke: #a6a6a6; stroke-width: 1.5; }
+      .graph-edge-dashed { stroke: #d9d9d9; stroke-width: 1.5; stroke-dasharray: 5, 5; }
+      .info-box { fill: none; stroke: #c55a11; stroke-width: 2; stroke-dasharray: 8, 4; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="600" />
+
+  <!-- Left Panel: Offline Graph Construction -->
+  <rect class="box-dashed" x="10" y="10" width="450" height="580" />
+  <text class="title" x="235" y="45">Offline Graph Construction</text>
+
+  <!-- Images placeholder -->
+  <rect x="40" y="70" width="80" height="60" fill="#444" />
+  <rect x="130" y="70" width="80" height="60" fill="#666" />
+  <text x="235" y="105" font-size="20" font-weight="bold">...</text>
+  <rect x="260" y="70" width="80" height="60" fill="#888" />
+  <rect x="350" y="70" width="80" height="60" fill="#222" />
+
+  <!-- Subtitles -->
+  <rect class="box-orange" x="90" y="140" width="290" height="30" />
+  <text class="text-normal" x="235" y="160" text-anchor="middle">Subtitles</text>
+
+  <!-- Arrow down -->
+  <polygon class="arrow-gray" points="215,180 255,180 255,200 270,200 235,220 200,200 215,200" />
+
+  <!-- LVLM Box -->
+  <rect class="box-blue" x="47" y="220" width="371" height="55" />
+  <text class="title" x="232" y="255">LVLM</text>
+
+  <!-- JSON Text -->
+  <text class="text-code" x="80" y="300">[{"entity": "", "description": ""},</text>
+  <text class="text-code" x="235" y="320" text-anchor="middle">...</text>
+  <text class="text-code" x="85" y="340"> {"entity": "", "description": ""}]</text>
+
+  <!-- Entity Merging Box -->
+  <rect class="box-orange" x="45" y="355" width="373" height="35" rx="0" />
+  <text class="text-normal" x="231" y="378" text-anchor="middle">Entity Merging and Node Connection</text>
+
+  <!-- Graph Visualization -->
+  <!-- Edges -->
+  <line class="graph-edge-solid" x1="65" y1="440" x2="145" y2="420" />
+  <line class="graph-edge-dashed" x1="65" y1="440" x2="90" y2="500" />
+  <line class="graph-edge-dashed" x1="145" y1="420" x2="90" y2="500" />
+  <line class="graph-edge-dashed" x1="145" y1="420" x2="175" y2="500" />
+  
+  <line class="graph-edge-solid" x1="205" y1="440" x2="345" y2="415" />
+  <line class="graph-edge-solid" x1="205" y1="440" x2="245" y2="490" />
+  <line class="graph-edge-dashed" x1="205" y1="440" x2="280" y2="455" />
+  <line class="graph-edge-dashed" x1="345" y1="415" x2="280" y2="455" />
+  <line class="graph-edge-solid" x1="345" y1="415" x2="385" y2="500" />
+  <line class="graph-edge-dashed" x1="345" y1="415" x2="400" y2="435" />
+  <line class="graph-edge-dashed" x1="385" y1="500" x2="400" y2="435" />
+  <line class="graph-edge-dashed" x1="245" y1="490" x2="305" y2="500" />
+
+  <!-- Nodes -->
+  <rect class="graph-node-green" x="55" y="430" width="20" height="20" />
+  <rect class="graph-node-green" x="135" y="410" width="20" height="20" />
+  <polygon class="graph-node-blue" points="90,490 100,510 80,510" />
+  <rect class="graph-node-blue" x="165" y="490" width="20" height="20" />
+
+  <rect class="graph-node-green" x="195" y="430" width="20" height="20" />
+  <rect class="graph-node-green" x="335" y="405" width="20" height="20" />
+  <rect class="graph-node-green" x="235" y="480" width="20" height="20" />
+  <rect class="graph-node-green" x="375" y="490" width="20" height="20" />
+  
+  <rect class="graph-node-blue" x="270" y="445" width="20" height="20" />
+  <rect class="graph-node-blue" x="390" y="425" width="20" height="20" />
+  
+  <polygon class="graph-node-pink" points="305,485 315,505 295,505" fill="#f8cbad" stroke="#f4b084" stroke-width="2"/>
+  <polygon class="graph-node-blue" points="345,450 355,470 335,470" />
+
+  <!-- Legend -->
+  <text class="text-normal" x="60" y="565">Video Clip</text>
+  <rect class="graph-node-green" x="140" y="550" width="20" height="20" />
+  <text class="text-normal" x="205" y="565">Entities (</text>
+  <polygon class="graph-node-pink" points="285,550 295,570 275,570" />
+  <rect class="graph-node-blue" x="320" y="550" width="20" height="20" />
+  <polygon class="graph-node-blue" points="365,550 375,570 355,570" />
+  <text class="text-normal" x="400" y="565">)</text>
+
+
+  <!-- Right Panel: Retrieval-Reasoning Augmented Generation -->
+  <rect class="box-dashed" x="485" y="10" width="705" height="580" />
+  <text class="title" x="837" y="45">Retrieval-Reasoning Augmented Generation</text>
+
+  <!-- Question -->
+  <text class="text-normal" x="525" y="80">🤔 Question: Please identify the option that corresponds to the order of events as they</text>
+  <text class="text-normal" x="525" y="100">occur in the video. [Zumba, clean and jerk, milking cow, playing trombone]</text>
+
+  <!-- Query Keywords Extraction -->
+  <text class="subtitle" x="655" y="150">Query Keywords Extraction</text>
+  <text class="text-code" x="655" y="175" text-anchor="middle">["zumba", "clean", "milking</text>
+  <text class="text-code" x="655" y="195" text-anchor="middle">cow", "playing trombone"]</text>
+
+  <!-- Structured Query Refinement -->
+  <text class="subtitle" x="990" y="150">Strutured Query Refinement</text>
+  <text class="text-code" x="990" y="175" text-anchor="middle">Q1: Is 'zumba' shown in the video?</text>
+  <text class="text-code" x="990" y="190" text-anchor="middle">...</text>
+  <text class="text-code" x="990" y="205" text-anchor="middle">Q4: Is 'trombone' shown in the video?</text>
+
+  <!-- Arrows from Question -->
+  <polygon class="arrow-orange" points="645,110 665,110 665,120 675,115 665,110" transform="translate(0, 10) rotate(90 655 115)" />
+  <polygon class="arrow-orange" points="980,110 1000,110 1000,120 1010,115 1000,110" transform="translate(0, 10) rotate(90 990 115)" />
+
+  <!-- Green boxes under Query Keywords -->
+  <rect class="box-green" x="590" y="220" width="20" height="20" />
+  <text class="table-text" x="600" y="235">3</text>
+  <rect class="box-green" x="618" y="220" width="20" height="20" />
+  <text class="table-text" x="628" y="235">4</text>
+  <rect class="box-green" x="645" y="220" width="20" height="20" />
+  <text class="table-text" x="655" y="235">5</text>
+  <rect class="box-green" x="672" y="220" width="25" height="20" />
+  <text class="table-text" x="684" y="235">11</text>
+  <rect class="box-green" x="700" y="220" width="25" height="20" />
+  <text class="table-text" x="712" y="235">13</text>
+
+  <!-- Big Gray Arrow Path -->
+  <path d="M 430 455 L 480 455 L 480 230 L 580 230" fill="none" stroke="#e7e6e6" stroke-width="6" />
+  <polygon class="arrow-gray" points="575,220 590,230 575,240" />
+  <text class="text-normal" x="510" y="250" font-size="12">Graph-based</text>
+  <text class="text-normal" x="510" y="265" font-size="12">Clip Retrieval</text>
+
+  <!-- Arrow from Structured Query to Table -->
+  <path d="M 990 215 L 990 260 L 710 260" fill="none" stroke="#e7e6e6" stroke-width="6" />
+  <polygon class="arrow-gray" points="715,250 700,260 715,270" />
+
+  <!-- Arrow from Green boxes to Table -->
+  <polygon class="arrow-orange" points="645,250 665,250 665,260 675,255 665,250" transform="translate(0, 10) rotate(90 655 255)" />
+
+  <!-- Table -->
+  <rect class="table-header" x="547" y="285" width="53" height="25" />
+  <text class="table-text" x="573" y="303" fill="#fff" font-weight="bold">Clip</text>
+  <rect class="table-header" x="602" y="285" width="43" height="25" />
+  <text class="table-text" x="623" y="303" fill="#fff" font-weight="bold">Q1</text>
+  <rect class="table-header" x="647" y="285" width="43" height="25" />
+  <text class="table-text" x="668" y="303" fill="#fff" font-weight="bold">Q2</text>
+  <rect class="table-header" x="692" y="285" width="43" height="25" />
+  <text class="table-text" x="713" y="303" fill="#fff" font-weight="bold">Q3</text>
+  <rect class="table-header" x="737" y="285" width="43" height="25" />
+  <text class="table-text" x="758" y="303" fill="#fff" font-weight="bold">Q4</text>
+
+  <!-- Row 3 -->
+  <rect class="table-row-even" x="547" y="310" width="53" height="25" />
+  <text class="table-text" x="573" y="328">3</text>
+  <rect class="table-row-even" x="602" y="310" width="43" height="25" />
+  <text class="table-text icon-cross" x="623" y="328">✗</text>
+  <rect class="table-row-even" x="647" y="310" width="43" height="25" />
+  <text class="table-text icon-cross" x="668" y="328">✗</text>
+  <rect class="table-row-even" x="692" y="310" width="43" height="25" />
+  <text class="table-text icon-check" x="713" y="328">✔</text>
+  <rect class="table-row-even" x="737" y="310" width="43" height="25" />
+  <text class="table-text icon-cross" x="758" y="328">✗</text>
+
+  <!-- Row 4 -->
+  <rect class="table-row-odd" x="547" y="335" width="53" height="25" />
+  <text class="table-text" x="573" y="353">4</text>
+  <rect class="table-row-odd" x="602" y="335" width="43" height="25" />
+  <text class="table-text icon-check" x="623" y="353">✔</text>
+  <rect class="table-row-odd" x="647" y="335" width="43" height="25" />
+  <text class="table-text icon-cross" x="668" y="353">✗</text>
+  <rect class="table-row-odd" x="692" y="335" width="43" height="25" />
+  <text class="table-text icon-check" x="713" y="353">✔</text>
+  <rect class="table-row-odd" x="737" y="335" width="43" height="25" />
+  <text class="table-text icon-cross" x="758" y="353">✗</text>
+
+  <!-- Row 5 -->
+  <rect class="table-row-even" x="547" y="360" width="53" height="25" />
+  <text class="table-text" x="573" y="378">5</text>
+  <rect class="table-row-even" x="602" y="360" width="43" height="25" />
+  <text class="table-text icon-cross" x="623" y="378">✗</text>
+  <rect class="table-row-even" x="647" y="360" width="43" height="25" />
+  <text class="table-text icon-cross" x="668" y="378">✗</text>
+  <rect class="table-row-even" x="692" y="360" width="43" height="25" />
+  <text class="table-text icon-cross" x="713" y="378">✗</text>
+  <rect class="table-row-even" x="737" y="360" width="43" height="25" />
+  <text class="table-text icon-cross" x="758" y="378">✗</text>
+
+  <!-- Row 11 -->
+  <rect class="table-row-odd" x="547" y="385" width="53" height="25" />
+  <text class="table-text" x="573" y="403">11</text>
+  <rect class="table-row-odd" x="602" y="385" width="43" height="25" />
+  <text class="table-text icon-cross" x="623" y="403">✗</text>
+  <rect class="table-row-odd" x="647" y="385" width="43" height="25" />
+  <text class="table-text icon-check" x="668" y="403">✔</text>
+  <rect class="table-row-odd" x="692" y="385" width="43" height="25" />
+  <text class="table-text icon-cross" x="713" y="403">✗</text>
+  <rect class="table-row-odd" x="737" y="385" width="43" height="25" />
+  <text class="table-text icon-cross" x="758" y="403">✗</text>
+
+  <!-- Row 13 -->
+  <rect class="table-row-even" x="547" y="410" width="53" height="25" />
+  <text class="table-text" x="573" y="428">13</text>
+  <rect class="table-row-even" x="602" y="410" width="43" height="25" />
+  <text class="table-text icon-cross" x="623" y="428">✗</text>
+  <rect class="table-row-even" x="647" y="410" width="43" height="25" />
+  <text class="table-text icon-cross" x="668" y="428">✗</text>
+  <rect class="table-row-even" x="692" y="410" width="43" height="25" />
+  <text class="table-text icon-cross" x="713" y="428">✗</text>
+  <rect class="table-row-even" x="737" y="410" width="43" height="25" />
+  <text class="table-text icon-check" x="758" y="428">✔</text>
+
+  <!-- Arrow from Table to Info Box -->
+  <polygon class="arrow-orange" points="805,350 825,350 825,340 845,360 825,380 825,370 805,370" />
+
+  <!-- Information Aggregation -->
+  <text class="subtitle" x="1000" y="305">Information Aggregation</text>
+  <rect class="info-box" x="878" y="325" width="263" height="98" />
+  <text class="text-code" x="888" y="350">Milking cow is shown first,</text>
+  <text class="text-code" x="888" y="370">followed by zumba, then</text>
+  <text class="text-code" x="888" y="390">clean, and finally playing</text>
+  <text class="text-code" x="888" y="410">trombone.</text>
+
+  <!-- Refined Clips -->
+  <text class="text-normal" x="655" y="455" text-anchor="middle" font-size="12">Refined Clips</text>
+  <rect class="box-green" x="608" y="470" width="20" height="20" />
+  <text class="table-text" x="618" y="485">3</text>
+  <rect class="box-green" x="635" y="470" width="20" height="20" />
+  <text class="table-text" x="645" y="485">4</text>
+  <rect class="box-green" x="662" y="470" width="25" height="20" />
+  <text class="table-text" x="674" y="485">11</text>
+  <rect class="box-green" x="690" y="470" width="25" height="20" />
+  <text class="table-text" x="702" y="485">13</text>
+
+  <!-- Arrow down to LVLM -->
+  <polygon class="arrow-gray" points="985,440 1015,440 1015,460 1030,460 1000,480 970,460 985,460" />
+
+  <!-- LVLM Box Right -->
+  <rect class="box-blue" x="520" y="505" width="647" height="45" />
+  <text class="title" x="843" y="535">LVLM</text>
+
+  <!-- Answer -->
+  <text class="text-normal" x="525" y="570">🤖 Answer: milking cow --&gt; zumba --&gt; clean and jerk --&gt; playing trombone</text>
+
+</svg>

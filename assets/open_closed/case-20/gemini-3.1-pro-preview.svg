@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <style>
+      .box { fill: none; stroke: #888; stroke-width: 2; stroke-dasharray: 6,4; rx: 8; }
+      .solid-box { fill: #f5f5f5; stroke: #ccc; stroke-width: 2; rx: 12; }
+      .text-code { font-family: monospace; font-size: 10px; fill: #d95f5f; }
+      .text-desc { font-family: monospace; font-size: 10px; fill: #85b87b; }
+      .text-sys { font-family: monospace; font-size: 10px; fill: #d95f5f; }
+      .text-sys-desc { font-family: monospace; font-size: 10px; fill: #85b87b; }
+      .text-cq { font-family: monospace; font-size: 10px; fill: #d95f5f; }
+      .text-cq-blue { fill: #5b9bd5; }
+      .text-cq-orange { fill: #ed7d31; }
+      .title { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #2e5c2e; }
+      .label { font-family: sans-serif; font-size: 12px; fill: #000; text-anchor: middle; }
+      .arrow { fill: none; stroke: #000; stroke-width: 2; marker-end: url(#arrowhead); }
+      .arrow-green { fill: none; stroke: #85b87b; stroke-width: 3; marker-end: url(#arrowhead-green); }
+      .arrow-red { fill: none; stroke: #d95f5f; stroke-width: 2; marker-end: url(#arrowhead-red); }
+      .arrow-pink { fill: none; stroke: #f4b0c4; stroke-width: 3; marker-end: url(#arrowhead-pink); }
+      .icon-bg { fill: #fff; stroke: #000; stroke-width: 1.5; rx: 4; }
+      .icon-text { font-family: sans-serif; font-size: 10px; font-weight: bold; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#85b87b" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d95f5f" />
+    </marker>
+    <marker id="arrowhead-pink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f4b0c4" />
+    </marker>
+  </defs>
+
+  <!-- Top Section: Code Blocks -->
+  <rect class="box" x="10" y="10" width="270" height="190" />
+  <text class="text-code" x="20" y="30">{</text>
+  <text class="text-code" x="30" y="45">"steps": [</text>
+  <text class="text-code" x="40" y="60">{</text>
+  <text class="text-code" x="50" y="75">"sketch": {</text>
+  <text class="text-code" x="60" y="90">"circles": [</text>
+  <text class="text-code" x="70" y="105">{"center": [0, 0], "radius": 60},</text>
+  <text class="text-code" x="70" y="120">{"center": [0, 0], "radius": 25}</text>
+  <text class="text-code" x="60" y="135">]</text>
+  <text class="text-code" x="50" y="150">},</text>
+  <text class="text-code" x="50" y="165">"extrusion": {</text>
+  <text class="text-code" x="60" y="180">"direction": [0, 0, 1],</text>
+  <text class="title" x="270" y="190" text-anchor="end">Command Sequence</text>
+
+  <rect class="box" x="290" y="10" width="250" height="190" />
+  <text class="text-desc" x="300" y="30">Text_Description = """</text>
+  <text class="text-desc" x="300" y="45">This circular flange is a metal component</text>
+  <text class="text-desc" x="300" y="60">featuring a flat base plate with a</text>
+  <text class="text-desc" x="300" y="75">diameter of 120 mm and thickness of 15 mm.</text>
+  <text class="text-desc" x="300" y="90">The design includes a central bore</text>
+  <text class="text-desc" x="300" y="105">measuring 50 mm in diameter surrounded by</text>
+  <text class="text-desc" x="300" y="120">a raised concentric ring with an outer</text>
+  <text class="text-desc" x="300" y="135">diameter of 70 mm and height of 8 mm that</text>
+  <text class="text-desc" x="300" y="150">shares the same inner diameter as the</text>
+  <text class="text-desc" x="300" y="165">central bore. Six equidistant mounting</text>
+  <text class="title" x="530" y="190" text-anchor="end">Text Description</text>
+
+  <rect class="box" x="550" y="10" width="640" height="85" />
+  <text class="text-sys" x="560" y="30">System_prompt = """</text>
+  <text class="text-sys-desc" x="560" y="45">Please convert the following CAD command sequence into CAD-Query code, with the final model represented as 'r':</text>
+  <text class="text-sys" x="560" y="60">"""</text>
+  <text class="text-sys" x="560" y="75" fill="#888"># The CoT system prompt can be found in the appendix.</text>
+  <text class="title" x="1180" y="85" text-anchor="end">System prompt</text>
+
+  <rect class="box" x="550" y="105" width="640" height="95" />
+  <text class="text-cq" x="560" y="125">import <tspan class="text-cq-blue">cadquery</tspan> as <tspan class="text-cq-blue">cq</tspan></text>
+  <text class="text-cq" x="560" y="145">flange = (<tspan class="text-cq-blue">cq.Workplane</tspan>("XY")</text>
+  <text class="text-cq" x="610" y="160">.<tspan class="text-cq-blue">circle</tspan>(<tspan class="text-cq-orange">60</tspan>).<tspan class="text-cq-blue">circle</tspan>(<tspan class="text-cq-orange">25</tspan>).<tspan class="text-cq-blue">extrude</tspan>(<tspan class="text-cq-orange">15</tspan>)</text>
+  <text class="text-cq" x="610" y="175">.<tspan class="text-cq-blue">faces</tspan>(">Z").<tspan class="text-cq-blue">workplane</tspan>().<tspan class="text-cq-blue">polarArray</tspan>(<tspan class="text-cq-orange">45, 0, 360, 6</tspan>).<tspan class="text-cq-blue">circle</tspan>(<tspan class="text-cq-orange">6</tspan>).<tspan class="text-cq-blue">cutThruAll</tspan>()</text>
+  <text class="title" x="1180" y="190" text-anchor="end">CadQuery Code</text>
+
+  <!-- Bottom Left Section: Text2CAD Dataset -->
+  <rect class="solid-box" x="10" y="210" width="320" height="280" fill="#f0f4f8" />
+  
+  <!-- Folder Icon -->
+  <path d="M 25 320 L 40 305 L 65 305 L 70 320 L 85 320 L 85 360 L 25 360 Z" fill="#f4d03f" stroke="#000" stroke-width="2" />
+  <path d="M 25 320 L 85 320" stroke="#000" stroke-width="2" />
+  <rect x="35" y="308" width="25" height="15" fill="#fff" stroke="#000" stroke-width="1.5" transform="rotate(-15 35 308)" />
+  <circle cx="75" cy="350" r="8" fill="#4caf50" />
+  <path d="M 72 350 L 74 353 L 79 347" fill="none" stroke="#fff" stroke-width="2" />
+  <text class="label" x="55" y="380">Text2CAD</text>
+  <text class="label" x="55" y="395">Dataset</text>
+
+  <path class="arrow" d="M 85 335 L 140 335" />
+  <path class="arrow" d="M 110 335 L 110 250 L 140 250" />
+  <path class="arrow" d="M 110 335 L 110 435 L 140 435" />
+
+  <rect class="box" x="145" y="215" width="65" height="180" stroke="#000" />
+  
+  <!-- JSON Icon -->
+  <rect class="icon-bg" x="155" y="225" width="40" height="50" />
+  <rect x="155" y="255" width="40" height="15" fill="#e67e22" />
+  <text class="icon-text" x="175" y="267" fill="#fff">JSON</text>
+  <text class="label" x="175" y="290" font-size="10">Command</text>
+  <text class="label" x="175" y="302" font-size="10">Sequence</text>
+
+  <!-- TEXT Icon -->
+  <rect class="icon-bg" x="155" y="310" width="40" height="50" />
+  <line x1="160" y1="320" x2="190" y2="320" stroke="#000" stroke-width="1.5" />
+  <line x1="160" y1="325" x2="190" y2="325" stroke="#000" stroke-width="1.5" />
+  <line x1="160" y1="330" x2="180" y2="330" stroke="#000" stroke-width="1.5" />
+  <rect x="155" y="340" width="40" height="15" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text class="icon-text" x="175" y="352">TEXT</text>
+  <text class="label" x="175" y="375" font-size="10">Text</text>
+  <text class="label" x="175" y="387" font-size="10">Description</text>
+
+  <!-- STEP Icon -->
+  <rect class="icon-bg" x="155" y="410" width="40" height="50" />
+  <line x1="160" y1="420" x2="190" y2="420" stroke="#000" stroke-width="1.5" />
+  <line x1="160" y1="425" x2="190" y2="425" stroke="#000" stroke-width="1.5" />
+  <rect x="155" y="440" width="40" height="15" fill="#5b9bd5" />
+  <text class="icon-text" x="175" y="452" fill="#fff">STEP</text>
+  <text class="label" x="175" y="475">Ground-Truth Model</text>
+
+  <path class="arrow" d="M 210 250 L 230 250 L 230 260" />
+  <path class="arrow" d="M 210 305 L 230 305 L 230 260" />
+  
+  <!-- LLM Icon -->
+  <path d="M 250 250 C 250 230, 280 230, 280 250 C 280 270, 250 270, 250 250 Z" fill="#1e40af" />
+  <path d="M 280 240 C 290 230, 300 240, 290 250 Z" fill="#1e40af" />
+  <circle cx="260" cy="245" r="3" fill="#fff" />
+  <text class="label" x="265" y="225">LLMs</text>
+
+  <path class="arrow" d="M 265 265 L 265 300" />
+
+  <!-- CQ Icon -->
+  <rect x="240" y="305" width="50" height="45" fill="#1d70b8" rx="4" />
+  <text x="265" y="338" font-family="sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">cq</text>
+  <text class="label" x="265" y="365">CadQuery</text>
+
+  <path class="arrow-red" d="M 265 375 L 265 405" />
+  <path d="M 255 380 L 275 400 M 275 380 L 255 400" stroke="#d95f5f" stroke-width="3" />
+
+  <!-- Trash Icon -->
+  <path d="M 250 420 L 280 420 L 275 460 L 255 460 Z" fill="#f4d03f" stroke="#000" stroke-width="2" />
+  <rect x="245" y="415" width="40" height="5" fill="#d95f5f" stroke="#000" stroke-width="1.5" />
+  <line x1="260" y1="425" x2="260" y2="455" stroke="#000" stroke-width="1.5" />
+  <line x1="270" y1="425" x2="270" y2="455" stroke="#000" stroke-width="1.5" />
+  <text class="label" x="265" y="475">Discard</text>
+
+  <!-- Middle Section: Models -->
+  <rect class="solid-box" x="340" y="210" width="660" height="280" />
+  
+  <path class="arrow-green" d="M 290 325 L 320 325 L 320 290 L 390 290" />
+  <path d="M 300 280 L 310 290 L 330 265" fill="none" stroke="#85b87b" stroke-width="5" />
+
+  <rect class="box" x="390" y="230" width="420" height="110" stroke="#85b87b" stroke-width="2" stroke-dasharray="8,4" />
+  <rect x="515" y="220" width="150" height="20" fill="#e8f5e9" rx="10" />
+  <text class="title" x="590" y="235" text-anchor="middle">Generated Models</text>
+
+  <!-- 3D Model representations (simplified as ellipses/cylinders) -->
+  <g transform="translate(410, 260)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#bcaaa4" />
+    <ellipse cx="50" cy="20" rx="15" ry="6" fill="#8d6e63" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#a1887f" />
+  </g>
+  <g transform="translate(540, 260)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#bcaaa4" />
+    <ellipse cx="50" cy="20" rx="15" ry="6" fill="#8d6e63" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#a1887f" />
+    <circle cx="25" cy="20" r="3" fill="#5d4037" />
+    <circle cx="75" cy="20" r="3" fill="#5d4037" />
+    <circle cx="50" cy="10" r="3" fill="#5d4037" />
+    <circle cx="50" cy="30" r="3" fill="#5d4037" />
+  </g>
+  <g transform="translate(670, 260)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#bcaaa4" />
+    <ellipse cx="50" cy="10" rx="25" ry="10" fill="#d7ccc8" />
+    <path d="M 25 10 L 25 20 A 25 10 0 0 0 75 20 L 75 10 Z" fill="#bcaaa4" />
+    <ellipse cx="50" cy="10" rx="15" ry="6" fill="#8d6e63" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#a1887f" />
+    <circle cx="20" cy="20" r="3" fill="#5d4037" />
+    <circle cx="80" cy="20" r="3" fill="#5d4037" />
+  </g>
+
+  <path class="arrow" d="M 600 345 L 600 375" />
+  <text class="label" x="625" y="365">Sample</text>
+
+  <rect class="box" x="390" y="380" width="420" height="100" stroke="#888" stroke-width="2" stroke-dasharray="8,4" />
+  <rect x="525" y="465" width="130" height="20" fill="#e8f5e9" rx="10" />
+  <text class="title" x="590" y="480" text-anchor="middle">3D Point Models</text>
+
+  <!-- Point cloud representations (textured/dotted) -->
+  <g transform="translate(410, 390)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#555" stroke="#333" stroke-dasharray="1,2" />
+    <ellipse cx="50" cy="20" rx="15" ry="6" fill="#222" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#444" stroke="#333" stroke-dasharray="1,2" />
+  </g>
+  <g transform="translate(540, 390)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#555" stroke="#333" stroke-dasharray="1,2" />
+    <ellipse cx="50" cy="20" rx="15" ry="6" fill="#222" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#444" stroke="#333" stroke-dasharray="1,2" />
+    <circle cx="25" cy="20" r="3" fill="#111" />
+    <circle cx="75" cy="20" r="3" fill="#111" />
+  </g>
+  <g transform="translate(670, 390)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#777" stroke="#555" stroke-dasharray="1,2" />
+    <ellipse cx="50" cy="10" rx="25" ry="10" fill="#888" stroke="#666" stroke-dasharray="1,2" />
+    <path d="M 25 10 L 25 20 A 25 10 0 0 0 75 20 L 75 10 Z" fill="#777" />
+    <ellipse cx="50" cy="10" rx="15" ry="6" fill="#222" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#666" stroke="#555" stroke-dasharray="1,2" />
+    <circle cx="20" cy="20" r="3" fill="#111" />
+    <circle cx="80" cy="20" r="3" fill="#111" />
+  </g>
+  <rect x="675" y="385" width="125" height="75" fill="none" stroke="#d95f5f" stroke-width="3" stroke-dasharray="8,4" rx="8" />
+  <text class="label" x="735" y="475">Select by CD</text>
+
+  <!-- Ground Truth Models -->
+  <g transform="translate(860, 250)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#607d8b" />
+    <ellipse cx="50" cy="10" rx="25" ry="10" fill="#78909c" />
+    <path d="M 25 10 L 25 20 A 25 10 0 0 0 75 20 L 75 10 Z" fill="#607d8b" />
+    <ellipse cx="50" cy="10" rx="15" ry="6" fill="#37474f" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#546e7a" />
+    <circle cx="20" cy="20" r="3" fill="#263238" />
+    <circle cx="80" cy="20" r="3" fill="#263238" />
+  </g>
+  <text class="label" x="910" y="335">Ground-Truth Models</text>
+  <path class="arrow" d="M 910 345 L 910 375" />
+  <text class="label" x="935" y="365">Sample</text>
+
+  <g transform="translate(860, 390)">
+    <ellipse cx="50" cy="20" rx="50" ry="20" fill="#777" stroke="#555" stroke-dasharray="1,2" />
+    <ellipse cx="50" cy="10" rx="25" ry="10" fill="#888" stroke="#666" stroke-dasharray="1,2" />
+    <path d="M 25 10 L 25 20 A 25 10 0 0 0 75 20 L 75 10 Z" fill="#777" />
+    <ellipse cx="50" cy="10" rx="15" ry="6" fill="#222" />
+    <path d="M 0 20 L 0 35 A 50 20 0 0 0 100 35 L 100 20 Z" fill="#666" stroke="#555" stroke-dasharray="1,2" />
+    <circle cx="20" cy="20" r="3" fill="#111" />
+    <circle cx="80" cy="20" r="3" fill="#111" />
+  </g>
+
+  <path d="M 805 415 L 855 415 M 805 410 L 815 400 M 805 420 L 815 430 M 855 410 L 845 400 M 855 420 L 845 430" fill="none" stroke="#f4b0c4" stroke-width="4" />
+  <text class="label" x="830" y="390">Chamfer</text>
+  <text class="label" x="830" y="405">Distance</text>
+
+  <path class="arrow-pink" d="M 830 430 L 830 455 L 1000 455" />
+  <text class="label" x="915" y="470">Python code</text>
+  <text class="label" x="915" y="485">selection</text>
+
+  <!-- Right Section: Our Dataset -->
+  <rect class="solid-box" x="1010" y="210" width="180" height="280" fill="#fff5e6" />
+  
+  <rect class="box" x="1025" y="220" width="60" height="180" stroke="#000" />
+  
+  <!-- STEP Icon -->
+  <rect class="icon-bg" x="1035" y="230" width="40" height="50" />
+  <line x1="1040" y1="240" x2="1070" y2="240" stroke="#000" stroke-width="1.5" />
+  <line x1="1040" y1="245" x2="1070" y2="245" stroke="#000" stroke-width="1.5" />
+  <rect x="1035" y="260" width="40" height="15" fill="#5b9bd5" />
+  <text class="icon-text" x="1055" y="272" fill="#fff">STEP</text>
+  <text class="label" x="1055" y="295" font-size="10">Model</text>
+
+  <!-- TEXT Icon -->
+  <rect class="icon-bg" x="1035" y="315" width="40" height="50" />
+  <line x1="1040" y1="325" x2="1070" y2="325" stroke="#000" stroke-width="1.5" />
+  <line x1="1040" y1="330" x2="1070" y2="330" stroke="#000" stroke-width="1.5" />
+  <rect x="1035" y="345" width="40" height="15" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text class="icon-text" x="1055" y="357">TEXT</text>
+  <text class="label" x="1055" y="380" font-size="10">Text</text>
+  <text class="label" x="1055" y="392" font-size="10">Description</text>
+
+  <path class="arrow" d="M 1085 310 L 1100 310 L 1100 350 L 1115 350" />
+
+  <!-- Folder Icon -->
+  <path d="M 1120 330 L 1135 315 L 1160 315 L 1165 330 L 1180 330 L 1180 370 L 1120 370 Z" fill="#f4d03f" stroke="#000" stroke-width="2" />
+  <path d="M 1120 330 L 1180 330" stroke="#000" stroke-width="2" />
+  <rect x="1130" y="318" width="25" height="15" fill="#fff" stroke="#000" stroke-width="1.5" transform="rotate(-15 1130 318)" />
+  <circle cx="1165" cy="360" r="8" fill="#d95f5f" />
+  <path d="M 1161 360 L 1169 360 M 1165 356 L 1165 364" stroke="#fff" stroke-width="2" />
+  <text class="label" x="1150" y="390">Our Dataset</text>
+
+  <!-- CQ Icon -->
+  <rect x="1030" y="425" width="50" height="45" fill="#1d70b8" rx="4" />
+  <text x="1055" y="458" font-family="sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">cq</text>
+  <text class="label" x="1055" y="485">CadQuery</text>
+  
+  <path class="arrow" d="M 1080 445 L 1100 445 L 1100 350 L 1115 350" />
+
+</svg>

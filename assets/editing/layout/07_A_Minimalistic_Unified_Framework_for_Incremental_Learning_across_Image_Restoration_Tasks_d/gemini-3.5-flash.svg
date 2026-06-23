@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 560" width="1800" height="560">
+  <defs>
+    <!-- Arrow markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#70ad47" />
+    </marker>
+
+    <!-- Stylized Bear Image Card -->
+    <g id="bear-card">
+      <!-- Sky -->
+      <rect x="0" y="0" width="75" height="60" fill="#8faadc" />
+      <!-- City Skyline (gray blocks in background) -->
+      <rect x="2" y="20" width="8" height="40" fill="#7f7f7f" />
+      <rect x="10" y="28" width="10" height="32" fill="#a6a6a6" />
+      <rect x="20" y="15" width="12" height="45" fill="#d9d9d9" />
+      <!-- Water / Ground -->
+      <rect x="0" y="42" width="75" height="18" fill="#2f5597" />
+      <ellipse cx="45" cy="48" rx="25" ry="8" fill="#70ad47" />
+      <!-- Bear Body -->
+      <ellipse cx="48" cy="43" rx="14" ry="9" fill="#833c0c" />
+      <!-- Bear Head -->
+      <ellipse cx="35" cy="39" rx="7" ry="6" fill="#833c0c" />
+      <!-- Bear Ears -->
+      <circle cx="33" cy="33" r="2" fill="#833c0c" />
+      <!-- Bear Legs -->
+      <rect x="39" y="47" width="3" height="8" fill="#5c2a08" />
+      <rect x="44" y="48" width="3" height="8" fill="#5c2a08" />
+      <rect x="50" y="48" width="3" height="8" fill="#5c2a08" />
+      <rect x="55" y="47" width="3" height="8" fill="#5c2a08" />
+      <!-- Little background bear -->
+      <ellipse cx="68" cy="41" rx="7" ry="5" fill="#a0522d" />
+      <ellipse cx="61" cy="39" rx="4" ry="3" fill="#a0522d" />
+    </g>
+
+    <!-- Rain Pattern for Input Image -->
+    <pattern id="rain" width="15" height="15" patternUnits="userSpaceOnUse" patternTransform="rotate(70)">
+      <line x1="0" y1="0" x2="0" y2="15" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" />
+    </pattern>
+  </defs>
+
+  <!-- ================= BACKGROUND PANELS ================= -->
+  <!-- Panel (a) -->
+  <rect x="5" y="5" width="590" height="550" fill="#f2f2f2" rx="4" />
+  <!-- Panel (b) -->
+  <rect x="605" y="5" width="590" height="550" fill="#fbe9db" rx="4" />
+  <!-- Panel (c) -->
+  <rect x="1205" y="5" width="590" height="550" fill="#e2e7f6" rx="4" />
+
+  <!-- ================= PANEL (a) Overall MINI Architecture ================= -->
+  <text x="15" y="35" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#000">(a) Overall MINI Architecture</text>
+
+  <!-- Input Image Stack -->
+  <use href="#bear-card" x="42.5" y="215" />
+  <use href="#bear-card" x="52.5" y="225" />
+  <use href="#bear-card" x="62.5" y="235" />
+  <!-- Rain overlay on the front card -->
+  <rect x="62.5" y="235" width="75" height="60" fill="url(#rain)" pointer-events="none" />
+  <rect x="62.5" y="235" width="75" height="60" fill="none" stroke="#595959" stroke-width="1" />
+  <text x="99.5" y="315" font-family="Georgia, serif" font-size="16" text-anchor="middle">input <tspan font-style="italic">x</tspan></text>
+
+  <!-- Query Function Box -->
+  <rect x="127.5" y="140" width="155" height="32" rx="6" fill="#e2f0d9" stroke="#385723" stroke-width="1.5" />
+  <text x="205" y="161" font-family="Georgia, serif" font-size="14" text-anchor="middle">Query function <tspan font-style="italic">q</tspan>(·)</text>
+
+  <!-- Backbone Dashed Box -->
+  <rect x="182.5" y="220" width="235" height="125" rx="15" fill="none" stroke="#2f5597" stroke-width="2" stroke-dasharray="6,6" />
+  <text x="300.5" y="363" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">Any backbone</text>
+  <text x="300.5" y="381" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">with MINI-Conv</text>
+
+  <!-- Backbone Hourglass (U-Net representation) -->
+  <path d="M 195.5,238 L 290.5,263 L 290.5,303 L 195.5,328 Z" fill="none" stroke="#2f5597" stroke-width="1.5" />
+  <path d="M 302.5,263 L 397.5,238 L 397.5,328 L 302.5,303 Z" fill="none" stroke="#2f5597" stroke-width="1.5" />
+
+  <!-- Left side bars (decreasing) -->
+  <!-- Bar 1 -->
+  <rect x="202.5" y="242" width="8" height="18" fill="#ffd966" />
+  <rect x="202.5" y="260" width="8" height="28" fill="#f6b26b" />
+  <rect x="202.5" y="288" width="8" height="34" fill="#4f81bd" />
+  <!-- Bar 2 -->
+  <rect x="220.5" y="247" width="8" height="16" fill="#ffd966" />
+  <rect x="220.5" y="263" width="8" height="24" fill="#f6b26b" />
+  <rect x="220.5" y="287" width="8" height="30" fill="#4f81bd" />
+  <!-- Bar 3 -->
+  <rect x="238.5" y="252" width="8" height="14" fill="#ffd966" />
+  <rect x="238.5" y="266" width="8" height="20" fill="#f6b26b" />
+  <rect x="238.5" y="286" width="8" height="26" fill="#4f81bd" />
+  <!-- Bar 4 -->
+  <rect x="256.5" y="257" width="8" height="12" fill="#ffd966" />
+  <rect x="256.5" y="269" width="8" height="16" fill="#f6b26b" />
+  <rect x="256.5" y="285" width="8" height="22" fill="#4f81bd" />
+  <!-- Bar 5 -->
+  <rect x="274.5" y="261" width="8" height="9" fill="#ffd966" />
+  <rect x="274.5" y="270" width="8" height="13" fill="#f6b26b" />
+  <rect x="274.5" y="283" width="8" height="18" fill="#4f81bd" />
+
+  <!-- Right side bars (increasing) -->
+  <!-- Bar 5 -->
+  <rect x="318.5" y="261" width="8" height="9" fill="#ffd966" />
+  <rect x="318.5" y="270" width="8" height="13" fill="#f6b26b" />
+  <rect x="318.5" y="283" width="8" height="18" fill="#4f81bd" />
+  <!-- Bar 4 -->
+  <rect x="336.5" y="257" width="8" height="12" fill="#ffd966" />
+  <rect x="336.5" y="269" width="8" height="16" fill="#f6b26b" />
+  <rect x="336.5" y="285" width="8" height="22" fill="#4f81bd" />
+  <!-- Bar 3 -->
+  <rect x="354.5" y="252" width="8" height="14" fill="#ffd966" />
+  <rect x="354.5" y="266" width="8" height="20" fill="#f6b26b" />
+  <rect x="354.5" y="286" width="8" height="26" fill="#4f81bd" />
+  <!-- Bar 2 -->
+  <rect x="372.5" y="247" width="8" height="16" fill="#ffd966" />
+  <rect x="372.5" y="263" width="8" height="24" fill="#f6b26b" />
+  <rect x="372.5" y="287" width="8" height="30" fill="#4f81bd" />
+  <!-- Bar 1 -->
+  <rect x="390.5" y="242" width="8" height="18" fill="#ffd966" />
+  <rect x="390.5" y="260" width="8" height="28" fill="#f6b26b" />
+  <rect x="390.5" y="288" width="8" height="34" fill="#4f81bd" />
+
+  <!-- Output Image Stack -->
+  <use href="#bear-card" x="462.5" y="215" />
+  <use href="#bear-card" x="472.5" y="225" />
+  <use href="#bear-card" x="482.5" y="235" />
+  <rect x="482.5" y="235" width="75" height="60" fill="none" stroke="#595959" stroke-width="1" />
+  <text x="519.5" y="315" font-family="Georgia, serif" font-size="16" text-anchor="middle">output <tspan font-style="italic">y</tspan></text>
+
+  <!-- Panel (a) Connections -->
+  <path d="M 80.5,215 L 80.5,156 L 122.5,156" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 282.5,156 L 300.5,156 L 300.5,215" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 137.5,270 L 177.5,270" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 417.5,270 L 457.5,270" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+
+
+  <!-- ================= PANEL (b) MINI-Conv ================= -->
+  <text x="615" y="35" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#000">(b) MINI-Conv</text>
+
+  <!-- Input q(x) -->
+  <text x="679" y="303" font-family="Georgia, serif" font-size="18" font-style="italic">q(x)</text>
+
+  <!-- Bias Embeddings Box -->
+  <rect x="804" y="185" width="72" height="45" rx="5" fill="none" stroke="#0070c0" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="840" y="180" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">bias embeddings</text>
+  <!-- Slices -->
+  <rect x="840" y="193" width="24" height="30" fill="#4f81bd" stroke="#2f5597" stroke-width="0.5" rx="1" />
+  <rect x="833" y="196" width="24" height="30" fill="#ffd966" stroke="#d6ad1c" stroke-width="0.5" rx="1" />
+  <rect x="826" y="199" width="24" height="30" fill="#f6b26b" stroke="#e28a2b" stroke-width="0.5" rx="1" />
+  <rect x="819" y="202" width="24" height="30" fill="#a9d18e" stroke="#70ad47" stroke-width="0.5" rx="1" />
+
+  <!-- Weight Embeddings Box -->
+  <rect x="804" y="265" width="72" height="65" rx="5" fill="none" stroke="#0070c0" stroke-width="1.5" stroke-dasharray="4,4" />
+  <text x="840" y="343" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">weight embeddings</text>
+  <!-- Slices -->
+  <rect x="839" y="271" width="26" height="36" fill="#4f81bd" stroke="#2f5597" stroke-width="0.5" rx="1" />
+  <rect x="832" y="275" width="26" height="36" fill="#c55a11" stroke="#833c0c" stroke-width="0.5" rx="1" />
+  <rect x="825" y="279" width="26" height="36" fill="#e28a2b" stroke="#b25900" stroke-width="0.5" rx="1" />
+  <rect x="818" y="283" width="26" height="36" fill="#f6b26b" stroke="#e28a2b" stroke-width="0.5" rx="1" />
+  <rect x="811" y="287" width="26" height="36" fill="#ffd966" stroke="#d6ad1c" stroke-width="0.5" rx="1" />
+  <rect x="804" y="291" width="26" height="36" fill="#a9d18e" stroke="#70ad47" stroke-width="0.5" rx="1" />
+
+  <!-- Blue 3D Block (Upper) -->
+  <rect x="914" y="195" width="10" height="30" fill="#4f81bd" />
+  <polygon points="914,195 920,189 930,189 924,195" fill="#7fa9dd" />
+  <polygon points="924,195 930,189 930,219 924,225" fill="#2f5597" />
+  <path d="M 914,225 L 914,195 L 920,189 L 930,189 L 930,219 L 924,225 Z M 924,195 L 924,225 M 924,195 L 930,189 M 914,195 L 924,195" fill="none" stroke="#1f3864" stroke-width="1" />
+
+  <!-- Blue 3D Block (Lower) -->
+  <rect x="914" y="275" width="12" height="45" fill="#4f81bd" />
+  <polygon points="914,275 921,268 933,268 926,275" fill="#7fa9dd" />
+  <polygon points="926,275 933,268 933,313 926,320" fill="#2f5597" />
+  <path d="M 914,320 L 914,275 L 921,268 L 933,268 L 933,313 L 926,320 Z M 926,275 L 926,320 M 926,275 L 933,268 M 914,275 L 926,275" fill="none" stroke="#1f3864" stroke-width="1" />
+
+  <!-- Circles -->
+  <!-- R (Reshape) -->
+  <circle cx="971" cy="298" r="13" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="971" y="303" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle">R</text>
+
+  <!-- * (Convolution) -->
+  <circle cx="1027" cy="298" r="13" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="1027" y="306" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle">*</text>
+
+  <!-- ⊕ (Addition) -->
+  <circle cx="1071" cy="298" r="13" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <line x1="1064" y1="298" x2="1078" y2="298" stroke="#000" stroke-width="1.5" />
+  <line x1="1071" y1="291" x2="1071" y2="305" stroke="#000" stroke-width="1.5" />
+
+  <!-- Hidden State h -->
+  <text x="699" y="370" font-family="Georgia, serif" font-size="18" font-style="italic">h</text>
+  <text x="699" y="390" font-family="Arial, sans-serif" font-size="13" fill="#333">hidden state</text>
+
+  <!-- Output h' -->
+  <text x="1121" y="303" font-family="Georgia, serif" font-size="18" font-style="italic">h'</text>
+
+  <!-- Panel (b) Connections -->
+  <path d="M 714,298 L 799,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 754,298 L 754,208 L 799,208" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 876,208 L 909,208" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 876,298 L 909,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 930,208 L 1071,208 L 1071,280" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 933,298 L 953,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 984,298 L 1009,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1040,298 L 1053,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1084,298 L 1113,298" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 714,365 L 1027,365 L 1027,316" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Panel (b) Legend -->
+  <!-- R Legend -->
+  <circle cx="884" cy="490" r="7" fill="none" stroke="#000" stroke-width="1" />
+  <text x="884" y="494" font-family="Georgia, serif" font-size="10" text-anchor="middle" font-weight="bold">R</text>
+  <text x="896" y="495" font-family="Arial, sans-serif" font-size="14">: reshape</text>
+
+  <!-- * Legend -->
+  <circle cx="1004" cy="490" r="7" fill="none" stroke="#000" stroke-width="1" />
+  <text x="1004" y="496" font-family="Georgia, serif" font-size="13" text-anchor="middle" font-weight="bold">*</text>
+  <text x="1016" y="495" font-family="Arial, sans-serif" font-size="14">: convolution</text>
+
+  <!-- + Legend -->
+  <circle cx="884" cy="513" r="7" fill="none" stroke="#000" stroke-width="1" />
+  <line x1="880" y1="513" x2="888" y2="513" stroke="#000" stroke-width="1" />
+  <line x1="884" y1="509" x2="884" y2="517" stroke="#000" stroke-width="1" />
+  <text x="896" y="518" font-family="Arial, sans-serif" font-size="14">: Element-wise addition</text>
+
+
+  <!-- ================= PANEL (c) Query function q(·) ================= -->
+  <text x="1215" y="35" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#000">(c) Query function <tspan font-style="italic">q</tspan>(·)</text>
+
+  <!-- Input x -->
+  <text x="1280" y="307" font-family="Georgia, serif" font-size="18" font-style="italic">x</text>
+
+  <!-- Patching Box -->
+  <rect x="1310" y="280" width="85" height="45" rx="10" fill="#41719c" stroke="#1f3864" stroke-width="1.5" />
+  <text x="1352.5" y="307" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">patching</text>
+
+  <!-- Degradation Classification MLP Box -->
+  <rect x="1310" y="190" width="98" height="48" rx="5" fill="#f2f2f2" stroke="#ffc000" stroke-width="2" stroke-dasharray="4,4" />
+  <text x="1359" y="204" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" fill="#333">Degradation</text>
+  <text x="1359" y="217" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" fill="#333">Classification</text>
+  <text x="1359" y="230" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" fill="#333">MLP</text>
+
+  <!-- Switch Box -->
+  <rect x="1430" y="255" width="50" height="90" rx="5" fill="none" stroke="#70ad47" stroke-width="2" stroke-dasharray="4,4" />
+  <text x="1455" y="362" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#333">switch</text>
+
+  <!-- Switch Internals -->
+  <line x1="1395" y1="302.5" x2="1440" y2="302.5" stroke="#000" stroke-width="2" />
+  <circle cx="1440" cy="302.5" r="3" fill="#000" />
+  <circle cx="1460" cy="275" r="4" fill="#000" />
+  <circle cx="1460" cy="330" r="4" fill="#000" />
+  <line x1="1440" y1="302.5" x2="1458" y2="277" stroke="#000" stroke-width="2.5" />
+
+  <!-- Global MLP Box -->
+  <rect x="1518" y="255" width="75" height="45" rx="10" fill="#f2f2f2" stroke="#833c0c" stroke-width="2" />
+  <text x="1555.5" y="274" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#333">Global</text>
+  <text x="1555.5" y="289" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#333">MLP</text>
+
+  <!-- Local MLP Box -->
+  <rect x="1518" y="310" width="75" height="45" rx="10" fill="#f2f2f2" stroke="#833c0c" stroke-width="2" />
+  <text x="1555.5" y="329" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#333">Local</text>
+  <text x="1555.5" y="344" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#333">MLP</text>
+
+  <!-- Softmax &amp; Argmax Box -->
+  <rect x="1642" y="277" width="62" height="50" rx="10" fill="#41719c" stroke="#1f3864" stroke-width="1.5" />
+  <text x="1673" y="293" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">softmax</text>
+  <text x="1673" y="305" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">&amp;</text>
+  <text x="1673" y="317" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">argmax</text>
+
+  <!-- Output q(x) -->
+  <text x="1722" y="307" font-family="Georgia, serif" font-size="18" font-style="italic">q(x)</text>
+
+  <!-- Panel (c) Connections -->
+  <path d="M 1292,302.5 L 1305,302.5" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1359,280 L 1359,243" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1408,214 L 1455,214 L 1455,250" fill="none" stroke="#70ad47" stroke-width="2" marker-end="url(#arrow-green)" />
+  <path d="M 1464,275 L 1513,275" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1464,330 L 1513,330" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1593,275 L 1610,275 L 1610,302.5 L 1637,302.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 1593,330 L 1610,330 L 1610,302.5" fill="none" stroke="#000" stroke-width="2" />
+  <path d="M 1704,302.5 L 1715,302.5" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+
+</svg>

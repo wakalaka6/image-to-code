@@ -1,0 +1,148 @@
+<svg width="1600" height="1000" viewBox="-6.0 4.0 1602.0 1008.0" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4D4D4D" />
+    </marker>
+    <!-- Font Styles -->
+    <style>
+      .text-main { font-family: "Times New Roman", Times, serif; font-weight: bold; fill: black; }
+      .text-blue { font-family: "Times New Roman", Times, serif; font-weight: bold; fill: #4472C4; }
+      .text-title { font-size: 56px; }
+      .text-sub { font-size: 48px; }
+      .text-box { font-size: 48px; }
+      .text-legend { font-size: 42px; }
+      .box-stroke { stroke: #1F3864; stroke-width: 4px; }
+      .arrow-stroke { stroke: #4D4D4D; stroke-width: 8px; fill: #4D4D4D; }
+    </style>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect x="10" y="10" width="1580" height="980" fill="#F9F9F9" stroke="#B0B0B0" stroke-width="4" />
+
+  <!-- 2. Top Input Nodes -->
+  <!-- Left Node -->
+  <g transform="translate(220, 50)">
+    <rect x="0" y="0" width="450" height="100" rx="20" fill="white" class="box-stroke" />
+    <!-- Icon: Document -->
+    <g transform="translate(20, 20)">
+      <path d="M0,0 L30,0 L35,5 L35,45 L0,45 Z" fill="none" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M30,0 L30,5 L35,5" fill="none" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <line x1="10" y1="15" x2="25" y2="15" stroke="black" stroke-width="4" />
+      <line x1="10" y1="25" x2="25" y2="25" stroke="black" stroke-width="4" />
+      <line x1="10" y1="35" x2="25" y2="35" stroke="black" stroke-width="4" />
+    </g>
+    <text x="60" y="65" class="text-main text-title">Text-Only Request</text>
+  </g>
+
+  <!-- Right Node -->
+  <g transform="translate(920, 50)">
+    <rect x="0" y="0" width="450" height="100" rx="20" fill="white" class="box-stroke" />
+    <!-- Icon: Image -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="50" height="40" fill="#E0F7FA" stroke="black" stroke-width="3" />
+      <path d="M10,40 L10,30 Q25,20 40,30 L40,40 Z" fill="#4CAF50" /> <!-- Mountain -->
+      <circle cx="25" cy="15" r="5" fill="#FFEB3B" /> <!-- Sun -->
+      <line x1="10" y1="30" x2="40" y2="30" stroke="#4CAF50" stroke-width="2" /> <!-- River -->
+    </g>
+    <text x="60" y="65" class="text-main text-title">Image-Text Request</text>
+  </g>
+
+  <!-- 3. Middle Section: Modality-Level -->
+  <!-- Main Container -->
+  <rect x="90" y="190" width="1400" height="350" fill="none" stroke="#1F3864" stroke-width="4" />
+  
+  <!-- Divider -->
+  <line x1="810" y1="190" x2="810" y2="490" stroke="#1F3864" stroke-width="4" stroke-dasharray="15,10" />
+
+  <!-- Left Sub-Container (Blue) -->
+  <rect x="90" y="190" width="750" height="350" fill="#E1F0FF" stroke="#1F3864" stroke-width="4" />
+  <text x="465" y="250" text-anchor="middle" class="text-main text-title">Modality-Level</text>
+  <text x="465" y="300" text-anchor="middle" class="text-blue text-title">(Modality-Aware Load Balancing §3.1)</text>
+
+  <!-- Left Stage Boxes -->
+  <rect x="140" y="350" width="290" height="130" rx="20" fill="#CDE2FF" class="box-stroke" />
+  <text x="300" y="425" text-anchor="middle" class="text-main text-box">Prefill Stage</text>
+
+  <rect x="480" y="350" width="290" height="130" rx="20" fill="#CDE2FF" class="box-stroke" />
+  <text x="640" y="425" text-anchor="middle" class="text-main text-box">Decode Stage</text>
+
+  <!-- Right Sub-Container (Pink) -->
+  <rect x="810" y="190" width="750" height="350" fill="#FCE4E4" stroke="#1F3864" stroke-width="4" />
+  
+  <!-- Right Stage Boxes -->
+  <rect x="860" y="350" width="290" height="130" rx="20" fill="#FFC0C0" class="box-stroke" />
+  <text x="1020" y="425" text-anchor="middle" class="text-main text-box">Prefill Stage</text>
+
+  <rect x="1200" y="350" width="290" height="130" rx="20" fill="#FFC0C0" class="box-stroke" />
+  <text x="1360" y="425" text-anchor="middle" class="text-main text-box">Decode Stage</text>
+
+  <!-- Right Top Box -->
+  <rect x="1020" y="220" width="280" height="130" rx="20" fill="#FFC0C0" class="box-stroke" />
+  <text x="1160" y="295" text-anchor="middle" class="text-main text-box">Encode Stage</text>
+
+  <!-- 4. Middle Section: Stage-Level -->
+  <rect x="90" y="540" width="1400" height="280" fill="none" stroke="#1F3864" stroke-width="4" />
+  <text x="465" y="590" text-anchor="middle" class="text-main text-title">Stage-Level (<tspan class="text-blue">Elastic Partition Scheduling §3.2</tspan>)</text>
+
+  <!-- Stage Boxes -->
+  <rect x="190" y="610" width="330" height="150" rx="20" fill="#FFF2CC" class="box-stroke" />
+  <text x="355" y="670" text-anchor="middle" class="text-main text-box">Request</text>
+  <text x="355" y="725" text-anchor="middle" class="text-main text-box">Scheduling</text>
+
+  <rect x="660" y="610" width="330" height="150" rx="20" fill="#FFF2CC" class="box-stroke" />
+  <text x="825" y="670" text-anchor="middle" class="text-main text-box">Stage</text>
+  <text x="825" y="725" text-anchor="middle" class="text-main text-box">Allocation</text>
+
+  <rect x="1100" y="610" width="330" height="150" rx="20" fill="#FFF2CC" class="box-stroke" />
+  <text x="1265" y="670" text-anchor="middle" class="text-main text-box">Elastic</text>
+  <text x="1265" y="725" text-anchor="middle" class="text-main text-box">Auto-Scaling</text>
+
+  <!-- 5. Bottom Section: Unified Cache -->
+  <rect x="90" y="830" width="950" height="160" rx="30" fill="#E0F2E0" class="box-stroke" />
+  <text x="565" y="925" text-anchor="middle" class="text-main text-title">Unified Multimodal Prefix Cache (<tspan class="text-blue">§3.3</tspan>)</text>
+
+  <!-- 6. Legend -->
+  <rect x="1100" y="820" width="450" height="180" fill="white" stroke="#1F3864" stroke-width="4" />
+  <g transform="translate(1120, 840)">
+    <!-- Item 1 -->
+    <rect x="0" y="0" width="80" height="50" fill="#CDE2FF" stroke="#1F3864" stroke-width="4" />
+    <text x="100" y="35" class="text-main text-legend">Text-Only Group</text>
+    
+    <!-- Item 2 -->
+    <rect x="0" y="70" width="80" height="50" fill="#FFC0C0" stroke="#1F3864" stroke-width="4" />
+    <text x="100" y="105" class="text-main text-legend">Multimodal Group</text>
+    
+    <!-- Item 3 -->
+    <g transform="translate(0, 140)">
+      <line x1="0" y1="0" x2="80" y2="0" stroke="#4D4D4D" stroke-width="8" marker-end="url(#arrowhead)" />
+      <line x1="80" y1="0" x2="0" y2="0" stroke="#4D4D4D" stroke-width="8" marker-end="url(#arrowhead)" />
+      <text x="100" y="15" class="text-main text-legend">Auto-Scaling</text>
+    </g>
+  </g>
+
+  <!-- 7. Connectors -->
+  <!-- Top to Middle -->
+  <line x1="425" y1="150" x2="425" y2="190" class="arrow-stroke" marker-end="url(#arrowhead)" />
+  <line x1="1125" y1="150" x2="1125" y2="190" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Left Internal -->
+  <line x1="430" y1="405" x2="490" y2="405" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Right Internal -->
+  <line x1="1120" y1="405" x2="1200" y2="405" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Right Top to Bottom -->
+  <line x1="1020" y1="300" x2="1000" y2="350" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Right Top to Middle Right -->
+  <line x1="1160" y1="220" x2="1160" y2="190" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Cross Section -->
+  <line x1="760" y1="240" x2="860" y2="240" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+  <!-- Middle Stage Level Internal -->
+  <line x1="520" y1="685" x2="660" y2="685" class="arrow-stroke" marker-end="url(#arrowhead)" />
+  <line x1="990" y1="685" x2="1100" y2="685" class="arrow-stroke" marker-end="url(#arrowhead)" />
+
+</svg>

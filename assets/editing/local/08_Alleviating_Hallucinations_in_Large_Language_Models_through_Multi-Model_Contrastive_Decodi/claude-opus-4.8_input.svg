@@ -1,0 +1,321 @@
+<svg width="1928" height="1067" viewBox="0 0 1928 1067" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <!-- Backgrounds -->
+  <rect x="0" y="0" width="1928" height="525" fill="#d6e8d4"/>
+  <rect x="0" y="525" width="1928" height="542" fill="#fbe2c8"/>
+
+  <!-- Stage titles -->
+  <text x="20" y="55" font-size="36" font-family="Arial" fill="#000">Training Stage</text>
+  <text x="20" y="585" font-size="36" font-family="Arial" fill="#000">Inference Stage</text>
+
+  <!-- Top column headers -->
+  <text x="900" y="48" font-size="30" font-family="Arial" fill="#3a9b3a">Factuality</text>
+  <text x="1290" y="48" font-size="30" font-family="Arial" fill="#cc1f1f">Hallucinations</text>
+
+  <!-- ============ TRAINING STAGE ============ -->
+  <!-- Input prompt box -->
+  <rect x="20" y="90" width="380" height="370" fill="#9c9c9c"/>
+  <text x="35" y="155" font-size="30" font-style="italic">Input prompt x :</text>
+  <text x="35" y="200" font-size="30" font-style="italic">How long should</text>
+  <text x="35" y="245" font-size="30" font-style="italic">you wait before</text>
+  <text x="35" y="290" font-size="30" font-style="italic">filing a missing</text>
+  <text x="35" y="335" font-size="30" font-style="italic">person report?</text>
+
+  <!-- Arrows from prompt -->
+  <g fill="#9c9c9c">
+    <polygon points="435,180 490,180 490,170 510,190 490,210 490,200 435,200"/>
+    <polygon points="435,400 490,400 490,390 510,410 490,430 490,420 435,420"/>
+  </g>
+
+  <!-- LLM robot icon top -->
+  <g transform="translate(530,130)">
+    <text x="40" y="-5" font-size="24" font-family="Arial">LLM</text>
+    <circle cx="55" cy="15" r="5" fill="#9c9c9c"/>
+    <line x1="55" y1="20" x2="55" y2="35" stroke="#9c9c9c" stroke-width="3"/>
+    <rect x="20" y="35" width="70" height="55" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="40" cy="58" r="6" fill="#5b6066"/>
+    <circle cx="70" cy="58" r="6" fill="#5b6066"/>
+    <rect x="35" y="73" width="40" height="10" rx="3" fill="#f1c40f"/>
+    <rect x="30" y="92" width="50" height="40" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="42" y="102" width="26" height="22" fill="#f1c40f"/>
+  </g>
+
+  <!-- LLM robot icon bottom -->
+  <g transform="translate(530,355)">
+    <text x="40" y="-5" font-size="24" font-family="Arial">LLM</text>
+    <circle cx="55" cy="15" r="5" fill="#9c9c9c"/>
+    <line x1="55" y1="20" x2="55" y2="35" stroke="#9c9c9c" stroke-width="3"/>
+    <rect x="20" y="35" width="70" height="55" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="40" cy="58" r="6" fill="#5b6066"/>
+    <circle cx="70" cy="58" r="6" fill="#5b6066"/>
+    <rect x="35" y="73" width="40" height="10" rx="3" fill="#f1c40f"/>
+    <rect x="30" y="92" width="50" height="40" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="42" y="102" width="26" height="22" fill="#f1c40f"/>
+  </g>
+
+  <!-- Arrows to docs -->
+  <g fill="#9c9c9c">
+    <polygon points="650,180 710,180 710,170 730,190 710,210 710,200 650,200"/>
+    <polygon points="650,400 710,400 710,390 730,410 710,430 710,420 650,420"/>
+  </g>
+
+  <!-- Factuality doc top -->
+  <g transform="translate(770,120)">
+    <rect x="0" y="0" width="350" height="160" fill="none" stroke="#000" stroke-dasharray="6,4"/>
+    <g transform="translate(40,15)">
+      <rect x="0" y="5" width="100" height="14" fill="#6b7a99"/>
+      <rect x="110" y="5" width="120" height="14" fill="#6b7a99"/>
+      <rect x="240" y="5" width="50" height="14" fill="#7bb53a"/>
+      <rect x="0" y="28" width="60" height="14" fill="#6b7a99"/>
+      <rect x="70" y="28" width="100" height="14" fill="#7bb53a"/>
+      <rect x="180" y="28" width="80" height="14" fill="#6b7a99"/>
+      <rect x="0" y="51" width="80" height="14" fill="#7bb53a"/>
+      <rect x="90" y="51" width="170" height="14" fill="#6b7a99"/>
+      <rect x="0" y="74" width="110" height="14" fill="#6b7a99"/>
+      <rect x="120" y="74" width="100" height="14" fill="#7bb53a"/>
+      <rect x="0" y="97" width="70" height="14" fill="#6b7a99"/>
+    </g>
+  </g>
+
+  <!-- greater than sign -->
+  <text x="1140" y="220" font-size="80" font-weight="bold">&gt;</text>
+
+  <!-- Hallucinations doc top -->
+  <g transform="translate(1220,120)">
+    <rect x="0" y="0" width="350" height="160" fill="none" stroke="#000" stroke-dasharray="6,4"/>
+    <g transform="translate(40,15)">
+      <rect x="0" y="5" width="80" height="14" fill="#6b7a99"/>
+      <rect x="90" y="5" width="100" height="14" fill="#6b7a99"/>
+      <rect x="200" y="5" width="60" height="14" fill="#d62b2b"/>
+      <rect x="0" y="28" width="60" height="14" fill="#d62b2b"/>
+      <rect x="70" y="28" width="90" height="14" fill="#6b7a99"/>
+      <rect x="170" y="28" width="90" height="14" fill="#d62b2b"/>
+      <rect x="0" y="51" width="100" height="14" fill="#6b7a99"/>
+      <rect x="110" y="51" width="150" height="14" fill="#6b7a99"/>
+      <rect x="0" y="74" width="80" height="14" fill="#6b7a99"/>
+      <rect x="90" y="74" width="80" height="14" fill="#d62b2b"/>
+      <rect x="180" y="74" width="80" height="14" fill="#6b7a99"/>
+    </g>
+  </g>
+
+  <!-- Factuality doc bottom -->
+  <g transform="translate(770,345)">
+    <rect x="0" y="0" width="350" height="160" fill="none" stroke="#000" stroke-dasharray="6,4"/>
+    <g transform="translate(40,15)">
+      <rect x="0" y="5" width="100" height="14" fill="#6b7a99"/>
+      <rect x="110" y="5" width="120" height="14" fill="#6b7a99"/>
+      <rect x="240" y="5" width="50" height="14" fill="#7bb53a"/>
+      <rect x="0" y="28" width="60" height="14" fill="#6b7a99"/>
+      <rect x="70" y="28" width="100" height="14" fill="#7bb53a"/>
+      <rect x="180" y="28" width="80" height="14" fill="#6b7a99"/>
+      <rect x="0" y="51" width="80" height="14" fill="#7bb53a"/>
+      <rect x="90" y="51" width="170" height="14" fill="#6b7a99"/>
+      <rect x="0" y="74" width="70" height="14" fill="#6b7a99"/>
+    </g>
+  </g>
+
+  <!-- less than sign -->
+  <text x="1140" y="445" font-size="80" font-weight="bold">&lt;</text>
+
+  <!-- Hallucinations doc bottom -->
+  <g transform="translate(1220,345)">
+    <rect x="0" y="0" width="350" height="160" fill="none" stroke="#000" stroke-dasharray="6,4"/>
+    <g transform="translate(40,15)">
+      <rect x="0" y="5" width="80" height="14" fill="#6b7a99"/>
+      <rect x="90" y="5" width="100" height="14" fill="#6b7a99"/>
+      <rect x="200" y="5" width="60" height="14" fill="#d62b2b"/>
+      <rect x="0" y="28" width="60" height="14" fill="#d62b2b"/>
+      <rect x="70" y="28" width="90" height="14" fill="#6b7a99"/>
+      <rect x="170" y="28" width="90" height="14" fill="#d62b2b"/>
+      <rect x="0" y="51" width="100" height="14" fill="#6b7a99"/>
+      <rect x="110" y="51" width="150" height="14" fill="#6b7a99"/>
+      <rect x="0" y="74" width="80" height="14" fill="#d62b2b"/>
+    </g>
+  </g>
+
+  <!-- arrows to truthful/evil -->
+  <g fill="#9c9c9c">
+    <polygon points="1620,180 1680,180 1680,170 1700,190 1680,210 1680,200 1620,200"/>
+    <polygon points="1620,420 1680,420 1680,410 1700,430 1680,450 1680,440 1620,440"/>
+  </g>
+
+  <!-- Truthful LLM (angel) -->
+  <g transform="translate(1720,120)">
+    <text x="20" y="0" font-size="22" font-family="Arial">Truthful LLM</text>
+    <ellipse cx="75" cy="22" rx="28" ry="8" fill="none" stroke="#f1c40f" stroke-width="4"/>
+    <path d="M30,55 Q5,45 10,75 Q25,70 40,75 Z" fill="#fff" stroke="#888"/>
+    <path d="M120,55 Q145,45 140,75 Q125,70 110,75 Z" fill="#fff" stroke="#888"/>
+    <rect x="42" y="40" width="65" height="50" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="60" cy="62" r="5" fill="#5b6066"/>
+    <circle cx="90" cy="62" r="5" fill="#5b6066"/>
+    <rect x="55" y="92" width="42" height="38" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="66" y="101" width="22" height="20" fill="#f1c40f"/>
+  </g>
+
+  <!-- Evil LLM (devil) -->
+  <g transform="translate(1720,340)">
+    <text x="30" y="10" font-size="22" font-family="Arial">Evil LLM</text>
+    <path d="M48,40 L42,22 L58,38 Z" fill="#9c4040"/>
+    <path d="M102,40 L108,22 L92,38 Z" fill="#9c4040"/>
+    <rect x="42" y="40" width="65" height="50" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <path d="M52,58 L70,64 M88,58 L70,64" stroke="#5b6066" stroke-width="3" fill="none"/>
+    <circle cx="60" cy="64" r="5" fill="#c0392b"/>
+    <circle cx="90" cy="64" r="5" fill="#c0392b"/>
+    <rect x="55" y="92" width="42" height="38" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="66" y="101" width="22" height="20" fill="#c0392b"/>
+    <path d="M97,110 Q130,110 125,140" stroke="#c0392b" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Top connecting lines (arrows from docs to LLMs) -->
+  <path d="M945,120 L945,75 L600,75 L600,118" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M1395,120 L1395,68 L612,68" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M945,505 L945,320 L600,320 L600,345" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M1395,505 L1610,505 L1610,75 L1620,75" fill="none" stroke="#000" stroke-width="2"/>
+
+  <!-- ============ INFERENCE STAGE ============ -->
+  <!-- Input prompt box -->
+  <rect x="20" y="600" width="395" height="430" fill="#9c9c9c"/>
+  <text x="35" y="665" font-size="29" font-style="italic">Input prompt x :</text>
+  <text x="35" y="710" font-size="29" font-style="italic">Where was</text>
+  <text x="35" y="755" font-size="29" font-style="italic">NeurIPS 2024 held?</text>
+  <text x="35" y="800" font-size="29" font-style="italic">Response:</text>
+  <text x="35" y="845" font-size="29" font-style="italic">NeurIPS 2024 was</text>
+  <text x="35" y="890" font-size="29" font-style="italic">held at ...</text>
+
+  <!-- arrows to three robots -->
+  <g fill="#9c9c9c">
+    <polygon points="430,650 485,650 485,640 505,660 485,680 485,670 430,670"/>
+    <polygon points="430,810 485,810 485,800 505,820 485,840 485,830 430,830"/>
+    <polygon points="430,960 485,960 485,950 505,970 485,990 485,980 430,980"/>
+  </g>
+
+  <!-- LLM robot -->
+  <g transform="translate(520,595)">
+    <text x="55" y="0" font-size="22" font-family="Arial">LLM</text>
+    <circle cx="60" cy="18" r="5" fill="#9c9c9c"/>
+    <line x1="60" y1="23" x2="60" y2="38" stroke="#9c9c9c" stroke-width="3"/>
+    <rect x="28" y="38" width="64" height="50" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="46" cy="60" r="5" fill="#5b6066"/>
+    <circle cx="74" cy="60" r="5" fill="#5b6066"/>
+    <rect x="40" y="90" width="42" height="36" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="50" y="98" width="22" height="20" fill="#f1c40f"/>
+  </g>
+
+  <!-- Evil LLM -->
+  <g transform="translate(520,745)">
+    <text x="45" y="0" font-size="22" font-family="Arial">Evil LLM</text>
+    <path d="M34,38 L28,20 L44,36 Z" fill="#9c4040"/>
+    <path d="M88,38 L94,20 L78,36 Z" fill="#9c4040"/>
+    <rect x="28" y="38" width="64" height="50" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="46" cy="62" r="5" fill="#c0392b"/>
+    <circle cx="74" cy="62" r="5" fill="#c0392b"/>
+    <rect x="40" y="90" width="42" height="36" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="50" y="98" width="22" height="20" fill="#c0392b"/>
+    <path d="M82,108 Q112,108 108,135" stroke="#c0392b" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Truthful LLM -->
+  <g transform="translate(520,900)">
+    <text x="30" y="0" font-size="22" font-family="Arial">Truthful LLM</text>
+    <ellipse cx="60" cy="22" rx="26" ry="7" fill="none" stroke="#f1c40f" stroke-width="4"/>
+    <path d="M22,52 Q0,45 6,72 Q20,67 32,72 Z" fill="#fff" stroke="#888"/>
+    <path d="M98,52 Q120,45 114,72 Q100,67 88,72 Z" fill="#fff" stroke="#888"/>
+    <rect x="28" y="38" width="64" height="50" rx="10" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <circle cx="46" cy="60" r="5" fill="#5b6066"/>
+    <circle cx="74" cy="60" r="5" fill="#5b6066"/>
+    <rect x="40" y="90" width="42" height="36" rx="6" fill="#c9cdd1" stroke="#5b6066" stroke-width="3"/>
+    <rect x="50" y="98" width="22" height="20" fill="#f1c40f"/>
+  </g>
+
+  <!-- arrows to charts -->
+  <g fill="#9c9c9c">
+    <polygon points="660,650 715,650 715,640 735,660 715,680 715,670 660,670"/>
+    <polygon points="660,810 715,810 715,800 735,820 715,840 715,830 660,830"/>
+    <polygon points="660,960 715,960 715,950 735,970 715,990 715,980 660,980"/>
+  </g>
+
+  <!-- Chart 1 (LLM) -->
+  <text x="745" y="575" font-size="26" font-style="italic">log p&#952;(y&#7511; | x, y&lt;&#7511;)</text>
+  <g transform="translate(770,600)">
+    <line x1="0" y1="100" x2="160" y2="100" stroke="#000" stroke-width="2"/>
+    <rect x="5" y="60" width="30" height="40" fill="#e8635c"/>
+    <rect x="42" y="30" width="30" height="70" fill="#e8635c"/>
+    <rect x="79" y="45" width="30" height="55" fill="#3a9fd6"/>
+    <rect x="116" y="55" width="30" height="45" fill="#e8635c"/>
+    <text x="0" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,0,120)">China</text>
+    <text x="42" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,42,120)">India</text>
+    <text x="73" y="120" font-size="17" fill="#3a9fd6" font-style="italic" transform="rotate(-20,73,120)">Canada</text>
+    <text x="116" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,116,120)">Japan</text>
+  </g>
+
+  <!-- Chart 2 (Evil) -->
+  <text x="745" y="735" font-size="26" font-style="italic">log p&#952;-(y&#7511; | x, y&lt;&#7511;)</text>
+  <g transform="translate(770,760)">
+    <line x1="0" y1="100" x2="160" y2="100" stroke="#000" stroke-width="2"/>
+    <rect x="5" y="55" width="30" height="45" fill="#e8635c"/>
+    <rect x="42" y="35" width="30" height="65" fill="#e8635c"/>
+    <rect x="79" y="80" width="30" height="20" fill="#3a9fd6"/>
+    <rect x="116" y="50" width="30" height="50" fill="#e8635c"/>
+    <text x="0" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,0,120)">China</text>
+    <text x="42" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,42,120)">India</text>
+    <text x="73" y="120" font-size="17" fill="#3a9fd6" font-style="italic" transform="rotate(-20,73,120)">Canada</text>
+    <text x="116" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,116,120)">Japan</text>
+  </g>
+
+  <!-- Chart 3 (Truthful) -->
+  <text x="745" y="895" font-size="26" font-style="italic">log p&#952;+(y&#7511; | x, y&lt;&#7511;)</text>
+  <g transform="translate(770,920)">
+    <line x1="0" y1="100" x2="160" y2="100" stroke="#000" stroke-width="2"/>
+    <rect x="5" y="65" width="30" height="35" fill="#e8635c"/>
+    <rect x="42" y="55" width="30" height="45" fill="#e8635c"/>
+    <rect x="79" y="35" width="30" height="65" fill="#3a9fd6"/>
+    <rect x="116" y="45" width="30" height="55" fill="#e8635c"/>
+    <text x="0" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,0,120)">China</text>
+    <text x="42" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,42,120)">India</text>
+    <text x="73" y="120" font-size="17" fill="#3a9fd6" font-style="italic" transform="rotate(-20,73,120)">Canada</text>
+    <text x="116" y="120" font-size="17" fill="#e8635c" font-style="italic" transform="rotate(-20,116,120)">Japan</text>
+  </g>
+
+  <!-- bracket combining charts -->
+  <path d="M945,640 Q965,640 965,760 Q965,820 985,820 Q965,820 965,890 Q965,990 945,990" fill="none" stroke="#000" stroke-width="2"/>
+
+  <!-- Equation -->
+  <text x="990" y="685" font-size="27" font-style="italic">log p&#952;(y&#7511; | x, y&lt;&#7511;) - &#945; log p&#952;-(y&#7511; | x, y&lt;&#7511;) + &#947; log p&#952;+(y&#7511; | x, y&lt;&#7511;)</text>
+
+  <!-- MCD arrow -->
+  <text x="990" y="780" font-size="26" font-family="Arial">MCD</text>
+  <polygon points="1010,800 1065,800 1065,790 1085,810 1065,830 1065,820 1010,820" fill="#9c9c9c"/>
+
+  <!-- Final combined chart -->
+  <g transform="translate(1120,720)">
+    <line x1="0" y1="120" x2="230" y2="120" stroke="#000" stroke-width="2"/>
+    <rect x="10" y="100" width="40" height="20" fill="#e8635c"/>
+    <rect x="65" y="90" width="40" height="30" fill="#e8635c"/>
+    <rect x="120" y="0" width="40" height="120" fill="#3a9fd6"/>
+    <rect x="175" y="100" width="40" height="20" fill="#e8635c"/>
+    <text x="5" y="150" font-size="24" fill="#e8635c" font-style="italic" transform="rotate(-18,5,150)">China</text>
+    <text x="60" y="150" font-size="24" fill="#e8635c" font-style="italic" transform="rotate(-18,60,150)">India</text>
+    <text x="110" y="150" font-size="24" fill="#3a9fd6" font-style="italic" transform="rotate(-18,110,150)">Canada</text>
+    <text x="170" y="150" font-size="24" fill="#e8635c" font-style="italic" transform="rotate(-18,170,150)">Japan</text>
+  </g>
+
+  <!-- arrow to detection -->
+  <polygon points="1390,800 1445,800 1445,790 1465,810 1445,830 1445,820 1390,820" fill="#9c9c9c"/>
+
+  <!-- Detection diamond -->
+  <polygon points="1585,750 1685,810 1585,870 1485,810" fill="#7fdde0" stroke="#1a8a8d" stroke-width="2"/>
+  <text x="1585" y="818" font-size="26" font-family="Arial" text-anchor="middle">Detection</text>
+
+  <!-- arrow to Canada -->
+  <polygon points="1700,800 1755,800 1755,790 1775,810 1755,830 1755,820 1700,820" fill="#9c9c9c"/>
+
+  <!-- green check -->
+  <circle cx="1790" cy="740" r="22" fill="#27ae60"/>
+  <path d="M1779,740 L1787,750 L1803,730" fill="none" stroke="#fff" stroke-width="5"/>
+
+  <!-- Canada answer -->
+  <text x="1785" y="818" font-size="30" fill="#3a9fd6" font-style="italic">Canada</text>
+
+  <!-- hallucinatory note -->
+  <text x="1480" y="945" font-size="27" font-family="Arial">hallucinatory object</text>
+  <text x="1480" y="985" font-size="27" font-family="Arial">"<tspan fill="#e8635c" font-style="italic">India</tspan>" eliminated</text>
+</svg>

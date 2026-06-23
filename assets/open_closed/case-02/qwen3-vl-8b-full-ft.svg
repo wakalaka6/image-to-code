@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5.0 9.0 1668.0 1096.0" style="background-color: white;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8da6d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f4b183;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Reusable Block Arrow -->
+    <symbol id="blockArrow" viewBox="0 0 100 40">
+      <path d="M0,12 L70,12 L70,2 L100,20 L70,38 L70,28 L0,28 Z" fill="#808080" stroke="black" stroke-width="2"/>
+    </symbol>
+
+    <!-- Wavy Ribbon Path Definition -->
+    <!-- M start, C c1x c1y, c2x c2y, ex ey ... -->
+    <path id="wavyRibbon" d="M0,0 C100,100 -50,200 100,300 C250,400 0,500 100,600 L0,600 C100,500 250,400 100,300 C-50,200 100,100 0,0 Z" />
+  </defs>
+
+  <!-- ==================== LEFT SECTION: INPUT BOX ==================== -->
+  <g transform="translate(10, 265)">
+    <!-- Box Shape with Wavy Bottom -->
+    <path d="M0,0 L410,0 L410,240 L0,240 L0,250 C100,200 300,350 410,240 L410,300 L0,300 Z" 
+          fill="#d9d9d9" stroke="#999999" stroke-width="2"/>
+    
+    <!-- Text Content -->
+    <text x="15" y="40" font-family="Arial, sans-serif" font-size="32" fill="black">
+      <tspan x="15" dy="0">Translate the following text from</tspan>
+      <tspan x="15" dy="40">English into Chinese.</tspan>
+      
+      <tspan x="15" dy="60">English: Amsterdam is famous for</tspan>
+      <tspan x="15" dy="40">its hundreds of beautiful canals,</tspan>
+      <tspan x="15" dy="40">millions of bicycles, stunning</tspan>
+      <tspan x="15" dy="40">summers, and disgusting winters.</tspan>
+      
+      <tspan x="15" dy="60">Chinese:</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== TOP SECTION: TESTING TIME ==================== -->
+  <g transform="translate(0, 0)">
+    <!-- Title -->
+    <text x="1300" y="40" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">Testing Time Optimization</text>
+
+    <!-- Input Arrow (Angled Up) -->
+    <use href="#blockArrow" x="450" y="220" width="80" height="60" transform="rotate(-45, 490, 250)" />
+
+    <!-- NMT Box -->
+    <rect x="555" y="155" width="270" height="110" rx="20" ry="20" fill="#e6e6e6" stroke="black" stroke-width="3"/>
+    <text x="690" y="200" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="black" dy="15">NMT</text>
+
+    <!-- Sampling Arrow -->
+    <text x="870" y="170" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="black">Sampling</text>
+    <use href="#blockArrow" x="840" y="180" width="100" height="30" />
+
+    <!-- Blue Ribbon Graph -->
+    <g transform="translate(1030, 50)">
+      <use href="#wavyRibbon" fill="url(#gradBlue)" stroke="#1f3e78" stroke-width="2" stroke-dasharray="8,5"/>
+      <text x="100" y="270" font-family="Times New Roman, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Quality</text>
+    </g>
+
+    <!-- Reranking Arrow -->
+    <text x="1300" y="175" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#386613">Reranking / Voting</text>
+    <use href="#blockArrow" x="1240" y="180" width="100" height="30" />
+
+    <!-- Output Box -->
+    <rect x="1420" y="150" width="180" height="100" fill="#f2f2f2" stroke="black" stroke-width="2"/>
+    <text x="1510" y="185" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="black">
+      <tspan x="1510" dy="0">Highest-scoring</tspan>
+      <tspan x="1510" dy="35">Output</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== DIVIDER LINE ==================== -->
+  <line x1="490" y1="390" x2="1580" y2="390" stroke="black" stroke-width="3" stroke-dasharray="15,10" />
+
+  <!-- ==================== BOTTOM SECTION: TRAINING TIME ==================== -->
+  <g transform="translate(0, 300)">
+    <!-- Title -->
+    <text x="1300" y="150" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">Training Time Optimization</text>
+
+    <!-- Input Arrow (Angled Down) -->
+    <use href="#blockArrow" x="450" y="200" width="80" height="60" transform="rotate(45, 490, 230)" />
+
+    <!-- NMT Box (Green) -->
+    <rect x="555" y="275" width="270" height="110" rx="20" ry="20" fill="#c5e0b4" stroke="black" stroke-width="3"/>
+    <text x="690" y="320" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="black" dy="15">NMT<tspan font-family="Times New Roman, serif" font-weight="normal" font-size="30" dy="10">θ</tspan></text>
+
+    <!-- Sampling Arrow -->
+    <text x="870" y="300" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="black">Sampling</text>
+    <use href="#blockArrow" x="840" y="310" width="100" height="30" />
+
+    <!-- Orange Ribbon Graph 1 -->
+    <g transform="translate(1030, 200)">
+      <use href="#wavyRibbon" fill="url(#gradOrange)" stroke="#1f3e78" stroke-width="2" stroke-dasharray="8,5"/>
+      <text x="100" y="270" font-family="Times New Roman, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Likelihood</text>
+    </g>
+
+    <!-- Calibration Arrow -->
+    <text x="1300" y="305" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ff0000">Calibration</text>
+    <use href="#blockArrow" x="1240" y="310" width="100" height="30" />
+
+    <!-- Orange Ribbon Graph 2 -->
+    <g transform="translate(1420, 200)">
+      <use href="#wavyRibbon" fill="url(#gradOrange)" stroke="#1f3e78" stroke-width="2" stroke-dasharray="8,5"/>
+      <text x="100" y="270" font-family="Times New Roman, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Likelihood -> Quality</text>
+    </g>
+  </g>
+</svg>

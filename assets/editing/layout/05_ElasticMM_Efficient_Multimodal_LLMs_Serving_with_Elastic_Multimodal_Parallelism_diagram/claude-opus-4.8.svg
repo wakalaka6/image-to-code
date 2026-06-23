@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1632" height="896" viewBox="0 0 1632 896">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#404040"/>
+    </marker>
+    <marker id="arrowBig" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#404040"/>
+    </marker>
+    <marker id="arrowL" markerWidth="8" markerHeight="8" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M6,0 L0,3 L6,6 Z" fill="#404040"/>
+    </marker>
+  </defs>
+
+  <!-- outer background -->
+  <rect x="6" y="6" width="1620" height="884" rx="22" fill="#f7f8fa" stroke="#888" stroke-width="3"/>
+
+  <!-- Top request boxes -->
+  <rect x="222" y="44" width="445" height="72" rx="12" fill="#ffffff" stroke="#222" stroke-width="2.5"/>
+  <rect x="252" y="62" width="34" height="40" rx="3" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+  <line x1="258" y1="72" x2="280" y2="72" stroke="#888" stroke-width="2"/>
+  <line x1="258" y1="80" x2="280" y2="80" stroke="#888" stroke-width="2"/>
+  <line x1="258" y1="88" x2="280" y2="88" stroke="#888" stroke-width="2"/>
+  <text x="300" y="92" font-family="Georgia, serif" font-size="36" fill="#111">Text-Only Request</text>
+
+  <rect x="945" y="44" width="470" height="72" rx="12" fill="#ffffff" stroke="#222" stroke-width="2.5"/>
+  <rect x="975" y="62" width="38" height="40" rx="3" fill="#cfe8d0" stroke="#5a9a5a" stroke-width="2"/>
+  <circle cx="985" cy="74" r="4" fill="#e0c050"/>
+  <path d="M977,98 L988,84 L996,92 L1003,82 L1011,98 Z" fill="#6aa86a"/>
+  <text x="1025" y="92" font-family="Georgia, serif" font-size="36" fill="#111">Image-Text Request</text>
+
+  <!-- ===== Column 1: Modality-Level ===== -->
+  <rect x="20" y="140" width="525" height="710" rx="6" fill="#fbe4e4" stroke="#222" stroke-width="2.5"/>
+  <rect x="20" y="140" width="525" height="305" rx="6" fill="#dbe6f7" stroke="#222" stroke-width="2.5"/>
+  <line x1="30" y1="445" x2="535" y2="445" stroke="#333" stroke-width="3" stroke-dasharray="9,8"/>
+
+  <text x="282" y="186" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#111" text-anchor="middle">Modality-Level</text>
+  <text x="282" y="222" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#2b6fd6" text-anchor="middle">(Modality-Aware Load Balancing §3.1)</text>
+
+  <!-- Blue stages stacked -->
+  <rect x="70" y="245" width="425" height="65" rx="8" fill="#bcd4f0" stroke="#2a4a78" stroke-width="2.5"/>
+  <text x="282" y="287" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Prefill Stage</text>
+  <line x1="282" y1="310" x2="282" y2="350" stroke="#404040" stroke-width="5" marker-end="url(#arrowBig)"/>
+  <rect x="70" y="355" width="425" height="65" rx="8" fill="#bcd4f0" stroke="#2a4a78" stroke-width="2.5"/>
+  <text x="282" y="397" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Decode Stage</text>
+
+  <!-- Pink stages stacked -->
+  <rect x="70" y="470" width="425" height="65" rx="8" fill="#f4a9a9" stroke="#a04545" stroke-width="2.5"/>
+  <text x="282" y="512" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Encode Stage</text>
+  <line x1="282" y1="535" x2="282" y2="575" stroke="#404040" stroke-width="5" marker-end="url(#arrowBig)"/>
+  <rect x="70" y="580" width="425" height="65" rx="8" fill="#f4a9a9" stroke="#a04545" stroke-width="2.5"/>
+  <text x="282" y="622" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Prefill Stage</text>
+  <line x1="282" y1="645" x2="282" y2="685" stroke="#404040" stroke-width="5" marker-end="url(#arrowBig)"/>
+  <rect x="70" y="690" width="425" height="65" rx="8" fill="#f4a9a9" stroke="#a04545" stroke-width="2.5"/>
+  <text x="282" y="732" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Decode Stage</text>
+
+  <!-- ===== Column 2: Stage-Level ===== -->
+  <rect x="560" y="140" width="525" height="710" rx="6" fill="#fbfae0" stroke="#222" stroke-width="2.5"/>
+  <text x="822" y="186" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#111" text-anchor="middle">Stage-Level</text>
+  <text x="822" y="222" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#2b6fd6" text-anchor="middle">(Elastic Partition Scheduling §3.2)</text>
+
+  <rect x="620" y="270" width="405" height="110" rx="14" fill="#fde9a8" stroke="#c79a30" stroke-width="2.5"/>
+  <text x="822" y="315" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Request</text>
+  <text x="822" y="353" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Scheduling</text>
+
+  <line x1="822" y1="380" x2="822" y2="428" stroke="#404040" stroke-width="8" marker-end="url(#arrowBig)"/>
+
+  <rect x="620" y="430" width="405" height="110" rx="14" fill="#fde9a8" stroke="#c79a30" stroke-width="2.5"/>
+  <text x="822" y="475" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Stage</text>
+  <text x="822" y="513" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Allocation</text>
+
+  <line x1="822" y1="540" x2="822" y2="588" stroke="#404040" stroke-width="8" marker-end="url(#arrowBig)"/>
+
+  <rect x="620" y="590" width="405" height="110" rx="14" fill="#fde9a8" stroke="#c79a30" stroke-width="2.5"/>
+  <text x="822" y="635" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Elastic</text>
+  <text x="822" y="673" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Auto-Scaling</text>
+
+  <!-- ===== Column 3: Cache + Legend ===== -->
+  <rect x="1100" y="140" width="515" height="710" rx="6" fill="#f7f8fa" stroke="#222" stroke-width="2.5"/>
+
+  <!-- Green section -->
+  <rect x="1125" y="165" width="465" height="210" rx="14" fill="#d6f0d2" stroke="#222" stroke-width="2.5"/>
+  <text x="1357" y="255" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#111" text-anchor="middle">Unified Multimodal</text>
+  <text x="1357" y="300" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#111" text-anchor="middle">Prefix Cache <tspan fill="#2b6fd6">(§3.3)</tspan></text>
+
+  <!-- Legend -->
+  <rect x="1125" y="405" width="465" height="420" rx="8" fill="#ffffff" stroke="#222" stroke-width="2.5"/>
+  <text x="1357" y="455" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#111" text-anchor="middle">Legend</text>
+
+  <rect x="1155" y="500" width="62" height="34" fill="#bcd4f0" stroke="#2a4a78" stroke-width="2"/>
+  <text x="1233" y="527" font-family="Georgia, serif" font-size="32" fill="#111">Text-Only Group</text>
+
+  <rect x="1155" y="580" width="62" height="34" fill="#f4a9a9" stroke="#a04545" stroke-width="2"/>
+  <text x="1233" y="607" font-family="Georgia, serif" font-size="32" fill="#111">Multimodal Group</text>
+
+  <line x1="1159" y1="667" x2="1215" y2="667" stroke="#404040" stroke-width="6" marker-start="url(#arrowL)" marker-end="url(#arrowBig)"/>
+  <text x="1233" y="678" font-family="Georgia, serif" font-size="32" fill="#111">Auto-Scaling</text>
+</svg>

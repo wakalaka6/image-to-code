@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="13.0 16.0 1623.0 938.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+  </defs>
+
+  <!-- Global Styles -->
+  <style>
+    text { font-family: "Times New Roman", Times, serif; }
+    .label-text { font-size: 36px; fill: black; }
+    .math-text { font-size: 38px; fill: black; }
+    .math-italic { font-style: italic; }
+    .math-bold { font-weight: bold; }
+    .box-stroke { stroke: black; stroke-width: 3px; }
+    .connector { fill: none; stroke: black; stroke-width: 3px; marker-end: url(#arrow); }
+    .dashed-border { fill: none; stroke: black; stroke-width: 5px; stroke-dasharray: 20, 20; }
+  </style>
+
+  <!-- ================= SECTION 1: LEFT COLUMN ================= -->
+  
+  <!-- Section 1 Header -->
+  <text x="30" y="70" class="label-text">1. Tokenize and combine</text>
+  <text x="100" y="110" class="label-text">goal and tactic</text>
+
+  <!-- Box: rw [h_1] -->
+  <rect x="90" y="360" width="200" height="100" fill="#D5E8D4" class="box-stroke" />
+  <text x="190" y="425" text-anchor="middle" class="math-text">rw [h<tspan dy="10" font-size="28">1</tspan><tspan dy="-10">]</tspan></text>
+
+  <!-- Stack: rw -->
+  <g transform="translate(360, 250)">
+    <rect x="0" y="0" width="100" height="100" fill="#D5E8D4" class="box-stroke" />
+    <text x="50" y="60" text-anchor="middle" class="math-text">rw</text>
+    <rect x="0" y="100" width="100" height="100" fill="#D5E8D4" class="box-stroke" />
+    <text x="50" y="160" text-anchor="middle" class="math-text">[</text>
+    <rect x="0" y="200" width="100" height="100" fill="#D5E8D4" class="box-stroke" />
+    <text x="50" y="260" text-anchor="middle" class="math-text">...</text>
+  </g>
+
+  <!-- Stack: a -->
+  <g transform="translate(360, 610)">
+    <rect x="0" y="0" width="100" height="100" fill="#DAE8FC" class="box-stroke" />
+    <text x="50" y="60" text-anchor="middle" class="math-text">a</text>
+    <rect x="0" y="100" width="100" height="100" fill="#DAE8FC" class="box-stroke" />
+    <text x="50" y="160" text-anchor="middle" class="math-text">,</text>
+    <rect x="0" y="200" width="100" height="100" fill="#DAE8FC" class="box-stroke" />
+    <text x="50" y="260" text-anchor="middle" class="math-text">...</text>
+  </g>
+
+  <!-- Equation Box -->
+  <rect x="45" y="650" width="290" height="250" fill="#DAE8FC" class="box-stroke" />
+  <text x="70" y="700" class="math-text">
+    <tspan class="math-italic">a</tspan><tspan dy="10" font-size="28">,</tspan>
+    <tspan dy="-10" class="math-italic">b</tspan><tspan dy="10" font-size="28">,</tspan>
+    <tspan dy="-10" class="math-italic">c</tspan><tspan dy="10" font-size="28"> : </tspan>
+    <tspan class="math-italic">C</tspan>
+  </text>
+  <text x="70" y="750" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">0</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">a</tspan> + <tspan class="math-italic">b</tspan> = <tspan class="math-italic">2c</tspan>
+  </text>
+  <text x="70" y="800" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">1</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">c</tspan> = <tspan class="math-italic">i</tspan>
+  </text>
+  <text x="70" y="850" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">2</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">a</tspan><tspan dy="5" font-size="24">i</tspan><tspan dy="-5"> + </tspan>
+    <tspan class="math-italic">b</tspan><tspan dy="5" font-size="24">i</tspan><tspan dy="-5"> = </tspan>
+    <tspan class="math-italic">−2</tspan>
+  </text>
+
+  <!-- Curly Braces -->
+  <!-- Brace 1 (rw to t) -->
+  <path d="M460,250 Q470,250 470,270 L470,380 Q470,400 480,400 Q470,400 470,420 L470,530 Q470,550 460,550" fill="none" stroke="black" stroke-width="3" />
+  <!-- Brace 2 (a to g) -->
+  <path d="M460,610 Q470,610 470,630 L470,740 Q470,760 480,760 Q470,760 470,780 L470,890 Q470,910 460,910" fill="none" stroke="black" stroke-width="3" />
+
+  <!-- Box: t -->
+  <rect x="490" y="350" width="110" height="110" fill="#D5E8D4" class="box-stroke" />
+  <text x="545" y="415" text-anchor="middle" class="math-text">t</text>
+
+  <!-- Box: g -->
+  <rect x="490" y="710" width="110" height="110" fill="#DAE8FC" class="box-stroke" />
+  <text x="545" y="775" text-anchor="middle" class="math-text">g</text>
+
+  <!-- Connectors: t -> concat, g -> concat -->
+  <path d="M545,460 L545,560" class="connector" />
+  <path d="M545,710 L545,640" class="connector" />
+
+  <!-- Box: concat (Left) -->
+  <rect x="490" y="560" width="160" height="80" fill="#7F8C8D" class="box-stroke" />
+  <text x="570" y="605" text-anchor="middle" class="math-text">concat</text>
+
+  <!-- ================= SECTION 2: MIDDLE COLUMN ================= -->
+
+  <!-- Section 2 Header -->
+  <text x="680" y="70" class="label-text">2. Create goal-aware</text>
+  <text x="850" y="110" class="label-text">tactic embedding</text>
+
+  <!-- Container -->
+  <rect x="680" y="190" width="290" height="620" fill="#F5F5F5" class="box-stroke" />
+
+  <!-- Encoder -->
+  <rect x="760" y="225" width="140" height="150" fill="#F8CECC" class="box-stroke" />
+  <text x="830" y="270" text-anchor="middle" class="math-text">Encoder</text>
+  <text x="830" y="330" text-anchor="middle" class="math-text" font-style="italic" font-size="48">E</text>
+
+  <!-- Split Lines -->
+  <line x1="830" y1="375" x2="830" y2="410" stroke="black" stroke-width="3" />
+  <line x1="830" y1="410" x2="780" y2="410" stroke="black" stroke-width="3" />
+  <line x1="830" y1="410" x2="880" y2="410" stroke="black" stroke-width="3" />
+  <line x1="780" y1="410" x2="780" y2="460" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="880" y1="410" x2="880" y2="460" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- t' and g' -->
+  <rect x="730" y="460" width="110" height="110" fill="#D5E8D4" class="box-stroke" />
+  <text x="785" y="525" text-anchor="middle" class="math-text">t'</text>
+  <rect x="840" y="460" width="110" height="110" fill="#DAE8FC" class="box-stroke" />
+  <text x="895" y="525" text-anchor="middle" class="math-text">g'</text>
+
+  <!-- Pool -->
+  <rect x="730" y="590" width="110" height="70" fill="#7F7F9F" class="box-stroke" />
+  <text x="785" y="625" text-anchor="middle" class="math-text">pool</text>
+
+  <!-- Connector: t' -> pool -->
+  <line x1="785" y1="570" x2="785" y2="660" class="connector" />
+
+  <!-- e -->
+  <rect x="730" y="690" width="110" height="110" fill="#D5E8D4" class="box-stroke" />
+  <text x="785" y="755" text-anchor="middle" class="math-text">e</text>
+
+  <!-- Connector: pool -> e -->
+  <line x1="785" y1="660" x2="785" y2="690" class="connector" />
+
+  <!-- Connector: e -> Bottom concat -->
+  <line x1="785" y1="800" x2="785" y2="870" class="connector" />
+
+  <!-- Bottom concat -->
+  <rect x="710" y="860" width="150" height="80" fill="#7F8C8D" class="box-stroke" />
+  <text x="785" y="905" text-anchor="middle" class="math-text">concat</text>
+
+  <!-- ================= SECTION 3: RIGHT COLUMN ================= -->
+
+  <!-- Section 3 Header -->
+  <text x="1000" y="70" class="label-text">3. Train embedding to</text>
+  <text x="1100" y="100" class="label-text">encode transition</text>
+  <text x="1100" y="140" class="label-text">data</text>
+
+  <!-- Predictor -->
+  <rect x="1050" y="250" width="150" height="180" fill="#F8CECC" class="box-stroke" />
+  <text x="1125" y="290" text-anchor="middle" class="math-text">Predictor</text>
+  <text x="1125" y="360" text-anchor="middle" class="math-text" font-style="italic" font-size="48">P</text>
+
+  <!-- Output Box -->
+  <rect x="1280" y="560" width="350" height="280" fill="#E1D5E7" class="box-stroke" />
+  <text x="1310" y="600" class="math-text">Output <tspan class="math-italic">ˆ</tspan><tspan dy="10" font-size="28">o</tspan><tspan dy="-10">)</tspan></text>
+  <text x="1310" y="650" class="math-text">
+    <tspan class="math-italic">a</tspan><tspan dy="10" font-size="28">,</tspan>
+    <tspan dy="-10" class="math-italic">b</tspan><tspan dy="10" font-size="28">,</tspan>
+    <tspan dy="-10" class="math-italic">c</tspan><tspan dy="10" font-size="28"> : </tspan>
+    <tspan class="math-italic">C</tspan>
+  </text>
+  <text x="1310" y="700" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">0</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">a</tspan> + <tspan class="math-italic">b</tspan> = <tspan class="math-italic">2c</tspan>
+  </text>
+  <text x="1310" y="750" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">1</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">c</tspan> = <tspan class="math-italic">i</tspan>
+  </text>
+  <text x="1310" y="800" class="math-text">
+    <tspan class="math-italic">h</tspan><tspan dy="5" font-size="24">2</tspan><tspan dy="-5"> : </tspan>
+    <tspan class="math-italic">a</tspan><tspan dy="5" font-size="24">i</tspan><tspan dy="-5"> + </tspan>
+    <tspan class="math-italic">b</tspan><tspan dy="5" font-size="24">i</tspan><tspan dy="-5"> = </tspan>
+    <tspan class="math-italic">−2</tspan>
+  </text>
+
+  <!-- Decoder -->
+  <rect x="1050" y="600" width="210" height="230" fill="#F8CECC" class="box-stroke" />
+  <text x="1155" y="670" text-anchor="middle" class="math-text">Decoder</text>
+  <text x="1155" y="740" text-anchor="middle" class="math-text" font-style="italic" font-size="48">D</text>
+
+  <!-- Status Box -->
+  <rect x="1310" y="195" width="280" height="120" fill="#E1D5E7" class="box-stroke" />
+  <text x="1450" y="235" text-anchor="middle" class="math-text">Status <tspan class="math-italic">ˆ</tspan><tspan dy="10" font-size="28">s</tspan><tspan dy="-10">)</tspan></text>
+  <text x="1450" y="290" text-anchor="middle" class="math-text">success</text>
+
+  <!-- Time Box -->
+  <rect x="1340" y="365" width="170" height="160" fill="#E1D5E7" class="box-stroke" />
+  <text x="1425" y="430" text-anchor="middle" class="math-text">Time <tspan class="math-italic">ˆ</tspan><tspan dy="10" font-size="28">t</tspan><tspan dy="-10">)</tspan></text>
+  <text x="1425" y="480" text-anchor="middle" class="math-text">0.1</text>
+
+  <!-- Connectors: Predictor -> Outputs -->
+  <path d="M1200,330 L1280,330 L1280,255 L1300,255" class="connector" />
+  <path d="M1200,330 L1280,330 L1280,445 L1330,445" class="connector" />
+
+  <!-- Connectors: Decoder -> Output -->
+  <line x1="1260" y1="700" x2="1280" y2="700" class="connector" />
+
+  <!-- ================= CROSS-SECTIONAL CONNECTORS ================= -->
+
+  <!-- Left concat -> Encoder -->
+  <path d="M650,600 L710,600 L710,295 L750,295" class="connector" />
+
+  <!-- Bottom concat -> Predictor -->
+  <path d="M860,860 L1000,860 L1000,320 L1040,320" class="connector" />
+
+  <!-- Bottom concat -> Decoder -->
+  <path d="M860,900 L1155,900 L1155,800" class="connector" />
+
+  <!-- Bottom concat -> g -->
+  <path d="M570,860 L570,890 L660,890 L660,900" class="connector" />
+
+  <!-- ================= GLOBAL BORDERS ================= -->
+  
+  <!-- Section 1 Border -->
+  <line x1="20" y1="20" x2="20" y2="930" class="dashed-border" />
+  
+  <!-- Section 2 Border -->
+  <line x1="680" y1="20" x2="680" y2="950" class="dashed-border" />
+  
+  <!-- Section 3 Border -->
+  <line x1="970" y1="20" x2="970" y2="950" class="dashed-border" />
+  
+  <!-- Outer Border -->
+  <line x1="1600" y1="20" x2="1600" y2="950" class="dashed-border" />
+
+</svg>

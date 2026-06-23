@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650">
+  <defs>
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <filter id="drop-shadow-light" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2" />
+    </filter>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d" />
+    </marker>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+    <style>
+      .box { fill: #f0f0f0; stroke: #000; stroke-width: 2; filter: url(#drop-shadow); rx: 10; ry: 10; }
+      .box-light { fill: #ffffff; stroke: #000; stroke-width: 2; stroke-dasharray: 5,5; }
+      .box-yellow { fill: #fff8e1; stroke: #000; stroke-width: 2; filter: url(#drop-shadow); rx: 10; ry: 10; }
+      .box-blue { fill: #e0f2f1; stroke: #000; stroke-width: 2; filter: url(#drop-shadow); rx: 10; ry: 10; }
+      .text-title { font-family: sans-serif; font-weight: bold; font-size: 20px; fill: #000; }
+      .text-subtitle { font-family: sans-serif; font-weight: bold; font-size: 16px; fill: #000; }
+      .text-body { font-family: sans-serif; font-size: 16px; fill: #000; }
+      .text-code { font-family: monospace; font-size: 16px; fill: #000; }
+      .text-italic { font-family: sans-serif; font-style: italic; font-size: 18px; fill: #000; }
+      .text-red { fill: #cc0000; font-weight: bold; }
+      .text-green { fill: #008000; font-weight: bold; }
+      .text-blue { fill: #0066cc; font-weight: bold; }
+      .node-blue { fill: #4dd0e1; stroke: #000; stroke-width: 2; }
+      .node-yellow { fill: #ffd54f; stroke: #000; stroke-width: 2; }
+      .node-red { fill: #e57373; stroke: #000; stroke-width: 2; }
+      .node-orange { fill: #ffb74d; stroke: #000; stroke-width: 2; }
+      .node-white { fill: #ffffff; stroke: #000; stroke-width: 2; }
+      .line-red { stroke: #ff4d4d; stroke-width: 4; fill: none; }
+      .line-black { stroke: #000; stroke-width: 2; fill: none; }
+      .line-dashed { stroke: #000; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Task Description Box -->
+  <rect x="40" y="70" width="280" height="210" class="box" />
+  <text x="70" y="100" class="text-title">Task Description</text>
+  <rect x="55" y="115" width="250" height="150" class="box-light" />
+  <text x="65" y="145" class="text-italic">Count the number of</text>
+  <text x="65" y="175" class="text-italic">items in DB with a price</text>
+  <text x="65" y="205" class="text-italic">within the range specified</text>
+  <text x="65" y="235" class="text-italic">by the user's inputs.</text>
+
+  <!-- Question Mark Icon -->
+  <g transform="translate(15, 45) scale(0.8)">
+    <circle cx="30" cy="30" r="25" fill="#81d4fa" stroke="#333" stroke-width="4" filter="url(#drop-shadow-light)" />
+    <path d="M 30 55 L 20 65 L 35 55 Z" fill="#81d4fa" stroke="#333" stroke-width="4" />
+    <text x="30" y="40" font-family="sans-serif" font-weight="bold" font-size="36px" fill="#333" text-anchor="middle">?</text>
+  </g>
+
+  <!-- Policy Model -->
+  <text x="330" y="250" class="text-title">Policy Model</text>
+  <g transform="translate(350, 130)">
+    <!-- Input layer -->
+    <circle cx="10" cy="20" r="8" class="node-blue" />
+    <circle cx="10" cy="50" r="8" class="node-blue" />
+    <circle cx="10" cy="80" r="8" class="node-blue" />
+    <!-- Hidden layer -->
+    <circle cx="50" cy="10" r="8" class="node-yellow" />
+    <circle cx="50" cy="40" r="8" class="node-yellow" />
+    <circle cx="50" cy="70" r="8" class="node-yellow" />
+    <circle cx="50" cy="100" r="8" class="node-yellow" />
+    <!-- Output layer -->
+    <circle cx="90" cy="40" r="8" class="node-red" />
+    <circle cx="90" cy="70" r="8" class="node-red" />
+    <!-- Connections -->
+    <line x1="18" y1="20" x2="42" y2="10" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="18" y1="50" x2="42" y2="40" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="18" y1="80" x2="42" y2="70" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="58" y1="40" x2="82" y2="40" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="58" y1="70" x2="82" y2="70" class="line-black" marker-end="url(#arrow-black)" />
+  </g>
+
+  <!-- Arrow from Task Description to Policy Model -->
+  <line x1="320" y1="180" x2="350" y2="180" class="line-red" marker-end="url(#arrow-red)" />
+
+  <!-- Arrow from Policy Model to Generated Program -->
+  <line x1="450" y1="180" x2="480" y2="180" class="line-red" marker-end="url(#arrow-red)" />
+
+  <!-- Generated Program Box -->
+  <rect x="485" y="70" width="485" height="210" class="box" />
+  <text x="525" y="100" class="text-title">Generated Program</text>
+  <rect x="505" y="115" width="440" height="150" class="box-light" />
+  <text x="515" y="135" class="text-code">cur = sqlite3.<tspan class="text-blue">connect</tspan>(DB).<tspan class="text-blue">cursor</tspan>()</text>
+  <text x="515" y="155" class="text-code"><tspan class="text-red">min</tspan> = <tspan class="text-blue">input</tspan>('Min?'); <tspan class="text-red">max</tspan> = <tspan class="text-blue">input</tspan>('Max?')</text>
+  <text x="515" y="175" class="text-code">...</text>
+  <text x="515" y="195" class="text-code"><tspan class="text-red">Q</tspan> = "<tspan class="text-green">SELECT COUNT</tspan>(*) <tspan class="text-green">FROM</tspan> items \</text>
+  <text x="515" y="215" class="text-code">       <tspan class="text-green">WHERE</tspan> price &lt;= {<tspan class="text-red">max</tspan>} \</text>
+  <text x="515" y="235" class="text-code">       <tspan class="text-green">AND</tspan> price &gt;= {<tspan class="text-red">min</tspan>}"</text>
+  <text x="515" y="255" class="text-code">cur.<tspan class="text-blue">execute</tspan>(<tspan class="text-red">Q</tspan>)</text>
+
+  <!-- Code Icon -->
+  <g transform="translate(480, 40) scale(0.8)">
+    <rect x="0" y="0" width="40" height="50" rx="5" fill="#fff" stroke="#4a148c" stroke-width="4" filter="url(#drop-shadow-light)" />
+    <path d="M 25 0 L 40 15 L 40 0 Z" fill="#4a148c" />
+    <text x="20" y="32" font-family="monospace" font-weight="bold" font-size="20px" fill="#4a148c" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- Vulnerability Detector Box -->
+  <rect x="40" y="310" width="610" height="310" class="box-yellow" />
+  <text x="55" y="340" class="text-title">Vulnerability Detector <tspan font-size="14px" font-weight="normal" font-style="italic">(via Program Analysis)</tspan></text>
+  <text x="55" y="360" class="text-subtitle" font-style="italic" font-size="14px">Example: SQL Injection Detector</text>
+  
+  <!-- CFG Box -->
+  <rect x="55" y="375" width="140" height="180" class="box-light" />
+  <text x="100" y="395" class="text-subtitle">CFG</text>
+  <g transform="translate(60, 400)">
+    <circle cx="55" cy="20" r="15" class="node-orange" filter="url(#drop-shadow-light)" />
+    <text x="55" y="26" font-family="sans-serif" font-weight="bold" font-size="16px" text-anchor="middle">1</text>
+    <circle cx="25" cy="65" r="15" class="node-white" filter="url(#drop-shadow-light)" />
+    <circle cx="85" cy="65" r="15" class="node-orange" filter="url(#drop-shadow-light)" />
+    <text x="85" y="71" font-family="sans-serif" font-weight="bold" font-size="16px" text-anchor="middle">2</text>
+    <circle cx="55" cy="115" r="15" class="node-white" filter="url(#drop-shadow-light)" />
+    <circle cx="110" cy="115" r="15" class="node-orange" filter="url(#drop-shadow-light)" />
+    <text x="110" y="121" font-family="sans-serif" font-weight="bold" font-size="16px" text-anchor="middle">3</text>
+    <line x1="45" y1="30" x2="35" y2="55" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="65" y1="30" x2="75" y2="55" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="75" y1="75" x2="65" y2="105" class="line-black" marker-end="url(#arrow-black)" />
+    <line x1="95" y1="75" x2="105" y2="105" class="line-black" marker-end="url(#arrow-black)" />
+  </g>
+
+  <!-- Tainted Analysis Box -->
+  <rect x="200" y="375" width="350" height="180" class="box-light" />
+  <text x="300" y="395" class="text-subtitle">Tainted Analysis</text>
+  <text x="210" y="425" class="text-code"><tspan class="text-red">{max,min}</tspan></text>
+  <text x="330" y="425" class="text-body" font-style="italic">1. User inputs as taint <tspan font-weight="bold">src.</tspan></text>
+  <text x="210" y="470" class="text-code"><tspan class="text-red">{max,min,Q}</tspan></text>
+  <text x="340" y="470" class="text-body" font-style="italic">2. Propagate tainted var.</text>
+  <text x="210" y="515" class="text-code">cur.<tspan class="text-blue">execute</tspan>(<tspan class="text-red">Q</tspan>)</text>
+  <text x="375" y="515" class="text-body" font-style="italic">3. SQL exec. as <tspan font-weight="bold">sink.</tspan></text>
+
+  <!-- Dashed lines connecting CFG to Tainted Analysis -->
+  <line x1="140" y1="420" x2="205" y2="420" class="line-dashed" marker-end="url(#arrow-dashed)" />
+  <line x1="170" y1="465" x2="205" y2="465" class="line-dashed" marker-end="url(#arrow-dashed)" />
+  <line x1="195" y1="510" x2="205" y2="510" class="line-dashed" marker-end="url(#arrow-dashed)" />
+
+  <!-- Vertical line with circles/arrows in Tainted Analysis -->
+  <line x1="535" y1="420" x2="535" y2="515" class="line-black" marker-end="url(#arrow-black)" />
+  <circle cx="535" cy="420" r="3" fill="#fff" stroke="#000" stroke-width="2" />
+
+  <!-- Reward Text in Vulnerability Detector -->
+  <text x="560" y="460" class="text-subtitle" text-decoration="underline">Reward:</text>
+  <text x="555" y="480" class="text-body"><tspan class="text-green" font-style="italic">Pass</tspan> or <tspan class="text-red" font-style="italic">Fail</tspan></text>
+
+  <!-- Bottom Text in Vulnerability Detector -->
+  <text x="345" y="580" class="text-body" text-anchor="middle">Convert the program into a <tspan font-weight="bold">Control Flow Graph (CFG)</tspan> and conduct</text>
+  <text x="345" y="605" class="text-body" text-anchor="middle"><tspan font-weight="bold">Taint Analysis</tspan> to detect SQL injection vulnerabilities.</text>
+
+  <!-- Functionality Verifier Box -->
+  <rect x="710" y="310" width="435" height="310" class="box-blue" />
+  <text x="725" y="340" class="text-title">Functionality Verifier <tspan font-size="14px" font-weight="normal" font-style="italic">(via Unit Tests)</tspan></text>
+  
+  <!-- Unit Tests Box -->
+  <rect x="725" y="370" width="265" height="180" class="box-light" />
+  <text x="735" y="390" class="text-subtitle">Unit Tests <tspan font-size="12px" font-weight="normal" font-style="italic">(e.g. min~max→output)</tspan></text>
+  
+  <g transform="translate(735, 405)">
+    <circle cx="12" cy="12" r="10" fill="#fff" stroke="#000" stroke-width="2" />
+    <text x="12" y="17" font-family="sans-serif" font-weight="bold" font-size="14px" text-anchor="middle">i</text>
+    <text x="35" y="17" class="text-body"><tspan font-weight="bold" font-style="italic">Test 1:</tspan> $2.5~$10→3</text>
+  </g>
+  <g transform="translate(735, 455)">
+    <circle cx="12" cy="12" r="10" fill="#fff" stroke="#000" stroke-width="2" />
+    <text x="12" y="17" font-family="sans-serif" font-weight="bold" font-size="14px" text-anchor="middle">i</text>
+    <text x="35" y="17" class="text-body"><tspan font-weight="bold" font-style="italic">Test 2:</tspan> $3~$1→0</text>
+  </g>
+  <text x="790" y="500" class="text-body" font-weight="bold">......</text>
+  <g transform="translate(735, 515)">
+    <circle cx="12" cy="12" r="10" fill="#fff" stroke="#000" stroke-width="2" />
+    <text x="12" y="17" font-family="sans-serif" font-weight="bold" font-size="14px" text-anchor="middle">i</text>
+    <text x="35" y="17" class="text-body"><tspan font-weight="bold" font-style="italic">Test n:</tspan> $7~$100→10</text>
+  </g>
+
+  <!-- Generated Program Box in Functionality Verifier -->
+  <rect x="1015" y="400" width="110" height="150" class="box-light" />
+  <g transform="translate(1035, 415) scale(0.9)">
+    <rect x="0" y="0" width="50" height="65" rx="5" fill="#fff" stroke="#4a148c" stroke-width="4" filter="url(#drop-shadow-light)" />
+    <path d="M 30 0 L 50 20 L 50 0 Z" fill="#4a148c" />
+    <text x="25" y="40" font-family="monospace" font-weight="bold" font-size="24px" fill="#4a148c" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+  <text x="1070" y="510" class="text-subtitle" text-anchor="middle">Generated</text>
+  <text x="1070" y="530" class="text-subtitle" text-anchor="middle">Program</text>
+
+  <!-- Arrows from Unit Tests to Generated Program -->
+  <line x1="995" y1="425" x2="1035" y2="440" class="line-black" marker-end="url(#arrow-black)" />
+  <line x1="995" y1="470" x2="1035" y2="470" class="line-black" marker-end="url(#arrow-black)" />
+  <line x1="995" y1="525" x2="1035" y2="495" class="line-black" marker-end="url(#arrow-black)" />
+
+  <!-- Reward Text in Functionality Verifier -->
+  <text x="850" y="595" class="text-title" text-decoration="underline">Reward:</text>
+  <text x="940" y="580" class="text-body"># passed tests</text>
+  <line x1="935" y1="585" x2="1045" y2="585" stroke="#000" stroke-width="1" />
+  <text x="945" y="605" class="text-body"># total tests</text>
+
+  <!-- Plus Sign -->
+  <text x="660" y="485" font-family="sans-serif" font-weight="bold" font-size="60px" fill="#000" text-anchor="middle">+</text>
+
+  <!-- Big Red Arrows Down -->
+  <g transform="translate(550, 280)">
+    <path d="M 10 0 L 10 20 L 0 20 L 15 35 L 30 20 L 20 20 L 20 0 Z" fill="#ff4d4d" stroke="#fff" stroke-width="2" filter="url(#drop-shadow-light)" />
+  </g>
+  <g transform="translate(830, 280)">
+    <path d="M 10 0 L 10 20 L 0 20 L 15 35 L 30 20 L 20 20 L 20 0 Z" fill="#ff4d4d" stroke="#fff" stroke-width="2" filter="url(#drop-shadow-light)" />
+  </g>
+
+  <!-- Hybrid Reward Box -->
+  <rect x="1000" y="250" width="160" height="35" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="2" filter="url(#drop-shadow)" />
+  <text x="1080" y="274" class="text-subtitle" text-anchor="middle">Hybrid Reward</text>
+
+  <!-- Arrow from Functionality Verifier to Hybrid Reward -->
+  <line x1="1075" y1="310" x2="1075" y2="290" class="line-red" marker-end="url(#arrow-red)" />
+
+  <!-- Advantage Section -->
+  <text x="1075" y="200" class="text-title" text-anchor="middle">Advantage</text>
+  <g transform="translate(1020, 80)">
+    <!-- Bar 1 -->
+    <rect x="10" y="65" width="15" height="30" fill="#fff59d" stroke="#000" stroke-width="2" />
+    <path d="M 17 45 L 20 55 L 30 55 L 22 62 L 25 72 L 17 65 L 10 72 L 13 62 L 5 55 L 15 55 Z" fill="#fff" stroke="#000" stroke-width="2" transform="translate(0, -15) scale(0.6)" />
+    <!-- Bar 2 -->
+    <rect x="40" y="50" width="15" height="45" fill="#69f0ae" stroke="#000" stroke-width="2" />
+    <path d="M 17 45 L 20 55 L 30 55 L 22 62 L 25 72 L 17 65 L 10 72 L 13 62 L 5 55 L 15 55 Z" fill="#ffd54f" stroke="#000" stroke-width="2" transform="translate(30, -20) scale(0.7)" />
+    <!-- Bar 3 -->
+    <rect x="70" y="35" width="15" height="60" fill="#64b5f6" stroke="#000" stroke-width="2" />
+    <path d="M 17 45 L 20 55 L 30 55 L 22 62 L 25 72 L 17 65 L 10 72 L 13 62 L 5 55 L 15 55 Z" fill="#ffca28" stroke="#000" stroke-width="2" transform="translate(60, -30) scale(0.8)" />
+  </g>
+
+  <!-- Arrow from Hybrid Reward to Advantage -->
+  <line x1="1075" y1="245" x2="1075" y2="220" class="line-red" marker-end="url(#arrow-red)" />
+
+  <!-- Policy Gradient Box -->
+  <rect x="640" y="15" width="180" height="35" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="2" filter="url(#drop-shadow)" />
+  <text x="730" y="39" class="text-title" text-anchor="middle">Policy Gradient</text>
+
+  <!-- Long Red Arrow from Advantage to Policy Gradient to Policy Model -->
+  <path d="M 1075 75 L 1075 32 L 825 32" class="line-red" />
+  <path d="M 635 32 L 400 32 L 400 115" class="line-red" marker-end="url(#arrow-red)" />
+
+</svg>

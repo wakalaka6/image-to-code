@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <rect width="1920" height="800" fill="white"/>
+
+  <!-- ===== TOP ROW CODE BOXES ===== -->
+  <!-- Command Sequence box -->
+  <rect x="10" y="10" width="450" height="320" rx="8" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text font-family="monospace" font-size="13" fill="#222">
+    <tspan x="30" y="40">{</tspan>
+    <tspan x="50" y="58">"steps": [</tspan>
+    <tspan x="70" y="76">{</tspan>
+    <tspan x="90" y="94">"sketch": {</tspan>
+    <tspan x="110" y="112">"circles": [</tspan>
+    <tspan x="130" y="130">{"center": [0, 0], "radius": 60},</tspan>
+    <tspan x="130" y="148">{"center": [0, 0], "radius": 25}</tspan>
+    <tspan x="110" y="166">]</tspan>
+    <tspan x="90" y="184">},</tspan>
+    <tspan x="90" y="202">"extrusion": {</tspan>
+    <tspan x="110" y="220">"direction": [0, 0, 1],</tspan>
+    <tspan x="110" y="238">"origin": [0, 0, 0],</tspan>
+    <tspan x="110" y="256">"depth": 15,</tspan>
+    <tspan x="110" y="274">"operation": "NewBody"</tspan>
+    <tspan x="70" y="292">},...]}</tspan>
+  </text>
+  <text x="235" y="320" font-family="Arial" font-size="20" font-weight="bold" fill="#2e7d32" text-anchor="middle">Command Sequence</text>
+
+  <!-- Text Description box -->
+  <rect x="470" y="10" width="395" height="320" rx="8" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text font-family="monospace" font-size="13.5" fill="#222">
+    <tspan x="490" y="42">Text_Description = """</tspan>
+    <tspan x="490" y="60">This circular flange is a metal component</tspan>
+    <tspan x="490" y="78">featuring a flat base plate with a</tspan>
+    <tspan x="490" y="96">diameter of 120 mm and thickness of 15 mm.</tspan>
+    <tspan x="490" y="114">The design includes a central bore</tspan>
+    <tspan x="490" y="132">measuring 50 mm in diameter surrounded by</tspan>
+    <tspan x="490" y="150">a raised concentric ring with an outer</tspan>
+    <tspan x="490" y="168">diameter of 70 mm and height of 8 mm that</tspan>
+    <tspan x="490" y="186">shares the same inner diameter as the</tspan>
+    <tspan x="490" y="204">central bore. Six equidistant mounting</tspan>
+    <tspan x="490" y="222">holes measuring 12 mm in diameter are</tspan>
+    <tspan x="490" y="240">arranged in a circular pattern with a</tspan>
+    <tspan x="490" y="258">diameter of 90 mm around the periphery.</tspan>
+    <tspan x="490" y="276">"""</tspan>
+  </text>
+  <text x="667" y="320" font-family="Arial" font-size="20" font-weight="bold" fill="#2e7d32" text-anchor="middle">Text Description</text>
+
+  <!-- System prompt box -->
+  <rect x="875" y="10" width="1035" height="135" rx="8" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text font-family="monospace" font-size="14">
+    <tspan x="895" y="50" fill="#7b3fa0">System_prompt = """</tspan>
+    <tspan x="895" y="72" fill="#2e7d32">Please convert the following CAD command sequence into CAD-Query code, with the final model represented as 'r':</tspan>
+    <tspan x="895" y="90" fill="#7b3fa0">"""</tspan>
+    <tspan x="895" y="125" fill="#888"># The CoT system prompt can be found in the appendix.</tspan>
+  </text>
+  <text x="1820" y="138" font-family="Arial" font-size="20" font-weight="bold" fill="#2e7d32" text-anchor="middle">System prompt</text>
+
+  <!-- CadQuery Code box -->
+  <rect x="875" y="155" width="1035" height="175" rx="8" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text font-family="monospace" font-size="14">
+    <tspan x="895" y="195"><tspan fill="#7b3fa0">import</tspan> <tspan fill="#1565c0">cadquery</tspan> <tspan fill="#7b3fa0">as</tspan> <tspan fill="#1565c0">cq</tspan></tspan>
+    <tspan x="895" y="232"><tspan fill="#c62828">flange</tspan> = (cq.<tspan fill="#1565c0">Workplane</tspan>(<tspan fill="#2e7d32">"XY"</tspan>)</tspan>
+    <tspan x="975" y="250">.circle(<tspan fill="#1565c0">60</tspan>).circle(<tspan fill="#1565c0">25</tspan>).extrude(<tspan fill="#1565c0">15</tspan>)</tspan>
+    <tspan x="975" y="268">.faces(<tspan fill="#2e7d32">"&gt;Z"</tspan>).workplane().polarArray(<tspan fill="#1565c0">45, 0, 360,6</tspan>).circle(<tspan fill="#1565c0">6</tspan>).cutThruAll()</tspan>
+    <tspan x="975" y="286">.faces(<tspan fill="#2e7d32">"&gt;Z"</tspan>).workplane().add(cq.<tspan fill="#1565c0">Workplane</tspan>(<tspan fill="#2e7d32">"XY"</tspan>).circle(<tspan fill="#1565c0">35</tspan>).circle(<tspan fill="#1565c0">25</tspan>).workplane(offset=<tspan fill="#1565c0">15</tspan>).extrude(<tspan fill="#1565c0">8</tspan>)))</tspan>
+    <tspan x="895" y="304"><tspan fill="#c62828">result</tspan> = flange</tspan>
+  </text>
+  <text x="1820" y="324" font-family="Arial" font-size="20" font-weight="bold" fill="#2e7d32" text-anchor="middle">CadQuery Code</text>
+
+  <!-- ===== BOTTOM PANELS ===== -->
+  <!-- Left blue panel -->
+  <rect x="10" y="345" width="520" height="445" rx="10" fill="#e8ecf7" stroke="#aab" stroke-width="1"/>
+  <!-- Right orange panel -->
+  <rect x="1620" y="345" width="290" height="445" rx="10" fill="#fbeede" stroke="#dcb" stroke-width="1"/>
+  <!-- Middle green panel -->
+  <rect x="540" y="345" width="1070" height="445" rx="10" fill="#e9f3e7" stroke="#bcd" stroke-width="1"/>
+
+  <!-- Left panel content -->
+  <!-- Text2CAD dataset folder -->
+  <g>
+    <rect x="45" y="500" width="80" height="60" rx="6" fill="#f4c430" stroke="#c89b1a"/>
+    <rect x="55" y="490" width="60" height="55" rx="4" fill="#fff8e8" stroke="#c89b1a"/>
+    <rect x="62" y="498" width="46" height="6" fill="#bbb"/>
+    <rect x="62" y="510" width="46" height="6" fill="#bbb"/>
+    <circle cx="105" cy="555" r="13" fill="#2e7d32"/>
+    <path d="M99 555 l4 4 l8 -8" stroke="white" stroke-width="2.5" fill="none"/>
+  </g>
+  <text x="85" y="595" font-family="Arial" font-size="15" font-weight="bold" fill="#333" text-anchor="middle">Text2CAD</text>
+  <text x="85" y="613" font-family="Arial" font-size="15" font-weight="bold" fill="#333" text-anchor="middle">Dataset</text>
+
+  <!-- JSON icon -->
+  <g>
+    <rect x="245" y="370" width="80" height="95" rx="4" fill="#f7c873" stroke="#c89b1a"/>
+    <rect x="252" y="378" width="66" height="6" fill="#e8a83a"/>
+    <rect x="252" y="390" width="66" height="6" fill="#e8a83a"/>
+    <rect x="255" y="420" width="55" height="22" rx="3" fill="#c0392b"/>
+    <text x="282" y="436" font-family="Arial" font-size="13" font-weight="bold" fill="white" text-anchor="middle">JSON</text>
+  </g>
+  <text x="285" y="485" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Command</text>
+  <text x="285" y="502" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Sequence</text>
+  <rect x="238" y="362" width="95" height="115" rx="6" fill="none" stroke="#555" stroke-dasharray="4 3"/>
+
+  <!-- TEXT icon -->
+  <g>
+    <rect x="245" y="520" width="80" height="95" rx="4" fill="#fdfdfd" stroke="#888"/>
+    <rect x="255" y="555" width="55" height="22" rx="3" fill="#2c3e50"/>
+    <text x="282" y="571" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TEXT</text>
+  </g>
+  <text x="285" y="635" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Text</text>
+  <text x="285" y="652" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Description</text>
+
+  <!-- STEP icon (ground truth) -->
+  <g>
+    <rect x="245" y="675" width="80" height="95" rx="4" fill="#fdfdfd" stroke="#888"/>
+    <rect x="255" y="730" width="55" height="22" rx="3" fill="#2c7a4b"/>
+    <text x="282" y="746" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">STEP</text>
+  </g>
+  <text x="285" y="790" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Ground-Truth Model</text>
+
+  <!-- LLMs whale icon -->
+  <text x="455" y="385" font-family="Arial" font-size="17" font-weight="bold" fill="#333" text-anchor="middle">LLMs</text>
+  <ellipse cx="455" cy="425" rx="38" ry="25" fill="#4a6fd1"/>
+  <path d="M425 425 q30 25 60 0" fill="#3a5fc1"/>
+  <circle cx="445" cy="418" r="3" fill="white"/>
+
+  <!-- CadQuery cq logo -->
+  <rect x="415" y="495" width="75" height="75" rx="8" fill="#1565c0"/>
+  <text x="452" y="548" font-family="Arial" font-size="40" font-weight="bold" font-style="italic" fill="white" text-anchor="middle">cq</text>
+  <text x="452" y="595" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">CadQuery</text>
+
+  <!-- Discard trash -->
+  <g>
+    <rect x="425" y="690" width="55" height="60" rx="4" fill="#e8a0a0" stroke="#c0392b"/>
+    <rect x="418" y="680" width="69" height="12" rx="3" fill="#c0392b"/>
+    <rect x="440" y="700" width="6" height="40" fill="#fff" opacity="0.5"/>
+    <rect x="455" y="700" width="6" height="40" fill="#fff" opacity="0.5"/>
+  </g>
+  <text x="452" y="775" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Discard</text>
+
+  <!-- Arrows in left panel -->
+  <path d="M130 545 H180 V410 H238" stroke="#222" stroke-width="2" fill="none"/>
+  <path d="M130 545 H238" stroke="#222" stroke-width="2" fill="none"/>
+  <path d="M180 545 V565 H238" stroke="#222" stroke-width="2" fill="none"/>
+  <path d="M180 545 V720 H238" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="238,410 230,406 230,414" fill="#222"/>
+  <polygon points="238,545 230,541 230,549" fill="#222"/>
+  <polygon points="238,565 230,561 230,569" fill="#222"/>
+  <polygon points="238,720 230,716 230,724" fill="#222"/>
+  <!-- command/text to LLM -->
+  <path d="M333 420 H410" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="412,420 404,416 404,424" fill="#222"/>
+  <path d="M455 450 V490" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="455,494 451,486 459,486" fill="#222"/>
+  <!-- discard red X arrow -->
+  <path d="M452 570 V650" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="452,652 448,644 456,644" fill="#222"/>
+  <text x="452" y="630" font-family="Arial" font-size="26" font-weight="bold" fill="#c0392b" text-anchor="middle">✗</text>
+
+  <!-- green checkmark from cq to generated -->
+  <path d="M490 535 H560" stroke="#7cba3d" stroke-width="3" fill="none"/>
+  <path d="M560 535 V450 H615" stroke="#7cba3d" stroke-width="3" fill="none"/>
+  <text x="585" y="498" font-family="Arial" font-size="26" font-weight="bold" fill="#7cba3d" text-anchor="middle">✓</text>
+
+  <!-- ===== MIDDLE GREEN PANEL ===== -->
+  <!-- Generated Models label -->
+  <rect x="830" y="362" width="240" height="34" rx="17" fill="#cfe6c8" stroke="#7cba3d"/>
+  <text x="950" y="386" font-family="Arial" font-size="18" font-weight="bold" fill="#2e7d32" text-anchor="middle">Generated Models</text>
+
+  <!-- dashed green box for generated models -->
+  <rect x="618" y="400" width="700" height="180" rx="8" fill="none" stroke="#7cba3d" stroke-width="2" stroke-dasharray="8 5"/>
+
+  <!-- Flange 1 (simple ring) -->
+  <g transform="translate(760,490)">
+    <ellipse cx="0" cy="0" rx="80" ry="45" fill="#b8b07a"/>
+    <ellipse cx="0" cy="-15" rx="80" ry="45" fill="#c8c08a"/>
+    <ellipse cx="0" cy="-15" rx="35" ry="20" fill="#9a9260"/>
+    <ellipse cx="0" cy="-12" rx="35" ry="20" fill="#a8a070"/>
+  </g>
+  <!-- Flange 2 (with holes) -->
+  <g transform="translate(965,490)">
+    <ellipse cx="0" cy="0" rx="85" ry="48" fill="#b8b07a"/>
+    <ellipse cx="0" cy="-15" rx="85" ry="48" fill="#c8c08a"/>
+    <ellipse cx="0" cy="-15" rx="35" ry="20" fill="#9a9260"/>
+    <ellipse cx="0" cy="-12" rx="35" ry="20" fill="#a8a070"/>
+    <ellipse cx="-55" cy="-18" rx="9" ry="5" fill="#8a8250"/>
+    <ellipse cx="55" cy="-18" rx="9" ry="5" fill="#8a8250"/>
+    <ellipse cx="0" cy="-38" rx="9" ry="5" fill="#8a8250"/>
+    <ellipse cx="0" cy="8" rx="9" ry="5" fill="#8a8250"/>
+  </g>
+  <!-- Flange 3 (with raised ring + holes) -->
+  <g transform="translate(1180,485)">
+    <ellipse cx="0" cy="5" rx="90" ry="50" fill="#b8b07a"/>
+    <ellipse cx="0" cy="-12" rx="90" ry="50" fill="#c8c08a"/>
+    <ellipse cx="0" cy="-25" rx="42" ry="24" fill="#b0a875"/>
+    <ellipse cx="0" cy="-30" rx="42" ry="24" fill="#bcb480"/>
+    <ellipse cx="0" cy="-30" rx="22" ry="12" fill="#9a9260"/>
+    <ellipse cx="-58" cy="-15" rx="9" ry="5" fill="#8a8250"/>
+    <ellipse cx="58" cy="-15" rx="9" ry="5" fill="#8a8250"/>
+    <ellipse cx="0" cy="12" rx="9" ry="5" fill="#8a8250"/>
+  </g>
+
+  <!-- Sample arrow -->
+  <path d="M965 580 V618" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="965,622 961,614 969,614" fill="#222"/>
+  <text x="1010" y="605" font-family="Arial" font-size="17" fill="#222">Sample</text>
+
+  <!-- 3D Point Models dashed box -->
+  <rect x="618" y="625" width="700" height="135" rx="8" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- point model 1 -->
+  <g transform="translate(745,690)">
+    <ellipse cx="0" cy="0" rx="75" ry="48" fill="#3a3a3a"/>
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="#1a1a1a"/>
+  </g>
+  <!-- point model 2 -->
+  <g transform="translate(945,690)">
+    <ellipse cx="0" cy="0" rx="78" ry="50" fill="#3a3a3a"/>
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="#1a1a1a"/>
+    <circle cx="-50" cy="-5" r="6" fill="#1a1a1a"/>
+    <circle cx="50" cy="-5" r="6" fill="#1a1a1a"/>
+    <circle cx="0" cy="-28" r="6" fill="#1a1a1a"/>
+  </g>
+  <!-- point model 3 (selected) -->
+  <g transform="translate(1175,690)">
+    <ellipse cx="0" cy="0" rx="80" ry="52" fill="#3a3a3a"/>
+    <ellipse cx="0" cy="-5" rx="38" ry="24" fill="#2a2a2a"/>
+    <ellipse cx="0" cy="-5" rx="20" ry="12" fill="#1a1a1a"/>
+    <circle cx="-52" cy="0" r="7" fill="#1a1a1a"/>
+    <circle cx="52" cy="0" r="7" fill="#1a1a1a"/>
+    <circle cx="0" cy="32" r="7" fill="#1a1a1a"/>
+  </g>
+  <rect x="1090" y="632" width="175" height="118" rx="6" fill="none" stroke="#d12" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <text x="1177" y="775" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Select by CD</text>
+
+  <!-- 3D Point Models label -->
+  <rect x="845" y="762" width="210" height="32" rx="16" fill="#cfe6c8" stroke="#7cba3d"/>
+  <text x="950" y="785" font-family="Arial" font-size="17" font-weight="bold" fill="#2e7d32" text-anchor="middle">3D Point Models</text>
+
+  <!-- Ground-Truth model (gray flange) -->
+  <g transform="translate(1490,470)">
+    <ellipse cx="0" cy="5" rx="88" ry="50" fill="#5a6470"/>
+    <ellipse cx="0" cy="-12" rx="88" ry="50" fill="#6a7682"/>
+    <ellipse cx="0" cy="-25" rx="40" ry="22" fill="#586470"/>
+    <ellipse cx="0" cy="-30" rx="40" ry="22" fill="#62707c"/>
+    <ellipse cx="0" cy="-30" rx="20" ry="11" fill="#46505a"/>
+    <ellipse cx="-58" cy="-15" rx="8" ry="5" fill="#3a424c"/>
+    <ellipse cx="58" cy="-15" rx="8" ry="5" fill="#3a424c"/>
+    <ellipse cx="0" cy="12" rx="8" ry="5" fill="#3a424c"/>
+  </g>
+  <text x="1490" y="545" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Ground-Truth Models</text>
+  <text x="1545" y="575" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Sample</text>
+  <path d="M1490 585 V630" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="1490,634 1486,626 1494,626" fill="#222"/>
+
+  <!-- GT point model -->
+  <g transform="translate(1490,690)">
+    <ellipse cx="0" cy="0" rx="80" ry="52" fill="#3a3a3a"/>
+    <ellipse cx="0" cy="-5" rx="38" ry="24" fill="#2a2a2a"/>
+    <ellipse cx="0" cy="-5" rx="20" ry="12" fill="#1a1a1a"/>
+    <circle cx="-52" cy="0" r="7" fill="#1a1a1a"/>
+    <circle cx="52" cy="0" r="7" fill="#1a1a1a"/>
+    <circle cx="0" cy="32" r="7" fill="#1a1a1a"/>
+  </g>
+
+  <!-- Chamfer Distance arrow (pink double) -->
+  <text x="1370" y="612" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Chamfer</text>
+  <text x="1370" y="632" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Distance</text>
+  <line x1="1270" y1="690" x2="1405" y2="690" stroke="#f4a3b0" stroke-width="6"/>
+  <polygon points="1262,690 1278,683 1278,697" fill="#f4a3b0"/>
+  <polygon points="1413,690 1397,683 1397,697" fill="#f4a3b0"/>
+
+  <!-- Python code selection -->
+  <text x="1500" y="753" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Python code</text>
+  <text x="1500" y="772" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">selection</text>
+  <!-- arrow from gt to python to cadquery -->
+  <path d="M1490 740 V725" stroke="#f4a3b0" stroke-width="4" fill="none"/>
+  <path d="M1500 720 H1610 V730" stroke="#f4a3b0" stroke-width="4" fill="none"/>
+  <polygon points="1610,734 1605,725 1615,725" fill="#f4a3b0"/>
+
+  <!-- ===== RIGHT ORANGE PANEL ===== -->
+  <!-- Model STEP icon -->
+  <rect x="1655" y="370" width="95" height="290" rx="6" fill="none" stroke="#555" stroke-dasharray="4 3"/>
+  <g>
+    <rect x="1670" y="385" width="70" height="85" rx="4" fill="#fdfdfd" stroke="#888"/>
+    <path d="M1722 385 v18 h18" fill="none" stroke="#888"/>
+    <rect x="1678" y="430" width="50" height="20" rx="3" fill="#2c5f8a"/>
+    <text x="1703" y="445" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">STEP</text>
+  </g>
+  <text x="1703" y="490" font-family="Arial" font-size="15" font-weight="bold" fill="#333" text-anchor="middle">Model</text>
+  <!-- Text icon -->
+  <g>
+    <rect x="1670" y="510" width="70" height="85" rx="4" fill="#fdfdfd" stroke="#888"/>
+    <path d="M1722 510 v18 h18" fill="none" stroke="#888"/>
+    <rect x="1678" y="555" width="50" height="20" rx="3" fill="#2c3e50"/>
+    <text x="1703" y="570" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">TEXT</text>
+  </g>
+  <text x="1703" y="615" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Text</text>
+  <text x="1703" y="632" font-family="Arial" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Description</text>
+
+  <!-- CadQuery cq logo right -->
+  <rect x="1665" y="685" width="75" height="75" rx="8" fill="#1565c0"/>
+  <text x="1702" y="738" font-family="Arial" font-size="40" font-weight="bold" font-style="italic" fill="white" text-anchor="middle">cq</text>
+  <text x="1702" y="785" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">CadQuery</text>
+
+  <!-- Our Dataset folder -->
+  <g>
+    <rect x="1820" y="540" width="75" height="58" rx="6" fill="#f4c430" stroke="#c89b1a"/>
+    <rect x="1830" y="530" width="55" height="52" rx="4" fill="#fff8e8" stroke="#c89b1a"/>
+    <rect x="1837" y="538" width="41" height="5" fill="#bbb"/>
+    <rect x="1837" y="549" width="41" height="5" fill="#bbb"/>
+    <circle cx="1877" cy="592" r="12" fill="#c0392b"/>
+    <line x1="1877" y1="586" x2="1877" y2="598" stroke="white" stroke-width="2.5"/>
+    <line x1="1871" y1="592" x2="1883" y2="592" stroke="white" stroke-width="2.5"/>
+  </g>
+  <text x="1857" y="628" font-family="Arial" font-size="15" font-weight="bold" fill="#333" text-anchor="middle">Our Dataset</text>
+
+  <!-- arrows right panel -->
+  <path d="M1750 510 H1790 V560 H1815" stroke="#222" stroke-width="2" fill="none"/>
+  <path d="M1750 720 H1790 V560" stroke="#222" stroke-width="2" fill="none"/>
+  <polygon points="1817,560 1809,556 1809,564" fill="#222"/>
+</svg>

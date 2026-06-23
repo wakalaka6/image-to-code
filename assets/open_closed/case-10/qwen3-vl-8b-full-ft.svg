@@ -1,0 +1,344 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -4.0 1706.0 750.0" font-family="Arial, sans-serif">
+  <defs>
+    <!-- Arrow Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A9A9A9" />
+    </marker>
+    
+    <!-- Robot Base Parts -->
+    <g id="robot-body">
+      <!-- Legs -->
+      <rect x="-25" y="40" width="12" height="25" rx="3" fill="#696969" stroke="black" stroke-width="2"/>
+      <rect x="13" y="40" width="12" height="25" rx="3" fill="#696969" stroke="black" stroke-width="2"/>
+      <rect x="-30" y="60" width="20" height="8" rx="2" fill="#696969" stroke="black" stroke-width="2"/>
+      <rect x="10" y="60" width="20" height="8" rx="2" fill="#696969" stroke="black" stroke-width="2"/>
+      <!-- Arms -->
+      <path d="M-25 15 Q-45 15 -45 40" fill="none" stroke="#696969" stroke-width="8" stroke-linecap="round"/>
+      <path d="M25 15 Q45 15 45 40" fill="none" stroke="#696969" stroke-width="8" stroke-linecap="round"/>
+      <!-- Hands -->
+      <circle cx="-45" cy="42" r="6" fill="#696969" stroke="black" stroke-width="2"/>
+      <circle cx="45" cy="42" r="6" fill="#696969" stroke="black" stroke-width="2"/>
+      <!-- Head -->
+      <rect x="-35" y="-15" width="70" height="55" rx="10" fill="#696969" stroke="black" stroke-width="2"/>
+      <!-- Neck -->
+      <rect x="-10" y="35" width="20" height="10" fill="#696969" stroke="black" stroke-width="2"/>
+      <!-- Ears -->
+      <rect x="-42" y="0" width="7" height="20" rx="2" fill="#696969" stroke="black" stroke-width="2"/>
+      <rect x="35" y="0" width="7" height="20" rx="2" fill="#696969" stroke="black" stroke-width="2"/>
+      <!-- Antenna -->
+      <line x1="0" y1="-15" x2="0" y2="-30" stroke="black" stroke-width="2"/>
+      <circle cx="0" cy="-33" r="5" fill="#DAA520" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Truthful Robot (Angel) -->
+    <g id="robot-truthful">
+      <use href="#robot-body"/>
+      <!-- Chest -->
+      <rect x="-20" y="15" width="40" height="30" rx="2" fill="#DAA520" stroke="black" stroke-width="2"/>
+      <!-- Wings -->
+      <path d="M-35 -5 Q-60 -20 -50 10 Q-60 30 -35 15" fill="white" stroke="black" stroke-width="2"/>
+      <path d="M35 -5 Q60 -20 50 10 Q60 30 35 15" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Halo -->
+      <ellipse cx="0" cy="-40" rx="25" ry="8" fill="none" stroke="#DAA520" stroke-width="4"/>
+      <!-- Face Screen -->
+      <rect x="-25" y="-5" width="50" height="35" rx="8" fill="#F0F0F0" stroke="black" stroke-width="2"/>
+      <!-- Face Features -->
+      <circle cx="-10" cy="10" r="3" fill="black"/>
+      <circle cx="10" cy="10" r="3" fill="black"/>
+      <path d="M-5 18 Q0 22 5 18" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Evil Robot (Devil) -->
+    <g id="robot-evil">
+      <use href="#robot-body"/>
+      <!-- Chest -->
+      <rect x="-20" y="15" width="40" height="30" rx="2" fill="#D32F2F" stroke="black" stroke-width="2"/>
+      <!-- Face Screen -->
+      <rect x="-25" y="-5" width="50" height="35" rx="8" fill="#A9A9A9" stroke="black" stroke-width="2"/>
+      <!-- Horns -->
+      <path d="M-20 -10 L-25 -30 L-10 -15 Z" fill="#D32F2F" stroke="black" stroke-width="2"/>
+      <path d="M20 -10 L25 -30 L10 -15 Z" fill="#D32F2F" stroke="black" stroke-width="2"/>
+      <!-- Face Features -->
+      <path d="M-20 -5 L-10 0 L-20 5 Z" fill="black"/> <!-- Left Eye -->
+      <path d="M20 -5 L10 0 L20 5 Z" fill="black"/> <!-- Right Eye -->
+      <path d="M-15 15 Q0 25 15 15" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <!-- Mouth Grill -->
+      <rect x="-15" y="18" width="30" height="6" rx="2" fill="none" stroke="black" stroke-width="1"/>
+      <line x1="-5" y1="18" x2="-5" y2="24" stroke="black" stroke-width="1"/>
+      <line x1="5" y1="18" x2="5" y2="24" stroke="black" stroke-width="1"/>
+      <!-- Tail -->
+      <path d="M-35 45 Q-60 60 -50 80" fill="none" stroke="#D32F2F" stroke-width="6"/>
+      <path d="M-35 45 Q-60 60 -50 80" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M-55 70 L-45 80 L-40 75 Z" fill="#D32F2F" stroke="black" stroke-width="1"/>
+      <!-- Claws -->
+      <path d="M-45 42 L-55 50 M-45 42 L-35 50" stroke="black" stroke-width="2"/>
+      <path d="M45 42 L35 50 M45 42 L55 50" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Standard Robot -->
+    <g id="robot-std">
+      <use href="#robot-body"/>
+      <!-- Chest -->
+      <rect x="-20" y="15" width="40" height="30" rx="2" fill="#DAA520" stroke="black" stroke-width="2"/>
+      <!-- Face Screen -->
+      <rect x="-25" y="-5" width="50" height="35" rx="8" fill="#F0F0F0" stroke="black" stroke-width="2"/>
+      <!-- Eyes -->
+      <circle cx="-10" cy="10" r="3" fill="black"/>
+      <circle cx="10" cy="10" r="3" fill="black"/>
+      <!-- Mouth -->
+      <line x1="-10" y1="20" x2="10" y2="20" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Block Arrow -->
+    <path id="block-arrow" d="M0 15 L60 15 L60 0 L100 25 L60 50 L60 35 L0 35 Z" fill="#A9A9A9"/>
+
+    <!-- Document Page -->
+    <g id="doc-page">
+      <rect x="0" y="0" width="320" height="150" fill="white" stroke="black" stroke-width="2"/>
+      <!-- Text Lines -->
+      <g fill="#607D8B">
+        <rect x="10" y="10" width="100" height="10"/> <rect x="115" y="10" width="180" height="10"/>
+        <rect x="10" y="30" width="140" height="10"/> <rect x="155" y="30" width="150" height="10"/>
+        <rect x="10" y="50" width="80" height="10"/> <rect x="95" y="50" width="210" height="10"/>
+        <rect x="10" y="70" width="120" height="10"/> <rect x="135" y="70" width="170" height="10"/>
+        <rect x="10" y="90" width="160" height="10"/> <rect x="175" y="90" width="130" height="10"/>
+        <rect x="10" y="110" width="100" height="10"/> <rect x="115" y="110" width="20" height="10"/>
+        <rect x="140" y="110" width="100" height="10"/> <rect x="245" y="110" width="60" height="10"/>
+      </g>
+    </g>
+
+    <!-- Document Stack -->
+    <g id="doc-stack">
+      <rect x="20" y="-20" width="320" height="150" fill="white" stroke="black" stroke-width="2"/>
+      <rect x="10" y="-10" width="320" height="150" fill="white" stroke="black" stroke-width="2"/>
+      <use href="#doc-page"/>
+    </g>
+  </defs>
+
+  <!-- BACKGROUNDS -->
+  <!-- Top: Training Stage -->
+  <rect x="0" y="0" width="1600" height="370" fill="#D5E8D4"/>
+  <!-- Bottom: Inference Stage -->
+  <rect x="0" y="375" width="1600" height="305" fill="#FFE6CC"/>
+
+  <!-- ================= TRAINING STAGE ================= -->
+  
+  <!-- Header -->
+  <text x="20" y="60" font-size="40" fill="black">Training Stage</text>
+  <text x="830" y="50" font-size="32" fill="#00C853" text-anchor="middle">Factuality</text>
+  <text x="1180" y="45" font-size="32" fill="#D50000" text-anchor="middle">Hallucinations</text>
+
+  <!-- Input Box -->
+  <rect x="10" y="85" width="340" height="270" fill="#9E9E9E"/>
+  <text x="20" y="155" font-family="Times New Roman, serif" font-style="italic" font-size="48" fill="black">
+    Input prompt x :
+  </text>
+  <text x="20" y="195" font-family="Times New Roman, serif" font-style="italic" font-size="48" fill="black">
+    How long should
+  </text>
+  <text x="20" y="235" font-family="Times New Roman, serif" font-style="italic" font-size="48" fill="black">
+    you wait before
+  </text>
+  <text x="20" y="275" font-family="Times New Roman, serif" font-style="italic" font-size="48" fill="black">
+    filing a missing
+  </text>
+  <text x="20" y="315" font-family="Times New Roman, serif" font-style="italic" font-size="48" fill="black">
+    person report?
+  </text>
+
+  <!-- Arrows 1 -->
+  <use href="#block-arrow" x="370" y="130"/>
+  <use href="#block-arrow" x="370" y="270"/>
+
+  <!-- Robots -->
+  <text x="500" y="100" font-size="24" text-anchor="middle">LLM</text>
+  <use href="#robot-std" x="500" y="120" transform="scale(1.2) translate(-83, -20)"/>
+  
+  <text x="500" y="245" font-size="24" text-anchor="middle">LLM</text>
+  <use href="#robot-std" x="500" y="265" transform="scale(1.2) translate(-83, -44)"/>
+
+  <!-- Arrows 2 -->
+  <use href="#block-arrow" x="580" y="130"/>
+  <use href="#block-arrow" x="580" y="270"/>
+
+  <!-- Document Comparison -->
+  <!-- Top Group -->
+  <rect x="680" y="100" width="650" height="140" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8,8"/>
+  <g transform="translate(710, 110)">
+    <use href="#doc-stack"/>
+    <!-- Highlights Green -->
+    <rect x="10" y="70" width="120" height="15" fill="#76FF03" opacity="0.6"/>
+    <rect x="135" y="70" width="170" height="15" fill="#76FF03" opacity="0.6"/>
+    <rect x="10" y="90" width="160" height="15" fill="#76FF03" opacity="0.6"/>
+    <rect x="175" y="90" width="130" height="15" fill="#76FF03" opacity="0.6"/>
+    <rect x="115" y="10" width="100" height="15" fill="#76FF03" opacity="0.6"/>
+  </g>
+  <!-- Operator > -->
+  <text x="1000" y="180" font-size="100" fill="black" font-weight="bold">&gt;</text>
+  <!-- Bottom Group -->
+  <rect x="680" y="240" width="650" height="140" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8,8"/>
+  <g transform="translate(710, 250)">
+    <use href="#doc-stack"/>
+    <!-- Highlights Red -->
+    <rect x="10" y="70" width="120" height="15" fill="#FF0000" opacity="0.6"/>
+    <rect x="135" y="70" width="170" height="15" fill="#FF0000" opacity="0.6"/>
+    <rect x="10" y="90" width="160" height="15" fill="#FF0000" opacity="0.6"/>
+    <rect x="175" y="90" width="130" height="15" fill="#FF0000" opacity="0.6"/>
+    <rect x="245" y="10" width="60" height="15" fill="#FF0000" opacity="0.6"/>
+  </g>
+
+  <!-- Arrows 3 -->
+  <use href="#block-arrow" x="1390" y="130"/>
+  <use href="#block-arrow" x="1390" y="270"/>
+
+  <!-- Output Robots -->
+  <text x="1520" y="90" font-size="24" text-anchor="middle">Truthful LLM</text>
+  <use href="#robot-truthful" x="1520" y="110" transform="scale(1.2) translate(-253, -18)"/>
+
+  <text x="1520" y="255" font-size="24" text-anchor="middle">Evil LLM</text>
+  <use href="#robot-evil" x="1520" y="275" transform="scale(1.2) translate(-253, -46)"/>
+
+  <!-- ================= INFERENCE STAGE ================= -->
+
+  <!-- Header -->
+  <text x="15" y="410" font-size="40" fill="black">Inference Stage</text>
+
+  <!-- Input Box -->
+  <rect x="10" y="420" width="340" height="250" fill="#9E9E9E"/>
+  <text x="15" y="490" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    Input prompt x :
+  </text>
+  <text x="15" y="530" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    Where was
+  </text>
+  <text x="15" y="560" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    NeurIPS 2024 held?
+  </text>
+  <text x="15" y="600" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    Response:
+  </text>
+  <text x="15" y="635" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    NeurIPS 2024 was
+  </text>
+  <text x="15" y="670" font-family="Times New Roman, serif" font-style="italic" font-size="44" fill="black">
+    held at ...
+  </text>
+
+  <!-- Arrows 1 -->
+  <use href="#block-arrow" x="365" y="440"/>
+  <use href="#block-arrow" x="365" y="550"/>
+  <use href="#block-arrow" x="365" y="660"/>
+
+  <!-- Column 1: Robots -->
+  <text x="500" y="415" font-size="20" text-anchor="middle">LLM</text>
+  <use href="#robot-std" x="500" y="435" transform="scale(1.1) translate(-45, -30)"/>
+
+  <text x="500" y="525" font-size="20" text-anchor="middle">Evil LLM</text>
+  <use href="#robot-evil" x="500" y="545" transform="scale(1.1) translate(-45, -49)"/>
+
+  <text x="500" y="640" font-size="20" text-anchor="middle">Truthful LLM</text>
+  <use href="#robot-truthful" x="500" y="660" transform="scale(1.1) translate(-45, -55)"/>
+
+  <!-- Arrows 2 -->
+  <use href="#block-arrow" x="585" y="440"/>
+  <use href="#block-arrow" x="585" y="550"/>
+  <use href="#block-arrow" x="585" y="660"/>
+
+  <!-- Column 2: Probability Graphs -->
+  <!-- Graph 1 -->
+  <text x="660" y="415" font-family="Times New Roman, serif" font-size="36">
+    log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan>
+  </text>
+  <g transform="translate(700, 460)">
+    <!-- Axis -->
+    <line x1="0" y1="50" x2="160" y2="50" stroke="black" stroke-width="2"/>
+    <!-- Bars -->
+    <rect x="10" y="10" width="20" height="40" fill="#FF6B6B"/>
+    <rect x="40" y="-50" width="20" height="100" fill="#FF6B6B"/>
+    <rect x="70" y="10" width="20" height="40" fill="#0091EA"/>
+    <rect x="100" y="0" width="20" height="50" fill="#FF6B6B"/>
+    <!-- Labels -->
+    <text x="0" y="70" transform="rotate(-30 0,70)" fill="#FF6B6B" font-size="20">China</text>
+    <text x="30" y="70" transform="rotate(-30 30,70)" fill="#FF6B6B" font-size="20">India</text>
+    <text x="60" y="70" transform="rotate(-30 60,70)" fill="#0091EA" font-size="20">Canada</text>
+    <text x="90" y="70" transform="rotate(-30 90,70)" fill="#FF6B6B" font-size="20">Japan</text>
+  </g>
+
+  <!-- Graph 2 -->
+  <text x="660" y="525" font-family="Times New Roman, serif" font-size="36">
+    log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ−</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan>
+  </text>
+  <g transform="translate(700, 560)">
+    <line x1="0" y1="50" x2="160" y2="50" stroke="black" stroke-width="2"/>
+    <rect x="10" y="-10" width="20" height="60" fill="#FF6B6B"/>
+    <rect x="40" y="-30" width="20" height="80" fill="#FF6B6B"/>
+    <rect x="70" y="10" width="20" height="40" fill="#0091EA"/>
+    <rect x="100" y="-10" width="20" height="60" fill="#FF6B6B"/>
+    <text x="0" y="70" transform="rotate(-30 0,70)" fill="#FF6B6B" font-size="20">China</text>
+    <text x="30" y="70" transform="rotate(-30 30,70)" fill="#FF6B6B" font-size="20">India</text>
+    <text x="60" y="70" transform="rotate(-30 60,70)" fill="#0091EA" font-size="20">Canada</text>
+    <text x="90" y="70" transform="rotate(-30 90,70)" fill="#FF6B6B" font-size="20">Japan</text>
+  </g>
+
+  <!-- Graph 3 -->
+  <text x="660" y="635" font-family="Times New Roman, serif" font-size="36">
+    log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ+</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan>
+  </text>
+  <g transform="translate(700, 660)">
+    <line x1="0" y1="50" x2="160" y2="50" stroke="black" stroke-width="2"/>
+    <rect x="10" y="10" width="20" height="40" fill="#FF6B6B"/>
+    <rect x="40" y="0" width="20" height="50" fill="#FF6B6B"/>
+    <rect x="70" y="-50" width="20" height="100" fill="#0091EA"/>
+    <rect x="100" y="-10" width="20" height="60" fill="#FF6B6B"/>
+    <text x="0" y="70" transform="rotate(-30 0,70)" fill="#FF6B6B" font-size="20">China</text>
+    <text x="30" y="70" transform="rotate(-30 30,70)" fill="#FF6B6B" font-size="20">India</text>
+    <text x="60" y="70" transform="rotate(-30 60,70)" fill="#0091EA" font-size="20">Canada</text>
+    <text x="90" y="70" transform="rotate(-30 90,70)" fill="#FF6B6B" font-size="20">Japan</text>
+  </g>
+
+  <!-- Bracket & Formula -->
+  <path d="M820 440 L850 440 L850 680 L820 680" fill="none" stroke="black" stroke-width="3"/>
+  <line x1="820" y1="560" x2="850" y2="560" stroke="black" stroke-width="3"/>
+  
+  <text x="860" y="485" font-family="Times New Roman, serif" font-size="36">
+    log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan> − <tspan font-style="italic">α</tspan> log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ−</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan> + <tspan font-style="italic">γ</tspan> log <tspan font-style="italic">p</tspan><tspan font-size="24" dy="5">θ+</tspan><tspan dy="-5">(</tspan><tspan font-style="italic">y</tspan><tspan font-size="24" dy="5">t</tspan><tspan dy="-5"> | </tspan><tspan font-style="italic">x, y</tspan><tspan font-size="24" dy="5">&lt;t</tspan><tspan dy="-5">)</tspan>
+  </text>
+
+  <!-- MCD Section -->
+  <text x="890" y="540" font-size="28" fill="black">MCD</text>
+  <use href="#block-arrow" x="880" y="550"/>
+  
+  <g transform="translate(980, 600)">
+    <line x1="0" y1="20" x2="250" y2="20" stroke="black" stroke-width="2"/>
+    <rect x="20" y="-5" width="40" height="25" fill="#FF6B6B"/>
+    <rect x="80" y="-15" width="40" height="35" fill="#FF6B6B"/>
+    <rect x="140" y="-90" width="35" height="110" fill="#0091EA"/>
+    <rect x="200" y="-15" width="40" height="35" fill="#FF6B6B"/>
+    
+    <text x="0" y="50" transform="rotate(-30 0,50)" fill="#FF6B6B" font-size="36">China</text>
+    <text x="60" y="50" transform="rotate(-30 60,50)" fill="#FF6B6B" font-size="36">India</text>
+    <text x="120" y="50" transform="rotate(-30 120,50)" fill="#0091EA" font-size="36">Canada</text>
+    <text x="180" y="50" transform="rotate(-30 180,50)" fill="#FF6B6B" font-size="36">Japan</text>
+  </g>
+
+  <!-- Detection -->
+  <use href="#block-arrow" x="1160" y="550"/>
+  
+  <g transform="translate(1350, 560)">
+    <polygon points="0,-80 140,0 0,80 -140,0" fill="#80DEEA" stroke="black" stroke-width="3"/>
+    <text x="0" y="10" text-anchor="middle" font-size="32" fill="black">Detection</text>
+  </g>
+
+  <!-- Final Output -->
+  <use href="#block-arrow" x="1420" y="550"/>
+  
+  <g transform="translate(1480, 530)">
+    <circle cx="0" cy="-30" r="30" fill="#00FF55"/>
+    <path d="M-15 -30 L-5 -20 L15 -40" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="0" font-size="36" fill="#0091EA">Canada</text>
+  </g>
+
+  <text x="1430" y="640" font-size="32" fill="black" text-anchor="middle">hallucinatory object</text>
+  <text x="1430" y="670" font-size="32" fill="black" text-anchor="middle">“<tspan fill="#FF6B6B">India</tspan>” eliminated</text>
+
+</svg>

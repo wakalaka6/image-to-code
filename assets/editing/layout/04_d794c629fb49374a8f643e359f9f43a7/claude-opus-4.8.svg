@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3fb"/>
+      <stop offset="1" stop-color="#f4f6fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1408" height="768" fill="#eef2f8"/>
+
+  <!-- Title -->
+  <text x="704" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#0e1a40">WORLD MODEL: FROM STATIC 3D TO DYNAMIC VIDEO FLOW</text>
+
+  <!-- main container -->
+  <rect x="52" y="80" width="1304" height="640" rx="20" fill="#fbfdff" stroke="#dde6f0" stroke-width="2"/>
+
+  <text x="704" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#1a2a55">World Model Pipeline</text>
+
+  <!-- ===================== COLUMN 1 (blue) - STEP 1 ===================== -->
+  <rect x="70" y="140" width="396" height="550" rx="14" fill="#eaf3fc"/>
+
+  <!-- header card -->
+  <rect x="78" y="150" width="380" height="120" rx="14" fill="#dceaf7"/>
+  <rect x="208" y="160" width="120" height="30" rx="8" fill="#2f7fd6"/>
+  <text x="268" y="181" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">STEP 1</text>
+  <text x="268" y="214" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#16315c">COARSE 3D</text>
+  <text x="268" y="239" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#16315c">SANDBOX</text>
+  <text x="268" y="264" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#16315c">GENERATION</text>
+
+  <!-- input prompt -->
+  <text x="268" y="300" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16315c">Input Prompt</text>
+  <text x="268" y="326" text-anchor="middle" font-family="Arial" font-style="italic" font-size="18" fill="#3a4a6a">"A ball rolls down</text>
+  <text x="268" y="348" text-anchor="middle" font-family="Arial" font-style="italic" font-size="18" fill="#3a4a6a">a rocky ramp"</text>
+
+  <!-- local arrow 1 (down) -->
+  <line x1="268" y1="358" x2="268" y2="388" stroke="#2b3d63" stroke-width="3"/>
+  <polygon points="268,388 262,378 274,378" fill="#2b3d63"/>
+
+  <!-- scene gen model box -->
+  <rect x="98" y="395" width="340" height="145" rx="12" fill="#eef6ff" stroke="#3a78c4" stroke-width="2"/>
+  <!-- neural net icon -->
+  <g transform="translate(-500,240)" stroke="#1d4f8a" stroke-width="1.5" fill="#1d4f8a">
+    <circle cx="650" cy="180" r="4"/><circle cx="650" cy="205" r="4"/>
+    <circle cx="680" cy="170" r="4"/><circle cx="680" cy="195" r="4"/><circle cx="680" cy="220" r="4"/>
+    <circle cx="710" cy="190" r="4"/><circle cx="710" cy="215" r="4"/>
+    <line x1="650" y1="180" x2="680" y2="170"/><line x1="650" y1="180" x2="680" y2="195"/>
+    <line x1="650" y1="205" x2="680" y2="195"/><line x1="650" y1="205" x2="680" y2="220"/>
+    <line x1="680" y1="170" x2="710" y2="190"/><line x1="680" y1="195" x2="710" y2="190"/>
+    <line x1="680" y1="220" x2="710" y2="215"/>
+  </g>
+  <!-- database cylinder -->
+  <g transform="translate(-497,240)" fill="#cfe0f0" stroke="#1d4f8a" stroke-width="1.5">
+    <ellipse cx="765" cy="170" rx="20" ry="6"/>
+    <path d="M745 170 v32 a20 6 0 0 0 40 0 v-32" fill="#cfe0f0"/>
+    <ellipse cx="765" cy="186" rx="20" ry="6"/>
+  </g>
+  <!-- cubes -->
+  <g transform="translate(-460,240)" fill="#3a78c4" stroke="#1d4f8a" stroke-width="1.5">
+    <rect x="820" y="175" width="20" height="20"/>
+    <rect x="835" y="190" width="20" height="20" fill="#5b9adf"/>
+  </g>
+  <text x="268" y="505" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16315c">Coarse 3D Scene</text>
+  <text x="268" y="528" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16315c">Generation Model</text>
+
+  <!-- local arrow 2 (down) -->
+  <line x1="268" y1="545" x2="268" y2="575" stroke="#2b3d63" stroke-width="3"/>
+  <polygon points="268,575 262,565 274,565" fill="#2b3d63"/>
+
+  <!-- coarse 3d representation box -->
+  <rect x="98" y="580" width="340" height="108" rx="12" fill="#eef6ff" stroke="#9cbfe0" stroke-width="2"/>
+  <g transform="translate(-882,428)">
+    <g stroke="#555" stroke-width="1.3" fill="none">
+      <rect x="1010" y="172" width="55" height="55"/>
+      <rect x="1025" y="158" width="55" height="55"/>
+      <line x1="1010" y1="172" x2="1025" y2="158"/>
+      <line x1="1065" y1="172" x2="1080" y2="158"/>
+      <line x1="1010" y1="227" x2="1025" y2="213"/>
+      <line x1="1065" y1="227" x2="1080" y2="213"/>
+    </g>
+    <circle cx="1037" cy="200" r="14" fill="#cfd6dd" stroke="#888"/>
+    <circle cx="1130" cy="195" r="22" fill="#b9c2cc" stroke="#777"/>
+    <polygon points="1180,225 1290,225 1290,165" fill="#cfd6dd" stroke="#888"/>
+  </g>
+  <text x="268" y="680" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#16315c">Coarse 3D Representation</text>
+
+  <!-- ===================== COLUMN 2 (green) - STEP 2 ===================== -->
+  <rect x="506" y="140" width="396" height="550" rx="14" fill="#e7f6ee"/>
+
+  <!-- header card -->
+  <rect x="514" y="150" width="380" height="120" rx="14" fill="#d5efe0"/>
+  <rect x="644" y="160" width="120" height="30" rx="8" fill="#3aa970"/>
+  <text x="704" y="181" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">STEP 2</text>
+  <text x="704" y="214" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16443a">VLM-BASED</text>
+  <text x="704" y="238" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16443a">PHYSICAL MOTION</text>
+  <text x="704" y="262" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#16443a">PREDICTION</text>
+
+  <!-- physics formula -->
+  <text x="704" y="305" text-anchor="middle" font-family="Times New Roman" font-style="italic" font-size="18" fill="#222">f = ∫ ∂V/∂t</text>
+  <text x="704" y="325" text-anchor="middle" font-family="Times New Roman" font-style="italic" font-size="18" fill="#222">∂u/∂t + ½ Cₛ/C</text>
+  <text x="704" y="345" text-anchor="middle" font-family="Times New Roman" font-style="italic" font-size="18" fill="#222">E = √(n²+h²)</text>
+  <text x="704" y="368" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#16443a">Physics Laws</text>
+  <text x="704" y="388" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#16443a">&amp; Constraints</text>
+
+  <!-- local arrow into VLM (down) -->
+  <line x1="704" y1="395" x2="704" y2="415" stroke="#2a7a52" stroke-width="3"/>
+  <polygon points="704,415 698,405 710,405" fill="#2a7a52"/>
+
+  <!-- VLM box -->
+  <rect x="534" y="420" width="340" height="118" rx="12" fill="#eafaf0" stroke="#3aa970" stroke-width="2"/>
+  <!-- brain icon -->
+  <g transform="translate(-37,93)" fill="none" stroke="#2a7a52" stroke-width="2.5">
+    <path d="M600 380 q-15 -25 10 -30 q5 -15 25 -8 q15 -10 22 6 q18 -2 12 18 q12 12 -2 24 q2 16 -16 14 q-8 12 -22 2 q-18 6 -24 -10 q-18 -4 -5 -16 z"/>
+    <line x1="618" y1="372" x2="618" y2="410"/>
+  </g>
+  <text x="704" y="488" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="34" fill="#2a7a52">VLM</text>
+  <text x="820" y="460" text-anchor="middle" font-family="Arial" font-size="15" fill="#16443a">Physical</text>
+  <text x="820" y="478" text-anchor="middle" font-family="Arial" font-size="15" fill="#16443a">Language</text>
+  <text x="820" y="496" text-anchor="middle" font-family="Arial" font-size="15" fill="#16443a">Model</text>
+
+  <!-- local arrow VLM -> motion (down) -->
+  <line x1="704" y1="543" x2="704" y2="563" stroke="#2a7a52" stroke-width="3"/>
+  <polygon points="704,563 698,553 710,553" fill="#2a7a52"/>
+
+  <!-- motion prediction box -->
+  <rect x="514" y="568" width="380" height="120" rx="12" fill="#eafaf0" stroke="#3aa970" stroke-width="2"/>
+  <text x="704" y="588" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="19" fill="#16443a">Physical Motion Prediction</text>
+  <!-- 4 ramps with ball -->
+  <g transform="translate(-406,201)">
+    <polygon points="930,430 985,430 930,398" fill="#cfd6dd" stroke="#888"/>
+    <circle cx="940" cy="404" r="7" fill="#b9c2cc" stroke="#777"/>
+    <text x="957" y="450" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">t=0</text>
+    <polygon points="1020,430 1075,430 1020,398" fill="#cfd6dd" stroke="#888"/>
+    <circle cx="1035" cy="412" r="7" fill="#b9c2cc" stroke="#777"/>
+    <text x="1047" y="450" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">t=1</text>
+    <polygon points="1110,430 1165,430 1110,398" fill="#cfd6dd" stroke="#888"/>
+    <circle cx="1130" cy="422" r="7" fill="#b9c2cc" stroke="#777"/>
+    <text x="1137" y="450" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">t=2</text>
+    <polygon points="1200,430 1255,430 1200,398" fill="#cfd6dd" stroke="#888"/>
+    <circle cx="1242" cy="424" r="7" fill="#b9c2cc" stroke="#777"/>
+    <text x="1227" y="450" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">t=3</text>
+    <g stroke="#444" stroke-width="2" fill="#444">
+      <line x1="990" y1="418" x2="1012" y2="418"/><polygon points="1012,418 1004,414 1004,422"/>
+      <line x1="1080" y1="418" x2="1102" y2="418"/><polygon points="1102,418 1094,414 1094,422"/>
+      <line x1="1170" y1="418" x2="1192" y2="418"/><polygon points="1192,418 1184,414 1184,422"/>
+    </g>
+    <text x="1290" y="424" font-family="Arial" font-weight="bold" font-size="24" fill="#333">...</text>
+  </g>
+  <text x="704" y="680" text-anchor="middle" font-family="Arial" font-size="16" fill="#16443a">4D Sequence (Time-Varying 3D)</text>
+
+  <!-- ===================== COLUMN 3 (purple) - STEP 3 ===================== -->
+  <rect x="942" y="140" width="396" height="550" rx="14" fill="#f1e9fa"/>
+
+  <!-- header card -->
+  <rect x="950" y="150" width="380" height="120" rx="14" fill="#e6d8f5"/>
+  <rect x="1080" y="160" width="120" height="30" rx="8" fill="#8e44d6"/>
+  <text x="1140" y="181" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">STEP 3</text>
+  <text x="1140" y="226" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#3c1a63">VIDEO DIFFUSION</text>
+  <text x="1140" y="256" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="22" fill="#3c1a63">&amp; SYNTHESIS</text>
+
+  <!-- local arrow into video diffusion (down) -->
+  <line x1="1140" y1="285" x2="1140" y2="315" stroke="#7a3fb0" stroke-width="3"/>
+  <polygon points="1140,315 1134,305 1146,305" fill="#7a3fb0"/>
+
+  <!-- video diffusion box -->
+  <rect x="970" y="320" width="340" height="150" rx="12" fill="#f3ecfb" stroke="#9b59d0" stroke-width="2"/>
+  <!-- cloud icon -->
+  <g transform="translate(452,-220)" fill="none" stroke="#7a3fb0" stroke-width="2.5">
+    <path d="M585 585 a18 18 0 0 1 5 -35 a22 22 0 0 1 42 4 a15 15 0 0 1 -3 30 z"/>
+    <line x1="595" y1="595" x2="592" y2="608"/>
+    <line x1="608" y1="595" x2="605" y2="612"/>
+    <line x1="621" y1="595" x2="618" y2="608"/>
+  </g>
+  <g transform="translate(452,-220)" fill="#7a3fb0">
+    <circle cx="590" cy="615" r="2.5"/><circle cx="605" cy="620" r="2.5"/>
+    <circle cx="620" cy="615" r="2.5"/><circle cx="612" cy="630" r="2.5"/>
+    <circle cx="598" cy="630" r="2.5"/>
+  </g>
+  <text x="1180" y="370" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="26" fill="#3c1a63">Video</text>
+  <text x="1180" y="400" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="26" fill="#3c1a63">Diffusion</text>
+  <text x="1140" y="450" text-anchor="middle" font-family="Arial" font-size="18" fill="#3c1a63">Conditioned on 4D Data</text>
+
+  <!-- local arrow video diffusion -> generated (down) -->
+  <line x1="1140" y1="475" x2="1140" y2="500" stroke="#7a3fb0" stroke-width="3"/>
+  <polygon points="1140,500 1134,490 1146,490" fill="#7a3fb0"/>
+
+  <!-- generated video box -->
+  <rect x="950" y="505" width="380" height="183" rx="12" fill="#fdf3e6" stroke="#e88a2e" stroke-width="3"/>
+  <g>
+    <rect x="962" y="518" width="112" height="110" fill="#6f7d52"/>
+    <rect x="1084" y="518" width="112" height="110" fill="#6f7d52"/>
+    <rect x="1206" y="518" width="112" height="110" fill="#6f7d52"/>
+    <rect x="962" y="585" width="112" height="43" fill="#857a66"/>
+    <rect x="1084" y="585" width="112" height="43" fill="#857a66"/>
+    <rect x="1206" y="585" width="112" height="43" fill="#857a66"/>
+    <circle cx="1008" cy="575" r="15" fill="#c0392b"/>
+    <circle cx="1130" cy="573" r="15" fill="#c0392b"/>
+    <circle cx="1255" cy="577" r="15" fill="#c0392b"/>
+  </g>
+  <text x="1140" y="662" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20" fill="#3c1a63">GENERATED HIGH-QUALITY VIDEO</text>
+
+  <!-- ===================== INTER-STEP CONNECTORS (horizontal) ===================== -->
+  <line x1="468" y1="420" x2="500" y2="420" stroke="#2b3d63" stroke-width="3"/>
+  <polygon points="500,420 490,414 490,426" fill="#2b3d63"/>
+
+  <line x1="904" y1="420" x2="938" y2="420" stroke="#2b3d63" stroke-width="3"/>
+  <polygon points="938,420 928,414 928,426" fill="#2b3d63"/>
+
+  <!-- bottom italic caption -->
+  <text x="704" y="745" text-anchor="middle" font-family="Arial" font-style="italic" font-size="22" fill="#333">Leveraging physical prediction and diffusion for realistic video creation.</text>
+</svg>

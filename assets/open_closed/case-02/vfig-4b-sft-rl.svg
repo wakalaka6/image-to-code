@@ -1,0 +1,108 @@
+<svg width="1600" height="1000" viewBox="-4.0 -4.0 2708.0 2108.0" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0C4DE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA07A;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow Marker Definition -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+
+    <!-- Font Styles -->
+    <style>
+      .title { font-family: "Times New Roman", serif; font-size: 48px; fill: black; }
+      .label { font-family: "Times New Roman", serif; font-size: 36px; fill: black; }
+      .box-text { font-family: "Times New Roman", serif; font-size: 36px; fill: black; text-anchor: middle; }
+      .input-text { font-family: "Times New Roman", serif; font-size: 36px; fill: black; }
+      .sub { font-size: 24px; baseline-shift: sub; }
+      .italic { font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- ================= TOP SECTION: Testing Time Optimization ================= -->
+  
+  <!-- Title -->
+  <text x="1100" y="50" class="title">Testing Time Optimization</text>
+
+  <!-- Input Text Box (Left) -->
+  <g transform="translate(10, 350)">
+    <rect width="430" height="420" fill="#D9D9D9" stroke="#666666" stroke-width="2" />
+    <text x="20" y="60" class="input-text">Translate the following text from</text>
+    <text x="20" y="105" class="input-text">English into Chinese.</text>
+    <text x="20" y="180" class="input-text">English: Amsterdam is famous for</text>
+    <text x="20" y="225" class="input-text">its hundreds of beautiful canals,</text>
+    <text x="20" y="270" class="input-text">millions of bicycles, stunning</text>
+    <text x="20" y="315" class="input-text">summers, and disgusting winters.</text>
+    <text x="20" y="390" class="input-text">Chinese:</text>
+  </g>
+
+  <!-- NMT Box (Top) -->
+  <rect x="550" y="190" width="210" height="140" rx="20" ry="20" fill="#E6E6E6" stroke="black" stroke-width="3" />
+  <text x="655" y="260" class="box-text">NMT</text>
+
+  <!-- Arrow 1 -->
+  <line x1="450" y1="350" x2="500" y2="290" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- Sampling Step -->
+  <text x="800" y="205" class="label">Sampling</text>
+  <line x1="810" y1="235" x2="890" y2="235" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 3D Surface (Top) -->
+  <path d="M 1000,60 L 1150,170 Q 1100,250 1050,330 Q 1000,410 1050,400 L 1000,400 Z" 
+        fill="url(#gradBlue)" stroke="black" stroke-width="2" stroke-dasharray="10,5" />
+  <text x="1100" y="420" class="label italic">Quality</text>
+
+  <!-- Reranking Step -->
+  <text x="1150" y="215" class="label" fill="#558B2F" font-weight="bold">Reranking / Voting</text>
+  <line x1="1210" y1="235" x2="1290" y2="235" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- Output Box (Top) -->
+  <rect x="1400" y="180" width="280" height="140" fill="#F5F5F5" stroke="black" stroke-width="2" />
+  <text x="1540" y="230" class="box-text">Highest-scoring</text>
+  <text x="1540" y="260" class="box-text">Output</text>
+
+  <!-- ================= DIVIDER ================= -->
+  <line x1="480" y1="515" x2="1580" y2="515" stroke="black" stroke-width="5" stroke-dasharray="20,20" />
+
+  <!-- ================= BOTTOM SECTION: Training Time Optimization ================= -->
+
+  <!-- Title -->
+  <text x="1100" y="570" class="title">Training Time Optimization</text>
+
+  <!-- NMT Box (Bottom) -->
+  <rect x="550" y="740" width="210" height="140" rx="20" ry="20" fill="#C5E0B4" stroke="black" stroke-width="3" />
+  <text x="655" y="810" class="box-text">NMT</text>
+  <text x="700" y="840" class="box-text" font-size="32">θ</text>
+
+  <!-- Arrow 2 -->
+  <line x1="450" y1="680" x2="500" y2="730" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- Sampling Step -->
+  <text x="800" y="755" class="label">Sampling</text>
+  <line x1="810" y1="785" x2="890" y2="785" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 3D Surface (Bottom Left) -->
+  <path d="M 1000,620 L 1050,700 Q 1000,780 1050,860 Q 1100,940 1050,930 L 1000,930 Z" 
+        fill="url(#gradOrange)" stroke="black" stroke-width="2" stroke-dasharray="10,5" />
+  <text x="1100" y="990" class="label italic">Likelihood</text>
+
+  <!-- Calibration Step -->
+  <text x="1200" y="755" class="label" fill="#FF0000" font-weight="bold">Calibration</text>
+  <line x1="1210" y1="785" x2="1290" y2="785" stroke="#666666" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 3D Surface (Bottom Right) -->
+  <path d="M 1400,620 L 1550,730 Q 1500,810 1450,890 Q 1400,970 1450,960 L 1400,960 Z" 
+        fill="url(#gradOrange)" stroke="black" stroke-width="2" stroke-dasharray="10,5" />
+  <text x="1400" y="990" class="label italic">Likelihood -> Quality</text>
+
+</svg>

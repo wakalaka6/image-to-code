@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <style>
+      .box { fill: #f9f9f9; stroke: #333; stroke-width: 2; rx: 10; }
+      .dashed-box { fill: none; stroke: #999; stroke-width: 2; stroke-dasharray: 5,5; rx: 10; }
+      .text-title { font-family: serif; font-size: 20px; font-weight: bold; }
+      .text-normal { font-family: sans-serif; font-size: 14px; }
+      .text-math { font-family: serif; font-size: 18px; font-style: italic; }
+      .arrow { fill: none; stroke: #666; stroke-width: 2; }
+      .arrow-head { fill: #666; }
+      .thick-arrow { fill: none; stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+      .red-arrow { stroke: #ff9999; }
+      .green-arrow { stroke: #66cc80; }
+      .red-arrow-outline { stroke: #cc6666; stroke-width: 17; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .green-arrow-outline { stroke: #33994d; stroke-width: 17; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .video-box { fill: #fff; stroke: #eee; stroke-width: 1; rx: 5; }
+      .llm-box { fill: #fff3e0; stroke: #ffe0b2; stroke-width: 2; rx: 5; }
+      .response-box { fill: #f0f8ff; stroke: #4682b4; stroke-width: 2; rx: 3; }
+      .reward-box { fill: #e8f5e9; stroke: #81c784; stroke-width: 2; stroke-dasharray: 4,4; rx: 5; }
+      .rgroup-red { fill: #fff; stroke: #e57373; stroke-width: 3; rx: 5; }
+      .rgroup-gray { fill: #fff; stroke: #757575; stroke-width: 3; rx: 5; }
+      .rgroup-green { fill: #fff; stroke: #4caf50; stroke-width: 3; rx: 5; }
+      .graph-line { fill: none; stroke: #1f77b4; stroke-width: 2; }
+      .graph-axis { fill: none; stroke: #000; stroke-width: 1.5; }
+      .graph-grid { fill: none; stroke: #eee; stroke-width: 1; }
+      .highlight-yellow { fill: #fff9c4; opacity: 0.5; }
+      .gradient-red { fill: url(#grad-red); }
+      .gradient-green { fill: url(#grad-green); }
+      .gradient-green-horiz { fill: url(#grad-green-horiz); }
+    </style>
+    <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffcccc" />
+      <stop offset="100%" stop-color="#ff0000" />
+    </linearGradient>
+    <linearGradient id="grad-green" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ccffcc" />
+      <stop offset="100%" stop-color="#00cc00" />
+    </linearGradient>
+    <linearGradient id="grad-green-horiz" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ccffcc" />
+      <stop offset="100%" stop-color="#00cc00" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+    </marker>
+    <marker id="arrowhead-black" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e57373" />
+    </marker>
+  </defs>
+
+  <!-- Top Section -->
+  <rect x="10" y="10" width="1180" height="250" class="box" />
+  <text x="20" y="35" class="text-title">Measure Difficulty based on Relative Reward Statistics</text>
+
+  <!-- Video Input 1 -->
+  <rect x="20" y="70" width="170" height="140" class="video-box" />
+  <!-- Placeholder for video frames -->
+  <rect x="30" y="80" width="40" height="40" fill="#ddd" transform="skewY(10)" />
+  <rect x="60" y="80" width="40" height="40" fill="#ccc" transform="skewY(10)" />
+  <text x="110" y="110" class="text-title">...</text>
+  <rect x="130" y="80" width="40" height="40" fill="#bbb" transform="skewY(10)" />
+  <text x="25" y="160" class="text-normal" font-weight="bold">Question: <tspan fill="#bcaaa4" font-weight="normal">What action</tspan></text>
+  <text x="25" y="180" class="text-normal" fill="#bcaaa4">should I take next in</text>
+  <text x="25" y="200" class="text-normal" fill="#bcaaa4">order to eat the celery?</text>
+
+  <line x1="200" y1="140" x2="215" y2="140" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Video LLM -->
+  <rect x="220" y="110" width="80" height="60" class="llm-box" />
+  <text x="260" y="135" class="text-normal" text-anchor="middle">Video</text>
+  <text x="260" y="155" class="text-normal" text-anchor="middle">LLM</text>
+
+  <!-- Branching -->
+  <path d="M 310 140 C 320 140, 320 85, 335 85" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 310 140 C 320 140, 320 140, 335 140" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 310 140 C 320 140, 320 200, 335 200" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Responses -->
+  <rect x="340" y="70" width="130" height="30" class="response-box" />
+  <text x="350" y="90" class="text-normal">Response <tspan class="text-math">y<tspan dy="-5" font-size="12">1</tspan></tspan></text>
+  
+  <rect x="340" y="125" width="130" height="30" class="response-box" />
+  <text x="350" y="145" class="text-normal">Response <tspan class="text-math">y<tspan dy="-5" font-size="12">2</tspan></tspan></text>
+  
+  <text x="405" y="175" class="text-title" text-anchor="middle">...</text>
+  
+  <rect x="340" y="185" width="130" height="30" class="response-box" />
+  <text x="350" y="205" class="text-normal">Response <tspan class="text-math">y<tspan dy="-5" font-size="12">G</tspan></tspan></text>
+
+  <line x1="480" y1="85" x2="500" y2="85" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="140" x2="500" y2="140" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="200" x2="500" y2="200" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Rewards -->
+  <rect x="505" y="60" width="100" height="160" class="reward-box" />
+  <text x="555" y="50" class="text-math" text-anchor="middle">R<tspan dy="5" font-size="12" font-style="normal">group</tspan></text>
+  <text x="555" y="90" class="text-math" text-anchor="middle">R(x, y<tspan dy="-5" font-size="12">1</tspan><tspan dy="5">)</tspan></text>
+  <text x="555" y="145" class="text-math" text-anchor="middle">R(x, y<tspan dy="-5" font-size="12">2</tspan><tspan dy="5">)</tspan></text>
+  <text x="555" y="175" class="text-title" text-anchor="middle">...</text>
+  <text x="555" y="205" class="text-math" text-anchor="middle">R(x, y<tspan dy="-5" font-size="12">G</tspan><tspan dy="5">)</tspan></text>
+
+  <!-- Equation -->
+  <text x="630" y="50" class="text-math">Â<tspan dy="-5" font-size="12">(i)</tspan><tspan dy="5"> = </tspan></text>
+  <text x="700" y="40" class="text-math" text-anchor="middle">R(x, y<tspan dy="-5" font-size="12">(i)</tspan><tspan dy="5">) - μ</tspan><tspan dy="5" font-size="12" font-style="normal">r</tspan></text>
+  <line x1="660" y1="55" x2="740" y2="55" stroke="#000" stroke-width="1" />
+  <text x="700" y="75" class="text-math" text-anchor="middle">σ<tspan dy="5" font-size="12" font-style="normal">r</tspan></text>
+
+  <!-- Rgroup boxes -->
+  <rect x="620" y="95" width="250" height="35" class="rgroup-red" />
+  <text x="625" y="118" class="text-math">R<tspan dy="5" font-size="12" font-style="normal">group</tspan><tspan dy="-5"> = {0.0, 0.0, ..., 0.0, 0.0}</tspan></text>
+
+  <rect x="620" y="150" width="250" height="35" class="rgroup-gray" />
+  <text x="625" y="173" class="text-math">R<tspan dy="5" font-size="12" font-style="normal">group</tspan><tspan dy="-5"> = {1.1, 0.3, ..., 1.9, 0.8}</tspan></text>
+
+  <rect x="620" y="205" width="250" height="35" class="rgroup-green" />
+  <text x="625" y="228" class="text-math">R<tspan dy="5" font-size="12" font-style="normal">group</tspan><tspan dy="-5"> = {2.0, 2.0, ..., 2.0, 2.0}</tspan></text>
+
+  <!-- Dynamic Global Reward -->
+  <rect x="885" y="15" width="300" height="240" class="dashed-box" />
+  <text x="900" y="35" class="text-title">Dynamic Global Reward</text>
+  
+  <!-- Graph -->
+  <line x1="920" y1="100" x2="1080" y2="100" class="graph-grid" />
+  <line x1="920" y1="130" x2="1080" y2="130" class="graph-grid" />
+  <line x1="920" y1="160" x2="1080" y2="160" class="graph-grid" />
+  <line x1="920" y1="190" x2="1080" y2="190" class="graph-grid" />
+  
+  <rect x="1015" y="100" width="55" height="100" class="highlight-yellow" />
+  
+  <path d="M 920 200 L 940 205 L 960 170 L 980 155 L 1000 140 L 1020 135 L 1040 140 L 1060 125 L 1075 115" class="graph-line" />
+  
+  <line x1="920" y1="210" x2="920" y2="80" class="graph-axis" marker-end="url(#arrowhead-black)" />
+  <line x1="920" y1="210" x2="1100" y2="210" class="graph-axis" marker-end="url(#arrowhead-black)" />
+  <text x="920" y="70" class="text-normal" font-size="12">Reward</text>
+  <text x="1110" y="215" class="text-normal" font-size="12">Iteration</text>
+  
+  <line x1="1015" y1="195" x2="1070" y2="195" stroke="#e57373" stroke-width="2" marker-start="url(#arrowhead-red)" marker-end="url(#arrowhead-red)" />
+  <text x="1045" y="185" class="text-math" text-anchor="middle">B<tspan dy="-5" font-size="12">W</tspan></text>
+
+  <!-- Replay Buffer -->
+  <ellipse cx="1140" cy="115" rx="12" ry="4" fill="#000" />
+  <path d="M 1128 115 L 1128 135 A 12 4 0 0 0 1152 135 L 1152 115 Z" fill="#000" />
+  <line x1="1128" y1="122" x2="1152" y2="122" stroke="#fff" stroke-width="1" />
+  <line x1="1128" y1="129" x2="1152" y2="129" stroke="#fff" stroke-width="1" />
+  <text x="1140" y="155" class="text-normal" font-size="12" text-anchor="middle">Replay</text>
+  <text x="1140" y="170" class="text-normal" font-size="12" text-anchor="middle">Buffer</text>
+
+  <!-- Connecting Arrows -->
+  <path d="M 710 130 C 710 280, 320 280, 320 310" class="red-arrow-outline" />
+  <path d="M 710 130 C 710 280, 320 280, 320 310" class="thick-arrow red-arrow" marker-end="url(#arrowhead)" />
+
+  <path d="M 780 240 C 780 300, 910 280, 910 310" class="green-arrow-outline" />
+  <path d="M 780 240 C 780 300, 910 280, 910 310" class="thick-arrow green-arrow" marker-end="url(#arrowhead)" />
+
+
+  <!-- Bottom Left Section -->
+  <rect x="10" y="320" width="630" height="260" class="box" />
+  <text x="20" y="345" class="text-title">Difficulty Decreasement Augmentation</text>
+
+  <!-- Video Input 2 -->
+  <rect x="20" y="350" width="170" height="160" class="video-box" />
+  <rect x="30" y="360" width="40" height="40" fill="#ddd" transform="skewY(10)" />
+  <rect x="60" y="360" width="40" height="40" fill="#ccc" transform="skewY(10)" />
+  <text x="110" y="390" class="text-title">...</text>
+  <rect x="130" y="360" width="40" height="40" fill="#bbb" transform="skewY(10)" />
+  <text x="25" y="440" class="text-normal" font-weight="bold">Question: <tspan fill="#bcaaa4" font-weight="normal">What action</tspan></text>
+  <text x="25" y="460" class="text-normal" fill="#bcaaa4">should I take next in</text>
+  <text x="25" y="480" class="text-normal" fill="#bcaaa4">order to eat the celery?</text>
+  <text x="25" y="500" class="text-normal" font-weight="bold">GT: <tspan fill="#4caf50" font-weight="normal">B. pick up celery</tspan></text>
+
+  <line x1="200" y1="430" x2="215" y2="430" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Video LLM 2 -->
+  <rect x="220" y="400" width="80" height="60" class="llm-box" />
+  <text x="260" y="425" class="text-normal" text-anchor="middle">Video</text>
+  <text x="260" y="445" class="text-normal" text-anchor="middle">LLM</text>
+
+  <!-- Branching 2 -->
+  <path d="M 310 430 C 320 430, 320 375, 335 375" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 310 430 C 320 430, 320 430, 335 430" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 310 430 C 320 430, 320 490, 335 490" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Responses 2 -->
+  <rect x="340" y="360" width="130" height="30" class="response-box" />
+  <text x="350" y="380" class="text-normal">Response <tspan class="text-math">y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">1</tspan></tspan></text>
+  
+  <rect x="340" y="415" width="130" height="30" class="response-box" />
+  <text x="350" y="435" class="text-normal">Response <tspan class="text-math">y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">2</tspan></tspan></text>
+  
+  <text x="405" y="465" class="text-title" text-anchor="middle">...</text>
+  
+  <rect x="340" y="475" width="130" height="30" class="response-box" />
+  <text x="350" y="495" class="text-normal">Response <tspan class="text-math">y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">G</tspan></tspan></text>
+
+  <line x1="480" y1="375" x2="500" y2="375" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="430" x2="500" y2="430" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="490" x2="500" y2="490" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Rewards 2 -->
+  <rect x="505" y="350" width="100" height="160" class="reward-box" />
+  <text x="555" y="340" class="text-math" text-anchor="middle">R<tspan dy="5" font-size="12" font-style="normal">group</tspan></text>
+  <text x="555" y="380" class="text-math" text-anchor="middle">R(x, y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">1</tspan><tspan dy="5">)</tspan></text>
+  
+  <rect x="500" y="415" width="110" height="30" fill="#e0f7fa" stroke="#00838f" stroke-width="2" />
+  <text x="555" y="435" class="text-math" text-anchor="middle">R(x, y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">2</tspan><tspan dy="5">)</tspan></text>
+  <!-- Trophy icon placeholder -->
+  <path d="M 605 415 Q 615 415 615 425 Q 615 435 605 435 L 605 440 L 615 440 L 615 445 L 595 445 L 595 440 L 605 440 Z" fill="#ffd700" stroke="#b8860b" />
+  
+  <text x="555" y="465" class="text-title" text-anchor="middle">...</text>
+  <text x="555" y="495" class="text-math" text-anchor="middle">R(x, y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">G</tspan><tspan dy="5">)</tspan></text>
+
+  <!-- Bottom Text -->
+  <text x="20" y="550" class="text-math">y<tspan dy="5" font-size="12" font-style="normal">gt</tspan><tspan dy="-10" font-size="12">2</tspan></text>
+  <text x="60" y="540" class="text-normal" font-size="12">&lt;think&gt; The video shows a person preparing ... <tspan fill="#4caf50" text-decoration="underline">To make a slice of celery you</tspan></text>
+  <text x="60" y="555" class="text-normal" font-size="12"><tspan fill="#4caf50" text-decoration="underline">should bring it from the bag.</tspan> &lt;/think&gt;&lt;answer&gt;B. pick up celery&lt;/answer&gt;</text>
+  
+  <rect x="90" y="565" width="180" height="10" class="gradient-green-horiz" />
+  <polygon points="90 570, 100 560, 100 580" fill="#00cc00" />
+  <text x="280" y="575" class="text-normal" font-weight="bold">Guidance Level</text>
+
+  <!-- Bottom Right Section -->
+  <rect x="640" y="320" width="550" height="260" class="box" />
+  <text x="650" y="345" class="text-title">Difficulty Increasement Augmentation</text>
+
+  <!-- Video Input 3 -->
+  <rect x="670" y="360" width="40" height="40" fill="#ddd" transform="skewY(10)" />
+  <rect x="700" y="360" width="40" height="40" fill="#ccc" transform="skewY(10)" />
+  <text x="750" y="390" class="text-title">...</text>
+  <rect x="765" y="360" width="40" height="40" fill="#bbb" transform="skewY(10)" />
+
+  <path d="M 830 400 C 860 400, 860 360, 960 360" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 830 400 C 860 400, 860 420, 960 420" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M 830 400 C 860 400, 860 480, 960 480" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Perturbed Videos -->
+  <rect x="970" y="360" width="40" height="40" fill="#c8c8c8" transform="skewY(10)" />
+  <rect x="1000" y="360" width="40" height="40" fill="#b8b8b8" transform="skewY(10)" />
+  <text x="1050" y="390" class="text-title">...</text>
+  <rect x="1065" y="360" width="40" height="40" fill="#a8a8a8" transform="skewY(10)" />
+
+  <rect x="970" y="420" width="40" height="40" fill="#b0b0b0" transform="skewY(10)" />
+  <rect x="1000" y="420" width="40" height="40" fill="#a0a0a0" transform="skewY(10)" />
+  <text x="1050" y="450" class="text-title">...</text>
+  <rect x="1065" y="420" width="40" height="40" fill="#909090" transform="skewY(10)" />
+
+  <rect x="970" y="480" width="40" height="40" fill="#989898" transform="skewY(10)" />
+  <rect x="1000" y="480" width="40" height="40" fill="#888888" transform="skewY(10)" />
+  <text x="1050" y="510" class="text-title">...</text>
+  <rect x="1065" y="480" width="40" height="40" fill="#787878" transform="skewY(10)" />
+
+  <!-- Perturbation Level Arrow -->
+  <rect x="1140" y="360" width="10" height="180" class="gradient-red" />
+  <polygon points="1145 550, 1135 540, 1155 540" fill="#ff0000" />
+  <text x="1165" y="450" class="text-normal" font-weight="bold" transform="rotate(90 1165 450)" text-anchor="middle">Perturbation Level</text>
+
+  <!-- Delta R -->
+  <text x="710" y="480" class="text-math" font-size="24">ΔR &lt; 0</text>
+  <text x="710" y="520" class="text-math" font-size="24">ΔR ≈ 0</text>
+  <text x="710" y="560" class="text-math" font-size="24">ΔR &gt; 0</text>
+
+  <!-- Vertical Arrows -->
+  <rect x="840" y="460" width="8" height="100" class="gradient-red" />
+  <polygon points="844 570, 834 560, 854 560" fill="#ff0000" />
+  
+  <rect x="860" y="460" width="8" height="100" class="gradient-green" />
+  <polygon points="864 450, 854 460, 874 460" fill="#00cc00" />
+
+  <!-- Divider Line -->
+  <line x1="635" y1="320" x2="635" y2="580" stroke="#999" stroke-width="1" stroke-dasharray="3,3" />
+
+</svg>

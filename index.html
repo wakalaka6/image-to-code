@@ -3,81 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Model Compare Pages</title>
+<title>Diagram Comparison Guide</title>
 <style>
+  * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 32px 16px;
     color: #172033;
     background: #f6f6f1;
     font-family: Arial, "Microsoft YaHei", sans-serif;
   }
   main {
-    max-width: 900px;
+    max-width: 1180px;
     margin: 0 auto;
+    padding: 28px 18px;
   }
   h1 {
-    margin: 0 0 18px;
-    font-size: 24px;
+    margin: 0 0 8px;
+    font-size: 26px;
+    line-height: 1.25;
   }
-  .pageLink {
+  .intro {
+    margin: 0 0 20px;
+    color: #526071;
+    font-size: 14px;
+  }
+  .rows {
+    display: grid;
+    gap: 12px;
+  }
+  .guideRow {
+    min-height: 104px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 10px;
-    padding: 16px 18px;
+    padding: 16px;
+    border: 1px solid #d8d8cf;
+    border-radius: 8px;
+    background: #fff;
     color: #172033;
     text-decoration: none;
-    border: 1px solid #d8d8cf;
-    border-radius: 8px;
-    background: #fff;
-    font-weight: 700;
   }
-  span {
-    color: #647084;
-    font-size: 13px;
-    flex-shrink: 0;
-  }
-  .tools {
-    margin: 0 0 18px;
-    padding: 14px 16px;
-    border: 1px solid #d8d8cf;
-    border-radius: 8px;
-    background: #fff;
-  }
-  .tools p {
-    margin: 0 0 10px;
-    color: #647084;
-    font-size: 14px;
-  }
-  .tools button {
-    padding: 8px 12px;
-    border: 1px solid #c8c9bd;
-    border-radius: 6px;
+  .guideRow:hover {
+    border-color: #94a3b8;
     background: #fbfbf7;
-    font-weight: 700;
-    cursor: pointer;
   }
-  @media (max-width: 640px) {
-    body { padding: 16px 12px; }
-    h1 { font-size: 20px; }
-    .pageLink {
-      flex-direction: column;
+  .guideRow span {
+    display: block;
+    margin-bottom: 6px;
+    color: #647084;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .guideRow strong {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  .guideRow small {
+    color: #526071;
+    font-size: 13px;
+    text-align: right;
+  }
+  .sectionLabel {
+    margin: 14px 0 4px;
+    color: #647084;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  @media (max-width: 860px) {
+    .guideRow {
       align-items: flex-start;
-      gap: 6px;
-      padding: 14px;
-      font-size: 15px;
+      flex-direction: column;
+    }
+    .guideRow small {
+      text-align: left;
     }
   }
 </style>
 </head>
 <body>
 <main>
-  <h1>Model Compare Pages</h1>
-  
-  <a class="pageLink" href="overall.html">比较 / Overall<span>30 cases</span></a><a class="pageLink" href="anthropic_claude-opus-4-8.html">claude-opus-4.8<span>30 cases</span></a><a class="pageLink" href="google_gemini-3-5-flash.html">gemini-3.5-flash<span>30 cases</span></a><a class="pageLink" href="openai_gpt-5-5.html">gpt-5.5<span>30 cases</span></a>
-  <a class="pageLink" href="editing.html">Editing Results<span>21 cases</span></a>
+  <h1>Diagram Comparison Guide</h1>
+  <p class="intro">Open one comparison page directly.</p>
+  <div class="rows">
+    
+    <div class="sectionLabel">Reconstruction</div>
+    <a class="guideRow" href="reconstruction.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>Overall Comparison</strong>
+      </div>
+      <small>30 cases, GT plus three model outputs</small>
+    </a>
+    
+    <a class="guideRow" href="anthropic_claude-opus-4-8.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>claude-opus-4.8</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+    <a class="guideRow" href="openai_gpt-5-5.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>gpt-5.5</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+    <a class="guideRow" href="google_gemini-3-5-flash.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>gemini-3.5-flash</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+    
+    <div class="sectionLabel">Editing</div>
+    <a class="guideRow" href="editing.html">
+      <div>
+        <span>Editing</span>
+        <strong>Overall Comparison</strong>
+      </div>
+      <small>Layout Edits: 19 / Local Edits: 21</small>
+    </a>
+    
+    <a class="guideRow" href="editing_anthropic_claude-opus-4-8.html">
+      <div>
+        <span>Editing</span>
+        <strong>claude-opus-4.8</strong>
+      </div>
+      <small>40 editing cases, input SVG vs output SVG</small>
+    </a>
+    <a class="guideRow" href="editing_openai_gpt-5-5.html">
+      <div>
+        <span>Editing</span>
+        <strong>gpt-5.5</strong>
+      </div>
+      <small>40 editing cases, input SVG vs output SVG</small>
+    </a>
+    <a class="guideRow" href="editing_google_gemini-3-5-flash.html">
+      <div>
+        <span>Editing</span>
+        <strong>gemini-3.5-flash</strong>
+      </div>
+      <small>40 editing cases, input SVG vs output SVG</small>
+    </a>
+    
+    <div class="sectionLabel">Additional Comparisons</div>
+    <a class="guideRow" href="open_closed_compare.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>开源和闭源对比</strong>
+      </div>
+      <small>30 cases, GT / Gemini 3.1 Pro / Qwen / VFIG-4B-SFT-RL</small>
+    </a>
+    <a class="guideRow" href="agent_compare.html">
+      <div>
+        <span>Agent</span>
+        <strong>Agent 对比</strong>
+      </div>
+      <small>30 cases, GT / Gemini 3.1 Pro / AutoFigure / EditBanana</small>
+    </a>
+    
+  </div>
 </main>
 </body>
 </html>

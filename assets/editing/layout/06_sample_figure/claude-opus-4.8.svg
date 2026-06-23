@@ -1,0 +1,293 @@
+<svg width="1409" height="1150" viewBox="0 0 1409 1150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#404040"/>
+    </marker>
+    <marker id="arrowSm" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#333"/>
+    </marker>
+    <marker id="arrowBlk" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="1409" height="1150" fill="#ffffff"/>
+
+  <!-- ============ TOP ROW ============ -->
+  <!-- Augmented Trajectories gray box -->
+  <rect x="14" y="14" width="320" height="330" rx="16" fill="#ededed" stroke="#b9b9b9" stroke-width="2"/>
+  <!-- arrows / curves -->
+  <line x1="35" y1="165" x2="215" y2="28" stroke="#111" stroke-width="3" marker-end="url(#arrowBlk)"/>
+  <line x1="215" y1="28" x2="35" y2="165" stroke="#111" stroke-width="3" marker-end="url(#arrowBlk)"/>
+  <path d="M50,150 Q120,95 165,80" fill="none" stroke="#3fb8af" stroke-width="3"/>
+  <circle cx="50" cy="150" r="5" fill="#3fb8af"/><circle cx="105" cy="118" r="5" fill="#3fb8af"/><circle cx="165" cy="80" r="5" fill="#3fb8af"/>
+  <path d="M85,160 Q150,105 210,80" fill="none" stroke="#e98b7a" stroke-width="3" marker-end="url(#arrowBlk)"/>
+  <circle cx="85" cy="160" r="5" fill="#e98b7a"/><circle cx="150" cy="118" r="5" fill="#e98b7a"/>
+  <text x="180" y="120" font-family="Arial" font-size="20" font-weight="bold" fill="#222">Trajectory</text>
+  <text x="180" y="143" font-family="Arial" font-size="20" font-weight="bold" fill="#222">Scaling</text>
+  <!-- rotation -->
+  <path d="M120,205 Q165,175 195,200" fill="none" stroke="#111" stroke-width="2.5" marker-end="url(#arrowBlk)"/>
+  <path d="M115,210 Q175,250 185,228" fill="none" stroke="#3fb8af" stroke-width="3"/>
+  <circle cx="115" cy="210" r="5" fill="#3fb8af"/><circle cx="155" cy="245" r="5" fill="#e98b7a"/><circle cx="185" cy="228" r="5" fill="#e98b7a"/>
+  <text x="135" y="232" font-family="Arial" font-size="20" font-weight="bold" fill="#222">Rotation</text>
+  <!-- translation -->
+  <path d="M255,160 Q295,125 320,123" fill="none" stroke="#9b7fc9" stroke-width="3"/>
+  <circle cx="255" cy="160" r="5" fill="#9b7fc9"/><circle cx="290" cy="130" r="5" fill="#9b7fc9"/><circle cx="320" cy="123" r="5" fill="#9b7fc9"/>
+  <text x="240" y="232" font-family="Arial" font-size="20" font-weight="bold" fill="#222">Translation</text>
+  <!-- bottom curve -->
+  <path d="M40,290 Q100,250 130,255" fill="none" stroke="#e98b7a" stroke-width="3"/>
+  <circle cx="40" cy="290" r="5" fill="#e98b7a"/><circle cx="95" cy="258" r="5" fill="#e98b7a"/><circle cx="130" cy="255" r="5" fill="#e98b7a"/>
+  <path d="M75,237 Q110,220 130,225" fill="none" stroke="#111" stroke-width="2.5" marker-end="url(#arrowBlk)"/>
+  <text x="40" y="328" font-family="Arial" font-size="21" font-weight="bold" fill="#222">Augmented Trajectories</text>
+
+  <line x1="345" y1="180" x2="382" y2="180" stroke="#404040" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- Feature Extraction module green -->
+  <rect x="386" y="14" width="240" height="330" rx="16" fill="#d9ebd0" stroke="#7fae6c" stroke-width="2"/>
+  <text x="506" y="42" font-family="Arial" font-size="20" font-weight="bold" fill="#1f3b1f" text-anchor="middle">Feature Extraction</text>
+  <text x="506" y="66" font-family="Arial" font-size="20" font-weight="bold" fill="#1f3b1f" text-anchor="middle">module</text>
+  <text x="506" y="115" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Trajectory Feature</text>
+  <text x="506" y="137" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Extraction</text>
+  <rect x="416" y="158" width="180" height="42" rx="10" fill="#eef6e9" stroke="#7fae6c" stroke-width="1.5"/>
+  <text x="506" y="185" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Motion Velocity</text>
+  <rect x="416" y="208" width="180" height="42" rx="10" fill="#eef6e9" stroke="#7fae6c" stroke-width="1.5"/>
+  <text x="506" y="235" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Spatial Density</text>
+  <rect x="416" y="258" width="180" height="50" rx="10" fill="#eef6e9" stroke="#7fae6c" stroke-width="1.5"/>
+  <text x="506" y="280" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Interaction</text>
+  <text x="506" y="299" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Patterns</text>
+
+  <line x1="630" y1="180" x2="664" y2="180" stroke="#404040" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- Context Encoder purple -->
+  <rect x="668" y="86" width="135" height="188" rx="16" fill="#e6d4ee" stroke="#a273c0" stroke-width="2"/>
+  <text x="735" y="118" font-family="Arial" font-size="19" font-weight="bold" fill="#222" text-anchor="middle">Context</text>
+  <text x="735" y="140" font-family="Arial" font-size="19" font-weight="bold" fill="#222" text-anchor="middle">Encoder</text>
+  <g>
+    <rect x="688" y="158" width="95" height="95" fill="#fff" stroke="#999"/>
+    <rect x="688" y="158" width="19" height="19" fill="#9b7fc9"/>
+    <rect x="726" y="158" width="19" height="19" fill="#9bd0a0"/>
+    <rect x="707" y="177" width="19" height="19" fill="#cdbbe0"/>
+    <rect x="745" y="177" width="19" height="19" fill="#7cb1e0"/>
+    <rect x="688" y="215" width="19" height="19" fill="#7cb1e0"/>
+    <rect x="745" y="215" width="19" height="19" fill="#9bd0a0"/>
+    <rect x="726" y="234" width="19" height="19" fill="#7cb1e0"/>
+    <line x1="688" y1="177" x2="783" y2="177" stroke="#ccc"/><line x1="688" y1="196" x2="783" y2="196" stroke="#ccc"/>
+    <line x1="688" y1="215" x2="783" y2="215" stroke="#ccc"/><line x1="688" y1="234" x2="783" y2="234" stroke="#ccc"/>
+    <line x1="707" y1="158" x2="707" y2="253" stroke="#ccc"/><line x1="726" y1="158" x2="726" y2="253" stroke="#ccc"/>
+    <line x1="745" y1="158" x2="745" y2="253" stroke="#ccc"/><line x1="764" y1="158" x2="764" y2="253" stroke="#ccc"/>
+  </g>
+
+  <line x1="807" y1="180" x2="841" y2="180" stroke="#404040" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- SceneSelect Classifier blue -->
+  <rect x="845" y="86" width="150" height="188" rx="16" fill="#cfe2f3" stroke="#6fa8dc" stroke-width="2"/>
+  <text x="920" y="118" font-family="Arial" font-size="19" font-weight="bold" fill="#222" text-anchor="middle">SceneSelect</text>
+  <text x="920" y="140" font-family="Arial" font-size="19" font-weight="bold" fill="#222" text-anchor="middle">Classifier</text>
+  <!-- tree -->
+  <line x1="920" y1="178" x2="888" y2="210" stroke="#5a87b8" stroke-width="2.5"/>
+  <line x1="920" y1="178" x2="952" y2="210" stroke="#5a87b8" stroke-width="2.5"/>
+  <line x1="952" y1="210" x2="936" y2="240" stroke="#5a87b8" stroke-width="2.5"/>
+  <line x1="952" y1="210" x2="970" y2="240" stroke="#5a87b8" stroke-width="2.5"/>
+  <circle cx="920" cy="178" r="13" fill="#6fa8dc"/>
+  <circle cx="888" cy="210" r="13" fill="#6fa8dc"/>
+  <circle cx="952" cy="210" r="13" fill="#6fa8dc"/>
+  <circle cx="888" cy="240" r="12" fill="#e98b7a"/>
+  <circle cx="936" cy="240" r="12" fill="#e6c84f"/>
+  <circle cx="970" cy="240" r="12" fill="#e6c84f"/>
+
+  <!-- Scheduling Policy yellow -->
+  <rect x="845" y="294" width="190" height="62" rx="12" fill="#fbeec0" stroke="#d4b13d" stroke-width="2"/>
+  <text x="910" y="318" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Scheduling</text>
+  <text x="910" y="340" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Policy</text>
+  <g>
+    <rect x="985" y="306" width="38" height="38" fill="#fff" stroke="#999"/>
+    <line x1="985" y1="318.7" x2="1023" y2="318.7" stroke="#999"/><line x1="985" y1="331.3" x2="1023" y2="331.3" stroke="#999"/>
+    <line x1="997.7" y1="306" x2="997.7" y2="344" stroke="#999"/><line x1="1010.3" y1="306" x2="1010.3" y2="344" stroke="#999"/>
+  </g>
+
+  <line x1="1040" y1="180" x2="1075" y2="180" stroke="#404040" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- Scene-Model Pool orange -->
+  <rect x="1079" y="14" width="206" height="330" rx="16" fill="#fbe0c0" stroke="#e0a458" stroke-width="2"/>
+  <text x="1182" y="44" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Scene-Model Pool</text>
+  <!-- Expert 1 icon (circular arrow) -->
+  <path d="M1155,75 a22,22 0 1 1 -5,15" fill="none" stroke="#111" stroke-width="2.5" marker-end="url(#arrowBlk)"/>
+  <text x="1182" y="148" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Expert 1</text>
+  <!-- Expert 2 icon (fan) -->
+  <g stroke="#111" stroke-width="2.5" fill="none">
+    <line x1="1150" y1="195" x2="1215" y2="178" marker-end="url(#arrowBlk)"/>
+    <line x1="1150" y1="195" x2="1215" y2="190" marker-end="url(#arrowBlk)"/>
+    <line x1="1150" y1="195" x2="1215" y2="202" marker-end="url(#arrowBlk)"/>
+    <line x1="1150" y1="195" x2="1215" y2="214" marker-end="url(#arrowBlk)"/>
+  </g>
+  <text x="1182" y="240" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Expert 2</text>
+  <!-- Expert 3 icon (network/funnel) -->
+  <g stroke="#c98a2a" stroke-width="2.5" fill="none">
+    <path d="M1150,272 l8,-12 l0,40 l-8,-12 Z"/>
+    <path d="M1170,266 l8,-8 l0,52 l-8,-8 Z"/>
+    <path d="M1190,272 l8,-6 l0,40 l-8,-6 Z"/>
+    <line x1="1206" y1="287" x2="1220" y2="287" stroke="#111" marker-end="url(#arrowBlk)"/>
+  </g>
+  <text x="1182" y="330" font-family="Arial" font-size="18" font-weight="bold" fill="#222" text-anchor="middle">Expert 3</text>
+
+  <line x1="1290" y1="180" x2="1320" y2="180" stroke="#404040" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1330,200 q15,-30 35,-45" fill="none" stroke="#111" stroke-width="2.5" stroke-dasharray="5,4" marker-end="url(#arrowBlk)"/>
+  <text x="1360" y="222" font-family="Arial" font-size="17" font-weight="bold" fill="#222" text-anchor="middle">Predicted</text>
+  <text x="1360" y="242" font-family="Arial" font-size="17" font-weight="bold" fill="#222" text-anchor="middle">Trajectory</text>
+
+  <!-- dashed divider -->
+  <line x1="0" y1="392" x2="1409" y2="392" stroke="#888" stroke-width="2.5" stroke-dasharray="14,10"/>
+
+  <!-- ============ ROW (a) : full width ============ -->
+  <text x="30" y="430" font-family="Arial" font-size="24" font-weight="bold" fill="#111">(a)</text>
+  <g id="panelA" transform="translate(14,0) scale(1.8537,1) translate(-14,0)">
+    <rect x="14" y="437" width="745" height="325" rx="16" fill="#ede0f3" stroke="#a273c0" stroke-width="2"/>
+    <text x="386" y="470" font-family="Arial" font-size="23" font-weight="bold" fill="#222" text-anchor="middle">Scene Context Encoder</text>
+
+    <!-- Raw Features -->
+    <text x="78" y="528" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Raw</text>
+    <text x="78" y="551" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Features</text>
+    <rect x="38" y="585" width="92" height="20" rx="6" fill="#3fb8af"/>
+    <rect x="38" y="612" width="92" height="20" rx="6" fill="#e98b7a"/>
+    <rect x="38" y="639" width="92" height="20" rx="6" fill="#e6c84f"/>
+    <text x="84" y="692" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Extracted &amp;</text>
+    <text x="84" y="713" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">kinematic</text>
+    <text x="84" y="734" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">feature vectors</text>
+
+    <line x1="135" y1="622" x2="170" y2="622" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Random Projection -->
+    <rect x="174" y="555" width="125" height="135" rx="12" fill="#d8c1e8" stroke="#a273c0" stroke-width="2"/>
+    <text x="237" y="528" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Random</text>
+    <text x="237" y="551" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Projection</text>
+    <!-- small grids with x -->
+    <g>
+      <rect x="186" y="588" width="62" height="62" fill="#fff" stroke="#7cb1e0"/>
+      <rect x="186" y="588" width="15.5" height="15.5" fill="#cfe2f3"/><rect x="217" y="588" width="15.5" height="15.5" fill="#cfe2f3"/>
+      <rect x="201.5" y="603.5" width="15.5" height="15.5" fill="#cfe2f3"/><rect x="232.5" y="619" width="15.5" height="15.5" fill="#cfe2f3"/>
+      <rect x="186" y="634.5" width="15.5" height="15.5" fill="#cfe2f3"/>
+      <line x1="186" y1="603.5" x2="248" y2="603.5" stroke="#7cb1e0"/><line x1="186" y1="619" x2="248" y2="619" stroke="#7cb1e0"/><line x1="186" y1="634.5" x2="248" y2="634.5" stroke="#7cb1e0"/>
+      <line x1="201.5" y1="588" x2="201.5" y2="650" stroke="#7cb1e0"/><line x1="217" y1="588" x2="217" y2="650" stroke="#7cb1e0"/><line x1="232.5" y1="588" x2="232.5" y2="650" stroke="#7cb1e0"/>
+    </g>
+    <text x="256" y="625" font-family="Arial" font-size="20" fill="#222">×</text>
+    <g>
+      <rect x="268" y="595" width="22" height="48" fill="#f3e7c4" stroke="#d4b13d"/>
+      <line x1="279" y1="595" x2="279" y2="643" stroke="#d4b13d"/>
+      <line x1="268" y1="611" x2="290" y2="611" stroke="#d4b13d"/><line x1="268" y1="627" x2="290" y2="627" stroke="#d4b13d"/>
+    </g>
+    <text x="237" y="710" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Random</text>
+    <text x="237" y="731" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">matrix</text>
+
+    <line x1="304" y1="622" x2="338" y2="622" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Sparsification -->
+    <text x="384" y="540" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Sparsification</text>
+    <g>
+      <rect x="342" y="568" width="85" height="85" fill="#fff" stroke="#999"/>
+      <rect x="342" y="568" width="17" height="17" fill="#7cb1e0"/>
+      <rect x="376" y="568" width="17" height="17" fill="#9bd0a0"/>
+      <rect x="359" y="602" width="17" height="17" fill="#7cb1e0"/>
+      <rect x="410" y="619" width="17" height="17" fill="#7cb1e0"/>
+      <rect x="342" y="636" width="17" height="17" fill="#9bd0a0"/>
+      <line x1="342" y1="585" x2="427" y2="585" stroke="#ccc"/><line x1="342" y1="602" x2="427" y2="602" stroke="#ccc"/>
+      <line x1="342" y1="619" x2="427" y2="619" stroke="#ccc"/><line x1="342" y1="636" x2="427" y2="636" stroke="#ccc"/>
+      <line x1="359" y1="568" x2="359" y2="653" stroke="#ccc"/><line x1="376" y1="568" x2="376" y2="653" stroke="#ccc"/>
+      <line x1="393" y1="568" x2="393" y2="653" stroke="#ccc"/><line x1="410" y1="568" x2="410" y2="653" stroke="#ccc"/>
+    </g>
+    <text x="384" y="697" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Sparse high-</text>
+    <text x="384" y="718" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">dimensional</text>
+    <text x="384" y="739" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">representation</text>
+
+    <line x1="432" y1="610" x2="466" y2="610" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Clustering -->
+    <rect x="470" y="552" width="130" height="118" rx="12" fill="#d8c1e8" stroke="#a273c0" stroke-width="2"/>
+    <text x="535" y="540" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Clustering</text>
+    <line x1="485" y1="565" x2="485" y2="655" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="485" y1="655" x2="588" y2="655" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <ellipse cx="520" cy="595" rx="22" ry="18" fill="none" stroke="#e98b7a" stroke-width="1.5"/>
+    <ellipse cx="565" cy="595" rx="20" ry="16" fill="none" stroke="#3fb8af" stroke-width="1.5"/>
+    <ellipse cx="540" cy="635" rx="20" ry="15" fill="none" stroke="#e6c84f" stroke-width="1.5"/>
+    <g fill="#e98b7a"><circle cx="512" cy="590" r="2.5"/><circle cx="522" cy="585" r="2.5"/><circle cx="528" cy="595" r="2.5"/><circle cx="515" cy="600" r="2.5"/><circle cx="525" cy="603" r="2.5"/></g>
+    <g fill="#3fb8af"><circle cx="558" cy="590" r="2.5"/><circle cx="568" cy="588" r="2.5"/><circle cx="572" cy="598" r="2.5"/><circle cx="560" cy="600" r="2.5"/></g>
+    <g fill="#e6c84f"><circle cx="533" cy="632" r="2.5"/><circle cx="543" cy="630" r="2.5"/><circle cx="547" cy="640" r="2.5"/><circle cx="535" cy="641" r="2.5"/></g>
+    <text x="535" y="697" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Unsupervised</text>
+    <text x="535" y="718" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Clustering</text>
+
+    <line x1="605" y1="610" x2="638" y2="610" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Pseudo-labels -->
+    <text x="690" y="528" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Pseudo-</text>
+    <text x="690" y="551" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">labels</text>
+    <rect x="642" y="582" width="96" height="28" rx="8" fill="#e98b7a"/>
+    <text x="690" y="601" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene A</text>
+    <rect x="642" y="615" width="96" height="28" rx="8" fill="#3fb8af"/>
+    <text x="690" y="634" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene B</text>
+    <rect x="642" y="648" width="96" height="28" rx="8" fill="#e6c84f"/>
+    <text x="690" y="667" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene C</text>
+    <text x="690" y="705" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Pseudo-labels</text>
+    <text x="690" y="726" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">(Scene Categories)</text>
+  </g>
+
+  <!-- ============ ROW (b) : full width ============ -->
+  <text x="30" y="800" font-family="Arial" font-size="24" font-weight="bold" fill="#111">(b)</text>
+  <g id="panelB" transform="translate(-1712.25,370) scale(2.22742,1)">
+    <rect x="775" y="437" width="620" height="325" rx="16" fill="#d4e6f5" stroke="#6fa8dc" stroke-width="2"/>
+    <text x="1085" y="470" font-family="Arial" font-size="23" font-weight="bold" fill="#222" text-anchor="middle">SceneSelect Classifier</text>
+
+    <!-- Input -->
+    <text x="838" y="528" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Input</text>
+    <text x="838" y="600" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">Pseudo-</text>
+    <text x="838" y="621" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">labels</text>
+    <text x="838" y="642" font-family="Arial" font-size="17" fill="#222" text-anchor="middle">+ Features</text>
+
+    <line x1="890" y1="615" x2="925" y2="615" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Additive Tree-based Classifier -->
+    <text x="1000" y="525" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Additive Tree-based</text>
+    <text x="1000" y="548" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Classifier</text>
+    <!-- tree -->
+    <line x1="1000" y1="585" x2="945" y2="640" stroke="#5a87b8" stroke-width="2.5"/>
+    <line x1="1000" y1="585" x2="1055" y2="640" stroke="#5a87b8" stroke-width="2.5"/>
+    <line x1="945" y1="640" x2="915" y2="700" stroke="#5a87b8" stroke-width="2.5"/>
+    <line x1="945" y1="640" x2="965" y2="700" stroke="#5a87b8" stroke-width="2.5"/>
+    <line x1="1055" y1="640" x2="1035" y2="700" stroke="#5a87b8" stroke-width="2.5"/>
+    <line x1="1055" y1="640" x2="1085" y2="700" stroke="#5a87b8" stroke-width="2.5"/>
+    <circle cx="1000" cy="585" r="18" fill="#6fa8dc"/>
+    <circle cx="945" cy="640" r="18" fill="#6fa8dc"/>
+    <circle cx="1055" cy="640" r="18" fill="#6fa8dc"/>
+    <circle cx="915" cy="703" r="17" fill="#e98b7a"/>
+    <circle cx="965" cy="703" r="17" fill="#3fb8af"/>
+    <circle cx="1035" cy="703" r="17" fill="#e6c84f"/>
+    <circle cx="1085" cy="703" r="17" fill="#e6c84f"/>
+
+    <line x1="1108" y1="640" x2="1142" y2="640" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Scene Category Output -->
+    <text x="1187" y="525" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Scene</text>
+    <text x="1187" y="548" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Category</text>
+    <text x="1187" y="571" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Output</text>
+    <rect x="1138" y="595" width="98" height="28" rx="8" fill="#e98b7a"/>
+    <text x="1187" y="614" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene A</text>
+    <rect x="1138" y="628" width="98" height="28" rx="8" fill="#3fb8af"/>
+    <text x="1187" y="647" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene B</text>
+    <rect x="1138" y="661" width="98" height="28" rx="8" fill="#e6c84f"/>
+    <text x="1187" y="680" font-family="Arial" font-size="16" fill="#222" text-anchor="middle">Scene C</text>
+
+    <line x1="1245" y1="640" x2="1279" y2="640" stroke="#404040" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+    <!-- Scheduling Policy Table -->
+    <text x="1320" y="525" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Scheduling</text>
+    <text x="1320" y="548" font-family="Arial" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Policy Table</text>
+    <rect x="1283" y="580" width="112" height="110" rx="6" fill="#fbeec0" stroke="#d4b13d" stroke-width="2"/>
+    <line x1="1339" y1="580" x2="1339" y2="690" stroke="#d4b13d"/>
+    <line x1="1283" y1="608" x2="1395" y2="608" stroke="#d4b13d"/>
+    <line x1="1283" y1="636" x2="1395" y2="636" stroke="#d4b13d"/>
+    <line x1="1283" y1="664" x2="1395" y2="664" stroke="#d4b13d"/>
+    <text x="1311" y="600" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">Scene A</text>
+    <text x="1367" y="600" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">Expert 1</text>
+    <text x="1311" y="628" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">Scene B</text>
+    <text x="1367" y="628" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">Expert 2</text>
+    <text x="1311" y="656" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">...</text>
+    <text x="1367" y="656" font-family="Arial" font-size="13" fill="#222" text-anchor="middle">Expert 3</text>
+  </g>
+</svg>

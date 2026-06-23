@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1790" height="900" viewBox="0 0 1790 900">
+  <rect width="1790" height="900" fill="white"/>
+  <style>
+    text{font-family:Georgia,'Times New Roman',serif;}
+    .lbl{font-size:30px;}
+    .big{font-size:34px;}
+    .ital{font-style:italic;font-weight:bold;font-size:28px;}
+  </style>
+
+  <!-- ============ Panel (a) Datasets ============ -->
+  <rect x="15" y="35" width="490" height="800" rx="20" fill="none" stroke="#222" stroke-width="2.5"/>
+
+  <!-- raster grids top-left -->
+  <g>
+    <rect x="40" y="70" width="95" height="80" fill="#7fae6e" stroke="#444"/>
+    <rect x="55" y="58" width="95" height="80" fill="#a8cf8f" stroke="#444"/>
+    <rect x="70" y="46" width="95" height="80" fill="#cfe3b0" stroke="#444"/>
+  </g>
+  <!-- pink lattice -->
+  <g stroke="#3b6abf" stroke-width="2">
+    <line x1="210" y1="55" x2="380" y2="55"/>
+    <line x1="210" y1="110" x2="380" y2="110"/>
+    <line x1="210" y1="165" x2="380" y2="165"/>
+    <line x1="225" y1="45" x2="225" y2="175"/>
+    <line x1="295" y1="45" x2="295" y2="175"/>
+    <line x1="365" y1="45" x2="365" y2="175"/>
+  </g>
+  <g fill="#f4b9c8" opacity="0.6">
+    <ellipse cx="260" cy="80" rx="50" ry="35"/>
+    <ellipse cx="340" cy="80" rx="50" ry="35"/>
+    <ellipse cx="260" cy="140" rx="50" ry="35"/>
+    <ellipse cx="340" cy="140" rx="50" ry="35"/>
+  </g>
+  <g fill="#3b4a8f">
+    <circle cx="225" cy="55" r="7"/><circle cx="295" cy="55" r="7"/><circle cx="365" cy="55" r="7"/>
+    <circle cx="225" cy="110" r="7"/><circle cx="295" cy="110" r="7"/><circle cx="365" cy="110" r="7"/>
+    <circle cx="225" cy="165" r="7"/><circle cx="295" cy="165" r="7"/><circle cx="365" cy="165" r="7"/>
+  </g>
+
+  <!-- graph stack -->
+  <g>
+    <rect x="40" y="245" width="95" height="80" fill="#cfcfcf" stroke="#444"/>
+    <rect x="55" y="233" width="95" height="80" fill="#dcdcdc" stroke="#444"/>
+    <rect x="70" y="221" width="95" height="80" fill="#ededed" stroke="#444"/>
+    <circle cx="95" cy="245" r="6" fill="#5aa84f"/><circle cx="130" cy="270" r="6" fill="#5aa84f"/>
+    <circle cx="110" cy="290" r="6" fill="#5aa84f"/><circle cx="145" cy="295" r="6" fill="#5aa84f"/>
+  </g>
+  <!-- network graph -->
+  <g fill="#d6e8f5" opacity="0.7">
+    <ellipse cx="300" cy="245" rx="60" ry="35"/>
+    <ellipse cx="300" cy="300" rx="60" ry="35"/>
+  </g>
+  <g stroke="#3a7d34" stroke-width="2.5">
+    <line x1="230" y1="240" x2="290" y2="225"/>
+    <line x1="290" y1="225" x2="345" y2="250"/>
+    <line x1="345" y1="250" x2="300" y2="295"/>
+    <line x1="300" y1="295" x2="240" y2="305"/>
+    <line x1="240" y1="305" x2="230" y2="240"/>
+    <line x1="345" y1="250" x2="370" y2="300"/>
+  </g>
+  <g fill="#3a7d34">
+    <circle cx="230" cy="240" r="9"/><circle cx="290" cy="225" r="9"/><circle cx="345" cy="250" r="9"/>
+    <circle cx="300" cy="295" r="9"/><circle cx="240" cy="305" r="9"/><circle cx="370" cy="300" r="9"/>
+  </g>
+
+  <!-- arrows to cubes -->
+  <path d="M150 110 h45" stroke="#aaa" stroke-width="10" marker-end="url(#gray)"/>
+  <path d="M150 270 h45" stroke="#aaa" stroke-width="10" marker-end="url(#gray)"/>
+  <path d="M385 190 h40" stroke="#aaa" stroke-width="10" marker-end="url(#gray)"/>
+
+  <!-- blue cubes -->
+  <g fill="#4a86d6" stroke="#2c5aa0">
+    <rect x="448" y="80" width="35" height="35"/>
+    <rect x="448" y="125" width="35" height="35"/>
+    <rect x="448" y="245" width="35" height="35"/>
+    <rect x="448" y="290" width="35" height="35"/>
+  </g>
+  <text x="460" y="200" class="lbl">⋮</text>
+
+  <text x="40" y="385" class="lbl">Different</text>
+  <text x="40" y="420" class="lbl">data types</text>
+  <text x="330" y="385" class="lbl">Sequential</text>
+  <text x="350" y="420" class="lbl">format</text>
+
+  <line x1="30" y1="455" x2="490" y2="455" stroke="#444" stroke-width="2" stroke-dasharray="4 5"/>
+
+  <!-- city thumbnails -->
+  <rect x="40" y="490" width="120" height="120" fill="#2c5a85"/>
+  <rect x="175" y="490" width="120" height="120" fill="#1a1530"/>
+  <rect x="310" y="490" width="120" height="120" fill="#c9a23a"/>
+  <rect x="40" y="625" width="120" height="120" fill="#e9e9e9" stroke="#aaa"/>
+  <rect x="175" y="625" width="120" height="120" fill="#3a7d34"/>
+  <rect x="310" y="625" width="120" height="120" fill="#f0e8df"/>
+  <!-- some splashes -->
+  <circle cx="100" cy="540" r="8" fill="#f2d23a"/>
+  <path d="M50 660 h100 M50 690 h100 M90 630 v110" stroke="#bbb" stroke-width="2" fill="none"/>
+  <path d="M330 680 q40 -40 80 -10" stroke="#d6622b" stroke-width="3" fill="none"/>
+
+  <text x="120" y="790" class="lbl">Multiple Domains</text>
+  <text x="135" y="828" class="lbl">Multiple Cities</text>
+  <text x="160" y="878" class="big">(a) Datasets</text>
+
+  <!-- ============ Panel (b) ============ -->
+  <text x="780" y="40" class="big">Output</text>
+  <path d="M820 55 v40" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <!-- Reshape -->
+  <rect x="560" y="100" width="560" height="60" rx="12" fill="#ededed" stroke="#888"/>
+  <text x="745" y="142" class="big">Reshape</text>
+
+  <!-- noisy patches row -->
+  <g>
+    <rect x="565" y="180" width="68" height="62" fill="#8a8a8a"/>
+    <rect x="643" y="180" width="68" height="62" fill="#9a9a9a"/>
+    <rect x="721" y="180" width="68" height="62" fill="#b5b5b5"/>
+    <rect x="799" y="180" width="68" height="62" fill="#909090"/>
+    <rect x="877" y="180" width="68" height="62" fill="#a3a3a3"/>
+    <rect x="955" y="180" width="68" height="62" fill="#878787"/>
+    <rect x="1033" y="180" width="68" height="62" fill="#c2c2c2"/>
+  </g>
+
+  <!-- Urban Diffusion Transformer box with gradient -->
+  <defs>
+    <linearGradient id="udt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d99a"/>
+      <stop offset="0.5" stop-color="#f5e08a"/>
+      <stop offset="1" stop-color="#e8836f"/>
+    </linearGradient>
+    <marker id="blk" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#222"/></marker>
+    <marker id="gray" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#aaa"/></marker>
+  </defs>
+  <rect x="560" y="270" width="560" height="120" rx="14" fill="url(#udt)" stroke="#888"/>
+  <text x="585" y="345" class="big" font-size="40">Urban Diffusion Transformer</text>
+
+  <!-- arrows from UDT up to patches -->
+  <path d="M840 270 v-20" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+  <path d="M840 180 v-20" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <!-- Concat -->
+  <rect x="785" y="435" width="160" height="55" rx="10" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="805" y="473" class="lbl">Concat</text>
+  <path d="M785 462 h-130 v-72" stroke="#222" stroke-width="3" fill="none" marker-end="url(#blk)"/>
+  <path d="M945 462 h120 v-72" stroke="#222" stroke-width="3" fill="none" marker-end="url(#blk)"/>
+
+  <!-- Spatio-temporal patching -->
+  <rect x="555" y="510" width="270" height="115" rx="14" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="575" y="558" class="big">Spatio-temporal</text>
+  <text x="615" y="600" class="big">patching</text>
+  <path d="M690 510 v-20" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <!-- Embedding layer -->
+  <rect x="875" y="510" width="225" height="115" rx="14" fill="#ededed" stroke="#888"/>
+  <text x="900" y="558" class="big">Embedding</text>
+  <text x="945" y="600" class="big">layer</text>
+  <path d="M988 510 v-20" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <!-- Noisy ST data -->
+  <rect x="555" y="700" width="270" height="120" rx="14" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="630" y="755" class="big">Noisy</text>
+  <text x="610" y="797" class="big">ST data</text>
+  <path d="M690 700 v-75" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <!-- Timestep -->
+  <rect x="875" y="700" width="225" height="120" rx="14" fill="#ededed" stroke="#888"/>
+  <text x="905" y="755" class="big">Timestep</text>
+  <text x="975" y="800" class="big" font-style="italic">t</text>
+  <path d="M988 700 v-75" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+
+  <text x="560" y="878" class="big">(b) Urban Diffusion Transformer</text>
+
+  <!-- ============ Panel (d) Unified Prompt Learning ============ -->
+  <rect x="1190" y="35" width="585" height="565" rx="20" fill="none" stroke="#222" stroke-width="2.5"/>
+
+  <!-- data-driven dashed box -->
+  <rect x="1210" y="50" width="540" height="290" rx="12" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <!-- brains -->
+  <g id="brains">
+    <g transform="translate(1245,70)"><use href="#brain"/></g>
+    <g transform="translate(1245,155)"><use href="#brain"/></g>
+    <g transform="translate(1245,235)"><use href="#brain"/></g>
+  </g>
+  <defs>
+    <g id="brain">
+      <path d="M30 10 C10 5 0 25 8 40 C-2 55 12 70 30 65 C48 70 62 55 52 40 C60 25 50 5 30 10 Z" fill="#3a3f9e" stroke="#222"/>
+      <path d="M30 12 v55" stroke="#f5a623" stroke-width="3"/>
+      <path d="M18 25 q8 8 0 16 M42 25 q-8 8 0 16" stroke="#f5a623" stroke-width="3" fill="none"/>
+    </g>
+  </defs>
+
+  <!-- pattern boxes -->
+  <rect x="1390" y="78" width="290" height="50" rx="6" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1410" y="112" class="lbl">Frequency pattern</text>
+  <rect x="1390" y="160" width="290" height="50" rx="6" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1415" y="194" class="lbl">Temporal pattern</text>
+  <rect x="1390" y="242" width="290" height="50" rx="6" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1430" y="276" class="lbl">Spatial pattern</text>
+
+  <!-- arrows pattern->brain -->
+  <path d="M1390 103 h-30" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+  <path d="M1390 185 h-30" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+  <path d="M1390 267 h-30" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+
+  <text x="1720" y="155" class="big">ST</text>
+  <text x="1715" y="195" class="big">Data</text>
+  <path d="M1710 185 h-30" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+
+  <text x="1240" y="320" class="lbl">Data</text>
+  <text x="1230" y="350" class="lbl">memory</text>
+  <text x="1490" y="345" class="ital">Data-driven prompt</text>
+
+  <!-- task-specific dashed box -->
+  <rect x="1210" y="370" width="540" height="215" rx="12" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="7 6"/>
+  <g transform="translate(1245,415)"><use href="#brain"/></g>
+  <text x="1240" y="510" class="lbl">Task</text>
+  <text x="1228" y="540" class="lbl">memory</text>
+
+  <!-- attention -->
+  <rect x="1380" y="410" width="55" height="135" rx="6" fill="white" stroke="#222" stroke-width="2"/>
+  <text x="1408" y="500" class="lbl" transform="rotate(-90 1408 500)">Attention</text>
+  <path d="M1380 477 h-50" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+
+  <!-- mask stack thumbnails -->
+  <g transform="translate(1490,415)">
+    <rect x="0" y="20" width="40" height="100" fill="#7fae6e" stroke="#444" transform="skewY(20)"/>
+    <rect x="40" y="0" width="40" height="100" fill="#cc6655" stroke="#444" transform="skewY(20)"/>
+    <rect x="80" y="-20" width="40" height="100" fill="#9cc77a" stroke="#444" transform="skewY(20)"/>
+  </g>
+  <path d="M1490 477 h-50" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+
+  <text x="1715" y="490" class="big">Mask</text>
+  <path d="M1710 480 h-30" stroke="#222" stroke-width="2.5" marker-end="url(#blk)"/>
+
+  <text x="1410" y="540" class="ital">Task-specific prompt</text>
+
+  <text x="1290" y="635" class="big">(d) Unified Prompt Learning</text>
+
+  <!-- connector from UDT right to panel d -->
+  <path d="M1120 320 h60 v140 h-235" stroke="#222" stroke-width="2.5" fill="none"/>
+  <path d="M1190 462 h-245" stroke="#222" stroke-width="2.5" fill="none" marker-end="url(#blk)"/>
+
+  <!-- ============ Panel (c) Masking Strategies ============ -->
+  <rect x="1235" y="650" width="540" height="195" rx="14" fill="none" stroke="#222" stroke-width="2"/>
+  <g transform="translate(1255,665)">
+    <!-- 5 small mask stacks -->
+    <g transform="translate(0,0)"><rect x="0" y="10" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#cc6655" transform="skewY(22)"/></g>
+    <g transform="translate(150,0)"><rect x="0" y="10" width="32" height="80" fill="#cc6655" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/></g>
+    <g transform="translate(300,0)"><rect x="0" y="10" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#cc6655" transform="skewY(22)"/></g>
+    <g transform="translate(75,80)"><rect x="0" y="10" width="32" height="80" fill="#cc6655" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/></g>
+    <g transform="translate(225,80)"><rect x="0" y="10" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#cc6655" transform="skewY(22)"/></g>
+    <g transform="translate(425,30)"><rect x="0" y="10" width="32" height="80" fill="#6f9a5e" transform="skewY(22)"/><rect x="32" y="0" width="32" height="80" fill="#cc6655" transform="skewY(22)"/></g>
+  </g>
+
+  <text x="1320" y="878" class="big">(c) Masking Strategies</text>
+
+  <!-- connectors from c to embedding -->
+  <path d="M1235 745 h-135 v-120" stroke="#222" stroke-width="2.5" fill="none"/>
+  <path d="M1100 690 h-112" stroke="#222" stroke-width="2.5" fill="none" marker-end="url(#blk)"/>
+
+  <!-- arrow datasets -> noisy -->
+  <path d="M505 770 h45" stroke="#222" stroke-width="3" marker-end="url(#blk)"/>
+  <!-- arrow datasets -> patching -->
+  <path d="M505 360 q40 100 45 150" stroke="#222" stroke-width="3" fill="none" marker-end="url(#blk)"/>
+
+</svg>

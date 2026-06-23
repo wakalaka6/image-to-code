@@ -1,0 +1,328 @@
+<svg width="2000" height="1000" viewBox="-4.0 -113.0 2208.0 1217.0" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FF0000" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00B050" />
+    </marker>
+    
+    <!-- Robot Icon Definition -->
+    <g id="robot-green">
+      <rect x="0" y="0" width="20" height="40" rx="5" fill="#20B27D" />
+      <rect x="5" y="5" width="10" height="10" fill="#20B27D" /> <!-- Head -->
+      <circle cx="10" cy="10" r="3" fill="white" />
+      <line x1="10" y1="10" x2="10" y2="15" stroke="white" stroke-width="2" />
+      <line x1="10" y1="15" x2="5" y2="25" stroke="white" stroke-width="2" /> <!-- Arm -->
+      <line x1="10" y1="15" x2="15" y2="25" stroke="white" stroke-width="2" /> <!-- Arm -->
+      <rect x="0" y="25" width="20" height="10" fill="#20B27D" /> <!-- Torso -->
+      <rect x="5" y="30" width="10" height="5" fill="white" /> <!-- Button -->
+      <line x1="10" y1="30" x2="10" y2="35" stroke="white" stroke-width="2" /> <!-- Spine -->
+      <line x1="10" y1="35" x2="5" y2="45" stroke="white" stroke-width="2" /> <!-- Leg -->
+      <line x1="10" y1="35" x2="15" y2="45" stroke="white" stroke-width="2" /> <!-- Leg -->
+    </g>
+    <g id="robot-red">
+      <rect x="0" y="0" width="20" height="40" rx="5" fill="#FF3333" />
+      <rect x="5" y="5" width="10" height="10" fill="#FF3333" />
+      <circle cx="10" cy="10" r="3" fill="white" />
+      <line x1="10" y1="10" x2="10" y2="15" stroke="white" stroke-width="2" />
+      <line x1="10" y1="15" x2="5" y2="25" stroke="white" stroke-width="2" />
+      <line x1="10" y1="15" x2="15" y2="25" stroke="white" stroke-width="2" />
+      <rect x="0" y="25" width="20" height="10" fill="#FF3333" />
+      <rect x="5" y="30" width="10" height="5" fill="white" />
+      <line x1="10" y1="30" x2="10" y2="35" stroke="white" stroke-width="2" />
+      <line x1="10" y1="35" x2="5" y2="45" stroke="white" stroke-width="2" />
+      <line x1="10" y1="35" x2="15" y2="45" stroke="white" stroke-width="2" />
+    </g>
+
+    <!-- User Icon Definition -->
+    <g id="user-icon">
+      <circle cx="20" cy="20" r="20" fill="#D0D0E8" stroke="#666" stroke-width="2" />
+      <path d="M10,40 Q20,20 30,40" fill="#D0D0E8" stroke="#666" stroke-width="2" />
+      <circle cx="20" cy="20" r="3" fill="#666" />
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- ================= LEFT COLUMN ================= -->
+  
+  <!-- Header -->
+  <text x="350" y="50" font-size="36" font-weight="bold" text-anchor="middle" fill="black">Initial Survey</text>
+
+  <!-- Prolific Screening Box -->
+  <rect x="40" y="70" width="520" height="180" fill="#808BCF" stroke="black" stroke-width="2" />
+  <text x="300" y="105" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Prolific Screening</text>
+  
+  <rect x="50" y="115" width="480" height="120" fill="white" stroke="#808BCF" stroke-width="2" />
+  <g font-size="28" fill="black">
+    <use href="#robot-green" x="60" y="125" />
+    <text x="100" y="145">US residents</text>
+    
+    <use href="#robot-green" x="60" y="165" />
+    <text x="100" y="175">English speaking</text>
+    
+    <use href="#robot-green" x="60" y="205" />
+    <text x="100" y="215">COVID/Climate views (+ or -)</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="340" y1="220" x2="340" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow-black)" />
+
+  <!-- 1650 Screened -->
+  <g transform="translate(300, 260)">
+    <use href="#user-icon" x="0" y="0" />
+    <text x="40" y="35" font-size="28" fill="black">1650</text>
+    <text x="40" y="70" font-size="28" fill="black">screened</text>
+  </g>
+
+  <!-- Belief Assessment Box -->
+  <rect x="40" y="330" width="520" height="200" fill="#808BCF" stroke="black" stroke-width="2" />
+  <text x="300" y="370" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Belief Assessment</text>
+  
+  <rect x="50" y="385" width="480" height="120" fill="white" stroke="#808BCF" stroke-width="2" />
+  <g font-size="28" fill="black" text-anchor="middle">
+    <text x="290" y="415">COVID origin: man-made vs natural?</text>
+    <text x="290" y="450">COVID vaccines: safe and effective?</text>
+    <text x="290" y="480">Climate: human-caused vs natural cycles?</text>
+    <text x="290" y="500" font-size="24" font-weight="bold">............</text>
+  </g>
+
+  <!-- Split Arrows -->
+  <line x1="340" y1="530" x2="340" y2="550" stroke="black" stroke-width="4" />
+  <path d="M340,550 L80,550 L80,600" fill="none" stroke="#FF0000" stroke-width="4" marker-end="url(#arrow-red)" />
+  <path d="M340,550 L500,550 L500,600" fill="none" stroke="#00B050" stroke-width="4" marker-end="url(#arrow-green)" />
+
+  <!-- Skeptical Belief Box -->
+  <rect x="10" y="600" width="280" height="220" fill="#CFE2F3" stroke="black" stroke-width="2" />
+  <text x="150" y="645" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Skeptical belief</text>
+  <text x="150" y="680" font-size="30" font-weight="bold" text-anchor="middle" fill="black">107 participants</text>
+  
+  <g font-size="28" fill="black">
+    <use href="#robot-green" x="10" y="690" />
+    <text x="40" y="710">COVID is human made</text>
+    
+    <use href="#robot-red" x="10" y="730" />
+    <text x="40" y="750">Vaccine are safe</text>
+    
+    <use href="#robot-red" x="10" y="770" />
+    <text x="40" y="790">Climate is human-caused</text>
+  </g>
+
+  <!-- Mainstream Belief Box -->
+  <rect x="320" y="600" width="280" height="220" fill="#CFE2F3" stroke="black" stroke-width="2" />
+  <text x="460" y="645" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Mainstream belief</text>
+  <text x="460" y="680" font-size="30" font-weight="bold" text-anchor="middle" fill="black">107 participants</text>
+  
+  <g font-size="28" fill="black">
+    <use href="#robot-red" x="320" y="690" />
+    <text x="350" y="710">COVID is human made</text>
+    
+    <use href="#robot-green" x="320" y="730" />
+    <text x="350" y="750">Vaccine are safe</text>
+    
+    <use href="#robot-green" x="320" y="770" />
+    <text x="350" y="790">Climate is human-caused</text>
+  </g>
+
+  <!-- Plus Sign -->
+  <text x="320" y="840" font-size="60" font-weight="bold" text-anchor="middle" fill="black">+</text>
+
+  <!-- Demographic Information Box -->
+  <rect x="40" y="850" width="520" height="180" fill="#808BCF" stroke="black" stroke-width="2" />
+  <text x="300" y="890" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Demographic Information</text>
+  
+  <rect x="50" y="910" width="480" height="120" fill="white" stroke="#808BCF" stroke-width="2" />
+  <g font-size="28" fill="black" text-anchor="middle">
+    <text x="290" y="940">Age, Gender, Education,</text>
+    <text x="290" y="970">Residence, Political Stance, Income</text>
+  </g>
+
+  <!-- ================= MIDDLE COLUMN ================= -->
+
+  <!-- Example Claim -->
+  <text x="800" y="90" font-size="32" font-weight="bold" fill="#0000FF" text-anchor="middle">Example Claim</text>
+  <rect x="650" y="100" width="350" height="80" fill="#D3D3D3" />
+  <text x="825" y="125" font-size="28" font-weight="bold" text-anchor="middle" fill="black">Cloth masks less effective than</text>
+  <text x="825" y="155" font-size="28" font-weight="bold" text-anchor="middle" fill="black">surgical masks</text>
+
+  <!-- Protocols -->
+  <text x="1250" y="50" font-size="36" font-weight="bold" text-anchor="middle" fill="black">Protocols</text>
+  <rect x="1030" y="90" width="300" height="100" fill="white" stroke="black" stroke-dasharray="5,5" />
+  <text x="1280" y="125" font-size="28" text-anchor="middle" fill="black">Judge's Initial Belief: True/False</text>
+  <text x="1280" y="155" font-size="28" text-anchor="middle" fill="black">Confidence: (0-100%)</text>
+
+  <!-- Consultancy Section -->
+  <rect x="650" y="200" width="520" height="800" fill="white" stroke="black" stroke-width="2" />
+  <text x="810" y="245" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Consultancy</text>
+  
+  <!-- Vertical Label -->
+  <text x="640" y="800" font-size="24" font-weight="bold" transform="rotate(-90, 640, 800)" fill="black">One AI consultant argues a random position between True (50%) or False (50%)</text>
+
+  <!-- Round 1 -->
+  <rect x="660" y="270" width="500" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="670" y="305" font-size="32" font-weight="bold" fill="black">Round 1</text>
+  
+  <g transform="translate(670, 315)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">Studies show surgical masks filter</text>
+    <text x="110" y="65" font-size="26" fill="black">60-80% of particles...</text>
+  </g>
+
+  <g transform="translate(670, 430)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="50" font-size="26" fill="black">What about multi-layer cloth masks?</text>
+  </g>
+
+  <!-- Round 2 -->
+  <rect x="660" y="510" width="500" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="670" y="545" font-size="32" font-weight="bold" fill="black">Round 2</text>
+  
+  <g transform="translate(670, 555)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">Even 3-layer cloth masks only achieve</text>
+    <text x="110" y="65" font-size="26" fill="black">50% filtration...</text>
+  </g>
+
+  <g transform="translate(670, 670)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="50" font-size="26" fill="black">Are there any exceptions to this?</text>
+  </g>
+
+  <!-- Round 3 -->
+  <rect x="660" y="750" width="500" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="670" y="785" font-size="32" font-weight="bold" fill="black">Round 3</text>
+  
+  <g transform="translate(670, 795)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">WHO recommends surgical over cloth</text>
+    <text x="110" y="65" font-size="26" fill="black">masks...</text>
+  </g>
+
+  <g transform="translate(670, 910)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="380" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">Final decision: True/False</text>
+    <text x="110" y="65" font-size="26" fill="black">Confidence: 0-100% | Justification</text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN ================= -->
+
+  <!-- Debate Section -->
+  <rect x="1250" y="200" width="950" height="800" fill="white" stroke="black" stroke-width="2" />
+  <text x="1725" y="245" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Debate</text>
+  
+  <!-- Vertical Label -->
+  <text x="1980" y="800" font-size="24" font-weight="bold" transform="rotate(-90, 1980, 800)" fill="black">Two AI debaters argue opposing positions between True vs. False (100%)</text>
+
+  <!-- Round 1 -->
+  <rect x="1260" y="270" width="850" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="1270" y="305" font-size="32" font-weight="bold" fill="black">Round 1</text>
+  
+  <g transform="translate(1270, 315)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="45" font-size="26" fill="black">Surgical masks filter 60-80%...</text>
+  </g>
+
+  <g transform="translate(1730, 315)">
+    <use href="#robot-red" x="0" y="0" />
+    <rect x="-100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="-90" y="35" font-size="26" fill="black">Quality cloth masks can be</text>
+    <text x="-90" y="65" font-size="26" fill="black">effective...</text>
+  </g>
+
+  <g transform="translate(1350, 420)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="50" font-size="26" fill="black">What defines 'quality' cloth masks?</text>
+  </g>
+
+  <!-- Round 2 -->
+  <rect x="1260" y="510" width="850" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="1270" y="545" font-size="32" font-weight="bold" fill="black">Round 2</text>
+  
+  <g transform="translate(1270, 555)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">3-layer cloth still only 50%</text>
+    <text x="110" y="65" font-size="26" fill="black">effective...</text>
+  </g>
+
+  <g transform="translate(1730, 555)">
+    <use href="#robot-red" x="0" y="0" />
+    <rect x="-100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="-90" y="35" font-size="26" fill="black">But availability and fit matter</text>
+    <text x="-90" y="65" font-size="26" fill="black">too...</text>
+  </g>
+
+  <g transform="translate(1350, 660)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="50" font-size="26" fill="black">How important is proper fit?</text>
+  </g>
+
+  <!-- Round 3 -->
+  <rect x="1260" y="750" width="850" height="200" rx="15" fill="#D3D3D3" stroke="black" stroke-width="1" />
+  <text x="1270" y="785" font-size="32" font-weight="bold" fill="black">Round 3</text>
+  
+  <g transform="translate(1270, 795)">
+    <use href="#robot-green" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">Medical studies prove</text>
+    <text x="110" y="65" font-size="26" fill="black">superiority...</text>
+  </g>
+
+  <g transform="translate(1730, 795)">
+    <use href="#robot-red" x="0" y="0" />
+    <rect x="-100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="-90" y="35" font-size="26" fill="black">Real-world usage differs from</text>
+    <text x="-90" y="65" font-size="26" fill="black">labs...</text>
+  </g>
+
+  <g transform="translate(1350, 900)">
+    <use href="#user-icon" x="0" y="0" />
+    <rect x="100" y="0" width="280" height="80" rx="10" fill="white" stroke="#999" />
+    <text x="110" y="35" font-size="26" fill="black">Final decision: True/False</text>
+    <text x="110" y="65" font-size="26" fill="black">Confidence: 0-100% | Justification</text>
+  </g>
+
+  <!-- ================= TOP RIGHT INFO BOX ================= -->
+  <rect x="1380" y="40" width="400" height="160" rx="15" fill="#D3D3D3" stroke="black" stroke-width="2" />
+  
+  <!-- AI Robot Icon -->
+  <g transform="translate(1400, 50)">
+    <rect x="0" y="0" width="20" height="40" rx="5" fill="#20B27D" />
+    <rect x="5" y="5" width="10" height="10" fill="#20B27D" />
+    <circle cx="10" cy="10" r="3" fill="white" />
+    <line x1="10" y1="10" x2="10" y2="15" stroke="white" stroke-width="2" />
+    <line x1="10" y1="15" x2="5" y2="25" stroke="white" stroke-width="2" />
+    <line x1="10" y1="15" x2="15" y2="25" stroke="white" stroke-width="2" />
+    <rect x="0" y="25" width="20" height="10" fill="#20B27D" />
+    <rect x="5" y="30" width="10" height="5" fill="white" />
+    <line x1="10" y1="30" x2="10" y2="35" stroke="white" stroke-width="2" />
+    <line x1="10" y1="35" x2="5" y2="45" stroke="white" stroke-width="2" />
+    <line x1="10" y1="35" x2="15" y2="45" stroke="white" stroke-width="2" />
+  </g>
+  <text x="1450" y="70" font-size="28" fill="#00B0FF" font-weight="bold">AI expert can access corresponding</text>
+  <text x="1580" y="95" font-size="28" fill="#00B0FF" font-weight="bold" text-anchor="middle">sources and cite them</text>
+
+  <!-- User Icon -->
+  <g transform="translate(1400, 120)">
+    <circle cx="20" cy="20" r="20" fill="#D0D0E8" stroke="#666" stroke-width="2" />
+    <path d="M10,40 Q20,20 30,40" fill="#D0D0E8" stroke="#666" stroke-width="2" />
+    <circle cx="20" cy="20" r="3" fill="#666" />
+  </g>
+  <text x="1450" y="150" font-size="28" fill="#00B0FF" font-weight="bold">Cited references are shown to judges</text>
+
+</svg>

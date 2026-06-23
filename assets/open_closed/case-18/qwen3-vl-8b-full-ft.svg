@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4.0 14.0 1682.0 507.0" style="font-family: 'Times New Roman', Times, serif; background-color: white;">
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrow-grey" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#666666">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#A9D18E">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-orange" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#F4B183">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#9CC2E5">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-black" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="black">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+
+    <!-- Robot Icon -->
+    <g id="robot-icon">
+      <path d="M25,5 L35,5 L35,15 L25,15 Z" fill="black"/> <!-- Antenna Base -->
+      <path d="M28,5 L28,0 A2,2 0 0,1 32,0 L32,5" stroke="black" stroke-width="3" fill="none"/> <!-- Antenna -->
+      <rect x="10" y="15" width="40" height="25" rx="5" fill="black"/> <!-- Head -->
+      <circle cx="20" cy="25" r="3" fill="white"/> <!-- Eye L -->
+      <circle cx="40" cy="25" r="3" fill="white"/> <!-- Eye R -->
+      <rect x="22" y="32" width="16" height="8" rx="2" fill="white"/> <!-- Mouth -->
+      <path d="M24,34 L28,34 M32,34 L36,34" stroke="black" stroke-width="1"/>
+      <rect x="15" y="42" width="30" height="25" fill="black"/> <!-- Body -->
+      <polyline points="20,55 25,48 30,58 35,52 40,55" stroke="white" stroke-width="2" fill="none"/> <!-- Pulse -->
+      <rect x="5" y="68" width="50" height="15" rx="7" fill="black"/> <!-- Base -->
+      <circle cx="15" cy="75.5" r="4" fill="white"/> <!-- Wheel L -->
+      <circle cx="35" cy="75.5" r="4" fill="white"/> <!-- Wheel R -->
+      <circle cx="55" cy="75.5" r="4" fill="white"/> <!-- Wheel R -->
+      <!-- Arms -->
+      <path d="M15,48 C5,48 5,35 5,35" stroke="black" stroke-width="3" fill="none"/> 
+      <path d="M55,48 C65,48 65,35 65,35" stroke="black" stroke-width="3" fill="none"/>
+      <!-- Clamps -->
+      <path d="M2,35 A3,3 0 1,0 8,35" stroke="black" stroke-width="3" fill="none"/>
+      <path d="M62,35 A3,3 0 1,1 68,35" stroke="black" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- Neural Net Icon -->
+    <g id="neural-net">
+      <circle cx="10" cy="10" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="10" cy="25" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="10" cy="40" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="30" cy="10" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="30" cy="25" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="30" cy="40" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <circle cx="50" cy="25" r="5" stroke="black" stroke-width="2" fill="none"/>
+      <line x1="15" y1="10" x2="25" y2="10" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="10" x2="25" y2="25" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="25" x2="25" y2="10" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="25" x2="25" y2="40" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="40" x2="25" y2="25" stroke="black" stroke-width="2"/>
+      <line x1="15" y1="40" x2="25" y2="40" stroke="black" stroke-width="2"/>
+      <line x1="35" y1="10" x2="45" y2="25" stroke="black" stroke-width="2"/>
+      <line x1="35" y1="25" x2="45" y2="25" stroke="black" stroke-width="2"/>
+      <line x1="35" y1="40" x2="45" y2="25" stroke="black" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- ================= SECTION 1: MLLM-based Tag Extraction ================= -->
+  <g transform="translate(10, 20)">
+    <!-- Border -->
+    <rect x="0" y="0" width="560" height="480" rx="20" fill="none" stroke="#666666" stroke-width="4" stroke-dasharray="5,5"/>
+    
+    <!-- Top Left: Raw Info -->
+    <text x="50" y="30" font-size="28" font-weight="bold" font-style="italic">Item<tspan dy="5" font-size="20">i</tspan></text>
+    <line x1="80" y1="40" x2="80" y2="60" stroke="#666666" stroke-width="3" marker-end="url(#arrow-grey)"/>
+    
+    <rect x="10" y="60" width="160" height="70" rx="10" fill="#E7E6E6" stroke="#666666" stroke-width="4"/>
+    <text x="90" y="90" font-size="28" text-anchor="middle">Raw</text>
+    <text x="90" y="115" font-size="28" text-anchor="middle">Information</text>
+    
+    <line x1="170" y1="85" x2="200" y2="85" stroke="#666666" stroke-width="3" marker-end="url(#arrow-grey)"/>
+    
+    <!-- Robot 1 -->
+    <g transform="translate(190, 40) scale(1.2)">
+      <use href="#robot-icon"/>
+    </g>
+    <text x="225" y="130" font-size="28" font-weight="bold" text-anchor="middle">MLLM</text>
+    
+    <line x1="260" y1="85" x2="300" y2="85" stroke="#666666" stroke-width="3" marker-end="url(#arrow-grey)"/>
+
+    <!-- Processing Block -->
+    <rect x="300" y="20" width="160" height="140" rx="10" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="8,8"/>
+    <rect x="310" y="30" width="120" height="50" rx="8" fill="#D9E1F2" stroke="#999" stroke-width="3"/>
+    <text x="370" y="62" font-size="24" font-weight="bold" text-anchor="middle">ASR</text>
+    <rect x="310" y="85" width="120" height="50" rx="8" fill="#D9E1F2" stroke="#999" stroke-width="3"/>
+    <text x="370" y="117" font-size="24" font-weight="bold" text-anchor="middle">OCR</text>
+    <rect x="310" y="120" width="120" height="50" rx="8" fill="#FFF2CC" stroke="#999" stroke-width="3"/>
+    <text x="370" y="152" font-size="24" font-weight="bold" text-anchor="middle">Text</text>
+
+    <!-- MLLM Emb -->
+    <rect x="440" y="30" width="140" height="130" rx="15" fill="#FCEBF5" stroke="#666666" stroke-width="3" stroke-dasharray="10,10"/>
+    <text x="510" y="100" font-size="24" font-weight="bold" text-anchor="middle">MLLM</text>
+    <text x="510" y="125" font-size="24" font-weight="bold" text-anchor="middle">Emb <tspan font-style="italic">E</tspan><tspan dy="5" font-size="18">i</tspan></text>
+
+    <!-- Connectors from Processing -->
+    <path d="M420,95 L430,95 L430,195 L410,195 L410,210" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-grey)"/>
+    <path d="M440,50 L480,50 L480,30" fill="none" stroke="#666666" stroke-width="3" marker-end="url(#arrow-grey)"/> <!-- To MLLM Emb -->
+    <path d="M440,145 L500,145 L500,190 L410,190 L410,210" fill="none" stroke="#F4B183" stroke-width="3"/> <!-- To UserTag -->
+
+    <!-- Prompt Boxes -->
+    <!-- ItemTag Prompt -->
+    <rect x="10" y="210" width="250" height="80" rx="10" fill="#E2EFDA" stroke="#548235" stroke-width="4"/>
+    <text x="135" y="240" font-size="28" font-weight="bold" text-anchor="middle">ItemTag Extraction</text>
+    <text x="135" y="265" font-size="28" font-weight="bold" text-anchor="middle">Prompt <tspan font-style="italic">X</tspan><tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">C</tspan></text>
+
+    <!-- UserTag Prompt -->
+    <rect x="310" y="210" width="280" height="80" rx="10" fill="#FCE4D6" stroke="#BF9000" stroke-width="4"/>
+    <text x="450" y="240" font-size="28" font-weight="bold" text-anchor="middle">UserTag Extraction</text>
+    <text x="450" y="265" font-size="28" font-weight="bold" text-anchor="middle">Prompt <tspan font-style="italic">X</tspan><tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">T</tspan></text>
+
+    <!-- Connectors to Prompts -->
+    <path d="M370,160 L370,175 L135,175 L135,205" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-grey)"/>
+    <path d="M500,160 L500,185 L270,185 L270,260" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/>
+
+    <!-- Robot 2 -->
+    <g transform="translate(230, 260) scale(1.2)">
+      <use href="#robot-icon"/>
+    </g>
+    <text x="275" y="350" font-size="28" font-weight="bold" text-anchor="middle">MLLM</text>
+
+    <!-- Arrows from Robot 2 -->
+    <path d="M250,280 L250,290 L220,290" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/> <!-- To UserTag Prompt -->
+    <path d="M250,280 L250,290 L300,290 L300,260 L400,260 L400,270" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/> <!-- To UserTag Prompt Bottom -->
+    <path d="M250,280 L250,290 L120,290 L120,330" fill="none" stroke="#A9D18E" stroke-width="3" marker-end="url(#arrow-green)"/> <!-- To ItemTag Prompt -->
+    <path d="M250,280 L250,290 L120,290 L120,200 L135,200" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-grey)"/> <!-- To ItemTag Prompt Top -->
+
+    <!-- Output Stacks -->
+    <!-- ItemTag Set -->
+    <g transform="translate(30, 330)">
+      <rect x="20" y="0" width="180" height="50" rx="10" fill="#E2EFDA" stroke="#A9D18E" stroke-width="3"/>
+      <text x="110" y="32" font-size="24" text-anchor="middle">Live Music</text>
+      <rect x="0" y="35" width="180" height="50" rx="10" fill="#C6E0B4" stroke="#A9D18E" stroke-width="3"/>
+      <text x="90" y="60" font-size="24" text-anchor="middle">Instrument</text>
+      <text x="90" y="85" font-size="24" text-anchor="middle">Shows</text>
+      <text x="90" y="115" font-size="28" font-weight="bold" text-anchor="middle">ItemTag Set <tspan font-style="italic">C</tspan>*</text>
+    </g>
+
+    <!-- UserTag Set -->
+    <g transform="translate(330, 330)">
+      <rect x="20" y="0" width="200" height="50" rx="10" fill="#FCE4D6" stroke="#F4B183" stroke-width="3"/>
+      <text x="120" y="32" font-size="24" text-anchor="middle">Folk Music</text>
+      <rect x="0" y="35" width="200" height="50" rx="10" fill="#F8CBAD" stroke="#F4B183" stroke-width="3"/>
+      <text x="100" y="60" font-size="24" text-anchor="middle">Music</text>
+      <text x="100" y="85" font-size="24" text-anchor="middle">Enthusiast</text>
+      <text x="100" y="115" font-size="28" font-weight="bold" text-anchor="middle">UserTag Set <tspan font-style="italic">T</tspan>*</text>
+    </g>
+
+    <!-- Feedback Loops -->
+    <path d="M90,410 L90,470 L750,470 L750,440" fill="none" stroke="#A9D18E" stroke-width="3" marker-end="url(#arrow-green)"/>
+    <path d="M420,430 L420,480 L950,480 L950,440" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/>
+
+  </g>
+
+  <!-- ================= SECTION 2: LLM-based Collaborative Logic Reasoning ================= -->
+  <g transform="translate(600, 20)">
+    <!-- Border -->
+    <rect x="0" y="0" width="520" height="480" rx="20" fill="none" stroke="#666666" stroke-width="4" stroke-dasharray="5,5"/>
+
+    <!-- Logic Graph Box -->
+    <rect x="30" y="10" width="460" height="250" rx="20" fill="#F0F6FA" stroke="#666666" stroke-width="3" stroke-dasharray="8,8"/>
+    <text x="50" y="45" font-size="28" font-weight="bold" font-style="italic">Logic Graph</text>
+
+    <!-- Logic Graph Content -->
+    <g transform="translate(150, 40)">
+      <!-- Nodes -->
+      <rect x="100" y="0" width="200" height="40" rx="8" fill="#FCE4D6" stroke="#BF9000" stroke-width="2"/>
+      <text x="200" y="28" font-size="24" text-anchor="middle">Folk Music</text>
+
+      <rect x="50" y="40" width="200" height="60" rx="8" fill="#F8CBAD" stroke="#F4B183" stroke-width="2"/>
+      <text x="150" y="65" font-size="24" text-anchor="middle">Music</text>
+      <text x="150" y="90" font-size="24" text-anchor="middle">Enthusiast</text>
+
+      <rect x="0" y="130" width="220" height="50" rx="8" fill="#E2EFDA" stroke="#A9D18E" stroke-width="2"/>
+      <text x="110" y="162" font-size="24" text-anchor="middle">Live Music</text>
+
+      <rect x="-10" y="160" width="220" height="60" rx="8" fill="#C6E0B4" stroke="#A9D18E" stroke-width="2"/>
+      <text x="100" y="185" font-size="24" text-anchor="middle">Instrument</text>
+      <text x="100" y="210" font-size="24" text-anchor="middle">Shows</text>
+
+      <!-- Edges -->
+      <path d="M100,20 L100,30 L50,30 L50,100 L10,100 L10,180 L30,180" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/>
+      <path d="M100,20 L100,30 L150,30 L150,80 L200,80 L200,150 L210,150" fill="none" stroke="#A9D18E" stroke-width="3" marker-end="url(#arrow-green)"/>
+      <path d="M200,150 L200,180 L150,180 L150,220 L10,220 L10,180 L30,180" fill="none" stroke="#A9D18E" stroke-width="3" marker-end="url(#arrow-green)"/>
+      <path d="M200,150 L200,180 L150,180 L150,220 L10,220 L10,100 L30,100" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/>
+      
+      <!-- Labels -->
+      <text x="-80" y="120" font-size="28" font-weight="bold" font-style="italic" fill="#C65911">G<tspan dy="-10" font-size="18">U2I*</tspan></text>
+      <text x="320" y="120" font-size="28" font-weight="bold" font-style="italic" fill="#548235">G<tspan dy="-10" font-size="18">I2U*</tspan></text>
+
+      <!-- Text Below -->
+      <text x="110" y="110" font-size="28" font-weight="bold" text-anchor="middle">UserTag Set <tspan font-style="italic">C</tspan>*</text>
+      <text x="110" y="240" font-size="28" font-weight="bold" text-anchor="middle">ItemTag Set <tspan font-style="italic">T</tspan>*</text>
+    </g>
+
+    <!-- LLM Robot -->
+    <g transform="translate(220, 280) scale(1.3)">
+      <use href="#robot-icon"/>
+    </g>
+    <text x="280" y="360" font-size="28" font-weight="bold" text-anchor="middle">LLM</text>
+    
+    <line x1="280" y1="310" x2="280" y2="260" stroke="#666666" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-grey)"/>
+
+    <!-- Logic Prompt Boxes -->
+    <rect x="40" y="400" width="250" height="60" rx="10" fill="#E2EFDA" stroke="#548235" stroke-width="3"/>
+    <text x="165" y="425" font-size="28" font-weight="bold" text-anchor="middle">I2U Logic</text>
+    <text x="165" y="450" font-size="28" font-weight="bold" text-anchor="middle">Prompt <tspan font-style="italic">X</tspan><tspan dy="5" font-size="20">c</tspan></text>
+
+    <rect x="290" y="400" width="250" height="60" rx="10" fill="#FCE4D6" stroke="#BF9000" stroke-width="3"/>
+    <text x="415" y="425" font-size="28" font-weight="bold" text-anchor="middle">U2I Logic</text>
+    <text x="415" y="450" font-size="28" font-weight="bold" text-anchor="middle">Prompt <tspan font-style="italic">X</tspan><tspan dy="5" font-size="20">t</tspan></text>
+
+    <!-- Connectors to LLM -->
+    <path d="M165,400 L165,320 L220,320" fill="none" stroke="#A9D18E" stroke-width="3" marker-end="url(#arrow-green)"/>
+    <path d="M415,400 L415,320 L340,320" fill="none" stroke="#F4B183" stroke-width="3" marker-end="url(#arrow-orange)"/>
+
+  </g>
+
+  <!-- ================= SECTION 3: Tag Logic Integration ================= -->
+  <g transform="translate(1120, 20)">
+    <!-- Border -->
+    <rect x="0" y="0" width="480" height="480" rx="20" fill="none" stroke="#666666" stroke-width="4" stroke-dasharray="5,5"/>
+
+    <!-- Left Icons -->
+    <g transform="translate(20, 100)">
+      <!-- User -->
+      <path d="M20,50 C20,30 50,30 50,50 L50,60 L20,60 Z" fill="black"/>
+      <circle cx="35" cy="25" r="12" fill="black"/>
+      <path d="M25,20 Q35,30 45,20" stroke="white" stroke-width="2" fill="none"/>
+      <text x="35" y="80" font-size="24" font-weight="bold" text-anchor="middle">user</text>
+      
+      <!-- Brace -->
+      <path d="M80,0 L90,0 L90,120 L80,120" fill="none" stroke="#666666" stroke-width="3"/>
+      <path d="M90,60 L100,60" fill="none" stroke="#666666" stroke-width="3"/>
+
+      <!-- Camera -->
+      <g transform="translate(110, -30)">
+        <rect x="10" y="10" width="50" height="35" rx="3" fill="black"/>
+        <rect x="25" y="5" width="20" height="5" fill="black"/>
+        <circle cx="35" cy="27" r="12" fill="white" stroke="black" stroke-width="2"/>
+        <circle cx="35" cy="27" r="8" fill="black"/>
+        <circle cx="55" cy="15" r="3" fill="white"/>
+        <text x="35" y="70" font-size="24" font-style="italic" text-anchor="middle">i<tspan dy="5" font-size="18">1</tspan></text>
+      </g>
+
+      <!-- Camcorder -->
+      <g transform="translate(110, 20)">
+        <rect x="10" y="10" width="40" height="30" rx="5" fill="black"/>
+        <circle cx="20" cy="25" r="8" fill="white" stroke="black" stroke-width="2"/>
+        <circle cx="40" cy="25" r="8" fill="white" stroke="black" stroke-width="2"/>
+        <path d="M50,15 L60,15 L60,45 L50,45 Z" fill="black"/>
+        <circle cx="20" cy="25" r="3" fill="black"/>
+        <circle cx="40" cy="25" r="3" fill="black"/>
+        <text x="35" y="70" font-size="24" font-style="italic" text-anchor="middle">i<tspan dy="5" font-size="18">2</tspan></text>
+      </g>
+
+      <!-- Dots -->
+      <text x="145" y="110" font-size="30" font-weight="bold" text-anchor="middle">...</text>
+
+      <!-- Gamepad -->
+      <g transform="translate(110, 120)">
+        <path d="M10,10 C10,0 20,0 30,10 L40,15 L50,10 C60,0 70,0 70,10 L70,30 C70,40 60,40 55,35 L45,35 L45,45 L35,45 L35,35 L25,35 L25,45 L15,45 L15,35 L5,35 C0,40 0,40 0,30 Z" fill="black"/>
+        <circle cx="20" cy="20" r="3" fill="white"/>
+        <circle cx="50" cy="20" r="3" fill="white"/>
+        <text x="35" y="70" font-size="24" font-style="italic" text-anchor="middle">i<tspan dy="5" font-size="18">n</tspan></text>
+      </g>
+    </g>
+
+    <!-- Data Stacks -->
+    <g transform="translate(200, 30)">
+      <!-- Stack 1 -->
+      <rect x="0" y="0" width="340" height="35" rx="5" fill="#FCE4D6" stroke="#BF9000" stroke-width="2"/>
+      <text x="170" y="25" font-size="28" font-weight="bold" text-anchor="middle" fill="#C65911" font-style="italic">T<tspan dy="5" font-size="18">1</tspan><tspan dy="-5"> = {t</tspan><tspan dy="5" font-size="18">1,1</tspan><tspan dy="-5">, ···, t</tspan><tspan dy="5" font-size="18">1,k</tspan><tspan dy="-5">}</tspan></text>
+      <rect x="0" y="35" width="340" height="35" rx="5" fill="#E2EFDA" stroke="#548235" stroke-width="2"/>
+      <text x="170" y="60" font-size="28" font-weight="bold" text-anchor="middle" fill="#548235" font-style="italic">C<tspan dy="5" font-size="18">1</tspan><tspan dy="-5"> = {c</tspan><tspan dy="5" font-size="18">1,1</tspan><tspan dy="-5">, ···, c</tspan><tspan dy="5" font-size="18">1,l</tspan><tspan dy="-5">}</tspan></text>
+
+      <!-- Stack 2 -->
+      <g transform="translate(0, 70)">
+        <rect x="0" y="0" width="340" height="35" rx="5" fill="#FCE4D6" stroke="#BF9000" stroke-width="2"/>
+        <text x="170" y="25" font-size="28" font-weight="bold" text-anchor="middle" fill="#C65911" font-style="italic">T<tspan dy="5" font-size="18">2</tspan><tspan dy="-5"> = {t</tspan><tspan dy="5" font-size="18">2,1</tspan><tspan dy="-5">, ···, t</tspan><tspan dy="5" font-size="18">2,k</tspan><tspan dy="-5">}</tspan></text>
+        <rect x="0" y="35" width="340" height="35" rx="5" fill="#E2EFDA" stroke="#548235" stroke-width="2"/>
+        <text x="170" y="60" font-size="28" font-weight="bold" text-anchor="middle" fill="#548235" font-style="italic">C<tspan dy="5" font-size="18">2</tspan><tspan dy="-5"> = {c</tspan><tspan dy="5" font-size="18">2,1</tspan><tspan dy="-5">, ···, c</tspan><tspan dy="5" font-size="18">2,l</tspan><tspan dy="-5">}</tspan></text>
+      </g>
+
+      <!-- Dots -->
+      <text x="170" y="150" font-size="30" font-weight="bold" text-anchor="middle">...</text>
+
+      <!-- Stack 3 -->
+      <g transform="translate(0, 150)">
+        <rect x="0" y="0" width="340" height="35" rx="5" fill="#FCE4D6" stroke="#BF9000" stroke-width="2"/>
+        <text x="170" y="25" font-size="28" font-weight="bold" text-anchor="middle" fill="#C65911" font-style="italic">T<tspan dy="5" font-size="18">n</tspan><tspan dy="-5"> = {t</tspan><tspan dy="5" font-size="18">n,1</tspan><tspan dy="-5">, ···, t</tspan><tspan dy="5" font-size="18">n,k</tspan><tspan dy="-5">}</tspan></text>
+        <rect x="0" y="35" width="340" height="35" rx="5" fill="#E2EFDA" stroke="#548235" stroke-width="2"/>
+        <text x="170" y="60" font-size="28" font-weight="bold" text-anchor="middle" fill="#548235" font-style="italic">C<tspan dy="5" font-size="18">n</tspan><tspan dy="-5"> = {c</tspan><tspan dy="5" font-size="18">n,1</tspan><tspan dy="-5">, ···, c</tspan><tspan dy="5" font-size="18">n,l</tspan><tspan dy="-5">}</tspan></text>
+      </g>
+    </g>
+
+    <!-- Input Arrow -->
+    <text x="300" y="240" font-size="24" text-anchor="middle">Input</text>
+    <line x1="300" y1="220" x2="300" y2="280" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+    <!-- RecSys Box -->
+    <rect x="190" y="260" width="340" height="150" fill="white" stroke="#666666" stroke-width="4"/>
+    <text x="200" y="295" font-size="24" font-weight="bold">RecSys</text>
+    
+    <g transform="translate(210, 310)">
+      <use href="#neural-net" transform="scale(1.5)"/>
+    </g>
+
+    <rect x="270" y="275" width="260" height="70" rx="10" fill="#E0FCEB" stroke="#9CC2E5" stroke-width="2"/>
+    <text x="400" y="295" font-size="22" text-anchor="middle">Tag-based</text>
+    <text x="400" y="315" font-size="22" text-anchor="middle">Item/User Encoder</text>
+
+    <rect x="270" y="320" width="260" height="70" rx="10" fill="#FFF2CC" stroke="#9CC2E5" stroke-width="2"/>
+    <text x="400" y="340" font-size="22" text-anchor="middle">Tag-logic</text>
+    <text x="400" y="360" font-size="22" text-anchor="middle">Inference Extension</text>
+
+    <!-- Candidate Item -->
+    <text x="480" y="250" font-size="20" text-anchor="middle">Candidate</text>
+    <text x="480" y="270" font-size="20" text-anchor="middle">item</text>
+    <text x="480" y="290" font-size="28" font-weight="bold" font-style="italic" text-anchor="middle">v<tspan dy="5" font-size="18">i</tspan></text>
+    <line x1="480" y1="295" x2="480" y2="340" stroke="black" stroke-width="3"/>
+    <line x1="480" y1="340" x2="440" y2="340" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+    <!-- Logic Graph Mini -->
+    <g transform="translate(20, 270)">
+      <text x="100" y="-10" font-size="24" font-weight="bold" font-style="italic" text-anchor="middle">Logic Graph</text>
+      <rect x="0" y="0" width="160" height="150" rx="20" fill="#E7E6E6" stroke="#666666" stroke-width="3"/>
+      <text x="40" y="130" font-size="24" font-weight="bold" font-style="italic" text-anchor="middle">C*</text>
+      <text x="120" y="130" font-size="24" font-weight="bold" font-style="italic" text-anchor="middle">T*</text>
+      
+      <!-- Mini Nodes -->
+      <circle cx="30" cy="30" r="15" fill="#FCE4D6" stroke="#666666" stroke-width="2"/>
+      <circle cx="30" cy="70" r="15" fill="#FCE4D6" stroke="#666666" stroke-width="2"/>
+      <circle cx="30" cy="110" r="15" fill="#FCE4D6" stroke="#666666" stroke-width="2"/>
+      <circle cx="130" cy="30" r="15" fill="#E2EFDA" stroke="#666666" stroke-width="2"/>
+      <circle cx="130" cy="70" r="15" fill="#E2EFDA" stroke="#666666" stroke-width="2"/>
+      <circle cx="130" cy="110" r="15" fill="#E2EFDA" stroke="#666666" stroke-width="2"/>
+      
+      <!-- Mini Edges -->
+      <line x1="45" y1="30" x2="115" y2="30" stroke="#F4B183" stroke-width="2" marker-end="url(#arrow-orange)"/>
+      <line x1="45" y1="30" x2="115" y2="70" stroke="#A9D18E" stroke-width="2" marker-end="url(#arrow-green)"/>
+      <line x1="45" y1="70" x2="115" y2="30" stroke="#A9D18E" stroke-width="2" marker-end="url(#arrow-green)"/>
+      <line x1="45" y1="70" x2="115" y2="110" stroke="#F4B183" stroke-width="2" marker-end="url(#arrow-orange)"/>
+      <line x1="45" y1="110" x2="115" y2="70" stroke="#A9D18E" stroke-width="2" marker-end="url(#arrow-green)"/>
+    </g>
+
+    <!-- Arrows from Logic Graph to RecSys -->
+    <line x1="180" y1="290" x2="260" y2="290" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+    <text x="220" y="285" font-size="24" font-weight="bold" font-style="italic" fill="#548235">G<tspan dy="-10" font-size="16">I2U*</tspan></text>
+    
+    <line x1="180" y1="340" x2="260" y2="340" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+    <text x="220" y="335" font-size="24" font-weight="bold" font-style="italic" fill="#C65911">G<tspan dy="-10" font-size="16">U2I*</tspan></text>
+
+    <!-- Backpropagation -->
+    <line x1="260" y1="410" x2="260" y2="370" stroke="black" stroke-width="3" stroke-dasharray="8,8" marker-end="url(#arrow-black)"/>
+    <text x="260" y="390" font-size="18" text-anchor="middle" fill="black" style="background-color: white;">Backpropagation</text>
+
+    <!-- Loss Function -->
+    <rect x="20" y="405" width="300" height="80" rx="10" fill="#DEEBF7" stroke="#9CC2E5" stroke-width="2"/>
+    <text x="170" y="430" font-size="24" font-family="Times New Roman" text-anchor="middle" font-style="italic">L = λ(ℒ<tspan dy="5" font-size="16">ut</tspan><tspan dy="-5"> + ℒ</tspan><tspan dy="5" font-size="16">it</tspan><tspan dy="-5">) + (1 − λ)ℒ</tspan><tspan dy="5" font-size="16">ui</tspan></text>
+    <text x="170" y="460" font-size="22" text-anchor="middle">Tag-based Learning Augmentation</text>
+
+    <!-- Final Output -->
+    <line x1="290" y1="370" x2="290" y2="400" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="290" y="425" font-size="28" font-style="italic" text-anchor="middle">ŷ<tspan dy="5" font-size="18">raw</tspan></text>
+
+    <line x1="370" y1="370" x2="370" y2="400" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="370" y="425" font-size="28" font-style="italic" text-anchor="middle">ŷ<tspan dy="5" font-size="18">tag</tspan></text>
+
+    <line x1="290" y1="430" x2="320" y2="450" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <line x1="370" y1="430" x2="340" y2="450" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="330" y="465" font-size="28" font-style="italic" text-anchor="middle">ŷ</text>
+
+  </g>
+
+  <!-- ================= CROSS CONNECTIONS ================= -->
+  <!-- Blue Arrow from Section 2 to Section 3 -->
+  <path d="M1060,160 L1090,160 L1090,340 L1135,340" fill="none" stroke="#9CC2E5" stroke-width="3" marker-end="url(#arrow-blue)"/>
+
+  <!-- ================= TITLES ================= -->
+  <text x="280" y="510" font-size="32" font-weight="bold" text-anchor="middle">(1) MLLM-based Tag Extraction</text>
+  <text x="860" y="510" font-size="32" font-weight="bold" text-anchor="middle">(2) LLM-based Collaborative Logic Reasoning</text>
+  <text x="1360" y="510" font-size="32" font-weight="bold" text-anchor="middle">(3) Tag Logic Integration</text>
+
+</svg>

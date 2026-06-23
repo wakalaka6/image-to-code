@@ -225,13 +225,13 @@
     <rect x="210" y="225" width="60" height="30" rx="5" fill="#ddebf7" stroke="#2f5597" stroke-width="1.5"/>
     <text x="240" y="245" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">DIS</text>
 
-    <!-- Double Arrows & Losses (Left) -->
+    <!-- Double Arrows &amp; Losses (Left) -->
     <use href="#double-arrow" transform="translate(160, 125) rotate(-35)"/>
     <use href="#double-arrow" transform="translate(160, 215) rotate(35)"/>
     <text x="145" y="95" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#4f81bd" text-anchor="middle">ℒ<tspan font-size="12" dy="5">cls</tspan><tspan font-size="12" dy="-10">E</tspan></text>
     <text x="145" y="275" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#4f81bd" text-anchor="middle">ℒ<tspan font-size="12" dy="5">dis</tspan><tspan font-size="12" dy="-10">E</tspan></text>
 
-    <!-- fMRI & ViT (Left Bottom) -->
+    <!-- fMRI &amp; ViT (Left Bottom) -->
     <use href="#fmri-monitor" x="70" y="310"/>
     <text x="100" y="305" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">fMRI</text>
     <use href="#thick-arrow-right-blue" transform="translate(135, 345) scale(0.8, 1)"/>
@@ -243,7 +243,7 @@
     <use href="#train-subjects" x="65" y="410"/>
     <text x="105" y="495" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">Train Subjects</text>
 
-    <!-- MIDDLE COLUMN (Features & Projectors) -->
+    <!-- MIDDLE COLUMN (Features &amp; Projectors) -->
     <use href="#feature-bars" x="330" y="350"/>
     <text x="345" y="425" font-family="Georgia, serif" font-size="18" font-weight="bold" font-style="italic" text-anchor="middle">E</text>
 
@@ -264,7 +264,7 @@
     <!-- Curved Skip Connection (Left) -->
     <path d="M 370,360 C 400,300 400,220 360,175" fill="none" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
 
-    <!-- Decoder & fMRI Reconstruction -->
+    <!-- Decoder &amp; fMRI Reconstruction -->
     <path d="M 345,415 L 345,450 L 385,450" fill="none" stroke="#2f5597" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
     <polygon points="390,440 470,420 470,480 390,460" fill="#dbe5f1" stroke="#2f5597" stroke-width="2"/>
     <text x="430" y="455" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">Decoder</text>
@@ -320,7 +320,7 @@
     <use href="#minus-operator" x="815" y="170"/>
     <path d="M 835,360 C 865,300 865,220 825,175" fill="none" stroke="#a0a0a0" stroke-width="1.5" marker-end="url(#arrowhead-small)"/>
 
-    <!-- Semantic Heads & Losses -->
+    <!-- Semantic Heads &amp; Losses -->
     <use href="#semantic-heads" x="910" y="100"/>
     <text x="955" y="185" font-family="Georgia, serif" font-size="16" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000">Semantic</text>
 
@@ -330,7 +330,7 @@
     <text x="905" y="85" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#bf9000" text-anchor="middle">ℒ<tspan font-size="12" dy="5">inv</tspan><tspan font-size="12" dy="-10">F</tspan></text>
     <text x="905" y="255" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#bf9000" text-anchor="middle">ℒ<tspan font-size="12" dy="5">spe</tspan><tspan font-size="12" dy="-10">F</tspan></text>
 
-    <!-- Diffusion Prior & Visual Stimuli -->
+    <!-- Diffusion Prior &amp; Visual Stimuli -->
     <use href="#diffusion-prior-box" x="900" y="300"/>
     <text x="965" y="370" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#e46c0a" text-anchor="middle">ℒ<tspan font-size="12" dy="5">prior</tspan></text>
 

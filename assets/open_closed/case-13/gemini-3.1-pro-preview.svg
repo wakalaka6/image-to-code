@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#88aadd" />
+    </marker>
+    <marker id="arrow-yellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffcc55" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#99cc99" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ccbbee" />
+    </marker>
+    <style>
+      .text { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; }
+      .text-left { font-family: Arial, sans-serif; font-size: 14px; text-anchor: start; }
+      .box { fill: none; stroke: #999; stroke-width: 1.5; rx: 8; }
+      .box-dashed { fill: none; stroke: #999; stroke-width: 1.5; stroke-dasharray: 6,4; }
+      .box-blue { fill: none; stroke: #88aadd; stroke-width: 1.5; stroke-dasharray: 6,4; }
+      .box-yellow { fill: none; stroke: #ffcc55; stroke-width: 1.5; stroke-dasharray: 6,4; }
+      .box-green { fill: none; stroke: #99cc99; stroke-width: 1.5; stroke-dasharray: 6,4; }
+      .fill-blue { fill: #88aadd; }
+      .fill-gray { fill: #999999; }
+      .fill-yellow { fill: #ffcc55; }
+      .fill-green { fill: #99cc99; }
+      .fill-purple { fill: #ccbbee; }
+      .fill-white { fill: #ffffff; }
+      .line { stroke: #000; stroke-width: 1.5; fill: none; }
+      .math { font-family: "Times New Roman", serif; font-style: italic; font-size: 14px; }
+    </style>
+  </defs>
+
+  <!-- Legend -->
+  <rect x="15" y="70" width="120" height="140" class="box-dashed" />
+  <rect x="22" y="80" width="20" height="20" class="fill-blue" />
+  <text x="50" y="95" class="text-left">hard label</text>
+  <rect x="22" y="115" width="20" height="20" class="fill-gray" />
+  <text x="50" y="130" class="text-left">mask label</text>
+  <rect x="22" y="150" width="20" height="20" class="fill-yellow" />
+  <text x="50" y="165" class="text-left">target</text>
+  <rect x="22" y="185" width="20" height="20" class="fill-green" />
+  <text x="50" y="200" class="text-left">non-target</text>
+
+  <!-- Input Image Placeholder -->
+  <rect x="15" y="250" width="105" height="105" fill="#333" />
+  <text x="67" y="375" class="text">cat</text>
+  <path d="M 120 250 L 155 225" class="line" marker-end="url(#arrow)" />
+  <path d="M 120 355 L 155 380" class="line" marker-end="url(#arrow)" />
+
+  <!-- Ground Truth -->
+  <rect x="155" y="45" width="160" height="55" class="box" />
+  <text x="235" y="77" class="text">Ground Truth</text>
+  <path d="M 315 75 L 335 75" class="line" marker-end="url(#arrow)" />
+
+  <!-- Teacher -->
+  <rect x="155" y="175" width="160" height="95" class="box" />
+  <text x="270" y="255" class="text">Teacher</text>
+  <!-- Teacher network visualization -->
+  <polygon points="175,255 175,205 185,195 185,245" fill="#4488cc" />
+  <polygon points="175,205 185,195 190,195 180,205" fill="#66aadd" />
+  <polygon points="185,245 185,195 190,195 190,245" fill="#3377bb" />
+  
+  <polygon points="190,250 190,200 200,190 200,240" fill="#4488cc" />
+  <polygon points="190,200 200,190 205,190 195,200" fill="#66aadd" />
+  <polygon points="200,240 200,190 205,190 205,240" fill="#3377bb" />
+
+  <polygon points="205,245 205,195 215,185 215,235" fill="#4488cc" />
+  <polygon points="205,195 215,185 220,185 210,195" fill="#66aadd" />
+  <polygon points="215,235 215,185 220,185 220,235" fill="#3377bb" />
+
+  <polygon points="220,240 220,200 230,190 230,230" fill="#4488cc" />
+  <polygon points="220,200 230,190 235,190 225,200" fill="#66aadd" />
+  <polygon points="230,230 230,190 235,190 235,230" fill="#3377bb" />
+
+  <polygon points="235,235 235,205 245,195 245,225" fill="#4488cc" />
+  <polygon points="235,205 245,195 250,195 240,205" fill="#66aadd" />
+  <polygon points="245,225 245,195 250,195 250,225" fill="#3377bb" />
+
+  <polygon points="250,230 250,210 260,200 260,220" fill="#4488cc" />
+  <polygon points="250,210 260,200 265,200 255,210" fill="#66aadd" />
+  <polygon points="260,220 260,200 265,200 265,220" fill="#3377bb" />
+
+  <polygon points="265,225 265,215 275,205 275,215" fill="#4488cc" />
+  <polygon points="265,215 275,205 280,205 270,215" fill="#66aadd" />
+  <polygon points="275,215 275,205 280,205 280,215" fill="#3377bb" />
+
+  <polygon points="285,220 285,210 295,200 295,210" fill="#4488cc" />
+  <polygon points="285,210 295,200 300,200 290,210" fill="#66aadd" />
+  <polygon points="295,210 295,200 300,200 300,210" fill="#3377bb" />
+
+  <path d="M 315 222 L 335 222" class="line" marker-end="url(#arrow)" />
+
+  <!-- Student -->
+  <rect x="155" y="330" width="160" height="95" class="box" />
+  <text x="270" y="410" class="text">Student</text>
+  <!-- Student network visualization -->
+  <polygon points="175,410 175,360 185,350 185,400" fill="#e67e22" />
+  <polygon points="175,360 185,350 190,350 180,360" fill="#f39c12" />
+  <polygon points="185,400 185,350 190,350 190,400" fill="#d35400" />
+
+  <polygon points="190,405 190,355 200,345 200,395" fill="#e67e22" />
+  <polygon points="190,355 200,345 205,345 195,355" fill="#f39c12" />
+  <polygon points="200,395 200,345 205,345 205,395" fill="#d35400" />
+
+  <polygon points="205,400 205,360 215,350 215,390" fill="#e67e22" />
+  <polygon points="205,360 215,350 220,350 210,360" fill="#f39c12" />
+  <polygon points="215,390 215,350 220,350 220,390" fill="#d35400" />
+
+  <polygon points="220,395 220,365 230,355 230,385" fill="#e67e22" />
+  <polygon points="220,365 230,355 235,355 225,365" fill="#f39c12" />
+  <polygon points="230,385 230,355 235,355 235,385" fill="#d35400" />
+
+  <polygon points="235,390 235,370 245,360 245,380" fill="#e67e22" />
+  <polygon points="235,370 245,360 250,360 240,370" fill="#f39c12" />
+  <polygon points="245,380 245,360 250,360 250,380" fill="#d35400" />
+
+  <polygon points="250,385 250,375 260,365 260,375" fill="#e67e22" />
+  <polygon points="250,375 260,365 265,365 255,375" fill="#f39c12" />
+  <polygon points="260,375 260,365 265,365 265,375" fill="#d35400" />
+
+  <path d="M 315 377 L 335 377" class="line" marker-end="url(#arrow)" />
+
+  <!-- Vectors Column 1 -->
+  <rect x="338" y="15" width="60" height="425" class="box-dashed" />
+  
+  <!-- Ground Truth Vector -->
+  <rect x="348" y="20" width="20" height="20" class="fill-blue" />
+  <rect x="348" y="40" width="20" height="20" class="fill-gray" />
+  <rect x="348" y="60" width="20" height="20" class="fill-gray" />
+  <rect x="348" y="80" width="20" height="20" class="fill-gray" />
+  <rect x="348" y="100" width="20" height="20" class="fill-gray" />
+  <rect x="348" y="120" width="20" height="20" class="fill-gray" />
+  <text x="380" y="35" class="text">1</text>
+  <path d="M 375" y="75" class="line" />
+  <path d="M 398 75 L 418 75" class="line" marker-end="url(#arrow)" />
+
+  <!-- Teacher Vector -->
+  <rect x="348" y="165" width="20" height="20" class="fill-yellow" />
+  <rect x="348" y="185" width="20" height="20" class="fill-green" />
+  <rect x="348" y="205" width="20" height="20" class="fill-green" />
+  <rect x="348" y="225" width="20" height="20" class="fill-green" />
+  <rect x="348" y="245" width="20" height="20" class="fill-green" />
+  <rect x="348" y="265" width="20" height="20" class="fill-green" />
+  <text x="382" y="180" class="math">p<tspan dy="5" font-size="10">t</tspan><tspan dy="-10" font-size="10">T</tspan></text>
+  <path d="M 398 222 L 418 222" class="line" marker-end="url(#arrow)" />
+
+  <!-- Student Vector -->
+  <rect x="348" y="315" width="20" height="20" class="fill-yellow" />
+  <rect x="348" y="335" width="20" height="20" class="fill-green" />
+  <rect x="348" y="355" width="20" height="20" class="fill-green" />
+  <rect x="348" y="375" width="20" height="20" class="fill-green" />
+  <rect x="348" y="395" width="20" height="20" class="fill-green" />
+  <rect x="348" y="415" width="20" height="20" class="fill-green" />
+  <text x="382" y="330" class="math">p<tspan dy="5" font-size="10">t</tspan><tspan dy="-10" font-size="10">S</tspan></text>
+  <path d="M 398 377 L 418 377" class="line" marker-end="url(#arrow)" />
+
+  <!-- Decoupling Text -->
+  <text x="455" y="305" class="text">Decoupling</text>
+
+  <!-- Vectors Column 2 -->
+  <!-- Task CE Loss Input -->
+  <rect x="420" y="20" width="63" height="100" class="box-dashed" />
+  <rect x="425" y="45" width="20" height="20" class="fill-blue" />
+  <rect x="455" y="45" width="20" height="20" class="fill-yellow" />
+  <text x="435" y="85" class="text">1</text>
+  <text x="465" y="85" class="math">p<tspan dy="5" font-size="10">t</tspan><tspan dy="-10" font-size="10">S</tspan></text>
+  <path d="M 483 75 L 503 75" class="line" marker-end="url(#arrow)" />
+
+  <!-- Target Class KL Loss Input -->
+  <rect x="420" y="170" width="63" height="100" class="box-dashed" />
+  <rect x="425" y="195" width="20" height="20" class="fill-yellow" />
+  <rect x="455" y="195" width="20" height="20" class="fill-yellow" />
+  <text x="435" y="235" class="math">p<tspan dy="5" font-size="10">t</tspan><tspan dy="-10" font-size="10">T</tspan></text>
+  <text x="465" y="235" class="math">p<tspan dy="5" font-size="10">t</tspan><tspan dy="-10" font-size="10">S</tspan></text>
+  <path d="M 483 222 L 503 222" class="line" marker-end="url(#arrow)" />
+
+  <!-- Non-target Class KL Loss Input -->
+  <rect x="420" y="320" width="63" height="115" class="box-dashed" />
+  <rect x="425" y="330" width="20" height="20" class="fill-green" />
+  <rect x="425" y="350" width="20" height="20" class="fill-green" />
+  <rect x="425" y="370" width="20" height="20" class="fill-gray" />
+  <rect x="425" y="390" width="20" height="20" class="fill-gray" />
+  
+  <rect x="455" y="330" width="20" height="20" class="fill-green" />
+  <rect x="455" y="350" width="20" height="20" class="fill-green" />
+  <rect x="455" y="370" width="20" height="20" class="fill-gray" />
+  <rect x="455" y="390" width="20" height="20" class="fill-gray" />
+  <path d="M 483 377 L 503 377" class="line" marker-end="url(#arrow)" />
+
+  <!-- Dynamic Top-k Mask -->
+  <rect x="370" y="455" width="165" height="25" rx="5" class="fill-purple" />
+  <text x="452" y="473" class="text">Dynamic Top-k Mask</text>
+  <path d="M 452 455 L 452 435" class="line" stroke="#ccbbee" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple)" />
+
+  <!-- TASK Block -->
+  <rect x="505" y="20" width="140" height="100" class="box-blue" />
+  <text x="575" y="45" class="text">TASK</text>
+  <rect x="512" y="55" width="126" height="55" rx="8" class="box" stroke="#88aadd" />
+  <text x="575" y="75" class="text">Task</text>
+  <text x="575" y="95" class="text">CE Loss</text>
+  <path d="M 645 75 L 665 75" class="line" marker-end="url(#arrow)" />
+
+  <!-- TOG Block -->
+  <rect x="668" y="20" width="140" height="100" class="box-blue" />
+  <text x="738" y="45" class="text">TOG</text>
+  <rect x="675" y="55" width="126" height="55" rx="8" class="fill-blue" />
+  <text x="738" y="75" class="text">Task-oriented</text>
+  <text x="738" y="95" class="text">Gradient</text>
+  <path d="M 808 75 L 865 75" class="line" marker-end="url(#arrow)" />
+
+  <!-- TCKD Block -->
+  <rect x="505" y="170" width="140" height="100" class="box-yellow" />
+  <text x="575" y="195" class="text">TCKD</text>
+  <rect x="512" y="205" width="126" height="55" rx="8" class="box" stroke="#ffcc55" />
+  <text x="575" y="225" class="text">Target Class</text>
+  <text x="575" y="245" class="text">KL Loss</text>
+  <path d="M 645 222 L 665 222" class="line" marker-end="url(#arrow)" />
+
+  <!-- TCG Block -->
+  <rect x="668" y="170" width="140" height="100" class="box-yellow" />
+  <text x="738" y="195" class="text">TCG</text>
+  <rect x="675" y="205" width="126" height="55" rx="8" class="fill-yellow" />
+  <text x="738" y="225" class="text">Target class</text>
+  <text x="738" y="245" class="text">Gradient</text>
+  <path d="M 808 222 L 865 222" class="line" marker-end="url(#arrow)" />
+
+  <!-- NCKD Block -->
+  <rect x="505" y="320" width="140" height="100" class="box-green" />
+  <text x="575" y="345" class="text">NCKD</text>
+  <rect x="512" y="355" width="126" height="55" rx="8" class="box" stroke="#99cc99" />
+  <text x="575" y="375" class="text">Non-target</text>
+  <text x="575" y="395" class="text">Class KL Loss</text>
+  <path d="M 645 377 L 665 377" class="line" marker-end="url(#arrow)" />
+
+  <!-- NCG Block -->
+  <rect x="668" y="320" width="140" height="100" class="box-green" />
+  <text x="738" y="345" class="text">NCG</text>
+  <rect x="675" y="355" width="126" height="55" rx="8" class="fill-green" />
+  <text x="738" y="375" class="text">Non-target</text>
+  <text x="738" y="395" class="text">class Gradient</text>
+  <path d="M 808 377 L 865 377" class="line" marker-end="url(#arrow)" />
+
+  <!-- Momentum Buffers -->
+  <rect x="870" y="45" width="145" height="55" rx="8" class="fill-blue" />
+  <text x="942" y="65" class="text">Task</text>
+  <text x="942" y="85" class="text">Momentum buffer</text>
+  <path d="M 825 60 L 825 40" class="line" stroke="#88aadd" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <text x="880" y="25" class="math">v &#8592; g + (&#956; + &#916;)v</text>
+
+  <rect x="870" y="192" width="145" height="55" rx="8" class="fill-yellow" />
+  <text x="942" y="212" class="text">Target</text>
+  <text x="942" y="232" class="text">Momentum buffer</text>
+  <path d="M 825 207 L 825 187" class="line" stroke="#ffcc55" marker-end="url(#arrow-yellow)" marker-start="url(#arrow-yellow)" />
+  <text x="880" y="172" class="math">v &#8592; g + (&#956; - &#916;)v</text>
+
+  <rect x="870" y="347" width="145" height="55" rx="8" class="fill-green" />
+  <text x="942" y="367" class="text">Non-target</text>
+  <text x="942" y="387" class="text">Momentum buffer</text>
+  <path d="M 825 362 L 825 342" class="line" stroke="#99cc99" marker-end="url(#arrow-green)" marker-start="url(#arrow-green)" />
+  <text x="880" y="327" class="math">v &#8592; g + (&#956; + &#916;)v</text>
+
+  <!-- Summation and Update -->
+  <path d="M 1015 75 L 1045 75 L 1045 210" class="line" marker-end="url(#arrow)" />
+  <path d="M 1015 222 L 1035 222" class="line" marker-end="url(#arrow)" />
+  <path d="M 1015 377 L 1045 377 L 1045 234" class="line" marker-end="url(#arrow)" />
+
+  <circle cx="1045" cy="222" r="10" class="box" stroke="#000" />
+  <path d="M 1035 222 L 1055 222" class="line" />
+  <path d="M 1045 212 L 1045 232" class="line" />
+
+  <path d="M 1055 222 L 1155 222" class="line" marker-end="url(#arrow)" />
+  <text x="1105" y="210" class="math">&#952; &#8592; &#952; - &#947;v</text>
+  <text x="1105" y="240" class="text">Update</text>
+
+  <!-- Feedback Loop -->
+  <path d="M 1155 222 L 1155 490 L 235 490 L 235 430" class="line" marker-end="url(#arrow)" />
+
+</svg>

@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <!-- Reusable Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 Z" fill="#B0B0B0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#FFFFFF"/>
+
+  <!-- ==================== HEADER ==================== -->
+  <g id="header">
+    <!-- Gauge Logo -->
+    <g id="logo" transform="translate(0, 385)">
+      <!-- Red Segment -->
+      <path d="M 450 80 A 50 50 0 0 1 464.6 44.6 L 475.2 55.2 A 35 35 0 0 0 465 80 Z" fill="#E74C3C" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Orange Segment -->
+      <path d="M 464.6 44.6 A 50 50 0 0 1 500 30 L 500 45 A 35 35 0 0 0 475.2 55.2 Z" fill="#E67E22" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Yellow Segment -->
+      <path d="M 500 30 A 50 50 0 0 1 535.4 44.6 L 524.8 55.2 A 35 35 0 0 0 500 45 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Green Segment -->
+      <path d="M 535.4 44.6 A 50 50 0 0 1 550 80 L 535 80 A 35 35 0 0 0 524.8 55.2 Z" fill="#2ECC71" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+      
+      <!-- Needle -->
+      <path d="M 495 77 L 538 58 L 503 83 Z" fill="#1F3A52" stroke="#1A1A1A" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Center Cap -->
+      <circle cx="500" cy="80" r="10" fill="#1F3A52" stroke="#1A1A1A" stroke-width="2"/>
+      <circle cx="500" cy="80" r="4" fill="#BDC3C7"/>
+    </g>
+
+    <!-- Title &amp; Subtitle -->
+    <text x="500" y="37" font-family="Georgia, serif" font-weight="bold" font-size="26" text-anchor="middle" fill="#000000">TruthOverTricks</text>
+    <text x="500" y="63" font-family="Georgia, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000000">Evaluate Shortcut Learning in</text>
+    <text x="500" y="85" font-family="Georgia, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000000">Misinformation Detection</text>
+  </g>
+
+  <!-- ==================== CENTRAL COLUMN ==================== -->
+  
+  <!-- Misinformation Benchmarks Box -->
+  <g id="benchmarks-box" transform="translate(0, -85)">
+    <rect x="372" y="175" width="256" height="85" rx="6" fill="#D9D9D9"/>
+    
+    <!-- Database Icon -->
+    <g id="db-icon" transform="translate(5, 0)">
+      <!-- Database Cylinders -->
+      <ellipse cx="405" cy="202" rx="14" ry="4.5" fill="#AEB6BF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <path d="M 391 202 L 391 211 A 14 4.5 0 0 0 419 211 L 419 202" fill="#AEB6BF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <path d="M 391 211 L 391 220 A 14 4.5 0 0 0 419 220 L 419 211" fill="#AEB6BF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <path d="M 391 220 L 391 229 A 14 4.5 0 0 0 419 229 L 419 220" fill="#AEB6BF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Cylinder Lines -->
+      <line x1="395" y1="211" x2="415" y2="211" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="2,2"/>
+      <line x1="395" y1="220" x2="415" y2="220" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="2,2"/>
+
+      <!-- Folders &amp; Connecting Lines -->
+      <!-- Top Left Folder -->
+      <path d="M 376 186 h 5 l 2 2 h 7 v 8 h -14 Z" fill="#F39C12" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="390" y1="194" x2="395" y2="199" stroke="#1A1A1A" stroke-width="1.2"/>
+      <!-- Top Right Folder -->
+      <path d="M 420 186 h 5 l 2 2 h 7 v 8 h -14 Z" fill="#F39C12" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="420" y1="194" x2="415" y2="199" stroke="#1A1A1A" stroke-width="1.2"/>
+      <!-- Bottom Left Folder -->
+      <path d="M 376 226 h 5 l 2 2 h 7 v 8 h -14 Z" fill="#F39C12" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="390" y1="226" x2="395" y2="221" stroke="#1A1A1A" stroke-width="1.2"/>
+      <!-- Bottom Right Folder -->
+      <path d="M 420 226 h 5 l 2 2 h 7 v 8 h -14 Z" fill="#F39C12" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="420" y1="226" x2="415" y2="221" stroke="#1A1A1A" stroke-width="1.2"/>
+    </g>
+
+    <text x="542" y="212" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Misinformation</text>
+    <text x="542" y="236" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Benchmarks</text>
+  </g>
+
+  <!-- Intrinsic Shortcut Induction Box -->
+  <g id="intrinsic-box" transform="translate(0, -85)">
+    <rect x="280" y="270" width="182" height="225" rx="6" fill="#D9D9D9"/>
+    <text x="371" y="296" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Intrinsic</text>
+    <text x="371" y="319" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Shortcut</text>
+    <text x="371" y="342" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Induction</text>
+    
+    <!-- Magnifier &amp; List Icon -->
+    <g id="magnifier-icon" transform="translate(2, 2)">
+      <!-- Connecting Lines -->
+      <line x1="373" y1="400" x2="388" y2="368" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="373" y1="400" x2="388" y2="390" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="373" y1="400" x2="388" y2="412" stroke="#1A1A1A" stroke-width="1.5"/>
+
+      <!-- Magnifier -->
+      <path d="M 340 424 L 352 412" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 341 423 L 351 413" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="362" cy="400" r="13" fill="#EBF5FB" stroke="#1A1A1A" stroke-width="2.5"/>
+      <!-- Dots inside Lens -->
+      <circle cx="356" cy="400" r="2" fill="#2980B9"/>
+      <circle cx="362" cy="400" r="2" fill="#2980B9"/>
+      <circle cx="368" cy="400" r="2" fill="#2980B9"/>
+
+      <!-- List Boxes -->
+      <!-- Box 1 -->
+      <rect x="388" y="358" width="15" height="15" rx="1.5" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="391" y1="362" x2="399" y2="362" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="366" x2="397" y2="366" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="370" x2="400" y2="370" stroke="#1A1A1A" stroke-width="1.2"/>
+      <!-- Box 2 -->
+      <rect x="388" y="380" width="15" height="15" rx="1.5" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="391" y1="384" x2="399" y2="384" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="388" x2="397" y2="388" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="392" x2="400" y2="392" stroke="#1A1A1A" stroke-width="1.2"/>
+      <!-- Box 3 -->
+      <rect x="388" y="402" width="15" height="15" rx="1.5" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="391" y1="406" x2="399" y2="406" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="410" x2="397" y2="410" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="391" y1="414" x2="400" y2="414" stroke="#1A1A1A" stroke-width="1.2"/>
+    </g>
+
+    <text x="371" y="480" font-family="Georgia, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000000">Indicator Classifier</text>
+  </g>
+
+  <!-- Extrinsic Shortcut Injection Box -->
+  <g id="extrinsic-box" transform="translate(0, -85)">
+    <rect x="540" y="270" width="182" height="225" rx="6" fill="#D9D9D9"/>
+    <text x="631" y="296" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Extrinsic</text>
+    <text x="631" y="319" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Shortcut</text>
+    <text x="631" y="342" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Injection</text>
+    
+    <!-- Robot/AI Icon -->
+    <g id="robot-icon" transform="translate(1, 0)">
+      <!-- Antennae -->
+      <line x1="618" y1="360" x2="612" y2="350" stroke="#1A1A1A" stroke-width="2"/>
+      <circle cx="612" cy="350" r="3" fill="#E74C3C" stroke="#1A1A1A" stroke-width="1"/>
+      <line x1="642" y1="360" x2="648" y2="350" stroke="#1A1A1A" stroke-width="2"/>
+      <circle cx="648" cy="350" r="3" fill="#E74C3C" stroke="#1A1A1A" stroke-width="1"/>
+
+      <!-- Ears -->
+      <rect x="601" y="368" width="5" height="10" rx="1" fill="#E74C3C" stroke="#1A1A1A" stroke-width="1.5"/>
+      <rect x="654" y="368" width="5" height="10" rx="1" fill="#E74C3C" stroke="#1A1A1A" stroke-width="1.5"/>
+
+      <!-- Head -->
+      <rect x="605" y="358" width="50" height="30" rx="8" fill="#EBF5FB" stroke="#1A1A1A" stroke-width="2"/>
+      <text x="630" y="378" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#1A1A1A">AI</text>
+
+      <!-- Neck -->
+      <rect x="626" y="388" width="8" height="5" fill="#BDC3C7" stroke="#1A1A1A" stroke-width="1.5"/>
+
+      <!-- Body -->
+      <path d="M 610 393 L 650 393 A 8 8 0 0 1 658 401 L 658 420 L 602 420 L 602 401 A 8 8 0 0 1 610 393 Z" fill="#EBF5FB" stroke="#1A1A1A" stroke-width="2"/>
+      <!-- Chest Screen -->
+      <rect x="610" y="399" width="40" height="16" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <circle cx="618" cy="407" r="2" fill="#2ECC71"/>
+      <circle cx="630" cy="407" r="2" fill="#E74C3C"/>
+      <circle cx="642" cy="407" r="2" fill="#3498DB"/>
+    </g>
+
+    <text x="631" y="480" font-family="Georgia, serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000000">LLM Injector</text>
+  </g>
+
+  <!-- ==================== LEFT PANEL (DETAILED BOXES) ==================== -->
+
+  <!-- Box 1: Sentiment -->
+  <g id="left-box-1">
+    <rect x="10" y="10" width="218" height="115" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Sentiment Icon -->
+    <g id="sentiment-icon" transform="translate(12, 5)">
+      <!-- Faces -->
+      <!-- Sad (Red) -->
+      <circle cx="30" cy="35" r="7" fill="#FADBD8" stroke="#1A1A1A" stroke-width="1.2"/>
+      <circle cx="28" cy="33" r="0.8" fill="#1A1A1A"/><circle cx="32" cy="33" r="0.8" fill="#1A1A1A"/>
+      <path d="M 27 38 Q 30 36 33 38" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+      
+      <!-- Neutral (Orange) -->
+      <circle cx="50" cy="25" r="7" fill="#FDEBD0" stroke="#1A1A1A" stroke-width="1.2"/>
+      <circle cx="48" cy="23" r="0.8" fill="#1A1A1A"/><circle cx="52" cy="23" r="0.8" fill="#1A1A1A"/>
+      <line x1="47" y1="28" x2="53" y2="28" stroke="#1A1A1A" stroke-width="1"/>
+
+      <!-- Happy (Green) -->
+      <circle cx="70" cy="35" r="7" fill="#D5F5E3" stroke="#1A1A1A" stroke-width="1.2"/>
+      <circle cx="68" cy="33" r="0.8" fill="#1A1A1A"/><circle cx="72" cy="33" r="0.8" fill="#1A1A1A"/>
+      <path d="M 67 36 Q 70 39 73 36" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+
+      <!-- Gauge -->
+      <path d="M 30 65 A 20 20 0 0 1 70 65" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+      <line x1="30" y1="65" x2="35" y2="65" stroke="#1A1A1A" stroke-width="2"/>
+      <line x1="50" y1="45" x2="50" y2="50" stroke="#1A1A1A" stroke-width="2"/>
+      <line x1="70" y1="65" x2="65" y2="65" stroke="#1A1A1A" stroke-width="2"/>
+      <!-- Needle -->
+      <line x1="50" y1="65" x2="62" y2="50" stroke="#E74C3C" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="50" cy="65" r="3" fill="#1A1A1A"/>
+    </g>
+
+    <text x="62" y="105" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Sentiment</text>
+    <text x="114" y="42" font-family="Georgia, serif" font-size="15" fill="#000000">(a) positive</text>
+    <text x="114" y="67" font-family="Georgia, serif" font-size="15" fill="#000000">(b) negative</text>
+    <text x="114" y="92" font-family="Georgia, serif" font-size="15" fill="#000000">(c) neutral</text>
+  </g>
+
+  <!-- Box 2: Style -->
+  <g id="left-box-2">
+    <rect x="10" y="135" width="218" height="110" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Style Icon -->
+    <g id="style-icon" transform="translate(15, 5)">
+      <!-- Styled 'A' -->
+      <path d="M 25 190 L 40 145 L 55 190" fill="none" stroke="#2980B9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="31" y1="177" x2="49" y2="177" stroke="#2980B9" stroke-width="5" stroke-linecap="round"/>
+      <!-- Menu Box -->
+      <rect x="60" y="145" width="18" height="24" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="64" y1="150" x2="72" y2="150" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="64" y1="155" x2="74" y2="155" stroke="#1A1A1A" stroke-width="1.2"/>
+      <line x1="64" y1="160" x2="70" y2="160" stroke="#1A1A1A" stroke-width="1.2"/>
+    </g>
+
+    <text x="62" y="225" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Style</text>
+    <text x="114" y="175" font-family="Georgia, serif" font-size="15" fill="#000000">(a) subjective</text>
+    <text x="114" y="215" font-family="Georgia, serif" font-size="15" fill="#000000">(b) neutral</text>
+  </g>
+
+  <!-- Box 3: Topic -->
+  <g id="left-box-3">
+    <rect x="10" y="255" width="218" height="115" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Topic Icon (Speech Bubbles) -->
+    <g id="topic-icon" transform="translate(15, 5)">
+      <!-- Green Bubble (Back) -->
+      <path d="M 24 270 h 16 a 4 4 0 0 1 4 4 v 8 a 4 4 0 0 1 -4 4 h -8 l -4 4 v -4 h -4 a 4 4 0 0 1 -4 -4 v -8 a 4 4 0 0 1 4 -4 Z" fill="#D5F5E3" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Blue Bubble (Front Right) -->
+      <path d="M 38 280 h 16 a 4 4 0 0 1 4 4 v 8 a 4 4 0 0 1 -4 4 h -4 v 4 l -4 -4 h -8 a 4 4 0 0 1 -4 -4 v -8 a 4 4 0 0 1 4 -4 Z" fill="#EBF5FB" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Pink Bubble (Bottom Left) -->
+      <path d="M 30 298 h 16 a 4 4 0 0 1 4 4 v 8 a 4 4 0 0 1 -4 4 h -8 l -4 4 v -4 h -4 a 4 4 0 0 1 -4 -4 v -8 a 4 4 0 0 1 4 -4 Z" fill="#FADBD8" stroke="#1A1A1A" stroke-width="1.5"/>
+    </g>
+
+    <text x="62" y="350" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Topic</text>
+    <text x="114" y="282" font-family="Georgia, serif" font-size="15" fill="#000000">(a) sports</text>
+    <text x="114" y="307" font-family="Georgia, serif" font-size="15" fill="#000000">(b) crime</text>
+    <text x="114" y="332" font-family="Georgia, serif" font-size="15" fill="#000000">(c) politics</text>
+    <text x="114" y="352" font-family="Georgia, serif" font-size="15" fill="#000000">......</text>
+  </g>
+
+  <!-- Box 4: Perplexity -->
+  <g id="left-box-4">
+    <rect x="10" y="380" width="218" height="110" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Perplexity Icon (Confused Person) -->
+    <g id="perplexity-icon" transform="translate(15, 5)">
+      <!-- Head -->
+      <circle cx="45" cy="412" r="8" fill="#FADBD8" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Hair -->
+      <path d="M 37 412 a 8 8 0 0 1 16 0" fill="#5D4037"/>
+      <!-- Body -->
+      <path d="M 33 445 v -12 a 8 8 0 0 1 8 -8 h 8 a 8 8 0 0 1 8 8 v 12 Z" fill="#E74C3C" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Arm scratching head -->
+      <path d="M 57 433 c 5 -5, 5 -15, -2 -18 c -3 -1, -5 2, -3 4" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Question Mark -->
+      <text x="62" y="405" font-family="Georgia, serif" font-weight="bold" font-size="18" fill="#1A1A1A">?</text>
+    </g>
+
+    <text x="62" y="470" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Perplexity</text>
+    <text x="114" y="425" font-family="Georgia, serif" font-size="15" fill="#000000">(a) high</text>
+    <text x="114" y="465" font-family="Georgia, serif" font-size="15" fill="#000000">(b) low</text>
+  </g>
+
+  <!-- ==================== RIGHT PANEL (DETAILED BOXES) ==================== -->
+
+  <!-- Box 1: Vanilla -->
+  <g id="right-box-1">
+    <rect x="772" y="15" width="218" height="130" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Vanilla Flower Icon -->
+    <g id="vanilla-icon" transform="translate(5, 0)">
+      <!-- Vanilla Beans (Sticks) -->
+      <rect x="782" y="35" width="4" height="55" rx="2" transform="rotate(-30 784 62)" fill="#5D4037" stroke="#1A1A1A" stroke-width="1"/>
+      <rect x="792" y="30" width="4" height="55" rx="2" transform="rotate(40 794 57)" fill="#5D4037" stroke="#1A1A1A" stroke-width="1"/>
+      
+      <!-- Flower Petals -->
+      <g transform="translate(812, 65)">
+        <path d="M 0 0 C -10 -25, 10 -25, 0 0" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5" transform="rotate(0)"/>
+        <path d="M 0 0 C -10 -25, 10 -25, 0 0" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5" transform="rotate(72)"/>
+        <path d="M 0 0 C -10 -25, 10 -25, 0 0" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5" transform="rotate(144)"/>
+        <path d="M 0 0 C -10 -25, 10 -25, 0 0" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5" transform="rotate(216)"/>
+        <path d="M 0 0 C -10 -25, 10 -25, 0 0" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5" transform="rotate(288)"/>
+        <circle cx="0" cy="0" r="4" fill="#F9E79F" stroke="#1A1A1A" stroke-width="1"/>
+      </g>
+    </g>
+
+    <text x="817" y="125" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Vanilla</text>
+    
+    <!-- Prompt Text -->
+    <text x="852" y="45" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">Please rewrite it</text>
+    <text x="852" y="65" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">to make it more</text>
+    <text x="852" y="85" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">convincing.</text>
+  </g>
+
+  <!-- Box 2: Explicit -->
+  <g id="right-box-2">
+    <rect x="772" y="185" width="218" height="130" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Explicit Icon (Injector Nozzle) -->
+    <g id="explicit-icon" transform="translate(12, 0)">
+      <!-- Injector Body -->
+      <rect x="795" y="205" width="16" height="25" fill="#34495E" stroke="#1A1A1A" stroke-width="1.5"/>
+      <rect x="800" y="200" width="6" height="5" fill="#BDC3C7" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Side Connector / Pipes -->
+      <path d="M 795 210 L 783 210 L 783 225 L 795 225" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+      <rect x="780" y="225" width="6" height="10" fill="#F1C40F" stroke="#1A1A1A" stroke-width="1"/>
+      <!-- Nozzle Tip -->
+      <polygon points="798,230 808,230 805,243 801,243" fill="#F1C40F" stroke="#1A1A1A" stroke-width="1.5"/>
+    </g>
+
+    <text x="812" y="295" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Explicit</text>
+    
+    <!-- Prompt Text -->
+    <text x="852" y="215" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">Make the {word</text>
+    <text x="852" y="235" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">choice} of the</text>
+    <text x="852" y="255" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">rewritten content</text>
+    <text x="852" y="275" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">{simple}.</text>
+  </g>
+
+  <!-- Box 3: Implicit -->
+  <g id="right-box-3">
+    <rect x="772" y="355" width="218" height="130" rx="12" fill="none" stroke="#B0B0B0" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Implicit Icon (Elderly Writer) -->
+    <g id="implicit-icon" transform="translate(12, 0)">
+      <!-- Notebook -->
+      <rect x="785" y="415" width="32" height="22" rx="2" fill="#FEF9E7" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="801" y1="415" x2="801" y2="437" stroke="#1A1A1A" stroke-width="1.5"/>
+      <line x1="789" y1="421" x2="797" y2="421" stroke="#BDC3C7" stroke-width="1"/>
+      <line x1="789" y1="427" x2="797" y2="427" stroke="#BDC3C7" stroke-width="1"/>
+      <line x1="805" y1="421" x2="813" y2="421" stroke="#BDC3C7" stroke-width="1"/>
+      <line x1="805" y1="427" x2="813" y2="427" stroke="#BDC3C7" stroke-width="1"/>
+      
+      <!-- Person -->
+      <path d="M 810 440 C 810 425, 835 425, 835 440 Z" fill="#D35400" stroke="#1A1A1A" stroke-width="1.5"/>
+      <circle cx="822" cy="405" r="8" fill="#FADBD8" stroke="#1A1A1A" stroke-width="1.5"/>
+      <path d="M 814 405 A 8 8 0 0 1 830 405" fill="#BDC3C7" stroke="#1A1A1A" stroke-width="1.5"/>
+      <!-- Glasses -->
+      <circle cx="819" cy="405" r="2.5" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+      <circle cx="825" cy="405" r="2.5" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+      <line x1="821.5" y1="405" x2="822.5" y2="405" stroke="#1A1A1A" stroke-width="1"/>
+    </g>
+
+    <text x="812" y="465" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#000000">Implicit</text>
+    
+    <!-- Prompt Text -->
+    <text x="852" y="385" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">You are</text>
+    <text x="852" y="405" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">{elderly}. Please</text>
+    <text x="852" y="425" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">rewrite this</text>
+    <text x="852" y="445" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#000000">passage.</text>
+  </g>
+
+  <!-- ==================== CONNECTING LINES &amp; ARROWS ==================== -->
+  <g id="connections" fill="none" stroke="#B0B0B0" stroke-width="2">
+    <!-- Central T-Connection -->
+    <path d="M 503 175 L 503 295"/>
+    <path d="M 468 295 L 532 295" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+    <!-- Left Side Connections -->
+    <path d="M 280 295 L 256 295"/>
+    <path d="M 256 67 L 256 435"/>
+    <!-- Left Arrows -->
+    <path d="M 256 67 L 228 67" marker-end="url(#arrow)"/>
+    <path d="M 256 190 L 228 190" marker-end="url(#arrow)"/>
+    <path d="M 256 312 L 228 312" marker-end="url(#arrow)"/>
+    <path d="M 256 435 L 228 435" marker-end="url(#arrow)"/>
+
+    <!-- Right Side Connections -->
+    <path d="M 720 295 L 745 295"/>
+    <path d="M 745 80 L 745 420"/>
+    <!-- Right Arrows -->
+    <path d="M 745 80 L 772 80" marker-end="url(#arrow)"/>
+    <path d="M 745 250 L 772 250" marker-end="url(#arrow)"/>
+    <path d="M 745 420 L 772 420" marker-end="url(#arrow)"/>
+  </g>
+
+</svg>

@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 750" width="1600" height="750">
+  <defs>
+    <style>
+      .text-bold { font-family: sans-serif; font-weight: bold; }
+      .text-normal { font-family: sans-serif; font-weight: normal; }
+      .text-italic { font-family: sans-serif; font-style: italic; }
+      .bg-blue { fill: #7986CB; }
+      .bg-light-blue { fill: #C5DCAE; }
+      .bg-light-blue-2 { fill: #D0E1F9; }
+      .bg-grey { fill: #E0E0E0; }
+      .bg-dark-grey { fill: #D3D3D3; }
+      .text-white { fill: white; }
+      .text-black { fill: black; }
+      .text-blue { fill: #1976D2; }
+      .text-green { fill: #4CAF50; }
+      .text-red { fill: #F44336; }
+      .border-black { stroke: black; stroke-width: 2; }
+      .border-grey { stroke: #9E9E9E; stroke-width: 2; }
+      .border-dashed { stroke: #9E9E9E; stroke-width: 2; stroke-dasharray: 5,5; }
+      .arrow { stroke: black; stroke-width: 3; fill: none; }
+      .arrow-red { stroke: #F44336; stroke-width: 3; fill: none; }
+      .arrow-green { stroke: #4CAF50; stroke-width: 3; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F44336" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+    </marker>
+    
+    <!-- Icons -->
+    <g id="user-icon">
+      <circle cx="15" cy="15" r="14" fill="#E8EAF6" stroke="black" stroke-width="2"/>
+      <circle cx="15" cy="10" r="5" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M 5 24 C 5 18, 25 18, 25 24" fill="none" stroke="black" stroke-width="2"/>
+    </g>
+    <g id="robot-icon-green">
+      <rect x="5" y="10" width="20" height="15" fill="#4CAF50"/>
+      <rect x="10" y="5" width="10" height="5" fill="#4CAF50"/>
+      <circle cx="10" cy="15" r="2" fill="white"/>
+      <circle cx="20" cy="15" r="2" fill="white"/>
+      <line x1="15" y1="5" x2="15" y2="2" stroke="#4CAF50" stroke-width="2"/>
+      <circle cx="15" cy="2" r="2" fill="#4CAF50"/>
+      <rect x="2" y="12" width="3" height="10" fill="#4CAF50"/>
+      <rect x="25" y="12" width="3" height="10" fill="#4CAF50"/>
+      <rect x="8" y="25" width="4" height="5" fill="#4CAF50"/>
+      <rect x="18" y="25" width="4" height="5" fill="#4CAF50"/>
+    </g>
+    <g id="robot-icon-red">
+      <rect x="5" y="10" width="20" height="15" fill="#F44336"/>
+      <rect x="10" y="5" width="10" height="5" fill="#F44336"/>
+      <circle cx="10" cy="15" r="2" fill="white"/>
+      <circle cx="20" cy="15" r="2" fill="white"/>
+      <line x1="15" y1="5" x2="15" y2="2" stroke="#F44336" stroke-width="2"/>
+      <circle cx="15" cy="2" r="2" fill="#F44336"/>
+      <rect x="2" y="12" width="3" height="10" fill="#F44336"/>
+      <rect x="25" y="12" width="3" height="10" fill="#F44336"/>
+      <rect x="8" y="25" width="4" height="5" fill="#F44336"/>
+      <rect x="18" y="25" width="4" height="5" fill="#F44336"/>
+    </g>
+    <g id="robot-icon-black">
+      <rect x="5" y="10" width="20" height="15" fill="black"/>
+      <rect x="10" y="5" width="10" height="5" fill="black"/>
+      <circle cx="10" cy="15" r="2" fill="white"/>
+      <circle cx="20" cy="15" r="2" fill="white"/>
+      <line x1="15" y1="5" x2="15" y2="2" stroke="black" stroke-width="2"/>
+      <circle cx="15" cy="2" r="2" fill="black"/>
+      <rect x="2" y="12" width="3" height="10" fill="black"/>
+      <rect x="25" y="12" width="3" height="10" fill="black"/>
+      <rect x="8" y="25" width="4" height="5" fill="black"/>
+      <rect x="18" y="25" width="4" height="5" fill="black"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="750" fill="white" />
+
+  <!-- ========================================== -->
+  <!-- LEFT COLUMN: Initial Survey                -->
+  <!-- ========================================== -->
+  <text x="240" y="40" class="text-bold" font-size="24" text-anchor="middle">Initial Survey</text>
+
+  <!-- Prolific Screening -->
+  <rect x="65" y="50" width="350" height="115" class="bg-blue" />
+  <text x="240" y="75" class="text-bold text-white" font-size="20" text-anchor="middle">Prolific Screening</text>
+  <rect x="80" y="85" width="320" height="70" fill="white" />
+  <text x="90" y="105" class="text-normal text-green" font-size="18">✔</text>
+  <text x="110" y="105" class="text-normal" font-size="16">US residents</text>
+  <text x="90" y="125" class="text-normal text-green" font-size="18">✔</text>
+  <text x="110" y="125" class="text-normal" font-size="16">English speaking</text>
+  <text x="90" y="145" class="text-normal text-green" font-size="18">✔</text>
+  <text x="110" y="145" class="text-normal" font-size="16">COVID/Climate views (+ or -)</text>
+
+  <!-- Arrow down -->
+  <line x1="240" y1="165" x2="240" y2="240" class="arrow" marker-end="url(#arrowhead)" />
+  <use href="#user-icon" x="225" y="185" />
+  <text x="280" y="200" class="text-normal" font-size="14">1650</text>
+  <text x="280" y="220" class="text-normal" font-size="14">screened</text>
+
+  <!-- Belief Assessment -->
+  <rect x="68" y="245" width="345" height="135" class="bg-blue" />
+  <text x="240" y="270" class="text-bold text-white" font-size="20" text-anchor="middle">Belief Assessment</text>
+  <rect x="80" y="280" width="320" height="85" fill="white" />
+  <text x="240" y="305" class="text-normal" font-size="16" text-anchor="middle">COVID origin: man-made vs natural?</text>
+  <text x="240" y="325" class="text-normal" font-size="16" text-anchor="middle">COVID vaccines: safe and effective?</text>
+  <text x="240" y="345" class="text-normal" font-size="16" text-anchor="middle">Climate: human-caused vs natural cycles?</text>
+  <line x1="210" y1="355" x2="270" y2="355" stroke="black" stroke-width="2" stroke-dasharray="2,2" />
+
+  <!-- Branching Arrows -->
+  <line x1="240" y1="380" x2="240" y2="400" stroke="black" stroke-width="3" />
+  <line x1="240" y1="400" x2="125" y2="400" stroke="black" stroke-width="3" />
+  <line x1="240" y1="400" x2="355" y2="400" stroke="black" stroke-width="3" />
+  <line x1="125" y1="400" x2="125" y2="435" class="arrow-red" marker-end="url(#arrowhead-red)" />
+  <line x1="355" y1="400" x2="355" y2="435" class="arrow-green" marker-end="url(#arrowhead-green)" />
+
+  <!-- Skeptical Belief -->
+  <rect x="15" y="440" width="215" height="135" class="bg-light-blue-2" stroke="#90CAF9" stroke-width="1" />
+  <text x="122" y="465" class="text-bold" font-size="18" text-anchor="middle">Skeptical belief</text>
+  <text x="122" y="485" class="text-normal" font-size="14" text-anchor="middle">107 participants</text>
+  <text x="20" y="510" class="text-bold text-red" font-size="16">✔</text>
+  <text x="35" y="510" class="text-normal" font-size="14">COVID is human made</text>
+  <text x="20" y="535" class="text-bold text-red" font-size="16">✘</text>
+  <text x="35" y="535" class="text-normal" font-size="14">Vaccine are safe</text>
+  <text x="20" y="560" class="text-bold text-red" font-size="16">✘</text>
+  <text x="35" y="560" class="text-normal" font-size="14">Climate is human-caused</text>
+
+  <!-- Mainstream Belief -->
+  <rect x="240" y="440" width="215" height="135" class="bg-light-blue-2" stroke="#90CAF9" stroke-width="1" />
+  <text x="347" y="465" class="text-bold" font-size="18" text-anchor="middle">Mainstream belief</text>
+  <text x="347" y="485" class="text-normal" font-size="14" text-anchor="middle">107 participants</text>
+  <text x="245" y="510" class="text-bold text-green" font-size="16">✘</text>
+  <text x="260" y="510" class="text-normal" font-size="14">COVID is human made</text>
+  <text x="245" y="535" class="text-bold text-green" font-size="16">✔</text>
+  <text x="260" y="535" class="text-normal" font-size="14">Vaccine are safe</text>
+  <text x="245" y="560" class="text-bold text-green" font-size="16">✔</text>
+  <text x="260" y="560" class="text-normal" font-size="14">Climate is human-caused</text>
+
+  <!-- Plus Sign -->
+  <text x="240" y="610" class="text-bold" font-size="40" text-anchor="middle">+</text>
+
+  <!-- Demographic Information -->
+  <rect x="68" y="620" width="345" height="115" class="bg-blue" />
+  <text x="240" y="645" class="text-bold text-white" font-size="20" text-anchor="middle">Demographic Information</text>
+  <rect x="80" y="660" width="320" height="60" fill="white" />
+  <text x="240" y="680" class="text-normal" font-size="16" text-anchor="middle">Age, Gender, Education,</text>
+  <text x="240" y="705" class="text-normal" font-size="16" text-anchor="middle">Residence, Political Stance, Income</text>
+
+
+  <!-- ========================================== -->
+  <!-- MIDDLE TOP: Example Claim & Protocols      -->
+  <!-- ========================================== -->
+  <text x="610" y="65" class="text-bold text-blue" font-size="20" text-anchor="middle">Example Claim</text>
+  <rect x="475" y="75" width="270" height="50" class="bg-dark-grey" />
+  <text x="610" y="95" class="text-italic" font-size="16" text-anchor="middle">Cloth masks less effective than</text>
+  <text x="610" y="115" class="text-italic" font-size="16" text-anchor="middle">surgical masks</text>
+
+  <text x="880" y="40" class="text-bold" font-size="24" text-anchor="middle">Protocols</text>
+  <rect x="775" y="70" width="250" height="55" fill="white" class="border-dashed" />
+  <text x="900" y="90" class="text-normal" font-size="16" text-anchor="middle">Judge's Initial Belief: True/False</text>
+  <text x="900" y="115" class="text-normal" font-size="16" text-anchor="middle">Confidence: (0-100%)</text>
+
+  <!-- Legend Box -->
+  <rect x="1085" y="25" width="335" height="110" class="bg-grey" rx="10" />
+  <use href="#robot-icon-black" x="1095" y="35" />
+  <text x="1135" y="50" class="text-normal text-blue" font-size="14">AI expert can access corresponding</text>
+  <text x="1135" y="70" class="text-normal text-blue" font-size="14">sources and cite them</text>
+  <use href="#user-icon" x="1095" y="90" />
+  <text x="1135" y="110" class="text-normal text-blue" font-size="14">Cited references are shown to judges</text>
+
+
+  <!-- ========================================== -->
+  <!-- MIDDLE COLUMN: Consultancy                 -->
+  <!-- ========================================== -->
+  <rect x="455" y="150" width="410" height="585" fill="white" stroke="black" stroke-width="2" rx="10" />
+  <rect x="455" y="150" width="410" height="40" class="bg-blue" rx="10" />
+  <rect x="455" y="170" width="410" height="20" class="bg-blue" /> <!-- Square bottom corners -->
+  <text x="660" y="175" class="text-bold text-white" font-size="20" text-anchor="middle">Consultancy</text>
+
+  <!-- Y-axis Label -->
+  <text x="470" y="440" class="text-bold" font-size="14" transform="rotate(-90 470 440)" text-anchor="middle">One AI consultant argues a random position between True (50%) or False (50%)</text>
+
+  <!-- Round 1 -->
+  <rect x="490" y="195" width="360" height="170" class="bg-grey" rx="10" />
+  <text x="505" y="220" class="text-bold" font-size="18">Round 1</text>
+  <use href="#robot-icon-green" x="500" y="245" />
+  <path d="M 540 260 L 550 250 L 550 235 L 840 235 L 840 285 L 550 285 L 550 270 Z" fill="white" />
+  <text x="560" y="255" class="text-normal" font-size="14">Studies show surgical masks filter</text>
+  <text x="560" y="275" class="text-normal" font-size="14">60-80% of particles...</text>
+  
+  <use href="#user-icon" x="500" y="325" />
+  <path d="M 540 340 L 550 330 L 550 315 L 840 315 L 840 355 L 550 355 L 550 350 Z" fill="white" />
+  <text x="575" y="340" class="text-normal" font-size="14">What about multi-layer cloth masks?</text>
+
+  <!-- Round 2 -->
+  <rect x="490" y="375" width="360" height="170" class="bg-grey" rx="10" />
+  <text x="505" y="400" class="text-bold" font-size="18">Round 2</text>
+  <use href="#robot-icon-green" x="500" y="425" />
+  <path d="M 540 440 L 550 430 L 550 415 L 840 415 L 840 465 L 550 465 L 550 450 Z" fill="white" />
+  <text x="560" y="435" class="text-normal" font-size="14">Even 3-layer cloth masks only achieve</text>
+  <text x="560" y="455" class="text-normal" font-size="14">50% filtration...</text>
+  
+  <use href="#user-icon" x="500" y="505" />
+  <path d="M 540 520 L 550 510 L 550 495 L 840 495 L 840 535 L 550 535 L 550 530 Z" fill="white" />
+  <text x="585" y="520" class="text-normal" font-size="14">Are there any exceptions to this?</text>
+
+  <!-- Round 3 -->
+  <rect x="490" y="555" width="360" height="170" class="bg-grey" rx="10" />
+  <text x="505" y="580" class="text-bold" font-size="18">Round 3</text>
+  <use href="#robot-icon-green" x="500" y="605" />
+  <path d="M 540 620 L 550 610 L 550 595 L 840 595 L 840 645 L 550 645 L 550 630 Z" fill="white" />
+  <text x="560" y="615" class="text-normal" font-size="14">WHO recommends surgical over cloth</text>
+  <text x="560" y="635" class="text-normal" font-size="14">masks...</text>
+  
+  <use href="#user-icon" x="500" y="685" />
+  <path d="M 540 700 L 550 690 L 550 675 L 840 675 L 840 715 L 550 715 L 550 710 Z" fill="white" />
+  <text x="695" y="695" class="text-normal" font-size="14" text-anchor="middle">Final decision: True/False</text>
+  <text x="695" y="715" class="text-normal" font-size="14" text-anchor="middle">Confidence: 0-100% | Justification</text>
+
+
+  <!-- ========================================== -->
+  <!-- RIGHT COLUMN: Debate                       -->
+  <!-- ========================================== -->
+  <rect x="885" y="150" width="640" height="585" fill="white" stroke="black" stroke-width="2" rx="10" />
+  <rect x="885" y="150" width="640" height="40" class="bg-blue" rx="10" />
+  <rect x="885" y="170" width="640" height="20" class="bg-blue" />
+  <text x="1205" y="175" class="text-bold text-white" font-size="20" text-anchor="middle">Debate</text>
+
+  <!-- Y-axis Label -->
+  <text x="1505" y="440" class="text-bold" font-size="14" transform="rotate(-90 1505 440)" text-anchor="middle">Two AI debaters argue opposing positions between True vs. False (100%)</text>
+
+  <!-- Round 1 -->
+  <rect x="895" y="195" width="595" height="170" class="bg-grey" rx="10" />
+  <text x="910" y="220" class="text-bold" font-size="18">Round 1</text>
+  
+  <use href="#robot-icon-green" x="905" y="240" />
+  <path d="M 945 255 L 955 245 L 955 225 L 1180 225 L 1180 275 L 955 275 L 955 265 Z" fill="white" />
+  <text x="965" y="255" class="text-normal" font-size="14">Surgical masks filter 60-80%...</text>
+
+  <use href="#robot-icon-red" x="1205" y="240" />
+  <path d="M 1245 255 L 1255 245 L 1255 225 L 1480 225 L 1480 275 L 1255 275 L 1255 265 Z" fill="white" />
+  <text x="1265" y="245" class="text-normal" font-size="14">Quality cloth masks can be</text>
+  <text x="1265" y="265" class="text-normal" font-size="14">effective...</text>
+
+  <use href="#user-icon" x="1055" y="315" />
+  <path d="M 1095 330 L 1105 320 L 1105 305 L 1380 305 L 1380 345 L 1105 345 L 1105 340 Z" fill="white" />
+  <text x="1135" y="330" class="text-normal" font-size="14">What defines 'quality' cloth masks?</text>
+
+  <!-- Round 2 -->
+  <rect x="895" y="375" width="595" height="170" class="bg-grey" rx="10" />
+  <text x="910" y="400" class="text-bold" font-size="18">Round 2</text>
+  
+  <use href="#robot-icon-green" x="905" y="420" />
+  <path d="M 945 435 L 955 425 L 955 405 L 1180 405 L 1180 455 L 955 455 L 955 445 Z" fill="white" />
+  <text x="965" y="425" class="text-normal" font-size="14">3-layer cloth still only 50%</text>
+  <text x="965" y="445" class="text-normal" font-size="14">effective...</text>
+
+  <use href="#robot-icon-red" x="1205" y="420" />
+  <path d="M 1245 435 L 1255 425 L 1255 405 L 1480 405 L 1480 455 L 1255 455 L 1255 445 Z" fill="white" />
+  <text x="1265" y="425" class="text-normal" font-size="14">But availability and fit matter</text>
+  <text x="1265" y="445" class="text-normal" font-size="14">too...</text>
+
+  <use href="#user-icon" x="1055" y="495" />
+  <path d="M 1095 510 L 1105 500 L 1105 485 L 1380 485 L 1380 525 L 1105 525 L 1105 520 Z" fill="white" />
+  <text x="1155" y="510" class="text-normal" font-size="14">How important is proper fit?</text>
+
+  <!-- Round 3 -->
+  <rect x="895" y="555" width="595" height="170" class="bg-grey" rx="10" />
+  <text x="910" y="580" class="text-bold" font-size="18">Round 3</text>
+  
+  <use href="#robot-icon-green" x="905" y="600" />
+  <path d="M 945 615 L 955 605 L 955 585 L 1180 585 L 1180 635 L 955 635 L 955 625 Z" fill="white" />
+  <text x="965" y="605" class="text-normal" font-size="14">Medical studies prove</text>
+  <text x="965" y="625" class="text-normal" font-size="14">superiority...</text>
+
+  <use href="#robot-icon-red" x="1205" y="600" />
+  <path d="M 1245 615 L 1255 605 L 1255 585 L 1480 585 L 1480 635 L 1255 635 L 1255 625 Z" fill="white" />
+  <text x="1265" y="605" class="text-normal" font-size="14">Real-world usage differs from</text>
+  <text x="1265" y="625" class="text-normal" font-size="14">labs...</text>
+
+  <use href="#user-icon" x="1055" y="675" />
+  <path d="M 1095 690 L 1105 680 L 1105 665 L 1380 665 L 1380 715 L 1105 715 L 1105 700 Z" fill="white" />
+  <text x="1240" y="685" class="text-normal" font-size="14" text-anchor="middle">Final decision: True/False</text>
+  <text x="1240" y="705" class="text-normal" font-size="14" text-anchor="middle">Confidence: 0-100% | Justification</text>
+
+</svg>

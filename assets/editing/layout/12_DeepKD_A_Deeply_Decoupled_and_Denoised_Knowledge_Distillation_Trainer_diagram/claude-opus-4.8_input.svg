@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="770" viewBox="0 0 1900 770" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#333"/>
+    </marker>
+    <marker id="arrowsm" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Legend ===== -->
+  <rect x="20" y="95" width="200" height="150" fill="none" stroke="#9aa0a6" stroke-width="1.5" stroke-dasharray="5,4" rx="4"/>
+  <rect x="40" y="112" width="26" height="26" fill="#9dc3e6" stroke="#4f81bd"/>
+  <text x="78" y="131" font-size="18">hard label</text>
+  <rect x="40" y="148" width="26" height="26" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <text x="78" y="167" font-size="18">mask label</text>
+  <rect x="40" y="184" width="26" height="26" fill="#fcd462" stroke="#e0a800"/>
+  <text x="78" y="203" font-size="18">target</text>
+  <rect x="40" y="220" width="26" height="26" fill="#a9d18e" stroke="#548235"/>
+  <text x="78" y="239" font-size="18">non-target</text>
+
+  <!-- ===== Cat image ===== -->
+  <rect x="10" y="385" width="150" height="150" fill="#6b6256" stroke="#333"/>
+  <ellipse cx="85" cy="470" rx="48" ry="55" fill="#b9b2a6"/>
+  <circle cx="68" cy="455" r="7" fill="#3a3a3a"/>
+  <circle cx="102" cy="455" r="7" fill="#3a3a3a"/>
+  <polygon points="55,415 72,438 50,438" fill="#7c7468"/>
+  <polygon points="115,415 98,438 120,438" fill="#7c7468"/>
+  <text x="85" y="560" font-size="20" text-anchor="middle">cat</text>
+
+  <!-- ===== Ground Truth box ===== -->
+  <rect x="230" y="78" width="250" height="68" fill="#ffffff" stroke="#444" stroke-width="1.5" rx="14"/>
+  <text x="355" y="118" font-size="20" text-anchor="middle">Ground Truth</text>
+
+  <!-- ===== Teacher box ===== -->
+  <rect x="230" y="270" width="250" height="140" fill="#ffffff" stroke="#444" stroke-width="1.5" rx="14"/>
+  <g>
+    <rect x="270" y="290" width="20" height="100" fill="#2e75b6"/>
+    <rect x="290" y="295" width="20" height="92" fill="#3b82c4"/>
+    <rect x="310" y="300" width="20" height="84" fill="#4f93d1"/>
+    <rect x="330" y="308" width="18" height="70" fill="#5b9bd5"/>
+    <rect x="348" y="316" width="16" height="56" fill="#79aede"/>
+    <rect x="364" y="324" width="14" height="42" fill="#9dc3e6"/>
+  </g>
+  <text x="420" y="385" font-size="19" text-anchor="middle">Teacher</text>
+
+  <!-- ===== Student box ===== -->
+  <rect x="230" y="500" width="250" height="140" fill="#ffffff" stroke="#444" stroke-width="1.5" rx="14"/>
+  <g>
+    <rect x="270" y="520" width="20" height="100" fill="#c55a11"/>
+    <rect x="290" y="525" width="20" height="92" fill="#d2691e"/>
+    <rect x="310" y="530" width="20" height="84" fill="#e07b39"/>
+    <rect x="330" y="538" width="18" height="70" fill="#ed7d31"/>
+    <rect x="348" y="546" width="16" height="56" fill="#f4a261"/>
+    <rect x="364" y="554" width="14" height="42" fill="#f8c291"/>
+  </g>
+  <text x="420" y="615" font-size="19" text-anchor="middle">Student</text>
+
+  <!-- arrows cat -> teacher/student -->
+  <line x1="160" y1="455" x2="228" y2="340" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="160" y1="465" x2="228" y2="570" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- arrows networks -> vectors -->
+  <line x1="480" y1="112" x2="508" y2="112" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="340" x2="508" y2="340" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="570" x2="508" y2="570" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== Vectors dashed container ===== -->
+  <rect x="510" y="30" width="86" height="630" fill="none" stroke="#9aa0a6" stroke-width="1.5" stroke-dasharray="5,4" rx="4"/>
+
+  <!-- Ground truth vector -->
+  <rect x="528" y="35" width="30" height="30" fill="#9dc3e6" stroke="#4f81bd"/>
+  <text x="572" y="56" font-size="18">1</text>
+  <rect x="528" y="65" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="528" y="95" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="528" y="125" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="528" y="155" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="528" y="185" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+
+  <!-- Teacher vector -->
+  <rect x="528" y="255" width="30" height="30" fill="#fcd462" stroke="#e0a800"/>
+  <text x="568" y="276" font-size="17">p&#8348;&#7488;</text>
+  <rect x="528" y="285" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="315" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="345" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="375" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="405" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+
+  <!-- Student vector -->
+  <rect x="528" y="500" width="30" height="30" fill="#fcd462" stroke="#e0a800"/>
+  <text x="568" y="521" font-size="17">p&#8348;&#7480;</text>
+  <rect x="528" y="530" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="560" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="528" y="590" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="528" y="620" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+
+  <text x="690" y="446" font-size="20" text-anchor="middle">Decoupling</text>
+
+  <!-- arrows vector -> decoupling -->
+  <line x1="596" y1="112" x2="628" y2="112" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="596" y1="345" x2="628" y2="345" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="596" y1="570" x2="628" y2="570" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== Decoupling small columns ===== -->
+  <!-- Row1 -->
+  <rect x="632" y="62" width="30" height="30" fill="#9dc3e6" stroke="#4f81bd"/>
+  <rect x="688" y="62" width="30" height="30" fill="#fcd462" stroke="#e0a800"/>
+  <text x="647" y="128" font-size="17" text-anchor="middle">1</text>
+  <text x="703" y="128" font-size="17" text-anchor="middle">p&#8348;&#7480;</text>
+
+  <!-- Row2 -->
+  <rect x="632" y="320" width="30" height="30" fill="#fcd462" stroke="#e0a800"/>
+  <rect x="688" y="320" width="30" height="30" fill="#fcd462" stroke="#e0a800"/>
+  <text x="647" y="372" font-size="17" text-anchor="middle">p&#8348;&#7488;</text>
+  <text x="703" y="372" font-size="17" text-anchor="middle">p&#8348;&#7480;</text>
+
+  <!-- Row3: dashed box with two columns -->
+  <rect x="625" y="500" width="100" height="150" fill="none" stroke="#9aa0a6" stroke-width="1.3" stroke-dasharray="5,4" rx="4"/>
+  <rect x="632" y="505" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="632" y="535" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="632" y="565" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="632" y="595" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="688" y="505" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="688" y="535" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+  <rect x="688" y="565" width="30" height="30" fill="#a6a6a6" stroke="#7f7f7f"/>
+  <rect x="688" y="595" width="30" height="30" fill="#a9d18e" stroke="#548235"/>
+
+  <!-- double arrow to dynamic mask -->
+  <line x1="690" y1="652" x2="690" y2="688" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowsm)" marker-start="url(#arrowsm)"/>
+  <rect x="560" y="690" width="270" height="50" fill="#cda4de" stroke="#9b59b6" stroke-width="1.5" rx="6"/>
+  <text x="695" y="722" font-size="20" text-anchor="middle">Dynamic Top-k Mask</text>
+
+  <!-- ===== Row 1 (TASK) ===== -->
+  <!-- loss box -->
+  <rect x="765" y="40" width="225" height="150" fill="none" stroke="#4f81bd" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="930" y="65" font-size="20" text-anchor="middle">TASK</text>
+  <rect x="780" y="85" width="195" height="80" fill="#ffffff" stroke="#4f81bd" stroke-width="1.5" rx="8"/>
+  <text x="877" y="120" font-size="19" text-anchor="middle">Task</text>
+  <text x="877" y="145" font-size="19" text-anchor="middle">CE Loss</text>
+  <!-- gradient box -->
+  <rect x="1020" y="40" width="225" height="150" fill="none" stroke="#4f81bd" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="1180" y="65" font-size="20" text-anchor="middle">TOG</text>
+  <rect x="1035" y="85" width="195" height="80" fill="#9dc3e6" stroke="#4f81bd" stroke-width="1.5" rx="8"/>
+  <text x="1132" y="120" font-size="19" text-anchor="middle">Task-oriented</text>
+  <text x="1132" y="145" font-size="19" text-anchor="middle">Gradient</text>
+  <!-- momentum buffer -->
+  <rect x="1330" y="70" width="240" height="80" fill="#9dc3e6" stroke="#4f81bd" stroke-width="1.5" rx="10"/>
+  <text x="1450" y="105" font-size="19" text-anchor="middle">Task</text>
+  <text x="1450" y="128" font-size="19" text-anchor="middle">Momentum buffer</text>
+  <text x="1450" y="40" font-size="20" text-anchor="middle">v &#8592; g + (&#956; + &#916;)v</text>
+  <line x1="1290" y1="50" x2="1290" y2="90" stroke="#4f81bd" stroke-width="2" marker-end="url(#arrowsm)" marker-start="url(#arrowsm)"/>
+
+  <!-- ===== Row 2 (TCKD / target) ===== -->
+  <rect x="765" y="270" width="225" height="150" fill="none" stroke="#e0a800" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="930" y="295" font-size="20" text-anchor="middle">TCKD</text>
+  <rect x="780" y="315" width="195" height="80" fill="#ffffff" stroke="#e0a800" stroke-width="1.5" rx="8"/>
+  <text x="877" y="350" font-size="19" text-anchor="middle">Target Class</text>
+  <text x="877" y="375" font-size="19" text-anchor="middle">KL Loss</text>
+  <rect x="1020" y="270" width="225" height="150" fill="none" stroke="#e0a800" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="1180" y="295" font-size="20" text-anchor="middle">TCG</text>
+  <rect x="1035" y="315" width="195" height="80" fill="#fcd462" stroke="#e0a800" stroke-width="1.5" rx="8"/>
+  <text x="1132" y="350" font-size="19" text-anchor="middle">Target class</text>
+  <text x="1132" y="375" font-size="19" text-anchor="middle">Gradient</text>
+  <rect x="1330" y="305" width="240" height="80" fill="#fcd462" stroke="#e0a800" stroke-width="1.5" rx="10"/>
+  <text x="1450" y="340" font-size="19" text-anchor="middle">Target</text>
+  <text x="1450" y="363" font-size="19" text-anchor="middle">Momentum buffer</text>
+  <text x="1450" y="265" font-size="20" text-anchor="middle">v &#8592; g + (&#956; &#8722; &#916;)v</text>
+  <line x1="1290" y1="285" x2="1290" y2="325" stroke="#e0a800" stroke-width="2" marker-end="url(#arrowsm)" marker-start="url(#arrowsm)"/>
+
+  <!-- ===== Row 3 (NCKD / non-target) ===== -->
+  <rect x="765" y="500" width="225" height="150" fill="none" stroke="#548235" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="930" y="525" font-size="20" text-anchor="middle">NCKD</text>
+  <rect x="780" y="545" width="195" height="80" fill="#ffffff" stroke="#548235" stroke-width="1.5" rx="8"/>
+  <text x="877" y="580" font-size="19" text-anchor="middle">Non-target</text>
+  <text x="877" y="605" font-size="19" text-anchor="middle">Class KL Loss</text>
+  <rect x="1020" y="500" width="225" height="150" fill="none" stroke="#548235" stroke-width="1.5" stroke-dasharray="6,4" rx="6"/>
+  <text x="1180" y="525" font-size="20" text-anchor="middle">NCG</text>
+  <rect x="1035" y="545" width="195" height="80" fill="#a9d18e" stroke="#548235" stroke-width="1.5" rx="8"/>
+  <text x="1132" y="580" font-size="19" text-anchor="middle">Non-target</text>
+  <text x="1132" y="605" font-size="19" text-anchor="middle">class Gradient</text>
+  <rect x="1330" y="535" width="240" height="80" fill="#a9d18e" stroke="#548235" stroke-width="1.5" rx="10"/>
+  <text x="1450" y="570" font-size="19" text-anchor="middle">Non-target</text>
+  <text x="1450" y="593" font-size="19" text-anchor="middle">Momentum buffer</text>
+  <text x="1450" y="495" font-size="20" text-anchor="middle">v &#8592; g + (&#956; + &#916;)v</text>
+  <line x1="1290" y1="515" x2="1290" y2="555" stroke="#548235" stroke-width="2" marker-end="url(#arrowsm)" marker-start="url(#arrowsm)"/>
+
+  <!-- arrows decoupling -> loss -->
+  <line x1="725" y1="112" x2="762" y2="112" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="725" y1="345" x2="762" y2="345" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="725" y1="570" x2="762" y2="570" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- arrows loss -> gradient -->
+  <line x1="990" y1="125" x2="1018" y2="125" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="990" y1="355" x2="1018" y2="355" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="990" y1="585" x2="1018" y2="585" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- arrows gradient -> buffer -->
+  <line x1="1245" y1="125" x2="1328" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1245" y1="355" x2="1328" y2="345" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1245" y1="585" x2="1328" y2="575" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== Plus circle / update ===== -->
+  <circle cx="1640" cy="345" r="24" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <line x1="1640" y1="328" x2="1640" y2="362" stroke="#333" stroke-width="2"/>
+  <line x1="1623" y1="345" x2="1657" y2="345" stroke="#333" stroke-width="2"/>
+  <text x="1735" y="330" font-size="22" text-anchor="middle">&#952; &#8592; &#952; &#8722; &#947;v</text>
+  <text x="1735" y="360" font-size="20" text-anchor="middle">Update</text>
+
+  <!-- buffers -> plus -->
+  <path d="M1570 110 H1640 V321" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1570" y1="345" x2="1614" y2="345" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M1570 575 H1640 V369" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- feedback to student -->
+  <path d="M1640 369 V745 H355 V642" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+</svg>

@@ -1,0 +1,324 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -4.0 1650.0 908.0" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="overflow:visible" font-family="'Times New Roman', Times, serif">
+  <defs>
+    <!-- Arrowheads -->
+    <marker id="arrow-black" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L0,0" fill="black" />
+    </marker>
+    <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L0,0" fill="#8CD658" />
+    </marker>
+    
+    <!-- Gradients/Patterns for "Images" -->
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E8B57;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2B48C;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Reusable Bear Image Component -->
+    <g id="bearImage">
+      <rect width="180" height="135" fill="url(#waterGrad)" />
+      <!-- Abstract Bear Shape -->
+      <path d="M40,80 Q50,60 70,65 Q90,60 100,80 Q110,90 100,110 L90,120 L80,110 L70,120 L60,110 Q50,100 40,80" fill="url(#bearGrad)" />
+      <path d="M100,80 Q120,70 140,80 Q150,90 140,110 L130,120 L120,110 L110,120 L100,110" fill="url(#bearGrad)" opacity="0.8"/>
+      <!-- Abstract Background Boats/Trees -->
+      <rect x="0" y="0" width="180" height="30" fill="#4682B4" />
+      <circle cx="20" cy="50" r="5" fill="#555" opacity="0.5"/>
+      <circle cx="160" cy="50" r="8" fill="#555" opacity="0.5"/>
+    </g>
+
+    <!-- 3D Cube Component -->
+    <g id="cube">
+      <path d="M0,0 L60,0 L60,60 L0,60 Z" fill="#A9D18E" stroke="#548235" stroke-width="1"/> <!-- Front -->
+      <path d="M0,0 L15,-15 L75,-15 L60,0 Z" fill="#E2EFDA" stroke="#548235" stroke-width="1"/> <!-- Top -->
+      <path d="M60,0 L75,-15 L75,45 L60,60 Z" fill="#548235" stroke="#385723" stroke-width="1"/> <!-- Side -->
+    </g>
+  </defs>
+
+  <!-- BACKGROUNDS -->
+  <!-- Panel A -->
+  <rect x="0" y="0" width="1600" height="380" fill="#F0F0F0" />
+  <!-- Panel B -->
+  <rect x="0" y="380" width="830" height="520" fill="#FBE5D6" />
+  <!-- Panel C -->
+  <rect x="840" y="380" width="760" height="520" fill="#DDE6F4" />
+
+  <!-- ==================== PANEL A ==================== -->
+  <text x="20" y="50" font-size="44" fill="black">(a) Overall MINI Architecture</text>
+
+  <!-- Input Images -->
+  <g transform="translate(320, 160)">
+    <g transform="translate(0, 0)" opacity="0.6"><use href="#bearImage" /></g>
+    <g transform="translate(20, 20)" opacity="0.8"><use href="#bearImage" /></g>
+    <g transform="translate(40, 40)">
+      <use href="#bearImage" />
+      <rect width="180" height="135" fill="none" stroke="white" stroke-width="2"/>
+    </g>
+    <text x="100" y="185" font-size="36" text-anchor="middle">input <tspan font-style="italic">x</tspan></text>
+  </g>
+
+  <!-- Query Function Box -->
+  <rect x="470" y="65" width="290" height="55" rx="10" fill="#E2EFDA" stroke="#2F5597" stroke-width="3" />
+  <text x="615" y="98" font-size="32" text-anchor="middle">Query function <tspan font-style="italic">q</tspan>(·)</text>
+
+  <!-- Backbone -->
+  <g transform="translate(630, 170)">
+    <!-- Dashed Container -->
+    <rect x="0" y="0" width="380" height="200" rx="30" fill="none" stroke="#3F639E" stroke-width="8" stroke-dasharray="25,15" />
+    
+    <!-- Encoder (Left) -->
+    <g transform="translate(20, 20)">
+      <polygon points="0,0 220,40 220,100 0,140" fill="none" stroke="#3F639E" stroke-width="3" />
+      <!-- Bars -->
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="25" height="50" fill="#FFD966" />
+        <rect x="0" y="50" width="25" height="50" fill="#F4B084" />
+        <rect x="0" y="100" width="25" height="50" fill="#4472C4" />
+      </g>
+      <g transform="translate(50, 20)">
+        <rect x="0" y="0" width="25" height="40" fill="#FFD966" />
+        <rect x="0" y="40" width="25" height="40" fill="#F4B084" />
+        <rect x="0" y="80" width="25" height="40" fill="#4472C4" />
+      </g>
+      <g transform="translate(90, 30)">
+        <rect x="0" y="0" width="25" height="30" fill="#FFD966" />
+        <rect x="0" y="30" width="25" height="30" fill="#F4B084" />
+        <rect x="0" y="60" width="25" height="30" fill="#4472C4" />
+      </g>
+      <g transform="translate(130, 35)">
+        <rect x="0" y="0" width="25" height="25" fill="#FFD966" />
+        <rect x="0" y="25" width="25" height="25" fill="#F4B084" />
+        <rect x="0" y="50" width="25" height="25" fill="#4472C4" />
+      </g>
+    </g>
+
+    <!-- Decoder (Right) -->
+    <g transform="translate(240, 20)">
+      <polygon points="0,40 220,0 220,140 0,100" fill="none" stroke="#3F639E" stroke-width="3" />
+      <!-- Bars -->
+      <g transform="translate(10, 45)">
+        <rect x="0" y="0" width="25" height="30" fill="#FFD966" />
+        <rect x="0" y="30" width="25" height="30" fill="#F4B084" />
+        <rect x="0" y="60" width="25" height="30" fill="#4472C4" />
+      </g>
+      <g transform="translate(50, 35)">
+        <rect x="0" y="0" width="25" height="25" fill="#FFD966" />
+        <rect x="0" y="25" width="25" height="25" fill="#F4B084" />
+        <rect x="0" y="50" width="25" height="25" fill="#4472C4" />
+      </g>
+      <g transform="translate(90, 30)">
+        <rect x="0" y="0" width="25" height="30" fill="#FFD966" />
+        <rect x="0" y="30" width="25" height="30" fill="#F4B084" />
+        <rect x="0" y="60" width="25" height="30" fill="#4472C4" />
+      </g>
+      <g transform="translate(130, 20)">
+        <rect x="0" y="0" width="25" height="40" fill="#FFD966" />
+        <rect x="0" y="40" width="25" height="40" fill="#F4B084" />
+        <rect x="0" y="80" width="25" height="40" fill="#4472C4" />
+      </g>
+      <g transform="translate(170, 10)">
+        <rect x="0" y="0" width="25" height="50" fill="#FFD966" />
+        <rect x="0" y="50" width="25" height="50" fill="#F4B084" />
+        <rect x="0" y="100" width="25" height="50" fill="#4472C4" />
+      </g>
+    </g>
+    
+    <text x="190" y="240" font-size="36" text-anchor="middle">Any backbone</text>
+    <text x="190" y="280" font-size="36" text-anchor="middle">with MINI-Conv</text>
+  </g>
+
+  <!-- Output Images -->
+  <g transform="translate(1170, 160)">
+    <g transform="translate(0, 0)" opacity="0.6"><use href="#bearImage" /></g>
+    <g transform="translate(20, 20)" opacity="0.8"><use href="#bearImage" /></g>
+    <g transform="translate(40, 40)">
+      <use href="#bearImage" />
+      <rect width="180" height="135" fill="none" stroke="white" stroke-width="2"/>
+    </g>
+    <text x="100" y="185" font-size="36" text-anchor="middle">output <tspan font-style="italic">y</tspan></text>
+  </g>
+
+  <!-- Arrows Panel A -->
+  <!-- Input to Backbone -->
+  <line x1="460" y1="247" x2="635" y2="247" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Backbone to Output -->
+  <line x1="1010" y1="247" x2="1175" y2="247" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Input to Query -->
+  <path d="M380,160 L380,90 L465,90" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Query to Backbone -->
+  <path d="M760,90 L830,90 L830,175" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+
+
+  <!-- ==================== PANEL B ==================== -->
+  <text x="15" y="415" font-size="44" fill="black">(b) MINI-Conv</text>
+
+  <!-- Inputs -->
+  <text x="45" y="555" font-size="36" font-style="italic">q(x)</text>
+  <text x="68" y="645" font-size="36" font-style="italic">h</text>
+  <text x="5" y="645" font-size="32">hidden state</text>
+
+  <!-- Bias Embeddings -->
+  <g transform="translate(290, 450)">
+    <text x="0" y="-30" font-size="30">bias embeddings</text>
+    <rect x="-10" y="-10" width="110" height="100" rx="10" fill="none" stroke="#00B0F0" stroke-width="5" stroke-dasharray="15,10" />
+    <g transform="translate(0, 20)">
+      <use href="#cube" transform="translate(15, -15)" />
+      <use href="#cube" transform="translate(10, -10)" />
+      <use href="#cube" transform="translate(5, -5)" />
+      <use href="#cube" transform="translate(0, 0)" />
+    </g>
+  </g>
+
+  <!-- Weight Embeddings -->
+  <g transform="translate(260, 520)">
+    <rect x="-10" y="-10" width="150" height="130" rx="10" fill="none" stroke="#3F639E" stroke-width="5" stroke-dasharray="15,10" />
+    <text x="-20" y="145" font-size="30">weight embeddings</text>
+    <g transform="translate(0, 20)">
+      <use href="#cube" transform="translate(25, -25)" />
+      <use href="#cube" transform="translate(20, -20)" />
+      <use href="#cube" transform="translate(15, -15)" />
+      <use href="#cube" transform="translate(10, -10)" />
+      <use href="#cube" transform="translate(5, -5)" />
+      <use href="#cube" transform="translate(0, 0)" />
+    </g>
+  </g>
+
+  <!-- 3D Bars -->
+  <!-- Top Bar -->
+  <g transform="translate(440, 450)">
+    <path d="M0,0 L20,-20 L20,60 L0,80 Z" fill="#4472C4" stroke="#2F5597" stroke-width="2"/>
+    <path d="M0,0 L20,-20 L30,-20 L10,0 Z" fill="#8EA9DB" stroke="#2F5597" stroke-width="2"/>
+    <path d="M10,0 L30,-20 L30,60 L10,80 Z" fill="#2F5597" stroke="#2F5597" stroke-width="2"/>
+  </g>
+  <!-- Bottom Bar -->
+  <g transform="translate(440, 520)">
+    <path d="M0,0 L20,-20 L20,100 L0,120 Z" fill="#4472C4" stroke="#2F5597" stroke-width="2"/>
+    <path d="M0,0 L20,-20 L30,-20 L10,0 Z" fill="#8EA9DB" stroke="#2F5597" stroke-width="2"/>
+    <path d="M10,0 L30,-20 L30,100 L10,120 Z" fill="#2F5597" stroke="#2F5597" stroke-width="2"/>
+  </g>
+
+  <!-- Operations -->
+  <!-- Reshape -->
+  <g transform="translate(540, 550)">
+    <circle cx="0" cy="0" r="25" fill="white" stroke="black" stroke-width="4"/>
+    <text x="0" y="10" font-size="40" text-anchor="middle">R</text>
+  </g>
+  <!-- Convolution -->
+  <g transform="translate(630, 550)">
+    <circle cx="0" cy="0" r="25" fill="white" stroke="black" stroke-width="4"/>
+    <text x="0" y="10" font-size="40" text-anchor="middle">*</text>
+  </g>
+  <!-- Addition -->
+  <g transform="translate(700, 550)">
+    <circle cx="0" cy="0" r="25" fill="white" stroke="black" stroke-width="4"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="-25" x2="0" y2="25" stroke="black" stroke-width="4"/>
+  </g>
+
+  <!-- Output -->
+  <text x="790" y="560" font-size="36" font-style="italic">h'</text>
+
+  <!-- Arrows Panel B -->
+  <!-- q(x) to Bias -->
+  <path d="M160,545 L160,465 L285,465" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- q(x) to Weight -->
+  <path d="M110,545 L255,545" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Bias to Top Bar -->
+  <line x1="360" y1="475" x2="435" y2="475" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Weight to Bottom Bar -->
+  <line x1="360" y1="545" x2="435" y2="545" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Top Bar to Add -->
+  <path d="M470,470 L700,470 L700,520" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Bottom Bar to Reshape -->
+  <line x1="470" y1="545" x2="510" y2="545" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Reshape to Conv -->
+  <line x1="565" y1="545" x2="600" y2="545" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Conv to Add -->
+  <line x1="655" y1="545" x2="670" y2="545" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Add to Output -->
+  <line x1="725" y1="545" x2="780" y2="545" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <!-- Hidden State to Conv -->
+  <path d="M90,620 L630,620 L630,580" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+
+  <!-- Legend -->
+  <g transform="translate(380, 640)">
+    <circle cx="15" cy="15" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <text x="15" y="22" font-size="24" text-anchor="middle">R</text>
+    <text x="40" y="24" font-size="36">: reshape</text>
+    
+    <circle cx="230" cy="15" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <text x="230" y="22" font-size="24" text-anchor="middle">*</text>
+    <text x="255" y="24" font-size="36">: convolution</text>
+    
+    <circle cx="50" cy="55" r="15" fill="white" stroke="black" stroke-width="3"/>
+    <line x1="35" y1="55" x2="65" y2="55" stroke="black" stroke-width="3"/>
+    <line x1="50" y1="40" x2="50" y2="70" stroke="black" stroke-width="3"/>
+    <text x="80" y="64" font-size="36">: Element-wise addition</text>
+  </g>
+
+  <!-- ==================== PANEL C ==================== -->
+  <text x="860" y="415" font-size="44" fill="black">(c) Query function <tspan font-style="italic">q</tspan>(·)</text>
+
+  <!-- Patching -->
+  <rect x="900" y="550" width="200" height="100" rx="15" fill="#4472C4" stroke="#2F5597" stroke-width="2" />
+  <text x="1000" y="600" font-size="32" fill="white" text-anchor="middle" font-family="serif">patching</text>
+  <text x="855" y="590" font-size="36" font-style="italic">x</text>
+  <line x1="875" y1="585" x2="895" y2="585" stroke="black" stroke-width="4" marker-end="url(#arrow-black)" />
+
+  <!-- Switch -->
+  <g transform="translate(1100, 520)">
+    <path d="M-40,130 L-40,0 L40,0 L40,130" fill="none" stroke="#00B050" stroke-width="5" stroke-dasharray="20,10" />
+    <circle cx="0" cy="30" r="12" fill="black" />
+    <circle cx="0" cy="100" r="12" fill="black" />
+    <text x="0" y="160" font-size="36" text-anchor="middle">switch</text>
+  </g>
+  <!-- Arrow Patching to Switch -->
+  <path d="M1100,585 L1140,585 L1100,550" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+
+  <!-- MLPs -->
+  <g transform="translate(1220, 520)">
+    <!-- Global -->
+    <rect x="0" y="0" width="170" height="90" rx="15" fill="#DDE6F4" stroke="#833C0C" stroke-width="4" />
+    <text x="85" y="35" font-size="32" text-anchor="middle">Global</text>
+    <text x="85" y="70" font-size="32" text-anchor="middle">MLP</text>
+    
+    <!-- Local -->
+    <rect x="0" y="100" width="170" height="90" rx="15" fill="#DDE6F4" stroke="#833C0C" stroke-width="4" />
+    <text x="85" y="135" font-size="32" text-anchor="middle">Local</text>
+    <text x="85" y="170" font-size="32" text-anchor="middle">MLP</text>
+  </g>
+
+  <!-- Arrows Switch to MLPs -->
+  <line x1="1140" y1="550" x2="1215" y2="550" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <line x1="1140" y1="620" x2="1215" y2="620" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+
+  <!-- Degradation MLP -->
+  <rect x="900" y="440" width="220" height="90" rx="15" fill="#DDE6F4" stroke="#FFC000" stroke-width="4" stroke-dasharray="10,5" />
+  <text x="1010" y="465" font-size="28" text-anchor="middle">Degradation</text>
+  <text x="1010" y="490" font-size="28" text-anchor="middle">Classification</text>
+  <text x="1010" y="515" font-size="28" text-anchor="middle">MLP</text>
+  
+  <!-- Arrow Patching to Degradation -->
+  <line x1="980" y1="550" x2="980" y2="500" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  
+  <!-- Green Arrow Degradation to Switch -->
+  <path d="M1080,475 L1130,475 L1130,530" fill="none" stroke="#8CD658" stroke-width="5" marker-end="url(#arrow-green)" />
+
+  <!-- Softmax -->
+  <rect x="1420" y="550" width="130" height="100" rx="15" fill="#4472C4" stroke="#2F5597" stroke-width="2" />
+  <text x="1485" y="580" font-size="30" fill="white" text-anchor="middle">softmax</text>
+  <text x="1485" y="605" font-size="30" fill="white" text-anchor="middle">&amp;</text>
+  <text x="1485" y="630" font-size="30" fill="white" text-anchor="middle">argmax</text>
+
+  <!-- Arrows MLPs to Softmax -->
+  <path d="M1390,550 L1400,550 L1400,585 L1415,585" fill="none" stroke="black" stroke-width="5" marker-end="url(#arrow-black)" />
+  <path d="M1390,620 L1400,620 L1400,585" fill="none" stroke="black" stroke-width="5" />
+
+  <!-- Final Output -->
+  <line x1="1550" y1="585" x2="1580" y2="585" stroke="black" stroke-width="4" marker-end="url(#arrow-black)" />
+  <text x="1585" y="590" font-size="36" font-style="italic">q(x)</text>
+
+</svg>

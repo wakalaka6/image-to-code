@@ -31,7 +31,7 @@
   <text x="615" y="448" font-size="30" font-weight="bold" font-style="italic" fill="#1c3850">E</text><text x="632" y="457" font-size="20" font-weight="bold" font-style="italic" fill="#1c3850">i</text>
   <text x="566" y="685" font-size="30" font-weight="bold" font-style="italic" fill="#1c3850">E</text>
 
-  <!-- F_i dark, F_s & F yellow -->
+  <!-- F_i dark, F_s &amp; F yellow -->
   <g fill="#2f5278" stroke="#1c3850" stroke-width="1.5">
     <rect x="1450" y="110" width="14" height="92" rx="4"/><rect x="1468" y="110" width="14" height="92" rx="4"/><rect x="1486" y="110" width="14" height="92" rx="4"/><rect x="1504" y="110" width="14" height="92" rx="4"/>
   </g>

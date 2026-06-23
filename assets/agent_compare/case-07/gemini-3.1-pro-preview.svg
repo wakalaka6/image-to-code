@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+    <style>
+      .text-base { font-family: sans-serif; font-size: 20px; fill: #000; }
+      .text-math { font-family: serif; font-size: 22px; fill: #000; }
+      .text-mono { font-family: monospace; font-size: 20px; fill: #000; font-weight: bold; }
+      .box-green { fill: #d4edda; stroke: #28a745; stroke-width: 1.5; }
+      .box-blue { fill: #d1e7dd; stroke: #0d6efd; stroke-width: 1.5; }
+      .box-blue-light { fill: #cfe2ff; stroke: #0d6efd; stroke-width: 1.5; }
+      .box-red { fill: #f8d7da; stroke: #dc3545; stroke-width: 1.5; }
+      .box-purple { fill: #e2d9f3; stroke: #6f42c1; stroke-width: 1.5; }
+      .box-dark { fill: #6c757d; stroke: #495057; stroke-width: 1.5; }
+      .box-purple-dark { fill: #6f42c1; stroke: #5a32a3; stroke-width: 1.5; }
+      .box-gray { fill: #f8f9fa; stroke: #adb5bd; stroke-width: 2; }
+      .line { stroke: #000; stroke-width: 2; fill: none; }
+      .line-dashed { stroke: #000; stroke-width: 3; stroke-dasharray: 10, 10; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#fff" />
+
+  <!-- Dashed Dividers -->
+  <line x1="20" y1="20" x2="20" y2="660" class="line-dashed" />
+  <line x1="490" y1="20" x2="490" y2="660" class="line-dashed" />
+  <line x1="725" y1="20" x2="725" y2="660" class="line-dashed" />
+  <line x1="1180" y1="20" x2="1180" y2="660" class="line-dashed" />
+
+  <!-- Column Headers -->
+  <text x="25" y="45" class="text-base">1. Tokenize and combine</text>
+  <text x="75" y="75" class="text-base">goal and tactic</text>
+
+  <text x="505" y="45" class="text-base">2. Create goal-aware</text>
+  <text x="525" y="75" class="text-base">tactic embedding</text>
+
+  <text x="740" y="45" class="text-base">3. Train embedding to</text>
+  <text x="760" y="75" class="text-base">encode transition</text>
+  <text x="810" y="105" class="text-base">data</text>
+
+  <!-- Column 1: Tokenize and combine -->
+  <!-- Tactic Input -->
+  <rect x="70" y="260" width="135" height="50" class="box-green" />
+  <text x="85" y="292" class="text-mono">rw [h_1]</text>
+
+  <!-- Tactic Tokens -->
+  <rect x="255" y="180" width="72" height="72" class="box-green" />
+  <text x="277" y="222" class="text-mono">rw</text>
+  <rect x="255" y="252" width="72" height="72" class="box-green" />
+  <text x="283" y="294" class="text-mono">[</text>
+  <rect x="255" y="324" width="72" height="72" class="box-green" />
+  <text x="280" y="366" class="text-mono">...</text>
+
+  <!-- Tactic Bracket -->
+  <path d="M 335 180 C 350 180, 350 288, 360 288 C 350 288, 350 396, 335 396" class="line" />
+
+  <!-- Tactic Vector -->
+  <rect x="363" y="252" width="72" height="72" class="box-green" />
+  <text x="392" y="294" class="text-math" font-weight="bold">t</text>
+
+  <!-- Goal Input -->
+  <rect x="40" y="460" width="198" height="155" class="box-blue-light" />
+  <text x="52" y="485" class="text-math">a, b, c : ℂ</text>
+  <text x="52" y="515" class="text-math">h₀ : a + b = 2c</text>
+  <text x="52" y="545" class="text-math">h₁ : c = i</text>
+  <text x="52" y="575" class="text-math">⊢ ac + bc = -2</text>
+
+  <!-- Goal Tokens -->
+  <rect x="255" y="430" width="72" height="72" class="box-blue-light" />
+  <text x="283" y="472" class="text-math">a</text>
+  <rect x="255" y="502" width="72" height="72" class="box-blue-light" />
+  <text x="285" y="544" class="text-math">,</text>
+  <rect x="255" y="574" width="72" height="72" class="box-blue-light" />
+  <text x="280" y="616" class="text-mono">...</text>
+
+  <!-- Goal Bracket -->
+  <path d="M 335 430 C 350 430, 350 538, 360 538 C 350 538, 350 646, 335 646" class="line" />
+
+  <!-- Goal Vector -->
+  <rect x="363" y="502" width="72" height="72" class="box-blue-light" />
+  <text x="390" y="544" class="text-math" font-weight="bold">g</text>
+
+  <!-- Concat 1 -->
+  <rect x="363" y="395" width="108" height="55" class="box-dark" />
+  <text x="385" y="428" class="text-base" fill="#fff">concat</text>
+
+  <!-- Arrows Col 1 -->
+  <line x1="399" y1="324" x2="399" y2="385" class="line" marker-end="url(#arrow)" />
+  <line x1="399" y1="502" x2="399" y2="460" class="line" marker-end="url(#arrow)" />
+
+
+  <!-- Column 2: Create goal-aware tactic embedding -->
+  <!-- Gray Background Box -->
+  <rect x="508" y="145" width="198" height="425" class="box-gray" />
+
+  <!-- Encoder -->
+  <rect x="557" y="165" width="98" height="98" class="box-red" />
+  <text x="566" y="195" class="text-base">Encoder</text>
+  <text x="596" y="235" class="text-math">E</text>
+
+  <!-- t' and g' -->
+  <rect x="544" y="320" width="72" height="72" class="box-green" />
+  <text x="570" y="362" class="text-math" font-weight="bold">t'</text>
+  <rect x="616" y="320" width="72" height="72" class="box-blue-light" />
+  <text x="640" y="362" class="text-math" font-weight="bold">g'</text>
+
+  <!-- Pool -->
+  <rect x="544" y="410" width="72" height="35" class="box-purple-dark" />
+  <text x="560" y="434" class="text-base" fill="#fff">pool</text>
+
+  <!-- e -->
+  <rect x="544" y="480" width="72" height="72" class="box-green" />
+  <text x="572" y="522" class="text-math" font-weight="bold">e</text>
+
+  <!-- Concat 2 -->
+  <rect x="526" y="595" width="108" height="55" class="box-dark" />
+  <text x="548" y="628" class="text-base" fill="#fff">concat</text>
+
+  <!-- Arrows Col 2 -->
+  <path d="M 471 422 L 521 422 L 521 214 L 547 214" class="line" marker-end="url(#arrow)" />
+  <line x1="606" y1="263" x2="606" y2="290" class="line" />
+  <path d="M 606 290 L 580 290 L 580 310" class="line" marker-end="url(#arrow)" />
+  <path d="M 606 290 L 652 290 L 652 310" class="line" marker-end="url(#arrow)" />
+  <line x1="580" y1="392" x2="580" y2="400" class="line" marker-end="url(#arrow)" />
+  <line x1="580" y1="445" x2="580" y2="470" class="line" marker-end="url(#arrow)" />
+  <line x1="580" y1="552" x2="580" y2="585" class="line" marker-end="url(#arrow)" />
+  <path d="M 417 574 L 417 622 L 516 622" class="line" marker-end="url(#arrow)" />
+
+
+  <!-- Column 3: Train embedding -->
+  <!-- Predictor -->
+  <rect x="780" y="180" width="108" height="108" class="box-red" />
+  <text x="790" y="215" class="text-base">Predictor</text>
+  <text x="822" y="260" class="text-math">P</text>
+
+  <!-- Status -->
+  <rect x="968" y="145" width="172" height="72" class="box-purple" />
+  <text x="980" y="175" class="text-mono">Status (<tspan class="text-math">ŝ</tspan>)</text>
+  <text x="1008" y="205" class="text-mono">success</text>
+
+  <!-- Time -->
+  <rect x="998" y="260" width="112" height="95" class="box-purple" />
+  <text x="1005" y="295" class="text-mono">Time (<tspan class="text-math">τ̂</tspan>)</text>
+  <text x="1038" y="330" class="text-math">0.1</text>
+
+  <!-- Decoder -->
+  <rect x="762" y="420" width="144" height="144" class="box-red" />
+  <text x="792" y="465" class="text-base">Decoder</text>
+  <text x="822" y="515" class="text-math">D</text>
+
+  <!-- Output -->
+  <rect x="945" y="395" width="218" height="195" class="box-purple" />
+  <text x="970" y="425" class="text-mono">Output (<tspan class="text-math">ô</tspan>)</text>
+  <text x="970" y="460" class="text-math">a, b, c : ℂ</text>
+  <text x="970" y="490" class="text-math">h₀ : a + b = 2c</text>
+  <text x="970" y="520" class="text-math">h₁ : c = i</text>
+  <text x="970" y="550" class="text-math">⊢ ai + bi = -2</text>
+
+  <!-- Arrows Col 3 -->
+  <path d="M 616 516 L 744 516 L 744 234 L 770 234" class="line" marker-end="url(#arrow)" />
+  <line x1="888" y1="234" x2="942" y2="234" class="line" />
+  <path d="M 942 234 L 942 181 L 958 181" class="line" marker-end="url(#arrow)" />
+  <path d="M 942 234 L 942 307 L 988 307" class="line" marker-end="url(#arrow)" />
+  <path d="M 634 622 L 834 622 L 834 574" class="line" marker-end="url(#arrow)" />
+  <line x1="906" y1="492" x2="935" y2="492" class="line" marker-end="url(#arrow)" />
+
+</svg>

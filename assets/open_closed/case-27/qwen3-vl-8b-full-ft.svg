@@ -1,0 +1,474 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.0 -4.0 1907.0 1038.0" font-family="Arial, sans-serif">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#1B4F25">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#5E3A8C">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    
+    <!-- OpenAI Logo Path -->
+    <g id="openai-logo">
+      <path d="M22.6,18.4c-0.6-2.3-2.5-4.1-4.9-4.5c-0.4-2.3-2.1-4.2-4.4-5c-2.3-0.8-4.9-0.2-6.5,1.6L6.6,12.6C4.8,11.2,2.7,10.8,0.9,11.2C-0.9,11.6-1.7,13.3-1.3,15.1c0.4,1.8,1.8,3.2,3.6,3.6l1.8,2.1c-1.6,2.2-1.9,5.1-0.6,7.6c1.3,2.5,4,4,6.8,3.8l1.8-2.1c1.8-0.4,3.2-1.8,3.6-3.6c0.4-1.8-0.2-3.6-1.6-4.8L12.6,24.6c2.3,0.6,4.6,0.2,6.4-1.2c1.8-1.4,2.6-3.6,2.2-5.8L22.6,18.4z M13.4,26.6c-1.8,0-3.3-1.5-3.3-3.3c0-0.4,0.1-0.8,0.2-1.2l-1.8-2.1c-1.2-1.4-1.5-3.4-0.7-5.1c0.8-1.7,2.5-2.8,4.4-2.8c0.4,0,0.8,0.1,1.2,0.2l1.8,2.1c1.4,1.2,1.7,3.2,0.9,4.9c-0.8,1.7-2.5,2.8-4.4,2.8H13.4z M10.1,10.6c-0.4,0-0.8-0.1-1.2-0.2l-1.8-2.1c-1.4-1.2-1.7-3.2-0.9-4.9c0.8-1.7,2.5-2.8,4.4-2.8c0.4,0,0.8,0.1,1.2,0.2l1.8,2.1C13.7,6.7,13.4,8.7,12.6,10C11.8,11.3,10.1,12.4,8.2,12.4C6.4,12.4,4.9,11,4.1,9.3L10.1,10.6z M16.9,10.6l1.8-2.1c1.2-1.4,1.5-3.4,0.7-5.1c-0.8-1.7-2.5-2.8-4.4-2.8c-0.4,0-0.8,0.1-1.2,0.2l-1.8,2.1c-1.4,1.2-1.7,3.2-0.9,4.9c0.8,1.7,2.5,2.8,4.4,2.8c0.4,0,0.8-0.1,1.2-0.2L16.9,10.6z M13.4,13.4c-0.6,2.3-2.5,4.1-4.9,4.5c-0.4,2.3-2.1,4.2-4.4,5c-2.3,0.8-4.9,0.2-6.5-1.6l1.8-2.1c1.6-2.2,4.3-2.6,6.5-1.2c2.2,1.4,4.9,1,6.5-1.2L13.4,13.4z" transform="scale(1.5) translate(5,5)" fill="none" stroke="black" stroke-width="2"/>
+    </g>
+
+    <!-- Document Icon Path -->
+    <path id="doc-shape" d="M0,0 L160,0 L180,20 L180,100 L0,100 Z" fill="#F0FFFF" stroke="black" stroke-width="2"/>
+    <path id="doc-corner" d="M160,0 L160,20 L180,20" fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Robot Arm Placeholder -->
+    <g id="robot-arm">
+        <rect x="0" y="0" width="100" height="100" fill="#ddd"/>
+        <path d="M10,80 L90,80" stroke="#8B5A2B" stroke-width="2"/> <!-- Table -->
+        <path d="M20,80 L30,40 L60,30 L80,50" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/> <!-- Arm -->
+        <circle cx="20" cy="80" r="5" fill="#333"/>
+        <circle cx="30" cy="40" r="5" fill="#333"/>
+        <circle cx="60" cy="30" r="5" fill="#333"/>
+        <circle cx="80" cy="50" r="5" fill="#333"/>
+        <path d="M80,50 L70,60" stroke="#333" stroke-width="4"/> <!-- Gripper -->
+    </g>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1600" height="750" fill="white"/>
+
+  <!-- ================= TOP SECTION: LEARNING ================= -->
+  <rect x="10" y="10" width="1580" height="410" rx="30" fill="#EFF7F1"/>
+  <text x="30" y="315" transform="rotate(-90, 30, 315)" font-size="40" font-weight="bold" fill="black">Learning</text>
+
+  <!-- 1. DROID Dataset -->
+  <g transform="translate(60, 140)">
+    <path d="M0,20 L0,200 A70,20 0 0,0 140,200 L140,20 A70,20 0 0,0 0,20" fill="white" stroke="#666" stroke-width="4"/>
+    <ellipse cx="70" cy="20" rx="70" ry="20" fill="white" stroke="#666" stroke-width="4"/>
+    <text x="70" y="120" text-anchor="middle" font-size="32" font-weight="bold">DROID</text>
+    <text x="70" y="160" text-anchor="middle" font-size="32" font-weight="bold">Dataset</text>
+  </g>
+
+  <!-- Arrows from Dataset -->
+  <path d="M170,235 L190,235 M190,130 L190,360 M190,130 L220,130 M190,235 L220,235 M190,360 L220,360" fill="none" stroke="#1B4F25" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- 2. Section (a) Keyframe Extraction -->
+  <rect x="210" y="30" width="440" height="380" rx="30" fill="white"/>
+  <text x="430" y="60" text-anchor="middle" font-size="32" font-weight="bold">(a) Keyframe Extraction</text>
+
+  <!-- Image Grid (Simulated) -->
+  <g transform="translate(230, 80)">
+    <!-- Row 1 -->
+    <g>
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 1</text>
+        <rect x="5" y="35" width="150" height="75" fill="#aaccff" opacity="0.2"/> <!-- Photo content -->
+        <path d="M5,110 L5,35" stroke="white" stroke-width="2"/> <!-- Pot -->
+    </g>
+    <g transform="translate(165,0)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 2</text>
+        <rect x="5" y="35" width="150" height="75" fill="#aaccff" opacity="0.2"/>
+        <circle cx="80" cy="60" r="10" fill="black"/> <!-- Robot -->
+    </g>
+    <text x="290" y="60" font-size="24" font-weight="bold">...</text>
+    <g transform="translate(265,0)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 7</text>
+        <rect x="5" y="35" width="150" height="75" fill="#aaccff" opacity="0.2"/>
+        <circle cx="120" cy="80" r="15" fill="white"/> <!-- Bowl -->
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 120)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 1</text>
+        <rect x="5" y="35" width="150" height="75" fill="#8B5A2B" opacity="0.2"/> <!-- Table -->
+    </g>
+    <g transform="translate(165,120)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 2</text>
+        <rect x="5" y="35" width="150" height="75" fill="#8B5A2B" opacity="0.2"/>
+        <rect x="70" y="50" width="20" height="20" fill="black"/> <!-- Robot -->
+    </g>
+    <text x="290" y="180" font-size="24" font-weight="bold">...</text>
+    <g transform="translate(265,120)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 9</text>
+        <rect x="5" y="35" width="150" height="75" fill="#8B5A2B" opacity="0.2"/>
+        <circle cx="130" cy="90" r="15" fill="white"/> <!-- Robot -->
+    </g>
+
+    <!-- Ellipsis -->
+    <text x="200" y="250" font-size="30" font-weight="bold" transform="rotate(90, 200, 250)">...</text>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 240)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 1</text>
+        <rect x="5" y="35" width="150" height="75" fill="#eee" opacity="0.2"/> <!-- White Table -->
+    </g>
+    <g transform="translate(165,240)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 2</text>
+        <rect x="5" y="35" width="150" height="75" fill="#eee" opacity="0.2"/>
+        <rect x="60" y="40" width="20" height="40" fill="black"/> <!-- Robot -->
+    </g>
+    <text x="290" y="300" font-size="24" font-weight="bold">...</text>
+    <g transform="translate(265,240)">
+        <rect x="0" y="0" width="160" height="110" fill="#ddd"/>
+        <text x="5" y="30" font-size="28" fill="white" stroke="black" stroke-width="0.5">Frame 8</text>
+        <rect x="5" y="35" width="150" height="75" fill="#eee" opacity="0.2"/>
+        <rect x="110" y="80" width="20" height="20" fill="black"/> <!-- Robot -->
+    </g>
+  </g>
+
+  <!-- Arrows from (a) to (b) -->
+  <path d="M630,135 L680,135 L680,135 L710,135" fill="none" stroke="#1B4F25" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M630,235 L650,235 L650,350 L680,350 L680,135" fill="none" stroke="#1B4F25" stroke-width="4"/> <!-- Connect to top -->
+  <path d="M630,365 L680,365 L680,350" fill="none" stroke="#1B4F25" stroke-width="4"/>
+
+  <!-- 3. Section (b) Atomic Domain Generation -->
+  <rect x="670" y="30" width="560" height="400" rx="40" fill="white"/>
+  <text x="950" y="65" text-anchor="middle" font-size="34" font-weight="bold">(b) Atomic Domain Generation</text>
+
+  <!-- Box 1 -->
+  <g transform="translate(720, 95)">
+    <rect width="480" height="90" rx="15" fill="#CDECD0"/>
+    <use href="#openai-logo" x="10" y="10"/>
+    <text x="70" y="40" font-size="32" font-weight="bold">Domain Construction</text>
+    <text x="70" y="70" font-size="32" font-weight="bold">&amp; Revision</text>
+    <!-- Doc Icon -->
+    <g transform="translate(330, 10)">
+        <use href="#doc-shape" width="140" height="80"/>
+        <use href="#doc-corner"/>
+        <text x="5" y="20" font-family="monospace" font-size="16" fill="#00008B">:predicates (...)</text>
+        <text x="5" y="40" font-family="monospace" font-size="16" fill="#008000">:actions ...</text>
+        <text x="5" y="60" font-family="monospace" font-size="16" fill="#FF0000">:precondition (...)</text>
+        <text x="5" y="80" font-family="monospace" font-size="16" fill="#FF00FF">:effect (...)</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M930,165 L930,195" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Box 2 (Loop) -->
+  <rect x="695" y="190" width="490" height="230" rx="30" fill="#E0F5E5"/>
+  
+  <!-- Solvability -->
+  <g transform="translate(715, 205)">
+    <rect width="260" height="120" rx="20" fill="#CDECD0"/>
+    <use href="#openai-logo" x="10" y="10"/>
+    <!-- Tree Icon -->
+    <g transform="translate(10, 70)" stroke="black" stroke-width="3" fill="none">
+        <rect x="15" y="0" width="20" height="15"/>
+        <line x1="25" y1="15" x2="25" y2="25"/>
+        <line x1="5" y1="25" x2="45" y2="25"/>
+        <line x1="5" y1="25" x2="5" y2="35"/>
+        <line x1="45" y1="25" x2="45" y2="35"/>
+        <rect x="0" y="35" width="15" height="15"/>
+        <rect x="35" y="35" width="15" height="15"/>
+    </g>
+    <text x="80" y="50" font-size="34" font-weight="bold">Solvability</text>
+    <text x="80" y="90" font-size="34" font-weight="bold">Check</text>
+  </g>
+
+  <!-- Feedback Arrows -->
+  <path d="M900,230 L1000,230" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1000,260 L900,260" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="905" y="270" font-size="24" font-weight="bold">Feedback</text>
+
+  <!-- Arrow Down -->
+  <path d="M810,280 L810,305" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Solution Verification -->
+  <g transform="translate(710, 305)">
+    <rect width="260" height="110" rx="20" fill="#CDECD0"/>
+    <use href="#openai-logo" x="10" y="10"/>
+    <text x="80" y="40" font-size="34" font-weight="bold">Solution</text>
+    <text x="80" y="80" font-size="34" font-weight="bold">Verification</text>
+  </g>
+
+  <!-- Arrow to Refinement -->
+  <path d="M900,350 L1000,350" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="905" y="345" font-size="24" font-weight="bold">Feedback</text>
+
+  <!-- Refinement Box -->
+  <g transform="translate(1000, 200)">
+    <rect width="220" height="230" rx="30" fill="#CDECD0"/>
+    <use href="#openai-logo" x="70" y="10"/>
+    <text x="110" y="100" text-anchor="middle" font-size="34" font-weight="bold">Closed-Loop</text>
+    <text x="110" y="140" text-anchor="middle" font-size="34" font-weight="bold">Refinement</text>
+    <!-- Doc Icon -->
+    <g transform="translate(20, 150)">
+        <use href="#doc-shape" width="180" height="90"/>
+        <use href="#doc-corner"/>
+        <text x="5" y="20" font-family="monospace" font-size="16" fill="#00008B">:predicates (...)</text>
+        <text x="5" y="40" font-family="monospace" font-size="16" fill="#008000">:actions ...</text>
+        <text x="5" y="60" font-family="monospace" font-size="16" fill="#FF0000">:precondition (...)</text>
+        <text x="5" y="80" font-family="monospace" font-size="16" fill="#FF00FF">:effect (...)</text>
+    </g>
+  </g>
+
+  <!-- Arrow from Refinement to (c) -->
+  <path d="M1180,350 L1200,350 L1200,150 L1230,150" fill="none" stroke="#1B4F25" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- 4. Section (c) Domain Fusion -->
+  <rect x="1220" y="30" width="560" height="400" rx="40" fill="white"/>
+  <text x="1500" y="65" text-anchor="middle" font-size="34" font-weight="bold">(c) Domain Fusion</text>
+
+  <!-- Unified Domain -->
+  <g transform="translate(1230, 85)">
+    <rect width="540" height="110" fill="white" stroke="black" stroke-width="3"/>
+    <text x="270" y="35" text-anchor="middle" font-size="32">Unified Domain</text>
+    <!-- 4 Boxes -->
+    <g transform="translate(10, 40)">
+        <rect width="130" height="80" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M110,0 L110,20 L130,20" fill="white" stroke="black" stroke-width="3"/>
+        <text x="65" y="35" text-anchor="middle" font-size="24">Atomic</text>
+        <text x="65" y="65" text-anchor="middle" font-size="24">Domain</text>
+    </g>
+    <g transform="translate(160, 40)">
+        <rect width="130" height="80" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M110,0 L110,20 L130,20" fill="white" stroke="black" stroke-width="3"/>
+        <text x="65" y="35" text-anchor="middle" font-size="24">Atomic</text>
+        <text x="65" y="65" text-anchor="middle" font-size="24">Domain</text>
+    </g>
+    <text x="310" y="80" font-size="30" font-weight="bold">...</text>
+    <g transform="translate(340, 40)">
+        <rect width="130" height="80" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M110,0 L110,20 L130,20" fill="white" stroke="black" stroke-width="3"/>
+        <text x="65" y="35" text-anchor="middle" font-size="24">Atomic</text>
+        <text x="65" y="65" text-anchor="middle" font-size="24">Domain</text>
+    </g>
+    <g transform="translate(460, 40)">
+        <rect width="130" height="80" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M110,0 L110,20 L130,20" fill="white" stroke="black" stroke-width="3"/>
+        <text x="65" y="35" text-anchor="middle" font-size="24">Atomic</text>
+        <text x="65" y="65" text-anchor="middle" font-size="24">Domain</text>
+    </g>
+  </g>
+
+  <!-- Meta Domains -->
+  <g transform="translate(1260, 220)">
+    <!-- Left -->
+    <rect x="0" y="0" width="200" height="100" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M170,0 L170,20 L200,20" fill="white" stroke="black" stroke-width="3"/>
+    <text x="100" y="45" text-anchor="middle" font-size="32">Meta</text>
+    <text x="100" y="85" text-anchor="middle" font-size="32">Domain</text>
+    
+    <!-- Right -->
+    <rect x="280" y="0" width="200" height="100" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M450,0 L450,20 L500,20" fill="white" stroke="black" stroke-width="3"/>
+    <text x="380" y="45" text-anchor="middle" font-size="32">Meta</text>
+    <text x="380" y="85" text-anchor="middle" font-size="32">Domain</text>
+
+    <text x="240" y="50" font-size="30" font-weight="bold">...</text>
+  </g>
+
+  <!-- Arrows from Unified to Meta -->
+  <path d="M1295,160 L1310,210" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M1380,160 L1360,210" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M1480,160 L1500,210" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M1570,160 L1550,210" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Bottom Meta Domain -->
+  <g transform="translate(1340, 320)">
+    <rect x="0" y="0" width="220" height="100" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M180,0 L180,20 L220,20" fill="white" stroke="black" stroke-width="3"/>
+    <text x="110" y="45" text-anchor="middle" font-size="36">Meta</text>
+    <text x="110" y="90" text-anchor="middle" font-size="36">Domain</text>
+  </g>
+
+  <!-- Arrows from Meta to Bottom Meta -->
+  <path d="M1360,290 L1400,320" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M1500,290 L1460,320" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+
+
+  <!-- ================= BOTTOM SECTION: PLANNING ================= -->
+  <rect x="10" y="430" width="1580" height="600" rx="30" fill="#F5F0F8"/>
+  <text x="30" y="630" transform="rotate(-90, 30, 630)" font-size="40" font-weight="bold" fill="black">Planning</text>
+
+  <!-- 1. Input Text & Image -->
+  <g transform="translate(60, 445)">
+    <rect width="340" height="150" rx="20" fill="white"/>
+    <text x="170" y="35" text-anchor="middle" font-family="serif" font-style="italic" font-size="28">Move the corn from the pot</text>
+    <text x="170" y="70" text-anchor="middle" font-family="serif" font-style="italic" font-size="28">into the orange bowl, wipe the</text>
+    <text x="170" y="105" text-anchor="middle" font-family="serif" font-style="italic" font-size="28">table with the towel in the</text>
+    <text x="170" y="140" text-anchor="middle" font-family="serif" font-style="italic" font-size="28">drawer and put it back to the</text>
+    <text x="170" y="175" text-anchor="middle" font-family="serif" font-style="italic" font-size="28">closed drawer.</text>
+    
+    <!-- Photo Placeholder -->
+    <g transform="translate(30, 160)">
+        <rect width="300" height="300" fill="#ddd"/>
+        <rect x="0" y="150" width="300" height="150" fill="#eee"/> <!-- Counter -->
+        <rect x="0" y="250" width="300" height="50" fill="#C19A6B"/> <!-- Cabinets -->
+        <!-- Items -->
+        <path d="M50,200 L100,200 L120,180 L70,180 Z" fill="#fff" stroke="#999"/> <!-- Pot -->
+        <path d="M150,100 L200,100 L220,120 L170,120 Z" fill="#FFA500"/> <!-- Box -->
+        <path d="M200,120 L220,120 L220,150 L200,150 Z" fill="#4682B4"/> <!-- Box -->
+        <path d="M220,150 L240,150 L240,180 L220,180 Z" fill="#2E8B57"/> <!-- Box -->
+        <path d="M100,150 L130,150 L130,180 L100,180 Z" fill="#eee" stroke="#ccc"/> <!-- Bowl -->
+        <path d="M100,150 L100,140" stroke="#FFA500" stroke-width="5"/> <!-- Corn -->
+        <path d="M150,200 L180,200 L180,220 L150,220 Z" fill="#333"/> <!-- Robot Base -->
+        <path d="M165,200 L165,150 L180,140" stroke="#333" stroke-width="6"/> <!-- Arm -->
+    </g>
+  </g>
+
+  <!-- Arrows to (d) -->
+  <path d="M400,525 L410,525 L410,640 L450,640" fill="none" stroke="#5E3A8C" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <path d="M400,670 L410,670 L410,640" fill="none" stroke="#5E3A8C" stroke-width="4"/>
+
+  <!-- 2. Section (d) Problem Generation -->
+  <rect x="440" y="440" width="370" height="450" rx="30" fill="white"/>
+  <text x="625" y="480" text-anchor="middle" font-size="36" font-weight="bold">(d) Problem Generation</text>
+
+  <g transform="translate(450, 500)">
+    <!-- Meta Domain Box -->
+    <rect width="200" height="100" fill="#F0FFFF" stroke="black" stroke-width="3"/>
+    <path d="M170,0 L170,20 L200,20" fill="white" stroke="black" stroke-width="3"/>
+    <text x="100" y="45" text-anchor="middle" font-size="36">Meta</text>
+    <text x="100" y="85" text-anchor="middle" font-size="36">Domain</text>
+    
+    <!-- Arrow -->
+    <path d="M200,50 L240,50" fill="none" stroke="#666" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <!-- Predicate Grouping -->
+    <rect x="250" y="0" width="220" height="100" rx="20" fill="#E0D5FF"/>
+    <text x="360" y="40" text-anchor="middle" font-size="34">Predicate</text>
+    <text x="360" y="80" text-anchor="middle" font-size="34">Grouping</text>
+
+    <!-- Arrow Down -->
+    <path d="M360,100 L360,135" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- Predicate & Filter -->
+    <g transform="translate(0, 140)">
+        <rect width="370" height="110" rx="20" fill="#E0D5FF"/>
+        <use href="#openai-logo" x="20" y="20"/>
+        <text x="100" y="45" font-size="34">Predicate</text>
+        <text x="100" y="85" font-size="34">&amp; Operator Filtering</text>
+    </g>
+
+    <!-- Arrow Down -->
+    <path d="M200,250 L200,285" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- Problem Generation -->
+    <g transform="translate(0, 290)">
+        <rect width="370" height="110" rx="20" fill="#E0D5FF"/>
+        <use href="#openai-logo" x="20" y="20"/>
+        <text x="100" y="45" font-size="34">Problem</text>
+        <text x="100" y="85" font-size="34">Generation</text>
+        <!-- Doc Icon -->
+        <g transform="translate(220, 20)">
+            <use href="#doc-shape" width="140" height="80"/>
+            <use href="#doc-corner"/>
+            <text x="5" y="20" font-family="monospace" font-size="16" fill="#00008B">:objects (...)</text>
+            <text x="5" y="40" font-family="monospace" font-size="16" fill="#008000">:init ...</text>
+            <text x="5" y="60" font-family="monospace" font-size="16" fill="#FF0000">:goal (...)</text>
+        </g>
+    </g>
+  </g>
+
+  <!-- Arrow to (e) -->
+  <path d="M810,640 L800,640 L800,540 L840,540" fill="none" stroke="#5E3A8C" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <path d="M810,730 L800,730 L800,540" fill="none" stroke="#5E3A8C" stroke-width="4"/>
+
+  <!-- 3. Section (e) Planning -->
+  <rect x="820" y="440" width="320" height="450" rx="30" fill="white"/>
+  <text x="980" y="480" text-anchor="middle" font-size="36" font-weight="bold">(e) Planning</text>
+
+  <g transform="translate(840, 505)">
+    <rect width="310" height="100" rx="15" fill="#E0D5FF"/>
+    <!-- Tree Icon -->
+    <g transform="translate(50, 10)" stroke="black" stroke-width="5" fill="none">
+        <rect x="15" y="0" width="30" height="25" rx="5"/>
+        <line x1="30" y1="25" x2="30" y2="40"/>
+        <line x1="10" y1="40" x2="50" y2="40"/>
+        <line x1="10" y1="40" x2="10" y2="55"/>
+        <line x1="50" y1="40" x2="50" y2="55"/>
+        <rect x="0" y="55" width="30" height="25" rx="5"/>
+        <rect x="40" y="55" width="30" height="25" rx="5"/>
+    </g>
+    <text x="160" y="40" font-size="34">PDDL</text>
+    <text x="160" y="80" font-size="34">Solver</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M955,560 L955,600" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Code Box -->
+  <g transform="translate(840, 600)">
+    <rect width="310" height="130" fill="#FDFBF0" stroke="black" stroke-width="1"/>
+    <path d="M290,0 L290,20 L310,20" fill="white" stroke="black" stroke-width="1"/>
+    <text x="10" y="30" font-family="monospace" font-size="24" fill="#00008B">remove_lid (lid)</text>
+    <text x="10" y="60" font-family="monospace" font-size="24" fill="#008000">pick_from_rack (bowl)</text>
+    <text x="10" y="90" font-family="monospace" font-size="24" fill="#008000">place_on_table (bowl)</text>
+    <text x="10" y="115" font-family="monospace" font-size="24" fill="#00008B">...</text>
+    <text x="10" y="140" font-family="monospace" font-size="24" fill="#00008B">wipe_table (towel)</text>
+    <text x="10" y="165" font-family="monospace" font-size="24" fill="#00008B">place_in_drawer (towel)</text>
+    <text x="10" y="190" font-family="monospace" font-size="24" fill="#00008B">close_drawer (drawer)</text>
+  </g>
+
+  <!-- Arrow to (f) -->
+  <path d="M1080,670 L1100,670 L1100,530 L1130,530" fill="none" stroke="#5E3A8C" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <path d="M1080,730 L1100,730 L1100,530" fill="none" stroke="#5E3A8C" stroke-width="4"/>
+
+  <!-- 4. Section (f) Execution -->
+  <rect x="1120" y="440" width="470" height="450" rx="30" fill="white"/>
+  <text x="1355" y="480" text-anchor="middle" font-size="36" font-weight="bold">(f) Execution</text>
+
+  <!-- Grid of Images (Simulated) -->
+  <g transform="translate(1130, 490)">
+    <!-- Row 1 -->
+    <g transform="translate(0,0)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10)"/>
+        <rect x="10" y="80" width="160" height="20" fill="#eee"/> <!-- Counter -->
+    </g>
+    <g transform="translate(190,0)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(20, 90, 80)"/>
+    </g>
+    <g transform="translate(380,0)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(40, 90, 80)"/>
+    </g>
+    <g transform="translate(570,0)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(60, 90, 80)"/>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0,110)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(80, 90, 80)"/>
+    </g>
+    <g transform="translate(190,110)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(100, 90, 80)"/>
+    </g>
+    <g transform="translate(380,110)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(120, 90, 80)"/>
+    </g>
+    <g transform="translate(570,110)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(140, 90, 80)"/>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0,220)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(160, 90, 80)"/>
+    </g>
+    <g transform="translate(190,220)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(180, 90, 80)"/>
+    </g>
+    <g transform="translate(380,220)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(200, 90, 80)"/>
+    </g>
+    <g transform="translate(570,220)">
+        <rect width="180" height="100" fill="#ddd"/>
+        <use href="#robot-arm" transform="scale(0.9) translate(10,10) rotate(220, 90, 80)"/>
+    </g>
+  </g>
+
+</svg>

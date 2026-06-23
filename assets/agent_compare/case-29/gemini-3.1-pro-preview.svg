@@ -1,0 +1,563 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .panel-bg { fill: #f5f5f5; stroke: #d0d0d0; stroke-width: 2; rx: 10; }
+      .panel-bg-green { fill: #e6f2e6; stroke: #c0d0c0; stroke-width: 2; rx: 10; }
+      .panel-bg-yellow { fill: #fff9e6; stroke: #e0d0b0; stroke-width: 2; rx: 10; }
+      .panel-bg-purple { fill: #f0e6f2; stroke: #d0c0d0; stroke-width: 2; rx: 10; }
+      .box-blue { fill: #b3c6ff; stroke: #809fff; stroke-width: 1.5; rx: 4; }
+      .box-green { fill: #b3e6b3; stroke: #80cc80; stroke-width: 1.5; rx: 4; }
+      .box-yellow { fill: #ffe6b3; stroke: #ffcc80; stroke-width: 1.5; rx: 4; }
+      .box-purple { fill: #e6b3ff; stroke: #cc80ff; stroke-width: 1.5; rx: 4; }
+      .box-orange { fill: #ffccb3; stroke: #ff9980; stroke-width: 1.5; rx: 4; }
+      .box-red { fill: #ffb3b3; stroke: #ff8080; stroke-width: 1.5; rx: 4; }
+      .box-white { fill: #ffffff; stroke: #000000; stroke-width: 1.5; rx: 2; }
+      .text-bold { font-family: sans-serif; font-weight: bold; font-size: 14px; fill: #000; text-anchor: middle; }
+      .text-normal { font-family: sans-serif; font-size: 12px; fill: #000; text-anchor: middle; }
+      .text-small { font-family: sans-serif; font-size: 10px; fill: #000; text-anchor: middle; }
+      .arrow { stroke: #000; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .arrow-blue { stroke: #4d79ff; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-blue); }
+      .arrow-orange { stroke: #ff9933; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-orange); }
+      .arrow-purple { stroke: #9933ff; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-purple); }
+      .line-dashed { stroke: #000; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .line-dashed-gray { stroke: #a0a0a0; stroke-width: 2; stroke-dasharray: 6,6; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#000" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#4d79ff" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#ff9933" />
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#9933ff" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" width="1200" height="600" />
+
+  <!-- Top Section -->
+  <!-- Panel (a) -->
+  <rect class="panel-bg-green" x="10" y="10" width="390" height="270" filter="url(#shadow)" />
+  <text class="text-bold" x="205" y="295">(a)</text>
+  
+  <!-- Images -->
+  <rect x="20" y="25" width="140" height="90" fill="#ccc" stroke="#fff" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="35" width="140" height="90" fill="#aaa" stroke="#fff" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="45" width="140" height="90" fill="#888" stroke="#fff" stroke-width="2" filter="url(#shadow)"/>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" x="40" y="45" width="140" height="90" preserveAspectRatio="none"/>
+  <text class="text-normal" x="110" y="90" fill="#fff">Image</text>
+
+  <text class="text-normal" x="100" y="170" text-anchor="start">The green bus that is</text>
+  <text class="text-normal" x="100" y="190" text-anchor="start">heading to the upper</text>
+  <text class="text-normal" x="100" y="210" text-anchor="start">right, from the lower left</text>
+  <text class="text-normal" x="100" y="230" text-anchor="start">corner of the Bell Tower</text>
+  <text class="text-normal" x="100" y="250" text-anchor="start">roundabout</text>
+
+  <!-- Visual Encoder -->
+  <polygon points="210,30 290,50 290,110 210,130" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-bold" x="250" y="75">Visual</text>
+  <text class="text-bold" x="250" y="95">Encoder</text>
+
+  <!-- Feature Maps -->
+  <polygon points="310,50 360,50 340,70 290,70" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-small" x="335" y="60">S5</text>
+  <polygon points="310,70 370,70 340,95 280,95" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-small" x="335" y="85">S4</text>
+  <polygon points="310,95 380,95 340,125 270,125" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-small" x="335" y="115">S3</text>
+
+  <!-- Language Encoder -->
+  <polygon points="210,160 290,180 290,240 210,260" class="box-green" filter="url(#shadow)"/>
+  <text class="text-bold" x="250" y="205">Language</text>
+  <text class="text-bold" x="250" y="225">Encoder</text>
+
+  <!-- Linear -->
+  <rect class="box-green" x="320" y="180" width="25" height="60" filter="url(#shadow)"/>
+  <text class="text-bold" x="332" y="210" transform="rotate(-90 332 210)">Linear</text>
+
+  <!-- Language Tokens -->
+  <rect class="box-white" x="375" y="175" width="10" height="10" />
+  <rect class="box-white" x="375" y="190" width="10" height="10" />
+  <rect class="box-white" x="375" y="205" width="10" height="10" />
+  <text class="text-small" x="380" y="225" transform="rotate(-90 380 225)">...</text>
+  <rect class="box-white" x="375" y="235" width="10" height="10" />
+
+  <!-- Arrows (a) -->
+  <path class="arrow" d="M 185 80 L 205 80" />
+  <path class="arrow" d="M 290 80 L 310 80" />
+  <path class="arrow" d="M 185 210 L 205 210" />
+  <path class="arrow" d="M 290 210 L 315 210" />
+  <path class="arrow" d="M 345 210 L 370 210" />
+
+
+  <!-- Panel (b) -->
+  <rect class="panel-bg-yellow" x="410" y="10" width="220" height="270" filter="url(#shadow)" />
+  <text class="text-bold" x="520" y="295">(b)</text>
+
+  <!-- Cross-scale Visual-only Fusion Branch -->
+  <rect class="box-white" x="420" y="60" width="200" height="50" filter="url(#shadow)"/>
+  <text class="text-bold" x="520" y="80">Cross-scale Visual-only</text>
+  <text class="text-bold" x="520" y="100">Fusion Branch</text>
+
+  <!-- Tokens above Cross-scale -->
+  <rect class="box-white" x="430" y="25" width="15" height="15" />
+  <text class="text-small" x="455" y="35">...</text>
+  <rect class="box-white" x="465" y="25" width="15" height="15" />
+  <rect class="box-white" x="505" y="25" width="15" height="15" />
+  <text class="text-small" x="530" y="35">...</text>
+  <rect class="box-white" x="540" y="25" width="15" height="15" />
+  <rect class="box-white" x="580" y="25" width="15" height="15" />
+  <text class="text-small" x="605" y="35">...</text>
+  <rect class="box-white" x="615" y="25" width="15" height="15" />
+
+  <path class="arrow" d="M 437 55 L 437 45" />
+  <path class="arrow" d="M 472 55 L 472 45" />
+  <path class="arrow" d="M 512 55 L 512 45" />
+  <path class="arrow" d="M 547 55 L 547 45" />
+  <path class="arrow" d="M 587 55 L 587 45" />
+  <path class="arrow" d="M 622 55 L 622 45" />
+
+  <!-- Intra-scale Multi-modality Interaction Branch -->
+  <rect class="box-purple" x="420" y="175" width="200" height="70" filter="url(#shadow)"/>
+  <text class="text-bold" x="520" y="195">Intra-scale</text>
+  <text class="text-bold" x="520" y="215">Multi-modality</text>
+  <text class="text-bold" x="520" y="235">Interaction Branch</text>
+
+  <!-- Tokens above Intra-scale -->
+  <rect class="box-white" x="425" y="145" width="45" height="20" />
+  <rect class="box-white" x="430" y="148" width="10" height="10" />
+  <text class="text-small" x="447" y="157">...</text>
+  <rect class="box-white" x="455" y="148" width="10" height="10" />
+
+  <rect class="box-white" x="480" y="145" width="45" height="20" />
+  <rect class="box-white" x="485" y="148" width="10" height="10" fill="#b3e6b3"/>
+  <text class="text-small" x="502" y="157">...</text>
+  <rect class="box-white" x="510" y="148" width="10" height="10" fill="#b3e6b3"/>
+
+  <rect class="box-white" x="535" y="145" width="80" height="20" />
+  <rect class="box-white" x="540" y="148" width="10" height="10" fill="#ffb3b3"/>
+  <rect class="box-white" x="555" y="148" width="10" height="10" fill="#e6b3ff"/>
+  <text class="text-small" x="575" y="157">...</text>
+  <rect class="box-white" x="585" y="148" width="10" height="10" fill="#e6b3ff"/>
+  <rect class="box-white" x="600" y="148" width="10" height="10" fill="#ffb3b3"/>
+
+  <path class="arrow" d="M 435 170 L 435 165" />
+  <path class="arrow" d="M 460 170 L 460 165" />
+  <path class="arrow" d="M 490 170 L 490 165" />
+  <path class="arrow" d="M 515 170 L 515 165" />
+  <path class="arrow" d="M 545 170 L 545 165" />
+  <path class="arrow" d="M 560 170 L 560 165" />
+  <path class="arrow" d="M 590 170 L 590 165" />
+  <path class="arrow" d="M 605 170 L 605 165" />
+
+  <!-- Tokens below Intra-scale -->
+  <rect class="box-white" x="425" y="255" width="10" height="10" />
+  <text class="text-small" x="442" y="265">...</text>
+  <rect class="box-white" x="450" y="255" width="10" height="10" />
+  <rect class="box-white" x="485" y="255" width="10" height="10" fill="#b3e6b3"/>
+  <text class="text-small" x="502" y="265">...</text>
+  <rect class="box-white" x="510" y="255" width="10" height="10" fill="#b3e6b3"/>
+  <rect class="box-white" x="545" y="255" width="10" height="10" fill="#ffb3b3"/>
+  <rect class="box-white" x="570" y="255" width="10" height="10" fill="#e6b3ff"/>
+  <text class="text-small" x="587" y="265">...</text>
+  <rect class="box-white" x="595" y="255" width="10" height="10" fill="#ffb3b3"/>
+
+  <path class="arrow" d="M 430 250 L 430 245" />
+  <path class="arrow" d="M 455 250 L 455 245" />
+  <path class="arrow" d="M 490 250 L 490 245" />
+  <path class="arrow" d="M 515 250 L 515 245" />
+  <path class="arrow" d="M 550 250 L 550 245" />
+  <path class="arrow" d="M 575 250 L 575 245" />
+  <path class="arrow" d="M 600 250 L 600 245" />
+
+  <!-- Arrows between (a) and (b) -->
+  <path class="arrow" d="M 380 60 L 415 60" />
+  <path class="arrow" d="M 380 85 L 415 85" />
+  <path class="arrow" d="M 380 110 L 415 110" />
+  <path class="arrow" d="M 390 210 L 415 210" />
+
+  <!-- Arrow from Intra to Cross -->
+  <polygon points="440,115 460,115 450,135" class="box-blue" />
+  <path class="arrow" d="M 450 140 L 450 115" />
+  <path class="arrow" d="M 450 135 L 450 115" />
+  <path class="arrow" d="M 450 170 L 450 145" />
+  <path class="arrow" d="M 505 115 L 505 145" />
+  <path d="M 505 115 L 505 100" class="arrow" />
+
+
+  <!-- Panel (c) -->
+  <rect class="panel-bg-purple" x="640" y="10" width="550" height="270" filter="url(#shadow)" />
+  <text class="text-bold" x="915" y="295">(c)</text>
+
+  <!-- Multi-level Language Modulation -->
+  <rect class="box-green" x="655" y="35" width="105" height="90" filter="url(#shadow)"/>
+  <text class="text-bold" x="707" y="65">Multi-level</text>
+  <text class="text-bold" x="707" y="85">Language</text>
+  <text class="text-bold" x="707" y="105">Modulation</text>
+
+  <!-- Query and Position Generator -->
+  <rect class="box-orange" x="655" y="170" width="105" height="75" filter="url(#shadow)"/>
+  <text class="text-bold" x="707" y="195">Query and</text>
+  <text class="text-bold" x="707" y="215">Position</text>
+  <text class="text-bold" x="707" y="235">Generator</text>
+
+  <!-- Object Query Tokens -->
+  <rect class="box-white" x="790" y="90" width="15" height="15" fill="#ffccb3"/>
+  <text class="text-small" x="797" y="120" transform="rotate(90 797 120)">...</text>
+  <rect class="box-white" x="790" y="130" width="15" height="15" fill="#ffccb3"/>
+  <text class="text-small" x="797" y="160" transform="rotate(90 797 160)">...</text>
+  <rect class="box-white" x="790" y="170" width="15" height="15" fill="#ffccb3"/>
+  <text class="text-small" x="797" y="200" transform="rotate(90 797 200)">...</text>
+  <rect class="box-white" x="790" y="210" width="15" height="15" fill="#ffccb3"/>
+  <text class="text-normal" x="797" y="240">Object</text>
+  <text class="text-normal" x="797" y="255">query</text>
+
+  <path class="arrow" d="M 765 205 L 785 205" />
+  <path class="arrow" d="M 810 150 L 830 150" />
+
+  <!-- Multi-level Progressive Spatial Decoder -->
+  <rect class="box-white" x="830" y="80" width="195" height="130" rx="10" filter="url(#shadow)"/>
+  <text class="text-bold" x="927" y="230">Multi-level Progressive</text>
+  <text class="text-bold" x="927" y="250">Spatial Decoder</text>
+
+  <rect class="box-purple" x="840" y="95" width="45" height="100" filter="url(#shadow)"/>
+  <text class="text-bold" x="855" y="145" transform="rotate(90 855 145)">Decoder</text>
+  <text class="text-bold" x="870" y="145" transform="rotate(90 870 145)">High-level</text>
+
+  <rect class="box-purple" x="905" y="95" width="45" height="100" filter="url(#shadow)"/>
+  <text class="text-bold" x="920" y="145" transform="rotate(90 920 145)">Decoder</text>
+  <text class="text-bold" x="935" y="145" transform="rotate(90 935 145)">Mid-level</text>
+
+  <rect class="box-purple" x="970" y="95" width="45" height="100" filter="url(#shadow)"/>
+  <text class="text-bold" x="985" y="145" transform="rotate(90 985 145)">Decoder</text>
+  <text class="text-bold" x="1000" y="145" transform="rotate(90 1000 145)">Low-level</text>
+
+  <path class="arrow" d="M 885 145 L 900 145" />
+  <path class="arrow" d="M 950 145 L 965 145" />
+  <path class="arrow" d="M 1015 145 L 1045 145" />
+
+  <!-- High/Mid/Low level tokens -->
+  <text class="text-small" x="862" y="30">high-level</text>
+  <rect class="box-white" x="842" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <text class="text-small" x="862" y="50">...</text>
+  <rect class="box-white" x="872" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <rect class="box-white" x="842" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <text class="text-small" x="862" y="68">...</text>
+  <rect class="box-white" x="872" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <path class="arrow" d="M 862 75 L 862 90" />
+
+  <text class="text-small" x="927" y="30">mid-level</text>
+  <rect class="box-white" x="907" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <text class="text-small" x="927" y="50">...</text>
+  <rect class="box-white" x="937" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <rect class="box-white" x="907" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <text class="text-small" x="927" y="68">...</text>
+  <rect class="box-white" x="937" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <path class="arrow" d="M 927 75 L 927 90" />
+
+  <text class="text-small" x="992" y="30">low-level</text>
+  <rect class="box-white" x="972" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <text class="text-small" x="992" y="50">...</text>
+  <rect class="box-white" x="1002" y="40" width="12" height="12" fill="#b3e6b3"/>
+  <rect class="box-white" x="972" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <text class="text-small" x="992" y="68">...</text>
+  <rect class="box-white" x="1002" y="58" width="12" height="12" fill="#b3c6ff"/>
+  <path class="arrow" d="M 992 75 L 992 90" />
+
+  <path d="M 765 45 L 790 45 L 790 45 L 835 45" class="arrow" />
+  <path d="M 790 45 L 790 65 L 835 65" class="arrow" />
+
+  <!-- Arrows between (b) and (c) -->
+  <path class="arrow" d="M 625 80 L 650 80" />
+  <path class="arrow" d="M 625 115 L 640 115 L 640 205 L 650 205" />
+  <path class="arrow" d="M 520 115 L 520 130 L 640 130 L 640 115 L 650 115" />
+
+  <!-- Predicted Tube -->
+  <text class="text-bold" x="1115" y="25">Predicted Tube</text>
+  <rect x="1050" y="30" width="130" height="220" fill="#ccc" stroke="#000" stroke-width="2" filter="url(#shadow)"/>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" x="1050" y="30" width="130" height="60" preserveAspectRatio="none"/>
+  <text class="text-normal" x="1115" y="105">...</text>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" x="1050" y="115" width="130" height="60" preserveAspectRatio="none"/>
+  <text class="text-normal" x="1115" y="190">...</text>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" x="1050" y="200" width="130" height="50" preserveAspectRatio="none"/>
+  
+  <!-- Film strip holes -->
+  <circle cx="1055" cy="35" r="2" fill="#fff"/>
+  <circle cx="1055" cy="45" r="2" fill="#fff"/>
+  <circle cx="1055" cy="55" r="2" fill="#fff"/>
+  <circle cx="1055" cy="65" r="2" fill="#fff"/>
+  <circle cx="1055" cy="75" r="2" fill="#fff"/>
+  <circle cx="1055" cy="85" r="2" fill="#fff"/>
+  <circle cx="1055" cy="120" r="2" fill="#fff"/>
+  <circle cx="1055" cy="130" r="2" fill="#fff"/>
+  <circle cx="1055" cy="140" r="2" fill="#fff"/>
+  <circle cx="1055" cy="150" r="2" fill="#fff"/>
+  <circle cx="1055" cy="160" r="2" fill="#fff"/>
+  <circle cx="1055" cy="170" r="2" fill="#fff"/>
+  <circle cx="1055" cy="205" r="2" fill="#fff"/>
+  <circle cx="1055" cy="215" r="2" fill="#fff"/>
+  <circle cx="1055" cy="225" r="2" fill="#fff"/>
+  <circle cx="1055" cy="235" r="2" fill="#fff"/>
+  <circle cx="1055" cy="245" r="2" fill="#fff"/>
+  
+  <circle cx="1175" cy="35" r="2" fill="#fff"/>
+  <circle cx="1175" cy="45" r="2" fill="#fff"/>
+  <circle cx="1175" cy="55" r="2" fill="#fff"/>
+  <circle cx="1175" cy="65" r="2" fill="#fff"/>
+  <circle cx="1175" cy="75" r="2" fill="#fff"/>
+  <circle cx="1175" cy="85" r="2" fill="#fff"/>
+  <circle cx="1175" cy="120" r="2" fill="#fff"/>
+  <circle cx="1175" cy="130" r="2" fill="#fff"/>
+  <circle cx="1175" cy="140" r="2" fill="#fff"/>
+  <circle cx="1175" cy="150" r="2" fill="#fff"/>
+  <circle cx="1175" cy="160" r="2" fill="#fff"/>
+  <circle cx="1175" cy="170" r="2" fill="#fff"/>
+  <circle cx="1175" cy="205" r="2" fill="#fff"/>
+  <circle cx="1175" cy="215" r="2" fill="#fff"/>
+  <circle cx="1175" cy="225" r="2" fill="#fff"/>
+  <circle cx="1175" cy="235" r="2" fill="#fff"/>
+  <circle cx="1175" cy="245" r="2" fill="#fff"/>
+
+
+  <!-- Bottom Section -->
+  <rect class="panel-bg" x="50" y="300" width="1030" height="290" filter="url(#shadow)" />
+  
+  <!-- Panel (b.1) -->
+  <text class="text-bold" x="470" y="575">(b.1)</text>
+  <text class="text-bold" x="470" y="440" transform="rotate(90 470 440)">Intra-scale Multi-modality</text>
+  <text class="text-bold" x="450" y="440" transform="rotate(90 450 440)">Interaction Branch</text>
+
+  <rect class="box-purple" x="80" y="350" width="350" height="180" filter="url(#shadow)"/>
+  <text class="text-bold" x="415" y="365">×N</text>
+
+  <!-- Temporal Interaction Layer -->
+  <rect class="box-green" x="140" y="360" width="250" height="30" filter="url(#shadow)"/>
+  <text class="text-bold" x="265" y="380">temporal interaction layer</text>
+
+  <!-- Spatial Interaction Layers -->
+  <rect class="box-yellow" x="160" y="440" width="210" height="30" filter="url(#shadow)"/>
+  <text class="text-bold" x="265" y="460">spatial interaction layer</text>
+  <text class="text-small" x="385" y="465">frame T</text>
+  
+  <rect class="box-yellow" x="120" y="460" width="210" height="30" filter="url(#shadow)"/>
+  <text class="text-bold" x="225" y="480">spatial interaction layer</text>
+  <text class="text-small" x="345" y="485">frame 2</text>
+  
+  <rect class="box-yellow" x="100" y="480" width="210" height="30" filter="url(#shadow)"/>
+  <text class="text-bold" x="205" y="500">spatial interaction layer</text>
+  <text class="text-small" x="325" y="505">frame 1</text>
+
+  <path class="line-dashed" d="M 100 480 L 160 440" />
+  <path class="line-dashed" d="M 310 480 L 370 440" />
+  <path class="line-dashed" d="M 310 510 L 370 470" />
+  <path class="line-dashed" d="M 100 510 L 160 470" />
+
+  <!-- Tokens below (b.1) -->
+  <rect class="box-white" x="100" y="540" width="15" height="15" fill="#b3c6ff"/>
+  <rect class="box-white" x="120" y="540" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-small" x="145" y="550">...</text>
+  <rect class="box-white" x="155" y="540" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-normal" x="135" y="570">visual</text>
+  <text class="text-normal" x="135" y="585">token</text>
+  <path class="arrow" d="M 135 535 L 135 515" />
+
+  <rect class="box-white" x="185" y="540" width="15" height="15" fill="#b3e6b3"/>
+  <rect class="box-white" x="205" y="540" width="15" height="15" fill="#b3e6b3"/>
+  <text class="text-small" x="230" y="550">...</text>
+  <rect class="box-white" x="240" y="540" width="15" height="15" fill="#b3e6b3"/>
+  <text class="text-normal" x="220" y="570">language</text>
+  <text class="text-normal" x="220" y="585">token</text>
+  <path class="arrow" d="M 220 535 L 220 515" />
+
+  <rect class="box-white" x="265" y="540" width="15" height="15" fill="#ffb3b3"/>
+  <text class="text-normal" x="315" y="555">learnable</text>
+  <text class="text-normal" x="315" y="570">frame token</text>
+  <path class="arrow" d="M 272 535 L 272 515" />
+
+  <!-- Tokens inside (b.1) -->
+  <rect class="box-white" x="170" y="410" width="12" height="12" fill="#ffb3b3"/>
+  <text class="text-normal" x="120" y="415">learnable</text>
+  <text class="text-normal" x="120" y="430">video token</text>
+  <path class="arrow" d="M 176 405 L 176 395" />
+
+  <rect class="box-white" x="265" y="410" width="12" height="12" fill="#ffb3b3"/>
+  <rect class="box-white" x="285" y="410" width="12" height="12" fill="#e6b3ff"/>
+  <text class="text-small" x="305" y="420">...</text>
+  <rect class="box-white" x="315" y="410" width="12" height="12" fill="#e6b3ff"/>
+  <rect class="box-white" x="335" y="410" width="12" height="12" fill="#ffb3b3"/>
+
+  <path class="arrow" d="M 271 435 L 271 425" />
+  <path class="arrow" d="M 291 435 L 291 425" />
+  <path class="arrow" d="M 321 435 L 321 425" />
+  <path class="arrow" d="M 341 435 L 341 425" />
+
+  <path class="arrow" d="M 271 405 L 271 395" />
+  <path class="arrow" d="M 291 405 L 291 395" />
+  <path class="arrow" d="M 321 405 L 321 395" />
+  <path class="arrow" d="M 341 405 L 341 395" />
+
+  <!-- Tokens above (b.1) -->
+  <rect class="box-white" x="110" y="320" width="15" height="15" fill="#b3c6ff"/>
+  <rect class="box-white" x="130" y="320" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-small" x="155" y="330">...</text>
+  <rect class="box-white" x="165" y="320" width="15" height="15" fill="#b3c6ff"/>
+  <path class="arrow" d="M 145 345 L 145 335" />
+
+  <rect class="box-white" x="200" y="320" width="15" height="15" fill="#b3e6b3"/>
+  <rect class="box-white" x="220" y="320" width="15" height="15" fill="#b3e6b3"/>
+  <text class="text-small" x="245" y="330">...</text>
+  <rect class="box-white" x="255" y="320" width="15" height="15" fill="#b3e6b3"/>
+  <path class="arrow" d="M 235 345 L 235 335" />
+
+  <rect class="box-white" x="295" y="320" width="15" height="15" fill="#ffb3b3"/>
+  <path class="arrow" d="M 302 345 L 302 335" />
+
+  <rect class="box-white" x="330" y="320" width="15" height="15" fill="#e6b3ff"/>
+  <rect class="box-white" x="350" y="320" width="15" height="15" fill="#e6b3ff"/>
+  <text class="text-small" x="375" y="330">...</text>
+  <rect class="box-white" x="385" y="320" width="15" height="15" fill="#ffb3b3"/>
+  <path class="arrow" d="M 365 345 L 365 335" />
+
+  <!-- Divider -->
+  <path class="line-dashed-gray" d="M 520 310 L 520 580" />
+
+  <!-- Panel (b.2) -->
+  <text class="text-bold" x="570" y="575">(b.2)</text>
+  <text class="text-bold" x="570" y="440" transform="rotate(90 570 440)">Cross-scale Visual-only</text>
+  <text class="text-bold" x="550" y="440" transform="rotate(90 550 440)">Fusion Branch</text>
+
+  <rect class="box-blue" x="650" y="310" width="160" height="270" filter="url(#shadow)"/>
+
+  <!-- Inputs to (b.2) -->
+  <polygon points="610,370 640,370 630,380 600,380" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-bold" x="625" y="365">F<tspan dy="-5" font-size="8">N</tspan><tspan dy="10" font-size="8">v5</tspan></text>
+  <path class="arrow" d="M 640 375 L 665 375" />
+
+  <polygon points="605,430 645,430 635,445 595,445" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-bold" x="625" y="425">F<tspan dy="5" font-size="8">v4</tspan></text>
+  <path class="arrow" d="M 645 437 L 665 437" />
+
+  <polygon points="600,530 650,530 635,550 585,550" class="box-blue" filter="url(#shadow)"/>
+  <text class="text-bold" x="625" y="525">F<tspan dy="5" font-size="8">v3</tspan></text>
+  <path class="arrow" d="M 650 540 L 665 540" />
+
+  <!-- Inside (b.2) -->
+  <rect class="box-yellow" x="665" y="365" width="25" height="25" />
+  <rect class="box-yellow" x="665" y="425" width="25" height="25" />
+  <rect class="box-yellow" x="665" y="485" width="25" height="25" />
+  
+  <rect class="box-orange" x="665" y="320" width="70" height="25" />
+  <text class="text-bold" x="700" y="337">Fusion</text>
+  
+  <rect class="box-orange" x="665" y="420" width="70" height="25" />
+  <text class="text-bold" x="700" y="437">Fusion</text>
+  
+  <rect class="box-green" x="665" y="530" width="70" height="25" />
+  <text class="text-bold" x="700" y="547">MSFF-FE</text>
+
+  <rect class="box-blue" x="720" y="375" width="25" height="25" />
+  <text class="text-bold" x="732" y="392">FD</text>
+  
+  <rect class="box-blue" x="720" y="485" width="25" height="25" />
+  <text class="text-bold" x="732" y="502">FD</text>
+
+  <rect class="box-purple" x="760" y="485" width="30" height="40" />
+  <text class="text-bold" x="775" y="510">SAC</text>
+
+  <!-- Arrows inside (b.2) -->
+  <path class="arrow-orange" d="M 677 365 L 677 345" />
+  <path class="arrow-orange" d="M 677 425 L 677 390" />
+  <path class="arrow-orange" d="M 677 485 L 677 445" />
+  <path class="arrow-orange" d="M 677 530 L 677 510" />
+
+  <path class="arrow-blue" d="M 732 485 L 732 445" />
+  <path class="arrow-blue" d="M 732 375 L 732 345" />
+  <path class="arrow-blue" d="M 700 530 L 700 497 L 720 497" />
+  <path class="arrow-blue" d="M 700 420 L 700 387 L 720 387" />
+
+  <path class="arrow-purple" d="M 735 332 L 775 332 L 775 485" />
+  <path class="arrow-purple" d="M 735 432 L 775 432" />
+  <path class="arrow-purple" d="M 735 542 L 775 542 L 775 525" />
+
+  <!-- Outputs from (b.2) -->
+  <path class="arrow" d="M 775 332 L 825 332" />
+  <path class="arrow" d="M 775 432 L 825 432" />
+  <path class="arrow" d="M 790 505 L 825 505" />
+
+  <rect class="box-white" x="830" y="320" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-small" x="837" y="350" transform="rotate(90 837 350)">...</text>
+  <rect class="box-white" x="830" y="360" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-bold" x="865" y="345">F<tspan dy="-5" font-size="8">F</tspan><tspan dy="10" font-size="8">v5</tspan></text>
+
+  <rect class="box-white" x="830" y="395" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-small" x="837" y="425" transform="rotate(90 837 425)">...</text>
+  <rect class="box-white" x="830" y="435" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-bold" x="865" y="420">F<tspan dy="-5" font-size="8">F</tspan><tspan dy="10" font-size="8">v4</tspan></text>
+
+  <rect class="box-white" x="830" y="470" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-small" x="837" y="500" transform="rotate(90 837 500)">...</text>
+  <rect class="box-white" x="830" y="510" width="15" height="15" fill="#b3c6ff"/>
+  <text class="text-bold" x="865" y="495">F<tspan dy="-5" font-size="8">F</tspan><tspan dy="10" font-size="8">v3</tspan></text>
+
+  <!-- Long arrow from (b.1) to (b.2) -->
+  <path class="arrow" d="M 145 320 L 145 305 L 625 305 L 625 365" />
+
+  <!-- Detail Panels -->
+  <!-- Fusion Detail -->
+  <rect class="panel-bg-yellow" x="900" y="310" width="130" height="80" filter="url(#shadow)"/>
+  <rect class="box-yellow" x="910" y="335" width="20" height="20" />
+  <path class="arrow" d="M 930 345 L 950 345" />
+  <rect class="box-white" x="950" y="315" width="70" height="20" />
+  <text class="text-normal" x="985" y="330">Conv1×1 s1</text>
+  <rect class="box-white" x="950" y="340" width="70" height="20" />
+  <text class="text-normal" x="985" y="355">BN</text>
+  <rect class="box-white" x="950" y="365" width="70" height="20" />
+  <text class="text-normal" x="985" y="380">SiLU</text>
+
+  <!-- MSFF-FE Detail -->
+  <rect class="panel-bg-yellow" x="900" y="400" width="130" height="170" filter="url(#shadow)"/>
+  <circle cx="965" cy="420" r="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text class="text-bold" x="965" y="425">C</text>
+  
+  <path class="arrow" d="M 965 430 L 965 440 L 935 440 L 935 450" />
+  <path class="arrow" d="M 965 430 L 965 440 L 995 440 L 995 450" />
+  
+  <rect class="box-blue" x="915" y="450" width="40" height="30" />
+  <text class="text-normal" x="935" y="465">1×1</text>
+  <text class="text-normal" x="935" y="475">Conv</text>
+  
+  <rect class="box-blue" x="975" y="450" width="40" height="30" />
+  <text class="text-normal" x="995" y="465">1×1</text>
+  <text class="text-normal" x="995" y="475">Conv</text>
+
+  <rect class="box-yellow" x="910" y="490" width="50" height="20" />
+  <text class="text-bold" x="935" y="505">RepBlock</text>
+  <text class="text-bold" x="970" y="505">×3</text>
+
+  <path class="arrow" d="M 935 480 L 935 490" />
+  <path class="arrow" d="M 995 480 L 995 530 L 975 530" />
+  
+  <circle cx="965" cy="530" r="8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text class="text-bold" x="965" y="535">+</text>
+  
+  <path class="arrow" d="M 935 510 L 935 530 L 957 530" />
+  <path class="arrow" d="M 965 538 L 965 550" />
+
+  <circle cx="965" cy="560" r="10" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text class="text-bold" x="965" y="565">F</text>
+  <text class="text-bold" x="930" y="565">Fusion</text>
+  <path class="arrow" d="M 965 570 L 965 585" />
+
+  <path class="arrow" d="M 945 420 L 955 420" />
+  <path class="arrow" d="M 985 420 L 975 420" />
+  <path d="M 945 410 L 945 420" class="arrow" />
+  <path d="M 985 410 L 985 420" class="arrow" />
+
+</svg>

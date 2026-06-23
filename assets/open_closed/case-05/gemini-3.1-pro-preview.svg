@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" width="100%" height="100%">
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#555555" />
+        </marker>
+        <marker id="arrowhead-reverse" markerWidth="10" markerHeight="7" refX="2" refY="3.5" orient="auto">
+            <polygon points="10 0, 0 3.5, 10 7" fill="#555555" />
+        </marker>
+    </defs>
+
+    <style>
+        .box-border { stroke: #1A365D; stroke-width: 1.5; }
+        .text-main { font-family: 'Times New Roman', Times, serif; font-size: 20px; font-weight: bold; fill: #000000; text-anchor: middle; }
+        .text-sub { font-family: 'Times New Roman', Times, serif; font-size: 18px; font-weight: bold; fill: #4A86E8; text-anchor: middle; }
+        .text-box { font-family: 'Times New Roman', Times, serif; font-size: 18px; font-weight: bold; fill: #000000; text-anchor: middle; }
+        .text-legend { font-family: 'Times New Roman', Times, serif; font-size: 16px; fill: #000000; text-anchor: start; }
+        .arrow-line { stroke: #555555; stroke-width: 3.5; fill: none; }
+    </style>
+
+    <!-- Background with border effect -->
+    <rect x="0" y="0" width="940" height="520" fill="#F4F5F7" />
+    <rect x="8" y="8" width="924" height="504" fill="#F8F9FA" stroke="#CCCCCC" stroke-width="4" />
+
+    <!-- Top Inputs -->
+    <!-- Text-Only Request -->
+    <rect x="125" y="25" width="255" height="45" rx="5" fill="#FFFFFF" class="box-border" />
+    <text x="265" y="53" class="text-box" font-weight="normal" font-size="20px">Text-Only Request</text>
+    <!-- Document Icon -->
+    <g transform="translate(138, 32) scale(1.1)">
+        <path d="M2 0 h10 l5 5 v13 h-15 z" fill="none" stroke="#333" stroke-width="1.2"/>
+        <path d="M12 0 v5 h5" fill="none" stroke="#333" stroke-width="1.2"/>
+        <line x1="5" y1="8" x2="14" y2="8" stroke="#333" stroke-width="1.2"/>
+        <line x1="5" y1="11" x2="14" y2="11" stroke="#333" stroke-width="1.2"/>
+        <line x1="5" y1="14" x2="11" y2="14" stroke="#333" stroke-width="1.2"/>
+    </g>
+    <line x1="252.5" y1="70" x2="252.5" y2="92" class="arrow-line" marker-end="url(#arrowhead)" />
+
+    <!-- Image-Text Request -->
+    <rect x="540" y="25" width="255" height="45" rx="5" fill="#FFFFFF" class="box-border" />
+    <text x="680" y="53" class="text-box" font-weight="normal" font-size="20px">Image-Text Request</text>
+    <!-- Image Icon -->
+    <g transform="translate(545, 32) scale(1.1)">
+        <rect x="0" y="0" width="24" height="18" rx="2" fill="none" stroke="#333" stroke-width="1.2"/>
+        <circle cx="6" cy="5" r="2" fill="none" stroke="#333" stroke-width="1.2"/>
+        <path d="M0 18 l8 -8 l4 4 l6 -6 l6 6" fill="none" stroke="#333" stroke-width="1.2"/>
+        <path d="M0 18 l8 -8 l4 4 l6 -6 l6 6 v2 h-24 z" fill="#69F0AE" opacity="0.6"/>
+    </g>
+    <line x1="667.5" y1="70" x2="667.5" y2="92" class="arrow-line" marker-end="url(#arrowhead)" />
+
+    <!-- Modality-Level Block -->
+    <!-- Left Blue -->
+    <rect x="55" y="95" width="420" height="155" fill="#E1F0FA" class="box-border" />
+    <!-- Right Pink -->
+    <rect x="475" y="95" width="420" height="155" fill="#FDE4E4" class="box-border" />
+    <!-- Dashed Line -->
+    <line x1="475" y1="95" x2="475" y2="250" stroke="#000000" stroke-width="1.5" stroke-dasharray="4,4" />
+    <!-- Double Arrow -->
+    <line x1="450" y1="120" x2="500" y2="120" class="arrow-line" marker-start="url(#arrowhead-reverse)" marker-end="url(#arrowhead)" />
+
+    <!-- Text -->
+    <text x="275" y="125" class="text-main">Modality-Level</text>
+    <text x="275" y="148" class="text-sub">(Modality-Aware Load Balancing §3.1)</text>
+
+    <!-- Inner Blue Boxes -->
+    <rect x="85" y="180" width="162" height="52" rx="6" fill="#CDE4F7" class="box-border" />
+    <text x="166" y="212" class="text-box">Prefill Stage</text>
+
+    <rect x="287" y="180" width="162" height="52" rx="6" fill="#CDE4F7" class="box-border" />
+    <text x="368" y="212" class="text-box">Decode Stage</text>
+
+    <line x1="247" y1="206" x2="280" y2="206" class="arrow-line" marker-end="url(#arrowhead)" />
+
+    <!-- Inner Pink Boxes -->
+    <rect x="598" y="110" width="162" height="52" rx="6" fill="#FFCACA" class="box-border" />
+    <text x="679" y="142" class="text-box">Encode Stage</text>
+
+    <rect x="502" y="180" width="162" height="52" rx="6" fill="#FFCACA" class="box-border" />
+    <text x="583" y="212" class="text-box">Prefill Stage</text>
+
+    <rect x="704" y="180" width="162" height="52" rx="6" fill="#FFCACA" class="box-border" />
+    <text x="785" y="212" class="text-box">Decode Stage</text>
+
+    <line x1="595" y1="150" x2="565" y2="175" class="arrow-line" marker-end="url(#arrowhead)" />
+    <line x1="664" y1="206" x2="697" y2="206" class="arrow-line" marker-end="url(#arrowhead)" />
+
+    <!-- Stage-Level Block -->
+    <rect x="55" y="270" width="840" height="125" fill="#FDFDF5" class="box-border" />
+    <text x="475" y="298" class="text-main">Stage-Level <tspan class="text-sub">(Elastic Partition Scheduling §3.2)</tspan></text>
+
+    <rect x="110" y="312" width="186" height="64" rx="6" fill="#FDE6B3" class="box-border" />
+    <text x="203" y="340" class="text-box">Request</text>
+    <text x="203" y="364" class="text-box">Scheduling</text>
+
+    <rect x="380" y="312" width="186" height="64" rx="6" fill="#FDE6B3" class="box-border" />
+    <text x="473" y="340" class="text-box">Stage</text>
+    <text x="473" y="364" class="text-box">Allocation</text>
+
+    <rect x="647" y="312" width="186" height="64" rx="6" fill="#FDE6B3" class="box-border" />
+    <text x="740" y="340" class="text-box">Elastic</text>
+    <text x="740" y="364" class="text-box">Auto-Scaling</text>
+
+    <line x1="296" y1="344" x2="373" y2="344" class="arrow-line" marker-end="url(#arrowhead)" />
+    <line x1="566" y1="344" x2="640" y2="344" class="arrow-line" marker-end="url(#arrowhead)" />
+
+    <!-- Unified Multimodal Prefix Cache Block -->
+    <rect x="55" y="420" width="535" height="75" rx="10" fill="#D4EDDA" class="box-border" />
+    <text x="322.5" y="463" class="text-main">Unified Multimodal Prefix Cache <tspan class="text-sub">(§3.3)</tspan></text>
+
+    <!-- Legend -->
+    <rect x="635" y="415" width="256" height="80" fill="#FFFFFF" class="box-border" />
+    
+    <rect x="653" y="425" width="38" height="16" fill="#CDE4F7" class="box-border" />
+    <text x="703" y="439" class="text-legend">Text-Only Group</text>
+
+    <rect x="653" y="450" width="38" height="16" fill="#FFCACA" class="box-border" />
+    <text x="703" y="464" class="text-legend">Multimodal Group</text>
+
+    <line x1="655" y1="480" x2="689" y2="480" class="arrow-line" marker-start="url(#arrowhead-reverse)" marker-end="url(#arrowhead)" />
+    <text x="703" y="485" class="text-legend">Auto-Scaling</text>
+
+</svg>

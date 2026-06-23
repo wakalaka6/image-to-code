@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <style>
+      .text-sm { font-family: sans-serif; font-size: 12px; }
+      .text-md { font-family: sans-serif; font-size: 14px; }
+      .text-lg { font-family: sans-serif; font-size: 16px; }
+      .text-xl { font-family: sans-serif; font-size: 18px; }
+      .text-bold { font-weight: bold; }
+      .box-stroke { stroke-width: 2; fill: none; }
+      .box-fill { stroke-width: 2; }
+      .arrow { stroke-width: 2; fill: none; }
+      .arrow-head { fill: currentColor; }
+      .dashed { stroke-dasharray: 6, 6; }
+      .dotted { stroke-dasharray: 2, 4; }
+      
+      .color-vision { stroke: #1f4e79; fill: #e6f0fa; }
+      .color-vision-text { fill: #1f4e79; }
+      .color-audio { stroke: #38761d; fill: #e8f5e9; }
+      .color-audio-text { fill: #38761d; }
+      .color-speech { stroke: #a04000; fill: #fbeee6; }
+      .color-speech-text { fill: #a04000; }
+      .color-text { stroke: #5b2c6f; fill: #f4ecf7; }
+      .color-text-text { fill: #5b2c6f; }
+      .color-llm { stroke: #873600; fill: #fdebd0; }
+      .color-llm-text { fill: #873600; }
+      .color-time { stroke: #78281f; fill: #f5b7b1; }
+      .color-time-text { fill: #78281f; }
+      .color-query { stroke: #b7950b; fill: #fcf3cf; }
+      .color-query-text { fill: #000000; }
+      
+      .icon-fire { fill: #c0392b; }
+      .icon-snow { fill: #2980b9; }
+    </style>
+    <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="black" />
+    </marker>
+    <marker id="arrow-up-vision" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#1f4e79" />
+    </marker>
+    <marker id="arrow-up-audio" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#38761d" />
+    </marker>
+    <marker id="arrow-up-speech" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#a04000" />
+    </marker>
+    <marker id="arrow-up-text" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#5b2c6f" />
+    </marker>
+    <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="black" />
+    </marker>
+    <marker id="arrow-right-time" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#78281f" />
+    </marker>
+    <marker id="arrow-right-text" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b2c6f" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#ffffff" />
+
+  <!-- Query-Based Connector Dashed Box -->
+  <rect x="15" y="105" width="920" height="255" class="box-stroke dashed" stroke="#1f4e79" />
+  <text x="725" y="125" class="text-md text-bold color-vision-text">Query-Based Connector</text>
+  <path d="M 705 125 Q 710 115 715 125 Q 710 135 705 125 Z" class="icon-fire" />
+
+  <!-- Legend -->
+  <rect x="945" y="105" width="230" height="125" class="box-stroke dashed" stroke="#000000" />
+  <circle cx="965" cy="120" r="10" class="box-stroke" stroke="#000000" />
+  <line x1="955" y1="120" x2="975" y2="120" class="box-stroke" stroke="#000000" />
+  <line x1="965" y1="110" x2="965" y2="130" class="box-stroke" stroke="#000000" />
+  <text x="985" y="125" class="text-md">Point-wise Addition</text>
+  
+  <path d="M 960 150 Q 965 140 970 150 Q 965 160 960 150 Z" class="icon-fire" />
+  <text x="985" y="155" class="text-md">Stage2 Trainable Modules</text>
+  
+  <path d="M 960 180 Q 965 170 970 180 Q 965 190 960 180 Z" class="icon-fire" />
+  <path d="M 965 180 Q 970 170 975 180 Q 970 190 965 180 Z" class="icon-fire" />
+  <text x="985" y="185" class="text-md">Stage3 Trainable Modules</text>
+  
+  <path d="M 960 210 L 970 210 M 965 205 L 965 215 M 962 207 L 968 213 M 962 213 L 968 207" class="box-stroke" stroke="#2980b9" />
+  <text x="985" y="215" class="text-md">Frozen Components</text>
+
+  <!-- Top Level: LLM and Heads -->
+  <rect x="505" y="15" width="125" height="30" class="box-fill color-time" />
+  <text x="525" y="35" class="text-md color-time-text">Time Head</text>
+  <path d="M 510 30 Q 515 20 520 30 Q 515 40 510 30 Z" class="icon-fire" />
+  <path d="M 610 30 Q 615 20 620 30 Q 615 40 610 30 Z" class="icon-fire" />
+
+  <line x1="635" y1="30" x2="695" y2="30" class="arrow dashed" stroke="#78281f" marker-end="url(#arrow-right-time)" />
+  <text x="645" y="25" class="text-sm color-time-text">&lt;sync&gt;</text>
+
+  <rect x="700" y="15" width="115" height="30" class="box-fill color-text" />
+  <text x="725" y="35" class="text-md color-text-text">LM Head</text>
+  <path d="M 705 30 Q 710 20 715 30 Q 710 40 705 30 Z" class="icon-fire" />
+  <path d="M 795 30 Q 800 20 805 30 Q 800 40 795 30 Z" class="icon-fire" />
+
+  <line x1="565" y1="55" x2="565" y2="45" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+  <line x1="755" y1="55" x2="755" y2="45" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+
+  <rect x="80" y="55" width="735" height="40" class="box-fill color-llm" />
+  <text x="335" y="80" class="text-xl color-llm-text">Large Language Model</text>
+  <path d="M 85 85 Q 95 60 105 85 Q 95 110 85 85 Z" class="icon-fire" />
+  <path d="M 95 85 Q 105 60 115 85 Q 105 110 95 85 Z" class="icon-fire" />
+
+  <line x1="450" y1="115" x2="450" y2="95" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+
+  <!-- Compress & Two-layer MLP -->
+  <rect x="325" y="115" width="255" height="30" class="box-fill color-llm" />
+  <text x="340" y="135" class="text-md color-llm-text">Compress &amp; Two-layer MLP</text>
+
+  <line x1="450" y1="165" x2="450" y2="145" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+
+  <!-- Concat Layer -->
+  <rect x="290" y="165" width="345" height="30" fill="#e0e0e0" rx="5" />
+  <text x="155" y="185" class="text-md color-vision-text">Multimodal tokens</text>
+  <text x="295" y="185" class="text-md color-vision-text">Concat(</text>
+  <text x="355" y="185" class="text-md color-vision-text">Wv *</text>
+  <rect x="395" y="170" width="15" height="20" fill="#99c2ff" />
+  <rect x="415" y="170" width="15" height="20" fill="#99c2ff" />
+  <text x="440" y="185" class="text-md color-audio-text">Wa *</text>
+  <rect x="480" y="170" width="15" height="20" fill="#a9dfbf" />
+  <rect x="500" y="170" width="15" height="20" fill="#a9dfbf" />
+  <text x="525" y="185" class="text-md color-speech-text">Ws *</text>
+  <rect x="565" y="170" width="15" height="20" fill="#f5cba7" />
+  <rect x="585" y="170" width="15" height="20" fill="#f5cba7" />
+  <text x="610" y="185" class="text-md color-vision-text">)</text>
+  <rect x="615" y="170" width="15" height="20" fill="#d5b895" />
+
+  <!-- Point-wise Addition -->
+  <circle cx="450" cy="215" r="15" class="box-stroke" stroke="#000000" />
+  <line x1="435" y1="215" x2="465" y2="215" class="box-stroke" stroke="#000000" />
+  <line x1="450" y1="200" x2="450" y2="230" class="box-stroke" stroke="#000000" />
+  <line x1="450" y1="215" x2="450" y2="195" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+  <text x="465" y="235" class="text-md color-audio-text">f<tspan dy="5" font-size="10">a,q</tspan><tspan dy="-5">i</tspan></text>
+
+  <!-- Wv, Wa, Ws -->
+  <ellipse cx="240" cy="215" rx="25" ry="12" class="box-fill color-vision" />
+  <text x="228" y="220" class="text-md color-vision-text">Wv</text>
+  <line x1="265" y1="215" x2="435" y2="215" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-right)" />
+  <text x="295" y="235" class="text-md color-vision-text">f<tspan dy="5" font-size="10">v,q</tspan><tspan dy="-5">i</tspan></text>
+
+  <ellipse cx="450" cy="255" rx="25" ry="12" class="box-fill color-audio" />
+  <text x="438" y="260" class="text-md color-audio-text">Wa</text>
+  <line x1="450" y1="243" x2="450" y2="230" class="arrow" stroke="#38761d" marker-end="url(#arrow-up)" />
+
+  <ellipse cx="660" cy="215" rx="25" ry="12" class="box-fill color-speech" />
+  <text x="648" y="220" class="text-md color-speech-text">Ws</text>
+  <line x1="635" y1="215" x2="465" y2="215" class="arrow" stroke="#a04000" marker-end="url(#arrow-right)" />
+  <text x="600" y="235" class="text-md color-speech-text">f<tspan dy="5" font-size="10">s,q</tspan><tspan dy="-5">i</tspan></text>
+
+  <!-- Cross Attention Layers -->
+  <rect x="80" y="270" width="175" height="40" class="box-fill color-vision" />
+  <text x="105" y="295" class="text-lg color-vision-text">Cross Attention</text>
+  <line x1="165" y1="270" x2="165" y2="215" class="arrow" stroke="#1f4e79" />
+  <line x1="165" y1="215" x2="215" y2="215" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-right)" />
+
+  <rect x="365" y="270" width="175" height="40" class="box-fill color-audio" />
+  <text x="390" y="295" class="text-lg color-audio-text">Cross Attention</text>
+  <line x1="450" y1="270" x2="450" y2="267" class="arrow" stroke="#38761d" marker-end="url(#arrow-up)" />
+
+  <rect x="640" y="270" width="175" height="40" class="box-fill color-speech" />
+  <text x="665" y="295" class="text-lg color-speech-text">Cross Attention</text>
+  <line x1="725" y1="270" x2="725" y2="215" class="arrow" stroke="#a04000" />
+  <line x1="725" y1="215" x2="685" y2="215" class="arrow" stroke="#a04000" marker-end="url(#arrow-right)" />
+
+  <!-- Tokens -->
+  <text x="20" y="335" class="text-md color-vision-text">Vision Tokens</text>
+  <rect x="115" y="330" width="95" height="25" fill="#e0e0e0" rx="5" />
+  <rect x="125" y="335" width="15" height="15" fill="#99c2ff" />
+  <rect x="155" y="335" width="15" height="15" fill="#99c2ff" />
+  <rect x="185" y="335" width="15" height="15" fill="#99c2ff" />
+  <line x1="165" y1="330" x2="165" y2="310" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-up-vision)" />
+
+  <text x="300" y="335" class="text-md color-audio-text">Audio Tokens</text>
+  <rect x="395" y="330" width="95" height="25" fill="#e0e0e0" rx="5" />
+  <rect x="405" y="335" width="15" height="15" fill="#a9dfbf" />
+  <rect x="435" y="335" width="15" height="15" fill="#a9dfbf" />
+  <rect x="465" y="335" width="15" height="15" fill="#a9dfbf" />
+  <line x1="450" y1="330" x2="450" y2="310" class="arrow" stroke="#38761d" marker-end="url(#arrow-up-audio)" />
+
+  <text x="560" y="335" class="text-md color-speech-text">Speech Tokens</text>
+  <rect x="670" y="330" width="95" height="25" fill="#e0e0e0" rx="5" />
+  <rect x="680" y="335" width="15" height="15" fill="#f5cba7" />
+  <rect x="710" y="335" width="15" height="15" fill="#f5cba7" />
+  <rect x="740" y="335" width="15" height="15" fill="#f5cba7" />
+  <line x1="725" y1="330" x2="725" y2="310" class="arrow" stroke="#a04000" marker-end="url(#arrow-up-speech)" />
+
+  <!-- Projectors -->
+  <rect x="80" y="375" width="175" height="40" class="box-fill color-vision" />
+  <text x="105" y="400" class="text-lg color-vision-text">Vision Projector</text>
+  <path d="M 240 395 Q 245 385 250 395 Q 245 405 240 395 Z" class="icon-fire" />
+  <text x="255" y="400" class="text-md color-vision-text">f<tspan dy="5" font-size="10">'v</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="165" y1="375" x2="165" y2="355" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-up-vision)" />
+
+  <rect x="365" y="375" width="175" height="40" class="box-fill color-audio" />
+  <text x="390" y="400" class="text-lg color-audio-text">Audio Projector</text>
+  <path d="M 525 395 Q 530 385 535 395 Q 530 405 525 395 Z" class="icon-fire" />
+  <text x="540" y="400" class="text-md color-audio-text">f<tspan dy="5" font-size="10">'a</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="450" y1="375" x2="450" y2="355" class="arrow" stroke="#38761d" marker-end="url(#arrow-up-audio)" />
+
+  <rect x="640" y="375" width="175" height="40" class="box-fill color-speech" />
+  <text x="655" y="400" class="text-lg color-speech-text">Speech Projector</text>
+  <path d="M 800 395 Q 805 385 810 395 Q 805 405 800 395 Z" class="icon-fire" />
+  <text x="815" y="400" class="text-md color-speech-text">f<tspan dy="5" font-size="10">'s</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="725" y1="375" x2="725" y2="355" class="arrow" stroke="#a04000" marker-end="url(#arrow-up-speech)" />
+
+  <!-- Encoders -->
+  <rect x="80" y="425" width="175" height="40" class="box-fill color-vision" />
+  <text x="105" y="450" class="text-lg color-vision-text">Vision Encoder</text>
+  <path d="M 240 445 L 250 445 M 245 440 L 245 450 M 242 442 L 248 448 M 242 448 L 248 442" class="box-stroke icon-snow" />
+  <text x="255" y="450" class="text-md color-vision-text">f<tspan dy="5" font-size="10">v</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="165" y1="425" x2="165" y2="415" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-up-vision)" />
+
+  <rect x="365" y="425" width="175" height="40" class="box-fill color-audio" />
+  <text x="390" y="450" class="text-lg color-audio-text">Audio Encoder</text>
+  <path d="M 525 445 L 535 445 M 530 440 L 530 450 M 527 442 L 533 448 M 527 448 L 533 442" class="box-stroke icon-snow" />
+  <text x="540" y="450" class="text-md color-audio-text">f<tspan dy="5" font-size="10">a</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="450" y1="425" x2="450" y2="415" class="arrow" stroke="#38761d" marker-end="url(#arrow-up-audio)" />
+
+  <rect x="640" y="425" width="175" height="40" class="box-fill color-speech" />
+  <text x="655" y="450" class="text-lg color-speech-text">Speech Encoder</text>
+  <path d="M 800 445 L 810 445 M 805 440 L 805 450 M 802 442 L 808 448 M 802 448 L 808 442" class="box-stroke icon-snow" />
+  <text x="815" y="450" class="text-md color-speech-text">f<tspan dy="5" font-size="10">s</tspan><tspan dy="-5">i</tspan></text>
+  <line x1="725" y1="425" x2="725" y2="415" class="arrow" stroke="#a04000" marker-end="url(#arrow-up-speech)" />
+
+  <!-- Time Encoder -->
+  <rect x="840" y="380" width="100" height="45" class="box-fill color-time" />
+  <text x="855" y="400" class="text-md color-time-text">Time</text>
+  <text x="855" y="415" class="text-md color-time-text">Encoder</text>
+  <path d="M 925 405 Q 930 395 935 405 Q 930 415 925 405 Z" class="icon-fire" />
+  <line x1="885" y1="380" x2="885" y2="180" class="arrow" stroke="#d5b895" />
+  <line x1="885" y1="180" x2="630" y2="180" class="arrow" stroke="#d5b895" marker-end="url(#arrow-right)" />
+
+  <!-- Text Tokens and Tokenizer -->
+  <text x="965" y="450" class="text-md color-text-text">Text Tokens</text>
+  <rect x="1045" y="445" width="95" height="25" fill="#e0e0e0" rx="5" />
+  <rect x="1050" y="450" width="20" height="15" fill="#8e44ad" />
+  <rect x="1078" y="450" width="20" height="15" fill="#8e44ad" />
+  <rect x="1106" y="450" width="20" height="15" fill="#8e44ad" />
+
+  <rect x="1020" y="500" width="140" height="40" class="box-fill color-text" />
+  <text x="1035" y="525" class="text-lg color-text-text">Text Tokenizer</text>
+  <line x1="1090" y1="500" x2="1090" y2="470" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+
+  <!-- Text Query Path -->
+  <line x1="1090" y1="445" x2="1090" y2="360" class="arrow" stroke="#5b2c6f" />
+  <line x1="1090" y1="360" x2="240" y2="360" class="arrow" stroke="#5b2c6f" />
+  <line x1="240" y1="360" x2="240" y2="310" class="arrow" stroke="#5b2c6f" marker-end="url(#arrow-up-text)" />
+  <line x1="500" y1="360" x2="500" y2="310" class="arrow" stroke="#5b2c6f" marker-end="url(#arrow-up-text)" />
+  <line x1="775" y1="360" x2="775" y2="310" class="arrow" stroke="#5b2c6f" marker-end="url(#arrow-up-text)" />
+  <text x="1065" y="350" class="text-md color-text-text">f<tspan dy="5" font-size="10">q</tspan><tspan dy="-5">i</tspan></text>
+
+  <!-- Query Box -->
+  <rect x="895" y="570" width="295" height="100" class="box-fill color-query" />
+  <text x="905" y="590" class="text-sm color-query-text"><tspan font-weight="bold">Query:</tspan> Locate the moment where "<tspan fill="#2980b9">A</tspan></text>
+  <text x="905" y="605" class="text-sm color-query-text"><tspan fill="#2980b9">man wearing a white mask</tspan> is talking</text>
+  <text x="905" y="620" class="text-sm color-query-text">about the <tspan fill="#d35400">sponsor</tspan> under <tspan fill="#27ae60">noisy street</tspan></text>
+  <text x="905" y="635" class="text-sm color-query-text"><tspan fill="#27ae60">sound</tspan>, which they have been <tspan fill="#d35400">trying for</tspan></text>
+  <text x="905" y="650" class="text-sm color-query-text"><tspan fill="#d35400">over a year</tspan>", return precise timestamps.</text>
+  <line x1="1090" y1="570" x2="1090" y2="540" class="arrow" stroke="#000000" marker-end="url(#arrow-up)" />
+
+  <!-- Input Data (Images, Audio, Speech) -->
+  <!-- Vision Input -->
+  <rect x="20" y="480" width="280" height="55" class="box-stroke dashed" stroke="#1f4e79" />
+  <rect x="25" y="485" width="75" height="45" fill="#cccccc" />
+  <rect x="115" y="485" width="75" height="45" fill="#cccccc" />
+  <rect x="215" y="485" width="75" height="45" fill="#cccccc" />
+  <text x="195" y="515" class="text-lg">...</text>
+  <line x1="160" y1="480" x2="160" y2="465" class="arrow" stroke="#1f4e79" marker-end="url(#arrow-up-vision)" />
+
+  <!-- Audio Input -->
+  <rect x="355" y="480" width="195" height="55" class="box-stroke dashed" stroke="#38761d" />
+  <path d="M 365 505 Q 375 485 385 505 T 405 505 T 425 505 T 445 505 T 465 505 T 485 505 T 505 505 T 525 505 T 540 505" stroke="#38761d" stroke-width="3" fill="none" />
+  <line x1="450" y1="480" x2="450" y2="465" class="arrow" stroke="#38761d" marker-end="url(#arrow-up-audio)" />
+
+  <!-- Speech Input -->
+  <rect x="625" y="480" width="195" height="55" class="box-stroke dashed" stroke="#a04000" />
+  <path d="M 635 505 Q 645 485 655 505 T 675 505 T 695 505 T 715 505 T 735 505 T 755 505 T 775 505 T 795 505 T 810 505" stroke="#a04000" stroke-width="3" fill="none" />
+  <line x1="725" y1="480" x2="725" y2="465" class="arrow" stroke="#a04000" marker-end="url(#arrow-up-speech)" />
+
+  <!-- Timeline and Video Frames -->
+  <line x1="10" y1="640" x2="880" y2="640" stroke="#000000" stroke-width="4" />
+  <line x1="885" y1="640" x2="885" y2="425" class="arrow" stroke="#d5b895" />
+  
+  <circle cx="10" cy="640" r="6" fill="#000000" />
+  <text x="5" y="660" class="text-md">0s</text>
+  
+  <circle cx="95" cy="640" r="6" fill="#000000" />
+  <text x="90" y="660" class="text-md">6s</text>
+  
+  <circle cx="135" cy="640" r="6" fill="#000000" />
+  <text x="130" y="660" class="text-md">50s</text>
+  
+  <circle cx="285" cy="640" r="6" fill="#000000" />
+  <text x="275" y="660" class="text-md">60s</text>
+  
+  <circle cx="320" cy="640" r="6" fill="#000000" />
+  <text x="310" y="660" class="text-md">97s</text>
+  
+  <circle cx="485" cy="640" r="6" fill="#000000" />
+  <text x="470" y="660" class="text-md">106s</text>
+  
+  <circle cx="525" cy="640" r="6" fill="#000000" />
+  <text x="515" y="660" class="text-md">256s</text>
+  
+  <circle cx="695" cy="640" r="6" fill="#000000" />
+  <text x="680" y="660" class="text-md">267s</text>
+  
+  <circle cx="735" cy="640" r="6" fill="#000000" />
+  <text x="720" y="660" class="text-md">1747s</text>
+  
+  <circle cx="880" cy="640" r="6" fill="#000000" />
+  <text x="865" y="660" class="text-md">1759s</text>
+
+  <!-- Timeline Dashed Line -->
+  <line x1="10" y1="670" x2="880" y2="670" stroke="#d5b895" stroke-width="3" stroke-dasharray="10, 10" />
+
+  <!-- Video Frames -->
+  <rect x="15" y="560" width="80" height="60" class="box-fill" stroke="#000000" fill="#cccccc" />
+  <rect x="15" y="560" width="80" height="5" fill="#000000" />
+  <rect x="15" y="615" width="80" height="5" fill="#000000" />
+  <text x="110" y="600" class="text-lg">...</text>
+
+  <rect x="125" y="560" width="160" height="60" class="box-fill" stroke="#000000" fill="#cccccc" />
+  <rect x="125" y="560" width="160" height="5" fill="#000000" />
+  <rect x="125" y="615" width="160" height="5" fill="#000000" />
+  <text x="300" y="600" class="text-lg">...</text>
+
+  <rect x="315" y="560" width="160" height="60" class="box-fill" stroke="#000000" fill="#cccccc" />
+  <rect x="315" y="560" width="160" height="5" fill="#000000" />
+  <rect x="315" y="615" width="160" height="5" fill="#000000" />
+  <text x="490" y="600" class="text-lg">...</text>
+
+  <rect x="505" y="560" width="160" height="60" class="box-fill" stroke="#000000" fill="#cccccc" />
+  <rect x="505" y="560" width="160" height="5" fill="#000000" />
+  <rect x="505" y="615" width="160" height="5" fill="#000000" />
+  <text x="680" y="600" class="text-lg">...</text>
+
+  <rect x="695" y="560" width="160" height="60" class="box-fill" stroke="#000000" fill="#cccccc" />
+  <rect x="695" y="560" width="160" height="5" fill="#000000" />
+  <rect x="695" y="615" width="160" height="5" fill="#000000" />
+
+</svg>

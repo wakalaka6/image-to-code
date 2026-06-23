@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" style="font-family: 'Times New Roman', Times, serif; background-color: white;">
+  <defs>
+    <!-- Arrowheads -->
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4472C4" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2E8B57" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#C00000" />
+    </marker>
+    <marker id="arrow-yellow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFC000" />
+    </marker>
+    
+    <!-- Gradients for Noise -->
+    <linearGradient id="noiseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#888;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ddd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#888;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradients for Mask -->
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== 1. INPUTS ==================== -->
+  
+  <!-- A. Ref Pose -->
+  <g transform="translate(10, 30)">
+    <rect width="200" height="220" fill="black" />
+    <!-- Green Skeleton -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#00FF00" stroke-width="3" fill="none"/>
+    <!-- Orange Skeleton -->
+    <path d="M150,100 L150,50 M150,50 L140,40 M150,50 L160,40 M140,40 L130,80 M160,40 L170,80 M130,80 L130,180 M170,80 L170,180 M130,180 L150,180 M170,180 L190,180 M150,100 L150,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+    <text x="100" y="250" text-anchor="middle" font-size="36" font-weight="bold">Ref Pose</text>
+  </g>
+
+  <!-- B. Ref Img -->
+  <g transform="translate(10, 280)">
+    <rect width="200" height="220" fill="#E6D8E6" />
+    <!-- Photo Placeholder -->
+    <rect width="200" height="220" fill="#F0E6F0" />
+    <rect x="0" y="0" width="200" height="220" fill="none" stroke="#ccc" stroke-width="1"/>
+    <!-- Silhouettes -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+    <path d="M150,100 L150,50 M150,50 L140,40 M150,50 L160,40 M140,40 L130,80 M160,40 L170,80 M130,80 L130,180 M170,80 L170,180 M130,180 L150,180 M170,180 L190,180 M150,100 L150,150" stroke="#00FF00" stroke-width="3" fill="none"/>
+    <text x="100" y="250" text-anchor="middle" font-size="36" font-weight="bold">Ref Img</text>
+  </g>
+
+  <!-- C. Tgt Pose -->
+  <g transform="translate(10, 560)">
+    <rect width="200" height="220" fill="black" />
+    <!-- Green Skeleton -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#00FF00" stroke-width="3" fill="none"/>
+    <!-- Orange Skeleton -->
+    <path d="M150,100 L150,50 M150,50 L140,40 M150,50 L160,40 M140,40 L130,80 M160,40 L170,80 M130,80 L130,180 M170,80 L170,180 M130,180 L150,180 M170,180 L190,180 M150,100 L150,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+    <text x="100" y="250" text-anchor="middle" font-size="36" font-weight="bold">Tgt Pose</text>
+  </g>
+
+  <!-- D. Noise -->
+  <g transform="translate(150, 850)">
+    <text x="100" y="-30" text-anchor="middle" font-size="36" font-weight="bold">Noise</text>
+    <!-- Stack of squares -->
+    <rect x="0" y="0" width="150" height="150" fill="url(#noiseGrad)" stroke="#999" stroke-width="2"/>
+    <rect x="15" y="15" width="150" height="150" fill="url(#noiseGrad)" stroke="#999" stroke-width="2"/>
+    <rect x="30" y="30" width="150" height="150" fill="url(#noiseGrad)" stroke="#999" stroke-width="2"/>
+    <!-- Arrow pointing up -->
+    <path d="M100,0 L120,-30" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  </g>
+
+  <!-- ==================== 2. ENCODERS ==================== -->
+  
+  <!-- Ref Pose Enc -->
+  <g transform="translate(260, 60)">
+    <polygon points="0,0 120,40 120,140 0,180" fill="white" stroke="black" stroke-width="2"/>
+    <text x="60" y="70" text-anchor="middle" font-size="36" font-weight="bold">Pose</text>
+    <text x="60" y="110" text-anchor="middle" font-size="36" font-weight="bold">Enc</text>
+  </g>
+
+  <!-- Ref Img Enc -->
+  <g transform="translate(260, 220)">
+    <polygon points="0,0 120,40 120,140 0,180" fill="white" stroke="black" stroke-width="2"/>
+    <text x="60" y="70" text-anchor="middle" font-size="36" font-weight="bold">VAE</text>
+    <text x="60" y="110" text-anchor="middle" font-size="36" font-weight="bold">Enc</text>
+  </g>
+
+  <!-- CLIP -->
+  <g transform="translate(260, 380)">
+    <polygon points="0,0 120,40 120,140 0,180" fill="white" stroke="black" stroke-width="2"/>
+    <text x="60" y="110" text-anchor="middle" font-size="36" font-weight="bold">CLIP</text>
+  </g>
+
+  <!-- Tgt Pose Enc -->
+  <g transform="translate(260, 590)">
+    <polygon points="0,0 120,40 120,140 0,180" fill="white" stroke="black" stroke-width="2"/>
+    <text x="60" y="70" text-anchor="middle" font-size="36" font-weight="bold">Pose</text>
+    <text x="60" y="110" text-anchor="middle" font-size="36" font-weight="bold">Enc</text>
+  </g>
+
+  <!-- ==================== 3. CONNECTIONS & MERGES ==================== -->
+  
+  <!-- Ref Pose to Enc -->
+  <line x1="190" y1="140" x2="260" y2="140" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <!-- Ref Img to Enc -->
+  <path d="M200,380 L200,360 L260,300" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <path d="M200,380 L200,400 L260,460" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <!-- Tgt Pose to Enc -->
+  <line x1="190" y1="670" x2="260" y2="670" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <!-- Noise to Merge -->
+  <path d="M280,900 L380,900 L380,670" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- Encoders to Summation -->
+  <!-- Ref Pose Enc to Sum -->
+  <path d="M380,140 L380,180 L430,180" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <!-- Ref Img Enc to Sum -->
+  <path d="M380,300 L380,280 L430,280" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <!-- Tgt Pose Enc to Sum -->
+  <path d="M380,670 L380,650 L430,650" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- Summation Nodes -->
+  <g transform="translate(390, 220)">
+    <circle cx="0" cy="0" r="30" fill="white" stroke="black" stroke-width="3"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="black" stroke-width="3"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="black" stroke-width="3"/>
+  </g>
+  <g transform="translate(390, 670)">
+    <circle cx="0" cy="0" r="30" fill="white" stroke="black" stroke-width="3"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="black" stroke-width="3"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="black" stroke-width="3"/>
+  </g>
+
+  <!-- Summation to DenoisingNet -->
+  <line x1="420" y1="220" x2="460" y2="220" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="420" y1="670" x2="460" y2="670" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- ==================== 4. NETWORKS ==================== -->
+  
+  <!-- ReferenceNet (Top) -->
+  <g transform="translate(460, 30)">
+    <polygon points="0,0 700,0 700,380 0,380" fill="#E6E6FA" stroke="#B0C4DE" stroke-width="2"/>
+    <text x="350" y="60" text-anchor="middle" font-size="36" font-weight="bold">ReferenceNet</text>
+    
+    <!-- Block 1 -->
+    <rect x="100" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2"/>
+    <rect x="160" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <text x="280" y="180" text-anchor="middle" font-size="40">...</text>
+    
+    <!-- Block 2 -->
+    <rect x="400" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2"/>
+    <rect x="460" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <text x="580" y="180" text-anchor="middle" font-size="40">...</text>
+    
+    <!-- Block 3 -->
+    <rect x="700" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2"/>
+    <rect x="760" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <text x="880" y="180" text-anchor="middle" font-size="40">...</text>
+  </g>
+
+  <!-- DenoisingNet (Bottom) -->
+  <g transform="translate(460, 480)">
+    <polygon points="0,0 700,0 700,380 0,380" fill="#F5E6E0" stroke="#F5E6E0" stroke-width="2"/>
+    <text x="350" y="60" text-anchor="middle" font-size="36" font-weight="bold">DenoisingNet</text>
+    
+    <!-- Block 1 -->
+    <rect x="100" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2"/>
+    <rect x="160" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <rect x="220" y="80" width="50" height="200" rx="5" fill="#FAD7B0" stroke="black" stroke-width="2"/>
+    <text x="340" y="180" text-anchor="middle" font-size="40">...</text>
+    
+    <!-- Block 2 -->
+    <rect x="400" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2"/>
+    <rect x="460" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <rect x="520" y="80" width="50" height="200" rx="5" fill="#FAD7B0" stroke="black" stroke-width="2"/>
+    <text x="640" y="180" text-anchor="middle" font-size="40">...</text>
+    
+    <!-- Block 3 -->
+    <rect x="700" y="80" width="50" height="200" rx="5" fill="#99B0D9" stroke="black" stroke-width="2" stroke-dasharray="8,4"/>
+    <rect x="760" y="80" width="50" height="200" rx="5" fill="#D0E8D0" stroke="black" stroke-width="2"/>
+    <rect x="820" y="80" width="50" height="200" rx="5" fill="#FAD7B0" stroke="black" stroke-width="2"/>
+    <text x="940" y="180" text-anchor="middle" font-size="40">...</text>
+  </g>
+
+  <!-- ==================== 5. ATTENTION & GRADIENTS ==================== -->
+  
+  <!-- Green Horizontal Bus -->
+  <line x1="350" y1="450" x2="1100" y2="450" stroke="#2E8B57" stroke-width="4" />
+  
+  <!-- Blue Verticals (RefNet -> DenoisingNet) -->
+  <line x1="500" y1="310" x2="500" y2="560" stroke="#4472C4" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="530" y1="310" x2="530" y2="560" stroke="#2E8B57" stroke-width="3" marker-end="url(#arrow-green)"/>
+  
+  <line x1="680" y1="260" x2="680" y2="610" stroke="#4472C4" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="710" y1="260" x2="710" y2="610" stroke="#2E8B57" stroke-width="3" marker-end="url(#arrow-green)"/>
+  
+  <line x1="930" y1="260" x2="930" y2="610" stroke="#4472C4" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="960" y1="260" x2="960" y2="610" stroke="#2E8B57" stroke-width="3" marker-end="url(#arrow-green)"/>
+  
+  <line x1="1100" y1="310" x2="1100" y2="560" stroke="#4472C4" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="1130" y1="310" x2="1130" y2="560" stroke="#2E8B57" stroke-width="3" marker-end="url(#arrow-green)"/>
+
+  <!-- Red Curves (Intermediate Features) -->
+  <path d="M880,720 Q880,800 850,810" fill="none" stroke="#C00000" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <path d="M980,720 Q980,800 950,810" fill="none" stroke="#FFC000" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#arrow-yellow)"/>
+  
+  <path d="M1080,720 Q1080,800 1050,810" fill="none" stroke="#C00000" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <path d="M1180,720 Q1180,800 1150,810" fill="none" stroke="#FFC000" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#arrow-yellow)"/>
+
+  <!-- ==================== 6. MASK & MASKING ==================== -->
+  
+  <text x="600" y="840" font-size="36" font-weight="bold">Mask</text>
+  
+  <!-- Mask Image 1 -->
+  <g transform="translate(480, 850)">
+    <rect width="150" height="150" fill="black"/>
+    <!-- Orange Silhouette -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+    <!-- Blue Silhouette -->
+    <path d="M100,100 L100,50 M100,50 L90,40 M100,50 L110,40 M90,40 L80,80 M110,40 L120,80 M80,80 L80,180 M120,80 L120,180 M80,180 L100,180 M120,180 L140,180 M100,100 L100,150" stroke="#0000FF" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Mask Image 2 -->
+  <g transform="translate(630, 850)">
+    <rect width="150" height="150" fill="black"/>
+    <!-- Blue Silhouette -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#0000FF" stroke-width="3" fill="none"/>
+    <!-- Orange Silhouette -->
+    <path d="M100,100 L100,50 M100,50 L90,40 M100,50 L110,40 M90,40 L80,80 M110,40 L120,80 M80,80 L80,180 M120,80 L120,180 M80,180 L100,180 M120,180 L140,180 M100,100 L100,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Arrow Mask to Masking -->
+  <path d="M780,915 L800,915 L800,900 L820,920 L800,940 L800,925 L780,925 Z" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Masking Block 1 -->
+  <g transform="translate(830, 780)">
+    <rect width="200" height="200" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="10,5"/>
+    <!-- Blue Node -->
+    <circle cx="50" cy="50" r="25" fill="#4472C4" stroke="black" stroke-width="2"/>
+    <!-- Orange Node -->
+    <circle cx="120" cy="50" r="25" fill="#F4B084" stroke="black" stroke-width="2"/>
+    <!-- Blue Node Bottom -->
+    <circle cx="50" cy="150" r="25" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="4,2"/>
+    <line x1="50" y1="50" x2="50" y2="150" stroke="#4472C4" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <line x1="50" y1="150" x2="50" y2="50" stroke="#4472C4" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Orange Node Bottom -->
+    <circle cx="120" cy="150" r="25" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="4,2"/>
+    <line x1="120" y1="50" x2="120" y2="150" stroke="#F4B084" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    <line x1="120" y1="150" x2="120" y2="50" stroke="#F4B084" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-orange)"/>
+    
+    <!-- Diagonal Arrows -->
+    <line x1="50" y1="150" x2="120" y2="50" stroke="#4472C4" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-blue)"/>
+    <line x1="120" y1="150" x2="50" y2="50" stroke="#F4B084" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-orange)"/>
+    
+    <text x="100" y="180" text-anchor="middle" font-size="36" font-weight="bold">xT</text>
+  </g>
+
+  <!-- Masking Block 2 -->
+  <g transform="translate(1000, 840)">
+    <rect width="200" height="200" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="10,5"/>
+    <!-- Blue Node -->
+    <circle cx="50" cy="50" r="25" fill="#4472C4" stroke="black" stroke-width="2"/>
+    <!-- Orange Node -->
+    <circle cx="120" cy="50" r="25" fill="#F4B084" stroke="black" stroke-width="2"/>
+    <!-- Blue Node Bottom -->
+    <circle cx="50" cy="150" r="25" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="4,2"/>
+    <line x1="50" y1="50" x2="50" y2="150" stroke="#4472C4" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <line x1="50" y1="150" x2="50" y2="50" stroke="#4472C4" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Orange Node Bottom -->
+    <circle cx="120" cy="150" r="25" fill="#E6E6FA" stroke="black" stroke-width="2" stroke-dasharray="4,2"/>
+    <line x1="120" y1="50" x2="120" y2="150" stroke="#F4B084" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    <line x1="120" y1="150" x2="120" y2="50" stroke="#F4B084" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-orange)"/>
+    
+    <!-- Diagonal Arrows -->
+    <line x1="50" y1="150" x2="120" y2="50" stroke="#4472C4" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-blue)"/>
+    <line x1="120" y1="150" x2="50" y2="50" stroke="#F4B084" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-orange)"/>
+    
+    <text x="100" y="180" text-anchor="middle" font-size="36" font-weight="bold">xT</text>
+  </g>
+
+  <!-- Arrow Masking 1 to 2 -->
+  <path d="M930,880 L950,880 L950,865 L970,885 L950,905 L950,890 L930,890 Z" fill="white" stroke="black" stroke-width="2"/>
+  <text x="960" y="895" font-size="36" font-weight="bold">c<tspan dy="5" font-size="24">1</tspan><tspan dy="-5">(1)</tspan></text>
+
+  <!-- Arrow Masking 2 to Output -->
+  <path d="M1100,910 L1120,910 L1120,895 L1140,915 L1120,935 L1120,920 L1100,920 Z" fill="white" stroke="black" stroke-width="2"/>
+  <text x="1140" y="925" font-size="36" font-weight="bold">c<tspan dy="5" font-size="24">N</tspan><tspan dy="-5">(N)</tspan></text>
+
+  <!-- ==================== 7. OUTPUT ==================== -->
+  
+  <g transform="translate(1200, 590)">
+    <polygon points="0,0 120,40 120,140 0,180" fill="white" stroke="black" stroke-width="2"/>
+    <text x="60" y="70" text-anchor="middle" font-size="36" font-weight="bold">VAE</text>
+    <text x="60" y="110" text-anchor="middle" font-size="36" font-weight="bold">Dec</text>
+  </g>
+  
+  <line x1="1200" y1="670" x2="1380" y2="670" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <!-- Generated Frames Stack -->
+  <g transform="translate(1380, 560)">
+    <rect x="0" y="0" width="250" height="250" fill="#F0E6F0" stroke="black" stroke-width="1"/>
+    <rect x="10" y="10" width="250" height="250" fill="#F0E6F0" stroke="black" stroke-width="1"/>
+    <rect x="20" y="20" width="250" height="250" fill="#F0E6F0" stroke="black" stroke-width="1"/>
+    <!-- Photo Content -->
+    <rect x="20" y="20" width="250" height="250" fill="#F0E6F0"/>
+    <rect x="30" y="30" width="250" height="250" fill="#F0E6F0"/>
+    <rect x="40" y="40" width="250" height="250" fill="#F0E6F0"/>
+    <!-- Silhouettes -->
+    <path d="M50,100 L50,50 M50,50 L40,40 M50,50 L60,40 M40,40 L30,80 M60,40 L70,80 M30,80 L30,180 M70,80 L70,180 M30,180 L50,180 M70,180 L90,180 M50,100 L50,150" stroke="#00FF00" stroke-width="3" fill="none"/>
+    <path d="M150,100 L150,50 M150,50 L140,40 M150,50 L160,40 M140,40 L130,80 M160,40 L170,80 M130,80 L130,180 M170,80 L170,180 M130,180 L150,180 M170,180 L190,180 M150,100 L150,150" stroke="#FF4500" stroke-width="3" fill="none"/>
+    <text x="125" y="300" text-anchor="middle" font-size="36" font-weight="bold">Gen Frames</text>
+  </g>
+
+  <!-- ==================== 8. LEGEND ==================== -->
+  
+  <g transform="translate(1220, 80)">
+    <!-- Item 1 -->
+    <rect x="0" y="0" width="60" height="60" fill="#99B0D9" stroke="black" stroke-width="3"/>
+    <text x="80" y="40" font-size="36" font-weight="bold">Spatial-Attn</text>
+    
+    <!-- Item 2 -->
+    <rect x="0" y="80" width="60" height="60" fill="#D0E8D0" stroke="black" stroke-width="3"/>
+    <text x="80" y="120" font-size="36" font-weight="bold">Cross-Attn</text>
+    
+    <!-- Item 3 -->
+    <rect x="0" y="160" width="60" height="60" fill="#FAD7B0" stroke="black" stroke-width="3"/>
+    <text x="80" y="200" font-size="36" font-weight="bold">Temporal-Attn</text>
+    
+    <!-- Item 4 -->
+    <path d="M0,240 Q60,260 120,240" fill="none" stroke="#C00000" stroke-width="3" marker-end="url(#arrow-red)"/>
+    <text x="80" y="280" font-size="36" font-weight="bold">Intermediate Feature</text>
+    
+    <!-- Item 5 -->
+    <path d="M0,320 Q60,340 120,320" fill="none" stroke="#FFC000" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#arrow-yellow)"/>
+    <text x="80" y="360" font-size="36" font-weight="bold">Gradient from c<tspan dy="5" font-size="24">t</tspan><tspan dy="-5">(t)</tspan></text>
+    
+    <!-- Item 6 -->
+    <polygon points="0,380 60,400 60,440 0,460" fill="white" stroke="black" stroke-width="3" stroke-dasharray="8,4"/>
+    <text x="80" y="410" font-size="36" font-weight="bold">IMG Construction</text>
+    <text x="80" y="450" font-size="36" font-weight="bold">(Training only)</text>
+    
+    <!-- Item 7 -->
+    <rect x="0" y="480" width="60" height="60" fill="#99B0D9" stroke="black" stroke-width="3" stroke-dasharray="8,4"/>
+    <text x="80" y="520" font-size="36" font-weight="bold">Selected for MSM</text>
+  </g>
+
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9dc3e6" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f4b183" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Text Box -->
+  <path d="M 20 310 L 400 310 L 400 600 Q 300 640 200 600 T 20 600 Z" fill="#d9d9d9" stroke="#a6a6a6" stroke-width="2" />
+  <text x="32" y="345" font-family="sans-serif" font-size="22" fill="black">Translate the following text from</text>
+  <text x="32" y="375" font-family="sans-serif" font-size="22" fill="black">English into Chinese.</text>
+  <text x="32" y="435" font-family="sans-serif" font-size="22" fill="black">English: Amsterdam is famous for</text>
+  <text x="32" y="465" font-family="sans-serif" font-size="22" fill="black">its hundreds of beautiful canals,</text>
+  <text x="32" y="495" font-family="sans-serif" font-size="22" fill="black">millions of bicycles, stunning</text>
+  <text x="32" y="525" font-family="sans-serif" font-size="22" fill="black">summers, and disgusting winters.</text>
+  <text x="32" y="585" font-family="sans-serif" font-size="22" fill="black">Chinese:</text>
+
+  <!-- Arrows from Text Box -->
+  <polygon points="435,335 465,305 455,295 490,280 475,315 465,305 445,345" fill="#808080" stroke="black" stroke-width="1.5" />
+  <polygon points="435,605 465,635 455,645 490,660 475,625 465,635 445,595" fill="#808080" stroke="black" stroke-width="1.5" />
+
+  <!-- NMT Boxes -->
+  <rect x="525" y="165" width="180" height="95" rx="15" fill="#e6e6e6" stroke="black" stroke-width="2" />
+  <text x="615" y="222" font-family="sans-serif" font-size="26" font-weight="bold" text-anchor="middle">NMT</text>
+
+  <rect x="525" y="665" width="180" height="95" rx="15" fill="#c5e0b4" stroke="black" stroke-width="2" />
+  <text x="615" y="722" font-family="sans-serif" font-size="26" font-weight="bold" text-anchor="middle">NMT</text>
+  <text x="680" y="745" font-family="serif" font-size="24">θ</text>
+
+  <!-- Sampling Arrows -->
+  <text x="810" y="175" font-family="sans-serif" font-size="22" text-anchor="middle">Sampling</text>
+  <polygon points="780,205 830,205 830,195 850,215 830,235 830,225 780,225" fill="#808080" stroke="black" stroke-width="1.5" />
+
+  <text x="810" y="675" font-family="sans-serif" font-size="22" text-anchor="middle">Sampling</text>
+  <polygon points="780,705 830,705 830,695 850,715 830,735 830,725 780,725" fill="#808080" stroke="black" stroke-width="1.5" />
+
+  <!-- Separator Line -->
+  <line x1="465" y1="460" x2="1510" y2="460" stroke="black" stroke-width="2" stroke-dasharray="15, 5, 3, 5" />
+
+  <!-- Top Section: Testing Time Optimization -->
+  <text x="1180" y="40" font-family="sans-serif" font-size="30" text-anchor="middle">Testing Time Optimization</text>
+  
+  <path d="M 955 50 C 1120 80, 1120 180, 990 220 C 970 225, 1060 290, 955 360 Z" fill="url(#blueGrad)" stroke="#002060" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="1080" y="370" font-family="serif" font-size="22" text-anchor="middle">Quality</text>
+
+  <text x="1205" y="185" font-family="sans-serif" font-size="22" font-weight="bold" fill="#548235" text-anchor="middle">Reranking / Voting</text>
+  <polygon points="1170,205 1220,205 1220,195 1240,215 1220,235 1220,225 1170,225" fill="#808080" stroke="black" stroke-width="1.5" />
+
+  <rect x="1335" y="160" width="185" height="85" fill="#f2f2f2" stroke="black" stroke-width="1.5" />
+  <text x="1427" y="198" font-family="sans-serif" font-size="20" text-anchor="middle">Highest-scoring</text>
+  <text x="1427" y="228" font-family="sans-serif" font-size="20" text-anchor="middle">Output</text>
+
+  <!-- Bottom Section: Training Time Optimization -->
+  <text x="1180" y="495" font-family="sans-serif" font-size="30" text-anchor="middle">Training Time Optimization</text>
+
+  <path d="M 955 555 C 1030 590, 1030 670, 965 720 C 950 730, 1120 830, 955 865 Z" fill="url(#orangeGrad)" stroke="#002060" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="1080" y="885" font-family="serif" font-size="22" text-anchor="middle">Likelihood</text>
+
+  <text x="1205" y="675" font-family="sans-serif" font-size="22" font-weight="bold" fill="#ff0000" text-anchor="middle">Calibration</text>
+  <polygon points="1170,695 1220,695 1220,685 1240,705 1220,725 1220,715 1170,715" fill="#808080" stroke="black" stroke-width="1.5" />
+
+  <path d="M 1335 550 C 1500 590, 1500 690, 1375 720 C 1355 725, 1450 810, 1335 860 Z" fill="url(#orangeGrad)" stroke="#002060" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="1450" y="885" font-family="serif" font-size="22" text-anchor="middle">Likelihood -&gt; Quality</text>
+
+</svg>

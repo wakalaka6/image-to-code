@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1044" height="2600" viewBox="0 0 1044 2600">
+  <defs>
+    <linearGradient id="blueFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9fbbe6" stop-opacity="0.85"/>
+      <stop offset="62%" stop-color="#dce8f8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="orangeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f47c22" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#fbd0ad" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1044" height="2600" fill="#ffffff"/>
+
+  <!-- Top prompt document -->
+  <path d="M122 25 L922 25 L922 375
+           C780 376 655 398 540 430
+           C400 468 250 460 122 420 Z"
+        fill="#d9d9d9" stroke="#a7a7a7" stroke-width="2"/>
+
+  <text x="150" y="75" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#000">
+    <tspan x="150" dy="0">Translate the following text from</tspan>
+    <tspan x="150" dy="38">English into Chinese.</tspan>
+    <tspan x="150" dy="76">English: Amsterdam is famous for</tspan>
+    <tspan x="150" dy="38">its hundreds of beautiful canals,</tspan>
+    <tspan x="150" dy="38">millions of bicycles, stunning</tspan>
+    <tspan x="150" dy="38">summers, and disgusting winters.</tspan>
+    <tspan x="150" dy="76">Chinese:</tspan>
+  </text>
+
+  <!-- Down arrow from prompt -->
+  <polygon points="514,445 530,445 530,510 540,510 522,535 504,510 514,510"
+           fill="#8c8c8c" stroke="#000" stroke-width="2"/>
+
+  <!-- Testing Time Optimization -->
+  <text x="522" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#000">
+    Testing Time Optimization
+  </text>
+
+  <rect x="411" y="545" width="222" height="108" rx="18" ry="18"
+        fill="#e6e6e6" stroke="#000" stroke-width="3"/>
+  <text x="522" y="611" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="34" font-weight="700" fill="#000">NMT</text>
+
+  <text x="522" y="705" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#000">Sampling</text>
+  <polygon points="514,725 530,725 530,790 540,790 522,815 504,790 514,790"
+           fill="#8c8c8c" stroke="#000" stroke-width="2"/>
+
+  <!-- Blue quality distribution -->
+  <path d="M390 835
+           C430 852 532 880 570 915
+           C612 954 462 975 452 1010
+           C442 1048 512 1064 513 1096
+           C514 1122 428 1138 390 1158
+           Z"
+        fill="url(#blueFade)" stroke="none"/>
+  <path d="M390 835
+           C430 852 532 880 570 915
+           C612 954 462 975 452 1010
+           C442 1048 512 1064 513 1096
+           C514 1122 428 1138 390 1158"
+        fill="none" stroke="#0b213b" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="575" y="1190" font-family="Times New Roman, serif" font-size="27"
+        font-weight="700" fill="#000">Quality</text>
+
+  <!-- Reranking/Voting -->
+  <text x="522" y="1245" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28"
+        font-weight="700" fill="#4f8a2f">Reranking / Voting</text>
+  <polygon points="514,1265 530,1265 530,1305 540,1305 522,1330 504,1305 514,1305"
+           fill="#8c8c8c" stroke="#000" stroke-width="2"/>
+
+  <!-- Highest scoring output box -->
+  <rect x="411" y="1350" width="222" height="99" fill="#f7f7f7" stroke="#000" stroke-width="2"/>
+  <text x="522" y="1392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="26" fill="#000">
+    <tspan x="522" dy="0">Highest-scoring</tspan>
+    <tspan x="522" dy="33">Output</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="100" y1="1495" x2="944" y2="1495"
+        stroke="#000" stroke-width="3" stroke-dasharray="25 8 3 8"/>
+
+  <!-- Training Time Optimization -->
+  <text x="522" y="1565" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#000">
+    Training Time Optimization
+  </text>
+
+  <rect x="411" y="1590" width="222" height="108" rx="18" ry="18"
+        fill="#c6e0b4" stroke="#000" stroke-width="3"/>
+  <text x="522" y="1655" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="34" font-weight="700" fill="#000">NMT</text>
+  <text x="596" y="1688" font-family="Times New Roman, serif" font-size="30" fill="#000">θ</text>
+
+  <text x="522" y="1750" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#000">Sampling</text>
+  <polygon points="514,1770 530,1770 530,1835 540,1835 522,1860 504,1835 514,1835"
+           fill="#8c8c8c" stroke="#000" stroke-width="2"/>
+
+  <!-- Orange likelihood distribution -->
+  <path d="M390 1880
+           C435 1910 465 1940 462 1972
+           C459 2015 410 2040 408 2078
+           C406 2116 540 2128 585 2160
+           C610 2180 485 2205 390 2228
+           Z"
+        fill="url(#orangeFade)" stroke="none"/>
+  <path d="M390 1880
+           C435 1910 465 1940 462 1972
+           C459 2015 410 2040 408 2078
+           C406 2116 540 2128 585 2160
+           C610 2180 485 2205 390 2228"
+        fill="none" stroke="#0b213b" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="572" y="2260" font-family="Times New Roman, serif" font-size="27"
+        font-weight="700" fill="#000">Likelihood</text>
+
+  <!-- Calibration arrow and label -->
+  <text x="522" y="2320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28"
+        font-weight="700" fill="#ff0000">Calibration</text>
+  <polygon points="514,2340 530,2340 530,2405 540,2405 522,2430 504,2405 514,2405"
+           fill="#8c8c8c" stroke="#000" stroke-width="2"/>
+
+  <!-- Orange calibrated distribution -->
+  <path d="M390 2450
+           C450 2476 550 2503 585 2540
+           C612 2570 485 2606 452 2647
+           C430 2678 512 2712 512 2741
+           C512 2768 430 2791 390 2809
+           Z"
+        transform="translate(0,-270)"
+        fill="url(#orangeFade)" stroke="none"/>
+  <path d="M390 2450
+           C450 2476 550 2503 585 2540
+           C612 2570 485 2606 452 2647
+           C430 2678 512 2712 512 2741
+           C512 2768 430 2791 390 2809"
+        transform="translate(0,-270)"
+        fill="none" stroke="#0b213b" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="522" y="2570" text-anchor="middle" font-family="Times New Roman, serif" font-size="27"
+        font-weight="700" fill="#000">Likelihood -&gt; Quality</text>
+</svg>

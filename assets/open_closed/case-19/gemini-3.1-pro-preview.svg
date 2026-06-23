@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <style>
+      .text-black { fill: #000000; }
+      .text-red { fill: #cc0000; }
+      .text-blue { fill: #0000cc; }
+      .text-green { fill: #006633; }
+      .text-white { fill: #ffffff; }
+      .font-bold { font-weight: bold; }
+      .font-serif { font-family: "Times New Roman", Times, serif; }
+      .font-sans { font-family: Arial, sans-serif; }
+      .font-mono { font-family: "Courier New", Courier, monospace; }
+      
+      .box-dashed { fill: none; stroke: #000000; stroke-width: 1.5; stroke-dasharray: 10, 3, 2, 3; }
+      .box-solid { fill: none; stroke: #000000; stroke-width: 1.5; }
+      .box-yellow { fill: none; stroke: #ffff00; stroke-width: 2; }
+      .box-red { fill: none; stroke: #cc0000; stroke-width: 1.5; }
+      
+      .bg-blue-light { fill: #f0f8ff; }
+      .bg-green-light { fill: #f0fff0; }
+      .bg-red-light { fill: #fff0f0; }
+      
+      .arrow-red { stroke: #cc0000; fill: #cc0000; }
+      .arrow-blue { stroke: #0000cc; fill: #0000cc; }
+      .arrow-green { stroke: #006633; fill: #006633; }
+      
+      .gradient-blue { fill: url(#grad-blue); }
+      .gradient-red { fill: url(#grad-red); }
+    </style>
+    
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3399ff" />
+      <stop offset="100%" stop-color="#e6f2ff" />
+    </linearGradient>
+    
+    <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9999" />
+      <stop offset="100%" stop-color="#ffe6e6" />
+    </linearGradient>
+
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0000cc" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#006633" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#ffffff" />
+
+  <!-- Top Section: Sample Selection -->
+  <rect x="10" y="10" width="1180" height="340" class="box-dashed" rx="5" />
+  
+  <!-- Component A Background -->
+  <rect x="15" y="75" width="580" height="270" class="bg-blue-light" rx="5" />
+  
+  <!-- Component B Background -->
+  <rect x="600" y="75" width="585" height="270" class="bg-green-light" rx="5" />
+
+  <!-- Top Title -->
+  <text x="25" y="45" class="font-mono font-bold text-black" font-size="24">Sample Selection</text>
+  <text x="600" y="35" class="font-serif font-bold text-black" font-size="20" text-anchor="middle">Explore the effect of <tspan class="text-red">triggers</tspan> on <tspan class="text-red">sample selection</tspan></text>
+  <text x="600" y="60" class="font-serif font-bold text-black" font-size="20" text-anchor="middle">via the enhancement of <tspan class="text-blue">attack success rate</tspan> and <tspan class="text-green">stealthiness</tspan>.</text>
+
+  <!-- Component A -->
+  <text x="25" y="95" class="font-sans font-bold text-blue" font-size="18">Component A</text>
+  
+  <text x="480" y="95" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">attack success rate</text>
+  <text x="480" y="115" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">enhancement</text>
+
+  <!-- Highlight arrows -->
+  <text x="65" y="125" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">highlight</text>
+  <path d="M 125 130 L 125 110 L 185 110 L 185 125" fill="none" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead-red)" />
+  <polygon points="120 130, 130 130, 125 120" fill="#cc0000" />
+
+  <text x="65" y="320" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">highlight</text>
+  <path d="M 125 305 L 125 325 L 185 325 L 185 310" fill="none" stroke="#cc0000" stroke-width="2" marker-end="url(#arrowhead-red)" />
+  <polygon points="120 305, 130 305, 125 315" fill="#cc0000" />
+
+  <!-- Trigger scales -->
+  <text x="75" y="155" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">large trigger scale</text>
+  <rect x="20" y="170" width="45" height="45" fill="#e6ccb3" />
+  <rect x="80" y="170" width="30" height="30" fill="#f5deb3" />
+  
+  <text x="75" y="290" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">small trigger scale</text>
+  <rect x="20" y="225" width="45" height="45" fill="#e6ccb3" />
+  <rect x="80" y="230" width="25" height="25" fill="#f5deb3" />
+
+  <!-- Gradient bar -->
+  <rect x="125" y="170" width="12" height="100" class="gradient-blue" rx="6" />
+  
+  <!-- Bracket -->
+  <path d="M 165 170 C 150 170, 150 220, 145 220 C 150 220, 150 270, 165 270" fill="none" stroke="#000000" stroke-width="2" />
+
+  <!-- Red Buttons -->
+  <rect x="175" y="130" width="385" height="45" fill="#cc3333" rx="10" />
+  <text x="367" y="158" class="font-serif font-bold text-white" font-size="18" text-anchor="middle">Category Diversity (ours)</text>
+
+  <rect x="175" y="255" width="385" height="45" fill="#cc3333" rx="10" />
+  <text x="367" y="283" class="font-serif font-bold text-white" font-size="18" text-anchor="middle">Forgetting Events (traditional)</text>
+
+  <!-- Yellow Box -->
+  <rect x="180" y="190" width="395" height="50" class="box-yellow" fill="#ffffff" />
+  <text x="377" y="210" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">Find the appropriate combination 🏃</text>
+  <text x="377" y="230" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">based on <tspan class="text-red">the scale of trigger features</tspan> 🦠.</text>
+
+  <!-- Component B -->
+  <text x="625" y="95" class="font-sans font-bold text-green" font-size="18">Component B</text>
+  
+  <text x="1095" y="95" class="font-serif font-bold text-green" font-size="16" text-anchor="middle">stealthiness</text>
+  <text x="1095" y="115" class="font-serif font-bold text-green" font-size="16" text-anchor="middle">enhancement</text>
+
+  <!-- Images and text Component B -->
+  <rect x="625" y="105" width="95" height="105" fill="#ffffff" />
+  <circle cx="672" cy="157" r="40" fill="#e6e6fa" />
+  <rect x="705" y="195" width="10" height="10" fill="#000000" />
+  
+  <rect x="730" y="105" width="105" height="215" class="box-red" />
+  <rect x="735" y="105" width="95" height="105" fill="#000000" />
+  <rect x="785" y="120" width="15" height="70" fill="#666666" rx="5" />
+  <rect x="815" y="195" width="10" height="10" fill="none" stroke="#ffffff" stroke-dasharray="2,2" />
+  
+  <text x="782" y="225" class="font-serif font-bold text-red" font-size="14" text-anchor="middle">our method</text>
+
+  <rect x="625" y="235" width="95" height="105" fill="#ffffff" />
+  <ellipse cx="672" cy="287" rx="45" ry="35" fill="#e6f2ff" stroke="#cccccc" />
+  
+  <rect x="735" y="240" width="95" height="105" fill="#9999cc" />
+  <circle cx="760" cy="270" r="15" fill="#ccccff" />
+  <circle cx="790" cy="290" r="20" fill="#ccccff" />
+  <circle cx="750" cy="310" r="18" fill="#ccccff" />
+  <circle cx="810" cy="260" r="12" fill="#ccccff" />
+
+  <text x="850" y="140" class="font-serif font-bold text-blue" font-size="16">Trigger <tspan class="text-black">■</tspan> can be</text>
+  <text x="850" y="160" class="font-serif font-bold text-blue" font-size="16">concealed in the</text>
+  <text x="850" y="180" class="font-serif font-bold text-red" font-size="16">black</text>
+  <text x="850" y="200" class="font-serif font-bold text-blue" font-size="16">background.</text>
+
+  <text x="850" y="260" class="font-serif font-bold text-blue" font-size="16">Trigger 🐱 can be</text>
+  <text x="850" y="280" class="font-serif font-bold text-blue" font-size="16">concealed in the</text>
+  <text x="850" y="300" class="font-serif font-bold text-red" font-size="16">complexly texture</text>
+  <text x="850" y="320" class="font-serif font-bold text-blue" font-size="16">background.</text>
+
+  <rect x="1020" y="170" width="148" height="115" class="box-yellow" fill="#ffffff" />
+  <text x="1025" y="190" class="font-serif font-bold text-black" font-size="16">Cancel <tspan class="text-red">trigger</tspan></text>
+  <text x="1025" y="210" class="font-serif font-bold text-red" font-size="16">features <tspan class="text-black">🦠 on</tspan></text>
+  <text x="1025" y="230" class="font-serif font-bold text-black" font-size="16">images by</text>
+  <text x="1025" y="250" class="font-serif font-bold text-red" font-size="16">similarity</text>
+  <text x="1025" y="270" class="font-serif font-bold text-red" font-size="16">calculation<tspan class="text-black">.</tspan></text>
+
+  <!-- Middle Arrows -->
+  <path d="M 210 340 L 210 410" fill="none" stroke="#0000cc" stroke-width="4" marker-end="url(#arrowhead-blue)" />
+  <path d="M 215 340 L 215 360" fill="none" stroke="#0000cc" stroke-width="4" />
+  <path d="M 205 340 L 205 360" fill="none" stroke="#0000cc" stroke-width="4" />
+  <text x="105" y="370" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">attack success rate</text>
+  <text x="105" y="390" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">enhancement</text>
+
+  <path d="M 280 410 L 280 340" fill="none" stroke="#cc0000" stroke-width="4" marker-end="url(#arrowhead-red)" />
+  <path d="M 285 410 L 285 390" fill="none" stroke="#cc0000" stroke-width="4" />
+  <path d="M 275 410 L 275 390" fill="none" stroke="#cc0000" stroke-width="4" />
+  <text x="390" y="375" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">the scale of triggers</text>
+
+  <path d="M 960 410 L 960 340" fill="none" stroke="#cc0000" stroke-width="4" marker-end="url(#arrowhead-red)" />
+  <path d="M 965 410 L 965 390" fill="none" stroke="#cc0000" stroke-width="4" />
+  <path d="M 955 410 L 955 390" fill="none" stroke="#cc0000" stroke-width="4" />
+  <text x="850" y="375" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">trigger features</text>
+
+  <path d="M 1030 340 L 1030 410" fill="none" stroke="#006633" stroke-width="4" marker-end="url(#arrowhead-green)" />
+  <path d="M 1035 340 L 1035 360" fill="none" stroke="#006633" stroke-width="4" />
+  <path d="M 1025 340 L 1025 360" fill="none" stroke="#006633" stroke-width="4" />
+  <text x="1110" y="370" class="font-serif font-bold text-green" font-size="16" text-anchor="middle">stealthiness</text>
+  <text x="1110" y="390" class="font-serif font-bold text-green" font-size="16" text-anchor="middle">ensurement</text>
+
+  <!-- Bottom Section: Triggers -->
+  <rect x="10" y="395" width="1180" height="275" class="box-dashed" rx="5" />
+  <rect x="15" y="425" width="1170" height="240" class="bg-red-light" rx="5" />
+
+  <!-- Bottom Title -->
+  <text x="25" y="420" class="font-mono font-bold text-black" font-size="24">Triggers</text>
+  <text x="600" y="415" class="font-serif font-bold text-black" font-size="20" text-anchor="middle">Explore the effect of <tspan class="text-red">sample selection</tspan> on <tspan class="text-red">triggers</tspan>.</text>
+  <text x="600" y="445" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">Stealthiness ensurement via avoid selecting single-color dominated samples.</text>
+
+  <!-- Component C -->
+  <text x="25" y="445" class="font-sans font-bold text-red" font-size="18">Component C</text>
+
+  <!-- Left side of Component C -->
+  <rect x="25" y="470" width="18" height="180" class="gradient-red" rx="9" />
+  <text x="50" y="480" class="font-serif font-bold text-green" font-size="16">G</text>
+  <text x="50" y="535" class="font-serif font-bold text-red" font-size="16">R</text>
+  <text x="50" y="645" class="font-serif font-bold text-blue" font-size="16">B</text>
+
+  <rect x="80" y="500" width="270" height="65" class="box-yellow" fill="#ffffff" />
+  <text x="85" y="525" class="font-serif font-bold text-black" font-size="16">Enhance the <tspan class="text-red">trigger feature</tspan></text>
+  <text x="85" y="545" class="font-serif font-bold text-black" font-size="16">on the <tspan class="text-blue">Blue</tspan> color channel.</text>
+
+  <rect x="25" y="600" width="165" height="55" class="box-dashed" fill="#ffffff" />
+  <text x="95" y="615" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">low sensitivity</text>
+  <path d="M 80 635 Q 90 625 100 635 Q 90 645 80 635" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="90" cy="635" r="3" fill="#000000" />
+  <path d="M 110 635 Q 120 625 130 635 Q 120 645 110 635" fill="none" stroke="#000000" stroke-width="2" />
+  <circle cx="120" cy="635" r="3" fill="#000000" />
+  
+  <path d="M 130 565 L 90 600" fill="none" stroke="#000000" stroke-width="1.5" stroke-dasharray="2,2" />
+  <path d="M 180 565 L 160 600" fill="none" stroke="#000000" stroke-width="1.5" stroke-dasharray="2,2" />
+
+  <!-- Poisoning Arrow -->
+  <text x="280" y="595" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">distinct-color</text>
+  <path d="M 350 625 L 230 625" fill="none" stroke="#cc0000" stroke-width="15" />
+  <polygon points="235 610, 215 625, 235 640" fill="#cc0000" />
+  <polygon points="350 610, 330 625, 350 640" fill="#cc0000" />
+  <text x="280" y="655" class="font-serif font-bold text-red" font-size="16" text-anchor="middle">poisoning</text>
+
+  <!-- Middle Images Component C -->
+  <text x="630" y="480" class="font-serif font-bold text-blue" font-size="18" text-anchor="middle">Distinct sensitivity of human visual system on RGB</text>
+  
+  <path d="M 210 460 L 210 490 L 1060 490 L 1060 460" fill="none" stroke="#cc0000" stroke-width="2" />
+  <polygon points="205 465, 215 465, 210 455" fill="#cc0000" />
+  <polygon points="1055 465, 1065 465, 1060 455" fill="#cc0000" />
+
+  <rect x="360" y="495" width="540" height="165" fill="#ffffff" />
+  
+  <text x="440" y="515" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">mild distortion</text>
+  <rect x="360" y="525" width="150" height="135" fill="#e6cccc" />
+  <circle cx="435" cy="590" r="30" fill="#cc9999" />
+  <rect x="360" y="570" width="70" height="30" fill="#ffffff" opacity="0.7" />
+  <text x="525" y="655" class="font-serif font-bold text-red" font-size="18">R</text>
+
+  <text x="625" y="515" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">severe distortion</text>
+  <rect x="545" y="525" width="150" height="135" fill="#cce6cc" />
+  <circle cx="620" cy="590" r="30" fill="#99cc99" />
+  <rect x="545" y="570" width="70" height="30" fill="#ffffff" opacity="0.7" />
+  <text x="710" y="655" class="font-serif font-bold text-green" font-size="18">G</text>
+
+  <text x="810" y="515" class="font-serif font-bold text-blue" font-size="16" text-anchor="middle">subtle distortion</text>
+  <rect x="730" y="525" width="150" height="135" fill="#ccccff" />
+  <circle cx="805" cy="590" r="30" fill="#9999cc" />
+  <rect x="730" y="570" width="70" height="30" fill="#ffffff" opacity="0.7" />
+  <text x="895" y="655" class="font-serif font-bold text-blue" font-size="18">B</text>
+
+  <!-- Right side Component C -->
+  <rect x="940" y="490" width="220" height="165" class="box-solid" fill="#ffffff" />
+  <text x="1050" y="510" class="font-serif font-bold text-black" font-size="18" text-anchor="middle">Special samples</text>
+  
+  <text x="995" y="530" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">Green</text>
+  <text x="995" y="545" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">dominated</text>
+  <rect x="945" y="560" width="95" height="85" fill="#000000" />
+  <rect x="995" y="560" width="45" height="85" fill="#ccff00" opacity="0.8" />
+  
+  <text x="1110" y="530" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">Blue</text>
+  <text x="1110" y="545" class="font-serif font-bold text-black" font-size="16" text-anchor="middle">dominated</text>
+  <rect x="1060" y="560" width="95" height="85" fill="#000033" />
+  <rect x="1090" y="560" width="45" height="85" fill="#3366ff" opacity="0.8" />
+
+</svg>

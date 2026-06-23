@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1730" viewBox="0 0 1900 1730">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8bbf6a"/>
+    </marker>
+    <marker id="arrowO" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e8975a"/>
+    </marker>
+    <marker id="arrowP" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e79aa9"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7fb3d5"/>
+    </marker>
+  </defs>
+
+  <style>
+    text{font-family:'DejaVu Serif',Georgia,serif;}
+    .title{font-size:26px;font-weight:bold;}
+    .lbl{font-size:19px;font-weight:bold;}
+    .sm{font-size:17px;}
+  </style>
+
+  <!-- ===== Panel borders ===== -->
+  <rect x="15" y="15" width="620" height="800" rx="12" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,5"/>
+  <rect x="660" y="15" width="610" height="800" rx="12" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,5"/>
+
+  <!-- ===== Panel titles ===== -->
+  <text x="325" y="858" text-anchor="middle" class="title">(1) MLLM-based Tag Extraction</text>
+  <text x="965" y="858" text-anchor="middle" class="title">(2) LLM-based Collaborative Logic Reasoning</text>
+
+  <!-- ===================== PANEL 1 ===================== -->
+  <text x="105" y="45" text-anchor="middle" class="lbl" font-style="italic">Item&#8341;</text>
+  <!-- Raw info box -->
+  <rect x="30" y="95" width="155" height="75" rx="14" fill="#e8e8e8" stroke="#555" stroke-width="1.5"/>
+  <text x="107" y="128" text-anchor="middle" class="sm">Raw</text>
+  <text x="107" y="150" text-anchor="middle" class="sm">Information</text>
+
+  <!-- MLLM robot 1 -->
+  <g transform="translate(255,90)">
+    <rect x="0" y="20" width="60" height="55" rx="8" fill="#1a1a1a"/>
+    <circle cx="15" cy="40" r="6" fill="#fff"/>
+    <circle cx="45" cy="40" r="6" fill="#fff"/>
+    <rect x="18" y="55" width="24" height="6" rx="3" fill="#fff"/>
+    <line x1="30" y1="5" x2="30" y2="20" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="30" cy="5" r="4" fill="#1a1a1a"/>
+  </g>
+  <text x="285" y="205" text-anchor="middle" class="lbl">MLLM</text>
+
+  <!-- ASR/OCR/Text dashed box -->
+  <rect x="360" y="55" width="120" height="170" rx="6" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="375" y="68" width="90" height="40" rx="8" fill="#dcdcf5" stroke="#9a9ad0"/>
+  <text x="420" y="93" text-anchor="middle" class="sm">ASR</text>
+  <rect x="375" y="118" width="90" height="40" rx="8" fill="#dcdcf5" stroke="#9a9ad0"/>
+  <text x="420" y="143" text-anchor="middle" class="sm">OCR</text>
+  <rect x="375" y="168" width="90" height="40" rx="8" fill="#fdf0c4" stroke="#dbc06a"/>
+  <text x="420" y="193" text-anchor="middle" class="sm">Text</text>
+
+  <!-- MLLM Emb box -->
+  <rect x="510" y="55" width="115" height="170" rx="10" fill="#f6d9e6" stroke="#444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="567" y="130" text-anchor="middle" class="sm" font-weight="bold">MLLM</text>
+  <text x="567" y="153" text-anchor="middle" class="sm" font-weight="bold">Emb E&#8341;</text>
+
+  <!-- ItemTag Extraction Prompt -->
+  <rect x="35" y="345" width="190" height="80" rx="14" fill="#dff0d2" stroke="#7fa54f" stroke-width="1.5"/>
+  <text x="130" y="378" text-anchor="middle" class="sm" font-weight="bold">ItemTag Extraction</text>
+  <text x="130" y="402" text-anchor="middle" class="sm" font-weight="bold">Prompt X&#8341;&#x1d9c;</text>
+
+  <!-- UserTag Extraction Prompt -->
+  <rect x="360" y="345" width="200" height="80" rx="14" fill="#fbe3cf" stroke="#d8893f" stroke-width="1.5"/>
+  <text x="460" y="378" text-anchor="middle" class="sm" font-weight="bold">UserTag Extraction</text>
+  <text x="460" y="402" text-anchor="middle" class="sm" font-weight="bold">Prompt X&#8341;&#x1d40;</text>
+
+  <!-- MLLM robot 2 -->
+  <g transform="translate(295,450)">
+    <rect x="0" y="20" width="60" height="55" rx="8" fill="#1a1a1a"/>
+    <circle cx="15" cy="40" r="6" fill="#fff"/>
+    <circle cx="45" cy="40" r="6" fill="#fff"/>
+    <rect x="18" y="55" width="24" height="6" rx="3" fill="#fff"/>
+    <line x1="30" y1="5" x2="30" y2="20" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="30" cy="5" r="4" fill="#1a1a1a"/>
+  </g>
+  <text x="325" y="565" text-anchor="middle" class="lbl">MLLM</text>
+
+  <!-- ItemTag Set boxes -->
+  <rect x="55" y="555" width="160" height="50" rx="10" fill="#cfe6bf" stroke="#7fa54f"/>
+  <text x="135" y="585" text-anchor="middle" class="sm">Live Music</text>
+  <rect x="45" y="600" width="160" height="55" rx="10" fill="#a9d18e" stroke="#5e8a3a"/>
+  <text x="125" y="624" text-anchor="middle" class="sm">Instrument</text>
+  <text x="125" y="646" text-anchor="middle" class="sm">Shows</text>
+  <text x="130" y="700" text-anchor="middle" class="lbl">ItemTag Set C*</text>
+
+  <!-- UserTag Set boxes -->
+  <rect x="410" y="555" width="170" height="50" rx="10" fill="#fbe3cf" stroke="#d8893f"/>
+  <text x="495" y="585" text-anchor="middle" class="sm">Folk Music</text>
+  <rect x="395" y="600" width="170" height="55" rx="10" fill="#f3c39a" stroke="#c4762f"/>
+  <text x="480" y="624" text-anchor="middle" class="sm">Music</text>
+  <text x="480" y="646" text-anchor="middle" class="sm">Enthusiast</text>
+  <text x="480" y="700" text-anchor="middle" class="lbl">UserTag Set 𝒯*</text>
+
+  <!-- Panel1 arrows -->
+  <line x1="185" y1="132" x2="250" y2="105" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="318" y1="100" x2="510" y2="80" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- dotted down to itemtag prompt -->
+  <path d="M150,225 C150,280 130,300 130,343" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="3,4" marker-end="url(#arrow)"/>
+  <path d="M510,260 C460,300 460,320 460,343" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="3,4" marker-end="url(#arrow)"/>
+  <!-- pink arrows from emb -->
+  <path d="M560,225 C500,290 360,300 330,440" fill="none" stroke="#e79aa9" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <!-- itemtag prompt to MLLM2 (green) -->
+  <path d="M130,425 C160,480 230,480 290,490" fill="none" stroke="#8bbf6a" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <!-- usertag prompt to MLLM2 (orange) -->
+  <path d="M460,425 C420,480 400,490 360,500" fill="none" stroke="#e8975a" stroke-width="2.5" marker-end="url(#arrowO)"/>
+  <!-- MLLM2 to itemtag set (green) -->
+  <path d="M295,520 C220,530 160,535 135,553" fill="none" stroke="#8bbf6a" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <!-- MLLM2 to usertag set (orange) -->
+  <path d="M355,525 C420,535 460,540 480,553" fill="none" stroke="#e8975a" stroke-width="2.5" marker-end="url(#arrowO)"/>
+
+  <!-- green long arrow bottom to panel2 -->
+  <path d="M135,700 C135,790 660,790 760,720" fill="none" stroke="#8bbf6a" stroke-width="3" marker-end="url(#arrowG)"/>
+  <!-- orange long arrow bottom to panel2 -->
+  <path d="M480,700 C480,775 670,775 1010,720" fill="none" stroke="#e8975a" stroke-width="3" marker-end="url(#arrowO)"/>
+
+  <!-- ===================== PANEL 2 ===================== -->
+  <!-- Logic Graph blue box -->
+  <rect x="700" y="40" width="525" height="385" rx="10" fill="#dceaf5" stroke="#7fa8c9" stroke-width="1.5"/>
+  <text x="715" y="75" class="lbl" font-style="italic">Logic Graph</text>
+
+  <!-- UserTag set in logic graph -->
+  <rect x="935" y="78" width="150" height="45" rx="10" fill="#fbe3cf" stroke="#d8893f"/>
+  <text x="1010" y="106" text-anchor="middle" class="sm">Folk Music</text>
+  <rect x="900" y="120" width="150" height="50" rx="10" fill="#f3c39a" stroke="#c4762f"/>
+  <text x="975" y="143" text-anchor="middle" class="sm">Music</text>
+  <text x="975" y="163" text-anchor="middle" class="sm">Enthusiast</text>
+  <text x="970" y="205" text-anchor="middle" class="lbl">UserTag Set C*</text>
+
+  <!-- ItemTag set in logic graph -->
+  <rect x="900" y="260" width="150" height="45" rx="10" fill="#cfe6bf" stroke="#7fa54f"/>
+  <text x="975" y="288" text-anchor="middle" class="sm">Live Music</text>
+  <rect x="870" y="302" width="150" height="50" rx="10" fill="#a9d18e" stroke="#5e8a3a"/>
+  <text x="945" y="325" text-anchor="middle" class="sm">Instrument</text>
+  <text x="945" y="345" text-anchor="middle" class="sm">Shows</text>
+  <text x="965" y="388" text-anchor="middle" class="lbl">ItemTag Set 𝒯*</text>
+
+  <!-- G arrows in logic graph -->
+  <text x="760" y="220" class="lbl" font-style="italic" fill="#e8975a">G^U2I*</text>
+  <text x="1150" y="220" class="lbl" font-style="italic" fill="#8bbf6a">G^I2U*</text>
+  <path d="M860,180 C820,220 820,260 870,300" fill="none" stroke="#e8975a" stroke-width="2" marker-end="url(#arrowO)"/>
+  <path d="M1090,300 C1140,260 1140,150 1090,110" fill="none" stroke="#8bbf6a" stroke-width="2" marker-end="url(#arrowG)"/>
+
+  <!-- LLM robot -->
+  <g transform="translate(935,490)">
+    <rect x="0" y="20" width="60" height="55" rx="8" fill="#1a1a1a"/>
+    <circle cx="15" cy="40" r="6" fill="#fff"/>
+    <circle cx="45" cy="40" r="6" fill="#fff"/>
+    <rect x="18" y="55" width="24" height="6" rx="3" fill="#fff"/>
+    <line x1="30" y1="5" x2="30" y2="20" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="30" cy="5" r="4" fill="#1a1a1a"/>
+  </g>
+  <text x="965" y="605" text-anchor="middle" class="lbl">LLM</text>
+
+  <!-- LLM up to logic graph -->
+  <line x1="965" y1="490" x2="965" y2="432" stroke="#555" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- I2U Logic Prompt -->
+  <rect x="745" y="650" width="180" height="80" rx="14" fill="#dff0d2" stroke="#7fa54f" stroke-width="1.5"/>
+  <text x="835" y="683" text-anchor="middle" class="sm" font-weight="bold">I2U Logic</text>
+  <text x="835" y="707" text-anchor="middle" class="sm" font-weight="bold">Prompt X&#x1d9c;</text>
+
+  <!-- U2I Logic Prompt -->
+  <rect x="990" y="650" width="180" height="80" rx="14" fill="#fbe3cf" stroke="#d8893f" stroke-width="1.5"/>
+  <text x="1080" y="683" text-anchor="middle" class="sm" font-weight="bold">U2I Logic</text>
+  <text x="1080" y="707" text-anchor="middle" class="sm" font-weight="bold">Prompt X&#8348;</text>
+
+  <!-- prompts to LLM -->
+  <path d="M870,650 C880,600 900,580 932,545" fill="none" stroke="#8bbf6a" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <path d="M1080,650 C1060,600 1030,575 1000,545" fill="none" stroke="#e8975a" stroke-width="2.5" marker-end="url(#arrowO)"/>
+
+  <!-- itemtag set arrows from bottom (from panel1) feed into prompts -->
+  <path d="M835,790 L835,730" fill="none" stroke="#8bbf6a" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <path d="M1080,790 L1080,730" fill="none" stroke="#e8975a" stroke-width="2.5" marker-end="url(#arrowO)"/>
+  <path d="M760,720 C780,760 815,765 835,790" fill="none" stroke="#8bbf6a" stroke-width="0"/>
+
+  <!-- blue arrow from logic graph to panel3 (now points downward to row 2) -->
+  <path d="M1225,230 C1280,300 1280,820 1280,860" fill="none" stroke="#7fb3d5" stroke-width="2.5" marker-end="url(#arrowB)"/>
+
+  <!-- ===================== PANEL 3 (moved to second full-width row) ===================== -->
+  <g transform="translate(0,830)">
+    <!-- Row 2 full-width border -->
+    <rect x="15" y="15" width="1870" height="800" rx="12" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="3,5"/>
+    <text x="1590" y="858" text-anchor="middle" class="title">(3) Tag Logic Integration</text>
+
+    <!-- user icon -->
+    <g transform="translate(1330,170)">
+      <circle cx="0" cy="0" r="16" fill="#1a1a1a"/>
+      <path d="M-22,55 C-22,20 22,20 22,55 Z" fill="#1a1a1a"/>
+    </g>
+    <text x="1330" y="250" text-anchor="middle" class="sm" font-weight="bold">user</text>
+
+    <!-- item icons -->
+    <g transform="translate(1410,80)"><rect x="0" y="0" width="40" height="30" rx="4" fill="#1a1a1a"/><circle cx="20" cy="15" r="8" fill="#fff"/></g>
+    <text x="1430" y="135" text-anchor="middle" class="sm" font-style="italic">i&#8321;</text>
+    <g transform="translate(1408,165)"><rect x="0" y="5" width="35" height="25" rx="4" fill="#1a1a1a"/><circle cx="48" cy="17" r="9" fill="#1a1a1a"/></g>
+    <text x="1430" y="218" text-anchor="middle" class="sm" font-style="italic">i&#8322;</text>
+    <text x="1430" y="250" text-anchor="middle" class="sm">...</text>
+    <g transform="translate(1410,280)"><rect x="0" y="0" width="44" height="28" rx="10" fill="#1a1a1a"/></g>
+    <text x="1430" y="335" text-anchor="middle" class="sm" font-style="italic">i&#8345;</text>
+
+    <!-- T/C set boxes -->
+    <rect x="1490" y="65" width="320" height="35" rx="10" fill="#fbe3cf" stroke="#d8893f"/>
+    <text x="1650" y="89" text-anchor="middle" class="sm" font-style="italic" fill="#c0392b">𝒯₁ = {t₁,₁, ⋯, t₁,ₖ}</text>
+    <rect x="1490" y="103" width="320" height="35" rx="10" fill="#cfe6bf" stroke="#7fa54f"/>
+    <text x="1650" y="127" text-anchor="middle" class="sm" font-weight="bold">C₁ = {c₁,₁, ⋯, c₁,ₗ}</text>
+
+    <rect x="1490" y="160" width="320" height="35" rx="10" fill="#fbe3cf" stroke="#d8893f"/>
+    <text x="1650" y="184" text-anchor="middle" class="sm" font-style="italic" fill="#c0392b">𝒯₂ = {t₂,₁, ⋯, t₂,ₖ}</text>
+    <rect x="1490" y="198" width="320" height="35" rx="10" fill="#cfe6bf" stroke="#7fa54f"/>
+    <text x="1650" y="222" text-anchor="middle" class="sm" font-weight="bold">C₂ = {c₂,₁, ⋯, c₂,ₗ}</text>
+
+    <text x="1650" y="262" text-anchor="middle" class="sm">...</text>
+
+    <rect x="1490" y="278" width="320" height="35" rx="10" fill="#fbe3cf" stroke="#d8893f"/>
+    <text x="1650" y="302" text-anchor="middle" class="sm" font-style="italic" fill="#c0392b">𝒯ₙ = {tₙ,₁, ⋯, tₙ,ₖ}</text>
+    <rect x="1490" y="316" width="320" height="35" rx="10" fill="#cfe6bf" stroke="#7fa54f"/>
+    <text x="1650" y="340" text-anchor="middle" class="sm" font-weight="bold">Cₙ = {cₙ,₁, ⋯, cₙ,ₗ}</text>
+
+    <text x="1620" y="410" text-anchor="middle" class="sm" font-weight="bold">Input</text>
+    <line x1="1620" y1="355" x2="1620" y2="430" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Logic graph small (panel3) -->
+    <rect x="1310" y="455" width="125" height="155" rx="6" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="1320" y="445" class="sm" font-style="italic">Logic Graph</text>
+    <circle cx="1340" cy="490" r="9" fill="#f3c39a"/>
+    <circle cx="1340" cy="530" r="9" fill="#f3c39a"/>
+    <circle cx="1340" cy="570" r="9" fill="#f3c39a"/>
+    <circle cx="1405" cy="490" r="9" fill="#a9d18e"/>
+    <circle cx="1405" cy="530" r="9" fill="#a9d18e"/>
+    <circle cx="1405" cy="570" r="9" fill="#a9d18e"/>
+    <line x1="1349" y1="490" x2="1396" y2="530" stroke="#e8975a" stroke-width="2" marker-end="url(#arrowO)"/>
+    <line x1="1349" y1="530" x2="1396" y2="490" stroke="#8bbf6a" stroke-width="2" marker-end="url(#arrowG)"/>
+    <line x1="1349" y1="570" x2="1396" y2="530" stroke="#e8975a" stroke-width="2" marker-end="url(#arrowO)"/>
+    <line x1="1349" y1="490" x2="1396" y2="570" stroke="#8bbf6a" stroke-width="2" marker-end="url(#arrowG)"/>
+    <text x="1340" y="600" text-anchor="middle" class="sm">C*</text>
+    <text x="1405" y="600" text-anchor="middle" class="sm">𝒯*</text>
+
+    <!-- G labels arrows to RecSys -->
+    <text x="1455" y="490" class="sm" font-style="italic" fill="#8bbf6a">G^I2U*</text>
+    <text x="1455" y="560" class="sm" font-style="italic" fill="#e8975a">G^U2I*</text>
+    <line x1="1435" y1="500" x2="1505" y2="505" stroke="#8bbf6a" stroke-width="2" marker-end="url(#arrowG)"/>
+    <line x1="1435" y1="565" x2="1505" y2="555" stroke="#e8975a" stroke-width="2" marker-end="url(#arrowO)"/>
+
+    <!-- RecSys NN -->
+    <text x="1545" y="475" text-anchor="middle" class="sm" font-weight="bold">RecSys</text>
+    <g transform="translate(1510,490)">
+      <circle cx="0" cy="10" r="5" fill="#1a1a1a"/><circle cx="0" cy="40" r="5" fill="#1a1a1a"/><circle cx="0" cy="70" r="5" fill="#1a1a1a"/>
+      <circle cx="35" cy="25" r="5" fill="#1a1a1a"/><circle cx="35" cy="55" r="5" fill="#1a1a1a"/>
+      <circle cx="65" cy="40" r="5" fill="#1a1a1a"/>
+      <line x1="0" y1="10" x2="35" y2="25" stroke="#1a1a1a"/><line x1="0" y1="40" x2="35" y2="25" stroke="#1a1a1a"/>
+      <line x1="0" y1="70" x2="35" y2="55" stroke="#1a1a1a"/><line x1="0" y1="40" x2="35" y2="55" stroke="#1a1a1a"/>
+      <line x1="35" y1="25" x2="65" y2="40" stroke="#1a1a1a"/><line x1="35" y1="55" x2="65" y2="40" stroke="#1a1a1a"/>
+    </g>
+
+    <!-- RecSys big box -->
+    <rect x="1600" y="430" width="270" height="180" rx="8" fill="none" stroke="#444" stroke-width="1.5"/>
+    <rect x="1635" y="460" width="200" height="55" rx="10" fill="#bfe5e0" stroke="#5fae9f"/>
+    <text x="1735" y="483" text-anchor="middle" class="sm">Tag-based</text>
+    <text x="1735" y="505" text-anchor="middle" class="sm">Item/User Encoder</text>
+    <rect x="1635" y="525" width="200" height="55" rx="10" fill="#fdf0c4" stroke="#dbc06a"/>
+    <text x="1735" y="548" text-anchor="middle" class="sm">Tag-logic</text>
+    <text x="1735" y="570" text-anchor="middle" class="sm">Inference Extension</text>
+
+    <!-- candidate item -->
+    <g transform="translate(1840,460)">
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+      <line x1="0" y1="0" x2="0" y2="-8" stroke="#1a1a1a" stroke-width="2"/>
+      <line x1="0" y1="0" x2="6" y2="3" stroke="#1a1a1a" stroke-width="2"/>
+    </g>
+    <text x="1840" y="425" text-anchor="middle" class="sm">Candidate</text>
+    <text x="1840" y="448" text-anchor="middle" class="sm">item</text>
+    <text x="1865" y="490" text-anchor="middle" class="sm" font-weight="bold" font-style="italic">v&#8341;</text>
+    <line x1="1855" y1="500" x2="1840" y2="525" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- outputs -->
+    <line x1="1700" y1="610" x2="1700" y2="690" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="1800" y1="610" x2="1800" y2="690" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1700" y="715" text-anchor="middle" class="lbl">ŷ_raw</text>
+    <text x="1800" y="715" text-anchor="middle" class="lbl">ŷ_tag</text>
+    <path d="M1700,720 C1710,750 1740,755 1750,768" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M1800,720 C1790,750 1760,755 1752,768" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1750" y="795" text-anchor="middle" class="lbl">ŷ</text>
+
+    <!-- Backpropagation -->
+    <text x="1530" y="635" text-anchor="middle" class="sm">Backpropagation</text>
+    <line x1="1560" y1="700" x2="1560" y2="615" stroke="#222" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+    <!-- Loss box -->
+    <rect x="1335" y="660" width="320" height="90" rx="10" fill="#cfe2f3" stroke="#6fa8d0" stroke-width="1.5"/>
+    <text x="1495" y="700" text-anchor="middle" class="sm">ℒ = λ(ℒ_ut + ℒ_it) + (1−λ)ℒ_ui</text>
+    <text x="1495" y="735" text-anchor="middle" class="sm" font-weight="bold">Tag-based Learning Augmentation</text>
+  </g>
+
+</svg>

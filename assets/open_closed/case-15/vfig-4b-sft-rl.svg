@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18.0 -6.0 1624.0 972.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <!-- Font Styles -->
+    <style>
+      text { font-family: "Times New Roman", Times, serif; }
+      .label-main { font-size: 48px; fill: black; }
+      .label-math { font-size: 48px; font-style: italic; fill: black; }
+      .label-math-bold { font-size: 48px; font-weight: bold; font-style: italic; fill: black; }
+      .label-sub { font-size: 32px; baseline-shift: sub; }
+      .label-encoder { font-size: 36px; fill: black; text-anchor: middle; }
+      .label-node { font-size: 24px; fill: black; text-anchor: middle; }
+      .label-node-small { font-size: 20px; fill: black; text-anchor: middle; }
+      .box-text { font-size: 36px; fill: black; text-anchor: middle; }
+      .box-text-rot { font-size: 36px; fill: black; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- ================= SECTION (a) ================= -->
+  <g id="section-a">
+    <!-- Label -->
+    <text x="20" y="70" class="label-main">(a)</text>
+    <text x="150" y="70" class="label-main">GIBMS</text>
+
+    <!-- Background -->
+    <rect x="90" y="20" width="1480" height="440" fill="#D1F2F2" />
+
+    <!-- Graph G -->
+    <g transform="translate(150, 200)">
+      <!-- Edges -->
+      <line x1="0" y1="0" x2="60" y2="60" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="0" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="120" stroke="black" stroke-width="2" />
+      <!-- Nodes -->
+      <circle cx="0" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="60" cy="60" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="120" r="25" fill="#99B3F2" />
+      <!-- Label -->
+      <text x="60" y="180" class="label-math" font-size="50">G</text>
+    </g>
+
+    <!-- Encoder -->
+    <rect x="380" y="150" width="80" height="250" fill="#E6E6E6" stroke="#5D2E2E" stroke-width="3" />
+    <text x="420" y="275" class="box-text" transform="rotate(-90, 420, 275)">Encoder</text>
+
+    <!-- H Vector -->
+    <text x="500" y="200" class="label-math-bold" font-size="60">H</text>
+    <rect x="520" y="160" width="60" height="220" fill="#99E6FF" stroke="#003366" stroke-width="3" />
+    <rect x="520" y="160" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="520" y="210" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="520" y="260" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="520" y="310" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+
+    <!-- Arrow Encoder -> H -->
+    <line x1="460" y1="250" x2="510" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- MLP -->
+    <rect x="650" y="150" width="100" height="250" fill="#E6E6E6" stroke="#5D2E2E" stroke-width="3" />
+    <text x="680" y="275" class="box-text" transform="rotate(-90, 680, 275)">MLP</text>
+
+    <!-- Arrow H -> MLP -->
+    <line x1="580" y1="250" x2="640" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Arrow MLP -> Output -->
+    <line x1="750" y1="250" x2="790" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Graph G_IB -->
+    <g transform="translate(850, 200)">
+      <!-- Edges -->
+      <line x1="0" y1="0" x2="60" y2="60" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="0" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="120" stroke="black" stroke-width="2" />
+      <!-- Nodes -->
+      <circle cx="0" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="60" cy="60" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="120" r="25" fill="#99B3F2" />
+      <!-- Labels -->
+      <text x="30" y="20" class="label-node">0.1</text>
+      <text x="90" y="60" class="label-node">0.9</text>
+      <text x="150" y="20" class="label-node">0.3</text>
+      <text x="90" y="100" class="label-node">0.6</text>
+      <text x="30" y="140" class="label-node">0.7</text>
+    </g>
+
+    <!-- Top Pooling Stack -->
+    <g transform="translate(1100, 40)">
+      <text x="30" y="-10" class="label-math-bold" font-size="50">G<tspan class="label-sub">IB</tspan></text>
+      <rect x="0" y="0" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="50" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="100" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="150" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <text x="80" y="80" class="label-math" font-size="40">Pool</text>
+    </g>
+
+    <!-- Bottom Pooling Stack -->
+    <g transform="translate(1100, 280)">
+      <text x="30" y="200" class="label-math-bold" font-size="50">G<tspan class="label-sub">IB</tspan></text>
+      <rect x="0" y="0" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="50" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="100" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <rect x="0" y="150" width="60" height="50" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+      <text x="80" y="80" class="label-math" font-size="40">Pool</text>
+    </g>
+
+    <!-- Sample Branch -->
+    <path d="M 1000,250 L 1050,250 L 1050,130 L 1100,130" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <path d="M 1050,250 L 1050,370 L 1100,370" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="1050" y="260" class="label-math" font-size="40">Sample</text>
+
+    <!-- Top Pool Output -->
+    <rect x="1230" y="110" width="80" height="60" fill="#D4E18E" stroke="#5D2E2E" stroke-width="3" />
+    <line x1="1160" y1="140" x2="1220" y2="140" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Bottom Pool Output -->
+    <rect x="1230" y="340" width="80" height="60" fill="#D4E18E" stroke="#5D2E2E" stroke-width="3" />
+    <line x1="1160" y1="370" x2="1220" y2="370" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Merge -->
+    <line x1="1310" y1="140" x2="1350" y2="240" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <line x1="1310" y1="370" x2="1350" y2="270" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Final Output -->
+    <text x="1400" y="255" class="label-math" font-size="60">I (Y; G<tspan class="label-sub">IB</tspan>)</text>
+
+    <!-- Top Feedback Loop -->
+    <path d="M 580,250 L 580,100 L 790,100" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="800" y="105" class="label-math" font-size="50">I (G; G<tspan class="label-sub">IB</tspan>)</text>
+
+    <!-- Bottom Feedback Loop -->
+    <path d="M 580,250 L 580,400 L 800,400" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="790" y="405" class="label-math" font-size="50">I (G; G<tspan class="label-sub">IB</tspan>)</text>
+
+    <!-- Top Feedback Arrow (Right) -->
+    <line x1="1000" y1="100" x2="950" y2="100" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  </g>
+
+  <!-- ================= SECTION (b) ================= -->
+  <g id="section-b">
+    <!-- Label -->
+    <text x="20" y="520" class="label-main">(b)</text>
+    <text x="130" y="520" class="label-main">SLG</text>
+
+    <!-- Graph G -->
+    <g transform="translate(150, 600)">
+      <!-- Edges -->
+      <line x1="0" y1="0" x2="60" y2="60" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="0" stroke="black" stroke-width="2" />
+      <line x1="60" y1="60" x2="120" y2="120" stroke="black" stroke-width="2" />
+      <!-- Nodes -->
+      <circle cx="0" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="60" cy="60" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="0" r="25" fill="#99B3F2" />
+      <circle cx="120" cy="120" r="25" fill="#99B3F2" />
+      <!-- Label -->
+      <text x="60" y="180" class="label-math" font-size="50">G</text>
+    </g>
+
+    <!-- Branching Lines -->
+    <path d="M 320,660 L 380,660 L 400,590" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <path d="M 320,660 L 380,660 L 400,790" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- GIBMS Box -->
+    <rect x="400" y="490" width="80" height="220" fill="#D1F2F2" stroke="#003366" stroke-width="3" />
+    <text x="440" y="600" class="box-text" transform="rotate(-90, 440, 600)">GIBMS</text>
+
+    <!-- Encoder -->
+    <rect x="560" y="490" width="80" height="220" fill="#E6E6E6" stroke="#5D2E2E" stroke-width="3" />
+    <text x="600" y="600" class="box-text" transform="rotate(-90, 600, 600)">Encoder</text>
+
+    <!-- Arrow GIBMS -> Encoder -->
+    <line x1="480" y1="590" x2="550" y2="590" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Tokenizer -->
+    <rect x="400" y="710" width="80" height="220" fill="#E6E6E6" stroke="#5D2E2E" stroke-width="3" />
+    <text x="440" y="820" class="box-text" transform="rotate(-90, 440, 820)">Tokenizer</text>
+
+    <!-- Embedding -->
+    <rect x="560" y="710" width="80" height="220" fill="#E6E6E6" stroke="#5D2E2E" stroke-width="3" />
+    <text x="600" y="820" class="box-text" transform="rotate(-90, 600, 820)">Embedding</text>
+
+    <!-- Arrow Tokenizer -> Embedding -->
+    <line x1="480" y1="810" x2="550" y2="810" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Top Path (H^p) -->
+    <text x="680" y="540" class="label-math-bold" font-size="50">H<tspan class="label-sub">p</tspan></text>
+    <rect x="720" y="500" width="60" height="220" fill="#F5F5DC" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="500" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="550" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="600" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="650" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="700" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+
+    <!-- Arrow Encoder -> H^p -->
+    <line x1="640" y1="590" x2="710" y2="590" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Bottom Path (H^y) -->
+    <text x="680" y="750" class="label-math-bold" font-size="50">H<tspan class="label-sub">y</tspan></text>
+    <rect x="720" y="710" width="60" height="220" fill="#F5F5DC" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="710" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="760" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="810" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="860" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+    <rect x="720" y="910" width="60" height="50" fill="none" stroke="#003366" stroke-width="3" />
+
+    <!-- Arrow Embedding -> H^y -->
+    <line x1="640" y1="810" x2="710" y2="810" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Top Softmax -->
+    <text x="860" y="590" class="label-math" font-size="40">softmax</text>
+    <g transform="translate(980, 540)">
+      <text x="80" y="-10" class="label-math-bold" font-size="50">s<tspan class="label-sub">p</tspan></text>
+      <text x="0" y="80" class="label-math" font-size="50">Q</text>
+      <text x="100" y="80" class="label-math" font-size="50">H<tspan class="label-sub">p</tspan> · Q</text>
+      <text x="100" y="120" class="label-math" font-size="30">T<tspan class="label-sub">p</tspan></text>
+      <path d="M 0,0 Q 0,50 100,50 T 200,0" fill="none" stroke="black" stroke-width="3" />
+    </g>
+    <line x1="780" y1="590" x2="970" y2="590" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <line x1="1080" y1="590" x2="1200" y2="590" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Bottom Softmax -->
+    <text x="860" y="810" class="label-math" font-size="40">softmax</text>
+    <g transform="translate(980, 760)">
+      <text x="80" y="-10" class="label-math-bold" font-size="50">s<tspan class="label-sub">y</tspan></text>
+      <text x="0" y="80" class="label-math" font-size="50">Q</text>
+      <text x="100" y="80" class="label-math" font-size="50">H<tspan class="label-sub">y</tspan> · Q</text>
+      <text x="100" y="120" class="label-math" font-size="30">T<tspan class="label-sub">y</tspan></text>
+      <path d="M 0,0 Q 0,50 100,50 T 200,0" fill="none" stroke="black" stroke-width="3" />
+    </g>
+    <line x1="780" y1="810" x2="970" y2="810" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <line x1="1080" y1="810" x2="1200" y2="810" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Q Vector -->
+    <rect x="920" y="650" width="150" height="80" fill="#D4E18E" stroke="#003366" stroke-width="3" />
+    <rect x="920" y="650" width="60" height="80" fill="#99B3F2" />
+    <rect x="980" y="650" width="60" height="80" fill="#90E090" />
+    <rect x="1040" y="650" width="60" height="80" fill="#FFC000" />
+    <rect x="1100" y="650" width="60" height="80" fill="#FF9999" />
+
+    <!-- Top Output Grid -->
+    <g transform="translate(1200, 500)">
+      <rect x="0" y="0" width="150" height="220" fill="#99B3F2" stroke="#003366" stroke-width="3" />
+      <rect x="60" y="0" width="60" height="220" fill="#90E090" stroke="#003366" stroke-width="3" />
+      <rect x="120" y="0" width="60" height="220" fill="#FFC000" stroke="#003366" stroke-width="3" />
+      <rect x="180" y="0" width="60" height="220" fill="#FF9999" stroke="#003366" stroke-width="3" />
+    </g>
+
+    <!-- Bottom Output Grid -->
+    <g transform="translate(1200, 710)">
+      <rect x="0" y="0" width="150" height="220" fill="#99B3F2" stroke="#003366" stroke-width="3" />
+      <rect x="60" y="0" width="60" height="220" fill="#90E090" stroke="#003366" stroke-width="3" />
+      <rect x="120" y="0" width="60" height="220" fill="#FFC000" stroke="#003366" stroke-width="3" />
+      <rect x="180" y="0" width="60" height="220" fill="#FF9999" stroke="#003366" stroke-width="3" />
+    </g>
+
+    <!-- Loss Function -->
+    <line x1="1350" y1="590" x2="1400" y2="680" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    <line x1="1350" y1="810" x2="1400" y2="680" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+    
+    <text x="1420" y="700" class="label-math" font-size="50">ℒ<tspan class="label-sub">soft</tspan> (s<tspan class="label-sub">y</tspan>, s<tspan class="label-sub">p</tspan>)</text>
+
+  </g>
+</svg>

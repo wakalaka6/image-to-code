@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <defs>
+    <style>
+      .bg-main { fill: #f4f7f6; stroke: #666; stroke-width: 3; rx: 10; }
+      .bg-right { fill: #f4f4f4; stroke: #666; stroke-width: 3; rx: 10; }
+      .box-green { fill: #e6f2e6; stroke: #333; stroke-width: 2.5; rx: 8; }
+      .box-yellow { fill: #fff2cc; stroke: #333; stroke-width: 2.5; rx: 6; }
+      .box-pink { fill: #ffd9cc; stroke: #333; stroke-width: 2.5; rx: 6; }
+      .box-blue { fill: #cce5ff; stroke: #333; stroke-width: 2.5; rx: 6; }
+      .box-light-blue { fill: #d9e6f2; stroke: #333; stroke-width: 2.5; rx: 6; }
+      .box-light-green { fill: #e6f2e6; stroke: #333; stroke-width: 2.5; rx: 6; }
+      .box-white { fill: #fff; stroke: #333; stroke-width: 2; }
+      .box-beige { fill: #fdf5e6; stroke: #333; stroke-width: 2; }
+      .text-title { font-family: serif; font-size: 24px; font-weight: bold; fill: #000; }
+      .text-large { font-family: serif; font-size: 22px; fill: #000; }
+      .text-medium { font-family: serif; font-size: 18px; font-weight: bold; fill: #000; }
+      .text-small { font-family: serif; font-size: 16px; font-weight: bold; fill: #000; }
+      .text-math { font-family: serif; font-size: 24px; font-style: italic; fill: #000; }
+      .arrow-solid { stroke: #666; stroke-width: 3; fill: none; }
+      .arrow-dashed { stroke: #666; stroke-width: 3; stroke-dasharray: 6,4; fill: none; }
+      .arrow-dotted { stroke: #000; stroke-width: 3; stroke-dasharray: 3,3; fill: none; }
+      .arrow-green { stroke: #82c382; stroke-width: 3; fill: none; }
+      .arrow-blue { stroke: #6699cc; stroke-width: 3; stroke-dasharray: 6,4; fill: none; }
+      .arrow-head { fill: #666; }
+      .arrow-head-green { fill: #82c382; }
+      .arrow-head-blue { fill: #6699cc; }
+      .arrow-head-black { fill: #000; }
+      .icon-circle { fill: #cce5ff; stroke: #6699cc; stroke-width: 2; }
+      .icon-rect { fill: #e6f2e6; stroke: #82c382; stroke-width: 2; }
+      .icon-triangle { fill: #ffd9cc; stroke: #cc6666; stroke-width: 2; }
+      .icon-square { fill: #e6ccff; stroke: #9966cc; stroke-width: 2; }
+      .icon-circle-white { fill: #fff; stroke: #333; stroke-width: 2; }
+      .icon-rect-white { fill: #fff; stroke: #333; stroke-width: 2; }
+      .icon-triangle-white { fill: #fff; stroke: #333; stroke-width: 2; }
+      .icon-square-white { fill: #fff; stroke: #333; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" class="arrow-head" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" class="arrow-head-green" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" class="arrow-head-blue" />
+    </marker>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" class="arrow-head-black" />
+    </marker>
+    <marker id="arrow-empty" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="none" stroke="#999" stroke-width="2" />
+    </marker>
+  </defs>
+
+  <!-- Background Panels -->
+  <rect x="10" y="10" width="760" height="500" class="bg-main" />
+  <rect x="780" y="10" width="410" height="500" class="bg-right" />
+
+  <!-- DyFlow Framework Title -->
+  <rect x="245" y="10" width="280" height="40" fill="#fff2cc" stroke="#666" stroke-width="3" />
+  <text x="385" y="38" class="text-title" text-anchor="middle">DyFlow Framework</text>
+
+  <!-- Task p -->
+  <polygon points="85,45 195,45 175,115 65,115" fill="#cce5ff" stroke="#000" stroke-width="3" />
+  <text x="130" y="88" class="text-large" text-anchor="middle">Task <tspan font-style="italic">p</tspan></text>
+
+  <!-- Designer -->
+  <rect x="385" y="58" width="230" height="45" class="box-pink" />
+  <text x="500" y="88" class="text-large" text-anchor="middle">Designer</text>
+  <text x="400" y="88" font-size="24">🔥</text>
+  <text x="570" y="88" font-size="24">❄️</text>
+
+  <!-- Subgraph G_t -->
+  <rect x="220" y="145" width="520" height="355" class="box-green" />
+  <text x="480" y="180" class="text-title" text-anchor="middle">Subgraph <tspan font-style="italic">G<tspan baseline-shift="sub" font-size="16">t</tspan></tspan></text>
+  <line x1="220" y1="195" x2="740" y2="195" stroke="#333" stroke-width="2.5" />
+
+  <!-- Op Sequence -->
+  <rect x="248" y="210" width="460" height="120" class="box-beige" />
+  <rect x="248" y="210" width="435" height="120" class="box-beige" />
+  <rect x="415" y="210" width="120" height="25" class="box-white" />
+  <text x="475" y="228" class="text-small" text-anchor="middle">Op Sequence</text>
+  
+  <!-- Op Sequence Inner Elements -->
+  <circle cx="275" cy="290" r="12" class="icon-circle" />
+  <rect x="340" y="275" width="50" height="25" class="icon-rect" rx="5" />
+  <ellipse cx="340" cy="287.5" rx="5" ry="12.5" fill="#e6f2e6" stroke="#82c382" stroke-width="2" />
+  <ellipse cx="390" cy="287.5" rx="5" ry="12.5" fill="#e6f2e6" stroke="#82c382" stroke-width="2" />
+  <circle cx="435" cy="290" r="12" class="icon-circle" />
+  
+  <path d="M275,278 L275,240 L365,240 L365,275" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+  <line x1="287" y1="290" x2="335" y2="290" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+  <line x1="395" y1="290" x2="423" y2="290" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+
+  <line x1="480" y1="235" x2="480" y2="330" stroke="#333" stroke-width="2" />
+  
+  <circle cx="520" cy="270" r="12" class="icon-circle" />
+  <polygon points="565,235 585,265 545,265" class="icon-triangle" />
+  <circle cx="575" cy="300" r="12" class="icon-circle" />
+  <rect x="630" y="260" width="25" height="25" class="icon-square" rx="4" />
+  
+  <path d="M532,270 Q550,250 555,250" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+  <path d="M532,270 Q550,300 563,300" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+  <path d="M575,250 L642,250 L642,260" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+  <path d="M587,300 L642,300 L642,285" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)" />
+
+  <text x="700" y="245" font-weight="bold">....</text>
+  <text x="700" y="270" font-weight="bold">....</text>
+  <text x="700" y="295" font-weight="bold">....</text>
+  <text x="700" y="315" font-weight="bold">....</text>
+
+  <!-- Op Template & Instance -->
+  <rect x="248" y="365" width="455" height="120" class="box-light-green" />
+  <rect x="275" y="365" width="145" height="25" class="box-white" />
+  <text x="347" y="383" class="text-small" text-anchor="middle">Op Template</text>
+  <rect x="555" y="365" width="120" height="25" class="box-white" />
+  <text x="615" y="383" class="text-small" text-anchor="middle">Op Instance</text>
+
+  <rect x="253" y="400" width="188" height="75" class="box-light-blue" />
+  <circle cx="275" cy="435" r="14" class="icon-circle-white" />
+  <rect x="300" y="420" width="45" height="30" class="icon-rect-white" rx="5" />
+  <ellipse cx="300" cy="435" rx="5" ry="15" fill="#fff" stroke="#333" stroke-width="2" />
+  <ellipse cx="345" cy="435" rx="5" ry="15" fill="#fff" stroke="#333" stroke-width="2" />
+  <polygon points="375,415 395,450 355,450" class="icon-triangle-white" />
+  <rect x="405" y="420" width="25" height="25" class="icon-square-white" rx="4" />
+  <text x="347" y="465" font-weight="bold">.... ....</text>
+
+  <rect x="520" y="400" width="175" height="75" class="box-light-blue" />
+  <circle cx="540" cy="435" r="14" class="icon-circle" />
+  <rect x="565" y="420" width="45" height="30" class="icon-rect" rx="5" />
+  <ellipse cx="565" cy="435" rx="5" ry="15" fill="#e6f2e6" stroke="#82c382" stroke-width="2" />
+  <ellipse cx="610" cy="435" rx="5" ry="15" fill="#e6f2e6" stroke="#82c382" stroke-width="2" />
+  <polygon points="640,415 660,450 620,450" class="icon-triangle" />
+  <rect x="670" y="420" width="25" height="25" class="icon-square" rx="4" />
+  <text x="607" y="465" font-weight="bold">.... ....</text>
+
+  <line x1="445" y1="435" x2="515" y2="435" stroke="#999" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-empty)" />
+  <text x="480" y="425" class="text-math" text-anchor="middle">ϕ</text>
+  <text x="480" y="465" class="text-math" text-anchor="middle">ψ</text>
+
+  <!-- Magnifying Glass -->
+  <circle cx="405" cy="335" r="10" fill="#cce5ff" stroke="#000" stroke-width="3" />
+  <line x1="412" y1="342" x2="425" y2="355" stroke="#000" stroke-width="5" stroke-linecap="round" />
+  <line x1="414" y1="344" x2="427" y2="357" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+  <path d="M435,300 Q445,330 485,360" class="arrow-blue" marker-end="url(#arrow-blue)" />
+
+  <!-- Left Side Elements -->
+  <rect x="68" y="165" width="45" height="115" class="box-yellow" transform="rotate(-90 90.5 222.5)" />
+  <text x="90" y="222" class="text-medium" transform="rotate(-90 90 222)" text-anchor="middle">Summary</text>
+
+  <rect x="68" y="365" width="45" height="115" class="box-yellow" transform="rotate(-90 90.5 422.5)" />
+  <text x="90" y="422" class="text-medium" transform="rotate(-90 90 422)" text-anchor="middle">State <tspan font-style="italic">s<tspan baseline-shift="sub" font-size="12">t</tspan></tspan></text>
+
+  <text x="35" y="325" class="text-medium" transform="rotate(-90 35 325)" text-anchor="middle">Summarize</text>
+  <text x="65" y="325" class="text-math" transform="rotate(-90 65 325)" text-anchor="middle">f</text>
+  <line x1="90" y1="365" x2="90" y2="285" class="arrow-solid" marker-end="url(#arrow)" />
+
+  <path d="M220,422 L115,422" class="arrow-solid" marker-end="url(#arrow)" />
+  <text x="165" y="440" class="text-small" text-anchor="middle">Save</text>
+
+  <path d="M90,165 Q90,125 150,125 L395,125" class="arrow-green" marker-end="url(#arrow-green)" />
+  <text x="245" y="118" class="text-small" text-anchor="middle">Replan</text>
+
+  <line x1="195" y1="80" x2="375" y2="80" class="arrow-solid" marker-end="url(#arrow)" />
+
+  <!-- Iterate Arrow -->
+  <path d="M140,310 A35,35 0 1,1 140,340" fill="none" stroke="#a3d3a3" stroke-width="6" />
+  <polygon points="140,300 160,315 140,330" fill="#a3d3a3" />
+  <text x="165" y="310" class="text-small" text-anchor="middle">Iterate</text>
+
+  <!-- Right Panel Elements -->
+  <rect x="795" y="30" width="50" height="145" class="box-blue" />
+  <text x="820" y="102" class="text-large" transform="rotate(-90 820 102)" text-anchor="middle">Expert</text>
+  <text x="820" y="155" font-size="24" text-anchor="middle">❄️</text>
+
+  <rect x="1015" y="30" width="120" height="50" class="box-yellow" rx="15" />
+  <ellipse cx="1015" cy="55" rx="10" ry="25" fill="#fff2cc" stroke="#333" stroke-width="2.5" />
+  <ellipse cx="1135" cy="55" rx="10" ry="25" fill="#fff2cc" stroke="#333" stroke-width="2.5" />
+  <text x="1075" y="62" class="text-large" text-anchor="middle">Tasks <tspan font-style="italic">P</tspan></text>
+
+  <line x1="1005" y1="55" x2="855" y2="55" class="arrow-solid" marker-end="url(#arrow)" />
+  <text x="930" y="45" class="text-small" text-anchor="middle">Sample</text>
+
+  <rect x="905" y="115" width="250" height="65" class="box-pink" />
+  <text x="1030" y="105" class="text-small" text-anchor="middle">Expert Trajectories</text>
+  
+  <!-- Trajectory Icons -->
+  <circle cx="930" cy="135" r="4" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="945" cy="130" r="4" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="940" cy="145" r="4" fill="#ff9933" stroke="#cc6600" />
+  <line x1="930" y1="135" x2="945" y2="130" stroke="#cc6600" stroke-width="1.5" />
+  <line x1="930" y1="135" x2="940" y2="145" stroke="#cc6600" stroke-width="1.5" />
+  <line x1="945" y1="130" x2="940" y2="145" stroke="#cc6600" stroke-width="1.5" />
+  <path d="M960,135 Q965,125 970,135 Q975,145 980,135" fill="none" stroke="#cc6699" stroke-width="1.5" />
+  <circle cx="970" cy="135" r="2" fill="#cc6699" />
+  <path d="M925,155 Q955,170 985,155" fill="none" stroke="#666" stroke-width="1" />
+  <text x="955" y="170" font-size="10" text-anchor="middle">t - 1</text>
+
+  <circle cx="1025" cy="135" r="4" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1040" cy="130" r="4" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1035" cy="145" r="4" fill="#ff9933" stroke="#cc6600" />
+  <line x1="1025" y1="135" x2="1040" y2="130" stroke="#cc6600" stroke-width="1.5" />
+  <line x1="1025" y1="135" x2="1035" y2="145" stroke="#cc6600" stroke-width="1.5" />
+  <line x1="1040" y1="130" x2="1035" y2="145" stroke="#cc6600" stroke-width="1.5" />
+  <path d="M1055,135 Q1060,125 1065,135 Q1070,145 1075,135" fill="none" stroke="#cc6699" stroke-width="1.5" />
+  <circle cx="1065" cy="135" r="2" fill="#cc6699" />
+  <path d="M1020,155 Q1050,170 1080,155" fill="none" stroke="#666" stroke-width="1" />
+  <text x="1050" y="170" font-size="10" text-anchor="middle">t</text>
+
+  <line x1="1095" y1="145" x2="1145" y2="145" stroke="#000" stroke-width="2" stroke-dasharray="4,4" />
+
+  <line x1="855" y1="145" x2="895" y2="145" stroke="#999" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrow-empty)" />
+
+  <!-- DyPlanner -->
+  <rect x="805" y="235" width="335" height="45" class="box-pink" />
+  <text x="972" y="265" class="text-large" text-anchor="middle">DyPlanner</text>
+  <text x="840" y="265" font-size="24">🔥</text>
+
+  <line x1="1030" y1="185" x2="1030" y2="225" stroke="#999" stroke-width="3" stroke-dasharray="3,3" marker-end="url(#arrow-empty)" />
+  <text x="915" y="210" class="text-medium" text-anchor="middle">Distillation</text>
+  <text x="1115" y="210" class="text-math" text-anchor="middle">ℒ<tspan baseline-shift="sub" font-size="14" font-style="normal">SFT</tspan></text>
+
+  <!-- Self-generate Trajectories -->
+  <rect x="790" y="400" width="140" height="80" class="box-pink" />
+  <text x="860" y="430" class="text-medium" text-anchor="middle">Self-generate</text>
+  <text x="860" y="460" class="text-medium" text-anchor="middle">Trajectories</text>
+
+  <line x1="858" y1="285" x2="858" y2="390" class="arrow-solid" marker-end="url(#arrow)" />
+  <text x="845" y="345" class="text-small" transform="rotate(-90 845 345)" text-anchor="middle">Generate</text>
+
+  <!-- Execution Box -->
+  <rect x="1020" y="400" width="140" height="80" class="box-white" rx="4" />
+  <rect x="1025" y="405" width="130" height="32" fill="#f4f4f4" stroke="#ccc" stroke-width="1" stroke-dasharray="2,2" />
+  <rect x="1025" y="443" width="130" height="32" fill="#fff9e6" stroke="#e6cc80" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- Tiny Trajectories -->
+  <circle cx="1040" cy="420" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1048" cy="415" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1045" cy="425" r="3" fill="#ff9933" stroke="#cc6600" />
+  <path d="M1060,420 Q1065,410 1070,420" fill="none" stroke="#cc6699" stroke-width="1" />
+  <circle cx="1085" cy="420" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1093" cy="415" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1090" cy="425" r="3" fill="#ff9933" stroke="#cc6600" />
+  <path d="M1105,420 Q1110,410 1115,420" fill="none" stroke="#cc6699" stroke-width="1" />
+  <circle cx="1140" cy="420" r="8" fill="#4caf50" />
+  <path d="M1136,420 L1139,423 L1144,417" fill="none" stroke="#fff" stroke-width="2" />
+
+  <circle cx="1040" cy="460" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1048" cy="455" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1045" cy="465" r="3" fill="#ff9933" stroke="#cc6600" />
+  <path d="M1060,460 Q1065,450 1070,460" fill="none" stroke="#cc6699" stroke-width="1" />
+  <circle cx="1085" cy="460" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1093" cy="455" r="3" fill="#ff9933" stroke="#cc6600" />
+  <circle cx="1090" cy="465" r="3" fill="#ff9933" stroke="#cc6600" />
+  <path d="M1105,460 Q1110,450 1115,460" fill="none" stroke="#cc6699" stroke-width="1" />
+  <circle cx="1140" cy="460" r="8" fill="#f44336" />
+  <path d="M1136,456 L1144,464 M1144,456 L1136,464" fill="none" stroke="#fff" stroke-width="2" />
+
+  <line x1="935" y1="440" x2="1010" y2="440" class="arrow-solid" marker-end="url(#arrow)" />
+  <text x="975" y="455" class="text-small" text-anchor="middle">Execution</text>
+
+  <line x1="1090" y1="395" x2="1090" y2="290" class="arrow-solid" marker-end="url(#arrow)" />
+  <text x="1135" y="355" class="text-math" text-anchor="middle">ℒ<tspan baseline-shift="sub" font-size="14" font-style="normal">KTO</tspan></text>
+
+  <!-- Self-play Preference Optimization Arrow -->
+  <path d="M920,350 A50,50 0 1,1 970,300" fill="none" stroke="#a3d3a3" stroke-width="8" />
+  <polygon points="970,285 1000,305 970,325" fill="#a3d3a3" />
+  <text x="975" y="340" font-family="serif" font-size="14" font-weight="bold" text-anchor="middle">Self-play Preference</text>
+  <text x="975" y="360" font-family="serif" font-size="14" font-weight="bold" text-anchor="middle">Optimization</text>
+
+  <!-- Dotted Connections -->
+  <path d="M620,80 Q780,80 790,100" class="arrow-dotted" marker-end="url(#arrow-black)" />
+  <path d="M800,255 Q750,255 750,150 Q750,95 620,95" class="arrow-dotted" marker-end="url(#arrow-black)" />
+
+</svg>

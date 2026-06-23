@@ -1,0 +1,418 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" width="1200" height="550">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+    <marker id="arrowhead-white" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fff" stroke="#000" stroke-width="1" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d95f02" />
+    </marker>
+    <style>
+      .text-bold { font-family: sans-serif; font-weight: bold; font-size: 14px; }
+      .text-italic { font-family: sans-serif; font-style: italic; font-size: 14px; }
+      .text-normal { font-family: sans-serif; font-size: 12px; }
+      .text-small { font-family: sans-serif; font-size: 10px; }
+      .text-title { font-family: serif; font-style: italic; font-weight: bold; font-size: 20px; }
+      .box { fill: #fff; stroke: #000; stroke-width: 1.5; }
+      .box-gray { fill: #e0e0e0; stroke: #000; stroke-width: 1.5; }
+      .box-blue { fill: #e6f2ff; stroke: #1f77b4; stroke-width: 1.5; }
+      .box-blue-dark { fill: #99c2ff; stroke: #1f77b4; stroke-width: 1.5; }
+      .box-purple { fill: #f2e6ff; stroke: #9467bd; stroke-width: 1.5; }
+      .box-orange { fill: #ffe6cc; stroke: #d95f02; stroke-width: 1.5; }
+      .dashed-box { fill: none; stroke: #000; stroke-width: 1.5; stroke-dasharray: 5,5; }
+      .dashed-line { stroke: #000; stroke-width: 1.5; stroke-dasharray: 5,5; }
+      .dashed-line-orange { stroke: #d95f02; stroke-width: 1.5; stroke-dasharray: 5,5; }
+      .solid-line { stroke: #000; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="550" fill="#fff" />
+
+  <!-- Section Dividers -->
+  <line x1="260" y1="20" x2="260" y2="450" class="dashed-line" />
+  <line x1="620" y1="20" x2="620" y2="450" class="dashed-line" />
+
+  <!-- Titles -->
+  <text x="130" y="30" class="text-title" text-anchor="middle">ICL</text>
+  <text x="440" y="30" class="text-title" text-anchor="middle">MLLM</text>
+  <text x="910" y="30" class="text-title" text-anchor="middle">ICRL</text>
+
+  <!-- Subtitles (a), (b), (c) -->
+  <text x="130" y="480" class="text-title" text-anchor="middle">(a)</text>
+  <text x="440" y="480" class="text-title" text-anchor="middle">(b)</text>
+  <text x="860" y="480" class="text-title" text-anchor="middle">(c)</text>
+
+  <!-- ==================== Section (a) ICL ==================== -->
+  <g transform="translate(20, 40)">
+    <!-- LLM -->
+    <rect x="0" y="0" width="218" height="28" class="box-gray" />
+    <text x="109" y="19" class="text-normal" text-anchor="middle">LLM</text>
+
+    <!-- Arrow up to LLM -->
+    <line x1="109" y1="65" x2="109" y2="35" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Stacked Gray Boxes -->
+    <g transform="translate(35, 75)">
+      <rect x="0" y="0" width="130" height="25" class="box-gray" />
+      <rect x="5" y="5" width="130" height="25" class="box-gray" />
+      <rect x="10" y="10" width="130" height="25" class="box-gray" />
+      <line x1="40" y1="10" x2="40" y2="35" class="solid-line" />
+      <line x1="70" y1="10" x2="70" y2="35" class="solid-line" />
+      <line x1="100" y1="10" x2="100" y2="35" class="solid-line" />
+    </g>
+    <path d="M 30,80 L 25,80 L 25,105 L 30,105" fill="none" stroke="#000" stroke-width="1.5" />
+    <text x="15" y="97" class="text-bold" text-anchor="middle">N</text>
+
+    <!-- Arrow up to Stacked Boxes -->
+    <line x1="109" y1="150" x2="109" y2="120" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Embedding Layer -->
+    <rect x="27" y="165" width="148" height="35" class="box" />
+    <text x="101" y="187" class="text-normal" text-anchor="middle">Embedding Layer</text>
+
+    <!-- Arrow up to Embedding Layer -->
+    <line x1="109" y1="240" x2="109" y2="210" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Input xi, Label yi -->
+    <g transform="translate(40, 250)">
+      <rect x="0" y="0" width="120" height="25" class="box" />
+      <rect x="5" y="5" width="120" height="25" class="box" />
+      <rect x="10" y="10" width="120" height="25" class="box" />
+      <text x="70" y="27" class="text-normal" text-anchor="middle">Input x<tspan dy="3" font-size="8">i</tspan><tspan dy="-3">, Label y</tspan><tspan dy="3" font-size="8">i</tspan></text>
+    </g>
+
+    <!-- Arrow up to Input xi -->
+    <line x1="109" y1="325" x2="109" y2="295" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Input X, Label Y -->
+    <g transform="translate(-10, 335)">
+      <rect x="0" y="0" width="230" height="35" class="box" />
+      <rect x="5" y="5" width="230" height="35" class="box" />
+      <rect x="10" y="10" width="230" height="35" class="box" />
+      <text x="125" y="25" class="text-italic" text-anchor="middle" font-size="11"><tspan font-weight="bold">Input X (SMILES sequence):</tspan> CC(C)(C)CCO</text>
+      <text x="125" y="40" class="text-italic" text-anchor="middle" font-size="11"><tspan font-weight="bold">Label Y (Predicted Property):</tspan> 1.15</text>
+    </g>
+  </g>
+
+  <!-- ==================== Section (b) MLLM ==================== -->
+  <g transform="translate(280, 40)">
+    <!-- LLM -->
+    <rect x="5" y="0" width="300" height="28" class="box-gray" />
+    <text x="155" y="19" class="text-normal" text-anchor="middle">LLM</text>
+    <text x="15" y="19" font-size="14">🔥</text>
+
+    <!-- Arrow up to LLM -->
+    <line x1="155" y1="60" x2="155" y2="35" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Combined Tokens Box -->
+    <rect x="25" y="55" width="250" height="35" rx="10" class="dashed-box" />
+    <g transform="translate(40, 60)">
+      <rect x="0" y="0" width="115" height="25" class="box-gray" />
+      <line x1="28.75" y1="0" x2="28.75" y2="25" class="solid-line" />
+      <line x1="57.5" y1="0" x2="57.5" y2="25" class="solid-line" />
+      <line x1="86.25" y1="0" x2="86.25" y2="25" class="solid-line" />
+      <rect x="115" y="0" width="115" height="25" class="box-blue" />
+      <line x1="143.75" y1="0" x2="143.75" y2="25" stroke="#1f77b4" stroke-width="1.5" />
+      <line x1="172.5" y1="0" x2="172.5" y2="25" stroke="#1f77b4" stroke-width="1.5" />
+      <line x1="201.25" y1="0" x2="201.25" y2="25" stroke="#1f77b4" stroke-width="1.5" />
+    </g>
+
+    <!-- Left Tokens -->
+    <g transform="translate(15, 105)">
+      <rect x="0" y="0" width="115" height="30" class="box-gray" />
+      <line x1="28.75" y1="0" x2="28.75" y2="30" class="solid-line" />
+      <line x1="57.5" y1="0" x2="57.5" y2="30" class="solid-line" />
+      <line x1="86.25" y1="0" x2="86.25" y2="30" class="solid-line" />
+    </g>
+    <!-- Arrow up to Left Tokens -->
+    <line x1="72" y1="175" x2="72" y2="145" class="solid-line" marker-end="url(#arrowhead)" />
+    <!-- Arrow from Left Tokens to Combined -->
+    <path d="M 15,120 L 0,120 L 0,72 L 20,72" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+
+    <!-- Right Tokens -->
+    <g transform="translate(180, 105)">
+      <rect x="0" y="0" width="115" height="30" class="box-blue" />
+      <line x1="28.75" y1="0" x2="28.75" y2="30" stroke="#1f77b4" stroke-width="1.5" />
+      <line x1="57.5" y1="0" x2="57.5" y2="30" stroke="#1f77b4" stroke-width="1.5" />
+      <line x1="86.25" y1="0" x2="86.25" y2="30" stroke="#1f77b4" stroke-width="1.5" />
+    </g>
+    <!-- Arrow from Right Tokens to Combined -->
+    <path d="M 295,120 L 310,120 L 310,72 L 280,72" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+
+    <!-- Left Embedding Layer -->
+    <rect x="5" y="185" width="135" height="35" class="box" />
+    <text x="72" y="207" class="text-normal" text-anchor="middle">Embedding Layer</text>
+
+    <!-- Arrow up to Left Embedding Layer -->
+    <line x1="72" y1="260" x2="72" y2="230" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Left Text Input -->
+    <rect x="15" y="270" width="100" height="75" class="box" />
+    <text x="65" y="295" class="text-normal" text-anchor="middle">Text Input: x<tspan dy="3" font-size="8">i</tspan></text>
+    <text x="65" y="315" class="text-normal" text-anchor="middle">Modality Input: m<tspan dy="3" font-size="8">i</tspan></text>
+    <text x="65" y="335" class="text-normal" text-anchor="middle">Label y<tspan dy="3" font-size="8">i</tspan></text>
+
+    <!-- Right Dashed Box -->
+    <rect x="160" y="160" width="155" height="235" class="dashed-box" />
+
+    <!-- Projector -->
+    <rect x="195" y="170" width="85" height="25" class="box-blue-dark" />
+    <text x="245" y="187" class="text-normal" text-anchor="middle">Projector</text>
+    <text x="200" y="187" font-size="14">🔥</text>
+
+    <!-- Arrow up to Projector -->
+    <line x1="237" y1="215" x2="237" y2="200" class="solid-line" marker-end="url(#arrowhead)" />
+    <!-- Arrow up from Projector -->
+    <polygon points="230,145 245,145 245,135 250,135 237,120 225,135 230,135" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Modality Tokens -->
+    <rect x="195" y="220" width="85" height="30" rx="5" class="dashed-box" stroke="#1f77b4" />
+    <rect x="200" y="225" width="20" height="20" class="box-blue-dark" />
+    <rect x="227" y="225" width="20" height="20" class="box-blue-dark" />
+    <rect x="254" y="225" width="20" height="20" class="box-blue-dark" />
+
+    <!-- Arrow up to Modality Tokens -->
+    <polygon points="230,265 245,265 245,255 250,255 237,240 225,255 230,255" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Pre-trained Modality Encoder -->
+    <polygon points="175,330 300,330 280,275 195,275" class="box-blue-dark" />
+    <text x="237" y="300" class="text-normal" text-anchor="middle">Pre-trained</text>
+    <text x="237" y="315" class="text-normal" text-anchor="middle">Modality Encoder</text>
+    <text x="185" y="295" font-size="14">🔥</text>
+
+    <!-- Arrow up to Pre-trained Modality Encoder -->
+    <line x1="237" y1="350" x2="237" y2="335" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Icons -->
+    <g transform="translate(180, 345)">
+      <!-- Image Icon -->
+      <rect x="0" y="5" width="25" height="20" rx="2" fill="#000" />
+      <circle cx="6" cy="11" r="3" fill="#fff" />
+      <polygon points="0,25 10,15 18,22 22,18 25,22 25,25" fill="#fff" />
+      <!-- Video Icon -->
+      <rect x="45" y="5" width="25" height="20" rx="2" fill="#fff" stroke="#000" stroke-width="1.5" />
+      <line x1="45" y1="10" x2="70" y2="10" stroke="#000" stroke-width="1.5" />
+      <line x1="45" y1="20" x2="70" y2="20" stroke="#000" stroke-width="1.5" />
+      <polygon points="53,12 62,15 53,18" fill="#000" />
+      <!-- Graph Icon -->
+      <circle cx="95" cy="5" r="3" fill="#fff" stroke="#000" stroke-width="1.5" />
+      <circle cx="85" cy="15" r="3" fill="#fff" stroke="#000" stroke-width="1.5" />
+      <circle cx="105" cy="15" r="3" fill="#fff" stroke="#000" stroke-width="1.5" />
+      <circle cx="95" cy="25" r="3" fill="#fff" stroke="#000" stroke-width="1.5" />
+      <line x1="95" y1="8" x2="85" y2="12" stroke="#000" stroke-width="1.5" />
+      <line x1="95" y1="8" x2="105" y2="12" stroke="#000" stroke-width="1.5" />
+      <line x1="85" y1="18" x2="95" y2="22" stroke="#000" stroke-width="1.5" />
+      <line x1="105" y1="18" x2="95" y2="22" stroke="#000" stroke-width="1.5" />
+    </g>
+
+    <!-- Arrow from Left Text Input to Right Dashed Box -->
+    <line x1="115" y1="375" x2="150" y2="375" class="solid-line" marker-end="url(#arrowhead)" />
+  </g>
+
+  <!-- ==================== Section (c) ICRL ==================== -->
+  <g transform="translate(650, 40)">
+    <!-- LLM -->
+    <rect x="0" y="0" width="520" height="28" class="box-gray" />
+    <text x="260" y="19" class="text-normal" text-anchor="middle">LLM</text>
+
+    <!-- Text Level / Embedding Level Dividers -->
+    <text x="140" y="45" class="text-bold" font-style="italic" text-anchor="middle">Text Level</text>
+    <text x="300" y="45" class="text-bold" font-style="italic" text-anchor="middle">Embedding Level</text>
+    <line x1="220" y1="35" x2="220" y2="55" class="dashed-line" />
+    <line x1="220" y1="75" x2="220" y2="220" class="dashed-line" />
+    <line x1="220" y1="240" x2="220" y2="330" class="dashed-line" />
+
+    <!-- ==================== Text Level (Left) ==================== -->
+    <!-- Arrow up to LLM -->
+    <line x1="100" y1="75" x2="100" y2="40" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Stacked Gray Boxes -->
+    <g transform="translate(35, 80)">
+      <rect x="0" y="0" width="100" height="25" class="box-gray" />
+      <rect x="5" y="5" width="100" height="25" class="box-gray" />
+      <rect x="10" y="10" width="100" height="25" class="box-gray" />
+      <line x1="35" y1="10" x2="35" y2="35" class="solid-line" />
+      <line x1="60" y1="10" x2="60" y2="35" class="solid-line" />
+      <line x1="85" y1="10" x2="85" y2="35" class="solid-line" />
+    </g>
+
+    <!-- Arrow up to Stacked Boxes -->
+    <line x1="100" y1="140" x2="100" y2="120" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Embedding Layer -->
+    <rect x="10" y="145" width="180" height="25" class="box" />
+    <text x="100" y="162" class="text-normal" text-anchor="middle">Embedding Layer</text>
+
+    <!-- Arrow up to Embedding Layer -->
+    <line x1="100" y1="200" x2="100" y2="175" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Rep ri, Label yi Box -->
+    <g transform="translate(135, 190)">
+      <rect x="0" y="0" width="70" height="60" class="box" />
+      <rect x="5" y="5" width="70" height="60" class="box" />
+      <rect x="10" y="10" width="70" height="60" class="box" />
+      <text x="45" y="35" class="text-normal" fill="#9467bd" text-anchor="middle">Rep r<tspan dy="3" font-size="8">i</tspan></text>
+      <text x="45" y="55" class="text-normal" text-anchor="middle">Label y<tspan dy="3" font-size="8">i</tspan></text>
+    </g>
+
+    <!-- Arrow from Purple Tokens to Rep ri -->
+    <line x1="85" y1="225" x2="130" y2="225" class="solid-line" marker-end="url(#arrowhead)" />
+    <text x="107" y="220" class="text-small" text-anchor="middle" font-weight="bold">Stringify</text>
+
+    <!-- Purple Tokens -->
+    <rect x="-5" y="210" width="90" height="35" rx="10" class="dashed-box" />
+    <rect x="5" y="217" width="20" height="20" class="box-purple" />
+    <rect x="30" y="217" width="20" height="20" class="box-purple" />
+    <rect x="55" y="217" width="20" height="20" class="box-purple" />
+
+    <!-- Arrow up to Purple Tokens -->
+    <polygon points="32,275 47,275 47,265 52,265 39,250 27,265 32,265" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Pre-trained FM -->
+    <rect x="-5" y="280" width="90" height="45" class="box-purple" />
+    <text x="40" y="300" class="text-normal" text-anchor="middle">Pre-trained</text>
+    <text x="40" y="315" class="text-normal" text-anchor="middle">FM</text>
+
+    <!-- Arrow up to Pre-trained FM -->
+    <line x1="40" y1="370" x2="40" y2="330" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Arrow up to Rep ri -->
+    <line x1="178" y1="340" x2="178" y2="265" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- ==================== Embedding Level (Right) ==================== -->
+    <!-- Arrow up to LLM -->
+    <line x1="445" y1="75" x2="445" y2="40" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Stacked Gray/Orange Boxes -->
+    <g transform="translate(380, 80)">
+      <rect x="0" y="0" width="125" height="25" class="box-gray" />
+      <rect x="5" y="5" width="125" height="25" class="box-gray" />
+      <rect x="10" y="10" width="125" height="25" class="box-gray" />
+      <line x1="40" y1="10" x2="40" y2="35" class="solid-line" />
+      <line x1="70" y1="10" x2="70" y2="35" class="solid-line" />
+      <line x1="100" y1="10" x2="100" y2="35" class="solid-line" />
+      <rect x="70" y="10" width="30" height="25" class="box-orange" />
+    </g>
+
+    <!-- Arrow up to Stacked Boxes -->
+    <polygon points="455,145 465,145 465,135 470,135 460,120 450,135 455,135" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Stacked Gray/White Boxes -->
+    <g transform="translate(365, 150)">
+      <rect x="0" y="0" width="145" height="40" rx="10" class="dashed-box" />
+      <rect x="10" y="5" width="125" height="25" class="box-gray" />
+      <rect x="15" y="10" width="125" height="25" class="box-gray" />
+      <rect x="20" y="15" width="125" height="25" class="box-gray" />
+      <line x1="50" y1="15" x2="50" y2="40" class="solid-line" />
+      <line x1="80" y1="15" x2="80" y2="40" class="solid-line" />
+      <line x1="110" y1="15" x2="110" y2="40" class="solid-line" />
+      <rect x="80" y="15" width="30" height="25" fill="#fff" stroke="#000" stroke-width="1.5" />
+    </g>
+
+    <!-- Arrow up to Stacked Gray/White Boxes -->
+    <line x1="445" y1="220" x2="445" y2="195" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Embedding Layer -->
+    <rect x="375" y="225" width="145" height="20" class="box" />
+    <text x="447" y="240" class="text-normal" text-anchor="middle">Embedding Layer</text>
+
+    <!-- Arrow up to Embedding Layer -->
+    <line x1="445" y1="275" x2="445" y2="250" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Rep ri, Label yi Box (Right) -->
+    <g transform="translate(375, 275)">
+      <rect x="0" y="0" width="145" height="35" class="box" />
+      <rect x="5" y="5" width="145" height="35" class="box" />
+      <rect x="10" y="10" width="145" height="35" class="box" />
+      <rect x="15" y="15" width="40" height="20" class="dashed-box" />
+      <text x="35" y="30" class="text-normal" text-anchor="middle">Rep r<tspan dy="3" font-size="8">i</tspan></text>
+      <text x="95" y="30" class="text-normal" text-anchor="middle">, Label y<tspan dy="3" font-size="8">i</tspan></text>
+    </g>
+
+    <!-- Arrow up to Rep ri (Right) -->
+    <line x1="445" y1="340" x2="445" y2="325" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Orange Stacked Boxes -->
+    <g transform="translate(270, 80)">
+      <rect x="0" y="0" width="30" height="30" class="box-orange" />
+      <rect x="5" y="5" width="30" height="30" class="box-orange" />
+      <rect x="10" y="10" width="30" height="30" class="box-orange" />
+    </g>
+
+    <!-- Arrow up to Orange Boxes -->
+    <polygon points="280,135 295,135 295,125 300,125 287,110 275,125 280,125" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Projector -->
+    <rect x="245" y="150" width="85" height="25" class="box-orange" />
+    <text x="295" y="167" class="text-normal" text-anchor="middle">Projector</text>
+    <text x="250" y="167" font-size="14">❄️</text>
+
+    <!-- Arrow up to Projector -->
+    <line x1="287" y1="205" x2="287" y2="180" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Purple Tokens (Right) -->
+    <rect x="245" y="210" width="90" height="35" rx="10" class="dashed-box" />
+    <rect x="255" y="217" width="20" height="20" class="box-purple" />
+    <rect x="280" y="217" width="20" height="20" class="box-purple" />
+    <rect x="305" y="217" width="20" height="20" class="box-purple" />
+
+    <!-- Arrow up to Purple Tokens (Right) -->
+    <polygon points="280,275 295,275 295,265 300,265 287,250 275,265 280,265" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+    <!-- Pre-trained FM (Right) -->
+    <rect x="245" y="280" width="90" height="45" class="box-purple" />
+    <text x="290" y="300" class="text-normal" text-anchor="middle">Pre-trained</text>
+    <text x="290" y="315" class="text-normal" text-anchor="middle">FM</text>
+
+    <!-- Arrow up to Pre-trained FM (Right) -->
+    <line x1="290" y1="370" x2="290" y2="330" class="solid-line" marker-end="url(#arrowhead)" />
+
+    <!-- Minj Injection Strategy Arrow -->
+    <path d="M 315,100 C 350,100 350,140 450,140" fill="none" class="dashed-line-orange" marker-end="url(#arrowhead-orange)" />
+    <text x="340" y="115" class="text-bold" font-size="12">M<tspan dy="3" font-size="8">inj</tspan></text>
+
+    <!-- Input X, Label Y (Bottom) -->
+    <g transform="translate(45, 350)">
+      <rect x="0" y="0" width="300" height="35" class="box" />
+      <rect x="5" y="5" width="300" height="35" class="box" />
+      <rect x="10" y="10" width="300" height="35" class="box" />
+      <text x="160" y="25" class="text-italic" text-anchor="middle" font-size="11"><tspan font-weight="bold">Input X (SMILES sequence):</tspan> Oc1ccccc1O</text>
+      <text x="160" y="40" class="text-italic" text-anchor="middle" font-size="11"><tspan font-weight="bold">Label Y (Predicted Property):</tspan> -6.36</text>
+    </g>
+    <line x1="45" y1="370" x2="40" y2="370" class="solid-line" />
+    <line x1="355" y1="370" x2="445" y2="370" class="solid-line" />
+  </g>
+
+  <!-- ==================== Legend ==================== -->
+  <g transform="translate(20, 520)">
+    <text x="0" y="10" font-size="14">🔥</text>
+    <text x="20" y="10" class="text-normal">: Train-optional</text>
+
+    <text x="130" y="10" font-size="14">🔥</text>
+    <text x="150" y="10" class="text-normal">: Train-required</text>
+
+    <text x="260" y="10" font-size="14">❄️</text>
+    <text x="280" y="10" class="text-normal">: Train-free</text>
+
+    <rect x="380" y="0" width="25" height="15" class="box-gray" />
+    <text x="410" y="10" class="text-normal">: Text token</text>
+
+    <rect x="510" y="0" width="25" height="15" class="box-blue" />
+    <rect x="535" y="0" width="25" height="15" class="box-purple" />
+    <text x="565" y="10" class="text-normal">: Modality token</text>
+
+    <rect x="690" y="0" width="25" height="15" class="box-blue" />
+    <rect x="715" y="0" width="25" height="15" class="box-orange" />
+    <text x="745" y="10" class="text-normal">: Aligned token</text>
+
+    <text x="850" y="10" class="text-bold">N</text>
+    <text x="865" y="10" class="text-normal">: Example nums</text>
+
+    <text x="980" y="10" class="text-bold">M<tspan dy="3" font-size="8">inj</tspan></text>
+    <text x="1005" y="10" class="text-normal" dy="-3">: Injection strategy</text>
+  </g>
+
+</svg>

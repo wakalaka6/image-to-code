@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <style>
+      .box { fill: #d9d9d9; rx: 8; ry: 8; }
+      .dashed-box { fill: none; stroke: #b3b3b3; stroke-width: 2; stroke-dasharray: 10, 5; rx: 15; ry: 15; }
+      .arrow { stroke: #b3b3b3; stroke-width: 3; fill: none; }
+      .arrow-head { fill: #b3b3b3; }
+      .text-title { font-family: serif; font-weight: bold; font-size: 28px; text-anchor: middle; }
+      .text-subtitle { font-family: serif; font-style: italic; font-size: 20px; text-anchor: middle; }
+      .text-box { font-family: serif; font-size: 22px; text-anchor: middle; }
+      .text-item { font-family: serif; font-size: 20px; }
+      .text-item-italic { font-family: serif; font-style: italic; font-size: 18px; }
+      .text-label { font-family: serif; font-size: 20px; text-anchor: middle; }
+    </style>
+    <marker id="arrow-left" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" class="arrow-head" />
+    </marker>
+    <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head" />
+    </marker>
+    <marker id="arrow-both" viewBox="0 0 20 10" refX="10" refY="5" markerWidth="12" markerHeight="6" orient="auto">
+      <path d="M 10 0 L 0 5 L 10 10 z M 10 0 L 20 5 L 10 10 z" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#ffffff" />
+
+  <!-- Center Top: TruthOverTricks -->
+  <g transform="translate(600, 80)">
+    <!-- Speedometer Icon -->
+    <path d="M -50 0 A 50 50 0 0 1 50 0 L 35 0 A 35 35 0 0 0 -35 0 Z" fill="#e63946" />
+    <path d="M -50 0 A 50 50 0 0 1 -15 -47 L -10 -33 A 35 35 0 0 0 -35 0 Z" fill="#e63946" />
+    <path d="M -15 -47 A 50 50 0 0 1 15 -47 L 10 -33 A 35 35 0 0 0 -10 -33 Z" fill="#f4a261" />
+    <path d="M 15 -47 A 50 50 0 0 1 50 0 L 35 0 A 35 35 0 0 0 10 -33 Z" fill="#2a9d8f" />
+    <path d="M -50 0 A 50 50 0 0 1 50 0" fill="none" stroke="#264653" stroke-width="6" />
+    <line x1="-50" y1="0" x2="-35" y2="0" stroke="#264653" stroke-width="6" />
+    <line x1="50" y1="0" x2="35" y2="0" stroke="#264653" stroke-width="6" />
+    <line x1="-15" y1="-47" x2="-10" y2="-33" stroke="#264653" stroke-width="6" />
+    <line x1="15" y1="-47" x2="10" y2="-33" stroke="#264653" stroke-width="6" />
+    <circle cx="0" cy="0" r="10" fill="#264653" />
+    <line x1="0" y1="0" x2="30" y2="-20" stroke="#264653" stroke-width="8" stroke-linecap="round" />
+    <circle cx="0" cy="0" r="5" fill="#e9c46a" />
+    
+    <text y="40" class="text-title">TruthOverTricks</text>
+    <text y="70" class="text-subtitle">Evaluate Shortcut Learning in</text>
+    <text y="95" class="text-subtitle">Misinformation Detection</text>
+  </g>
+
+  <!-- Center Middle: Misinformation Benchmarks -->
+  <g transform="translate(450, 210)">
+    <rect width="300" height="100" class="box" />
+    <text x="190" y="45" class="text-box">Misinformation</text>
+    <text x="190" y="75" class="text-box">Benchmarks</text>
+    <!-- Database Icon -->
+    <g transform="translate(30, 20)">
+      <ellipse cx="30" cy="15" rx="15" ry="5" fill="#a8dadc" stroke="#1d3557" stroke-width="3" />
+      <path d="M 15 15 L 15 45 A 15 5 0 0 0 45 45 L 45 15" fill="#a8dadc" stroke="#1d3557" stroke-width="3" />
+      <ellipse cx="30" cy="30" rx="15" ry="5" fill="none" stroke="#1d3557" stroke-width="3" />
+      <ellipse cx="30" cy="45" rx="15" ry="5" fill="none" stroke="#1d3557" stroke-width="3" />
+      <!-- Folders -->
+      <path d="M 0 0 L 10 0 L 12 5 L 20 5 L 20 15 L 0 15 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+      <path d="M 40 0 L 50 0 L 52 5 L 60 5 L 60 15 L 40 15 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+      <path d="M 0 45 L 10 45 L 12 50 L 20 50 L 20 60 L 0 60 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+      <path d="M 40 45 L 50 45 L 52 50 L 60 50 L 60 60 L 40 60 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+      <!-- Arrows -->
+      <path d="M 20 10 L 25 10 L 25 20" fill="none" stroke="#1d3557" stroke-width="2" marker-end="url(#arrow-right)" />
+      <path d="M 40 10 L 35 10 L 35 20" fill="none" stroke="#1d3557" stroke-width="2" marker-end="url(#arrow-right)" />
+      <path d="M 20 50 L 25 50 L 25 40" fill="none" stroke="#1d3557" stroke-width="2" marker-end="url(#arrow-right)" />
+      <path d="M 40 50 L 35 50 L 35 40" fill="none" stroke="#1d3557" stroke-width="2" marker-end="url(#arrow-right)" />
+    </g>
+  </g>
+
+  <!-- Center Bottom Left: Intrinsic Shortcut Induction -->
+  <g transform="translate(340, 320)">
+    <rect width="210" height="260" class="box" />
+    <text x="105" y="35" class="text-box">Intrinsic</text>
+    <text x="105" y="65" class="text-box">Shortcut</text>
+    <text x="105" y="95" class="text-box">Induction</text>
+    <!-- Magnifying Glass Icon -->
+    <g transform="translate(50, 100)">
+      <circle cx="30" cy="30" r="25" fill="#f4a261" stroke="#1d3557" stroke-width="4" />
+      <circle cx="30" cy="30" r="18" fill="#a8dadc" stroke="#1d3557" stroke-width="4" />
+      <circle cx="20" cy="30" r="3" fill="#e63946" />
+      <circle cx="30" cy="30" r="3" fill="#e63946" />
+      <circle cx="40" cy="30" r="3" fill="#e63946" />
+      <path d="M 45 45 L 60 60" stroke="#1d3557" stroke-width="8" stroke-linecap="round" />
+      <path d="M 45 45 L 60 60" stroke="#a8dadc" stroke-width="4" stroke-linecap="round" />
+      <circle cx="60" cy="60" r="5" fill="#1d3557" />
+      <!-- List Items -->
+      <rect x="70" y="0" width="30" height="20" rx="3" fill="none" stroke="#1d3557" stroke-width="3" />
+      <line x1="75" y1="6" x2="95" y2="6" stroke="#1d3557" stroke-width="2" />
+      <line x1="75" y1="14" x2="95" y2="14" stroke="#1d3557" stroke-width="2" />
+      <rect x="70" y="35" width="30" height="20" rx="3" fill="none" stroke="#1d3557" stroke-width="3" />
+      <line x1="75" y1="41" x2="95" y2="41" stroke="#1d3557" stroke-width="2" />
+      <line x1="75" y1="49" x2="95" y2="49" stroke="#1d3557" stroke-width="2" />
+      <rect x="70" y="70" width="30" height="20" rx="3" fill="none" stroke="#1d3557" stroke-width="3" />
+      <line x1="75" y1="76" x2="95" y2="76" stroke="#1d3557" stroke-width="2" />
+      <line x1="75" y1="84" x2="95" y2="84" stroke="#1d3557" stroke-width="2" />
+      <!-- Connecting Lines -->
+      <line x1="55" y1="30" x2="70" y2="10" stroke="#1d3557" stroke-width="3" />
+      <line x1="55" y1="30" x2="70" y2="45" stroke="#1d3557" stroke-width="3" />
+      <line x1="55" y1="30" x2="70" y2="80" stroke="#1d3557" stroke-width="3" />
+    </g>
+    <text x="105" y="240" class="text-subtitle">Indicator Classifier</text>
+  </g>
+
+  <!-- Center Bottom Right: Extrinsic Shortcut Injection -->
+  <g transform="translate(640, 320)">
+    <rect width="210" height="260" class="box" />
+    <text x="105" y="35" class="text-box">Extrinsic</text>
+    <text x="105" y="65" class="text-box">Shortcut</text>
+    <text x="105" y="95" class="text-box">Injection</text>
+    <!-- Robot Icon -->
+    <g transform="translate(65, 110)">
+      <rect x="15" y="10" width="50" height="35" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="3" />
+      <circle cx="10" cy="25" r="5" fill="#e63946" stroke="#1d3557" stroke-width="2" />
+      <circle cx="70" cy="25" r="5" fill="#e63946" stroke="#1d3557" stroke-width="2" />
+      <line x1="25" y1="10" x2="25" y2="0" stroke="#1d3557" stroke-width="3" />
+      <circle cx="25" cy="0" r="3" fill="#e63946" />
+      <line x1="55" y1="10" x2="55" y2="0" stroke="#1d3557" stroke-width="3" />
+      <circle cx="55" cy="0" r="3" fill="#e63946" />
+      <rect x="25" y="20" width="30" height="15" rx="5" fill="#ffffff" stroke="#1d3557" stroke-width="2" />
+      <text x="40" y="32" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">AI</text>
+      <path d="M 25 45 L 25 55 A 15 15 0 0 0 55 55 L 55 45" fill="none" stroke="#1d3557" stroke-width="3" />
+      <rect x="15" y="60" width="50" height="35" rx="10" fill="#ffffff" stroke="#1d3557" stroke-width="3" />
+      <circle cx="30" cy="75" r="8" fill="#a8dadc" stroke="#1d3557" stroke-width="2" />
+      <circle cx="50" cy="70" r="4" fill="#e63946" />
+      <circle cx="50" cy="85" r="4" fill="#e63946" />
+      <line x1="38" y1="75" x2="50" y2="70" stroke="#1d3557" stroke-width="2" />
+      <line x1="38" y1="75" x2="50" y2="85" stroke="#1d3557" stroke-width="2" />
+    </g>
+    <text x="105" y="240" class="text-subtitle">LLM Injector</text>
+  </g>
+
+  <!-- Connecting Arrows Center -->
+  <line x1="600" y1="310" x2="600" y2="450" class="arrow" />
+  <line x1="560" y1="450" x2="630" y2="450" class="arrow" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)" />
+
+  <!-- Left Side: Intrinsic Shortcuts -->
+  <g transform="translate(30, 20)">
+    <!-- Sentiment -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="120" class="dashed-box" />
+      <!-- Sentiment Icon -->
+      <g transform="translate(20, 10)">
+        <circle cx="20" cy="20" r="8" fill="#e63946" stroke="#1d3557" stroke-width="2" />
+        <circle cx="40" cy="10" r="8" fill="#f4a261" stroke="#1d3557" stroke-width="2" />
+        <circle cx="60" cy="20" r="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="2" />
+        <path d="M 15 20 Q 20 25 25 20" fill="none" stroke="#1d3557" stroke-width="1.5" />
+        <path d="M 35 10 L 45 10" fill="none" stroke="#1d3557" stroke-width="1.5" />
+        <path d="M 55 20 Q 60 15 65 20" fill="none" stroke="#1d3557" stroke-width="1.5" />
+        <path d="M 10 50 A 30 30 0 0 1 70 50" fill="none" stroke="#1d3557" stroke-width="3" />
+        <path d="M 10 50 L 70 50" stroke="#1d3557" stroke-width="3" />
+        <line x1="40" y1="50" x2="55" y2="30" stroke="#1d3557" stroke-width="3" />
+        <circle cx="40" cy="50" r="4" fill="#1d3557" />
+        <line x1="25" y1="50" x2="25" y2="65" stroke="#1d3557" stroke-width="2" />
+        <circle cx="25" cy="65" r="3" fill="#e63946" />
+        <line x1="40" y1="50" x2="40" y2="65" stroke="#1d3557" stroke-width="2" />
+        <circle cx="40" cy="65" r="3" fill="#f4a261" />
+        <line x1="55" y1="50" x2="55" y2="65" stroke="#1d3557" stroke-width="2" />
+        <circle cx="55" cy="65" r="3" fill="#2a9d8f" />
+      </g>
+      <text x="60" y="105" class="text-label">Sentiment</text>
+      <text x="120" y="35" class="text-item">(a) positive</text>
+      <text x="120" y="65" class="text-item">(b) negative</text>
+      <text x="120" y="95" class="text-item">(c) neutral</text>
+    </g>
+
+    <!-- Style -->
+    <g transform="translate(0, 140)">
+      <rect width="250" height="130" class="dashed-box" />
+      <!-- Style Icon -->
+      <g transform="translate(30, 15)">
+        <path d="M 0 0 L 50 0 L 50 10 L 0 10 Z" fill="#d9d9d9" stroke="#1d3557" stroke-width="2" />
+        <rect x="40" y="10" width="15" height="20" fill="#ffffff" stroke="#1d3557" stroke-width="2" />
+        <line x1="42" y1="15" x2="53" y2="15" stroke="#1d3557" stroke-width="1" />
+        <line x1="42" y1="20" x2="53" y2="20" stroke="#1d3557" stroke-width="1" />
+        <line x1="42" y1="25" x2="53" y2="25" stroke="#1d3557" stroke-width="1" />
+        <text x="25" y="50" font-family="serif" font-weight="bold" font-size="45" fill="#457b9d" stroke="#1d3557" stroke-width="2" text-anchor="middle">A</text>
+        <line x1="5" y1="55" x2="45" y2="55" stroke="#1d3557" stroke-width="3" />
+      </g>
+      <text x="60" y="105" class="text-label">Style</text>
+      <text x="120" y="55" class="text-item">(a) subjective</text>
+      <text x="120" y="105" class="text-item">(b) neutral</text>
+    </g>
+
+    <!-- Topic -->
+    <g transform="translate(0, 290)">
+      <rect width="250" height="130" class="dashed-box" />
+      <!-- Topic Icon -->
+      <g transform="translate(30, 10)">
+        <path d="M 10 10 L 35 10 L 35 30 L 20 30 L 15 40 L 15 30 L 10 30 Z" fill="#a8dadc" stroke="#1d3557" stroke-width="2" />
+        <path d="M 30 20 L 55 20 L 55 40 L 45 40 L 40 50 L 40 40 L 30 40 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <path d="M 5 35 L 20 35 L 20 50 L 15 50 L 10 60 L 10 50 L 5 50 Z" fill="#a8e6cf" stroke="#1d3557" stroke-width="2" />
+        <path d="M 40 5 L 55 5 L 55 20 L 50 20 L 45 25 L 45 20 L 40 20 Z" fill="#ffb3c6" stroke="#1d3557" stroke-width="2" />
+      </g>
+      <text x="60" y="105" class="text-label">Topic</text>
+      <text x="120" y="35" class="text-item">(a) sports</text>
+      <text x="120" y="65" class="text-item">(b) crime</text>
+      <text x="120" y="95" class="text-item">(c) politics</text>
+      <text x="120" y="115" class="text-item">......</text>
+    </g>
+
+    <!-- Perplexity -->
+    <g transform="translate(0, 440)">
+      <rect width="250" height="130" class="dashed-box" />
+      <!-- Perplexity Icon -->
+      <g transform="translate(40, 10)">
+        <circle cx="20" cy="15" r="8" fill="#ffb3c6" stroke="#1d3557" stroke-width="2" />
+        <path d="M 15 25 L 25 25 L 30 45 L 10 45 Z" fill="#e63946" stroke="#1d3557" stroke-width="2" />
+        <path d="M 10 45 L 15 65 L 25 65 L 30 45 Z" fill="#a8dadc" stroke="#1d3557" stroke-width="2" />
+        <path d="M 15 25 Q 5 15 10 5" fill="none" stroke="#1d3557" stroke-width="3" />
+        <path d="M 25 25 Q 35 35 30 45" fill="none" stroke="#1d3557" stroke-width="3" />
+        <text x="35" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#1d3557">?</text>
+      </g>
+      <text x="60" y="105" class="text-label">Perplexity</text>
+      <text x="120" y="55" class="text-item">(a) high</text>
+      <text x="120" y="105" class="text-item">(b) low</text>
+    </g>
+  </g>
+
+  <!-- Connecting Arrows Left -->
+  <line x1="315" y1="450" x2="315" y2="80" class="arrow" />
+  <line x1="340" y1="450" x2="315" y2="450" class="arrow" />
+  <line x1="315" y1="80" x2="290" y2="80" class="arrow" marker-end="url(#arrow-left)" />
+  <line x1="315" y1="230" x2="290" y2="230" class="arrow" marker-end="url(#arrow-left)" />
+  <line x1="315" y1="380" x2="290" y2="380" class="arrow" marker-end="url(#arrow-left)" />
+  <line x1="315" y1="520" x2="290" y2="520" class="arrow" marker-end="url(#arrow-left)" />
+
+  <!-- Right Side: Extrinsic Shortcuts -->
+  <g transform="translate(910, 20)">
+    <!-- Vanilla -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="150" class="dashed-box" />
+      <!-- Vanilla Icon -->
+      <g transform="translate(10, 15)">
+        <path d="M 30 40 L 10 60 L 20 30 L 5 20 L 30 25 L 40 5 L 50 25 L 75 20 L 60 30 L 70 60 Z" fill="#fefae0" stroke="#1d3557" stroke-width="2" />
+        <path d="M 40 40 L 25 70 L 35 45 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <path d="M 40 40 L 55 70 L 45 45 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <circle cx="40" cy="40" r="5" fill="#f4a261" />
+        <path d="M 40 5 Q 50 -5 60 5" fill="none" stroke="#8b5a2b" stroke-width="3" />
+        <path d="M 60 5 Q 70 15 60 25" fill="none" stroke="#8b5a2b" stroke-width="3" />
+      </g>
+      <text x="45" y="125" class="text-label">Vanilla</text>
+      <text x="95" y="45" class="text-item-italic">Please rewrite it</text>
+      <text x="95" y="70" class="text-item-italic">to make it more</text>
+      <text x="95" y="95" class="text-item-italic">convincing.</text>
+    </g>
+
+    <!-- Explicit -->
+    <g transform="translate(0, 205)">
+      <rect width="250" height="150" class="dashed-box" />
+      <!-- Explicit Icon -->
+      <g transform="translate(10, 15)">
+        <rect x="30" y="10" width="30" height="20" fill="#a8dadc" stroke="#1d3557" stroke-width="2" />
+        <rect x="35" y="30" width="20" height="15" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <rect x="40" y="45" width="10" height="15" fill="#d9d9d9" stroke="#1d3557" stroke-width="2" />
+        <path d="M 45 60 L 45 75" stroke="#1d3557" stroke-width="3" />
+        <path d="M 30 20 L 15 20 L 15 40 L 25 40 L 25 50" fill="none" stroke="#1d3557" stroke-width="4" />
+        <rect x="10" y="50" width="15" height="10" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <path d="M 12 60 L 23 60 L 20 70 L 15 70 Z" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <line x1="35" y1="5" x2="35" y2="10" stroke="#1d3557" stroke-width="2" />
+        <line x1="45" y1="5" x2="45" y2="10" stroke="#1d3557" stroke-width="2" />
+        <line x1="55" y1="5" x2="55" y2="10" stroke="#1d3557" stroke-width="2" />
+        <rect x="60" y="15" width="10" height="10" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+      </g>
+      <text x="45" y="125" class="text-label">Explicit</text>
+      <text x="95" y="45" class="text-item-italic">Make the {word</text>
+      <text x="95" y="70" class="text-item-italic">choice} of the</text>
+      <text x="95" y="95" class="text-item-italic">rewritten content</text>
+      <text x="95" y="120" class="text-item-italic">{simple}.</text>
+    </g>
+
+    <!-- Implicit -->
+    <g transform="translate(0, 410)">
+      <rect width="250" height="150" class="dashed-box" />
+      <!-- Implicit Icon -->
+      <g transform="translate(10, 20)">
+        <circle cx="45" cy="15" r="10" fill="#f4a261" stroke="#1d3557" stroke-width="2" />
+        <path d="M 35 15 L 55 15" stroke="#1d3557" stroke-width="2" />
+        <rect x="38" y="10" width="6" height="4" fill="#ffffff" stroke="#1d3557" stroke-width="1" />
+        <rect x="46" y="10" width="6" height="4" fill="#ffffff" stroke="#1d3557" stroke-width="1" />
+        <path d="M 35 30 L 55 30 L 60 60 L 30 60 Z" fill="#8b5a2b" stroke="#1d3557" stroke-width="2" />
+        <rect x="15" y="40" width="35" height="25" fill="#e9c46a" stroke="#1d3557" stroke-width="2" />
+        <line x1="32" y1="40" x2="32" y2="65" stroke="#1d3557" stroke-width="2" />
+        <line x1="18" y1="45" x2="28" y2="45" stroke="#1d3557" stroke-width="1" />
+        <line x1="18" y1="50" x2="28" y2="50" stroke="#1d3557" stroke-width="1" />
+        <line x1="18" y1="55" x2="28" y2="55" stroke="#1d3557" stroke-width="1" />
+        <line x1="36" y1="45" x2="46" y2="45" stroke="#1d3557" stroke-width="1" />
+        <line x1="36" y1="50" x2="46" y2="50" stroke="#1d3557" stroke-width="1" />
+        <line x1="36" y1="55" x2="46" y2="55" stroke="#1d3557" stroke-width="1" />
+        <path d="M 20 20 L 20 40" stroke="#1d3557" stroke-width="3" />
+        <path d="M 18 25 L 22 25" stroke="#1d3557" stroke-width="2" />
+      </g>
+      <text x="45" y="125" class="text-label">Implicit</text>
+      <text x="90" y="45" class="text-item-italic">You are</text>
+      <text x="90" y="70" class="text-item-italic">{elderly}. Please</text>
+      <text x="90" y="95" class="text-item-italic">rewrite this</text>
+      <text x="90" y="120" class="text-item-italic">passage.</text>
+    </g>
+  </g>
+
+  <!-- Connecting Arrows Right -->
+  <line x1="880" y1="450" x2="880" y2="90" class="arrow" />
+  <line x1="850" y1="450" x2="880" y2="450" class="arrow" />
+  <line x1="880" y1="90" x2="905" y2="90" class="arrow" marker-end="url(#arrow-right)" />
+  <line x1="880" y1="290" x2="905" y2="290" class="arrow" marker-end="url(#arrow-right)" />
+  <line x1="880" y1="490" x2="905" y2="490" class="arrow" marker-end="url(#arrow-right)" />
+
+</svg>

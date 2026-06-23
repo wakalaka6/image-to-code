@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <!-- Arrowheads -->
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e6b33" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5a3d8a" />
+    </marker>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+    
+    <!-- OpenAI Logo Path (simplified) -->
+    <g id="openai-logo">
+      <path d="M15.5,2.5 C12,2.5 9,4 7.5,6.5 C4.5,6.5 2.5,8.5 2.5,11.5 C2.5,14 4,16.5 6.5,18 C6.5,21 8.5,23 11.5,23 C14,23 16.5,21.5 18,19 C21,19 23,17 23,14 C23,11.5 21.5,9 19,7.5 C19,4.5 17,2.5 14,2.5 Z" fill="none" stroke="#000" stroke-width="1.5"/>
+      <circle cx="12.75" cy="12.75" r="3" fill="none" stroke="#000" stroke-width="1.5"/>
+      <path d="M12.75,9.75 L12.75,5 M15.75,12.75 L20,12.75 M9.75,12.75 L5,12.75 M12.75,15.75 L12.75,20 M10.5,10.5 L7,7 M15,15 L18.5,18.5 M15,10.5 L18.5,7 M10.5,15 L7,18.5" stroke="#000" stroke-width="1.5"/>
+    </g>
+
+    <!-- Document Icon -->
+    <g id="doc-icon">
+      <path d="M0,0 L20,0 L30,10 L30,40 L0,40 Z" fill="#fff" stroke="#000" stroke-width="1.5"/>
+      <path d="M20,0 L20,10 L30,10" fill="none" stroke="#000" stroke-width="1.5"/>
+    </g>
+
+    <!-- Tree Icon -->
+    <g id="tree-icon">
+      <rect x="12" y="0" width="6" height="6" fill="none" stroke="#000" stroke-width="1.5"/>
+      <rect x="4" y="14" width="6" height="6" fill="none" stroke="#000" stroke-width="1.5"/>
+      <rect x="20" y="14" width="6" height="6" fill="none" stroke="#000" stroke-width="1.5"/>
+      <path d="M15,6 L15,10 L7,10 L7,14 M15,10 L23,10 L23,14" fill="none" stroke="#000" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Backgrounds -->
+  <rect x="0" y="0" width="1200" height="680" fill="#ffffff" />
+  
+  <!-- Learning Section Background -->
+  <rect x="10" y="10" width="1180" height="340" rx="15" fill="#eef6ef" />
+  <text x="35" y="180" font-family="Arial" font-size="24" font-weight="bold" transform="rotate(-90 35,180)" text-anchor="middle">Learning</text>
+
+  <!-- Planning Section Background -->
+  <rect x="10" y="360" width="1180" height="310" rx="15" fill="#f3eef6" />
+  <text x="35" y="515" font-family="Arial" font-size="24" font-weight="bold" transform="rotate(-90 35,515)" text-anchor="middle">Planning</text>
+
+  <!-- ========================================== -->
+  <!-- LEARNING SECTION                           -->
+  <!-- ========================================== -->
+
+  <!-- DROID Dataset Cylinder -->
+  <g transform="translate(55, 105)">
+    <ellipse cx="38" cy="15" rx="38" ry="12" fill="#fff" stroke="#666" stroke-width="2"/>
+    <path d="M0,15 L0,135 A38,12 0 0,0 76,135 L76,15" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="38" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">DROID</text>
+    <text x="38" y="90" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Dataset</text>
+  </g>
+
+  <!-- (a) Keyframe Extraction -->
+  <rect x="155" y="20" width="305" height="320" rx="10" fill="#fff" />
+  <text x="307" y="45" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(a) Keyframe Extraction</text>
+  
+  <!-- Image placeholders for Keyframe Extraction -->
+  <g transform="translate(170, 60)">
+    <rect x="0" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="5" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 1</text>
+    <rect x="85" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="90" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 2</text>
+    <text x="175" y="35" font-family="Arial" font-size="14">...</text>
+    <rect x="190" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="195" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 7</text>
+  </g>
+  <g transform="translate(170, 140)">
+    <rect x="0" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="5" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 1</text>
+    <rect x="85" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="90" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 2</text>
+    <text x="175" y="35" font-family="Arial" font-size="14">...</text>
+    <rect x="190" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="195" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 9</text>
+  </g>
+  <text x="295" y="230" font-family="Arial" font-size="20" text-anchor="middle">⋮</text>
+  <g transform="translate(170, 250)">
+    <rect x="0" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="5" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 1</text>
+    <rect x="85" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="90" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 2</text>
+    <text x="175" y="35" font-family="Arial" font-size="14">...</text>
+    <rect x="190" y="0" width="80" height="60" fill="#ccc"/>
+    <text x="195" y="15" font-family="Arial" font-size="12" fill="#fff">Frame 8</text>
+  </g>
+
+  <!-- Arrows from Dataset to Keyframe Extraction -->
+  <path d="M135,180 L145,180 L145,100 L165,100" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M135,180 L165,180" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M135,180 L145,180 L145,280 L165,280" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+  <!-- (b) Atomic Domain Generation -->
+  <rect x="490" y="20" width="365" height="320" rx="10" fill="#fff" />
+  <text x="672" y="45" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(b) Atomic Domain Generation</text>
+
+  <!-- Domain Construction & Revision -->
+  <rect x="505" y="65" width="330" height="55" rx="8" fill="#c2e8cd" />
+  <use href="#openai-logo" x="512" y="75" transform="scale(1.2) translate(-85, -12)"/>
+  <text x="550" y="90" font-family="Arial" font-size="16">Domain Construction</text>
+  <text x="550" y="110" font-family="Arial" font-size="16">&amp; Revision</text>
+  <rect x="730" y="70" width="95" height="45" fill="#fff" stroke="#666" stroke-width="1"/>
+  <text x="735" y="82" font-family="Arial" font-size="10" fill="#0055a4">:predicates (...)</text>
+  <text x="735" y="92" font-family="Arial" font-size="10" fill="#1e6b33">:actions ...</text>
+  <text x="745" y="102" font-family="Arial" font-size="10" fill="#d9534f">:precondition (...)</text>
+  <text x="745" y="112" font-family="Arial" font-size="10" fill="#d9534f">:effect (...)</text>
+
+  <!-- Inner Green Box -->
+  <rect x="505" y="150" width="340" height="175" rx="10" fill="#d4f0dc" />
+  
+  <!-- Solvability Check -->
+  <rect x="515" y="160" width="135" height="65" rx="8" fill="#c2e8cd" />
+  <use href="#openai-logo" x="520" y="165" transform="scale(1.1) translate(-45, -15)"/>
+  <use href="#tree-icon" x="520" y="195" transform="scale(0.8) translate(130, 60)"/>
+  <text x="555" y="185" font-family="Arial" font-size="16">Solvability</text>
+  <text x="555" y="205" font-family="Arial" font-size="16">Check</text>
+
+  <!-- Solution Verification -->
+  <rect x="515" y="245" width="135" height="65" rx="8" fill="#c2e8cd" />
+  <use href="#openai-logo" x="520" y="255" transform="scale(1.1) translate(-45, -25)"/>
+  <text x="555" y="270" font-family="Arial" font-size="16">Solution</text>
+  <text x="555" y="290" font-family="Arial" font-size="16">Verification</text>
+
+  <!-- Closed-Loop Refinement -->
+  <use href="#openai-logo" x="760" y="160" transform="scale(1.3) translate(-130, -25)"/>
+  <text x="725" y="215" font-family="Arial" font-size="16">Closed-Loop</text>
+  <text x="730" y="235" font-family="Arial" font-size="16">Refinement</text>
+  <rect x="730" y="250" width="95" height="60" fill="#fff" stroke="#666" stroke-width="1"/>
+  <text x="735" y="262" font-family="Arial" font-size="10" fill="#0055a4">:predicates (...)</text>
+  <text x="735" y="272" font-family="Arial" font-size="10" fill="#1e6b33">:actions ...</text>
+  <text x="745" y="282" font-family="Arial" font-size="10" fill="#d9534f">:precondition (...)</text>
+  <text x="745" y="292" font-family="Arial" font-size="10" fill="#d9534f">:effect (...)</text>
+
+  <!-- Arrows in (b) -->
+  <path d="M670,120 L670,140" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <path d="M580,225 L580,240" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <path d="M715,185 L655,185" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="685" y="205" font-family="Arial" font-size="12">Feedback</text>
+  <path d="M655,280 L715,280" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="655" y="275" font-family="Arial" font-size="12">Feedback</text>
+
+  <!-- Arrows from (a) to (b) -->
+  <path d="M460,100 L480,100 L480,100 L495,100" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M460,180 L480,180 L480,180 L495,180" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M460,280 L480,280 L480,280 L495,280" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M480,100 L480,280" fill="none" stroke="#1e6b33" stroke-width="2"/>
+
+  <!-- (c) Domain Fusion -->
+  <rect x="885" y="20" width="305" height="320" rx="10" fill="#fff" />
+  <text x="1037" y="45" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(c) Domain Fusion</text>
+
+  <rect x="895" y="60" width="285" height="80" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <path d="M1180,60 L1190,70 L1190,140 L1180,140 Z" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="1037" y="78" font-family="Arial" font-size="16" text-anchor="middle">Unified Domain</text>
+
+  <g transform="translate(900, 85)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(1.8, 1.2)"/>
+    <text x="27" y="20" font-family="Arial" font-size="12" text-anchor="middle">Atomic</text>
+    <text x="27" y="35" font-family="Arial" font-size="12" text-anchor="middle">Domain</text>
+  </g>
+  <g transform="translate(965, 85)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(1.8, 1.2)"/>
+    <text x="27" y="20" font-family="Arial" font-size="12" text-anchor="middle">Atomic</text>
+    <text x="27" y="35" font-family="Arial" font-size="12" text-anchor="middle">Domain</text>
+  </g>
+  <text x="1035" y="115" font-family="Arial" font-size="14">...</text>
+  <g transform="translate(1050, 85)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(1.8, 1.2)"/>
+    <text x="27" y="20" font-family="Arial" font-size="12" text-anchor="middle">Atomic</text>
+    <text x="27" y="35" font-family="Arial" font-size="12" text-anchor="middle">Domain</text>
+  </g>
+  <g transform="translate(1115, 85)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(1.8, 1.2)"/>
+    <text x="27" y="20" font-family="Arial" font-size="12" text-anchor="middle">Atomic</text>
+    <text x="27" y="35" font-family="Arial" font-size="12" text-anchor="middle">Domain</text>
+  </g>
+
+  <g transform="translate(915, 175)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(3.2, 1.5)"/>
+    <text x="48" y="25" font-family="Arial" font-size="16" text-anchor="middle">Meta</text>
+    <text x="48" y="45" font-family="Arial" font-size="16" text-anchor="middle">Domain</text>
+  </g>
+  <g transform="translate(1065, 175)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(3.2, 1.5)"/>
+    <text x="48" y="25" font-family="Arial" font-size="16" text-anchor="middle">Meta</text>
+    <text x="48" y="45" font-family="Arial" font-size="16" text-anchor="middle">Domain</text>
+  </g>
+  <text x="1035" y="210" font-family="Arial" font-size="14">...</text>
+
+  <g transform="translate(975, 265)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(4, 1.6)"/>
+    <text x="60" y="25" font-family="Arial" font-size="18" text-anchor="middle">Meta</text>
+    <text x="60" y="45" font-family="Arial" font-size="18" text-anchor="middle">Domain</text>
+  </g>
+
+  <use href="#openai-logo" x="950" y="145" transform="scale(1.2) translate(-130, -10)"/>
+  <use href="#openai-logo" x="1100" y="145" transform="scale(1.2) translate(-130, -10)"/>
+  <use href="#openai-logo" x="1020" y="235" transform="scale(1.2) translate(-130, -10)"/>
+
+  <path d="M925,135 L950,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+  <path d="M990,135 L975,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+  <path d="M1080,135 L1105,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+  <path d="M1145,135 L1130,175" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+  <path d="M965,235 L1015,265" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+  <path d="M1115,235 L1065,265" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow-black)"/>
+
+  <!-- Arrow from (b) to (c) -->
+  <path d="M855,110 L870,110 L870,110 L885,110" fill="none" stroke="#1e6b33" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M845,280 L870,280 L870,110" fill="none" stroke="#1e6b33" stroke-width="2"/>
+
+  <!-- ========================================== -->
+  <!-- PLANNING SECTION                           -->
+  <!-- ========================================== -->
+
+  <!-- Instruction Text Box -->
+  <rect x="55" y="375" width="230" height="100" rx="10" fill="#fff" />
+  <text x="170" y="395" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">Move the corn from the pot</text>
+  <text x="170" y="415" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">into the orange bowl, wipe the</text>
+  <text x="170" y="435" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">table with the towel in the</text>
+  <text x="170" y="455" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">drawer and put it back to the</text>
+  <text x="170" y="475" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle">closed drawer.</text>
+
+  <!-- Image Placeholder -->
+  <rect x="60" y="490" width="210" height="160" fill="#ccc"/>
+
+  <!-- (d) Problem Generation -->
+  <rect x="315" y="375" width="245" height="280" rx="10" fill="#fff" />
+  <text x="437" y="400" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(d) Problem Generation</text>
+
+  <g transform="translate(325, 425)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(3, 1.5)"/>
+    <text x="45" y="25" font-family="Arial" font-size="16" text-anchor="middle">Meta</text>
+    <text x="45" y="45" font-family="Arial" font-size="16" text-anchor="middle">Domain</text>
+  </g>
+
+  <rect x="440" y="425" width="105" height="60" rx="8" fill="#e0d4f5" />
+  <text x="492" y="450" font-family="Arial" font-size="16" text-anchor="middle">Predicate</text>
+  <text x="492" y="470" font-family="Arial" font-size="16" text-anchor="middle">Grouping</text>
+
+  <path d="M415,455 L435,455" fill="none" stroke="#5a3d8a" stroke-width="2" marker-end="url(#arrow-purple)"/>
+
+  <rect x="325" y="505" width="220" height="60" rx="8" fill="#e0d4f5" />
+  <use href="#openai-logo" x="335" y="515" transform="scale(1.2) translate(-40, -10)"/>
+  <text x="435" y="530" font-family="Arial" font-size="16" text-anchor="middle">Predicate</text>
+  <text x="435" y="550" font-family="Arial" font-size="16" text-anchor="middle">&amp; Operator Filtering</text>
+
+  <path d="M492,485 L492,500" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+  <rect x="325" y="585" width="220" height="60" rx="8" fill="#e0d4f5" />
+  <use href="#openai-logo" x="335" y="595" transform="scale(1.2) translate(-40, -10)"/>
+  <text x="415" y="610" font-family="Arial" font-size="16" text-anchor="middle">Problem</text>
+  <text x="415" y="630" font-family="Arial" font-size="16" text-anchor="middle">Generation</text>
+  <rect x="470" y="595" width="65" height="40" fill="#fff" stroke="#666" stroke-width="1"/>
+  <text x="472" y="605" font-family="Arial" font-size="10" fill="#0055a4">:objects (...)</text>
+  <text x="472" y="615" font-family="Arial" font-size="10" fill="#1e6b33">:init ...</text>
+  <text x="472" y="625" font-family="Arial" font-size="10" fill="#d9534f">:goal (...)</text>
+
+  <path d="M435,565 L435,580" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+  <!-- Arrows from Instruction/Image to (d) -->
+  <path d="M285,440 L300,440 L300,535 L315,535" fill="none" stroke="#5a3d8a" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <path d="M270,570 L300,570 L300,535" fill="none" stroke="#5a3d8a" stroke-width="2"/>
+
+  <!-- (e) Planning -->
+  <rect x="580" y="375" width="205" height="280" rx="10" fill="#fff" />
+  <text x="682" y="400" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(e) Planning</text>
+
+  <rect x="595" y="425" width="165" height="60" rx="8" fill="#e0d4f5" />
+  <use href="#tree-icon" x="615" y="435" transform="scale(1.5) translate(-130, -10)"/>
+  <text x="695" y="450" font-family="Arial" font-size="16" text-anchor="middle">PDDL</text>
+  <text x="695" y="470" font-family="Arial" font-size="16" text-anchor="middle">Solver</text>
+
+  <g transform="translate(595, 505)">
+    <use href="#doc-icon" x="0" y="0" transform="scale(5.5, 3.5)"/>
+    <text x="10" y="20" font-family="Arial" font-size="14" fill="#1e6b33">remove_lid <tspan fill="#0055a4">(lid)</tspan></text>
+    <text x="10" y="40" font-family="Arial" font-size="14" fill="#1e6b33">pick_from_rack <tspan fill="#0055a4">(bowl)</tspan></text>
+    <text x="10" y="60" font-family="Arial" font-size="14" fill="#1e6b33">place_on_table <tspan fill="#0055a4">(bowl)</tspan></text>
+    <text x="10" y="80" font-family="Arial" font-size="14" fill="#1e6b33">...</text>
+    <text x="10" y="100" font-family="Arial" font-size="14" fill="#1e6b33">wipe_table <tspan fill="#0055a4">(towel)</tspan></text>
+    <text x="10" y="120" font-family="Arial" font-size="14" fill="#1e6b33">place_in_drawer <tspan fill="#0055a4">(towel)</tspan></text>
+    <text x="10" y="140" font-family="Arial" font-size="14" fill="#1e6b33">close_drawer <tspan fill="#0055a4">(drawer)</tspan></text>
+  </g>
+
+  <path d="M680,485 L680,500" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+  <!-- Arrow from (d) to (e) -->
+  <path d="M545,615 L565,615 L565,455 L585,455" fill="none" stroke="#5a3d8a" stroke-width="2" marker-end="url(#arrow-purple)"/>
+
+  <!-- (f) Execution -->
+  <rect x="805" y="375" width="385" height="280" rx="10" fill="#fff" />
+  <text x="997" y="400" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">(f) Execution</text>
+
+  <!-- Image Grid Placeholders -->
+  <g transform="translate(815, 415)">
+    <rect x="0" y="0" width="85" height="70" fill="#ccc"/>
+    <rect x="90" y="0" width="85" height="70" fill="#ccc"/>
+    <rect x="180" y="0" width="85" height="70" fill="#ccc"/>
+    <rect x="270" y="0" width="85" height="70" fill="#ccc"/>
+    
+    <rect x="0" y="75" width="85" height="70" fill="#ccc"/>
+    <rect x="90" y="75" width="85" height="70" fill="#ccc"/>
+    <rect x="180" y="75" width="85" height="70" fill="#ccc"/>
+    <rect x="270" y="75" width="85" height="70" fill="#ccc"/>
+    
+    <rect x="0" y="150" width="85" height="70" fill="#ccc"/>
+    <rect x="90" y="150" width="85" height="70" fill="#ccc"/>
+    <rect x="180" y="150" width="85" height="70" fill="#ccc"/>
+    <rect x="270" y="150" width="85" height="70" fill="#ccc"/>
+  </g>
+
+  <!-- Arrow from (e) to (f) -->
+  <path d="M760,580 L785,580 L785,450 L805,450" fill="none" stroke="#5a3d8a" stroke-width="2" marker-end="url(#arrow-purple)"/>
+
+</svg>

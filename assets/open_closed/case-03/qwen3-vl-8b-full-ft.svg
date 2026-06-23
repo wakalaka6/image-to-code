@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.0 9.0 1850.0 1130.0" style="font-family: Arial, sans-serif; background-color: white;">
+  <defs>
+    <!-- Colors -->
+    <style>
+      .text-main { font-size: 36px; fill: #000000; }
+      .text-sub { font-size: 24px; fill: #000000; }
+      .text-title { font-size: 48px; fill: #000000; font-weight: bold; }
+      .text-math { font-size: 32px; fill: #000000; }
+      .text-label { font-size: 32px; fill: #808080; font-style: italic; font-family: serif; }
+      
+      .stroke-main { stroke: #002D40; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-thin { stroke: #000000; stroke-width: 2; fill: none; }
+      .stroke-dashed { stroke: #BDBDBD; stroke-width: 5; stroke-dasharray: 15, 10; fill: none; }
+      .stroke-orange { stroke: #D95F02; stroke-width: 4; fill: none; }
+      
+      .fill-peach { fill: #FBE5D6; }
+      .fill-blue-light { fill: #DDEBF7; }
+      .fill-blue-solid { fill: #4F91CD; }
+      .fill-grey { fill: #E7E6E6; }
+      .fill-orange { fill: #F4C7AA; }
+      .fill-green { fill: #39D557; }
+      .fill-white { fill: #FFFFFF; }
+      
+      .arrow-line { stroke: #1F6E8C; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1F6E8C" />
+    </marker>
+
+    <!-- Hatch Pattern for Discarded -->
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#BDBDBD" stroke-width="4" />
+    </pattern>
+
+    <!-- Icons -->
+    <g id="icon-robot">
+      <rect x="-30" y="-25" width="60" height="50" rx="8" class="stroke-main" />
+      <circle cx="-15" cy="-10" r="5" class="stroke-main" />
+      <circle cx="15" cy="-10" r="5" class="stroke-main" />
+      <path d="M-10 10 Q0 18 10 10" class="stroke-main" />
+      <line x1="0" y1="-25" x2="0" y2="-35" class="stroke-main" />
+      <circle cx="0" cy="-38" r="4" class="stroke-main" />
+      <rect x="-36" y="-15" width="6" height="20" rx="2" class="stroke-main" />
+      <rect x="30" y="-15" width="6" height="20" rx="2" class="stroke-main" />
+    </g>
+
+    <g id="icon-retriever">
+      <circle cx="0" cy="0" r="22" class="stroke-main" />
+      <line x1="15" y1="15" x2="28" y2="28" class="stroke-main" stroke-width="6" />
+      <circle cx="26" cy="26" r="4" fill="black" />
+    </g>
+
+    <g id="icon-answer">
+      <circle cx="0" cy="0" r="30" class="fill-green stroke-main" />
+      <path d="M-15 -10 L-5 20 L15 -10 L20 -15 L10 -25 L-10 -25 Z" fill="none" stroke="white" stroke-width="3" stroke-linejoin="round" />
+      <text x="0" y="10" text-anchor="middle" fill="white" font-size="36" font-weight="bold">A</text>
+    </g>
+
+    <g id="icon-fire">
+      <path d="M0 40 Q-15 40 -20 20 Q-25 0 0 -15 Q25 0 20 20 Q15 40 0 40 Z" fill="#FF5722" />
+      <path d="M0 35 Q-8 35 -12 22 Q-15 10 0 0 Q15 10 12 22 Q8 35 0 35 Z" fill="#FFC107" />
+    </g>
+
+    <g id="icon-medal">
+      <path d="M-15 15 L-25 35 L-10 25 L0 35 L10 25 L25 35 L15 15" fill="#0078D7" />
+      <circle cx="0" cy="0" r="22" fill="#FFC107" stroke="#E65100" stroke-width="2" />
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#E65100" stroke-width="1" />
+      <path d="M0 -18 L4 -12 L12 -12 L6 -4 L9 6 L4 4 L0 10 L-4 4 L-9 6 L-6 -4 L-12 -12 L-4 -12 Z" fill="none" stroke="#E65100" stroke-width="1.5" />
+    </g>
+  </defs>
+
+  <!-- ================= LEGEND ================= -->
+  <g transform="translate(130, 15)">
+    <rect x="0" y="0" width="1200" height="90" rx="15" class="stroke-orange" />
+    
+    <g transform="translate(80, 55)">
+      <use href="#icon-robot" transform="scale(1.2)" />
+      <text x="60" y="10" class="text-main">LLM</text>
+    </g>
+    
+    <g transform="translate(280, 55)">
+      <use href="#icon-retriever" transform="scale(1.2)" />
+      <text x="50" y="10" class="text-main">retriever</text>
+    </g>
+    
+    <g transform="translate(480, 55)">
+      <use href="#icon-answer" transform="scale(1.2)" />
+      <text x="60" y="10" class="text-main">answer</text>
+    </g>
+    
+    <g transform="translate(700, 25)">
+      <rect x="0" y="0" width="60" height="60" rx="10" class="fill-blue-solid stroke-main" stroke-width="3" />
+      <text x="80" y="40" class="text-main">chosen state</text>
+    </g>
+    
+    <g transform="translate(980, 25)">
+      <rect x="0" y="0" width="60" height="60" rx="10" fill="url(#hatch)" class="stroke-main" />
+      <text x="80" y="40" class="text-main">discarded state</text>
+    </g>
+  </g>
+
+  <!-- ================= DIVIDERS ================= -->
+  <line x1="780" y1="130" x2="780" y2="900" class="stroke-dashed" />
+  <line x1="780" y1="280" x2="1600" y2="280" class="stroke-dashed" />
+  
+  <text x="800" y="160" class="text-label" style="font-size: 40px;">Training</text>
+  <text x="800" y="940" class="text-label" style="font-size: 40px;">Inference</text>
+  <text x="10" y="940" class="text-label" style="font-size: 40px;">Rejection Sampling</text>
+  <path d="M370 880 Q380 900 400 880 Q410 870 400 860 Q390 850 380 870" fill="none" stroke="#00B050" stroke-width="6" stroke-linecap="round" />
+
+  <!-- ================= LEFT SECTION: REJECTION SAMPLING ================= -->
+  <g transform="translate(0, 130)">
+    <!-- Root -->
+    <rect x="250" y="20" width="340" height="80" rx="15" fill="#F2F2F2" class="stroke-main" />
+    <text x="420" y="70" text-anchor="middle" class="text-main" style="font-size: 48px;">Query</text>
+
+    <!-- Branches -->
+    <path d="M400 100 L120 150" class="arrow-line" />
+    <path d="M400 100 L400 150" class="arrow-line" />
+    <path d="M400 100 L630 150" class="arrow-line" />
+
+    <!-- Column 1 -->
+    <g transform="translate(120, 150)">
+      <use href="#icon-robot" x="0" y="0" transform="scale(1.5)" />
+      <rect x="-120" y="40" width="280" height="90" rx="15" class="fill-peach stroke-main" />
+      <text x="20" y="95" text-anchor="middle" class="text-main">sub-query 1</text>
+      
+      <line x1="20" y1="130" x2="20" y2="180" class="arrow-line" />
+      <use href="#icon-retriever" x="-40" y="155" transform="scale(1.2)" />
+      <use href="#icon-robot" x="60" y="155" transform="scale(1.2)" />
+      
+      <rect x="-120" y="180" width="280" height="90" rx="15" class="fill-blue-light stroke-main" />
+      <text x="20" y="235" text-anchor="middle" class="text-main">sub-answer 1</text>
+      
+      <text x="20" y="295" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      
+      <line x1="20" y1="310" x2="20" y2="360" class="arrow-line" />
+      <use href="#icon-robot" x="0" y="380" transform="scale(1.5)" />
+      
+      <rect x="-120" y="360" width="280" height="90" rx="15" class="fill-peach stroke-main" />
+      <text x="20" y="415" text-anchor="middle" class="text-main">sub-query n</text>
+      
+      <line x1="20" y1="450" x2="20" y2="500" class="arrow-line" />
+      <use href="#icon-retriever" x="-40" y="475" transform="scale(1.2)" />
+      <use href="#icon-robot" x="60" y="475" transform="scale(1.2)" />
+      
+      <rect x="-120" y="500" width="280" height="90" rx="15" class="fill-blue-light stroke-main" />
+      <text x="20" y="555" text-anchor="middle" class="text-main">sub-answer n</text>
+      
+      <line x1="20" y1="590" x2="20" y2="660" class="arrow-line" />
+      <use href="#icon-answer" x="-40" y="680" transform="scale(1.2)" />
+      <use href="#icon-robot" x="60" y="680" transform="scale(1.2)" />
+      <text x="20" y="730" text-anchor="middle" class="text-math">P(Ans | Chain 1)</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(400, 150)">
+      <rect x="-110" y="40" width="280" height="90" rx="15" class="fill-peach stroke-main" />
+      <text x="30" y="95" text-anchor="middle" class="text-main">sub-query 1<tspan dy="-10" font-size="24">*</tspan></text>
+      
+      <line x1="30" y1="130" x2="30" y2="180" class="arrow-line" />
+      <use href="#icon-retriever" x="-30" y="155" transform="scale(1.2)" />
+      <use href="#icon-robot" x="70" y="155" transform="scale(1.2)" />
+      
+      <rect x="-110" y="180" width="280" height="90" rx="15" class="fill-blue-light stroke-main" />
+      <text x="30" y="235" text-anchor="middle" class="text-main">sub-answer 1<tspan dy="-10" font-size="24">*</tspan></text>
+      
+      <text x="30" y="295" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      
+      <line x1="30" y1="310" x2="30" y2="360" class="arrow-line" />
+      <use href="#icon-robot" x="30" y="380" transform="scale(1.5)" />
+      
+      <rect x="-110" y="360" width="280" height="90" rx="15" class="fill-peach stroke-main" />
+      <text x="30" y="415" text-anchor="middle" class="text-main">sub-query n<tspan dy="-10" font-size="24">*</tspan></text>
+      
+      <line x1="30" y1="450" x2="30" y2="500" class="arrow-line" />
+      <use href="#icon-retriever" x="-30" y="475" transform="scale(1.2)" />
+      <use href="#icon-robot" x="70" y="475" transform="scale(1.2)" />
+      
+      <rect x="-110" y="500" width="280" height="90" rx="15" class="fill-blue-light stroke-main" />
+      <text x="30" y="555" text-anchor="middle" class="text-main">sub-answer n<tspan dy="-10" font-size="24">*</tspan></text>
+      
+      <line x1="30" y1="590" x2="30" y2="660" class="arrow-line" />
+      <use href="#icon-answer" x="-30" y="680" transform="scale(1.2)" />
+      <use href="#icon-robot" x="70" y="680" transform="scale(1.2)" />
+      <text x="30" y="730" text-anchor="middle" class="text-math">P(Ans | Chain 2)</text>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(630, 150)">
+      <text x="0" y="95" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <text x="0" y="235" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <text x="0" y="415" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <text x="0" y="555" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      
+      <line x1="0" y1="600" x2="0" y2="660" class="arrow-line" />
+      <use href="#icon-answer" x="-30" y="680" transform="scale(1.2)" />
+      <use href="#icon-robot" x="70" y="680" transform="scale(1.2)" />
+      <text x="0" y="730" text-anchor="middle" class="text-math">P(Ans | Chain 3)</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT SECTION: INFERENCE ================= -->
+  <g transform="translate(780, 130)">
+    
+    <!-- Top Flow -->
+    <g transform="translate(50, 50)">
+      <!-- Current State Bubble -->
+      <path d="M0 10 Q0 0 10 0 L250 0 Q260 0 260 10 L260 90 Q260 100 250 100 L100 100 L80 120 L80 100 L10 100 Q0 100 0 90 Z" fill="white" class="stroke-main" stroke-width="6" />
+      <text x="130" y="60" text-anchor="middle" class="text-main">Current State</text>
+      
+      <!-- Arrow 1 -->
+      <path d="M280 50 L360 50" stroke="#00AEEF" stroke-width="4" />
+      <path d="M350 40 L365 55 L350 70" fill="none" stroke="#00AEEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- LLM Box -->
+      <rect x="380" y="10" width="340" height="90" rx="15" class="fill-orange stroke-main" />
+      <use href="#icon-fire" x="400" y="55" />
+      <text x="550" y="65" text-anchor="middle" class="text-main">LLM</text>
+      
+      <!-- Arrow 2 -->
+      <path d="M740 50 L820 50" stroke="#00AEEF" stroke-width="4" />
+      <path d="M810 40 L825 55 L810 70" fill="none" stroke="#00AEEF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Next Action Bubble -->
+      <path d="M840 10 Q840 0 850 0 L990 0 Q1000 0 1000 10 L1000 90 Q1000 100 990 100 L940 100 L920 120 L920 100 L840 100 Q840 100 840 90 Z" fill="white" class="stroke-main" stroke-width="6" />
+      <text x="920" y="60" text-anchor="middle" class="text-main">Next Action</text>
+    </g>
+
+    <!-- Tree 1: Greedy -->
+    <g transform="translate(50, 200)">
+      <ellipse cx="100" cy="50" rx="120" ry="50" class="fill-grey stroke-main" />
+      <text x="100" y="60" text-anchor="middle" class="text-main">query</text>
+      
+      <line x1="100" y1="100" x2="100" y2="180" class="arrow-line" />
+      
+      <rect x="70" y="180" width="70" height="70" rx="10" class="fill-blue-solid stroke-main" />
+      
+      <line x1="100" y1="250" x2="100" y2="310" class="arrow-line" />
+      
+      <text x="100" y="340" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      
+      <line x1="100" y1="360" x2="100" y2="420" class="arrow-line" />
+      
+      <rect x="70" y="420" width="70" height="70" rx="10" class="fill-blue-solid stroke-main" />
+      
+      <line x1="100" y1="490" x2="100" y2="550" class="arrow-line" />
+      
+      <ellipse cx="100" cy="590" rx="130" ry="50" class="fill-blue-light stroke-main" />
+      <text x="100" y="600" text-anchor="middle" class="text-main">output</text>
+      
+      <text x="100" y="680" text-anchor="middle" class="text-title">Greedy</text>
+    </g>
+
+    <!-- Tree 2: Best-of-N -->
+    <g transform="translate(280, 200)">
+      <ellipse cx="150" cy="50" rx="120" ry="50" class="fill-grey stroke-main" />
+      <text x="150" y="60" text-anchor="middle" class="text-main">query</text>
+      
+      <!-- Branches -->
+      <line x1="150" y1="100" x2="20" y2="180" class="arrow-line" />
+      <line x1="150" y1="100" x2="150" y2="180" class="arrow-line" />
+      <line x1="150" y1="100" x2="280" y2="180" class="arrow-line" />
+      
+      <!-- Row 1 Nodes -->
+      <rect x="-10" y="180" width="70" height="70" rx="10" class="fill-blue-solid stroke-main" />
+      <rect x="125" y="180" width="70" height="70" rx="10" fill="url(#hatch)" class="stroke-main" />
+      <rect x="250" y="180" width="70" height="70" rx="10" fill="url(#hatch)" class="stroke-main" />
+      
+      <!-- Arrows Row 1 -->
+      <line x1="25" y1="250" x2="25" y2="310" class="arrow-line" />
+      <line x1="160" y1="250" x2="160" y2="310" class="arrow-line" />
+      <line x1="285" y1="250" x2="285" y2="310" class="arrow-line" />
+      
+      <!-- Dots -->
+      <text x="25" y="340" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <text x="160" y="340" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <text x="285" y="340" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      
+      <!-- Arrows Row 2 -->
+      <line x1="25" y1="360" x2="25" y2="420" class="arrow-line" />
+      <line x1="160" y1="360" x2="160" y2="420" class="arrow-line" />
+      <line x1="285" y1="360" x2="285" y2="420" class="arrow-line" />
+      
+      <!-- Row 2 Nodes -->
+      <rect x="-10" y="420" width="70" height="70" rx="10" class="fill-blue-solid stroke-main" />
+      <rect x="125" y="420" width="70" height="70" rx="10" fill="url(#hatch)" class="stroke-main" />
+      <rect x="250" y="420" width="70" height="70" rx="10" fill="url(#hatch)" class="stroke-main" />
+      
+      <!-- Convergence -->
+      <line x1="25" y1="490" x2="180" y2="560" class="arrow-line" />
+      <line x1="160" y1="490" x2="180" y2="560" stroke="#BDBDBD" stroke-width="4" />
+      <line x1="285" y1="490" x2="180" y2="560" stroke="#BDBDBD" stroke-width="4" />
+      
+      <!-- Medal -->
+      <use href="#icon-medal" x="10" y="520" transform="scale(1.2)" />
+      
+      <!-- Output -->
+      <ellipse cx="180" cy="590" rx="120" ry="50" class="fill-blue-light stroke-main" />
+      <text x="180" y="600" text-anchor="middle" class="text-main">output</text>
+      
+      <text x="180" y="680" text-anchor="middle" class="text-title">Best-of-N</text>
+    </g>
+
+    <!-- Tree 3: Tree Search -->
+    <g transform="translate(550, 200)">
+      <ellipse cx="150" cy="50" rx="120" ry="50" class="fill-grey stroke-main" />
+      <text x="150" y="60" text-anchor="middle" class="text-main">query</text>
+      
+      <!-- Branches -->
+      <line x1="150" y1="100" x2="40" y2="180" class="arrow-line" />
+      <line x1="150" y1="100" x2="150" y2="180" class="arrow-line" />
+      <line x1="150" y1="100" x2="260" y2="180" class="arrow-line" />
+      
+      <!-- Row 1 Nodes (Discarded) -->
+      <rect x="20" y="180" width="50" height="50" rx="8" fill="url(#hatch)" class="stroke-main" />
+      <rect x="135" y="180" width="50" height="50" rx="8" fill="url(#hatch)" class="stroke-main" />
+      <rect x="250" y="180" width="50" height="50" rx="8" fill="url(#hatch)" class="stroke-main" />
+      
+      <!-- Rollout Arrows Left -->
+      <line x1="45" y1="230" x2="45" y2="280" class="arrow-line" />
+      <line x1="160" y1="230" x2="160" y2="280" class="arrow-line" />
+      
+      <!-- Rollout Box Left -->
+      <rect x="10" y="280" width="170" height="250" fill="none" class="stroke-main" />
+      <text x="95" y="460" text-anchor="middle" class="text-main">rollouts</text>
+      
+      <!-- Inside Rollout Left -->
+      <rect x="30" y="300" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <rect x="120" y="300" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <text x="95" y="370" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <line x1="45" y1="390" x2="45" y2="430" class="arrow-line" />
+      <line x1="160" y1="390" x2="160" y2="430" class="arrow-line" />
+      <rect x="30" y="440" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <rect x="120" y="440" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+
+      <!-- Dots Center -->
+      <text x="150" y="300" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <line x1="150" y1="320" x2="150" y2="420" class="arrow-line" />
+      <rect x="120" y="420" width="60" height="70" rx="10" class="fill-blue-solid stroke-main" />
+      <line x1="150" y1="490" x2="150" y2="550" class="arrow-line" />
+      <ellipse cx="150" cy="590" rx="120" ry="50" class="fill-blue-light stroke-main" />
+      <text x="150" y="600" text-anchor="middle" class="text-main">output</text>
+
+      <!-- Rollout Arrows Right -->
+      <line x1="265" y1="230" x2="300" y2="280" class="arrow-line" />
+      
+      <!-- Rollout Box Right -->
+      <rect x="250" y="280" width="170" height="250" fill="none" class="stroke-main" />
+      <text x="335" y="460" text-anchor="middle" class="text-main">rollouts</text>
+      
+      <!-- Inside Rollout Right -->
+      <rect x="270" y="300" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <rect x="360" y="300" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <text x="335" y="370" text-anchor="middle" class="text-main" style="font-weight:bold; letter-spacing: 5px;">... ...</text>
+      <line x1="285" y1="390" x2="285" y2="430" class="arrow-line" />
+      <line x1="375" y1="390" x2="375" y2="430" class="arrow-line" />
+      <rect x="270" y="440" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+      <rect x="360" y="440" width="40" height="35" rx="5" fill="url(#hatch)" class="stroke-main" />
+
+      <text x="235" y="680" text-anchor="middle" class="text-title">Tree Search</text>
+    </g>
+  </g>
+</svg>
