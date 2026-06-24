@@ -1,0 +1,501 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 -30.8 1666.0 718.8" style="background-color: white;">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; }
+      .bold { font-weight: bold; }
+      .italic { font-style: italic; }
+      .text-lg { font-size: 48px; }
+      .text-md { font-size: 32px; }
+      .text-sm { font-size: 24px; }
+      .box-stroke { stroke: black; stroke-width: 3; fill: none; }
+      .dashed { stroke-dasharray: 10, 5; }
+    </style>
+
+    <!-- Arrow Markers -->
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="black" />
+    </marker>
+    <marker id="arrowHeadGrey" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#D9D9D9" />
+    </marker>
+
+    <!-- Gradients -->
+    <linearGradient id="transformerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E6C9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFF59D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8A80;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Patterns for fake images -->
+    <pattern id="heatmapPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="5" height="5" fill="#00441b"/>
+      <rect x="5" y="0" width="5" height="5" fill="#008000"/>
+      <rect x="0" y="5" width="5" height="5" fill="#008000"/>
+      <rect x="5" y="5" width="5" height="5" fill="#FFFF00"/>
+    </pattern>
+    <pattern id="cityPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#444"/>
+      <rect x="2" y="2" width="4" height="4" fill="#888"/>
+      <rect x="10" y="10" width="6" height="6" fill="#aaa"/>
+    </pattern>
+    <pattern id="mapPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="white"/>
+      <path d="M0,20 L50,10 M10,50 L20,0" stroke="#555" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#006400"/>
+        <stop offset="100%" style="stop-color:#32CD32"/>
+    </linearGradient>
+    
+    <!-- Brain Icon Group -->
+    <g id="brainIcon">
+        <!-- Left Hemisphere -->
+        <path d="M30,10 C10,10 0,30 5,40 C0,50 5,70 20,75 C10,85 20,100 40,100 C50,100 50,90 50,80 L50,20 L30,10 Z" fill="none" stroke="#3F3598" stroke-width="8" stroke-linecap="round"/>
+        <path d="M20,35 C25,30 35,30 40,40 C35,50 25,50 20,45" fill="none" stroke="#F69E3D" stroke-width="6" stroke-linecap="round"/>
+        <path d="M15,60 C20,55 30,55 35,65" fill="none" stroke="#F69E3D" stroke-width="6" stroke-linecap="round"/>
+        <!-- Right Hemisphere -->
+        <path d="M70,10 L80,20 C90,0 110,0 120,10 C130,20 130,40 125,50 C130,60 130,80 120,90 C110,100 90,100 80,100 L80,80 C85,75 85,65 80,60" fill="none" stroke="#3F3598" stroke-width="8" stroke-linecap="round"/>
+        <path d="M90,35 C85,30 75,30 70,40 C75,50 85,50 90,45" fill="none" stroke="#F69E3D" stroke-width="6" stroke-linecap="round"/>
+        <path d="M95,60 C90,55 80,55 75,65" fill="none" stroke="#F69E3D" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Isometric Cube -->
+    <g id="isoCube">
+        <path d="M0,0 L20,-10 L40,0 L20,10 Z" fill="#5B9BD5"/> <!-- Top -->
+        <path d="M0,0 L20,10 L20,40 L0,30 Z" fill="#41719C"/> <!-- Left -->
+        <path d="M20,10 L40,0 L40,30 L20,40 Z" fill="#2F5597"/> <!-- Right -->
+        <!-- Grid lines -->
+        <path d="M10,-5 L30,5 M20,0 L20,30 M10,5 L30,-5" stroke="white" stroke-width="1" fill="none"/>
+    </g>
+  </defs>
+
+  <!-- ================= SECTION A: DATASETS ================= -->
+  <g transform="translate(10, 10)">
+    <!-- Main Container -->
+    <rect x="0" y="20" width="420" height="560" rx="30" ry="30" class="box-stroke" />
+    
+    <!-- Top Half -->
+    <text x="20" y="400" class="serif text-lg">Different</text>
+    <text x="15" y="450" class="serif text-lg">data types</text>
+    <text x="280" y="280" class="serif text-lg">Sequential</text>
+    <text x="305" y="330" class="serif text-lg">format</text>
+
+    <!-- 3D Grids (Left) -->
+    <g transform="translate(20, 50)">
+        <!-- Top Grid -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="80" height="100" fill="url(#heatmapPattern)" stroke="white" stroke-width="1"/>
+            <rect x="30" y="-10" width="80" height="100" fill="url(#heatmapPattern)" stroke="white" stroke-width="1"/>
+            <rect x="60" y="-20" width="80" height="100" fill="url(#heatmapPattern)" stroke="white" stroke-width="1"/>
+        </g>
+        <!-- Arrow -->
+        <path d="M100,40 L130,40 L130,20 L150,50 L130,80 L130,60 L100,60 Z" fill="#D9D9D9"/>
+    </g>
+
+    <!-- Graph Grids (Left Bottom) -->
+    <g transform="translate(20, 160)">
+        <g transform="translate(0, 30)">
+            <rect x="0" y="0" width="100" height="80" fill="white" stroke="#808080" stroke-width="5"/>
+            <circle cx="20" cy="20" r="10" fill="#A9D18E"/><circle cx="80" cy="20" r="10" fill="#A9D18E"/>
+            <circle cx="50" cy="50" r="10" fill="#A9D18E"/><circle cx="20" cy="70" r="10" fill="#A9D18E"/>
+            <line x1="20" y1="20" x2="50" y2="50" stroke="#808080" stroke-width="4"/><line x1="80" y1="20" x2="50" y2="50" stroke="#808080" stroke-width="4"/>
+        </g>
+        <g transform="translate(30, 0)">
+            <rect x="0" y="0" width="100" height="80" fill="white" stroke="#808080" stroke-width="5"/>
+            <circle cx="20" cy="20" r="10" fill="#A9D18E"/><circle cx="80" cy="20" r="10" fill="#A9D18E"/>
+            <circle cx="50" cy="50" r="10" fill="#A9D18E"/><circle cx="20" cy="70" r="10" fill="#A9D18E"/>
+            <line x1="20" y1="20" x2="50" y2="50" stroke="#808080" stroke-width="4"/><line x1="80" y1="20" x2="50" y2="50" stroke="#808080" stroke-width="4"/>
+        </g>
+        <!-- Arrow -->
+        <path d="M100,50 L130,50 L130,30 L150,60 L130,90 L130,70 L100,70 Z" fill="#D9D9D9"/>
+    </g>
+
+    <!-- Blue Grids (Top Right) -->
+    <g transform="translate(160, 40)">
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="100" height="100" fill="white" stroke="#5B9BD5" stroke-width="2"/>
+            <rect x="100" y="0" width="100" height="100" fill="white" stroke="#5B9BD5" stroke-width="2"/>
+            <rect x="0" y="100" width="100" height="100" fill="white" stroke="#5B9BD5" stroke-width="2"/>
+            <rect x="100" y="100" width="100" height="100" fill="white" stroke="#5B9BD5" stroke-width="2"/>
+            <!-- Nodes -->
+            <circle cx="20" cy="20" r="10" fill="#706898"/><circle cx="80" cy="20" r="10" fill="#706898"/>
+            <circle cx="20" cy="80" r="10" fill="#706898"/><circle cx="80" cy="80" r="10" fill="#706898"/>
+            <line x1="20" y1="20" x2="20" y2="80" stroke="#5B9BD5" stroke-width="4"/><line x1="80" y1="20" x2="80" y2="80" stroke="#5B9BD5" stroke-width="4"/>
+            <line x1="20" y1="20" x2="80" y2="20" stroke="#5B9BD5" stroke-width="4"/><line x1="20" y1="80" x2="80" y2="80" stroke="#5B9BD5" stroke-width="4"/>
+        </g>
+        <!-- Pink Overlays -->
+        <ellipse cx="50" cy="40" rx="70" ry="50" fill="pink" fill-opacity="0.4" transform="rotate(-10 50 40)"/>
+        <ellipse cx="150" cy="40" rx="70" ry="50" fill="pink" fill-opacity="0.4" transform="rotate(-10 150 40)"/>
+        <ellipse cx="50" cy="140" rx="70" ry="50" fill="pink" fill-opacity="0.4" transform="rotate(-10 50 140)"/>
+        <ellipse cx="150" cy="140" rx="70" ry="50" fill="pink" fill-opacity="0.4" transform="rotate(-10 150 140)"/>
+    </g>
+
+    <!-- Blue Cubes (Right Column) -->
+    <g transform="translate(380, 80)">
+        <use href="#isoCube" y="0"/>
+        <use href="#isoCube" y="50"/>
+        <use href="#isoCube" y="100"/>
+        <circle cx="20" cy="120" r="3" fill="black"/><circle cx="20" cy="128" r="3" fill="black"/><circle cx="20" cy="136" r="3" fill="black"/>
+        <use href="#isoCube" y="150"/>
+        <use href="#isoCube" y="200"/>
+        <!-- Arrow -->
+        <path d="M-60,80 L-30,80 L-30,60 L10,90 L-30,120 L-30,100 L-60,100 Z" fill="#D9D9D9"/>
+    </g>
+
+    <!-- Green Graph Grids (Bottom Right) -->
+    <g transform="translate(160, 160)">
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="100" height="100" fill="#E6F0FF" stroke="none"/>
+            <rect x="100" y="0" width="100" height="100" fill="#E6F0FF" stroke="none"/>
+            <rect x="0" y="100" width="100" height="100" fill="#E6F0FF" stroke="none"/>
+            <rect x="100" y="100" width="100" height="100" fill="#E6F0FF" stroke="none"/>
+            <!-- Graph Lines -->
+            <path d="M20,20 L50,50 L20,80 M80,20 L50,50 L80,80 M50,50 L120,50" stroke="#2E8B57" stroke-width="3" fill="none"/>
+            <circle cx="20" cy="20" r="8" fill="#2E8B57"/><circle cx="50" cy="50" r="8" fill="#2E8B57"/>
+            <circle cx="20" cy="80" r="8" fill="#2E8B57"/><circle cx="80" cy="20" r="8" fill="#2E8B57"/>
+            <circle cx="80" cy="80" r="8" fill="#2E8B57"/><circle cx="120" cy="50" r="8" fill="#2E8B57"/>
+        </g>
+        <!-- Blue Overlays -->
+        <ellipse cx="50" cy="40" rx="70" ry="50" fill="#5B9BD5" fill-opacity="0.3" transform="rotate(-10 50 40)"/>
+        <ellipse cx="150" cy="40" rx="70" ry="50" fill="#5B9BD5" fill-opacity="0.3" transform="rotate(-10 150 40)"/>
+        <ellipse cx="50" cy="140" rx="70" ry="50" fill="#5B9BD5" fill-opacity="0.3" transform="rotate(-10 50 140)"/>
+        <ellipse cx="150" cy="140" rx="70" ry="50" fill="#5B9BD5" fill-opacity="0.3" transform="rotate(-10 150 140)"/>
+    </g>
+
+    <!-- Dotted Divider -->
+    <line x1="0" y1="320" x2="420" y2="320" stroke="black" stroke-width="4" stroke-dasharray="5,5" />
+
+    <!-- Bottom Half: Real Images -->
+    <!-- Col 1 -->
+    <g transform="translate(20, 340)">
+        <!-- Night Map -->
+        <rect x="0" y="0" width="120" height="120" fill="#003366"/>
+        <path d="M0,120 L40,40 L60,20 L120,60 L120,120 Z" fill="#999"/> <!-- Land -->
+        <circle cx="20" cy="80" r="5" fill="yellow" opacity="0.7"/><circle cx="40" cy="50" r="3" fill="yellow" opacity="0.7"/>
+        <circle cx="100" cy="100" r="8" fill="yellow" opacity="0.7"/>
+        <!-- City Aerial -->
+        <rect x="0" y="140" width="120" height="120" fill="#f0f0f0"/>
+        <path d="M0,140 L120,260 M120,140 L0,260" stroke="#555" stroke-width="2"/>
+        <rect x="10" y="150" width="10" height="10" fill="#ddd"/><rect x="30" y="160" width="10" height="10" fill="#ddd"/>
+    </g>
+    <!-- Col 2 -->
+    <g transform="translate(155, 340)">
+        <!-- City Night -->
+        <rect x="0" y="0" width="140" height="120" fill="#222"/>
+        <path d="M0,120 L140,60 L140,120 Z" fill="#444"/>
+        <circle cx="70" cy="60" r="10" fill="#FFFFE0" opacity="0.8"/> <!-- Light source -->
+        <rect x="20" y="80" width="10" height="40" fill="#FFEB3B" opacity="0.5"/>
+        <rect x="100" y="70" width="15" height="50" fill="#FFEB3B" opacity="0.5"/>
+        <!-- Map Grid -->
+        <rect x="0" y="140" width="140" height="120" fill="url(#mapPattern)"/>
+        <rect x="0" y="140" width="140" height="120" fill="none" stroke="url(#mapGrad)" stroke-width="10"/>
+    </g>
+    <!-- Col 3 -->
+    <g transform="translate(300, 340)">
+        <!-- Taxi -->
+        <rect x="0" y="0" width="140" height="120" fill="#FDB913"/>
+        <path d="M0,20 L140,20 L140,120 L0,120 Z" fill="#FDB913"/>
+        <path d="M0,20 L30,0 L140,0 L110,20 Z" fill="#222"/> <!-- Roof -->
+        <rect x="10" y="30" width="20" height="40" fill="#333"/> <!-- Windshield -->
+        <line x1="120" y1="20" x2="120" y2="120" stroke="#333" stroke-width="5"/> <!-- Road -->
+        <!-- Heatmap -->
+        <rect x="0" y="140" width="140" height="120" fill="url(#heatmapPattern)"/>
+        <line x1="0" y1="140" x2="140" y2="260" stroke="red" stroke-width="10" stroke-opacity="0.5"/>
+        <line x1="140" y1="140" x2="0" y2="260" stroke="red" stroke-width="10" stroke-opacity="0.5"/>
+    </g>
+
+    <!-- Bottom Text -->
+    <text x="210" y="530" class="serif text-lg" text-anchor="middle">Multiple Domains</text>
+    <text x="210" y="565" class="serif text-lg" text-anchor="middle">Multiple Cities</text>
+    
+    <!-- Label (a) -->
+    <text x="210" y="650" class="serif text-lg" text-anchor="middle">(a) Datasets</text>
+  </g>
+
+  <!-- ================= SECTION B: URBAN DIFFUSION ================= -->
+  <g transform="translate(450, 0)">
+    <!-- Output Text -->
+    <text x="300" y="50" class="serif text-lg" text-anchor="middle">Output</text>
+    <line x1="300" y1="90" x2="300" y2="55" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+    <!-- Reshape Box -->
+    <rect x="40" y="90" width="520" height="70" rx="10" fill="#EFEFEF" stroke="black" stroke-width="3"/>
+    <text x="300" y="130" class="serif text-lg" text-anchor="middle">Reshape</text>
+
+    <!-- Connection Reshape to Transformer -->
+    <line x1="300" y1="160" x2="300" y2="200" stroke="black" stroke-width="3"/>
+
+    <!-- Intermediate Squares -->
+    <g transform="translate(50, 145)">
+        <rect x="0" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+        <rect x="90" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+        <rect x="180" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+        <rect x="270" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+        <rect x="360" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+        <rect x="450" y="0" width="80" height="80" fill="#aaa" stroke="white" stroke-width="2"/>
+    </g>
+
+    <!-- Transformer Box -->
+    <rect x="20" y="200" width="560" height="180" rx="20" fill="url(#transformerGrad)" stroke="black" stroke-width="3"/>
+    <text x="300" y="270" class="serif text-lg" text-anchor="middle">Urban Diffusion</text>
+    <text x="300" y="310" class="serif text-lg" text-anchor="middle">Transformer</text>
+
+    <!-- Bottom Section -->
+    <!-- Concat Box -->
+    <rect x="220" y="310" width="220" height="60" rx="10" fill="white" stroke="black" stroke-width="3"/>
+    <text x="330" y="345" class="serif text-lg" text-anchor="middle">Concat</text>
+
+    <!-- Patching Box -->
+    <rect x="20" y="360" width="340" height="130" rx="15" fill="white" stroke="black" stroke-width="3"/>
+    <text x="190" y="400" class="serif text-lg" text-anchor="middle">Spatio-temporal</text>
+    <text x="190" y="440" class="serif text-lg" text-anchor="middle">patching</text>
+
+    <!-- Embedding Box -->
+    <rect x="330" y="360" width="340" height="130" rx="15" fill="#EFEFEF" stroke="black" stroke-width="3"/>
+    <text x="500" y="400" class="serif text-lg" text-anchor="middle">Embedding</text>
+    <text x="500" y="440" class="serif text-lg" text-anchor="middle">layer</text>
+
+    <!-- Noisy ST Data -->
+    <rect x="20" y="490" width="340" height="130" rx="15" fill="white" stroke="black" stroke-width="3"/>
+    <text x="190" y="530" class="serif text-lg" text-anchor="middle">Noisy</text>
+    <text x="190" y="570" class="serif text-lg" text-anchor="middle">ST data</text>
+
+    <!-- Timestep -->
+    <rect x="330" y="490" width="340" height="130" rx="15" fill="#EFEFEF" stroke="black" stroke-width="3"/>
+    <text x="500" y="530" class="serif text-lg" text-anchor="middle">Timestep</text>
+    <text x="500" y="570" class="serif text-lg" text-anchor="middle italic">t</text>
+
+    <!-- Arrows for Section B -->
+    <!-- Transformer to Concat/Embedding (Split) -->
+    <line x1="500" y1="380" x2="500" y2="340" stroke="black" stroke-width="3"/> <!-- Up from transformer -->
+    <line x1="500" y1="340" x2="440" y2="340" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/> <!-- To Concat -->
+    <line x1="500" y1="340" x2="500" y2="360" stroke="black" stroke-width="3"/> <!-- To Embedding -->
+    
+    <!-- Patching to Concat -->
+    <line x1="190" y1="360" x2="190" y2="340" stroke="black" stroke-width="3"/>
+    <line x1="190" y1="340" x2="220" y2="340" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    
+    <!-- Patching to Noisy -->
+    <line x1="190" y1="490" x2="190" y2="470" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    
+    <!-- Timestep to Patching/Embedding (Split) -->
+    <line x1="500" y1="490" x2="500" y2="470" stroke="black" stroke-width="3"/> <!-- Up from Timestep -->
+    <line x1="500" y1="470" x2="500" y2="470" stroke="black" stroke-width="3"/> 
+    <!-- Note: Diagram shows Timestep feeding up, splitting to Patching and Embedding -->
+    <path d="M500,490 L500,470 Q500,460 490,460 L190,460 L190,490" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <line x1="500" y1="470" x2="500" y2="490" stroke="black" stroke-width="3"/> <!-- Connect back to embedding -->
+
+    <!-- Label (b) -->
+    <text x="300" y="650" class="serif text-lg" text-anchor="middle">(b) Urban Diffusion Transformer</text>
+  </g>
+
+  <!-- ================= SECTION C: MASKING STRATEGIES ================= -->
+  <g transform="translate(1100, 470)">
+    <rect x="0" y="0" width="470" height="150" rx="10" fill="white" stroke="black" stroke-width="3"/>
+    
+    <!-- Row 1 -->
+    <g transform="translate(20, 20)">
+        <!-- Grey -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#555" stroke="white"/>
+        </g>
+        <!-- Green -->
+        <g transform="translate(80, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+        <!-- Red -->
+        <g transform="translate(160, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#F08080" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#F08080" stroke="white"/>
+        </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(200, 20)">
+        <!-- Red -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#F08080" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#F08080" stroke="white"/>
+        </g>
+        <!-- Green -->
+        <g transform="translate(80, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+        <!-- Grey -->
+        <g transform="translate(160, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#555" stroke="white"/>
+        </g>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(320, 20)">
+        <!-- Grey -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#555" stroke="white"/>
+        </g>
+        <!-- Green -->
+        <g transform="translate(80, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+        <!-- Red -->
+        <g transform="translate(160, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#F08080" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#F08080" stroke="white"/>
+        </g>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(160, 100)">
+        <!-- Red -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#F08080" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#F08080" stroke="white"/>
+        </g>
+        <!-- Green -->
+        <g transform="translate(80, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+        <!-- Green -->
+        <g transform="translate(160, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+    </g>
+    
+    <!-- Row 5 -->
+    <g transform="translate(320, 100)">
+        <!-- Green -->
+        <g transform="skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+        </g>
+        <!-- Red -->
+        <g transform="translate(80, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#F08080" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#F08080" stroke="white"/>
+        </g>
+        <!-- Grey -->
+        <g transform="translate(160, 0) skewY(-20)">
+            <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+            <rect x="20" y="-10" width="60" height="70" fill="#555" stroke="white"/>
+        </g>
+    </g>
+
+    <!-- Label (c) -->
+    <text x="235" y="210" class="serif text-lg" text-anchor="middle">(c) Masking Strategies</text>
+  </g>
+
+  <!-- ================= SECTION D: PROMPT LEARNING ================= -->
+  <g transform="translate(1080, 20)">
+    <!-- Main Container -->
+    <rect x="0" y="0" width="510" height="410" rx="30" fill="white" stroke="black" stroke-width="3"/>
+
+    <!-- Top Half: Data Memory -->
+    <rect x="20" y="20" width="400" height="230" rx="20" fill="none" stroke="black" stroke-width="4" class="dashed"/>
+    
+    <!-- Brains -->
+    <g transform="translate(60, 30)">
+        <use href="#brainIcon" transform="scale(1.2)"/>
+    </g>
+    <g transform="translate(60, 100)">
+        <use href="#brainIcon" transform="scale(1.2)"/>
+    </g>
+    <g transform="translate(60, 170)">
+        <use href="#brainIcon" transform="scale(1.2)"/>
+    </g>
+    <text x="100" y="290" class="serif text-lg" text-anchor="middle">Data</text>
+    <text x="100" y="320" class="serif text-lg" text-anchor="middle">memory</text>
+
+    <!-- Labels -->
+    <g transform="translate(180, 40)">
+        <rect x="0" y="0" width="300" height="60" rx="10" fill="white" stroke="black" stroke-width="4" class="dashed"/>
+        <text x="150" y="40" class="serif text-lg" text-anchor="middle">Frequency pattern</text>
+        <line x1="0" y1="30" x2="-40" y2="30" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    </g>
+    <g transform="translate(180, 110)">
+        <rect x="0" y="0" width="300" height="60" rx="10" fill="white" stroke="black" stroke-width="4" class="dashed"/>
+        <text x="150" y="40" class="serif text-lg" text-anchor="middle">Temporal pattern</text>
+        <line x1="0" y1="30" x2="-40" y2="30" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    </g>
+    <g transform="translate(180, 160)">
+        <rect x="0" y="0" width="300" height="60" rx="10" fill="white" stroke="black" stroke-width="4" class="dashed"/>
+        <text x="150" y="40" class="serif text-lg" text-anchor="middle">Spatial pattern</text>
+        <line x1="0" y1="30" x2="-40" y2="30" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    </g>
+
+    <!-- ST Data Label -->
+    <text x="460" y="130" class="serif text-lg">ST</text>
+    <text x="460" y="170" class="serif text-lg">Data</text>
+    <line x1="450" y1="130" x2="420" y2="130" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+    <!-- Bottom Half: Task Memory -->
+    <rect x="20" y="260" width="400" height="170" rx="20" fill="none" stroke="black" stroke-width="4" class="dashed"/>
+    
+    <!-- Brain -->
+    <g transform="translate(60, 270)">
+        <use href="#brainIcon" transform="scale(1.2)"/>
+    </g>
+    <text x="100" y="400" class="serif text-lg" text-anchor="middle">Task</text>
+    <text x="100" y="430" class="serif text-lg" text-anchor="middle">memory</text>
+
+    <!-- Attention Box -->
+    <rect x="180" y="260" width="70" height="150" rx="10" fill="white" stroke="black" stroke-width="4"/>
+    <text x="215" y="335" class="serif text-lg" text-anchor="middle" transform="rotate(90, 215, 335)">Attention</text>
+
+    <!-- Mask Grid -->
+    <g transform="translate(280, 280)">
+        <g transform="skewY(-20)">
+            <!-- Back to Front -->
+            <g transform="translate(160, 0)">
+                <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+                <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+                <rect x="40" y="-20" width="60" height="70" fill="#F08080" stroke="white"/>
+            </g>
+            <g transform="translate(100, 0)">
+                <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+                <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+                <rect x="40" y="-20" width="60" height="70" fill="#F08080" stroke="white"/>
+            </g>
+            <g transform="translate(40, 0)">
+                <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+                <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+                <rect x="40" y="-20" width="60" height="70" fill="#F08080" stroke="white"/>
+            </g>
+            <g transform="translate(-20, 0)">
+                <rect x="0" y="0" width="60" height="70" fill="#555" stroke="white"/>
+                <rect x="20" y="-10" width="60" height="70" fill="url(#heatmapPattern)" stroke="white"/>
+                <rect x="40" y="-20" width="60" height="70" fill="#F08080" stroke="white"/>
+            </g>
+        </g>
+    </g>
+
+    <!-- Arrows Task Memory -->
+    <line x1="280" y1="310" x2="260" y2="310" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <line x1="180" y1="310" x2="160" y2="310" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+    <!-- Label Task Specific -->
+    <text x="280" y="420" class="serif text-lg italic" text-anchor="middle">Task-specific prompt</text>
+
+    <!-- Label (d) -->
+    <text x="255" y="440" class="serif text-lg" text-anchor="middle">(d) Unified Prompt Learning</text>
+  </g>
+
+  <!-- ================= GLOBAL CONNECTIONS ================= -->
+  <!-- 1. Datasets to Noisy ST Data -->
+  <line x1="430" y1="535" x2="480" y2="535" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+  <!-- 2. Transformer to Data Memory (Long Path) -->
+  <path d="M980,230 L1030,230 L1030,225 L1100,225" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+  <!-- 3. Masking to Timestep -->
+  <line x1="1100" y1="470" x2="890" y2="470" stroke="black" stroke-width="3" marker-end="url(#arrowHead)"/>
+
+</svg>

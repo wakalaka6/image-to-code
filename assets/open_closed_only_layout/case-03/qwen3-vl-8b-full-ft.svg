@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12.0 12.0 2326.0 1236.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#1D6F92" />
+    </marker>
+    <marker id="arrow-grey" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#D3D3D3" />
+    </marker>
+    
+    <!-- Diagonal Hatch Pattern -->
+    <pattern id="hatch" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" style="stroke:#D3D3D3; stroke-width:5" />
+    </pattern>
+
+    <!-- Tag Style -->
+    <style>
+      .tag-box { fill: #808080; stroke: black; stroke-width: 2px; }
+      .tag-text { fill: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 28px; }
+      .node-text { font-family: Arial, sans-serif; fill: black; text-anchor: middle; dominant-baseline: middle; }
+      .node-border { stroke: #002D40; stroke-width: 5px; }
+      .conn-line { stroke: #1D6F92; stroke-width: 5px; fill: none; marker-end: url(#arrow); }
+      .ellipsis { font-family: Arial, sans-serif; font-size: 40px; font-weight: bold; fill: black; text-anchor: middle; letter-spacing: 10px;}
+      .label-serif { font-family: 'Times New Roman', serif; font-style: italic; fill: #666; font-size: 60px; }
+      .label-sans { font-family: Arial, sans-serif; font-weight: bold; fill: black; font-size: 50px; }
+    </style>
+  </defs>
+
+  <!-- ================= LEGEND ================= -->
+  <g transform="translate(130, 20)">
+    <rect x="0" y="0" width="1180" height="100" rx="20" fill="none" stroke="#E87722" stroke-width="4"/>
+    
+    <!-- Item 1: LLM -->
+    <g transform="translate(40, 15)">
+      <rect x="0" y="0" width="130" height="110" class="tag-box"/>
+      <text x="10" y="65" class="tag-text">&lt;AF&gt;08</text>
+      <text x="180" y="70" class="node-text" style="font-size: 50px;">LLM</text>
+    </g>
+
+    <!-- Item 2: Retriever -->
+    <g transform="translate(220, 25)">
+      <rect x="0" y="0" width="100" height="80" class="tag-box"/>
+      <text x="5" y="50" class="tag-text" style="font-size: 24px;">&lt;AF&gt;11</text>
+      <text x="150" y="50" class="node-text" style="font-size: 50px;">retriever</text>
+    </g>
+
+    <!-- Item 3: Answer -->
+    <g transform="translate(400, 20)">
+      <rect x="0" y="0" width="100" height="70" class="tag-box"/>
+      <text x="5" y="45" class="tag-text" style="font-size: 24px;">&lt;AF&gt;14</text>
+      <text x="150" y="45" class="node-text" style="font-size: 50px;">answer</text>
+    </g>
+
+    <!-- Item 4: Chosen State -->
+    <g transform="translate(620, 20)">
+      <rect x="0" y="0" width="110" height="70" class="tag-box"/>
+      <text x="5" y="45" class="tag-text" style="font-size: 26px;">&lt;AF&gt;02</text>
+      <text x="150" y="45" class="node-text" style="font-size: 50px;">chosen state</text>
+    </g>
+
+    <!-- Item 5: Discarded State -->
+    <g transform="translate(880, 25)">
+      <rect x="0" y="0" width="110" height="80" class="tag-box"/>
+      <text x="5" y="50" class="tag-text" style="font-size: 26px;">&lt;AF&gt;06</text>
+      <text x="150" y="50" class="node-text" style="font-size: 50px;">discarded state</text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT COLUMN: Rejection Sampling ================= -->
+  <g transform="translate(20, 140)">
+    <!-- Root Query -->
+    <rect x="220" y="20" width="320" height="110" rx="15" fill="#EFEFEF" class="node-border"/>
+    <text x="380" y="75" class="node-text" style="font-size: 60px;">Query</text>
+
+    <!-- Branching Lines -->
+    <path d="M360,130 L110,180 L110,195" class="conn-line" fill="none"/> <!-- To Left -->
+    <path d="M360,130 L360,175" class="conn-line"/> <!-- To Middle -->
+    <path d="M360,130 L560,180" class="conn-line" fill="none"/> <!-- To Right -->
+
+    <!-- Tag on Left Line -->
+    <g transform="translate(15, 90)">
+      <rect x="0" y="0" width="110" height="110" class="tag-box"/>
+      <text x="5" y="65" class="tag-text">&lt;AF&gt;16</text>
+    </g>
+
+    <!-- Level 1 Nodes -->
+    <!-- Left -->
+    <rect x="0" y="160" width="200" height="140" rx="20" fill="#F9DAC7" class="node-border"/>
+    <text x="100" y="230" class="node-text" style="font-size: 50px;">sub-query 1</text>
+    <!-- Middle -->
+    <rect x="260" y="160" width="250" height="140" rx="20" fill="#F9DAC7" class="node-border"/>
+    <text x="385" y="230" class="node-text" style="font-size: 50px;">sub-query 1<tspan dy="-15" font-size="30">*</tspan></text>
+    <!-- Right -->
+    <text x="580" y="210" class="ellipsis">... ...</text>
+
+    <!-- Connectors L1 to L2 -->
+    <path d="M100,300 L100,320 L100,335" class="conn-line" fill="none"/>
+    <path d="M360,300 L360,335" class="conn-line" fill="none"/>
+    
+    <!-- Tags L1 -->
+    <g transform="translate(30, 250)">
+      <rect x="0" y="0" width="90" height="90" class="tag-box"/>
+      <text x="5" y="55" class="tag-text" style="font-size: 24px;">&lt;AF&gt;04</text>
+    </g>
+    <g transform="translate(110, 240)">
+      <rect x="0" y="0" width="140" height="110" class="tag-box"/>
+      <text x="10" y="65" class="tag-text">&lt;AF&gt;21</text>
+    </g>
+    <g transform="translate(295, 240)">
+      <rect x="0" y="0" width="140" height="110" class="tag-box"/>
+      <text x="10" y="65" class="tag-text">&lt;AF&gt;19</text>
+    </g>
+
+    <!-- Level 2 Nodes -->
+    <rect x="0" y="310" width="200" height="140" rx="20" fill="#CFE2F0" class="node-border"/>
+    <text x="100" y="380" class="node-text" style="font-size: 50px;">sub-answer 1</text>
+    
+    <rect x="260" y="310" width="250" height="140" rx="20" fill="#CFE2F0" class="node-border"/>
+    <text x="385" y="380" class="node-text" style="font-size: 50px;">sub-answer 1<tspan dy="-15" font-size="30">*</tspan></text>
+    
+    <text x="580" y="360" class="ellipsis">... ...</text>
+
+    <!-- Transition Dots -->
+    <text x="100" y="420" class="ellipsis">... ...</text>
+    <text x="360" y="420" class="ellipsis">... ...</text>
+    <text x="580" y="420" class="ellipsis">... ...</text>
+
+    <!-- Level 3 Connectors -->
+    <path d="M100,450 L100,500 L100,515" class="conn-line" fill="none"/>
+    <path d="M360,450 L360,515" class="conn-line" fill="none"/>
+    
+    <!-- Tag L3 Left -->
+    <g transform="translate(10, 430)">
+      <rect x="0" y="0" width="110" height="120" class="tag-box"/>
+      <text x="5" y="70" class="tag-text">&lt;AF&gt;22</text>
+    </g>
+    <!-- Tag L3 Middle -->
+    <g transform="translate(280, 420)">
+      <rect x="0" y="0" width="140" height="120" class="tag-box"/>
+      <text x="10" y="70" class="tag-text">&lt;AF&gt;24</text>
+    </g>
+
+    <!-- Level 4 Nodes -->
+    <rect x="0" y="490" width="200" height="140" rx="20" fill="#F9DAC7" class="node-border"/>
+    <text x="100" y="560" class="node-text" style="font-size: 50px;">sub-query n</text>
+    
+    <rect x="260" y="490" width="250" height="140" rx="20" fill="#F9DAC7" class="node-border"/>
+    <text x="385" y="560" class="node-text" style="font-size: 50px;">sub-query n<tspan dy="-15" font-size="30">*</tspan></text>
+    
+    <text x="580" y="550" class="ellipsis">... ...</text>
+
+    <!-- Connectors L4 to L5 -->
+    <path d="M100,630 L100,650 L100,665" class="conn-line" fill="none"/>
+    <path d="M360,630 L360,665" class="conn-line" fill="none"/>
+
+    <!-- Tags L4 -->
+    <g transform="translate(30, 590)">
+      <rect x="0" y="0" width="90" height="90" class="tag-box"/>
+      <text x="5" y="55" class="tag-text" style="font-size: 24px;">&lt;AF&gt;03</text>
+    </g>
+    <g transform="translate(110, 580)">
+      <rect x="0" y="0" width="140" height="110" class="tag-box"/>
+      <text x="10" y="65" class="tag-text">&lt;AF&gt;20</text>
+    </g>
+    <g transform="translate(295, 580)">
+      <rect x="0" y="0" width="140" height="110" class="tag-box"/>
+      <text x="10" y="65" class="tag-text">&lt;AF&gt;17</text>
+    </g>
+
+    <!-- Level 5 Nodes -->
+    <rect x="0" y="640" width="200" height="140" rx="20" fill="#CFE2F0" class="node-border"/>
+    <text x="100" y="710" class="node-text" style="font-size: 50px;">sub-answer n</text>
+    
+    <rect x="260" y="640" width="250" height="140" rx="20" fill="#CFE2F0" class="node-border"/>
+    <text x="385" y="710" class="node-text" style="font-size: 50px;">sub-answer n<tspan dy="-15" font-size="30">*</tspan></text>
+    
+    <text x="580" y="690" class="ellipsis">... ...</text>
+
+    <!-- Final Connectors -->
+    <path d="M100,780 L100,800 L100,835" class="conn-line" fill="none"/>
+    <path d="M360,780 L360,835" class="conn-line" fill="none"/>
+    <path d="M580,780 L580,835" class="conn-line" fill="none"/>
+
+    <!-- Final Tags -->
+    <g transform="translate(20, 720)">
+      <rect x="0" y="0" width="90" height="100" class="tag-box"/>
+      <text x="5" y="60" class="tag-text" style="font-size: 24px;">&lt;AF&gt;10</text>
+    </g>
+    <g transform="translate(110, 720)">
+      <rect x="0" y="0" width="140" height="130" class="tag-box"/>
+      <text x="10" y="75" class="tag-text">&lt;AF&gt;18</text>
+    </g>
+    <g transform="translate(470, 720)">
+      <rect x="0" y="0" width="100" height="100" class="tag-box"/>
+      <text x="5" y="60" class="tag-text" style="font-size: 24px;">&lt;AF&gt;13</text>
+    </g>
+    <g transform="translate(600, 720)">
+      <rect x="0" y="0" width="160" height="130" class="tag-box"/>
+      <text x="10" y="75" class="tag-text">&lt;AF&gt;23</text>
+    </g>
+
+    <!-- Bottom Text -->
+    <text x="100" y="850" class="node-text" style="font-size: 45px;">P(Ans | Chain 1)</text>
+    <text x="360" y="850" class="node-text" style="font-size: 45px;">P(Ans | Chain 2)</text>
+    <text x="600" y="850" class="node-text" style="font-size: 45px;">P(Ans | Chain 3)</text>
+
+    <!-- Footer -->
+    <text x="0" y="950" class="label-serif">Rejection Sampling</text>
+    <!-- Checkmark -->
+    <path d="M340,880 L360,910 L400,860" fill="none" stroke="#00A880" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: Inference ================= -->
+  <g transform="translate(730, 0)">
+    <!-- Dashed Lines -->
+    <line x1="0" y1="135" x2="0" y2="1000" stroke="#BDBDBD" stroke-width="6" stroke-dasharray="20,15"/>
+    <line x1="0" y1="295" x2="1600" y2="295" stroke="#BDBDBD" stroke-width="6" stroke-dasharray="20,15"/>
+    <text x="20" y="170" class="label-serif">Training</text>
+    <text x="20" y="1000" class="label-serif">Inference</text>
+
+    <!-- Top Section: Training Flow -->
+    <g transform="translate(50, 180)">
+      <!-- Current State Bubble -->
+      <path d="M20,0 H300 A20,20 0 0 1 320,20 V140 A20,20 0 0 1 300,160 H100 L70,190 L70,160 H20 A20,20 0 0 1 0,140 V20 A20,20 0 0 1 20,0 Z" fill="white" stroke="black" stroke-width="6"/>
+      <text x="160" y="80" class="node-text" style="font-size: 50px;">Current State</text>
+
+      <!-- Arrow 1 -->
+      <path d="M250,80 L350,80 L350,60 L380,90 L350,120 L350,100 L250,100 Z" fill="#009FE3"/>
+
+      <!-- LLM Box -->
+      <rect x="400" y="10" width="400" height="120" rx="20" fill="#F4C7B0" stroke="#002D40" stroke-width="6"/>
+      <g transform="translate(410, 40)">
+        <rect x="0" y="0" width="50" height="60" class="tag-box"/>
+        <text x="2" y="35" class="tag-text" style="font-size: 14px;">&lt;AF&gt;01</text>
+      </g>
+      <text x="600" y="80" class="node-text" style="font-size: 50px;">LLM</text>
+
+      <!-- Arrow 2 -->
+      <path d="M650,80 L750,80 L750,60 L780,90 L750,120 L750,100 L650,100 Z" fill="#009FE3"/>
+
+      <!-- Next Action Bubble -->
+      <path d="M800,0 H1050 A20,20 0 0 1 1070,20 V140 A20,20 0 0 1 1050,160 H900 L870,190 L870,160 H800 A20,20 0 0 1 780,140 V20 A20,20 0 0 1 800,0 Z" fill="white" stroke="black" stroke-width="6"/>
+      <text x="925" y="80" class="node-text" style="font-size: 50px;">Next Action</text>
+    </g>
+
+    <!-- Bottom Section: Strategies -->
+    <g transform="translate(0, 320)">
+      
+      <!-- Column 1: Greedy -->
+      <g transform="translate(50, 0)">
+        <ellipse cx="120" cy="80" rx="170" ry="70" fill="#EFEFEF" class="node-border"/>
+        <text x="120" y="80" class="node-text" style="font-size: 50px;">query</text>
+        
+        <path d="M120,150 L120,265" class="conn-line"/>
+        
+        <rect x="60" y="270" width="120" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <path d="M120,370 L120,435" class="conn-line"/>
+        
+        <text x="120" y="470" class="ellipsis">... ...</text>
+        <path d="M120,490 L120,575" class="conn-line"/>
+        
+        <rect x="60" y="580" width="120" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <path d="M120,680 L120,745" class="conn-line"/>
+        
+        <ellipse cx="120" cy="800" rx="180" ry="70" fill="#CFE2F0" class="node-border"/>
+        <text x="120" y="800" class="node-text" style="font-size: 50px;">output</text>
+        
+        <text x="120" y="920" class="node-text" style="font-size: 60px;">Greedy</text>
+      </g>
+
+      <!-- Column 2: Best-of-N -->
+      <g transform="translate(350, 0)">
+        <ellipse cx="120" cy="80" rx="170" ry="70" fill="#EFEFEF" class="node-border"/>
+        <text x="120" y="80" class="node-text" style="font-size: 50px;">query</text>
+        
+        <!-- Branching -->
+        <path d="M120,150 L-20,265" class="conn-line"/>
+        <path d="M120,150 L120,265" class="conn-line"/>
+        <path d="M120,150 L260,265" class="conn-line"/>
+        
+        <!-- Row 1 Nodes -->
+        <rect x="-50" y="270" width="110" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <rect x="70" y="270" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        <rect x="210" y="270" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        
+        <!-- Arrows Row 1 -->
+        <path d="M-20,370 L-20,435" class="conn-line"/>
+        <path d="M120,370 L120,435" class="conn-line"/>
+        <path d="M260,370 L260,435" class="conn-line"/>
+        
+        <text x="-20" y="470" class="ellipsis">... ...</text>
+        <text x="120" y="470" class="ellipsis">... ...</text>
+        <text x="260" y="470" class="ellipsis">... ...</text>
+        
+        <!-- Arrows Row 2 -->
+        <path d="M-20,490 L-20,575" class="conn-line"/>
+        <path d="M120,490 L120,575" class="conn-line"/>
+        <path d="M260,490 L260,575" class="conn-line"/>
+        
+        <!-- Row 2 Nodes -->
+        <rect x="-50" y="580" width="110" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <rect x="70" y="580" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        <rect x="210" y="580" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        
+        <!-- Convergence -->
+        <path d="M-20,680 L120,745" class="conn-line"/>
+        <path d="M120,680 L125,740" stroke="#D3D3D3" stroke-width="6" marker-end="url(#arrow-grey)"/>
+        <path d="M260,680 L120,745" stroke="#D3D3D3" stroke-width="6" marker-end="url(#arrow-grey)"/>
+        
+        <!-- Tag on Convergence -->
+        <g transform="translate(-60, 600)">
+          <rect x="0" y="0" width="120" height="110" class="tag-box"/>
+          <text x="5" y="65" class="tag-text">&lt;AF&gt;12</text>
+        </g>
+        
+        <ellipse cx="120" cy="800" rx="180" ry="70" fill="#CFE2F0" class="node-border"/>
+        <text x="120" y="800" class="node-text" style="font-size: 50px;">output</text>
+        
+        <text x="120" y="920" class="node-text" style="font-size: 60px;">Best-of-N</text>
+      </g>
+
+      <!-- Column 3: Tree Search -->
+      <g transform="translate(750, 0)">
+        <ellipse cx="120" cy="80" rx="170" ry="70" fill="#EFEFEF" class="node-border"/>
+        <text x="120" y="80" class="node-text" style="font-size: 50px;">query</text>
+        
+        <!-- Branching -->
+        <path d="M120,150 L-20,265" class="conn-line"/>
+        <path d="M120,150 L120,265" class="conn-line"/>
+        <path d="M120,150 L260,265" class="conn-line"/>
+        
+        <!-- Row 1 Nodes -->
+        <rect x="-50" y="270" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        <rect x="70" y="270" width="110" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <rect x="210" y="270" width="110" height="100" rx="15" fill="url(#hatch)" class="node-border"/>
+        
+        <!-- Arrows Row 1 -->
+        <path d="M-20,370 L20,435" class="conn-line"/>
+        <path d="M120,370 L120,435" class="conn-line"/>
+        <path d="M260,370 L300,435" class="conn-line"/>
+        
+        <!-- Rollout Containers -->
+        <rect x="-60" y="440" width="240" height="300" fill="none" class="node-border"/>
+        <text x="60" y="670" class="node-text" style="font-size: 45px;">rollouts</text>
+        
+        <rect x="220" y="440" width="240" height="300" fill="none" class="node-border"/>
+        <text x="340" y="670" class="node-text" style="font-size: 45px;">rollouts</text>
+        
+        <!-- Inner Tree Logic Left Container -->
+        <g transform="translate(-60, 440)">
+            <!-- Top Row -->
+            <rect x="20" y="10" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <rect x="120" y="10" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <!-- Arrows -->
+            <path d="M55,70 L55,135" class="conn-line"/>
+            <path d="M155,70 L155,135" class="conn-line"/>
+            <!-- Dots -->
+            <text x="55" y="170" class="ellipsis" style="font-size:30px">... ...</text>
+            <text x="155" y="170" class="ellipsis" style="font-size:30px">... ...</text>
+            <!-- Arrows -->
+            <path d="M55,190 L55,255" class="conn-line"/>
+            <path d="M155,190 L155,255" class="conn-line"/>
+            <!-- Bottom Row -->
+            <rect x="20" y="260" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <rect x="120" y="260" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+        </g>
+        
+        <!-- Inner Tree Logic Right Container -->
+        <g transform="translate(220, 440)">
+            <!-- Top Row -->
+            <rect x="20" y="10" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <rect x="120" y="10" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <!-- Arrows -->
+            <path d="M55,70 L55,135" class="conn-line"/>
+            <path d="M155,70 L155,135" class="conn-line"/>
+            <!-- Dots -->
+            <text x="55" y="170" class="ellipsis" style="font-size:30px">... ...</text>
+            <text x="155" y="170" class="ellipsis" style="font-size:30px">... ...</text>
+            <!-- Arrows -->
+            <path d="M55,190 L55,255" class="conn-line"/>
+            <path d="M155,190 L155,255" class="conn-line"/>
+            <!-- Bottom Row -->
+            <rect x="20" y="260" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+            <rect x="120" y="260" width="70" height="60" rx="10" fill="url(#hatch)" class="node-border"/>
+        </g>
+        
+        <!-- Middle Column -->
+        <text x="120" y="420" class="ellipsis">... ...</text>
+        <path d="M120,450 L120,575" class="conn-line"/>
+        <rect x="70" y="580" width="110" height="100" rx="15" fill="#5294D6" class="node-border"/>
+        <path d="M120,680 L120,745" class="conn-line"/>
+        
+        <ellipse cx="120" cy="800" rx="180" ry="70" fill="#CFE2F0" class="node-border"/>
+        <text x="120" y="800" class="node-text" style="font-size: 50px;">output</text>
+        
+        <text x="120" y="920" class="node-text" style="font-size: 60px;">Tree Search</text>
+      </g>
+    </g>
+  </g>
+</svg>

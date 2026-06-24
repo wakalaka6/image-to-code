@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 37.0 1526.0 831.0" style="background-color: white;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8FAADC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F4B183;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Arrow Marker (for manual paths, using polygon instead for block look) -->
+    <style>
+      .text-main { font-family: Arial, Helvetica, sans-serif; fill: black; }
+      .text-title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; fill: black; }
+      .text-label { font-family: Arial, Helvetica, sans-serif; font-size: 32px; fill: black; }
+      .text-green { font-family: Arial, Helvetica, sans-serif; font-size: 36px; fill: #548235; font-weight: bold; }
+      .text-red { font-family: Arial, Helvetica, sans-serif; font-size: 36px; fill: #FF0000; font-weight: bold; }
+      .box-stroke { stroke: black; stroke-width: 3; }
+      .arrow-shape { fill: #808080; stroke: black; stroke-width: 2; }
+      .dashed-line { stroke: #203764; stroke-width: 2; stroke-dasharray: 10, 5, 2, 5; fill: none; }
+      .dashed-border { stroke: #203764; stroke-width: 2; stroke-dasharray: 10, 5, 2, 5; }
+    </style>
+  </defs>
+
+  <!-- ==================== LEFT INPUT BOX ==================== -->
+  <g transform="translate(10, 240)">
+    <!-- Box Shape with wavy bottom -->
+    <path d="M0,0 L350,0 L350,260 Q250,320 100,320 Q50,320 0,280 Z" fill="#D9D9D9" stroke="#A6A6A6" stroke-width="2"/>
+    
+    <!-- Text Content -->
+    <text x="10" y="40" class="text-main" font-size="32" xml:space="preserve">Translate the following text from</text>
+    <text x="10" y="80" class="text-main" font-size="32">English into Chinese.</text>
+    
+    <text x="10" y="140" class="text-main" font-size="32">English: Amsterdam is famous for</text>
+    <text x="10" y="180" class="text-main" font-size="32">its hundreds of beautiful canals,</text>
+    <text x="10" y="220" class="text-main" font-size="32">millions of bicycles, stunning</text>
+    <text x="10" y="260" class="text-main" font-size="32">summers, and disgusting winters.</text>
+    
+    <text x="10" y="310" class="text-main" font-size="32">Chinese:</text>
+  </g>
+
+  <!-- Input Arrows -->
+  <!-- Upward Arrow -->
+  <path d="M380,240 L420,200 L420,215 L440,215 L440,205 L455,225 L440,245 L440,235 L420,235 L420,250 Z" class="arrow-shape" transform="rotate(-45 417 225) translate(0, -10)"/>
+  
+  <!-- Downward Arrow -->
+  <path d="M380,460 L420,500 L420,485 L440,485 L440,495 L455,475 L440,455 L440,465 L420,465 L420,450 Z" class="arrow-shape" transform="rotate(45 417 475) translate(0, 10)"/>
+
+  <!-- ==================== DIVIDER ==================== -->
+  <line x1="420" y1="350" x2="1380" y2="350" stroke="black" stroke-width="4" stroke-dasharray="25, 10, 5, 10, 5, 10" />
+
+  <!-- ==================== TOP SECTION: TESTING TIME ==================== -->
+  <text x="950" y="45" class="text-title">Testing Time Optimization</text>
+
+  <!-- NMT Box Top -->
+  <rect x="475" y="140" width="240" height="130" rx="20" fill="#E7E6E6" class="box-stroke"/>
+  <text x="550" y="180" class="text-title" text-anchor="middle" dominant-baseline="middle">NMT</text>
+
+  <!-- Sampling Arrow Top -->
+  <text x="740" y="155" class="text-label" text-anchor="middle">Sampling</text>
+  <path d="M710,165 L780,165 L780,155 L795,175 L780,195 L780,185 L710,185 Z" class="arrow-shape"/>
+
+  <!-- Blue Distribution Curve -->
+  <g transform="translate(800, 50)">
+    <!-- Fill Area -->
+    <path d="M0,0 Q150,100 200,150 Q150,200 100,250 Q150,300 200,350 Q150,400 0,450 Z" fill="url(#gradBlue)" class="dashed-border"/>
+    <text x="100" y="480" class="text-label" text-anchor="middle">Quality</text>
+  </g>
+
+  <!-- Reranking Arrow -->
+  <text x="1110" y="155" class="text-green" text-anchor="middle">Reranking / Voting</text>
+  <path d="M1070,165 L1140,165 L1140,155 L1155,175 L1140,195 L1140,185 L1070,185 Z" class="arrow-shape"/>
+
+  <!-- Output Box -->
+  <rect x="1220" y="135" width="300" height="120" fill="#F2F2F2" class="box-stroke"/>
+  <text x="1370" y="170" class="text-label" text-anchor="middle">Highest-scoring</text>
+  <text x="1370" y="205" class="text-label" text-anchor="middle">Output</text>
+
+  <!-- ==================== BOTTOM SECTION: TRAINING TIME ==================== -->
+  <text x="950" y="385" class="text-title">Training Time Optimization</text>
+
+  <!-- NMT Box Bottom -->
+  <rect x="475" y="500" width="240" height="130" rx="20" fill="#C5E0B4" class="box-stroke"/>
+  <text x="550" y="540" class="text-title" text-anchor="middle" dominant-baseline="middle">NMT<tspan dy="10" font-size="28">θ</tspan></text>
+
+  <!-- Sampling Arrow Bottom -->
+  <text x="740" y="515" class="text-label" text-anchor="middle">Sampling</text>
+  <path d="M710,525 L780,525 L780,515 L795,535 L780,555 L780,545 L710,545 Z" class="arrow-shape"/>
+
+  <!-- Orange Distribution Curve 1 (Left) -->
+  <g transform="translate(800, 420)">
+    <!-- Fill Area -->
+    <path d="M0,0 Q100,50 100,150 Q100,250 250,300 Q150,350 0,400 Z" fill="url(#gradOrange)" class="dashed-border"/>
+    <text x="125" y="440" class="text-label" text-anchor="middle">Likelihood</text>
+  </g>
+
+  <!-- Calibration Arrow -->
+  <text x="1110" y="515" class="text-red" text-anchor="middle">Calibration</text>
+  <path d="M1070,525 L1140,525 L1140,515 L1155,535 L1140,555 L1140,545 L1070,545 Z" class="arrow-shape"/>
+
+  <!-- Orange Distribution Curve 2 (Right) -->
+  <g transform="translate(1220, 420)">
+    <!-- Fill Area -->
+    <path d="M0,0 Q150,100 200,150 Q150,200 100,250 Q150,300 200,350 Q150,400 0,400 Z" fill="url(#gradOrange)" class="dashed-border"/>
+    <text x="100" y="440" class="text-label" text-anchor="middle">Likelihood -> Quality</text>
+  </g>
+
+</svg>

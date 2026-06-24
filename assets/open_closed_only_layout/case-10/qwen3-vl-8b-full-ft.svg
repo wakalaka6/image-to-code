@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.0 -8.0 1786.0 1126.0" font-family="Times New Roman, serif">
+  <defs>
+    <!-- Arrow Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A9A9A9" />
+    </marker>
+    
+    <!-- Document Path -->
+    <path id="docShape" d="M0,0 H450 V200 Q225,250 0,200 Z" fill="#D5E8D4" stroke="black" stroke-width="2"/>
+    
+    <!-- Generic Bar Chart Axis -->
+    <g id="chartAxis">
+      <line x1="0" y1="100" x2="280" y2="100" stroke="black" stroke-width="3"/>
+    </g>
+    
+    <!-- Colors -->
+    <style>
+      .bg-green { fill: #D5E8D4; }
+      .bg-peach { fill: #FFE6CC; }
+      .box-grey { fill: #808080; stroke: black; stroke-width: 2; }
+      .text-black { fill: black; }
+      .text-white { fill: white; }
+      .text-red { fill: #CC0000; }
+      .text-green { fill: #009900; }
+      .text-blue { fill: #0099CC; }
+      .text-red-h { fill: #FF6666; }
+      .text-blue-h { fill: #0099CC; }
+      .bar-blue { fill: #607B98; }
+      .bar-green { fill: #54A625; }
+      .bar-red { fill: #E31A1C; }
+      .arrow-sha { fill: #A9A9A9; }
+      .font-header { font-size: 48px; }
+      .font-title { font-size: 32px; font-weight: bold; }
+      .font-math { font-size: 48px; font-style: italic; }
+      .font-label { font-size: 24px; font-weight: bold; }
+      .font-label-h { font-size: 24px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ================= TRAINING STAGE (TOP) ================= -->
+  <rect x="0" y="0" width="1600" height="460" class="bg-green"/>
+  <text x="15" y="70" class="text-black font-header">Training Stage</text>
+
+  <!-- Input Box -->
+  <rect x="10" y="100" width="320" height="320" class="box-grey"/>
+  <text x="20" y="180" class="text-black" font-size="60" font-style="italic">Input prompt x :</text>
+  <text x="18" y="225" class="text-black" font-size="60" font-style="italic">How long should</text>
+  <text x="15" y="270" class="text-black" font-size="60" font-style="italic">you wait before</text>
+  <text x="12" y="315" class="text-black" font-size="60" font-style="italic">filing a missing</text>
+  <text x="15" y="360" class="text-black" font-size="60" font-style="italic">person report?</text>
+
+  <!-- Arrows 1 -->
+  <path d="M350,160 L420,160 L420,145 L440,170 L420,195 L420,180 L350,180 Z" class="arrow-sha"/>
+  <path d="M350,340 L420,340 L420,325 L440,350 L420,375 L420,360 L350,360 Z" class="arrow-sha"/>
+
+  <!-- LLM Boxes Col 1 -->
+  <text x="480" y="110" class="text-black font-title" text-anchor="middle">LLM</text>
+  <rect x="445" y="120" width="190" height="150" class="box-grey"/>
+  <text x="495" y="180" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;04</text>
+
+  <text x="480" y="290" class="text-black font-title" text-anchor="middle">LLM</text>
+  <rect x="445" y="295" width="190" height="170" class="box-grey"/>
+  <text x="495" y="360" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;07</text>
+
+  <!-- Arrows 2 -->
+  <path d="M560,160 L630,160 L630,145 L650,170 L630,195 L630,180 L560,180 Z" class="arrow-sha"/>
+  <path d="M560,340 L630,340 L630,325 L650,350 L630,375 L630,360 L560,360 Z" class="arrow-sha"/>
+
+  <!-- Central Comparison -->
+  <text x="790" y="60" class="text-green" font-size="40" font-weight="bold" text-anchor="middle">Factuality</text>
+  <text x="1150" y="55" class="text-red" font-size="40" font-weight="bold" text-anchor="middle">Hallucinations</text>
+
+  <!-- Top Row (Factuality > Hallucination) -->
+  <g transform="translate(660, 80)">
+    <!-- Back Layers -->
+    <rect x="20" y="20" width="700" height="220" fill="none" stroke="black" stroke-width="2"/>
+    <rect x="10" y="40" width="700" height="220" fill="none" stroke="black" stroke-width="2" stroke-dasharray="10,5"/>
+    
+    <!-- Document Left (Factuality) -->
+    <g transform="translate(30, 60)">
+      <use href="#docShape" />
+      <!-- Bars -->
+      <rect x="10" y="20" width="120" height="20" class="bar-blue"/>
+      <rect x="140" y="20" width="200" height="20" class="bar-blue"/>
+      <rect x="350" y="20" width="100" height="20" class="bar-green"/> <!-- Green -->
+      <rect x="10" y="50" width="250" height="20" class="bar-blue"/>
+      <rect x="270" y="50" width="250" height="20" class="bar-blue"/>
+      <rect x="10" y="80" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="80" width="220" height="20" class="bar-green"/> <!-- Green -->
+      <rect x="10" y="110" width="150" height="20" class="bar-green"/> <!-- Green -->
+      <rect x="170" y="110" width="200" height="20" class="bar-blue"/>
+      <rect x="380" y="110" width="50" height="20" class="bar-blue"/>
+      <rect x="10" y="140" width="220" height="20" class="bar-blue"/>
+      <rect x="240" y="140" width="130" height="20" class="bar-green"/> <!-- Green -->
+      <rect x="380" y="140" width="140" height="20" class="bar-blue"/>
+    </g>
+
+    <!-- Symbol > -->
+    <text x="320" y="160" font-size="150" font-weight="bold" fill="black" text-anchor="middle">&gt;</text>
+
+    <!-- Document Right (Hallucination) -->
+    <g transform="translate(400, 60)">
+      <use href="#docShape" />
+      <!-- Bars -->
+      <rect x="10" y="20" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="20" width="120" height="20" class="bar-red"/> <!-- Red -->
+      <rect x="240" y="40" width="130" height="20" class="bar-blue"/>
+      <rect x="10" y="70" width="100" height="20" class="bar-blue"/>
+      <rect x="120" y="70" width="180" height="20" class="bar-blue"/>
+      <rect x="210" y="70" width="130" height="20" class="bar-red"/> <!-- Red -->
+      <rect x="10" y="100" width="120" height="20" class="bar-red"/> <!-- Red -->
+      <rect x="140" y="100" width="200" height="20" class="bar-blue"/>
+      <rect x="250" y="100" width="110" height="20" class="bar-red"/> <!-- Red -->
+      <rect x="10" y="130" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="130" width="170" height="20" class="bar-red"/> <!-- Red -->
+      <rect x="400" y="130" width="70" height="20" class="bar-blue"/>
+    </g>
+  </g>
+
+  <!-- Bottom Row (Factuality < Hallucination) -->
+  <g transform="translate(660, 270)">
+    <!-- Back Layers -->
+    <rect x="20" y="20" width="700" height="220" fill="none" stroke="black" stroke-width="2"/>
+    <rect x="10" y="40" width="700" height="220" fill="none" stroke="black" stroke-width="2" stroke-dasharray="10,5"/>
+    
+    <!-- Document Left (Factuality) - Same as above -->
+    <g transform="translate(30, 60)">
+      <use href="#docShape" />
+      <rect x="10" y="20" width="120" height="20" class="bar-blue"/>
+      <rect x="140" y="20" width="200" height="20" class="bar-blue"/>
+      <rect x="350" y="20" width="100" height="20" class="bar-green"/>
+      <rect x="10" y="50" width="250" height="20" class="bar-blue"/>
+      <rect x="270" y="50" width="250" height="20" class="bar-blue"/>
+      <rect x="10" y="80" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="80" width="220" height="20" class="bar-green"/>
+      <rect x="10" y="110" width="150" height="20" class="bar-green"/>
+      <rect x="170" y="110" width="200" height="20" class="bar-blue"/>
+      <rect x="380" y="110" width="50" height="20" class="bar-blue"/>
+      <rect x="10" y="140" width="220" height="20" class="bar-blue"/>
+      <rect x="240" y="140" width="130" height="20" class="bar-green"/>
+      <rect x="380" y="140" width="140" height="20" class="bar-blue"/>
+    </g>
+
+    <!-- Symbol < -->
+    <text x="320" y="160" font-size="150" font-weight="bold" fill="black" text-anchor="middle">&lt;</text>
+
+    <!-- Document Right (Hallucination) - Same as above -->
+    <g transform="translate(400, 60)">
+      <use href="#docShape" />
+      <rect x="10" y="20" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="20" width="120" height="20" class="bar-red"/>
+      <rect x="240" y="40" width="130" height="20" class="bar-blue"/>
+      <rect x="10" y="70" width="100" height="20" class="bar-blue"/>
+      <rect x="120" y="70" width="180" height="20" class="bar-blue"/>
+      <rect x="210" y="70" width="130" height="20" class="bar-red"/>
+      <rect x="10" y="100" width="120" height="20" class="bar-red"/>
+      <rect x="140" y="100" width="200" height="20" class="bar-blue"/>
+      <rect x="250" y="100" width="110" height="20" class="bar-red"/>
+      <rect x="10" y="130" width="200" height="20" class="bar-blue"/>
+      <rect x="220" y="130" width="170" height="20" class="bar-red"/>
+      <rect x="400" y="130" width="70" height="20" class="bar-blue"/>
+    </g>
+  </g>
+
+  <!-- Arrows 3 -->
+  <path d="M1380,160 L1450,160 L1450,145 L1470,170 L1450,195 L1450,180 L1380,180 Z" class="arrow-sha"/>
+  <path d="M1380,340 L1450,340 L1450,325 L1470,350 L1450,375 L1450,360 L1380,360 Z" class="arrow-sha"/>
+
+  <!-- Output Boxes -->
+  <text x="1520" y="100" class="text-black font-title" text-anchor="middle">Truthful LLM</text>
+  <rect x="1470" y="115" width="300" height="150" class="box-grey"/>
+  <text x="1620" y="170" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;02</text>
+
+  <text x="1520" y="295" class="text-black font-title" text-anchor="middle">Evil LLM</text>
+  <rect x="1470" y="310" width="220" height="190" class="box-grey"/>
+  <text x="1580" y="370" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;03</text>
+
+  <!-- ================= INFERENCE STAGE (BOTTOM) ================= -->
+  <rect x="0" y="460" width="1600" height="400" class="bg-peach"/>
+  <text x="10" y="500" class="text-black font-header">Inference Stage</text>
+
+  <!-- Input Box -->
+  <rect x="10" y="510" width="320" height="600" class="box-grey"/>
+  <text x="12" y="590" class="text-black" font-size="55" font-style="italic">Input prompt x :</text>
+  <text x="12" y="640" class="text-black" font-size="55" font-style="italic">Where was</text>
+  <text x="12" y="685" class="text-black" font-size="55" font-style="italic">NeurIPS 2024 held?</text>
+  <text x="12" y="730" class="text-black" font-size="55" font-style="italic">Response:</text>
+  <text x="12" y="775" class="text-black" font-size="55" font-style="italic">NeurIPS 2024 was</text>
+  <text x="12" y="820" class="text-black" font-size="55" font-style="italic">held at ...</text>
+
+  <!-- Arrows 1 -->
+  <path d="M350,540 L420,540 L420,525 L440,550 L420,575 L420,560 L350,560 Z" class="arrow-sha"/>
+  <path d="M350,685 L420,685 L420,670 L440,700 L420,725 L420,710 L350,710 Z" class="arrow-sha"/>
+  <path d="M350,820 L420,820 L420,805 L440,830 L420,855 L420,840 L350,840 Z" class="arrow-sha"/>
+
+  <!-- LLM Boxes Col 1 -->
+  <text x="480" y="500" class="text-black font-title" text-anchor="middle">LLM</text>
+  <rect x="445" y="510" width="150" height="150" class="box-grey"/>
+  <text x="520" y="550" class="text-white" font-size="35" font-weight="bold" text-anchor="middle">&lt;AF&gt;06</text>
+
+  <text x="480" y="635" class="text-black font-title" text-anchor="middle">Evil LLM</text>
+  <rect x="445" y="650" width="190" height="150" class="box-grey"/>
+  <text x="540" y="700" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;05</text>
+
+  <text x="480" y="780" class="text-black font-title" text-anchor="middle">Truthful LLM</text>
+  <rect x="440" y="790" width="200" height="150" class="box-grey"/>
+  <text x="540" y="840" class="text-white" font-size="40" font-weight="bold" text-anchor="middle">&lt;AF&gt;08</text>
+
+  <!-- Arrows 2 -->
+  <path d="M560,540 L630,540 L630,525 L650,550 L630,575 L630,560 L560,560 Z" class="arrow-sha"/>
+  <path d="M560,685 L630,685 L630,670 L650,700 L630,725 L630,710 L560,710 Z" class="arrow-sha"/>
+  <path d="M560,820 L630,820 L630,805 L650,830 L630,855 L630,840 L560,840 Z" class="arrow-sha"/>
+
+  <!-- Probability Plots -->
+  <!-- Top Plot -->
+  <text x="630" y="500" class="font-math">log p<tspan baseline-shift="sub" font-size="30">θ</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>)</text>
+  <g transform="translate(670, 520)">
+    <use href="#chartAxis"/>
+    <rect x="30" y="40" width="25" height="60" class="bar-red-h"/>
+    <rect x="70" y="0" width="25" height="100" class="bar-red-h"/>
+    <rect x="110" y="25" width="25" height="75" class="bar-blue-h"/>
+    <rect x="150" y="40" width="25" height="60" class="bar-red-h"/>
+    <!-- Labels -->
+    <text x="20" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 20, 130)">China</text>
+    <text x="60" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 60, 130)">India</text>
+    <text x="100" y="140" class="text-blue-h" font-size="30" transform="rotate(-45, 100, 140)">Canada</text>
+    <text x="140" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 140, 130)">Japan</text>
+  </g>
+
+  <!-- Middle Plot -->
+  <text x="630" y="635" class="font-math">log p<tspan baseline-shift="sub" font-size="30">θ−</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>)</text>
+  <g transform="translate(670, 640)">
+    <use href="#chartAxis"/>
+    <rect x="30" y="25" width="25" height="75" class="bar-red-h"/>
+    <rect x="70" y="10" width="25" height="90" class="bar-red-h"/>
+    <rect x="110" y="55" width="25" height="45" class="bar-blue-h"/>
+    <rect x="150" y="25" width="25" height="75" class="bar-red-h"/>
+    <!-- Labels -->
+    <text x="20" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 20, 130)">China</text>
+    <text x="60" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 60, 130)">India</text>
+    <text x="100" y="140" class="text-blue-h" font-size="30" transform="rotate(-45, 100, 140)">Canada</text>
+    <text x="140" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 140, 130)">Japan</text>
+  </g>
+
+  <!-- Bottom Plot -->
+  <text x="635" y="775" class="font-math">log p<tspan baseline-shift="sub" font-size="30">θ+</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>)</text>
+  <g transform="translate(665, 790)">
+    <use href="#chartAxis"/>
+    <rect x="30" y="65" width="25" height="35" class="bar-red-h"/>
+    <rect x="70" y="45" width="25" height="55" class="bar-red-h"/>
+    <rect x="110" y="0" width="25" height="100" class="bar-blue-h"/>
+    <rect x="150" y="35" width="25" height="65" class="bar-red-h"/>
+    <!-- Labels -->
+    <text x="20" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 20, 130)">China</text>
+    <text x="60" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 60, 130)">India</text>
+    <text x="100" y="140" class="text-blue-h" font-size="30" transform="rotate(-45, 100, 140)">Canada</text>
+    <text x="140" y="130" class="text-red-h" font-size="30" transform="rotate(-45, 140, 130)">Japan</text>
+  </g>
+
+  <!-- Bracket & Formula -->
+  <path d="M790,530 L820,530 L820,850 L790,850" fill="none" stroke="black" stroke-width="3"/>
+  <line x1="790" y1="690" x2="820" y2="690" stroke="black" stroke-width="3"/>
+  
+  <text x="835" y="590" class="font-math" font-size="40">log p<tspan baseline-shift="sub" font-size="30">θ</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>) − α log p<tspan baseline-shift="sub" font-size="30">θ−</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>) + γ log p<tspan baseline-shift="sub" font-size="30">θ+</tspan>(y<tspan baseline-shift="sub" font-size="30">t</tspan> | x, y<tspan baseline-shift="sub" font-size="30">&lt;t</tspan>)</text>
+
+  <!-- Arrow MCD -->
+  <path d="M850,685 L920,685 L920,670 L940,700 L920,725 L920,710 L850,710 Z" class="arrow-sha"/>
+  <text x="860" y="660" class="text-black" font-size="35">MCD</text>
+
+  <!-- Result Chart -->
+  <g transform="translate(940, 710)">
+    <line x1="0" y1="40" x2="280" y2="40" stroke="black" stroke-width="3"/>
+    <rect x="30" y="15" width="45" height="25" class="bar-red-h"/>
+    <rect x="100" y="0" width="45" height="40" class="bar-red-h"/>
+    <rect x="170" y="-120" width="45" height="160" class="bar-blue-h"/>
+    <rect x="240" y="5" width="45" height="35" class="bar-red-h"/>
+    <!-- Labels -->
+    <text x="10" y="110" class="text-red-h" font-size="45" transform="rotate(-45, 10, 110)">China</text>
+    <text x="80" y="110" class="text-red-h" font-size="45" transform="rotate(-45, 80, 110)">India</text>
+    <text x="150" y="140" class="text-blue-h" font-size="45" transform="rotate(-45, 150, 140)">Canada</text>
+    <text x="220" y="110" class="text-red-h" font-size="45" transform="rotate(-45, 220, 110)">Japan</text>
+  </g>
+
+  <!-- Arrow Detection -->
+  <path d="M1140,685 L1210,685 L1210,670 L1230,700 L1210,725 L1210,710 L1140,710 Z" class="arrow-sha"/>
+
+  <!-- Diamond -->
+  <polygon points="1330,630 1430,690 1330,750 1230,690" fill="#90EEEE" stroke="black" stroke-width="3"/>
+  <text x="1330" y="698" class="text-black" font-size="45" text-anchor="middle">Detection</text>
+
+  <!-- Final Output -->
+  <path d="M1435,680 L1500,680 L1500,665 L1520,690 L1500,715 L1500,700 L1435,700 Z" class="arrow-sha"/>
+  
+  <rect x="1430" y="620" width="90" height="80" class="box-grey"/>
+  <text x="1475" y="650" class="text-white" font-size="20" font-weight="bold" text-anchor="middle">&lt;AF&gt;01</text>
+  
+  <text x="1530" y="690" class="text-blue-h" font-size="45" font-weight="bold">Canada</text>
+
+  <text x="1350" y="790" class="text-black" font-size="40">hallucinatory object</text>
+  <text x="1350" y="825" class="text-black" font-size="40">“<tspan class="text-red-h">India</tspan>” eliminated</text>
+
+</svg>

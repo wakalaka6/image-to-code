@@ -1,0 +1,334 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 12.0 1786.0 966.0" style="font-family: Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b0a895;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d2c6a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8a8275;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metalGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fecaca;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#86efac;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="pointCloud">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" in="noise" result="coloredNoise"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    <marker id="arrowHeadRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+    </marker>
+    <marker id="arrowHeadGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#86efac" />
+    </marker>
+    <marker id="arrowHeadPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f87171" />
+    </marker>
+  </defs>
+
+  <!-- ================= TOP SECTION ================= -->
+  <g transform="translate(10, 20)">
+    <!-- Main Border -->
+    <rect x="0" y="0" width="1580" height="380" rx="20" fill="none" stroke="#808080" stroke-width="5" stroke-dasharray="20,15" />
+    
+    <!-- Panel 1: Command Sequence -->
+    <g transform="translate(10, 10)">
+      <rect x="0" y="0" width="350" height="360" rx="15" fill="none" stroke="#808080" stroke-width="4" stroke-dasharray="15,10" />
+      <text x="250" y="340" text-anchor="middle" font-weight="bold" fill="#4b7f36" font-size="28">Command Sequence</text>
+      <text x="10" y="30" font-family="Consolas, monospace" font-size="20">
+        <tspan fill="#ff7b84">{</tspan>
+        <tspan x="20" dy="25" fill="#ff7b84">"steps": [</tspan>
+        <tspan x="35" dy="25" fill="#ff7b84">{</tspan>
+        <tspan x="50" dy="25" fill="#ff7b84">"sketch": {</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">"circles": [</tspan>
+        <tspan x="80" dy="25" fill="#ff7b84">{</tspan><tspan fill="#ff7b84">"center": [</tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">], </tspan><tspan fill="#ff7b84">"radius": </tspan><tspan fill="#d68a57">60</tspan><tspan fill="#ff7b84">},</tspan>
+        <tspan x="80" dy="25" fill="#ff7b84">{</tspan><tspan fill="#ff7b84">"center": [</tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">], </tspan><tspan fill="#ff7b84">"radius": </tspan><tspan fill="#d68a57">25</tspan><tspan fill="#ff7b84">}</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">]</tspan>
+        <tspan x="50" dy="25" fill="#ff7b84">},</tspan>
+        <tspan x="50" dy="25" fill="#ff7b84">"extrusion": {</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">"direction": [</tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">1</tspan><tspan fill="#ff7b84">],</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">"origin": [</tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">, </tspan><tspan fill="#d68a57">0</tspan><tspan fill="#ff7b84">],</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">"depth": </tspan><tspan fill="#d68a57">15</tspan><tspan fill="#ff7b84">,</tspan>
+        <tspan x="65" dy="25" fill="#ff7b84">"operation": </tspan><tspan fill="#8dbf68">"NewBody"</tspan>
+        <tspan x="50" dy="25" fill="#ff7b84">}</tspan>
+        <tspan x="35" dy="25" fill="#ff7b84">},</tspan>
+        <tspan x="20" dy="25" fill="#ff7b84">]...}</tspan>
+      </text>
+    </g>
+
+    <!-- Panel 2: Text Description -->
+    <g transform="translate(370, 10)">
+      <rect x="0" y="0" width="350" height="360" rx="15" fill="none" stroke="#808080" stroke-width="4" stroke-dasharray="15,10" />
+      <text x="175" y="340" text-anchor="middle" font-weight="bold" fill="#4b7f36" font-size="28">Text Description</text>
+      <text x="10" y="30" font-family="Consolas, monospace" font-size="20" fill="#8dbf68">
+        <tspan fill="#ff7b84">Text_Description = </tspan><tspan>""""</tspan>
+        <tspan x="10" dy="25">This circular flange is a metal component</tspan>
+        <tspan x="10" dy="22">featuring a flat base plate with a</tspan>
+        <tspan x="10" dy="22">diameter of 120 mm and thickness of 15 mm.</tspan>
+        <tspan x="10" dy="22">The design includes a central bore</tspan>
+        <tspan x="10" dy="22">measuring 50 mm in diameter surrounded by</tspan>
+        <tspan x="10" dy="22">a raised concentric ring with an outer</tspan>
+        <tspan x="10" dy="22">diameter of 70 mm and height of 8 mm that</tspan>
+        <tspan x="10" dy="22">shares the same inner diameter as the</tspan>
+        <tspan x="10" dy="22">central bore. Six equidistant mounting</tspan>
+        <tspan x="10" dy="22">holes measuring 12 mm in diameter are</tspan>
+        <tspan x="10" dy="22">arranged in a circular pattern with a</tspan>
+        <tspan x="10" dy="22">diameter of 90 mm around the periphery.</tspan>
+        <tspan x="10" dy="22">""""</tspan>
+      </text>
+    </g>
+
+    <!-- Panel 3: System Prompt -->
+    <g transform="translate(730, 10)">
+      <rect x="0" y="0" width="840" height="360" rx="15" fill="none" stroke="#808080" stroke-width="4" stroke-dasharray="15,10" />
+      <text x="820" y="100" text-anchor="end" font-weight="bold" fill="#4b7f36" font-size="28">System prompt</text>
+      <text x="20" y="40" font-family="Consolas, monospace" font-size="20" fill="#8dbf68">
+        <tspan fill="#ff7b84">System_prompt = </tspan><tspan>""""</tspan>
+        <tspan x="20" dy="25">Please convert the following CAD command sequence into CAD–Query code, with the final model represented as 'r':</tspan>
+        <tspan x="20" dy="25">""""</tspan>
+        <tspan x="20" dy="40" fill="#777"># The CoT system prompt can be found in the appendix.</tspan>
+      </text>
+    </g>
+
+    <!-- Panel 4: CadQuery Code -->
+    <g transform="translate(730, 120)">
+      <rect x="0" y="0" width="840" height="250" rx="15" fill="none" stroke="#808080" stroke-width="4" stroke-dasharray="15,10" />
+      <text x="820" y="160" text-anchor="end" font-weight="bold" fill="#4b7f36" font-size="28">CadQuery Code</text>
+      <text x="10" y="40" font-family="Consolas, monospace" font-size="20">
+        <tspan fill="#d68a57">import</tspan> <tspan fill="#a58a68">cadquery</tspan> <tspan fill="#d68a57">as</tspan> cq
+        <tspan x="10" dy="40" fill="#ff7b84">flange =</tspan> (<tspan fill="#a58a68">cq</tspan>.<tspan fill="#7aa3d6">Workplane</tspan>(<tspan fill="#d68a57">"XY"</tspan>)
+        <tspan x="20" dy="25">.<tspan fill="#7aa3d6">circle</tspan>(<tspan fill="#d68a57">60</tspan>) .<tspan fill="#7aa3d6">circle</tspan>(<tspan fill="#d68a57">25</tspan>) .<tspan fill="#e0a96d">extrude</tspan>(<tspan fill="#d68a57">15</tspan>)</tspan>
+        <tspan x="20" dy="25">.<tspan fill="#7aa3d6">faces</tspan>(<tspan fill="#d68a57">">>Z"</tspan>) .<tspan fill="#7aa3d6">workplane</tspan>() .<tspan fill="#7aa3d6">polarArray</tspan>(<tspan fill="#d68a57">45</tspan>, <tspan fill="#d68a57">0</tspan>, <tspan fill="#d68a57">360</tspan>, <tspan fill="#d68a57">6</tspan>) .<tspan fill="#7aa3d6">circle</tspan>(<tspan fill="#d68a57">6</tspan>) .<tspan fill="#7aa3d6">cutThruAll</tspan>()</tspan>
+        <tspan x="20" dy="25">.<tspan fill="#7aa3d6">faces</tspan>(<tspan fill="#d68a57">">>Z"</tspan>) .<tspan fill="#7aa3d6">workplane</tspan>() .<tspan fill="#7aa3d6">add</tspan>(<tspan fill="#a58a68">cq</tspan>.<tspan fill="#7aa3d6">Workplane</tspan>(<tspan fill="#d68a57">"XY"</tspan>) .<tspan fill="#7aa3d6">circle</tspan>(<tspan fill="#d68a57">35</tspan>) .<tspan fill="#7aa3d6">circle</tspan>(<tspan fill="#d68a57">25</tspan>) .<tspan fill="#7aa3d6">workplane</tspan>(<tspan fill="#d68a57">offset=15</tspan>) .<tspan fill="#e0a96d">extrude</tspan>(<tspan fill="#d68a57">8</tspan>)) )</tspan>
+        <tspan x="10" dy="30" fill="#ff7b84">result = flange</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM SECTION ================= -->
+  
+  <!-- Left Panel: Text2CAD Dataset -->
+  <g transform="translate(10, 400)">
+    <rect x="0" y="0" width="430" height="520" rx="40" fill="#eff2fa" stroke="#cccccc" stroke-width="5" />
+    <text x="60" y="120" font-size="28" fill="black">Text2CAD</text>
+    <text x="20" y="155" font-size="28" fill="black">Dataset</text>
+    
+    <!-- Node 1 -->
+    <rect x="15" y="30" width="110" height="150" fill="#888" stroke="black" />
+    <text x="70" y="110" text-anchor="middle" fill="white" font-size="32" font-weight="bold">&lt;AF&gt;11</text>
+    
+    <!-- Arrows -->
+    <path d="M125 105 L150 105 M150 105 L150 -100 L190 -100" stroke="black" stroke-width="3" fill="none" marker-end="url(#arrowHead)" />
+    <path d="M150 105 L190 105" stroke="black" stroke-width="3" fill="none" marker-end="url(#arrowHead)" />
+    <path d="M150 105 L150 300 L190 300" stroke="black" stroke-width="3" fill="none" marker-end="url(#arrowHead)" />
+
+    <!-- Node 2 -->
+    <rect x="200" y="-130" width="110" height="150" fill="#888" stroke="black" />
+    <text x="255" y="-40" text-anchor="middle" fill="white" font-size="32" font-weight="bold">&lt;AF&gt;08</text>
+    <text x="255" y="40" text-anchor="middle" font-size="24" fill="black">Command</text>
+    <text x="255" y="65" text-anchor="middle" font-size="24" fill="black">Sequence</text>
+
+    <!-- Node 3 -->
+    <rect x="200" y="120" width="110" height="150" fill="#888" stroke="black" />
+    <text x="255" y="210" text-anchor="middle" fill="white" font-size="32" font-weight="bold">&lt;AF&gt;04</text>
+    <text x="255" y="290" text-anchor="middle" font-size="24" fill="black">Text</text>
+    <text x="255" y="315" text-anchor="middle" font-size="24" fill="black">Description</text>
+
+    <!-- Node 4 -->
+    <rect x="200" y="340" width="110" height="150" fill="#888" stroke="black" />
+    <text x="255" y="430" text-anchor="middle" fill="white" font-size="32" font-weight="bold">&lt;AF&gt;06</text>
+    <text x="255" y="510" text-anchor="middle" font-size="28" fill="black">Ground–Truth Model</text>
+  </g>
+
+  <!-- Middle Panel: Processing -->
+  <g transform="translate(450, 400)">
+    <rect x="0" y="0" width="880" height="520" rx="40" fill="#f4f9f0" stroke="#cccccc" stroke-width="5" />
+    
+    <!-- LLMs -->
+    <g transform="translate(0, -300)">
+      <text x="100" y="30" text-anchor="middle" font-size="30" fill="black">LLMs</text>
+      <rect x="0" y="40" width="160" height="100" fill="#888" stroke="black" />
+      <text x="80" y="100" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;12</text>
+      
+      <path d="M80 140 L80 210" stroke="black" stroke-width="3" marker-end="url(#arrowHead)" />
+      
+      <rect x="0" y="210" width="160" height="100" fill="#888" stroke="black" />
+      <text x="80" y="270" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;03</text>
+      <text x="80" y="340" text-anchor="middle" font-size="28" fill="black">CadQuery</text>
+      
+      <!-- Red X and Arrow -->
+      <path d="M40 360 L80 400 M80 360 L40 400" stroke="#ef4444" stroke-width="8" stroke-linecap="round" />
+      <path d="M70 350 L70 410" stroke="#ef4444" stroke-width="4" marker-end="url(#arrowHeadRed)" />
+      
+      <rect x="0" y="420" width="160" height="100" fill="#888" stroke="black" />
+      <text x="80" y="480" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;01</text>
+      <text x="80" y="550" text-anchor="middle" font-size="28" fill="black">Discard</text>
+    </g>
+
+    <!-- Arrow from Node 2 to LLM -->
+    <path d="M-140 -105 L-100 -105 L-100 10 L-20 10" stroke="black" stroke-width="3" fill="none" marker-end="url(#arrowHead)" />
+    <!-- Arrow from LLM to Node 3 -->
+    <path d="M160 10 L180 10 L180 -105 L200 -105" stroke="black" stroke-width="3" fill="none" marker-end="url(#arrowHead)" />
+
+    <!-- Green Node <AF>07 -->
+    <rect x="-100" y="100" width="80" height="50" fill="#888" stroke="black" />
+    <text x="-60" y="130" text-anchor="middle" fill="white" font-size="16" font-weight="bold">&lt;AF&gt;07</text>
+    <!-- Green Arrow to Models -->
+    <path d="M-20 125 L-50 125 L-50 200 L-10 200" stroke="#86efac" stroke-width="6" fill="none" marker-end="url(#arrowHeadGreen)" />
+
+    <!-- Generated Models -->
+    <g transform="translate(50, -250)">
+      <rect x="200" y="20" width="350" height="300" rx="20" fill="none" stroke="#9ece74" stroke-width="8" stroke-dasharray="30,20" />
+      <rect x="220" y="30" width="310" height="50" rx="10" fill="#e6f4d7" />
+      <text x="375" y="65" text-anchor="middle" font-size="32" font-weight="bold" fill="black">Generated Models</text>
+      
+      <!-- 3D Renders (Simplified) -->
+      <g transform="translate(50, 100)">
+        <!-- Model 1 -->
+        <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="url(#metalGrad)" />
+        <ellipse cx="120" cy="50" rx="120" ry="40" fill="url(#metalGrad)" />
+        <path d="M60,50 L60,120 A60,20 0 0,0 180,120 L180,50 A60,20 0 0,1 60,50" fill="none" stroke="#444" stroke-width="2" />
+        
+        <!-- Model 2 -->
+        <g transform="translate(250, 0)">
+          <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="url(#metalGrad)" />
+          <ellipse cx="120" cy="50" rx="120" ry="40" fill="url(#metalGrad)" />
+          <circle cx="120" cy="50" r="40" fill="none" stroke="#444" stroke-width="2" />
+          <circle cx="40" cy="80" r="10" fill="none" stroke="#444" stroke-width="2" />
+          <circle cx="200" cy="80" r="10" fill="none" stroke="#444" stroke-width="2" />
+          <circle cx="120" cy="100" r="10" fill="none" stroke="#444" stroke-width="2" />
+        </g>
+        
+        <!-- Model 3 -->
+        <g transform="translate(500, 0)">
+          <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="url(#metalGrad)" />
+          <ellipse cx="120" cy="50" rx="120" ry="40" fill="url(#metalGrad)" />
+          <path d="M120,50 L120,80 A40,20 0 0,0 200,80 L200,50 A40,20 0 0,1 120,50" fill="#444" />
+          <circle cx="120" cy="50" r="40" fill="none" stroke="#444" stroke-width="2" />
+          <circle cx="30" cy="70" r="10" fill="none" stroke="#444" stroke-width="2" />
+          <circle cx="210" cy="70" r="10" fill="none" stroke="#444" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Sample Arrow -->
+    <path d="M375 180 L375 250" stroke="black" stroke-width="4" marker-end="url(#arrowHead)" />
+    <text x="390" y="220" font-size="30" fill="black">Sample</text>
+
+    <!-- Point Clouds -->
+    <g transform="translate(50, 260)">
+      <rect x="20" y="0" width="650" height="300" rx="20" fill="none" stroke="#808080" stroke-width="8" stroke-dasharray="30,20" />
+      
+      <!-- Point Cloud 1 -->
+      <g transform="translate(50, 50)">
+        <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+        <ellipse cx="120" cy="50" rx="120" ry="40" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+      </g>
+      <!-- Point Cloud 2 -->
+      <g transform="translate(300, 50)">
+        <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+        <ellipse cx="120" cy="50" rx="120" ry="40" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+        <circle cx="120" cy="50" r="40" fill="none" stroke="#333" stroke-width="4" filter="url(#pointCloud)"/>
+      </g>
+      <!-- Point Cloud 3 (Selected) -->
+      <g transform="translate(550, 50)">
+        <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+        <ellipse cx="120" cy="50" rx="120" ry="40" fill="#333" filter="url(#pointCloud)" opacity="0.8"/>
+        <circle cx="120" cy="50" r="40" fill="none" stroke="#333" stroke-width="4" filter="url(#pointCloud)"/>
+        <circle cx="30" cy="70" r="10" fill="none" stroke="#333" stroke-width="4" filter="url(#pointCloud)"/>
+        <circle cx="210" cy="70" r="10" fill="none" stroke="#333" stroke-width="4" filter="url(#pointCloud)"/>
+      </g>
+      
+      <rect x="200" y="260" width="310" height="50" rx="10" fill="#e6f4d7" />
+      <text x="355" y="295" text-anchor="middle" font-size="32" font-weight="bold" fill="black">3D Point Models</text>
+      
+      <!-- Red Selection Box -->
+      <rect x="430" y="40" width="310" height="180" rx="20" fill="none" stroke="red" stroke-width="6" stroke-dasharray="20,15" />
+      <text x="585" y="240" text-anchor="middle" font-size="30" fill="black">Select by CD</text>
+    </g>
+
+    <!-- Chamfer Distance Arrow -->
+    <text x="730" y="180" font-size="28" fill="black">Chamfer</text>
+    <text x="730" y="210" font-size="28" fill="black">Distance</text>
+    <path d="M710 230 L680 230 L680 210 L630 240 L680 270 L680 250 L710 250 Z" fill="url(#arrowPink)" />
+
+    <!-- Ground Truth -->
+    <g transform="translate(750, -250)">
+      <path d="M0,50 L0,120 A120,40 0 0,0 240,120 L240,50 A120,40 0 0,1 0,50" fill="url(#metalGradDark)" />
+      <ellipse cx="120" cy="50" rx="120" ry="40" fill="url(#metalGradDark)" />
+      <circle cx="120" cy="50" r="40" fill="none" stroke="#444" stroke-width="2" />
+      <circle cx="40" cy="80" r="10" fill="none" stroke="#444" stroke-width="2" />
+      <circle cx="200" cy="80" r="10" fill="none" stroke="#444" stroke-width="2" />
+      <circle cx="120" cy="100" r="10" fill="none" stroke="#444" stroke-width="2" />
+      
+      <text x="120" y="250" text-anchor="middle" font-size="30" fill="black">Ground–Truth Models</text>
+      <path d="M120 260 L120 330" stroke="black" stroke-width="4" marker-end="url(#arrowHead)" />
+      <text x="140" y="300" font-size="30" fill="black">Sample</text>
+    </g>
+
+    <!-- Python Code Selection Arrow -->
+    <path d="M720 280 L720 380 L800 380 L800 410" stroke="url(#arrowPink)" stroke-width="6" fill="none" marker-end="url(#arrowHeadPink)" />
+    <text x="780" y="440" font-size="28" fill="black">Python code</text>
+    <text x="800" y="470" font-size="28" fill="black">selection</text>
+  </g>
+
+  <!-- Right Panel: Our Dataset -->
+  <g transform="translate(1360, 400)">
+    <rect x="0" y="0" width="230" height="520" rx="30" fill="#fcf0e6" stroke="#cccccc" stroke-width="5" />
+    
+    <!-- Dashed Group -->
+    <rect x="10" y="-150" width="180" height="420" rx="10" fill="none" stroke="black" stroke-width="4" stroke-dasharray="15,10" />
+    
+    <!-- Node 1 -->
+    <rect x="40" y="-130" width="120" height="130" fill="#888" stroke="black" />
+    <text x="100" y="-30" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;10</text>
+    <text x="100" y="30" text-anchor="middle" font-size="28" fill="black">Model</text>
+    
+    <!-- Node 2 -->
+    <rect x="40" y="80" width="120" height="130" fill="#888" stroke="black" />
+    <text x="100" y="150" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;09</text>
+    <text x="100" y="230" text-anchor="middle" font-size="24" fill="black">Text</text>
+    <text x="100" y="255" text-anchor="middle" font-size="24" fill="black">Description</text>
+    
+    <!-- Node 3 -->
+    <rect x="40" y="340" width="120" height="130" fill="#888" stroke="black" />
+    <text x="100" y="410" text-anchor="middle" fill="white" font-size="28" font-weight="bold">&lt;AF&gt;02</text>
+    <text x="100" y="490" text-anchor="middle" font-size="28" fill="black">CadQuery</text>
+    
+    <!-- Merging Arrows -->
+    <path d="M170 -50 L200 -50 L200 150 L230 150" stroke="black" stroke-width="4" fill="none" />
+    <path d="M170 380 L200 380 L200 150" stroke="black" stroke-width="4" fill="none" />
+    <path d="M230 150 L250 150" stroke="black" stroke-width="4" marker-end="url(#arrowHead)" />
+    
+    <!-- Final Node -->
+    <rect x="260" y="80" width="160" height="160" fill="#888" stroke="black" />
+    <text x="340" y="160" text-anchor="middle" fill="white" font-size="32" font-weight="bold">&lt;AF&gt;05</text>
+    <text x="340" y="270" text-anchor="middle" font-size="30" fill="black">Our Dataset</text>
+  </g>
+</svg>

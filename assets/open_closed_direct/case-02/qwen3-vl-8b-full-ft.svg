@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 32.0 1771.9 806.0" style="background-color: white;">
+  <defs>
+    <!-- Arrow Marker Definition -->
+    <symbol id="block-arrow" viewBox="0 0 120 60">
+      <path d="M0,20 L90,20 L90,5 L120,30 L90,55 L90,40 L0,40 Z" fill="#808080" stroke="black" stroke-width="2"/>
+    </symbol>
+
+    <!-- Gradient for Blue Surface (Testing) -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a6fa5;stop-opacity:0.8" />
+      <stop offset="40%" style="stop-color:#b0c4de;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Gradient for Orange Surface (Training) -->
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d97a4a;stop-opacity:0.9" />
+      <stop offset="60%" style="stop-color:#f4b084;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Surface Shape Path -->
+    <path id="surf-path" d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" />
+  </defs>
+
+  <!-- ==================== LEFT SECTION: INPUT DATA ==================== -->
+  <g transform="translate(10, 270)">
+    <!-- Wavy Container -->
+    <path d="M0,0 L410,0 L410,230 L200,280 C100,310 0,260 0,230 Z" fill="#d9d9d9" stroke="#999" stroke-width="2"/>
+    
+    <!-- Text Content -->
+    <text x="15" y="40" font-family="Arial, sans-serif" font-size="32" fill="black">Translate the following text from</text>
+    <text x="15" y="75" font-family="Arial, sans-serif" font-size="32" fill="black">English into Chinese.</text>
+    
+    <text x="15" y="140" font-family="Arial, sans-serif" font-size="32" fill="black">English: Amsterdam is famous for</text>
+    <text x="15" y="175" font-family="Arial, sans-serif" font-size="32" fill="black">its hundreds of beautiful canals,</text>
+    <text x="15" y="210" font-family="Arial, sans-serif" font-size="32" fill="black">millions of bicycles, stunning</text>
+    <text x="15" y="245" font-family="Arial, sans-serif" font-size="32" fill="black">summers, and disgusting winters.</text>
+    
+    <text x="15" y="300" font-family="Arial, sans-serif" font-size="32" fill="black">Chinese:</text>
+  </g>
+
+  <!-- Input Split Arrows -->
+  <!-- Upward Arrow -->
+  <use href="#block-arrow" x="450" y="220" width="100" height="60" transform="rotate(-45, 480, 250) translate(0, -20)" />
+  <!-- Downward Arrow -->
+  <use href="#block-arrow" x="450" y="480" width="100" height="60" transform="rotate(45, 480, 510) translate(0, 20)" />
+
+  <!-- ==================== TOP SECTION: TESTING TIME ==================== -->
+  <g transform="translate(0, 0)">
+    <!-- Header -->
+    <text x="1300" y="40" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">Testing Time Optimization</text>
+
+    <!-- NMT Box -->
+    <rect x="560" y="160" width="280" height="120" rx="20" ry="20" fill="#e6e6e6" stroke="black" stroke-width="3"/>
+    <text x="700" y="210" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="black" dominant-baseline="middle">NMT</text>
+
+    <!-- Sampling Arrow -->
+    <text x="840" y="175" font-family="Arial, sans-serif" font-size="32" fill="black">Sampling</text>
+    <use href="#block-arrow" x="840" y="180" width="120" height="40" />
+
+    <!-- Blue Surface Plot -->
+    <g transform="translate(1030, 50)">
+      <!-- Gradient Fill Background -->
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="url(#grad-blue)" />
+      <!-- Dashed Outline -->
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="none" stroke="#001f3f" stroke-width="2" stroke-dasharray="8,5" />
+      <!-- Label -->
+      <text x="175" y="380" font-family="Times New Roman, serif" font-weight="bold" font-size="32" text-anchor="middle" fill="black" clip-path="inset(0 0 0 0)">Quality</text>
+    </g>
+
+    <!-- Reranking Arrow -->
+    <text x="1300" y="180" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#38761d" text-anchor="middle">Reranking / Voting</text>
+    <use href="#block-arrow" x="1240" y="180" width="120" height="40" />
+
+    <!-- Output Box -->
+    <rect x="1410" y="155" width="300" height="110" fill="#f2f2f2" stroke="black" stroke-width="2"/>
+    <text x="1560" y="190" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="black">Highest-scoring</text>
+    <text x="1560" y="225" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="black">Output</text>
+  </g>
+
+  <!-- ==================== DIVIDER LINE ==================== -->
+  <line x1="490" y1="390" x2="1580" y2="390" stroke="black" stroke-width="3" stroke-dasharray="15, 10, 2, 10" />
+
+  <!-- ==================== BOTTOM SECTION: TRAINING TIME ==================== -->
+  <g transform="translate(0, 300)">
+    <!-- Header -->
+    <text x="1300" y="150" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">Training Time Optimization</text>
+
+    <!-- NMT Theta Box -->
+    <rect x="560" y="260" width="280" height="120" rx="20" ry="20" fill="#c5e0b4" stroke="black" stroke-width="3"/>
+    <text x="700" y="310" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="black" dominant-baseline="middle">NMT<tspan dy="10" font-size="24">θ</tspan></text>
+
+    <!-- Sampling Arrow -->
+    <text x="840" y="275" font-family="Arial, sans-serif" font-size="32" fill="black">Sampling</text>
+    <use href="#block-arrow" x="840" y="280" width="120" height="40" />
+
+    <!-- Left Orange Surface (Likelihood) -->
+    <g transform="translate(1030, 150)">
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="url(#grad-orange)" />
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="none" stroke="#001f3f" stroke-width="2" stroke-dasharray="8,5" />
+      <text x="175" y="380" font-family="Times New Roman, serif" font-weight="bold" font-size="32" text-anchor="middle" fill="black">Likelihood</text>
+    </g>
+
+    <!-- Calibration Arrow -->
+    <text x="1300" y="280" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ff0000" text-anchor="middle">Calibration</text>
+    <use href="#block-arrow" x="1240" y="280" width="120" height="40" />
+
+    <!-- Right Orange Surface (Likelihood -> Quality) -->
+    <g transform="translate(1410, 150)">
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="url(#grad-orange)" />
+      <path d="M0,0 C80,50 120,150 200,100 C280,-50 320,50 350,150 C380,250 300,350 0,350 C50,300 80,200 120,180 C160,160 140,50 0,0 Z" fill="none" stroke="#001f3f" stroke-width="2" stroke-dasharray="8,5" />
+      <text x="175" y="380" font-family="Times New Roman, serif" font-weight="bold" font-size="32" text-anchor="middle" fill="black">Likelihood -> Quality</text>
+    </g>
+  </g>
+</svg>

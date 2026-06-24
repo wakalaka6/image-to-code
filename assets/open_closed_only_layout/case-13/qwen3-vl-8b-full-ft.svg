@@ -1,0 +1,333 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 12.0 1596.0 621.0" style="font-family: Arial, sans-serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    
+    <!-- Double Headed Arrow Symbol -->
+    <symbol id="doubleArrow" viewBox="0 0 40 60">
+      <path d="M 20 0 L 35 20 H 25 V 40 H 35 L 20 60 L 5 40 H 15 V 20 H 5 Z" stroke-width="3" stroke-linejoin="round" />
+    </symbol>
+
+    <!-- Cat Image Placeholder Pattern -->
+    <pattern id="catPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+       <rect width="10" height="10" fill="#332222"/>
+       <circle cx="2" cy="2" r="1" fill="#553322"/>
+       <circle cx="7" cy="5" r="1" fill="#553322"/>
+    </pattern>
+  </defs>
+
+  <!-- ================= LEGEND ================= -->
+  <g transform="translate(10, 95)">
+    <rect x="0" y="0" width="160" height="180" fill="none" stroke="#A6A6A6" stroke-width="4" stroke-dasharray="15,10" rx="5" />
+    
+    <!-- Item 1 -->
+    <rect x="10" y="25" width="40" height="40" fill="#8DAADD" stroke="#6B8CCF" stroke-width="3" />
+    <text x="40" y="65" font-size="40" fill="black">hard label</text>
+    
+    <!-- Item 2 -->
+    <rect x="10" y="75" width="40" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="3" />
+    <text x="40" y="115" font-size="40" fill="black">mask label</text>
+    
+    <!-- Item 3 -->
+    <rect x="10" y="125" width="40" height="40" fill="#FDD65B" stroke="#F4C82E" stroke-width="3" />
+    <text x="40" y="165" font-size="40" fill="black">target</text>
+    
+    <!-- Item 4 -->
+    <rect x="10" y="175" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="3" />
+    <text x="40" y="215" font-size="40" fill="black">non-target</text>
+  </g>
+
+  <!-- ================= INPUT SECTION ================= -->
+  <g transform="translate(10, 280)">
+    <!-- Photo -->
+    <rect x="0" y="0" width="150" height="150" fill="url(#catPattern)" />
+    <!-- Overlay -->
+    <rect x="20" y="20" width="110" height="110" fill="rgba(100,100,100,0.8)" stroke="black" stroke-width="1" />
+    <text x="75" y="85" font-size="32" fill="white" text-anchor="middle" font-weight="bold">&lt;AF&gt;01</text>
+    <!-- Label -->
+    <text x="75" y="190" font-size="40" fill="black" text-anchor="middle">cat</text>
+  </g>
+
+  <!-- Arrows from Input -->
+  <line x1="160" y1="280" x2="210" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="160" y1="395" x2="210" y2="420" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ================= NETWORKS ================= -->
+  <!-- Ground Truth -->
+  <rect x="210" y="70" width="250" height="100" rx="20" fill="white" stroke="#A6A6A6" stroke-width="3" />
+  <text x="335" y="115" font-size="40" text-anchor="middle" fill="black">Ground Truth</text>
+  <line x1="430" y1="100" x2="460" y2="100" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- Teacher -->
+  <rect x="210" y="200" width="250" height="180" rx="30" fill="white" stroke="#A6A6A6" stroke-width="3" />
+  <text x="360" y="300" font-size="40" text-anchor="middle" fill="black">Teacher</text>
+  <line x1="430" y1="250" x2="460" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Teacher Slabs -->
+  <g transform="translate(230, 220)">
+    <!-- Slab 1 -->
+    <path d="M0,20 L20,0 L20,120 L0,140 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/> <!-- Side -->
+    <rect x="0" y="20" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/> <!-- Face -->
+    <!-- Slab 2 -->
+    <path d="M30,10 L50,-10 L50,110 L30,130 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="30" y="10" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 3 -->
+    <path d="M60,0 L80,-20 L80,100 L60,120 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="60" y="0" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 4 -->
+    <path d="M90,-10 L110,-30 L110,90 L90,110 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="90" y="-10" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 5 -->
+    <path d="M120,-20 L140,-40 L140,80 L120,100 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="120" y="-20" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 6 -->
+    <path d="M150,-30 L170,-50 L170,70 L150,90 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="150" y="-30" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 7 -->
+    <path d="M180,-40 L200,-60 L200,60 L180,80 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="180" y="-40" width="20" height="120" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+    <!-- Slab 8 (Small) -->
+    <path d="M210,-50 L230,-70 L230,-40 L210,-20 Z" fill="#6B8CCF" stroke="#4A70B0" stroke-width="1"/>
+    <rect x="210" y="-50" width="20" height="30" fill="#5B9BD5" stroke="#4A70B0" stroke-width="1"/>
+  </g>
+
+  <!-- Student -->
+  <rect x="210" y="360" width="250" height="180" rx="30" fill="white" stroke="#A6A6A6" stroke-width="3" />
+  <text x="360" y="460" font-size="40" text-anchor="middle" fill="black">Student</text>
+  <line x1="430" y1="420" x2="460" y2="420" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <!-- Student Slabs (Orange) -->
+  <g transform="translate(230, 400)">
+    <!-- Slab 1 -->
+    <path d="M0,20 L20,0 L20,120 L0,140 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="0" y="20" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 2 -->
+    <path d="M30,10 L50,-10 L50,110 L30,130 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="30" y="10" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 3 -->
+    <path d="M60,0 L80,-20 L80,100 L60,120 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="60" y="0" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 4 -->
+    <path d="M90,-10 L110,-30 L110,90 L90,110 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="90" y="-10" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 5 -->
+    <path d="M120,-20 L140,-40 L140,80 L120,100 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="120" y="-20" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 6 -->
+    <path d="M150,-30 L170,-50 L170,70 L150,90 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="150" y="-30" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 7 -->
+    <path d="M180,-40 L200,-60 L200,60 L180,80 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="180" y="-40" width="20" height="120" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+    <!-- Slab 8 (Small) -->
+    <path d="M210,-50 L230,-70 L230,-40 L210,-20 Z" fill="#E88C30" stroke="#C06B20" stroke-width="1"/>
+    <rect x="210" y="-50" width="20" height="30" fill="#F4963C" stroke="#C06B20" stroke-width="1"/>
+  </g>
+
+  <!-- ================= DECOUPLING COLUMN ================= -->
+  <rect x="460" y="20" width="100" height="470" fill="none" stroke="#A6A6A6" stroke-width="4" stroke-dasharray="15,10" rx="5" />
+  
+  <!-- Top Stack (Blue) -->
+  <g transform="translate(470, 35)">
+    <rect x="0" y="0" width="50" height="40" fill="#8DAADD" stroke="#6B8CCF" stroke-width="2" />
+    <text x="60" y="30" font-family="serif" font-size="40">𝟙</text>
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="40" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="80" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="120" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="160" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="200" width="50" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Middle Stack (Yellow/Green) -->
+  <g transform="translate(470, 190)">
+    <rect x="0" y="0" width="50" height="40" fill="#FDD65B" stroke="#F4C82E" stroke-width="2" />
+    <text x="60" y="30" font-family="serif" font-style="italic" font-size="40">p<tspan dy="10" font-size="30">t</tspan><tspan dy="-25" dx="-5" font-size="30">T</tspan></text>
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="40" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="80" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="120" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="160" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="200" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Bottom Stack (Yellow/Green/Grey) -->
+  <g transform="translate(470, 345)">
+    <rect x="0" y="0" width="50" height="40" fill="#FDD65B" stroke="#F4C82E" stroke-width="2" />
+    <text x="60" y="30" font-family="serif" font-style="italic" font-size="40">p<tspan dy="10" font-size="30">t</tspan><tspan dy="-25" dx="-5" font-size="30">S</tspan></text>
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="40" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="80" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="120" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="160" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="200" width="50" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- ================= MIDDLE BLOCKS ================= -->
+  
+  <!-- Top: TASK -->
+  <g transform="translate(560, 40)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#8DAADD" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">TASK</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="white" stroke="#8DAADD" stroke-width="3" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Task</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">CE Loss</text>
+  </g>
+
+  <!-- Middle: TCKD -->
+  <g transform="translate(560, 200)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#FDD65B" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">TCKD</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="white" stroke="#FDD65B" stroke-width="3" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Target Class</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">KL Loss</text>
+  </g>
+
+  <!-- Bottom: NCKD -->
+  <g transform="translate(560, 360)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#B2D69B" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">NCKD</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="white" stroke="#B2D69B" stroke-width="3" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Non-target</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">Class KL Loss</text>
+  </g>
+
+  <!-- Arrows from Decoupling to Middle -->
+  <line x1="540" y1="100" x2="580" y2="100" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="250" x2="580" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="420" x2="580" y2="420" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ================= GRADIENT BLOCKS ================= -->
+  
+  <!-- Top: TOG -->
+  <g transform="translate(850, 40)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#8DAADD" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">TOG</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="#8DAADD" stroke="none" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Task-oriented</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">Gradient</text>
+  </g>
+
+  <!-- Middle: TCG -->
+  <g transform="translate(850, 200)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#FDD65B" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">TCG</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="#FDD65B" stroke="none" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Target class</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">Gradient</text>
+  </g>
+
+  <!-- Bottom: NCG -->
+  <g transform="translate(850, 360)">
+    <rect x="0" y="0" width="220" height="120" fill="none" stroke="#B2D69B" stroke-width="3" stroke-dasharray="15,10" rx="5" />
+    <text x="110" y="45" font-size="40" text-anchor="middle">NCG</text>
+    <rect x="20" y="55" width="180" height="100" rx="20" fill="#B2D69B" stroke="none" />
+    <text x="110" y="90" font-size="40" text-anchor="middle">Non-target</text>
+    <text x="110" y="130" font-size="40" text-anchor="middle" dy="-10">class Gradient</text>
+  </g>
+
+  <!-- Arrows from Middle to Gradient -->
+  <line x1="880" y1="100" x2="920" y2="100" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="880" y1="250" x2="920" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="880" y1="420" x2="920" y2="420" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ================= MOMENTUM BUFFERS ================= -->
+  
+  <!-- Top Buffer -->
+  <g transform="translate(1200, 70)">
+    <rect x="0" y="0" width="220" height="100" rx="20" fill="#8DAADD" stroke="none" />
+    <text x="110" y="40" font-size="40" text-anchor="middle">Task</text>
+    <text x="110" y="80" font-size="40" text-anchor="middle">Momentum buffer</text>
+  </g>
+  <!-- Equation Top -->
+  <text x="1140" y="50" font-family="serif" font-style="italic" font-size="35">v &#8592; g + (&#956; + &#916;)v</text>
+  <!-- Double Arrow Top -->
+  <use href="#doubleArrow" x="1140" y="60" width="40" height="60" fill="none" stroke="#8DAADD" stroke-width="3" />
+
+  <!-- Middle Buffer -->
+  <g transform="translate(1200, 220)">
+    <rect x="0" y="0" width="220" height="100" rx="20" fill="#FDD65B" stroke="none" />
+    <text x="110" y="40" font-size="40" text-anchor="middle">Target</text>
+    <text x="110" y="80" font-size="40" text-anchor="middle">Momentum buffer</text>
+  </g>
+  <!-- Equation Middle -->
+  <text x="1140" y="200" font-family="serif" font-style="italic" font-size="35">v &#8592; g + (&#956; &#8722; &#916;)v</text>
+  <!-- Double Arrow Middle -->
+  <use href="#doubleArrow" x="1140" y="210" width="40" height="60" fill="none" stroke="#FDD65B" stroke-width="3" />
+
+  <!-- Bottom Buffer -->
+  <g transform="translate(1200, 380)">
+    <rect x="0" y="0" width="220" height="100" rx="20" fill="#B2D69B" stroke="none" />
+    <text x="110" y="40" font-size="40" text-anchor="middle">Non-target</text>
+    <text x="110" y="80" font-size="40" text-anchor="middle">Momentum buffer</text>
+  </g>
+  <!-- Equation Bottom -->
+  <text x="1140" y="360" font-family="serif" font-style="italic" font-size="35">v &#8592; g + (&#956; + &#916;)v</text>
+  <!-- Double Arrow Bottom -->
+  <use href="#doubleArrow" x="1140" y="370" width="40" height="60" fill="none" stroke="#B2D69B" stroke-width="3" />
+
+  <!-- Arrows from Gradient to Buffer -->
+  <line x1="1130" y1="100" x2="1190" y2="100" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="1130" y1="250" x2="1190" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="1130" y1="420" x2="1190" y2="420" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ================= UPDATE LOOP ================= -->
+  
+  <!-- Summation Circle -->
+  <g transform="translate(1450, 260)">
+    <circle cx="0" cy="0" r="30" fill="white" stroke="black" stroke-width="3" />
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="black" stroke-width="3" />
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Lines to Summation -->
+  <polyline points="1420,100 1450,100 1450,220" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="1420" y1="250" x2="1410" y2="250" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <polyline points="1420,420 1450,420 1450,290" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- Update Equation -->
+  <text x="1490" y="240" font-family="serif" font-style="italic" font-size="40">&#952; &#8592; &#952; &#8722; &#947;v</text>
+  <text x="1500" y="280" font-size="45" fill="black">Update</text>
+
+  <!-- Feedback Loop -->
+  <polyline points="1480,260 1590,260 1590,520 320,520 320,470" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+  <line x1="320" y1="520" x2="320" y2="470" stroke="black" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ================= DYNAMIC MASK ================= -->
+  
+  <g transform="translate(560, 350)">
+    <rect x="0" y="0" width="120" height="120" fill="none" stroke="#A6A6A6" stroke-width="4" stroke-dasharray="15,10" rx="5" />
+    <!-- Left Stack -->
+    <g transform="translate(10, 10)">
+      <rect x="0" y="0" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="40" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="80" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="120" width="40" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="160" width="40" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+    </g>
+    <!-- Right Stack -->
+    <g transform="translate(70, 10)">
+      <rect x="0" y="0" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="40" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="80" width="40" height="40" fill="#B2D69B" stroke="#8AB668" stroke-width="2" />
+      <rect x="0" y="120" width="40" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+      <rect x="0" y="160" width="40" height="40" fill="#A6A6A6" stroke="#7F7F7F" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Mask Label -->
+  <g transform="translate(500, 500)">
+    <rect x="0" y="0" width="280" height="60" rx="10" fill="#CBB0D7" />
+    <text x="140" y="40" font-size="40" text-anchor="middle" fill="black">Dynamic Top-k Mask</text>
+  </g>
+  <!-- Double Arrow for Mask -->
+  <use href="#doubleArrow" x="610" y="470" width="40" height="60" fill="none" stroke="#CBB0D7" stroke-width="3" />
+  <text x="560" y="340" font-size="45" fill="black">Decoupling</text>
+
+</svg>

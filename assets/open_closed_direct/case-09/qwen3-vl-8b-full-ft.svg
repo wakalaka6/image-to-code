@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.0 -8.0 1656.0 666.0" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <!-- Colors -->
+    <style>
+      .header-bg { fill: #707BC1; }
+      .body-bg { fill: #E0E0E0; }
+      .white-box { fill: #FFFFFF; }
+      .text-white { fill: #FFFFFF; font-weight: bold; }
+      .text-black { fill: #000000; }
+      .text-blue { fill: #0078D7; }
+      .text-green { fill: #28A745; }
+      .stroke-black { stroke: #000000; stroke-width: 2; }
+      .stroke-thin { stroke: #000000; stroke-width: 1; }
+      .arrow-red { stroke: #FF0000; stroke-width: 3; fill: none; }
+      .arrow-green { stroke: #32CD32; stroke-width: 3; fill: none; }
+      .bold { font-weight: bold; }
+      .serif-italic { font-family: "Times New Roman", Times, serif; font-style: italic; font-weight: bold; }
+    </style>
+
+    <!-- Arrow Markers -->
+    <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#000000" />
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#FF0000" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#32CD32" />
+    </marker>
+
+    <!-- Robot Icon -->
+    <g id="robot">
+      <rect x="10" y="5" width="20" height="15" rx="2" /> <!-- Head -->
+      <rect x="5" y="22" width="30" height="25" rx="3" /> <!-- Body -->
+      <rect x="2" y="22" width="4" height="15" rx="2" /> <!-- L Arm -->
+      <rect x="34" y="22" width="4" height="15" rx="2" /> <!-- R Arm -->
+      <rect x="12" y="49" width="4" height="10" /> <!-- L Leg -->
+      <rect x="24" y="49" width="4" height="10" /> <!-- R Leg -->
+      <line x1="20" y1="5" x2="20" y2="0" stroke-width="2" /> <!-- Antenna -->
+      <circle cx="20" cy="0" r="2" />
+      <!-- Eye/Sensor -->
+      <circle cx="15" cy="12" r="2" fill="white" />
+      <circle cx="25" cy="12" r="2" fill="white" />
+    </g>
+
+    <!-- Judge Icon -->
+    <g id="judge">
+      <circle cx="25" cy="25" r="23" fill="white" stroke="black" stroke-width="2"/>
+      <path d="M10,48 Q25,15 40,48" fill="#C8C8F3" stroke="black" stroke-width="1.5"/>
+      <circle cx="25" cy="20" r="8" fill="#C8C8F3" stroke="black" stroke-width="1.5"/>
+    </g>
+
+    <!-- Checkmark -->
+    <g id="check">
+      <path d="M2,10 L8,16 L18,2" fill="none" stroke="#28A745" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- Cross -->
+    <g id="cross">
+      <path d="M2,2 L14,14 M14,2 L2,14" fill="none" stroke="#FF0000" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1600" height="560" fill="white" />
+
+  <!-- ================= LEFT COLUMN: Initial Survey ================= -->
+  <g transform="translate(20, 0)">
+    <!-- Header -->
+    <text x="250" y="40" text-anchor="middle" font-size="32" font-weight="bold" fill="black">Initial Survey</text>
+
+    <!-- Box 1: Prolific -->
+    <rect x="40" y="50" width="400" height="110" class="header-bg" />
+    <text x="240" y="80" text-anchor="middle" font-size="28" class="text-white">Prolific Screening</text>
+    <rect x="65" y="85" width="350" height="80" class="white-box" />
+    <use href="#check" x="80" y="90" />
+    <text x="105" y="105" font-size="24" class="text-black">US residents</text>
+    <use href="#check" x="80" y="115" />
+    <text x="105" y="130" font-size="24" class="text-black">English speaking</text>
+    <use href="#check" x="80" y="135" />
+    <text x="105" y="150" font-size="24" class="text-black">COVID/Climate views (+ or -)</text>
+
+    <!-- Transition -->
+    <line x1="240" y1="160" x2="240" y2="180" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)" />
+    
+    <!-- Central Icon & Stats -->
+    <g transform="translate(215, 170)">
+      <use href="#judge" />
+    </g>
+    <text x="290" y="180" font-size="24" class="text-black">1650</text>
+    <text x="290" y="200" font-size="24" class="text-black">screened</text>
+    <line x1="240" y1="205" x2="240" y2="220" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)" />
+
+    <!-- Box 2: Belief Assessment -->
+    <rect x="40" y="210" width="400" height="150" class="header-bg" />
+    <text x="240" y="240" text-anchor="middle" font-size="28" class="text-white">Belief Assessment</text>
+    <rect x="60" y="240" width="360" height="100" class="white-box" />
+    <text x="240" y="260" text-anchor="middle" font-size="22" class="text-black">COVID origin: man-made vs natural?</text>
+    <text x="240" y="282" text-anchor="middle" font-size="22" class="text-black">COVID vaccines: safe and effective?</text>
+    <text x="240" y="304" text-anchor="middle" font-size="22" class="text-black">Climate: human-caused vs natural cycles?</text>
+    <text x="240" y="320" text-anchor="middle" font-size="22" class="text-black" font-weight="bold">.............</text>
+
+    <!-- Branching Lines -->
+    <path d="M240,335 L240,360 M240,360 L100,360 L100,380 M240,360 L380,360 L380,380" fill="none" stroke-width="3" />
+    <line x1="100" y1="360" x2="100" y2="375" stroke="#FF0000" marker-end="url(#arrowRed)" />
+    <line x1="380" y1="360" x2="380" y2="375" stroke="#32CD32" marker-end="url(#arrowGreen)" />
+
+    <!-- Results Boxes -->
+    <!-- Left Result -->
+    <g transform="translate(-10, 360)">
+      <rect width="250" height="100" fill="#C8DFF0" />
+      <text x="125" y="35" text-anchor="middle" font-size="28" class="text-black">Skeptical belief</text>
+      <text x="125" y="65" text-anchor="middle" font-size="24" class="text-black">107 participants</text>
+      <rect y="100" width="250" height="100" fill="#D3D3D3" />
+      <use href="#cross" x="10" y="110" />
+      <text x="35" y="125" font-size="24" class="text-black">COVID is human made</text>
+      <use href="#cross" x="10" y="140" />
+      <text x="35" y="155" font-size="24" class="text-black">Vaccine are safe</text>
+      <use href="#cross" x="10" y="170" />
+      <text x="35" y="185" font-size="24" class="text-black">Climate is human-caused</text>
+    </g>
+
+    <!-- Right Result -->
+    <g transform="translate(240, 360)">
+      <rect width="250" height="100" fill="#C8DFF0" />
+      <text x="125" y="35" text-anchor="middle" font-size="28" class="text-black">Mainstream belief</text>
+      <text x="125" y="65" text-anchor="middle" font-size="24" class="text-black">107 participants</text>
+      <rect y="100" width="250" height="100" fill="#D3D3D3" />
+      <use href="#check" x="10" y="110" />
+      <text x="35" y="125" font-size="24" class="text-black">COVID is human made</text>
+      <use href="#check" x="10" y="140" />
+      <text x="35" y="155" font-size="24" class="text-black">Vaccine are safe</text>
+      <use href="#check" x="10" y="170" />
+      <text x="35" y="185" font-size="24" class="text-black">Climate is human-caused</text>
+    </g>
+
+    <!-- Footer Connector -->
+    <text x="240" y="500" text-anchor="middle" font-size="60" font-weight="bold" fill="black">+</text>
+
+    <!-- Box 4: Demographic -->
+    <rect x="40" y="500" width="400" height="150" class="header-bg" />
+    <text x="240" y="530" text-anchor="middle" font-size="28" class="text-white">Demographic Information</text>
+    <rect x="60" y="540" width="360" height="80" class="white-box" />
+    <text x="240" y="565" text-anchor="middle" font-size="24" class="text-black">Age, Gender, Education,</text>
+    <text x="240" y="590" text-anchor="middle" font-size="24" class="text-black">Residence, Political Stance, Income</text>
+  </g>
+
+  <!-- ================= MIDDLE COLUMN: Consultancy ================= -->
+  <g transform="translate(500, 0)">
+    <!-- Sidebar -->
+    <line x1="0" y1="140" x2="0" y2="560" stroke="black" stroke-width="4" />
+    <line x1="460" y1="140" x2="460" y2="560" stroke="black" stroke-width="4" />
+    <text transform="rotate(-90, 230, 540)" x="230" y="540" text-anchor="middle" font-size="22" class="text-black">One AI consultant argues a random position between True (50%) or False (50%)</text>
+
+    <!-- Header -->
+    <rect x="0" y="140" width="460" height="50" class="header-bg" />
+    <text x="230" y="170" text-anchor="middle" font-size="28" class="text-white">Consultancy</text>
+
+    <!-- Round 1 -->
+    <rect x="20" y="180" width="420" height="150" rx="20" class="body-bg" />
+    <text x="40" y="200" font-size="28" class="text-black" font-weight="bold">Round 1</text>
+    <use href="#robot" x="30" y="210" fill="#1ABC9C" />
+    <!-- Bubble 1 -->
+    <path d="M100,200 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M100,230 l-15,10 l15,-5 z" fill="white" />
+    <text x="110" y="220" font-size="22" class="text-black">Studies show surgical masks filter</text>
+    <text x="110" y="240" font-size="22" class="text-black">60-80% of particles...</text>
+    <!-- Bubble 2 -->
+    <path d="M100,260 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M500,290 l15,10 l-15,-5 z" fill="white" />
+    <text x="130" y="290" font-size="22" class="text-black">What about multi-layer cloth masks?</text>
+    <use href="#judge" x="30" y="270" />
+
+    <!-- Round 2 -->
+    <rect x="20" y="310" width="420" height="150" rx="20" class="body-bg" />
+    <text x="40" y="330" font-size="28" class="text-black" font-weight="bold">Round 2</text>
+    <use href="#robot" x="30" y="340" fill="#1ABC9C" />
+    <!-- Bubble 1 -->
+    <path d="M100,320 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M100,350 l-15,10 l15,-5 z" fill="white" />
+    <text x="110" y="350" font-size="22" class="text-black">Even 3-layer cloth masks only achieve</text>
+    <text x="110" y="370" font-size="22" class="text-black">50% filtration...</text>
+    <!-- Bubble 2 -->
+    <path d="M100,390 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M500,420 l15,10 l-15,-5 z" fill="white" />
+    <text x="150" y="425" font-size="22" class="text-black">Are there any exceptions to this?</text>
+    <use href="#judge" x="30" y="400" />
+
+    <!-- Round 3 -->
+    <rect x="20" y="450" width="420" height="150" rx="20" class="body-bg" />
+    <text x="40" y="470" font-size="28" class="text-black" font-weight="bold">Round 3</text>
+    <use href="#robot" x="30" y="480" fill="#1ABC9C" />
+    <!-- Bubble 1 -->
+    <path d="M100,460 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M100,490 l-15,10 l15,-5 z" fill="white" />
+    <text x="110" y="490" font-size="22" class="text-black">WHO recommends surgical over cloth</text>
+    <text x="110" y="510" font-size="22" class="text-black">masks...</text>
+    <!-- Bubble 2 -->
+    <path d="M100,530 h500 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-500 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M500,560 l15,10 l-15,-5 z" fill="white" />
+    <text x="180" y="555" font-size="22" class="text-black">Final decision: True/False</text>
+    <text x="130" y="575" font-size="22" class="text-black">Confidence: 0-100% | Justification</text>
+    <use href="#judge" x="30" y="535" />
+  </g>
+
+  <!-- ================= RIGHT COLUMN: Debate ================= -->
+  <g transform="translate(980, 0)">
+    <!-- Sidebar -->
+    <line x1="0" y1="140" x2="0" y2="560" stroke="black" stroke-width="4" />
+    <line x1="600" y1="140" x2="600" y2="560" stroke="black" stroke-width="4" />
+    <text transform="rotate(-90, 300, 540)" x="300" y="540" text-anchor="middle" font-size="22" class="text-black">Two AI debaters argue opposing positions between True vs. False (100%)</text>
+
+    <!-- Header -->
+    <rect x="0" y="140" width="600" height="50" class="header-bg" />
+    <text x="300" y="170" text-anchor="middle" font-size="28" class="text-white">Debate</text>
+
+    <!-- Round 1 -->
+    <rect x="10" y="180" width="580" height="150" rx="20" class="body-bg" />
+    <text x="30" y="200" font-size="28" class="text-black" font-weight="bold">Round 1</text>
+    <use href="#robot" x="20" y="210" fill="#1ABC9C" />
+    <use href="#robot" x="300" y="210" fill="#E71D1D" />
+    <!-- Bubble 1 -->
+    <path d="M80,200 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M80,230 l-15,10 l15,-5 z" fill="white" />
+    <text x="90" y="225" font-size="22" class="text-black">Surgical masks filter 60-80%...</text>
+    <!-- Bubble 2 -->
+    <path d="M350,200 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M350,230 l-15,10 l15,-5 z" fill="white" />
+    <text x="360" y="215" font-size="22" class="text-black">Quality cloth masks can be</text>
+    <text x="360" y="235" font-size="22" class="text-black">effective...</text>
+    <!-- Bubble 3 -->
+    <path d="M150,260 h400 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-400 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M150,290 l-15,10 l15,-5 z" fill="white" />
+    <text x="200" y="285" font-size="22" class="text-black">What defines 'quality' cloth masks?</text>
+    <use href="#judge" x="150" y="270" />
+
+    <!-- Round 2 -->
+    <rect x="10" y="310" width="580" height="150" rx="20" class="body-bg" />
+    <text x="30" y="330" font-size="28" class="text-black" font-weight="bold">Round 2</text>
+    <use href="#robot" x="20" y="340" fill="#1ABC9C" />
+    <use href="#robot" x="300" y="340" fill="#E71D1D" />
+    <!-- Bubble 1 -->
+    <path d="M80,320 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M80,350 l-15,10 l15,-5 z" fill="white" />
+    <text x="90" y="345" font-size="22" class="text-black">3-layer cloth still only 50%</text>
+    <text x="90" y="365" font-size="22" class="text-black">effective...</text>
+    <!-- Bubble 2 -->
+    <path d="M350,320 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M350,350 l-15,10 l15,-5 z" fill="white" />
+    <text x="360" y="345" font-size="22" class="text-black">But availability and fit matter</text>
+    <text x="360" y="365" font-size="22" class="text-black">too...</text>
+    <!-- Bubble 3 -->
+    <path d="M150,390 h400 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-400 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M150,420 l-15,10 l15,-5 z" fill="white" />
+    <text x="230" y="415" font-size="22" class="text-black">How important is proper fit?</text>
+    <use href="#judge" x="150" y="400" />
+
+    <!-- Round 3 -->
+    <rect x="10" y="450" width="580" height="150" rx="20" class="body-bg" />
+    <text x="30" y="470" font-size="28" class="text-black" font-weight="bold">Round 3</text>
+    <use href="#robot" x="20" y="480" fill="#1ABC9C" />
+    <use href="#robot" x="300" y="480" fill="#E71D1D" />
+    <!-- Bubble 1 -->
+    <path d="M80,460 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M80,490 l-15,10 l15,-5 z" fill="white" />
+    <text x="90" y="490" font-size="22" class="text-black">Medical studies prove</text>
+    <text x="90" y="510" font-size="22" class="text-black">superiority...</text>
+    <!-- Bubble 2 -->
+    <path d="M350,460 h300 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-300 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M350,490 l-15,10 l15,-5 z" fill="white" />
+    <text x="360" y="490" font-size="22" class="text-black">Real-world usage differs from</text>
+    <text x="360" y="510" font-size="22" class="text-black">labs...</text>
+    <!-- Bubble 3 -->
+    <path d="M150,530 h400 a10,10 0 0 1 10,10 v50 a10,10 0 0 1 -10,10 h-400 a10,10 0 0 1 -10,-10 v-50 a10,10 0 0 1 10,-10 M150,560 l-15,10 l15,-5 z" fill="white" />
+    <text x="250" y="555" font-size="22" class="text-black">Final decision: True/False</text>
+    <text x="180" y="575" font-size="22" class="text-black">Confidence: 0-100% | Justification</text>
+    <use href="#judge" x="150" y="540" />
+  </g>
+
+  <!-- ================= TOP ROW: Legends ================= -->
+  <g transform="translate(0, 0)">
+    <!-- Example Claim -->
+    <g transform="translate(520, 50)">
+      <text x="120" y="20" text-anchor="middle" font-size="28" class="text-blue" font-weight="bold">Example Claim</text>
+      <rect x="0" y="25" width="320" height="60" fill="#D3D3D3" />
+      <text x="10" y="45" font-size="24" class="serif-italic">Cloth masks less effective than</text>
+      <text x="40" y="70" font-size="24" class="serif-italic">surgical masks</text>
+    </g>
+
+    <!-- Judge Info -->
+    <g transform="translate(850, 65)">
+      <rect x="0" y="0" width="280" height="65" fill="none" stroke="black" stroke-dasharray="4" />
+      <text x="140" y="25" text-anchor="middle" font-size="24" class="text-black">Judge's Initial Belief: True/False</text>
+      <text x="140" y="52" text-anchor="middle" font-size="24" class="text-black">Confidence: (0-100%)</text>
+    </g>
+
+    <!-- Robot Info -->
+    <g transform="translate(1170, 20)">
+      <rect x="0" y="0" width="340" height="110" rx="10" fill="#D3D3D3" />
+      <use href="#robot" x="10" y="10" fill="black" />
+      <text x="100" y="35" font-size="24" class="text-blue">AI expert can access corresponding</text>
+      <text x="170" y="58" font-size="24" class="text-blue">sources and cite them</text>
+      <use href="#judge" x="10" y="70" />
+      <text x="100" y="95" font-size="24" class="text-blue">Cited references are shown to judges</text>
+    </g>
+  </g>
+
+</svg>

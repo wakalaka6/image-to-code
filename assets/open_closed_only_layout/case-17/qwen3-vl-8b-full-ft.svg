@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 22.0 1596.0 696.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker for Lines -->
+    <marker id="arrowhead-grey" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E0E0E0" />
+    </marker>
+    <marker id="arrowhead-peach" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FCE4D6" />
+    </marker>
+    
+    <!-- Reusable Shapes -->
+    <rect id="node-green" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+    <rect id="node-blue" width="60" height="60" rx="2" fill="#DCEBF7" stroke="#A0C4E8" stroke-width="5" />
+    <polygon id="node-pink" points="30,0 60,50 0,50" fill="#F2D7EE" stroke="#DDA0DD" stroke-width="5" />
+    <polygon id="node-blue-inv" points="0,30 30,60 60,30" fill="#DCEBF7" stroke="#A0C4E8" stroke-width="5" />
+    
+    <!-- Icons -->
+    <g id="icon-x">
+      <path d="M10,10 L40,40 M40,10 L10,40" stroke="#FF0000" stroke-width="6" stroke-linecap="round" />
+    </g>
+    <g id="icon-check">
+      <path d="M10,25 L20,40 L45,10" fill="none" stroke="#4CAF50" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </defs>
+
+  <!-- ================= LEFT PANEL ================= -->
+  <g transform="translate(10, 10)">
+    <!-- Container -->
+    <rect x="0" y="20" width="620" height="620" rx="40" fill="none" stroke="#E0E0E0" stroke-width="6" stroke-dasharray="20,20" />
+    <text x="310" y="70" font-family="Arial, sans-serif" font-size="50" text-anchor="middle" fill="black">Offline Graph Construction</text>
+
+    <!-- Top Images Row -->
+    <g transform="translate(50, 100)">
+      <!-- Image 1 -->
+      <g>
+        <rect width="120" height="90" fill="#888" />
+        <image href="" width="120" height="90" /> <!-- Placeholder logic -->
+        <text x="60" y="60" font-family="Arial" font-weight="bold" font-size="30" fill="white" text-anchor="middle" style="text-shadow: 1px 1px 2px black;">&lt;AF&gt;10</text>
+        <!-- Simulated Image Content -->
+        <rect x="0" y="0" width="120" height="90" fill="#554433" />
+        <circle cx="30" cy="30" r="10" fill="#654321" opacity="0.5"/>
+        <circle cx="90" cy="30" r="10" fill="#654321" opacity="0.5"/>
+        <circle cx="60" cy="70" r="15" fill="#654321" opacity="0.5"/>
+      </g>
+      
+      <!-- Image 2 (Collage) -->
+      <g transform="translate(130, 0)">
+        <rect width="160" height="90" fill="#EEE" />
+        <text x="80" y="60" font-family="Arial" font-weight="bold" font-size="12" fill="white" text-anchor="middle" style="text-shadow: 1px 1px 2px black;">&lt;AF&gt;09 &lt;AF&gt;05 &lt;AF&gt;04 &lt;AF&gt;03</text>
+        <!-- Simulated Collage -->
+        <rect x="0" y="0" width="80" height="90" fill="#CCC" />
+        <rect x="80" y="0" width="80" height="90" fill="#999" />
+        <rect x="40" y="40" width="40" height="40" fill="#BBB" />
+      </g>
+
+      <!-- Ellipsis -->
+      <text x="240" y="60" font-family="Arial" font-size="40" font-weight="bold" fill="black">...</text>
+
+      <!-- Image 3 (Gym) -->
+      <g transform="translate(280, 0)">
+        <rect width="180" height="90" fill="#DDD" />
+        <text x="90" y="50" font-family="Arial" font-weight="bold" font-size="12" fill="white" text-anchor="middle" style="text-shadow: 1px 1px 2px black;">&lt;AF&gt;07</text>
+        <!-- Simulated Gym -->
+        <rect x="0" y="0" width="180" height="90" fill="#444" />
+        <rect x="0" y="50" width="180" height="40" fill="#4CAF50" /> <!-- Floor -->
+        <circle cx="20" cy="40" r="10" fill="red" />
+        <circle cx="160" cy="30" r="15" fill="yellow" />
+        <rect x="100" y="20" width="60" height="20" fill="white" />
+      </g>
+
+      <!-- Image 4 (Cow) -->
+      <g transform="translate(400, 0)">
+        <rect width="160" height="90" fill="#111" />
+        <text x="60" y="60" font-family="Arial" font-weight="bold" font-size="12" fill="white" text-anchor="middle" style="text-shadow: 1px 1px 2px black;">&lt;AF&gt;02</text>
+        <!-- Simulated Cow -->
+        <ellipse cx="100" cy="60" rx="30" ry="40" fill="#CD853F" />
+        <ellipse cx="100" cy="40" rx="20" ry="25" fill="#CD853F" />
+        <ellipse cx="100" cy="20" rx="10" ry="10" fill="#FFF" />
+      </g>
+    </g>
+
+    <!-- Subtitles Box -->
+    <g transform="translate(110, 170)">
+      <rect width="400" height="80" rx="40" fill="#FCE4D6" />
+      <text x="200" y="50" font-family="Arial" font-size="35" text-anchor="middle" fill="black">Subtitles</text>
+    </g>
+
+    <!-- Arrow Down -->
+    <path d="M280,210 L280,240 L240,240 L310,280 L380,240 L340,240 L340,210 Z" fill="#E0E0E0" transform="translate(0, 10)" />
+
+    <!-- LVLM Box -->
+    <g transform="translate(50, 260)">
+      <rect width="520" height="120" rx="20" fill="#DCEBF7" stroke="#A0C4E8" stroke-width="5" />
+      <text x="260" y="75" font-family="Arial" font-size="50" text-anchor="middle" fill="black">LVLM</text>
+    </g>
+
+    <!-- JSON Output -->
+    <g transform="translate(100, 340)">
+      <text x="0" y="0" font-family="Courier New, monospace" font-size="35" fill="black">
+        <tspan x="0" dy="0">[{"entity": "", “description”: “”},</tspan>
+        <tspan x="180" dy="40">...</tspan>
+        <tspan x="10" dy="40">{"entity": "", “description”: “”}]</tspan>
+      </text>
+    </g>
+
+    <!-- Entity Merging Box -->
+    <g transform="translate(45, 400)">
+      <rect width="520" height="70" fill="#FCE4D6" />
+      <text x="260" y="45" font-family="Arial" font-size="35" text-anchor="middle" fill="black">Entity Merging and Node Connection</text>
+    </g>
+
+    <!-- Graph Visualization -->
+    <g transform="translate(50, 450)">
+      <!-- Connections (Lines) -->
+      <!-- Green to Green -->
+      <line x1="30" y1="50" x2="180" y2="10" stroke="#CCC" stroke-width="4" />
+      <line x1="180" y1="10" x2="350" y2="10" stroke="#CCC" stroke-width="4" />
+      <line x1="350" y1="10" x2="250" y2="150" stroke="#CCC" stroke-width="4" />
+      <line x1="350" y1="10" x2="450" y2="150" stroke="#CCC" stroke-width="4" />
+      <line x1="250" y1="150" x2="30" y2="50" stroke="#CCC" stroke-width="4" />
+      <line x1="250" y1="150" x2="180" y2="10" stroke="#CCC" stroke-width="4" />
+      <!-- Blue to Blue -->
+      <line x1="100" y1="120" x2="180" y2="10" stroke="#CCC" stroke-width="4" stroke-dasharray="10,5" />
+      <line x1="180" y1="160" x2="250" y2="150" stroke="#CCC" stroke-width="4" stroke-dasharray="10,5" />
+      <line x1="450" y1="150" x2="480" y2="80" stroke="#CCC" stroke-width="4" stroke-dasharray="10,5" />
+      <!-- Green to Blue (Cross) -->
+      <line x1="200" y1="80" x2="250" y2="150" stroke="#CCC" stroke-width="4" />
+      <line x1="200" y1="80" x2="450" y2="150" stroke="#CCC" stroke-width="4" />
+
+      <!-- Nodes -->
+      <!-- Green Cluster -->
+      <use href="#node-green" x="10" y="40" />
+      <use href="#node-green" x="180" y="0" />
+      <use href="#node-green" x="350" y="0" />
+      <use href="#node-green" x="250" y="150" />
+      <use href="#node-green" x="450" y="150" />
+      
+      <!-- Blue Cluster -->
+      <use href="#node-blue" x="100" y="120" />
+      <use href="#node-blue" x="180" y="160" />
+      <use href="#node-blue" x="480" y="80" />
+      <use href="#node-blue" x="300" y="120" />
+      
+      <!-- Pink Triangle -->
+      <use href="#node-pink" x="330" y="170" />
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(60, 600)">
+      <text x="0" y="40" font-family="Arial" font-size="30" fill="black">Video Clip</text>
+      <use href="#node-green" x="130" y="5" transform="scale(0.8)" />
+      
+      <text x="210" y="40" font-family="Arial" font-size="30" fill="black">Entities (</text>
+      <use href="#node-pink" x="300" y="10" transform="scale(0.8)" />
+      <use href="#node-blue-inv" x="400" y="10" transform="scale(0.8)" />
+      <use href="#node-blue" x="500" y="10" transform="scale(0.8)" />
+      <text x="460" y="40" font-family="Arial" font-size="30" fill="black">)</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT PANEL ================= -->
+  <g transform="translate(650, 10)">
+    <!-- Container -->
+    <rect x="0" y="20" width="940" height="620" rx="40" fill="none" stroke="#E0E0E0" stroke-width="6" stroke-dasharray="20,20" />
+    <text x="470" y="70" font-family="Arial, sans-serif" font-size="50" text-anchor="middle" fill="black">Retrieval-Reasoning Augmented Generation</text>
+
+    <!-- Question Section -->
+    <g transform="translate(30, 100)">
+      <!-- Image -->
+      <rect width="80" height="80" fill="#888" stroke="black" />
+      <text x="40" y="45" font-family="Arial" font-weight="bold" font-size="18" fill="white" text-anchor="middle">&lt;AF&gt;01</text>
+      <!-- Text -->
+      <text x="90" y="25" font-family="Arial" font-size="35" fill="black">
+        <tspan x="90" dy="0">Question: Please identify the option that corresponds to the order of events as they</tspan>
+        <tspan x="0" dy="50">occur in the video. [Zumba, clean and jerk, milking cow, playing trombone]</tspan>
+      </text>
+    </g>
+
+    <!-- Branching Arrows -->
+    <g transform="translate(0, 140)">
+      <path d="M200,0 L200,20 L160,20 L230,50 L300,20 L260,20 L260,0 Z" fill="#FCE4D6" />
+      <path d="M700,0 L700,20 L660,20 L730,50 L800,20 L760,20 L760,0 Z" fill="#FCE4D6" />
+    </g>
+
+    <!-- Left Branch: Keywords -->
+    <g transform="translate(30, 180)">
+      <text x="200" y="30" font-family="Arial" font-size="40" font-weight="bold" fill="#1F7899" text-anchor="middle">Query Keywords Extraction</text>
+      <text x="200" y="70" font-family="Courier New, monospace" font-size="35" fill="black" text-anchor="middle">
+        <tspan x="200" dy="0">[“zumba”, “clean”, “milking</tspan>
+        <tspan x="200" dy="45">cow”, “playing trombone”]</tspan>
+      </text>
+    </g>
+
+    <!-- Right Branch: Structured Query -->
+    <g transform="translate(450, 180)">
+      <text x="200" y="30" font-family="Arial" font-size="40" font-weight="bold" fill="#1F7899" text-anchor="middle">Strutured Query Refinement</text>
+      <text x="200" y="70" font-family="Courier New, monospace" font-size="35" fill="black" text-anchor="middle">
+        <tspan x="200" dy="0">Q1: Is ‘zumba’ shown in the video?</tspan>
+        <tspan x="280" dy="30">...</tspan>
+        <tspan x="200" dy="30">Q4: Is ‘trombone’ shown in the video?</tspan>
+      </text>
+    </g>
+
+    <!-- Clip Retrieval Flow -->
+    <g transform="translate(30, 250)">
+      <!-- Arrow from Keywords -->
+      <path d="M200,0 L200,20 L160,20 L230,50 L300,20 L260,20 L260,0 Z" fill="#FCE4D6" />
+      
+      <!-- Green Boxes -->
+      <g transform="translate(100, 10)">
+        <rect x="0" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+        <text x="30" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">3</text>
+        
+        <rect x="70" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+        <text x="100" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">4</text>
+        
+        <rect x="140" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+        <text x="170" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">5</text>
+        
+        <rect x="210" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+        <text x="240" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">11</text>
+        
+        <rect x="280" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+        <text x="310" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">13</text>
+      </g>
+
+      <!-- Arrow Down -->
+      <path d="M200,80 L200,100 L160,100 L230,130 L300,100 L260,100 L260,80 Z" fill="#FCE4D6" />
+
+      <!-- Table -->
+      <g transform="translate(50, 140)">
+        <text x="0" y="-10" font-family="Arial" font-size="28" fill="black">
+          <tspan x="0" dy="0">Graph-based</tspan>
+          <tspan x="0" dy="35">Clip Retrieval</tspan>
+        </text>
+        
+        <g transform="translate(10, 0)">
+          <!-- Header -->
+          <rect x="0" y="0" width="130" height="50" fill="#89CFF0" />
+          <text x="65" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Clip</text>
+          
+          <rect x="130" y="0" width="100" height="50" fill="#89CFF0" />
+          <text x="180" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Q1</text>
+          
+          <rect x="230" y="0" width="100" height="50" fill="#89CFF0" />
+          <text x="280" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Q2</text>
+          
+          <rect x="330" y="0" width="100" height="50" fill="#89CFF0" />
+          <text x="380" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Q3</text>
+          
+          <rect x="430" y="0" width="100" height="50" fill="#89CFF0" />
+          <text x="480" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">Q4</text>
+
+          <!-- Rows -->
+          <g font-family="Arial" font-size="30" fill="black">
+            <!-- Row 3 -->
+            <rect x="0" y="50" width="130" height="50" fill="#F0F0F0" />
+            <text x="65" y="85" text-anchor="middle">3</text>
+            <rect x="130" y="50" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="155" y="60"/>
+            <rect x="230" y="50" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="255" y="60"/>
+            <rect x="330" y="50" width="100" height="50" fill="#F0F0F0" /><use href="#icon-check" x="350" y="55"/>
+            <rect x="430" y="50" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="455" y="60"/>
+
+            <!-- Row 4 -->
+            <rect x="0" y="100" width="130" height="50" fill="#F0F0F0" />
+            <text x="65" y="135" text-anchor="middle">4</text>
+            <rect x="130" y="100" width="100" height="50" fill="#F0F0F0" /><use href="#icon-check" x="150" y="110"/>
+            <rect x="230" y="100" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="255" y="110"/>
+            <rect x="330" y="100" width="100" height="50" fill="#F0F0F0" /><use href="#icon-check" x="350" y="105"/>
+            <rect x="430" y="100" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="455" y="110"/>
+
+            <!-- Row 5 -->
+            <rect x="0" y="150" width="130" height="50" fill="#F0F0F0" />
+            <text x="65" y="185" text-anchor="middle">5</text>
+            <rect x="130" y="150" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="155" y="160"/>
+            <rect x="230" y="150" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="255" y="160"/>
+            <rect x="330" y="150" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="355" y="155"/>
+            <rect x="430" y="150" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="455" y="160"/>
+
+            <!-- Row 11 -->
+            <rect x="0" y="200" width="130" height="50" fill="#F0F0F0" />
+            <text x="65" y="235" text-anchor="middle">11</text>
+            <rect x="130" y="200" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="155" y="210"/>
+            <rect x="230" y="200" width="100" height="50" fill="#F0F0F0" /><use href="#icon-check" x="250" y="205"/>
+            <rect x="330" y="200" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="355" y="205"/>
+            <rect x="430" y="200" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="455" y="210"/>
+
+            <!-- Row 13 -->
+            <rect x="0" y="250" width="130" height="50" fill="#F0F0F0" />
+            <text x="65" y="285" text-anchor="middle">13</text>
+            <rect x="130" y="250" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="155" y="260"/>
+            <rect x="230" y="250" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="255" y="260"/>
+            <rect x="330" y="250" width="100" height="50" fill="#F0F0F0" /><use href="#icon-x" x="355" y="255"/>
+            <rect x="430" y="250" width="100" height="50" fill="#F0F0F0" /><use href="#icon-check" x="450" y="255"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Side Flow -->
+    <g transform="translate(450, 250)">
+      <!-- Long Grey Arrow from Structured Query -->
+      <path d="M200,-50 L200,100 L-10,100 L-10,130 L-140,85 L-10,40 L-10,70 L200,70 L200,-50 Z" fill="#E0E0E0" transform="translate(0,0)" />
+      
+      <!-- Info Aggregation -->
+      <g transform="translate(0, 150)">
+        <text x="200" y="30" font-family="Arial" font-size="40" font-weight="bold" fill="#1F7899" text-anchor="middle">Information Aggregation</text>
+        <rect x="10" y="50" width="460" height="200" rx="10" fill="none" stroke="#D35400" stroke-width="5" stroke-dasharray="20,15" />
+        <text x="30" y="100" font-family="Courier New, monospace" font-size="35" fill="black">
+          <tspan x="30" dy="0">Milking cow is shown first,</tspan>
+          <tspan x="30" dy="50">followed by zumba, then</tspan>
+          <tspan x="30" dy="50">clean, and finally playing</tspan>
+          <tspan x="30" dy="50">trombone.</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Flow -->
+    <g transform="translate(450, 480)">
+      <!-- Arrow from Aggregation -->
+      <path d="M200,0 L200,20 L160,20 L230,50 L300,20 L260,20 L260,0 Z" fill="#FCE4D6" transform="translate(0, 0)" />
+      
+      <!-- Refined Clips -->
+      <g transform="translate(-150, 40)">
+        <text x="150" y="20" font-family="Arial" font-size="28" fill="black" text-anchor="middle">Refined Clips</text>
+        <g transform="translate(50, 30)">
+          <rect x="0" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+          <text x="30" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">3</text>
+          
+          <rect x="70" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+          <text x="100" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">4</text>
+          
+          <rect x="140" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+          <text x="170" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">11</text>
+          
+          <rect x="210" y="0" width="60" height="60" rx="10" fill="#DFF2D8" stroke="#90EE90" stroke-width="5" />
+          <text x="240" y="40" font-family="Arial" font-size="30" text-anchor="middle" fill="#4CAF50">13</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Final LVLM Box -->
+    <g transform="translate(30, 580)">
+      <rect width="900" height="100" rx="15" fill="#DCEBF7" stroke="#A0C4E8" stroke-width="5" />
+      <text x="450" y="65" font-family="Arial" font-size="45" text-anchor="middle" fill="black">LVLM</text>
+    </g>
+
+    <!-- Final Answer -->
+    <g transform="translate(30, 620)">
+      <rect width="100" height="80" fill="#888" stroke="black" />
+      <text x="50" y="45" font-family="Arial" font-weight="bold" font-size="18" fill="white" text-anchor="middle">&lt;AF&gt;08</text>
+      <text x="120" y="50" font-family="Arial" font-size="35" fill="black">Answer: milking cow --&gt; zumba --&gt; clean and jerk --&gt; playing trombone</text>
+    </g>
+  </g>
+</svg>

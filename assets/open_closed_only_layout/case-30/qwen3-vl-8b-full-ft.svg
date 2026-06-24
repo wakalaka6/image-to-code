@@ -1,0 +1,515 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.0 -3.0 1811.0 1101.0" style="font-family: 'Times New Roman', serif; background-color: white;">
+
+  <!-- Definitions for reusable elements -->
+  <defs>
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="3" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ADD8E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0E68C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFDAB9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4A460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradViT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D6E4EE;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- 3D Block Symbol -->
+    <symbol id="block3d" viewBox="0 0 40 120">
+      <path d="M10,10 L35,10 L35,110 L10,110 Z" fill="currentColor" stroke="#001f3f" stroke-width="2"/> <!-- Front -->
+      <path d="M10,10 L20,0 L45,0 L35,10 Z" fill="currentColor" fill-opacity="0.5" stroke="#001f3f" stroke-width="2"/> <!-- Top -->
+      <path d="M35,10 L45,0 L45,100 L35,110 Z" fill="currentColor" fill-opacity="0.7" stroke="#001f3f" stroke-width="2"/> <!-- Side -->
+    </symbol>
+
+    <!-- Question Mark Icon -->
+    <g id="qIcon">
+      <path d="M15,0 Q30,0 30,15 Q30,30 15,30 Q0,30 0,15 Q0,0 15,0 Z M15,35 A5,5 0 1,0 15,45 A5,5 0 1,0 15,35" fill="#FF6B6B" />
+      <path d="M15,0 Q30,0 30,15 Q30,30 15,30 Q0,30 0,15 Q0,0 15,0 Z M15,35 A5,5 0 1,0 15,45 A5,5 0 1,0 15,35" fill="none" stroke="black" stroke-width="2" transform="translate(2,2) scale(0.8)"/>
+    </g>
+
+    <!-- Snowflake -->
+    <g id="snowflake">
+      <path d="M20,0 L20,40 M0,20 L40,20 M6,6 L34,34 M6,34 L34,6" stroke="#87CEEB" stroke-width="4" stroke-linecap="round"/>
+      <path d="M20,5 L15,12 M20,5 L25,12 M20,35 L15,28 M20,35 L25,28 M5,20 L12,15 M5,20 L12,25 M35,20 L28,15 M35,20 L28,25" stroke="#87CEEB" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- Arrow Head Marker -->
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4682B4" stroke="#001f3f"/>
+    </marker>
+  </defs>
+
+  <!-- ================= TOP PANEL: TRAINING ================= -->
+  <rect x="5" y="5" width="1590" height="710" rx="30" fill="none" stroke="#D3D3D3" stroke-width="5"/>
+  
+  <!-- Background Zones -->
+  <rect x="5" y="20" width="880" height="700" rx="20" fill="#F4F8FD" opacity="0.5"/>
+  <rect x="890" y="20" width="700" height="700" rx="20" fill="#FFF8E7" opacity="0.5"/>
+
+  <!-- Headers -->
+  <rect x="5" y="20" width="300" height="90" rx="10" fill="#DDEedd" opacity="0.6"/>
+  <text x="150" y="80" font-size="80" font-weight="bold" font-style="italic" text-anchor="middle" fill="black">Training</text>
+
+  <text x="590" y="70" font-size="60" font-weight="bold" font-style="italic" text-anchor="middle" fill="#6CA0C0">Subject-Invariant Feature Extraction</text>
+  <text x="1200" y="70" font-size="60" font-weight="bold" font-style="italic" text-anchor="middle" fill="#E67E22">Semantic-Specific Feature Extraction</text>
+
+  <!-- === LEFT SECTION: INPUTS === -->
+  <g transform="translate(50, 150)">
+    <!-- Icons -->
+    <text x="50" y="80" font-size="80" fill="black">?</text>
+    <use href="#qIcon" x="80" y="20" transform="scale(1.5)"/>
+    <text x="150" y="80" font-size="80" fill="black">?</text>
+    
+    <!-- Images -->
+    <g transform="translate(40, 100)">
+      <rect x="0" y="0" width="60" height="80" fill="#888" stroke="black"/>
+      <text x="30" y="45" fill="white" font-size="14" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;13</text>
+      <rect x="65" y="0" width="60" height="80" fill="#888" stroke="black"/>
+      <text x="95" y="45" fill="white" font-size="14" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;10</text>
+      <rect x="130" y="0" width="60" height="80" fill="#888" stroke="black"/>
+      <text x="160" y="45" fill="white" font-size="14" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;11</text>
+    </g>
+    <text x="50" y="180" font-size="50" font-weight="bold" font-style="italic">Subject</text>
+  </g>
+
+  <!-- === TOP BRANCH (CLS) === -->
+  <g transform="translate(200, 100)">
+    <!-- Arrows -->
+    <path d="M10,120 L120,40" stroke="url(#gradBlue)" stroke-width="15" fill="none" />
+    <path d="M10,120 L120,40" stroke="#ADD8E6" stroke-width="10" fill="none" />
+    <path d="M15,125 L115,45" stroke="#ADD8E6" stroke-width="10" fill="none" />
+    <polygon points="120,30 100,45 115,55" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="120,50 100,65 115,75" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    
+    <!-- CLS Box -->
+    <rect x="100" y="40" width="180" height="80" rx="15" fill="#D6E4EE" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+    <rect x="105" y="45" width="170" height="70" rx="10" fill="none" stroke="white" stroke-width="2"/>
+    <text x="190" y="90" font-size="60" font-weight="bold" text-anchor="middle">CLS</text>
+    
+    <!-- Loss CLS -->
+    <text x="20" y="60" font-size="80" font-family="serif" font-style="italic" fill="#6CA0C0">ℒ<tspan dy="20" font-size="50">cls</tspan><tspan dy="-50" font-size="50">E</tspan></text>
+  </g>
+
+  <!-- === CENTER LEFT: ENCODERS === -->
+  <g transform="translate(400, 100)">
+    <!-- Es (Top) -->
+    <g transform="translate(0, 0)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#F0F8FF"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#F0F8FF"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#F0F8FF"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#F0F8FF"/>
+      <text x="140" y="120" font-size="80" font-family="serif" font-style="italic">E<tspan dy="20" font-size="50">s</tspan></text>
+    </g>
+
+    <!-- Difference Logic -->
+    <g transform="translate(50, 140)">
+      <rect x="0" y="0" width="80" height="80" fill="#888" stroke="black"/>
+      <text x="40" y="45" fill="white" font-size="16" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;04</text>
+      <line x1="40" y1="0" x2="40" y2="-20" stroke="#ADD8E6" stroke-width="10" marker-end="url(#arrowHead)"/>
+      <line x1="40" y1="80" x2="40" y2="100" stroke="#ADD8E6" stroke-width="10" marker-end="url(#arrowHead)"/>
+      
+      <text x="100" y="50" font-size="60" font-weight="bold" font-style="italic">Difference</text>
+      <path d="M200,50 Q150,50 140,0" fill="none" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M200,50 Q150,50 140,100" fill="none" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+    </g>
+
+    <!-- Ei (Middle) -->
+    <g transform="translate(0, 200)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#B0C4DE"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#B0C4DE"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#B0C4DE"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#B0C4DE"/>
+      <text x="140" y="120" font-size="80" font-family="serif" font-style="italic">E<tspan dy="20" font-size="50">i</tspan></text>
+    </g>
+
+    <!-- DIS Box -->
+    <g transform="translate(-100, 200)">
+      <rect x="0" y="0" width="200" height="100" rx="15" fill="#F4F8FD" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="190" height="90" rx="10" fill="none" stroke="white" stroke-width="2"/>
+      <text x="100" y="60" font-size="60" font-weight="bold" text-anchor="middle">DIS</text>
+      <!-- GRL Box -->
+      <rect x="0" y="-30" width="200" height="80" rx="15" fill="#FADBD8" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="-25" width="190" height="70" rx="10" fill="none" stroke="white" stroke-width="2"/>
+      <text x="100" y="15" font-size="60" font-weight="bold" text-anchor="middle">GRL</text>
+    </g>
+
+    <!-- Arrows to CLS -->
+    <path d="M-20,70 L-100,70" stroke="#ccc" stroke-width="5" marker-end="url(#arrowHead)"/>
+    <path d="M-20,250 L-100,250" stroke="#ccc" stroke-width="5" marker-end="url(#arrowHead)"/>
+
+    <!-- Fi(.) Logic -->
+    <g transform="translate(0, 350)">
+      <text x="-100" y="80" font-size="80" font-family="serif" font-style="italic">ℱ<tspan dy="20" font-size="50">i</tspan>(·)</text>
+      <path d="M80,120 L80,0" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+      <path d="M80,120 L80,0" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+      <polygon points="80,-10 65,10 95,10" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    </g>
+
+    <!-- E (Bottom) -->
+    <g transform="translate(0, 400)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#779ECB"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#779ECB"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#779ECB"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#779ECB"/>
+      <text x="140" y="120" font-size="80" font-family="serif" font-style="italic">E</text>
+    </g>
+  </g>
+
+  <!-- === CENTER COLUMN: PROJECTORS === -->
+  <g transform="translate(800, 100)">
+    <!-- Pi -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="120" rx="20" fill="url(#gradYellow)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="290" height="110" rx="15" fill="none" stroke="white" stroke-width="2"/>
+      <text x="150" y="50" font-size="60" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="150" y="100" font-size="60" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="100" y="150" font-size="80" font-family="serif" font-style="italic">𝒫<tspan dy="20" font-size="50">i</tspan>(·)</text>
+    </g>
+    <!-- Ps -->
+    <g transform="translate(0, 200)">
+      <rect x="0" y="0" width="300" height="120" rx="20" fill="url(#gradYellow)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="290" height="110" rx="15" fill="none" stroke="white" stroke-width="2"/>
+      <text x="150" y="50" font-size="60" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="150" y="100" font-size="60" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="100" y="150" font-size="80" font-family="serif" font-style="italic">𝒫<tspan dy="20" font-size="50">s</tspan>(·)</text>
+    </g>
+    <!-- P -->
+    <g transform="translate(0, 400)">
+      <rect x="0" y="0" width="300" height="120" rx="20" fill="url(#gradYellow)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="290" height="110" rx="15" fill="none" stroke="white" stroke-width="2"/>
+      <text x="150" y="50" font-size="60" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="150" y="100" font-size="60" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="100" y="150" font-size="80" font-family="serif" font-style="italic">𝒫(·)</text>
+    </g>
+  </g>
+
+  <!-- === RIGHT COLUMN: OUTPUTS === -->
+  <g transform="translate(1200, 100)">
+    <!-- Fi -->
+    <g transform="translate(0, 0)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#FFFACD"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#FFFACD"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#FFFACD"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#FFFACD"/>
+      <text x="-20" y="120" font-size="80" font-family="serif" font-style="italic">F<tspan dy="20" font-size="50">i</tspan></text>
+    </g>
+    <!-- GRL Top -->
+    <g transform="translate(-180, 60)">
+      <rect x="0" y="0" width="200" height="80" rx="15" fill="#F5C2C2" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="190" height="70" rx="10" fill="none" stroke="white" stroke-width="2"/>
+      <text x="100" y="50" font-size="60" font-weight="bold" text-anchor="middle">GRL</text>
+    </g>
+    <!-- Arrow Top -->
+    <path d="M-300,50 L100,50" stroke="url(#gradYellow)" stroke-width="15" fill="none"/>
+    <path d="M-300,50 L100,50" stroke="#F0E68C" stroke-width="10" fill="none"/>
+    <polygon points="100,35 80,50 110,65" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="100,65 80,50 110,35" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+
+    <!-- Minus Symbol -->
+    <g transform="translate(100, 160)">
+      <circle cx="0" cy="0" r="40" fill="white" stroke="#001f3f" stroke-width="8"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#001f3f" stroke-width="8"/>
+    </g>
+
+    <!-- Fs -->
+    <g transform="translate(0, 200)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#F0E68C"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#F0E68C"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#F0E68C"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#F0E68C"/>
+      <text x="-20" y="120" font-size="80" font-family="serif" font-style="italic">F<tspan dy="20" font-size="50">s</tspan></text>
+    </g>
+    <!-- Arrow Middle -->
+    <path d="M-300,230 L100,230" stroke="url(#gradYellow)" stroke-width="15" fill="none"/>
+    <path d="M-300,230 L100,230" stroke="#F0E68C" stroke-width="10" fill="none"/>
+    <polygon points="100,215 80,230 110,245" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="100,245 80,230 110,215" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+    <!-- Arrow Up -->
+    <line x1="100" y1="200" x2="100" y2="120" stroke="#ccc" stroke-width="10" marker-end="url(#arrowHead)"/>
+
+    <!-- F -->
+    <g transform="translate(0, 400)">
+      <use href="#block3d" x="0" y="10" width="30" height="120" color="#FFD700"/>
+      <use href="#block3d" x="35" y="5" width="30" height="120" color="#FFD700"/>
+      <use href="#block3d" x="70" y="0" width="30" height="120" color="#FFD700"/>
+      <use href="#block3d" x="105" y="-5" width="30" height="120" color="#FFD700"/>
+      <text x="150" y="120" font-size="80" font-family="serif" font-style="italic">F</text>
+    </g>
+    <!-- Arrow Bottom -->
+    <path d="M-300,430 L100,430" stroke="url(#gradYellow)" stroke-width="15" fill="none"/>
+    <path d="M-300,430 L100,430" stroke="#F0E68C" stroke-width="10" fill="none"/>
+    <polygon points="100,415 80,430 110,445" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="100,445 80,430 110,415" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+  </g>
+
+  <!-- === FAR RIGHT: LOSS & SEMANTIC === -->
+  <g transform="translate(1350, 100)">
+    <!-- L_inv -->
+    <text x="100" y="60" font-size="80" font-family="serif" font-style="italic" fill="#D4AC0D">ℒ<tspan dy="20" font-size="50">inv</tspan><tspan dy="-50" font-size="50">F</tspan></text>
+    
+    <!-- Arrows -->
+    <g transform="translate(50, 100)">
+      <path d="M0,0 L100,80" stroke="url(#gradYellow)" stroke-width="15" fill="none"/>
+      <path d="M0,0 L100,80" stroke="#F0E68C" stroke-width="10" fill="none"/>
+      <polygon points="100,70 85,85 110,90" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="100,90 85,85 110,70" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+      
+      <path d="M100,100 L0,180" stroke="url(#gradYellow)" stroke-width="15" fill="none"/>
+      <path d="M100,100 L0,180" stroke="#F0E68C" stroke-width="10" fill="none"/>
+      <polygon points="0,190 15,175 -5,170" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="0,170 15,175 -5,185" fill="#F0E68C" stroke="#001f3f" stroke-width="2"/>
+    </g>
+
+    <!-- Semantic Icons -->
+    <g transform="translate(150, 100)">
+      <text x="0" y="60" font-size="80" fill="black">?</text>
+      <use href="#qIcon" x="30" y="0" transform="scale(1.5)"/>
+      <text x="100" y="60" font-size="80" fill="black">?</text>
+      
+      <g transform="translate(-20, 80)">
+        <rect x="0" y="0" width="70" height="80" fill="#888" stroke="black"/>
+        <text x="35" y="45" fill="white" font-size="16" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;12</text>
+        <rect x="75" y="0" width="80" height="80" fill="#888" stroke="black"/>
+        <text x="115" y="45" fill="white" font-size="16" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;09</text>
+        <rect x="160" y="0" width="60" height="80" fill="#888" stroke="black"/>
+        <text x="190" y="45" fill="white" font-size="16" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;14</text>
+      </g>
+      <text x="0" y="180" font-size="60" font-weight="bold" font-style="italic">Semantic</text>
+    </g>
+
+    <!-- L_spe -->
+    <text x="100" y="280" font-size="80" font-family="serif" font-style="italic" fill="#D4AC0D">ℒ<tspan dy="20" font-size="50">spe</tspan><tspan dy="-50" font-size="50">F</tspan></text>
+  </g>
+
+  <!-- === BOTTOM LEFT: ViT & INPUTS === -->
+  <g transform="translate(50, 400)">
+    <text x="70" y="30" font-size="50" font-weight="bold" fill="#888">fMRI</text>
+    <rect x="40" y="40" width="150" height="180" fill="#888" stroke="black"/>
+    <text x="115" y="140" fill="white" font-size="40" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;03</text>
+    
+    <rect x="30" y="200" width="170" height="220" fill="#888" stroke="black"/>
+    <text x="115" y="320" fill="white" font-size="40" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;17</text>
+    
+    <text x="0" y="350" font-size="60" font-weight="bold" fill="black">Train Subjects</text>
+    
+    <!-- Arrows to Top -->
+    <g transform="translate(150, 40)">
+      <path d="M0,0 L100,80" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+      <path d="M0,0 L100,80" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+      <polygon points="100,70 85,85 110,90" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="100,90 85,85 110,70" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+      
+      <path d="M100,100 L0,180" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+      <path d="M100,100 L0,180" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+      <polygon points="0,190 15,175 -5,170" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="0,170 15,175 -5,185" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    </g>
+    
+    <!-- Loss Dis -->
+    <text x="130" y="100" font-size="80" font-family="serif" font-style="italic" fill="#6CA0C0">ℒ<tspan dy="20" font-size="50">dis</tspan><tspan dy="-50" font-size="50">E</tspan></text>
+  </g>
+
+  <!-- === CENTER BOTTOM: ViT & DECODER === -->
+  <g transform="translate(250, 420)">
+    <!-- ViT -->
+    <path d="M0,0 L200,50 L200,200 L0,250 Z" fill="url(#gradViT)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+    <path d="M5,5 L205,55 L205,205 L5,255" fill="none" stroke="white" stroke-width="2"/>
+    <text x="100" y="150" font-size="70" font-weight="bold" text-anchor="middle">ViT</text>
+    
+    <!-- Arrow to E -->
+    <path d="M210,120 L300,120" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+    <path d="M210,120 L300,120" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+    <polygon points="300,105 285,120 315,120" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="300,135 285,120 315,120" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+  </g>
+
+  <!-- Decoder Section -->
+  <g transform="translate(500, 580)">
+    <!-- L_rec -->
+    <text x="130" y="120" font-size="80" font-family="serif" font-style="italic" fill="#6CA0C0">ℒ<tspan dy="20" font-size="50">rec</tspan></text>
+    
+    <!-- Decoder -->
+    <path d="M0,50 L200,0 L200,200 L0,150 Z" fill="url(#gradViT)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+    <path d="M5,55 L205,5 L205,195 L5,145" fill="none" stroke="white" stroke-width="2"/>
+    <text x="100" y="110" font-size="50" font-weight="bold" text-anchor="middle">Decoder</text>
+    
+    <!-- L_Rec Arrow -->
+    <path d="M180,80 L280,80" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+    <path d="M180,80 L280,80" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+    <polygon points="180,65 200,80 170,80" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="180,95 200,80 170,80" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="280,65 260,80 290,80" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    <polygon points="280,95 260,80 290,80" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+
+    <!-- Output fMRI -->
+    <rect x="250" y="20" width="180" height="150" fill="#888" stroke="black"/>
+    <text x="340" y="100" fill="white" font-size="40" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;07</text>
+    <text x="340" y="190" font-size="50" font-weight="bold" fill="#888" text-anchor="middle">fMRI</text>
+    
+    <!-- Input to Decoder -->
+    <path d="M-50,0 L-50,100 Q-50,120 0,120" stroke="url(#gradBlue)" stroke-width="15" fill="none"/>
+    <path d="M-50,0 L-50,100 Q-50,120 0,120" stroke="#ADD8E6" stroke-width="10" fill="none"/>
+    <polygon points="0,120 -15,105 -15,135" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+  </g>
+
+  <!-- === FAR RIGHT: VISUAL STIMULI === -->
+  <g transform="translate(1100, 550)">
+    <text x="-100" y="100" font-size="50" font-weight="bold" fill="black">Visual stimuli</text>
+    <text x="-10" y="160" font-size="50" font-weight="bold" fill="black">Image labels</text>
+    <text x="-20" y="220" font-size="50" font-weight="bold" fill="black">Image captions</text>
+    
+    <!-- Graph -->
+    <g transform="translate(100, 0)">
+      <circle cx="0" cy="20" r="25" fill="#8FBC8F" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="0" cy="100" r="25" fill="#8FBC8F" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="100" cy="100" r="25" fill="#FF8C00" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="100" cy="20" r="25" fill="#FDC500" stroke="#001f3f" stroke-width="5"/>
+      
+      <path d="M25,20 L75,20" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M25,100 L75,100" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M75,20 L75,75" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M75,100 L75,55" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M25,20 L70,85" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+      <path d="M25,100 L70,35" stroke="#ccc" stroke-width="8" marker-end="url(#arrowHead)"/>
+    </g>
+    
+    <!-- L_prior -->
+    <g transform="translate(300, -200)">
+      <rect x="0" y="0" width="400" height="100" rx="15" fill="#FDEDEE" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="390" height="90" rx="10" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="50" cy="50" r="30" fill="#FDC500" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="150" cy="50" r="30" fill="#F4A460" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="250" cy="50" r="30" fill="#E67E22" stroke="#001f3f" stroke-width="5"/>
+      <polygon points="80,50 120,50" fill="#F4A460" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="180,50 220,50" fill="#E67E22" stroke="#001f3f" stroke-width="2"/>
+      
+      <text x="100" y="160" font-size="80" font-family="serif" font-style="italic" fill="#E67E22">ℒ<tspan dy="20" font-size="50">prior</tspan></text>
+      
+      <!-- Arrow from Graph -->
+      <path d="M-50,150 Q10,150 20,100" stroke="url(#gradOrange)" stroke-width="15" fill="none"/>
+      <path d="M-50,150 Q10,150 20,100" stroke="#FFDAB9" stroke-width="10" fill="none"/>
+      <polygon points="20,100 5,115 15,115" fill="#FFDAB9" stroke="#001f3f" stroke-width="2"/>
+      
+      <!-- Arrow from F -->
+      <path d="M-50,250 Q10,250 20,100" stroke="url(#gradOrange)" stroke-width="15" fill="none"/>
+      <path d="M-50,250 Q10,250 20,100" stroke="#FFDAB9" stroke-width="10" fill="none"/>
+      <polygon points="20,100 5,85 15,85" fill="#FFDAB9" stroke="#001f3f" stroke-width="2"/>
+    </g>
+    
+    <!-- Visual Stimuli Images -->
+    <g transform="translate(300, 50)">
+      <rect x="0" y="0" width="200" height="150" fill="#ddd" stroke="black" stroke-width="5"/>
+      <rect x="10" y="10" width="180" height="130" fill="#FF8C00"/>
+      <path d="M10,140 L10,40 Q40,40 40,70 Q40,100 70,100 Q100,100 100,70 Q100,40 130,40 Q160,40 160,70 L160,140" fill="#87CEEB"/>
+      
+      <rect x="80" y="80" width="200" height="150" fill="#ddd" stroke="black" stroke-width="5"/>
+      <rect x="90" y="90" width="180" height="130" fill="#FF8C00"/>
+      <path d="M90,220 L90,120 Q120,120 120,150 Q120,180 150,180 Q180,180 180,150 Q180,120 210,120 Q240,120 240,150 L240,220" fill="#87CEEB"/>
+      <path d="M90,220 L120,180 L150,220 L180,180 L240,220" fill="#556B2F"/>
+      <circle cx="150" cy="130" r="15" fill="#FDC500"/>
+      
+      <text x="0" y="200" font-size="60" font-weight="bold" fill="#666">Visual Stimuli</text>
+    </g>
+  </g>
+  
+  <!-- Big Orange Arrow from F to Graph -->
+  <path d="M1280,360 L1280,420 Q1280,450 1310,450 L1350,450" stroke="url(#gradOrange)" stroke-width="15" fill="none"/>
+  <path d="M1280,360 L1280,420 Q1280,450 1310,450 L1350,450" stroke="#FFDAB9" stroke-width="10" fill="none"/>
+  <polygon points="1350,435 1330,450 1360,465" fill="#FFDAB9" stroke="#001f3f" stroke-width="2"/>
+
+  <!-- ================= BOTTOM PANEL: INFERENCE ================= -->
+  <rect x="5" y="730" width="1590" height="265" rx="30" fill="none" stroke="#D3D3D3" stroke-width="5"/>
+  
+  <rect x="5" y="740" width="300" height="120" rx="20" fill="#EAEAEA"/>
+  <text x="150" y="800" font-size="80" font-weight="bold" font-style="italic" text-anchor="middle" fill="black">Inference</text>
+  
+  <text x="150" y="1000" font-size="60" font-weight="bold" text-anchor="middle" fill="black">Test Unseen Subject</text>
+  
+  <g transform="translate(50, 820)">
+    <rect x="0" y="0" width="250" height="250" fill="#888" stroke="black"/>
+    <text x="125" y="140" fill="white" font-size="40" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;15</text>
+    
+    <rect x="230" y="80" width="150" height="120" fill="#888" stroke="black"/>
+    <text x="305" y="140" fill="white" font-size="20" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;08</text>
+    
+    <text x="1300" y="40" font-size="60" font-weight="bold" fill="black">Reconstructed</text>
+    <text x="1300" y="100" font-size="60" font-weight="bold" fill="black">Images</text>
+  </g>
+  
+  <!-- Inference Pipeline -->
+  <g transform="translate(360, 810)">
+    <!-- Frozen ViT -->
+    <path d="M0,0 L200,50 L200,200 L0,250 Z" fill="url(#gradViT)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+    <path d="M5,5 L205,55 L205,205 L5,255" fill="none" stroke="white" stroke-width="2"/>
+    <text x="100" y="150" font-size="70" font-weight="bold" text-anchor="middle">ViT</text>
+    <use href="#snowflake" x="10" y="20" transform="scale(1.5)"/>
+    
+    <!-- Arrow -->
+    <text x="130" y="100" font-size="80" font-family="serif" font-style="italic">ℱ<tspan dy="20" font-size="50">i</tspan>(·)</text>
+    <rect x="150" y="100" width="150" height="100" fill="#888" stroke="black"/>
+    <text x="225" y="150" fill="white" font-size="20" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;06</text>
+    
+    <!-- Frozen Projector -->
+    <g transform="translate(250, 50)">
+      <rect x="0" y="0" width="350" height="150" rx="20" fill="url(#gradYellow)" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="340" height="140" rx="15" fill="none" stroke="white" stroke-width="2"/>
+      <text x="175" y="60" font-size="60" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="175" y="120" font-size="60" font-weight="bold" text-anchor="middle">Projector</text>
+      <use href="#snowflake" x="280" y="-20" transform="scale(1.5)"/>
+      <text x="120" y="-10" font-size="80" font-family="serif" font-style="italic">𝒫<tspan dy="20" font-size="50">s</tspan>(·)</text>
+    </g>
+    
+    <rect x="480" y="100" width="150" height="100" fill="#888" stroke="black"/>
+    <text x="555" y="150" fill="white" font-size="20" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;01</text>
+    
+    <!-- Diffusion Prior -->
+    <g transform="translate(550, 80)">
+      <rect x="0" y="0" width="350" height="120" rx="15" fill="#FDEDEE" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <rect x="5" y="5" width="340" height="110" rx="10" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="50" cy="60" r="30" fill="#FDC500" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="150" cy="60" r="30" fill="#F4A460" stroke="#001f3f" stroke-width="5"/>
+      <circle cx="250" cy="60" r="30" fill="#E67E22" stroke="#001f3f" stroke-width="5"/>
+      <polygon points="80,60 120,60" fill="#F4A460" stroke="#001f3f" stroke-width="2"/>
+      <polygon points="180,60 220,60" fill="#E67E22" stroke="#001f3f" stroke-width="2"/>
+      <use href="#snowflake" x="250" y="-20" transform="scale(1.5)"/>
+      <text x="0" y="160" font-size="60" font-weight="bold" text-anchor="middle">Diffusion Prior</text>
+    </g>
+    
+    <rect x="780" y="100" width="150" height="100" fill="#888" stroke="black"/>
+    <text x="855" y="150" fill="white" font-size="20" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;02</text>
+    
+    <!-- Frozen SDXL -->
+    <g transform="translate(850, 0)">
+      <path d="M0,50 L200,0 L200,250 L0,200 Z" fill="#FFE4D0" stroke="#001f3f" stroke-width="5" filter="url(#shadow)"/>
+      <path d="M5,55 L205,5 L205,245 L5,205" fill="none" stroke="white" stroke-width="2"/>
+      <text x="100" y="140" font-size="70" font-weight="bold" text-anchor="middle">SDXL</text>
+      <use href="#snowflake" x="150" y="20" transform="scale(1.5)"/>
+    </g>
+    
+    <rect x="1000" y="120" width="150" height="100" fill="#888" stroke="black"/>
+    <text x="1075" y="170" fill="white" font-size="20" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;05</text>
+    
+    <rect x="1100" y="80" width="300" height="200" fill="#888" stroke="black"/>
+    <text x="1250" y="180" fill="white" font-size="40" font-family="sans-serif" text-anchor="middle">&lt;AF&gt;16</text>
+  </g>
+
+</svg>

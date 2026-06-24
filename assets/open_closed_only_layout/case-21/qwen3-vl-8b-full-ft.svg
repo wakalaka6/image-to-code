@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.0 7.0 1701.0 671.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrowBlue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="#7FA8DE" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="#B565A7" />
+    </marker>
+    
+    <!-- Pattern for Hatching -->
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#000" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- ================= SECTION 1: EXPERT KNOWLEDGE ================= -->
+  <g transform="translate(10, 30)">
+    <!-- Container -->
+    <rect x="0" y="0" width="550" height="210" rx="40" fill="#E6E6E6" />
+    <text x="275" y="50" font-family="Times New Roman, serif" font-weight="bold" font-size="55" text-anchor="middle" fill="black">Expert Knowledge</text>
+
+    <!-- Drawing Image Placeholder -->
+    <g transform="translate(20, 60)">
+      <rect width="200" height="150" fill="white" stroke="none" />
+      <!-- Simulated Technical Drawing -->
+      <path d="M0,0 L200,0 L200,150 L0,150 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M0,0 L20,10 M10,0 L30,10 M0,10 L20,0 M20,20 L40,0 M40,10 L60,0 M60,20 L80,0 M80,10 L100,0 M100,20 L120,0 M120,10 L140,0 M140,20 L160,0 M160,10 L180,0 M180,20 L200,0" stroke="black" stroke-width="0.5" fill="none"/>
+      <rect x="10" y="10" width="180" height="130" fill="none" stroke="black" stroke-width="0.5"/>
+      <line x1="20" y1="10" x2="20" y2="140" stroke="black" stroke-width="0.5"/>
+      <line x1="180" y1="10" x2="180" y2="140" stroke="black" stroke-width="0.5"/>
+      <!-- Dimensions -->
+      <text x="60" y="40" font-family="Arial" font-size="12" fill="black">170</text>
+      <line x1="30" y1="35" x2="170" y2="35" stroke="black" stroke-width="0.5"/>
+      <line x1="30" y1="30" x2="30" y2="40" stroke="black" stroke-width="0.5"/>
+      <line x1="170" y1="30" x2="170" y2="40" stroke="black" stroke-width="0.5"/>
+      
+      <text x="110" y="30" font-family="Arial" font-size="12" fill="black">520</text>
+      <line x1="20" y1="25" x2="180" y2="25" stroke="black" stroke-width="0.5"/>
+      <line x1="20" y1="20" x2="20" y2="30" stroke="black" stroke-width="0.5"/>
+      <line x1="180" y1="20" x2="180" y2="30" stroke="black" stroke-width="0.5"/>
+      
+      <text x="10" y="100" font-family="Arial" font-size="12" fill="black" transform="rotate(-90 10,100)">230</text>
+      <line x1="15" y1="50" x2="15" y2="140" stroke="black" stroke-width="0.5"/>
+      <line x1="10" y1="140" x2="20" y2="140" stroke="black" stroke-width="0.5"/>
+      
+      <!-- Floor plan lines -->
+      <rect x="40" y="60" width="120" height="80" fill="none" stroke="black" stroke-width="1"/>
+      <rect x="40" y="120" width="120" height="30" fill="none" stroke="black" stroke-width="1"/>
+      <rect x="10" y="130" width="180" height="20" fill="none" stroke="black" stroke-width="1"/>
+      <!-- Hatching -->
+      <rect x="40" y="130" width="20" height="20" fill="url(#hatch)" opacity="0.5"/>
+      <rect x="140" y="130" width="20" height="20" fill="url(#hatch)" opacity="0.5"/>
+      
+      <!-- Label -->
+      <text x="100" y="170" font-family="Times New Roman, serif" font-weight="bold" font-size="36" text-anchor="middle" fill="black">Drawing</text>
+    </g>
+
+    <!-- Box 1 -->
+    <g transform="translate(280, 75)">
+      <rect width="150" height="150" fill="#808080" stroke="black" stroke-width="2"/>
+      <text x="75" y="85" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="white" text-anchor="middle">&lt;AF&gt;03</text>
+      <text x="75" y="180" font-family="Times New Roman, serif" font-weight="bold" font-size="36" text-anchor="middle" fill="black">Constraints</text>
+    </g>
+
+    <!-- Box 2 -->
+    <g transform="translate(420, 95)">
+      <rect width="150" height="120" fill="#808080" stroke="black" stroke-width="2"/>
+      <text x="75" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="white" text-anchor="middle">&lt;AF&gt;01</text>
+      <text x="75" y="155" font-family="Times New Roman, serif" font-weight="bold" font-size="36" text-anchor="middle" fill="black">Text</text>
+    </g>
+  </g>
+
+  <!-- ================= SECTION 2: STEP 1 (VERTICAL) ================= -->
+  <!-- Arrow -->
+  <defs>
+    <marker id="arrowTeal" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="#66A59A" />
+    </marker>
+  </defs>
+  <line x1="310" y1="240" x2="310" y2="400" stroke="#66A59A" stroke-width="20" marker-end="url(#arrowTeal)" />
+  
+  <!-- Text -->
+  <text x="10" y="320" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#66A59A">
+    <tspan x="70" dy="0">Step 1:</tspan>
+    <tspan x="5" dy="50">Constraint-Guided</tspan>
+    <tspan x="5" dy="50">Parameter Sampling</tspan>
+  </text>
+  
+  <!-- Floating Text -->
+  <text x="330" y="280" font-family="Times New Roman, serif" font-weight="bold" font-size="40" fill="black">
+    <tspan x="330" dy="0">Inter-/Intra-View</tspan>
+    <tspan x="360" dy="50">Constraints</tspan>
+  </text>
+
+  <!-- Box 3 (Bottom) -->
+  <g transform="translate(255, 430)">
+    <rect width="190" height="200" fill="#808080" stroke="black" stroke-width="2"/>
+    <text x="95" y="115" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white" text-anchor="middle">&lt;AF&gt;02</text>
+    <text x="95" y="240" font-family="Times New Roman, serif" font-weight="bold" font-size="40" text-anchor="middle" fill="black">Parameter Space</text>
+  </g>
+
+  <!-- ================= SECTION 3: STEP 2 (HORIZONTAL) ================= -->
+  <!-- Path Blue -->
+  <path d="M400,440 L550,440 Q580,440 580,410 L580,170 Q580,140 610,140 L860,140" fill="none" stroke="#7FA8DE" stroke-width="6" marker-end="url(#arrowBlue)" />
+  
+  <!-- Text on Path -->
+  <text x="590" y="100" font-family="Times New Roman, serif" font-weight="bold" font-style="italic" font-size="48" fill="black">
+    <tspan x="650" dy="0">Layers</tspan>
+    <tspan x="650" dy="60">separating</tspan>
+  </text>
+  
+  <!-- Box 4 (Middle) -->
+  <g transform="translate(880, 95)">
+    <rect width="220" height="150" fill="#808080" stroke="black" stroke-width="2"/>
+    <text x="110" y="85" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white" text-anchor="middle">&lt;AF&gt;04</text>
+  </g>
+
+  <!-- Path Blue 2 -->
+  <line x1="1020" y1="140" x2="1250" y2="140" stroke="#7FA8DE" stroke-width="6" marker-end="url(#arrowBlue)" />
+  <text x="1050" y="125" font-family="Times New Roman, serif" font-weight="bold" font-style="italic" font-size="48" fill="black">Rendering</text>
+
+  <!-- Destination Container -->
+  <g transform="translate(1260, 15)">
+    <rect width="330" height="400" rx="40" fill="none" stroke="black" stroke-width="4" stroke-dasharray="15,10" />
+    
+    <!-- Image 1: Front -->
+    <g transform="translate(20, 40)">
+      <rect width="200" height="120" fill="#f0f0f0" />
+      <rect x="20" y="50" width="160" height="60" fill="none" stroke="#aaa" stroke-width="2"/>
+      <text x="100" y="90" font-family="serif" font-weight="bold" font-size="50" fill="#ccc" text-anchor="middle">Front</text>
+      <!-- Simple grid lines -->
+      <path d="M20,50 L20,110 M180,50 L180,110 M20,50 L20,10 M20,50 L180,50" stroke="#aaa" fill="none"/>
+    </g>
+    
+    <!-- Image 2: Side -->
+    <g transform="translate(230, 40)">
+      <rect width="200" height="120" fill="#f0f0f0" />
+      <rect x="40" y="50" width="120" height="60" fill="none" stroke="#aaa" stroke-width="2"/>
+      <text x="100" y="90" font-family="serif" font-weight="bold" font-size="50" fill="#ccc" text-anchor="middle">Side</text>
+      <path d="M40,50 L40,110 M160,50 L160,110 M40,50 L160,50" stroke="#aaa" fill="none"/>
+    </g>
+    
+    <!-- Image 3: Top -->
+    <g transform="translate(20, 170)">
+      <rect width="200" height="120" fill="#f0f0f0" />
+      <rect x="30" y="30" width="140" height="90" fill="none" stroke="#aaa" stroke-width="2"/>
+      <text x="100" y="80" font-family="serif" font-weight="bold" font-size="50" fill="#ccc" text-anchor="middle">Top</text>
+      <circle cx="50" cy="60" r="20" stroke="#aaa" fill="none"/>
+      <circle cx="150" cy="60" r="20" stroke="#aaa" fill="none"/>
+    </g>
+    
+    <text x="165" y="340" font-family="Times New Roman, serif" font-weight="bold" font-size="40" text-anchor="middle" fill="black">
+        <tspan x="315" dy="0" text-anchor="middle">Orthographic</tspan>
+        <tspan x="315" dy="50" text-anchor="middle">Projection</tspan>
+    </text>
+  </g>
+
+  <!-- Step 2 Text -->
+  <text x="730" y="210" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#7FA8DE">
+    <tspan x="730" dy="0">Step 2: 2D Drawing and Raster</tspan>
+    <tspan x="830" dy="50">Image Generation</tspan>
+  </text>
+
+  <!-- ================= SECTION 4: STEP 3 (BOTTOM) ================= -->
+  <!-- Path Purple -->
+  <line x1="580" y1="440" x2="930" y2="440" stroke="#B565A7" stroke-width="6" marker-end="url(#arrowPurple)" />
+  
+  <!-- Text on Path -->
+  <text x="650" y="390" font-family="Times New Roman, serif" font-weight="bold" font-style="italic" font-size="48" fill="black">
+    <tspan x="650" dy="0">Entities</tspan>
+    <tspan x="650" dy="60">separating</tspan>
+  </text>
+  
+  <!-- Box 5 -->
+  <g transform="translate(950, 360)">
+    <rect width="220" height="220" fill="#808080" stroke="black" stroke-width="2"/>
+    <text x="110" y="125" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white" text-anchor="middle">&lt;AF&gt;05</text>
+  </g>
+  
+  <!-- Path Purple 2 -->
+  <line x1="1120" y1="430" x2="1330" y2="430" stroke="#B565A7" stroke-width="6" marker-end="url(#arrowPurple)" />
+  <text x="1140" y="410" font-family="Times New Roman, serif" font-weight="bold" font-style="italic" font-size="48" fill="black">Execute</text>
+  
+  <!-- Box 6 -->
+  <g transform="translate(1340, 300)">
+    <rect width="240" height="220" fill="#808080" stroke="#000033" stroke-width="3"/>
+    <text x="120" y="125" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white" text-anchor="middle">&lt;AF&gt;06</text>
+    <text x="120" y="270" font-family="Times New Roman, serif" font-weight="bold" font-size="48" text-anchor="middle" fill="black">3-D Model</text>
+  </g>
+  
+  <!-- Step 3 Text -->
+  <text x="720" y="540" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#B565A7">
+    Step 3: 3D Model Generation
+  </text>
+  
+  <!-- Floating Logo -->
+  <text x="590" y="300" font-family="sans-serif" font-weight="bold" font-size="50" fill="black">e</text>
+  <text x="605" y="300" font-family="sans-serif" font-weight="bold" font-size="50" fill="black">z</text>
+  <text x="625" y="300" font-family="sans-serif" font-weight="bold" font-size="50" fill="#AAB2FA">d</text>
+  <text x="645" y="300" font-family="sans-serif" font-weight="bold" font-size="50" fill="#AAB2FA">x</text>
+  <text x="665" y="300" font-family="sans-serif" font-weight="bold" font-size="50" fill="#AAB2FA">f</text>
+
+</svg>

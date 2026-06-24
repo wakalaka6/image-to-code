@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 -58.0 1596.0 861.0" style="background-color: white;">
+  <defs>
+    <style>
+      .text-main { font-family: 'Times New Roman', serif; fill: black; }
+      .text-title { font-size: 60px; font-weight: bold; text-anchor: middle; }
+      .text-subtitle { font-size: 40px; font-style: italic; text-anchor: middle; }
+      .text-label { font-size: 45px; text-anchor: middle; }
+      .text-label-left { font-size: 45px; text-anchor: start; }
+      .text-hand { font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; font-size: 40px; fill: black; }
+      .box-dashed { fill: none; stroke: #C0C0C0; stroke-width: 5; stroke-dasharray: 25, 15; rx: 30; }
+      .box-solid { fill: #D3D3D3; rx: 10; }
+      .connector { fill: none; stroke: #A0A0A0; stroke-width: 4; }
+      .icon-stroke { fill: none; stroke: black; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#A0A0A0" stroke-width="2" />
+    </marker>
+  </defs>
+
+  <!-- ==================== CONNECTORS ==================== -->
+  <!-- Left Side Connectors -->
+  <path d="M470 490 L430 490 M430 105 L430 560" class="connector" />
+  <line x1="430" y1="105" x2="380" y2="105" class="connector" marker-end="url(#arrow)" />
+  <line x1="430" y1="260" x2="380" y2="260" class="connector" marker-end="url(#arrow)" />
+  <line x1="430" y1="410" x2="380" y2="410" class="connector" marker-end="url(#arrow)" />
+  <line x1="430" y1="560" x2="380" y2="560" class="connector" marker-end="url(#arrow)" />
+
+  <!-- Right Side Connectors -->
+  <path d="M1230 490 L1200 490 M1200 120 L1200 550" class="connector" />
+  <line x1="1200" y1="120" x2="1260" y2="120" class="connector" marker-end="url(#arrow)" />
+  <line x1="1200" y1="335" x2="1260" y2="335" class="connector" marker-end="url(#arrow)" />
+  <line x1="1200" y1="550" x2="1260" y2="550" class="connector" marker-end="url(#arrow)" />
+
+  <!-- Center Connectors -->
+  <line x1="850" y1="490" x2="850" y2="360" class="connector" /> <!-- Down from center -->
+  <line x1="850" y1="490" x2="790" y2="490" class="connector" marker-end="url(#arrow)" /> <!-- To Left Box -->
+  <line x1="850" y1="490" x2="910" y2="490" class="connector" marker-end="url(#arrow)" /> <!-- To Right Box -->
+
+  <!-- ==================== LEFT COLUMN ==================== -->
+  
+  <!-- Box 1: Sentiment -->
+  <g transform="translate(10, 20)">
+    <rect width="370" height="170" class="box-dashed" />
+    <text x="10" y="145" class="text-main text-label">Sentiment</text>
+    <text x="180" y="60" class="text-main text-label-left">(a) positive</text>
+    <text x="180" y="105" class="text-main text-label-left">(b) negative</text>
+    <text x="180" y="145" class="text-main text-label-left">(c) neutral</text>
+    <!-- Icon -->
+    <g transform="translate(40, 20)">
+      <!-- Gauge -->
+      <path d="M10,60 A60,60 0 0,1 130,60" fill="none" stroke="#2F353B" stroke-width="8" />
+      <path d="M10,60 A60,60 0 0,1 40,30 A60,60 0 0,1 70,15" fill="#F23526" stroke="#2F353B" stroke-width="4" />
+      <path d="M70,15 A60,60 0 0,1 100,15 A60,60 0 0,1 130,60" fill="#F5B800" stroke="#2F353B" stroke-width="4" />
+      <path d="M100,15 A60,60 0 0,1 130,60 A60,60 0 0,1 130,85" fill="#27AE60" stroke="#2F353B" stroke-width="4" />
+      <!-- Needle -->
+      <circle cx="70" cy="85" r="15" fill="#1B4F72" stroke="#2F353B" stroke-width="4"/>
+      <path d="M70,85 L120,55" stroke="#1B4F72" stroke-width="10" stroke-linecap="round"/>
+      <!-- Faces -->
+      <circle cx="20" cy="30" r="15" fill="#F23526" stroke="black" stroke-width="2"/> <!-- Sad -->
+      <path d="M14,26 Q20,22 26,26" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M14,34 Q20,30 26,34" fill="none" stroke="black" stroke-width="2"/>
+      <circle cx="70" cy="15" r="15" fill="#F5B800" stroke="black" stroke-width="2"/> <!-- Neutral -->
+      <circle cx="64" cy="12" r="2" fill="black"/> <circle cx="76" cy="12" r="2" fill="black"/>
+      <line x1="66" y1="20" x2="74" y2="20" stroke="black" stroke-width="2"/>
+      <circle cx="120" cy="30" r="15" fill="#27AE60" stroke="black" stroke-width="2"/> <!-- Happy -->
+      <path d="M114,26 Q120,32 126,26" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M114,34 Q120,38 126,34" fill="none" stroke="black" stroke-width="2"/>
+      <!-- Meter -->
+      <line x1="40" y1="80" x2="40" y2="100" stroke="black" stroke-width="3"/>
+      <circle cx="40" cy="105" r="6" fill="#F23526" stroke="black" stroke-width="2"/>
+      <line x1="70" y1="80" x2="70" y2="100" stroke="black" stroke-width="3"/>
+      <circle cx="70" cy="105" r="6" fill="#F5B800" stroke="black" stroke-width="2"/>
+      <line x1="100" y1="80" x2="100" y2="100" stroke="black" stroke-width="3"/>
+      <circle cx="100" cy="105" r="6" fill="#27AE60" stroke="black" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Box 2: Style -->
+  <g transform="translate(10, 190)">
+    <rect width="370" height="170" class="box-dashed" />
+    <text x="90" y="145" class="text-main text-label">Style</text>
+    <text x="180" y="60" class="text-main text-label-left">(a) subjective</text>
+    <text x="180" y="105" class="text-main text-label-left">(b) neutral</text>
+    <!-- Icon -->
+    <g transform="translate(40, 20)">
+      <path d="M30,10 L130,10 L130,15 L125,15 L125,70 L130,70 L130,75 L30,75 L30,70 L25,70 L25,15 L30,15 Z" fill="#808080" />
+      <rect x="25" y="15" width="100" height="5" fill="#C0C0C0"/>
+      <text x="40" y="30" font-size="10" font-family="serif">Aa</text>
+      <text x="40" y="42" font-size="10" font-family="serif">Aa</text>
+      <text x="40" y="54" font-size="10" font-family="serif">Aa</text>
+      <text x="40" y="66" font-size="10" font-family="serif">Aa</text>
+      <!-- Main A -->
+      <path d="M30,20 L80,20 L60,80 L50,80 L65,45 L50,45 L40,80 L30,80 Z" fill="#0088CC" stroke="#003366" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Box 3: Topic -->
+  <g transform="translate(10, 340)">
+    <rect width="370" height="150" class="box-dashed" />
+    <text x="90" y="130" class="text-main text-label">Topic</text>
+    <text x="180" y="40" class="text-main text-label-left">(a) sports</text>
+    <text x="180" y="80" class="text-main text-label-left">(b) crime</text>
+    <text x="180" y="120" class="text-main text-label-left">(c) politics</text>
+    <text x="180" y="145" class="text-main text-label-left">......</text>
+    <!-- Icon -->
+    <g transform="translate(40, 20)">
+      <path d="M20,20 h30 a10,10 0 0,1 10,10 v10 h-10 v10 h-10 v-10 h-10 v-10 a10,10 0 0,1 10,-10" fill="#4DD0E1" stroke="black" stroke-width="2"/>
+      <path d="M60,40 h30 a10,10 0 0,1 10,10 v10 h-10 v10 h-10 v-10 h-10 v-10 a10,10 0 0,1 10,-10" fill="#FDD835" stroke="black" stroke-width="2"/>
+      <circle cx="35" cy="10" r="12" fill="#69F0AE" stroke="black" stroke-width="2"/>
+      <rect x="65" y="5" width="40" height="15" rx="7" fill="#FF4081" stroke="black" stroke-width="2"/>
+      <circle cx="75" cy="70" r="12" fill="#FF4081" stroke="black" stroke-width="2"/>
+      <rect x="10" y="65" width="40" height="15" rx="7" fill="#69F0AE" stroke="black" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Box 4: Perplexity -->
+  <g transform="translate(10, 490)">
+    <rect width="370" height="170" class="box-dashed" />
+    <text x="100" y="155" class="text-main text-label">Perplexity</text>
+    <text x="180" y="60" class="text-main text-label-left">(a) high</text>
+    <text x="180" y="130" class="text-main text-label-left">(b) low</text>
+    <!-- Icon -->
+    <g transform="translate(40, 20)">
+      <path d="M50,10 a15,15 0 1,1 -10,25" fill="none" stroke="black" stroke-width="3"/> <!-- Hair -->
+      <circle cx="50" cy="40" r="18" fill="#FF7060" stroke="black" stroke-width="3"/> <!-- Head -->
+      <path d="M30,55 q20,0 40,0 l0,50 q-20,0 -40,0 z" fill="#FF7060" stroke="black" stroke-width="3"/> <!-- Body -->
+      <path d="M40,100 l0,20 M60,100 l0,20" stroke="#42A5F5" stroke-width="8"/> <!-- Legs -->
+      <path d="M70,40 q10,-10 20,0 q10,10 0,20 q-10,10 -20,0" fill="#FF7060" stroke="black" stroke-width="3"/> <!-- Arm -->
+      <text x="75" y="40" font-size="40" font-family="sans-serif" font-weight="bold">?</text>
+      <path d="M20,20 l-10,0 l0,10 l10,0" fill="none" stroke="#FF7060" stroke-width="8"/> <!-- Hand -->
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN ==================== -->
+
+  <!-- Box 1: Vanilla -->
+  <g transform="translate(1260, 20)">
+    <rect width="330" height="190" class="box-dashed" />
+    <text x="100" y="165" class="text-main text-label">Vanilla</text>
+    <text x="180" y="85" class="text-hand">Please rewrite it</text>
+    <text x="180" y="120" class="text-hand">to make it more</text>
+    <text x="180" y="150" class="text-hand">convincing.</text>
+    <!-- Icon -->
+    <g transform="translate(20, 30)">
+      <!-- Flower -->
+      <path d="M70,10 L90,30 L110,10 L90,-10 Z" fill="#FFF8DC" stroke="black" stroke-width="3"/>
+      <path d="M70,10 L50,30 L30,10 L50,-10 Z" fill="#FFF8DC" stroke="black" stroke-width="3"/>
+      <path d="M50,30 L30,50 L10,30 L30,10 Z" fill="#FFF8DC" stroke="black" stroke-width="3"/>
+      <path d="M50,30 L70,50 L90,30 L70,10 Z" fill="#FFF8DC" stroke="black" stroke-width="3"/>
+      <path d="M50,30 L50,50 L70,70 L50,90 Z" fill="#FFF8DC" stroke="black" stroke-width="3"/>
+      <circle cx="60" cy="40" r="10" fill="#F5B800" stroke="black" stroke-width="2"/>
+      <!-- Umbrella -->
+      <path d="M30,80 L100,20" stroke="#8D4010" stroke-width="4"/>
+      <path d="M100,20 L110,10 M100,20 L90,10 M100,20 L100,30" stroke="#8D4010" stroke-width="3"/>
+      <path d="M30,80 L20,90 L40,90 Z" fill="#D35400" stroke="black" stroke-width="2"/>
+      <path d="M40,80 L60,80 L60,90 Z" fill="#D35400" stroke="black" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Box 2: Explicit -->
+  <g transform="translate(1260, 250)">
+    <rect width="330" height="180" class="box-dashed" />
+    <text x="100" y="160" class="text-main text-label">Explicit</text>
+    <text x="180" y="55" class="text-hand">Make the {word</text>
+    <text x="180" y="90" class="text-hand">choice} of the</text>
+    <text x="180" y="125" class="text-hand">rewritten content</text>
+    <text x="180" y="160" class="text-hand">{simple}.</text>
+    <!-- Icon -->
+    <g transform="translate(20, 30)">
+      <!-- Pipe -->
+      <path d="M10,40 L40,40 Q50,40 50,50 L50,80 Q50,90 60,90 L70,90" fill="none" stroke="#2C3E50" stroke-width="8"/>
+      <path d="M10,40 L40,40 Q50,40 50,50 L50,80 Q50,90 60,90 L70,90" fill="none" stroke="black" stroke-width="2"/>
+      <path d="M10,40 L40,40 Q50,40 50,50 L50,80 Q50,90 60,90 L70,90" fill="none" stroke="#A4D0F0" stroke-width="2"/>
+      <!-- Drill -->
+      <rect x="60" y="10" width="60" height="15" fill="#A4D0F0" stroke="black" stroke-width="3"/>
+      <rect x="60" y="25" width="60" height="30" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <circle cx="90" cy="55" r="10" fill="#2C3E50" stroke="black" stroke-width="3"/>
+      <rect x="80" y="55" width="20" height="20" fill="#A4D0F0" stroke="black" stroke-width="3"/>
+      <!-- Wrench -->
+      <path d="M80,80 L80,100 L100,100 L100,80" fill="#A4D0F0" stroke="black" stroke-width="3"/>
+      <circle cx="90" cy="110" r="10" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M70,110 L110,110" stroke="#2C3E50" stroke-width="10"/>
+      <path d="M70,110 L110,110" fill="none" stroke="black" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Box 3: Implicit -->
+  <g transform="translate(1260, 470)">
+    <rect width="330" height="240" class="box-dashed" />
+    <text x="100" y="195" class="text-main text-label">Implicit</text>
+    <text x="180" y="55" class="text-hand">You are</text>
+    <text x="180" y="95" class="text-hand">{elderly}. Please</text>
+    <text x="180" y="135" class="text-hand">rewrite this</text>
+    <text x="180" y="175" class="text-hand">passage.</text>
+    <!-- Icon -->
+    <g transform="translate(20, 20)">
+      <!-- Book -->
+      <rect x="20" y="70" width="80" height="60" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <line x1="60" y1="70" x2="60" y2="130" stroke="black" stroke-width="2"/>
+      <line x1="30" y1="80" x2="50" y2="80" stroke="black" stroke-width="3"/>
+      <line x1="30" y1="90" x2="50" y2="90" stroke="black" stroke-width="3"/>
+      <line x1="70" y1="80" x2="90" y2="80" stroke="black" stroke-width="3"/>
+      <line x1="70" y1="90" x2="90" y2="90" stroke="black" stroke-width="3"/>
+      <!-- Man -->
+      <path d="M110,130 L110,80 L180,80 L180,130" fill="#8D4010" stroke="black" stroke-width="3"/> <!-- Suit -->
+      <circle cx="145" cy="40" r="20" fill="#FFCC99" stroke="black" stroke-width="3"/> <!-- Head -->
+      <path d="M125,30 Q145,10 165,30" fill="#8D4010" stroke="black" stroke-width="3"/> <!-- Hair -->
+      <g stroke="black" stroke-width="3" fill="none"> <!-- Glasses -->
+         <rect x="130" y="35" width="15" height="10"/>
+         <rect x="150" y="35" width="15" height="10"/>
+         <line x1="145" y1="40" x2="155" y2="40"/>
+      </g>
+      <path d="M130,130 L130,100 Q145,90 160,100 L160,130" fill="#8D4010" stroke="black" stroke-width="3"/> <!-- Coat collar -->
+      <!-- Hand & Cane -->
+      <path d="M110,100 L110,70 L100,50" fill="none" stroke="#FFCC99" stroke-width="8"/>
+      <path d="M110,100 L110,70 L100,50" fill="none" stroke="black" stroke-width="3"/>
+      <line x1="100" y1="50" x2="100" y2="20" stroke="#8D4010" stroke-width="4"/> <!-- Cane -->
+    </g>
+  </g>
+
+  <!-- ==================== CENTER COLUMN ==================== -->
+
+  <!-- Header -->
+  <g transform="translate(850, 100)">
+    <!-- Speedometer -->
+    <g transform="translate(-150, -110)">
+      <path d="M10,100 A140,140 0 0,1 290,100" fill="none" stroke="#2C3E50" stroke-width="12" />
+      <path d="M10,100 A140,140 0 0,1 90,30 A140,140 0 0,1 170,10" fill="#F23526" stroke="#2C3E50" stroke-width="4"/>
+      <path d="M90,30 A140,140 0 0,1 170,10 A140,140 0 0,1 250,30" fill="#F5B800" stroke="#2C3E50" stroke-width="4"/>
+      <path d="M170,10 A140,140 0 0,1 250,30 A140,140 0 0,1 290,100" fill="#27AE60" stroke="#2C3E50" stroke-width="4"/>
+      <circle cx="150" cy="90" r="20" fill="#1B4F72" stroke="#2C3E50" stroke-width="6"/>
+      <path d="M150,90 L220,60" stroke="#1B4F72" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="70" class="text-main text-title">TruthOverTricks</text>
+    <text x="0" y="115" class="text-main text-subtitle">Evaluate Shortcut Learning in</text>
+    <text x="0" y="155" class="text-main text-subtitle">Misinformation Detection</text>
+  </g>
+
+  <!-- Benchmark Box -->
+  <g transform="translate(625, 230)">
+    <rect width="450" height="150" class="box-solid" />
+    <!-- DB Icon -->
+    <g transform="translate(20, 30)">
+      <path d="M10,20 h60 v40 h-60 z" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M10,20 l10,-10 h40 l10,10" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M10,60 h60 v20 h-60 z" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M10,60 l10,-10 h40 l10,10" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M10,100 h60 v20 h-60 z" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <path d="M10,100 l10,-10 h40 l10,10" fill="#F5B800" stroke="black" stroke-width="3"/>
+      <!-- Center DB -->
+      <path d="M50,30 v60 c0,10 20,10 40,0 v-60" fill="#808080" stroke="black" stroke-width="3"/>
+      <ellipse cx="70" cy="30" rx="30" ry="10" fill="#A0A0A0" stroke="black" stroke-width="3"/>
+      <path d="M40,50 q30,10 60,0" fill="none" stroke="black" stroke-width="3"/>
+      <path d="M40,70 q30,10 60,0" fill="none" stroke="black" stroke-width="3"/>
+    </g>
+    <text x="225" y="60" class="text-main" font-size="45" text-anchor="middle">Misinformation</text>
+    <text x="225" y="110" class="text-main" font-size="45" text-anchor="middle">Benchmarks</text>
+  </g>
+
+  <!-- Induction Box -->
+  <g transform="translate(460, 345)">
+    <rect width="340" height="450" class="box-solid" />
+    <text x="170" y="50" class="text-main" font-size="45" text-anchor="middle">Intrinsic</text>
+    <text x="170" y="105" class="text-main" font-size="45" text-anchor="middle">Shortcut</text>
+    <text x="170" y="160" class="text-main" font-size="45" text-anchor="middle">Induction</text>
+    
+    <!-- Magnifying Glass Icon -->
+    <g transform="translate(60, 180)">
+      <circle cx="70" cy="50" r="55" fill="#4DD0E1" stroke="#2F353B" stroke-width="8"/>
+      <circle cx="70" cy="50" r="55" fill="none" stroke="#F5B800" stroke-width="6"/>
+      <line x1="70" y1="105" x2="70" y2="130" stroke="#2F353B" stroke-width="12"/>
+      <path d="M50,130 a20,20 0 0,0 40,0" fill="none" stroke="#2F353B" stroke-width="8"/>
+      <circle cx="70" cy="50" r="15" fill="#2F353B"/>
+      <circle cx="50" cy="50" r="8" fill="#2F353B"/>
+      <circle cx="90" cy="50" r="8" fill="#2F353B"/>
+    </g>
+
+    <!-- Docs -->
+    <g transform="translate(180, 180)">
+      <g transform="translate(0, 0)">
+        <rect width="70" height="50" rx="5" fill="none" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="15" x2="60" y2="15" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="28" x2="40" y2="28" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="40" x2="60" y2="40" stroke="black" stroke-width="6"/>
+      </g>
+      <g transform="translate(0, 70)">
+        <rect width="70" height="50" rx="5" fill="none" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="15" x2="60" y2="15" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="28" x2="40" y2="28" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="40" x2="60" y2="40" stroke="black" stroke-width="6"/>
+      </g>
+      <g transform="translate(0, 140)">
+        <rect width="70" height="50" rx="5" fill="none" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="15" x2="60" y2="15" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="28" x2="40" y2="28" stroke="black" stroke-width="6"/>
+        <line x1="10" y1="40" x2="60" y2="40" stroke="black" stroke-width="6"/>
+      </g>
+    </g>
+
+    <text x="170" y="430" class="text-main text-subtitle" text-anchor="middle">Indicator Classifier</text>
+  </g>
+
+  <!-- Injection Box -->
+  <g transform="translate(900, 345)">
+    <rect width="340" height="450" class="box-solid" />
+    <text x="170" y="50" class="text-main" font-size="45" text-anchor="middle">Extrinsic</text>
+    <text x="170" y="105" class="text-main" font-size="45" text-anchor="middle">Shortcut</text>
+    <text x="170" y="160" class="text-main" font-size="45" text-anchor="middle">Injection</text>
+
+    <!-- Robot Icon -->
+    <g transform="translate(80, 180)">
+      <!-- Head -->
+      <rect x="20" y="20" width="120" height="80" rx="20" fill="#A4D0F0" stroke="black" stroke-width="6"/>
+      <rect x="35" y="35" width="90" height="50" rx="10" fill="white" stroke="black" stroke-width="4"/>
+      <text x="80" y="70" font-family="sans-serif" font-weight="bold" font-size="35" text-anchor="middle">AI</text>
+      <!-- Antennae -->
+      <line x1="40" y1="20" x2="40" y2="0" stroke="black" stroke-width="4"/>
+      <circle cx="40" cy="0" r="8" fill="#FF4081" stroke="black" stroke-width="3"/>
+      <line x1="140" y1="20" x2="140" y2="0" stroke="black" stroke-width="4"/>
+      <circle cx="140" cy="0" r="8" fill="#FF4081" stroke="black" stroke-width="3"/>
+      <!-- Ears -->
+      <circle cx="10" cy="60" r="15" fill="#42A5F5" stroke="black" stroke-width="6"/>
+      <circle cx="160" cy="60" r="15" fill="#42A5F5" stroke="black" stroke-width="6"/>
+      <!-- Body -->
+      <path d="M30,110 a40,40 0 0,1 120,0" fill="white" stroke="black" stroke-width="6"/>
+      <!-- Circuit -->
+      <rect x="70" y="110" width="40" height="40" fill="#4DD0E1" stroke="black" stroke-width="4"/>
+      <line x1="80" y1="110" x2="80" y2="90" stroke="black" stroke-width="4"/>
+      <circle cx="80" cy="90" r="5" fill="#FF4081" stroke="black" stroke-width="2"/>
+      <line x1="100" y1="110" x2="100" y2="90" stroke="black" stroke-width="4"/>
+      <circle cx="100" cy="90" r="5" fill="#FF4081" stroke="black" stroke-width="2"/>
+      <line x1="60" y1="130" x2="40" y2="130" stroke="black" stroke-width="4"/>
+      <circle cx="40" cy="130" r="5" fill="#FF4081" stroke="black" stroke-width="2"/>
+      <line x1="120" y1="130" x2="140" y2="130" stroke="black" stroke-width="4"/>
+      <circle cx="140" cy="130" r="5" fill="#FF4081" stroke="black" stroke-width="2"/>
+    </g>
+
+    <text x="170" y="430" class="text-main text-subtitle" text-anchor="middle">LLM Injector</text>
+  </g>
+
+</svg>

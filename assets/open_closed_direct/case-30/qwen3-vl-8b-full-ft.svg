@@ -1,0 +1,647 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.0 -3.0 1716.0 961.0" style="font-family: 'Times New Roman', serif; background-color: white;">
+
+  <!-- Definitions for reusable elements -->
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ADD8E6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-yellow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#FFE4B5" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#FFDAB9" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-grey" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#ddd" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="grad-arrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ADD8E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-arrow-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0E68C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-arrow-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFDAB9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4A460;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Brain Icon -->
+    <g id="brain-icon">
+      <rect x="0" y="0" width="140" height="110" rx="5" fill="#333" stroke="#2c5aa0" stroke-width="3"/>
+      <rect x="5" y="5" width="130" height="100" rx="2" fill="#fff"/>
+      <!-- Brain drawing -->
+      <path d="M70 15 C50 15 35 25 30 40 C25 45 25 55 30 60 C25 65 25 75 30 80 C35 95 50 105 65 105 C68 105 70 103 70 103 C70 103 72 105 75 105 C90 105 105 95 110 80 C115 75 115 65 110 60 C115 55 115 45 110 40 C105 25 90 15 70 15 Z" fill="#FFCBA4" stroke="#000" stroke-width="1.5"/>
+      <path d="M70 15 V105 M40 30 C50 40 60 30 70 30 M100 30 C90 40 80 30 70 30 M40 80 C50 70 60 80 70 80 M100 80 C90 70 80 80 70 80 M30 50 C40 50 40 60 50 60 M110 50 C100 50 100 60 90 60" fill="none" stroke="#000" stroke-width="1"/>
+      <!-- Ruler marks -->
+      <line x1="15" y1="20" x2="15" y2="90" stroke="#000" stroke-width="2"/>
+      <line x1="20" y1="25" x2="20" y2="85" stroke="#000" stroke-width="2"/>
+      <line x1="15" y1="20" x2="20" y2="25" stroke="#000" stroke-width="2"/>
+      <line x1="15" y1="90" x2="20" y2="85" stroke="#000" stroke-width="2"/>
+    </g>
+
+    <!-- Monitor Base -->
+    <g id="monitor-base">
+      <rect x="25" y="110" width="90" height="20" rx="5" fill="#333" stroke="#2c5aa0" stroke-width="2"/>
+      <line x1="35" y1="110" x2="35" y2="130" stroke="#fff" stroke-width="2"/>
+      <line x1="45" y1="110" x2="45" y2="130" stroke="#fff" stroke-width="2"/>
+      <line x1="55" y1="110" x2="55" y2="130" stroke="#fff" stroke-width="2"/>
+      <line x1="65" y1="110" x2="65" y2="130" stroke="#fff" stroke-width="2"/>
+      <line x1="75" y1="110" x2="75" y2="130" stroke="#fff" stroke-width="2"/>
+      <line x1="85" y1="110" x2="85" y2="130" stroke="#fff" stroke-width="2"/>
+      <path d="M50 130 H90 L95 140 H45 L50 130 Z" fill="#333" stroke="#2c5aa0" stroke-width="2"/>
+    </g>
+
+    <!-- Snowflake -->
+    <g id="snowflake">
+      <path d="M20 0 L20 40 M0 20 L40 20 M6 6 L34 34 M6 34 L34 6" stroke="#87CEEB" stroke-width="3" stroke-linecap="round"/>
+      <path d="M20 5 L15 10 M20 5 L25 10 M20 35 L15 30 M20 35 L25 30 M5 20 L10 15 M5 20 L10 25 M35 20 L30 15 M35 20 L30 25" stroke="#87CEEB" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Feature Block (3 bars) -->
+    <g id="feature-block">
+      <rect x="0" y="0" width="20" height="100" rx="2" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <rect x="30" y="0" width="20" height="100" rx="2" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <rect x="60" y="0" width="20" height="100" rx="2" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+    </g>
+    
+    <!-- Feature Block Colored -->
+    <g id="feature-block-colored">
+      <rect x="0" y="0" width="20" height="100" rx="2" fill="#FFE4B5" stroke="#001f3f" stroke-width="4"/>
+      <rect x="30" y="0" width="20" height="100" rx="2" fill="#FFE4B5" stroke="#001f3f" stroke-width="4"/>
+      <rect x="60" y="0" width="20" height="100" rx="2" fill="#FFE4B5" stroke="#001f3f" stroke-width="4"/>
+    </g>
+
+    <!-- Double Arrow -->
+    <g id="double-arrow">
+      <path d="M0 10 L10 0 L10 5 L90 5 L90 0 L100 10 L90 20 L90 15 L10 15 L10 20 Z" fill="#4682B4" stroke="#001f3f" stroke-width="2"/>
+    </g>
+    
+    <!-- Large Arrow Right -->
+    <g id="arrow-right">
+      <path d="M0 15 L280 15 L280 0 L320 25 L280 50 L280 35 L0 35 Z" fill="url(#grad-arrow)" stroke="#001f3f" stroke-width="3"/>
+    </g>
+    
+    <!-- Large Arrow Down -->
+    <g id="arrow-down">
+      <path d="M15 0 L35 0 L35 280 L50 280 L25 320 L0 280 L15 280 Z" fill="url(#grad-arrow)" stroke="#001f3f" stroke-width="3"/>
+    </g>
+
+  </defs>
+
+  <!-- ================= TOP PANEL: TRAINING ================= -->
+  <g transform="translate(0, 0)">
+    <!-- Main Border -->
+    <rect x="5" y="5" width="1590" height="650" rx="20" fill="none" stroke="#ddd" stroke-width="4"/>
+    
+    <!-- Background Zones -->
+    <!-- Left Zone (Subject Invariant) -->
+    <path d="M5 5 H400 A20 20 0 0 1 420 25 V335 A20 20 0 0 1 400 355 H5 Z" fill="#F4F8FB"/>
+    <rect x="5" y="20" width="310" height="70" rx="10" fill="#E0F0E0" opacity="0.5"/>
+    <text x="160" y="70" font-size="60" font-weight="bold" font-style="italic" text-anchor="middle">Training</text>
+    <text x="620" y="60" font-size="45" font-weight="bold" font-style="italic" fill="#5D92B6" text-anchor="middle">Subject-Invariant Feature Extraction</text>
+    
+    <!-- Right Zone (Semantic Specific) -->
+    <path d="M940 5 H1585 A20 20 0 0 1 1585 25 V335 A20 20 0 0 1 1565 355 H940 Z" fill="#FFF8E5"/>
+    <text x="1220" y="60" font-size="45" font-weight="bold" font-style="italic" fill="#D36B24" text-anchor="middle">Semantic-Specific Feature Extraction</text>
+
+    <!-- === LEFT SECTION === -->
+    <!-- Subjects -->
+    <g transform="translate(80, 180)">
+      <!-- Avatars -->
+      <g transform="translate(0, 50)"> <!-- Man -->
+        <path d="M10 40 Q10 10 40 10 Q70 10 70 40 V60 H10 Z" fill="#8B4513"/>
+        <circle cx="40" cy="25" r="18" fill="#FFCBA4"/>
+        <path d="M20 15 Q40 0 60 15" fill="#D2691E" stroke="#000" stroke-width="2"/>
+      </g>
+      <g transform="translate(50, 50)"> <!-- Woman -->
+        <path d="M10 40 Q10 10 40 10 Q70 10 70 40 V60 H10 Z" fill="#F4A460"/>
+        <circle cx="40" cy="25" r="18" fill="#FFCBA4"/>
+        <path d="M20 10 Q40 -10 60 10 L60 40 L20 40 Z" fill="#FFD700" stroke="#000" stroke-width="2"/>
+      </g>
+      <g transform="translate(100, 50)"> <!-- Woman 2 -->
+        <path d="M10 40 Q10 10 40 10 Q70 10 70 40 V60 H10 Z" fill="#4682B4"/>
+        <circle cx="40" cy="25" r="18" fill="#FFCBA4"/>
+        <path d="M20 10 Q40 -10 60 10 L60 40 L20 40 Z" fill="#708090" stroke="#000" stroke-width="2"/>
+      </g>
+      <text x="60" y="140" font-size="40" font-weight="bold" font-style="italic" text-anchor="middle">Subject</text>
+    </g>
+
+    <!-- Question Marks & CLS -->
+    <g transform="translate(100, 150)">
+      <text x="20" y="50" font-size="60" font-weight="bold">?</text>
+      <text x="60" y="50" font-size="60" font-weight="bold">?</text>
+      <text x="100" y="50" font-size="60" font-weight="bold">?</text>
+      <!-- Question Mark with Pink Question -->
+      <text x="60" y="50" font-size="60" font-weight="bold" fill="#FFC0CB" stroke="#000" stroke-width="2">?</text>
+      <path d="M55 25 Q60 5 75 5 Q90 5 95 25" fill="none" stroke="#FF6B6B" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="75" cy="45" r="8" fill="#FF6B6B"/>
+    </g>
+
+    <!-- CLS Box -->
+    <g transform="translate(320, 115)">
+      <rect x="5" y="5" width="120" height="60" rx="10" fill="#ADD8E6" opacity="0.5"/>
+      <rect x="0" y="0" width="120" height="60" rx="10" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <text x="60" y="40" font-size="40" font-weight="bold" text-anchor="middle">CLS</text>
+    </g>
+
+    <!-- Arrows Left -->
+    <g transform="translate(220, 150)">
+      <text x="50" y="-10" font-size="60" fill="#5D92B6" font-family="serif" font-style="italic">ℒ<tspan dy="-20" font-size="40">E</tspan><tspan dy="20" dx="-10" font-size="40">cls</tspan></text>
+      <path d="M0 80 L80 0 L85 5 L140 10 L130 15 L90 40 L130 40 L130 35 L90 10 L80 15 L75 10 L35 70 L35 75 L0 75 Z" fill="#ADD8E6" stroke="#001f3f" stroke-width="2"/>
+    </g>
+
+    <!-- fMRI Top -->
+    <g transform="translate(80, 400)">
+      <text x="50" y="-10" font-size="40" font-weight="bold" fill="#888">fMRI</text>
+      <use href="#brain-icon" />
+      <use href="#monitor-base" />
+      <!-- Heartbeat -->
+      <polyline points="145,-10 150,10 155,-30 160,30 165,-10 170,10 175,-5 180,5 185,-5 190,5 195,-5 200,0" fill="none" stroke="#2c5aa0" stroke-width="2"/>
+    </g>
+
+    <!-- Subjects Group Bottom Left -->
+    <g transform="translate(80, 480)">
+      <!-- Crowd of people -->
+      <g transform="translate(0,0) scale(0.8)">
+         <path d="M20 80 Q20 40 60 40 Q100 40 100 80 V100 H20 Z" fill="#DAA520"/>
+         <circle cx="60" cy="30" r="25" fill="#FFCBA4"/>
+         <path d="M35 20 Q60 0 85 20" fill="#4B3621"/>
+      </g>
+      <g transform="translate(80,20) scale(0.8)">
+         <path d="M20 80 Q20 40 60 40 Q100 40 100 80 V100 H20 Z" fill="#FF6347"/>
+         <circle cx="60" cy="30" r="25" fill="#FFCBA4"/>
+         <path d="M35 20 Q60 0 85 20" fill="#CD5C5C"/>
+      </g>
+      <g transform="translate(160,0) scale(0.8)">
+         <path d="M20 80 Q20 40 60 40 Q100 40 100 80 V100 H20 Z" fill="#4682B4"/>
+         <circle cx="60" cy="30" r="25" fill="#FFCBA4"/>
+         <path d="M35 20 Q60 0 85 20" fill="#2F4F4F"/>
+      </g>
+      <g transform="translate(20,60) scale(0.8)">
+         <path d="M20 80 Q20 40 60 40 Q100 40 100 80 V100 H20 Z" fill="#F4A460"/>
+         <circle cx="60" cy="30" r="25" fill="#FFCBA4"/>
+         <path d="M35 20 Q60 0 85 20" fill="#8B4513"/>
+      </g>
+      <g transform="translate(100,60) scale(0.8)">
+         <path d="M20 80 Q20 40 60 40 Q100 40 100 80 V100 H20 Z" fill="#FFA07A"/>
+         <circle cx="60" cy="30" r="25" fill="#FFCBA4"/>
+         <path d="M35 20 Q60 0 85 20" fill="#CD853F"/>
+      </g>
+      <text x="100" y="180" font-size="40" text-anchor="middle">Train Subjects</text>
+    </g>
+
+    <!-- ViT Encoder -->
+    <g transform="translate(280, 400)">
+      <path d="M0 0 L160 -40 L160 180 L0 140 Z" fill="#E0E8F0" stroke="#001f3f" stroke-width="4" filter="url(#glow-cyan)"/>
+      <text x="80" y="80" font-size="45" font-weight="bold" text-anchor="middle">ViT</text>
+    </g>
+
+    <!-- Arrows to ViT -->
+    <g transform="translate(210, 450)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ADD8E6" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+    <g transform="translate(380, 450)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ADD8E6" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- === CENTER SECTION === -->
+    <!-- Feature Stack Es -->
+    <g transform="translate(470, 100)">
+      <use href="#feature-block" filter="url(#glow-cyan)"/>
+      <text x="110" y="110" font-size="50" font-weight="bold" font-style="italic">E<tspan dy="10" font-size="35">s</tspan></text>
+    </g>
+    <!-- Arrow from Es to CLS -->
+    <path d="M460 140 L420 140 L420 130 L380 140 L420 150 L420 140" fill="#ccc" stroke="#999" stroke-width="2"/>
+
+    <!-- Feature Stack Ei -->
+    <g transform="translate(470, 270)">
+      <use href="#feature-block" filter="url(#glow-cyan)"/>
+      <text x="110" y="110" font-size="50" font-weight="bold" font-style="italic">E<tspan dy="10" font-size="35">i</tspan></text>
+    </g>
+    <!-- Arrow from Ei to CLS -->
+    <path d="M460 300 L420 300 L420 290 L380 300 L420 310 L420 300" fill="#ccc" stroke="#999" stroke-width="2"/>
+
+    <!-- Difference Node -->
+    <g transform="translate(520, 220)">
+      <circle cx="0" cy="0" r="25" fill="#fff" stroke="#001f3f" stroke-width="6"/>
+      <line x1="-25" y1="0" x2="25" y2="0" stroke="#001f3f" stroke-width="6"/>
+      <text x="40" y="10" font-size="40" font-weight="bold" font-style="italic">Difference</text>
+    </g>
+    <!-- Arrows to Difference -->
+    <path d="M520 190 L520 200" stroke="#ccc" stroke-width="10"/>
+    <path d="M520 190 L520 200" stroke="#999" stroke-width="2" fill="none"/>
+    <path d="M520 260 L520 240" stroke="#ccc" stroke-width="10"/>
+    <path d="M520 260 L520 240" stroke="#999" stroke-width="2" fill="none"/>
+
+    <!-- Feature Stack E (Merged) -->
+    <g transform="translate(470, 440)">
+      <use href="#feature-block" filter="url(#glow-cyan)"/>
+      <text x="60" y="130" font-size="50" font-weight="bold" font-style="italic">E</text>
+    </g>
+    <!-- Arrow Fi(.) Up -->
+    <g transform="translate(500, 350)">
+      <path d="M0 120 L0 0 L-10 0 L10 -30 L30 0 L20 0 L20 120 Z" fill="url(#grad-arrow)" stroke="#001f3f" stroke-width="2"/>
+      <text x="-80" y="80" font-size="60" font-family="serif" font-style="italic">F<tspan dy="10" font-size="40">i</tspan><tspan dy="-10">(·)</tspan></text>
+    </g>
+
+    <!-- Arrows to Projectors -->
+    <g transform="translate(600, 120)">
+      <use href="#arrow-right" />
+    </g>
+    <g transform="translate(600, 290)">
+      <use href="#arrow-right" />
+    </g>
+    <g transform="translate(600, 460)">
+      <use href="#arrow-right" />
+    </g>
+
+    <!-- Projectors -->
+    <g transform="translate(850, 95)">
+      <rect x="5" y="5" width="250" height="110" rx="15" fill="#FFE4B5" opacity="0.6"/>
+      <rect x="0" y="0" width="250" height="110" rx="15" fill="#FFF8DC" stroke="#001f3f" stroke-width="4"/>
+      <text x="125" y="45" font-size="45" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="125" y="90" font-size="45" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="125" y="140" font-size="60" font-family="serif" font-style="italic" text-anchor="middle">P<tspan dy="10" font-size="40">i</tspan><tspan dy="-10">(·)</tspan></text>
+    </g>
+
+    <g transform="translate(850, 265)">
+      <rect x="5" y="5" width="250" height="110" rx="15" fill="#FFE4B5" opacity="0.6"/>
+      <rect x="0" y="0" width="250" height="110" rx="15" fill="#FFF8DC" stroke="#001f3f" stroke-width="4"/>
+      <text x="125" y="45" font-size="45" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="125" y="90" font-size="45" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="125" y="140" font-size="60" font-family="serif" font-style="italic" text-anchor="middle">P<tspan dy="10" font-size="40">s</tspan><tspan dy="-10">(·)</tspan></text>
+    </g>
+
+    <g transform="translate(850, 435)">
+      <rect x="5" y="5" width="250" height="110" rx="15" fill="#FFE4B5" opacity="0.6"/>
+      <rect x="0" y="0" width="250" height="110" rx="15" fill="#FFF8DC" stroke="#001f3f" stroke-width="4"/>
+      <text x="125" y="45" font-size="45" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="125" y="90" font-size="45" font-weight="bold" text-anchor="middle">Projector</text>
+      <text x="125" y="140" font-size="60" font-family="serif" font-style="italic" text-anchor="middle">P<tspan dy="10" font-size="40">c</tspan><tspan dy="-10">(·)</tspan></text>
+    </g>
+
+    <!-- === RIGHT SECTION === -->
+    <!-- Feature Stack Fi -->
+    <g transform="translate(1250, 100)">
+      <use href="#feature-block" filter="url(#glow-cyan)"/>
+      <text x="-40" y="110" font-size="50" font-weight="bold" font-style="italic">F<tspan dy="10" font-size="35">i</tspan></text>
+    </g>
+    <!-- Arrow from Projector to Fi -->
+    <g transform="translate(1050, 120)">
+      <use href="#arrow-right" />
+    </g>
+
+    <!-- GRL Box -->
+    <g transform="translate(1110, 145)">
+      <rect x="5" y="5" width="120" height="60" rx="10" fill="#FFC0CB" opacity="0.5"/>
+      <rect x="0" y="0" width="120" height="60" rx="10" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <text x="60" y="40" font-size="40" font-weight="bold" text-anchor="middle">GRL</text>
+    </g>
+
+    <!-- Feature Stack Fs -->
+    <g transform="translate(1250, 270)">
+      <use href="#feature-block-colored" filter="url(#glow-yellow)"/>
+      <text x="-40" y="110" font-size="50" font-weight="bold" font-style="italic">F<tspan dy="10" font-size="35">s</tspan></text>
+    </g>
+    <!-- Arrow from Projector to Fs -->
+    <g transform="translate(1050, 290)">
+      <use href="#arrow-right" />
+    </g>
+
+    <!-- Feature Stack F -->
+    <g transform="translate(1250, 440)">
+      <use href="#feature-block-colored" filter="url(#glow-orange)"/>
+      <text x="100" y="110" font-size="50" font-weight="bold" font-style="italic">F</text>
+    </g>
+    <!-- Arrow from Projector to F -->
+    <g transform="translate(1050, 460)">
+      <use href="#arrow-right" />
+    </g>
+
+    <!-- Difference Node Right -->
+    <g transform="translate(1300, 220)">
+      <circle cx="0" cy="0" r="25" fill="#fff" stroke="#001f3f" stroke-width="6"/>
+      <line x1="-25" y1="0" x2="25" y2="0" stroke="#001f3f" stroke-width="6"/>
+    </g>
+    <!-- Arrows to Difference Right -->
+    <path d="M1300 190 L1300 200" stroke="#ccc" stroke-width="10"/>
+    <path d="M1300 190 L1300 200" stroke="#999" stroke-width="2" fill="none"/>
+    <path d="M1300 260 L1300 240" stroke="#ccc" stroke-width="10"/>
+    <path d="M1300 260 L1300 240" stroke="#999" stroke-width="2" fill="none"/>
+
+    <!-- Semantic Branch -->
+    <g transform="translate(1420, 150)">
+      <text x="100" y="0" font-size="60" fill="#DAA520" font-family="serif" font-style="italic">ℒ<tspan dy="-20" font-size="40">F</tspan><tspan dy="20" dx="-10" font-size="40">inv</tspan></text>
+      <path d="M0 80 L80 0 L85 5 L140 10 L130 15 L90 40 L130 40 L130 35 L90 10 L80 15 L75 10 L35 70 L35 75 L0 75 Z" fill="#FFE4B5" stroke="#001f3f" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(1420, 180)">
+      <text x="20" y="50" font-size="60" font-weight="bold">?</text>
+      <text x="80" y="50" font-size="60" font-weight="bold" fill="#FFC0CB" stroke="#000" stroke-width="2">?</text>
+      <path d="M75 25 Q80 5 95 5 Q110 5 115 25" fill="none" stroke="#FF6B6B" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="95" cy="45" r="8" fill="#FF6B6B"/>
+      <text x="120" y="50" font-size="60" font-weight="bold">?</text>
+    </g>
+
+    <!-- Animals -->
+    <g transform="translate(1450, 200)">
+      <!-- Dog -->
+      <g transform="translate(0, 20)">
+        <path d="M10 40 Q10 10 30 10 Q50 10 50 40 V50 H10 Z" fill="#CD853F"/>
+        <circle cx="30" cy="25" r="15" fill="#FFE4B5"/>
+        <path d="M15 15 L10 5 M45 15 L50 5" stroke="#8B4513" stroke-width="3"/>
+        <circle cx="25" cy="25" r="2" fill="black"/> <circle cx="35" cy="25" r="2" fill="black"/>
+        <ellipse cx="30" cy="35" rx="5" ry="3" fill="pink"/>
+      </g>
+      <!-- Woman -->
+      <g transform="translate(60, 20)">
+        <path d="M10 40 Q10 10 30 10 Q50 10 50 40 V50 H10 Z" fill="#D2691E"/>
+        <circle cx="30" cy="25" r="15" fill="#FFE4B5"/>
+        <path d="M15 10 Q30 -5 45 10 L50 40 L10 40 Z" fill="#8B4513"/>
+        <circle cx="25" cy="25" r="2" fill="black"/> <circle cx="35" cy="25" r="2" fill="black"/>
+      </g>
+      <!-- Cat -->
+      <g transform="translate(120, 20)">
+        <path d="M10 40 Q10 10 30 10 Q50 10 50 40 V50 H10 Z" fill="#fff" stroke="#000"/>
+        <circle cx="30" cy="25" r="15" fill="#FFE4B5"/>
+        <path d="M15 10 L18 0 L25 10 M45 10 L42 0 L35 10" fill="#fff" stroke="#000"/>
+        <circle cx="25" cy="25" r="2" fill="black"/> <circle cx="35" cy="25" r="2" fill="black"/>
+      </g>
+      <text x="90" y="100" font-size="40" font-weight="bold" font-style="italic" text-anchor="middle">Semantic</text>
+    </g>
+
+    <!-- Lsfe -->
+    <g transform="translate(1420, 250)">
+      <path d="M0 80 L80 0 L85 5 L140 10 L130 15 L90 40 L130 40 L130 35 L90 10 L80 15 L75 10 L35 70 L35 75 L0 75 Z" fill="#FFE4B5" stroke="#001f3f" stroke-width="2"/>
+      <text x="10" y="100" font-size="60" fill="#DAA520" font-family="serif" font-style="italic">ℒ<tspan dy="-20" font-size="40">F</tspan><tspan dy="20" dx="-10" font-size="40">spe</tspan></text>
+    </g>
+
+    <!-- Lrec Decoder -->
+    <g transform="translate(560, 540)">
+      <path d="M0 0 L180 -40 L180 120 L0 80 Z" fill="#E0E8F0" stroke="#001f3f" stroke-width="4" filter="url(#glow-cyan)"/>
+      <text x="90" y="50" font-size="40" font-weight="bold" text-anchor="middle">Decoder</text>
+    </g>
+    <!-- Arrow from E to Decoder -->
+    <g transform="translate(510, 540)">
+      <path d="M0 0 L0 -40 A40 40 0 0 1 40 -40 L40 -20 L60 -20 L60 20 L40 20 L40 40 A40 40 0 0 1 0 40 Z" fill="url(#grad-arrow)" stroke="#001f3f" stroke-width="2"/>
+    </g>
+    <!-- Arrow from Decoder to Projector -->
+    <g transform="translate(720, 570)">
+      <path d="M0 10 L60 10 L60 0 L90 20 L60 40 L60 30 L0 30 Z" fill="#4682B4" stroke="#000" stroke-width="2"/>
+      <path d="M0 15 L60 15 L60 5 L90 25 L60 45 L60 35 L0 35 Z" fill="#4682B4" stroke="#000" stroke-width="2"/>
+      <text x="45" y="70" font-size="50" fill="#5D92B6" font-family="serif" font-style="italic">ℒ<tspan dy="10" font-size="35">rec</tspan></text>
+    </g>
+
+    <!-- fMRI Bottom Center -->
+    <g transform="translate(800, 560)">
+      <use href="#brain-icon" />
+      <use href="#monitor-base" />
+      <polyline points="145,-10 150,10 155,-30 160,30 165,-10 170,10 175,-5 180,5 185,-5 190,5 195,-5 200,0" fill="none" stroke="#2c5aa0" stroke-width="2"/>
+      <text x="70" y="160" font-size="40" font-weight="bold" fill="#888" text-anchor="middle">fMRI</text>
+    </g>
+
+    <!-- === FAR RIGHT SECTION === -->
+    <!-- Lprior -->
+    <g transform="translate(1380, 370)">
+      <path d="M0 0 L280 0 A20 20 0 0 1 300 20 L300 60 L270 60 L270 20 A10 10 0 0 0 270 10 L0 10 Z" fill="url(#grad-arrow-orange)" stroke="#001f3f" stroke-width="2"/>
+    </g>
+    <!-- Curved arrow from Difference to Lprior -->
+    <path d="M560 220 Q600 300 600 400 Q600 500 560 520" fill="none" stroke="#ccc" stroke-width="8"/>
+    <path d="M560 220 Q600 300 600 400 Q600 500 560 520" fill="none" stroke="#999" stroke-width="2"/>
+
+    <g transform="translate(1380, 370)">
+      <rect x="5" y="5" width="320" height="80" rx="10" fill="#FFE4B5" opacity="0.8"/>
+      <rect x="0" y="0" width="320" height="80" rx="10" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <circle cx="50" cy="40" r="20" fill="#FFE4B5" stroke="#001f3f" stroke-width="4"/>
+      <line x1="75" y1="40" x2="115" y2="40" stroke="#F4A460" stroke-width="3"/>
+      <polygon points="115,40 105,30 105,50" fill="#F4A460"/>
+      <circle cx="140" cy="40" r="20" fill="#F4A460" stroke="#001f3f" stroke-width="4"/>
+      <line x1="165" y1="40" x2="205" y2="40" stroke="#F4A460" stroke-width="3"/>
+      <polygon points="205,40 195,30 195,50" fill="#F4A460"/>
+      <circle cx="230" cy="40" r="20" fill="#D2691E" stroke="#001f3f" stroke-width="4"/>
+      <text x="50" y="120" font-size="60" fill="#D2691E" font-family="serif" font-style="italic">L<tspan dy="10" font-size="40">prior</tspan></text>
+    </g>
+
+    <!-- Visual Stimuli -->
+    <g transform="translate(1420, 480)">
+      <!-- Landscape 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="140" height="100" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="130" height="90" rx="2" fill="#2c5aa0"/>
+        <path d="M5 70 Q20 50 40 70 Q60 90 80 60 Q100 30 135 50 V95 H5 Z" fill="#fff"/>
+      </g>
+      <!-- Landscape 2 (Orange) -->
+      <g transform="translate(50, -40)">
+        <rect x="0" y="0" width="140" height="100" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="130" height="90" rx="2" fill="#F4A460"/>
+        <path d="M5 70 Q20 50 40 70 Q60 90 80 60 Q100 30 135 50 V95 H5 Z" fill="#fff"/>
+      </g>
+      <!-- Landscape 3 (Front) -->
+      <g transform="translate(80, 40)">
+        <rect x="0" y="0" width="140" height="100" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="130" height="90" rx="2" fill="#fff" stroke="#000" stroke-width="2"/>
+        <rect x="10" y="10" width="120" height="80" rx="2" fill="#87CEEB"/>
+        <path d="M10 70 L30 40 L50 70 L70 50 L100 70 L110 60 L130 80 V85 H10 V70 Z" fill="#6B8E23"/>
+        <circle cx="40" cy="30" r="10" fill="#FFD700"/>
+      </g>
+      <text x="100" y="160" font-size="40" font-weight="bold" text-anchor="middle">Visual Stimuli</text>
+    </g>
+
+    <!-- Curved arrow from Lprior to Visual Stimuli -->
+    <path d="M1380 330 Q1300 330 1300 400 Q1300 480 1350 480" fill="none" stroke="#ccc" stroke-width="8"/>
+    <path d="M1380 330 Q1300 330 1300 400 Q1300 480 1350 480" fill="none" stroke="#999" stroke-width="2"/>
+
+    <!-- Input Labels -->
+    <g transform="translate(1000, 520)">
+      <text x="0" y="30" font-size="35" font-family="serif">Visual stimuli</text>
+      <circle cx="220" cy="20" r="18" fill="#8FBC8F" stroke="#000" stroke-width="4"/>
+      
+      <text x="100" y="90" font-size="35" font-family="serif">Image labels</text>
+      <circle cx="220" cy="80" r="18" fill="#8FBC8F" stroke="#000" stroke-width="4"/>
+      
+      <text x="120" y="150" font-size="35" font-family="serif">Image captions</text>
+      <circle cx="220" cy="140" r="18" fill="#D2691E" stroke="#000" stroke-width="4"/>
+
+      <!-- Converging Arrows -->
+      <path d="M240 20 L280 40" stroke="#ccc" stroke-width="6"/>
+      <path d="M240 20 L280 40" stroke="#999" stroke-width="2"/>
+      <path d="M240 80 L280 50" stroke="#ccc" stroke-width="6"/>
+      <path d="M240 80 L280 50" stroke="#999" stroke-width="2"/>
+      <path d="M240 140 L280 60" stroke="#ccc" stroke-width="6"/>
+      <path d="M240 140 L280 60" stroke="#999" stroke-width="2"/>
+
+      <circle cx="300" cy="40" r="18" fill="#FFD700" stroke="#000" stroke-width="4"/>
+      <circle cx="300" cy="100" r="18" fill="#D2691E" stroke="#000" stroke-width="4"/>
+      <path d="M300 60 L300 80" stroke="#ccc" stroke-width="6"/>
+      <path d="M300 60 L300 80" stroke="#999" stroke-width="2"/>
+    </g>
+
+  </g> <!-- End Top Panel -->
+
+  <!-- ================= BOTTOM PANEL: INFERENCE ================= -->
+  <g transform="translate(0, 670)">
+    <!-- Main Border -->
+    <rect x="5" y="5" width="1590" height="220" rx="20" fill="none" stroke="#ddd" stroke-width="4"/>
+    
+    <!-- Header -->
+    <rect x="5" y="20" width="310" height="70" rx="10" fill="#E0E0E0"/>
+    <text x="160" y="70" font-size="60" font-weight="bold" font-style="italic" text-anchor="middle">Inference</text>
+
+    <!-- Unseen Subject -->
+    <g transform="translate(60, 100)">
+      <!-- Avatar -->
+      <g transform="translate(0,0) scale(1.5)">
+         <path d="M20 60 Q20 30 50 30 Q80 30 80 60 V70 H20 Z" fill="#87CEEB"/>
+         <circle cx="50" cy="25" r="15" fill="#FFCBA4"/>
+         <path d="M30 15 Q50 0 70 15" fill="#555" stroke="#000" stroke-width="2"/>
+         <path d="M30 15 Q20 30 25 40" fill="none" stroke="#555" stroke-width="5"/>
+         <path d="M70 15 Q80 30 75 40" fill="none" stroke="#555" stroke-width="5"/>
+         <circle cx="45" cy="25" r="2" fill="black"/> <circle cx="55" cy="25" r="2" fill="black"/>
+         <path d="M45 35 Q50 40 55 35" fill="none" stroke="black" stroke-width="1.5"/>
+      </g>
+      <!-- fMRI -->
+      <g transform="translate(140, 0)">
+        <use href="#brain-icon" />
+        <use href="#monitor-base" />
+        <polyline points="145,-10 150,10 155,-30 160,30 165,-10 170,10 175,-5 180,5 185,-5 190,5 195,-5 200,0" fill="none" stroke="#2c5aa0" stroke-width="2"/>
+        <text x="70" y="140" font-size="40" font-weight="bold" fill="#888" text-anchor="middle">fMRI</text>
+      </g>
+      <text x="100" y="180" font-size="40" text-anchor="middle">Test <tspan font-weight="bold">Unseen</tspan> Subject</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <g transform="translate(300, 130)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ddd" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- ViT Frozen -->
+    <g transform="translate(390, 80)">
+      <path d="M0 0 L180 -40 L180 140 L0 100 Z" fill="#E0E8F0" stroke="#001f3f" stroke-width="4" filter="url(#glow-cyan)"/>
+      <use href="#snowflake" x="10" y="10" transform="scale(1.5)"/>
+      <text x="90" y="90" font-size="50" font-weight="bold" text-anchor="middle">ViT</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <g transform="translate(530, 130)">
+      <text x="0" y="-10" font-size="60" font-family="serif" font-style="italic">F<tspan dy="10" font-size="40">i</tspan><tspan dy="-10">(·)</tspan></text>
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ddd" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- Projector Frozen -->
+    <g transform="translate(650, 100)">
+      <text x="125" y="-10" font-size="60" font-family="serif" font-style="italic">P<tspan dy="10" font-size="40">s</tspan><tspan dy="-10">(·)</tspan></text>
+      <rect x="5" y="5" width="270" height="120" rx="15" fill="#FFE4B5" opacity="0.8"/>
+      <rect x="0" y="0" width="270" height="120" rx="15" fill="#FFF8DC" stroke="#001f3f" stroke-width="4"/>
+      <text x="135" y="50" font-size="45" font-weight="bold" text-anchor="middle">Vision</text>
+      <text x="135" y="100" font-size="45" font-weight="bold" text-anchor="middle">Projector</text>
+      <use href="#snowflake" x="200" y="10" transform="scale(1.5)"/>
+    </g>
+
+    <!-- Arrow 3 -->
+    <g transform="translate(870, 130)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ddd" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- Diffusion Prior -->
+    <g transform="translate(970, 110)">
+      <rect x="5" y="5" width="270" height="90" rx="10" fill="#FFE4B5" opacity="0.8"/>
+      <rect x="0" y="0" width="270" height="90" rx="10" fill="#fff" stroke="#001f3f" stroke-width="4"/>
+      <circle cx="45" cy="45" r="20" fill="#FFE4B5" stroke="#001f3f" stroke-width="4"/>
+      <line x1="70" y1="45" x2="100" y2="45" stroke="#F4A460" stroke-width="3"/>
+      <polygon points="100,45 90,35 90,55" fill="#F4A460"/>
+      <circle cx="135" cy="45" r="20" fill="#F4A460" stroke="#001f3f" stroke-width="4"/>
+      <line x1="160" y1="45" x2="200" y2="45" stroke="#F4A460" stroke-width="3"/>
+      <polygon points="200,45 190,35 190,55" fill="#F4A460"/>
+      <circle cx="235" cy="45" r="20" fill="#D2691E" stroke="#001f3f" stroke-width="4"/>
+      <use href="#snowflake" x="220" y="0" transform="scale(1.5)"/>
+      <text x="135" y="130" font-size="45" font-weight="bold" text-anchor="middle">Diffusion Prior</text>
+    </g>
+
+    <!-- Arrow 4 -->
+    <g transform="translate(1170, 130)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ddd" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- SDXL -->
+    <g transform="translate(1250, 80)">
+      <path d="M0 20 L180 0 L180 200 L0 180 Z" fill="#FFE0D0" stroke="#001f3f" stroke-width="4" filter="url(#glow-orange)"/>
+      <use href="#snowflake" x="100" y="10" transform="scale(1.5)"/>
+      <text x="90" y="110" font-size="45" font-weight="bold" text-anchor="middle">SDXL</text>
+    </g>
+
+    <!-- Arrow 5 -->
+    <g transform="translate(1360, 130)">
+      <path d="M0 20 L80 20 L80 10 L120 35 L80 60 L80 50 L0 50 Z" fill="#fff" stroke="#2c5aa0" stroke-width="3"/>
+      <path d="M0 25 L80 25 L80 15 L120 40 L80 65 L80 55 L0 55 Z" fill="#ddd" stroke="#2c5aa0" stroke-width="1"/>
+    </g>
+
+    <!-- Output Images -->
+    <g transform="translate(1450, 100)">
+      <text x="100" y="-20" font-size="40" text-anchor="middle">Reconstructed</text>
+      <text x="100" y="20" font-size="40" text-anchor="middle">Images</text>
+      
+      <!-- Dog Image -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="180" height="120" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="170" height="110" rx="2" fill="#fff" stroke="#8B4513" stroke-width="4"/>
+        <rect x="10" y="10" width="160" height="100" rx="2" fill="#FFE4B5"/>
+        <!-- Dog Face -->
+        <circle cx="90" cy="60" r="40" fill="#F4A460"/>
+        <ellipse cx="90" cy="80" rx="20" ry="25" fill="#FFE4B5"/>
+        <circle cx="75" cy="55" r="5" fill="#000"/>
+        <circle cx="105" cy="55" r="5" fill="#000"/>
+        <ellipse cx="90" cy="70" rx="10" ry="5" fill="#000"/>
+        <path d="M60 40 Q70 30 80 50" fill="#F4A460" stroke="#000"/>
+        <path d="M120 40 Q110 30 100 50" fill="#F4A460" stroke="#000"/>
+      </g>
+      <!-- Background Images -->
+      <g transform="translate(60, 0)">
+        <rect x="0" y="0" width="160" height="100" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="150" height="90" rx="2" fill="#87CEEB"/>
+        <path d="M5 70 Q20 50 40 70 Q60 90 80 60 Q100 30 155 50 V95 H5 Z" fill="#fff"/>
+      </g>
+      <g transform="translate(90, 20)">
+        <rect x="0" y="0" width="160" height="100" rx="5" fill="#fff" stroke="#000" stroke-width="4"/>
+        <rect x="5" y="5" width="150" height="90" rx="2" fill="#008080"/>
+        <path d="M5 70 Q20 50 40 70 Q60 90 80 60 Q100 30 155 50 V95 H5 Z" fill="#fff"/>
+      </g>
+    </g>
+
+  </g> <!-- End Bottom Panel -->
+
+</svg>

@@ -1,0 +1,587 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.0 12.0 1961.0 1036.0" style="background-color: white;">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      .title-font { font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+      .serif-font { font-family: "Times New Roman", Times, serif; }
+      .label-font { font-family: Arial, Helvetica, sans-serif; }
+      .code-font { font-family: monospace; font-weight: bold; }
+    </style>
+
+    <!-- Colors -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ACDF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDE0F5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5Cca0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FAD0A8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5A9BC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5A9BC;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E0B0FF;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#D8BFD8;stop-opacity:0.8" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="brickPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#a0a0a0"/>
+      <path d="M0,5 L10,5 M5,0 L5,10" stroke="#808080" stroke-width="1"/>
+    </pattern>
+
+    <!-- Markers -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4DA6D9" />
+    </marker>
+    <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FF9999" />
+    </marker>
+
+    <!-- Reusable Symbols -->
+    <symbol id="grid4x4" viewBox="0 0 120 120">
+      <g fill="#D6EAF8" stroke="#85C1E9" stroke-width="2">
+        <rect x="0" y="0" width="25" height="25" rx="3"/> <rect x="30" y="0" width="25" height="25" rx="3"/> <rect x="60" y="0" width="25" height="25" rx="3"/> <rect x="90" y="0" width="25" height="25" rx="3"/>
+        <rect x="0" y="30" width="25" height="25" rx="3"/> <rect x="30" y="30" width="25" height="25" rx="3"/> <rect x="60" y="30" width="25" height="25" rx="3"/> <rect x="90" y="30" width="25" height="25" rx="3"/>
+        <rect x="0" y="60" width="25" height="25" rx="3"/> <rect x="30" y="60" width="25" height="25" rx="3"/> <rect x="60" y="60" width="25" height="25" rx="3"/> <rect x="90" y="60" width="25" height="25" rx="3"/>
+        <rect x="0" y="90" width="25" height="25" rx="3"/> <rect x="30" y="90" width="25" height="25" rx="3"/> <rect x="60" y="90" width="25" height="25" rx="3"/> <rect x="90" y="90" width="25" height="25" rx="3"/>
+      </g>
+    </symbol>
+    
+    <symbol id="grid4x4Orange" viewBox="0 0 120 120">
+      <g fill="#FAE5D3" stroke="#F5B041" stroke-width="2">
+        <rect x="0" y="0" width="25" height="25" rx="3"/> <rect x="30" y="0" width="25" height="25" rx="3"/> <rect x="60" y="0" width="25" height="25" rx="3"/> <rect x="90" y="0" width="25" height="25" rx="3"/>
+        <rect x="0" y="30" width="25" height="25" rx="3"/> <rect x="30" y="30" width="25" height="25" rx="3"/> <rect x="60" y="30" width="25" height="25" rx="3"/> <rect x="90" y="30" width="25" height="25" rx="3"/>
+        <rect x="0" y="60" width="25" height="25" rx="3"/> <rect x="30" y="60" width="25" height="25" rx="3"/> <rect x="60" y="60" width="25" height="25" rx="3"/> <rect x="90" y="60" width="25" height="25" rx="3"/>
+        <rect x="0" y="90" width="25" height="25" rx="3"/> <rect x="30" y="90" width="25" height="25" rx="3"/> <rect x="60" y="90" width="25" height="25" rx="3"/> <rect x="90" y="90" width="25" height="25" rx="3"/>
+      </g>
+    </symbol>
+
+    <symbol id="fireIcon" viewBox="0 0 100 100">
+      <path d="M50,0 C50,0 20,30 20,55 C20,75 35,90 50,90 C65,90 80,75 80,55 C80,30 50,0 50,0 Z" fill="#FF5722"/>
+      <path d="M50,20 C50,20 30,45 30,60 C30,70 40,80 50,80 C60,80 70,70 70,60 C70,45 50,20 50,20 Z" fill="#FFAB91"/>
+      <path d="M50,40 C50,40 42,55 42,65 C42,72 46,78 50,78 C54,78 58,72 58,65 C58,55 50,40 50,40 Z" fill="#FFCC80"/>
+    </symbol>
+  </defs>
+
+  <!-- ================= SECTION A: LEFT COLUMN ================= -->
+  
+  <!-- 1. Top Half: Blue Theme -->
+  <rect x="5" y="25" width="815" height="580" rx="20" fill="none" stroke="#4DA6D9" stroke-width="3"/>
+  
+  <!-- Title -->
+  <g transform="translate(180, 30)">
+    <rect x="0" y="0" width="650" height="60" rx="15" fill="#D6EAF8"/>
+    <text x="325" y="45" text-anchor="middle" font-size="45" fill="#2E86C1" class="title-font">In-context Editing Framework based on T2I DiT</text>
+  </g>
+
+  <!-- Source Image -->
+  <g transform="translate(60, 80)">
+    <!-- Photo Placeholder -->
+    <rect x="0" y="0" width="180" height="220" rx="10" fill="#ddd"/>
+    <rect x="0" y="0" width="180" height="220" rx="10" fill="url(#brickPattern)" opacity="0.3"/>
+    <!-- Overlay -->
+    <rect x="20" y="20" width="140" height="220" fill="#888" stroke="black" stroke-width="2"/>
+    <text x="90" y="110" text-anchor="middle" font-size="40" fill="white" class="code-font">&lt;AF&gt;11</text>
+    <text x="90" y="250" text-anchor="middle" font-size="40" fill="#2E86C1" class="title-font">Source Image</text>
+  </g>
+
+  <!-- Inversion Loop -->
+  <path d="M200,150 L280,150 M280,150 L280,250 L600,250 L600,150 L640,150" fill="none" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Transformer 1 -->
+  <g transform="translate(280, 105)">
+    <rect x="0" y="0" width="320" height="140" rx="30" fill="#CFE2F3" stroke="#85C1E9" stroke-width="3"/>
+    <text x="160" y="80" text-anchor="middle" font-size="35" fill="#2E86C1" class="title-font">T2I Diffusion Transformer</text>
+  </g>
+  <text x="410" y="235" text-anchor="middle" font-size="45" fill="#2E86C1" class="serif-font" font-style="italic">Inversion × N</text>
+
+  <!-- Inverted Noise -->
+  <g transform="translate(660, 115)">
+    <use href="#grid4x4" width="120" height="120"/>
+    <text x="60" y="160" text-anchor="middle" font-size="40" fill="#2E86C1" class="title-font">Inverted Noise</text>
+  </g>
+
+  <!-- Feature Injection -->
+  <g transform="translate(300, 250)">
+    <text x="0" y="30" font-size="35" fill="#2E86C1" class="title-font">Feature</text>
+    <text x="0" y="70" font-size="35" fill="#2E86C1" class="title-font">Injection</text>
+    <!-- Big Arrow -->
+    <path d="M110,0 L110,60 L90,60 L125,100 L160,60 L140,60 L140,0 Z" fill="url(#blueGradient)"/>
+    
+    <!-- Grids -->
+    <g transform="translate(130, 10)">
+      <use href="#grid4x4" width="100" height="100"/>
+    </g>
+    <path d="M200,50 L250,50" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    
+    <!-- Combined Grid -->
+    <g transform="translate(200, 10)">
+      <rect x="0" y="0" width="100" height="100" fill="none" stroke="#E74C3C" stroke-width="2" stroke-dasharray="5,5" rx="10"/>
+      <use href="#grid4x4" width="100" height="100"/>
+      <use href="#grid4x4Orange" x="105" y="0" width="100" height="100"/>
+    </g>
+  </g>
+
+  <!-- Denoising Loop -->
+  <path d="M620,420 L620,310 L250,310 L250,390" fill="none" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <path d="M210,400 L280,400" fill="none" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="420" y="340" text-anchor="middle" font-size="45" fill="#2E86C1" class="serif-font" font-style="italic">Denoising × N</text>
+
+  <!-- Transformer 2 -->
+  <g transform="translate(280, 360)">
+    <rect x="0" y="0" width="320" height="160" rx="30" fill="#CFE2F3" stroke="#85C1E9" stroke-width="3"/>
+    <text x="160" y="90" text-anchor="middle" font-size="35" fill="#2E86C1" class="title-font">T2I Diffusion Transformer</text>
+  </g>
+
+  <!-- Bottom Left: Concat & Noise -->
+  <g transform="translate(20, 320)">
+    <use href="#grid4x4" width="100" height="180"/>
+    <text x="50" y="160" text-anchor="middle" font-size="40" fill="#2E86C1" class="title-font">Inverted</text>
+    <text x="50" y="200" text-anchor="middle" font-size="40" fill="#2E86C1" class="title-font">Noise</text>
+    
+    <text x="100" y="100" font-size="50" fill="#4DA6D9" class="title-font">+</text>
+    <text x="100" y="120" font-size="30" fill="#2E86C1" class="title-font">concat</text>
+
+    <use href="#grid4x4Orange" x="120" y="0" width="100" height="180"/>
+    <text x="170" y="160" text-anchor="middle" font-size="40" fill="#F59D56" class="title-font">Random</text>
+    <text x="170" y="200" text-anchor="middle" font-size="40" fill="#F59D56" class="title-font">Noise</text>
+  </g>
+
+  <!-- Prompt Box -->
+  <g transform="translate(15, 490)">
+    <rect x="0" y="0" width="570" height="150" rx="20" fill="none" stroke="#4DA6D9" stroke-width="2" stroke-dasharray="20,20"/>
+    <text x="20" y="40" font-size="35" fill="#2E86C1" class="title-font">“ A diptych with two side-by-side images of the same scene.</text>
+    <text x="50" y="80" font-size="35" fill="#2E86C1" class="title-font">On the right, the scene is the same as on the left  but</text>
+    <text x="110" y="120" font-size="40" fill="#F59D56" class="title-font">{make the man grab a basketball}.”</text>
+    
+    <!-- Arrow up to transformer -->
+    <path d="M245,0 L245,-120" fill="none" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  </g>
+
+  <!-- Output -->
+  <g transform="translate(560, 400)">
+    <path d="M0,0 L100,0" stroke="#4DA6D9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <!-- Crops -->
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="100" height="100" fill="#ddd" stroke="#4DA6D9" stroke-width="2"/>
+      <rect x="10" y="10" width="40" height="80" fill="#888" stroke="black"/>
+      <text x="30" y="60" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;17</text>
+      <text x="50" y="125" text-anchor="middle" font-size="35" fill="#2E86C1" class="title-font">crop</text>
+      
+      <rect x="60" y="0" width="40" height="100" fill="#ddd" stroke="#4DA6D9" stroke-width="2"/>
+      <rect x="65" y="10" width="40" height="80" fill="#888" stroke="black"/>
+      <text x="85" y="60" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;14</text>
+    </g>
+    
+    <!-- Target Image -->
+    <g transform="translate(120, -100)">
+      <rect x="0" y="0" width="300" height="300" rx="10" fill="#ddd"/>
+      <rect x="0" y="0" width="300" height="300" rx="10" fill="url(#brickPattern)" opacity="0.3"/>
+      <rect x="20" y="20" width="260" height="260" fill="#888" stroke="black" stroke-width="2"/>
+      <text x="150" y="150" text-anchor="middle" font-size="45" fill="white" class="code-font">&lt;AF&gt;08</text>
+      <text x="150" y="340" text-anchor="middle" font-size="40" fill="#F59D56" class="title-font">Generated</text>
+      <text x="150" y="380" text-anchor="middle" font-size="40" fill="#F59D56" class="title-font">Target Image</text>
+    </g>
+  </g>
+
+  <!-- 2. Bottom Half: Pink Theme -->
+  <rect x="5" y="610" width="815" height="300" rx="20" fill="none" stroke="#FF7675" stroke-width="3"/>
+  
+  <g transform="translate(140, 610)">
+    <rect x="0" y="0" width="650" height="70" rx="15" fill="#FADBD8"/>
+    <text x="325" y="50" text-anchor="middle" font-size="45" fill="#FF4d4d" class="title-font">In-context Editing Framework based on Inpainting DiT</text>
+  </g>
+
+  <!-- Source Image Pink -->
+  <g transform="translate(10, 650)">
+    <rect x="0" y="0" width="180" height="300" rx="10" fill="#2c3e50"/>
+    <rect x="10" y="10" width="160" height="280" fill="#888" stroke="black"/>
+    <text x="90" y="150" text-anchor="middle" font-size="45" fill="white" class="code-font">&lt;AF&gt;10</text>
+    <text x="90" y="340" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Source Image</text>
+  </g>
+
+  <!-- Arrow Mask/Concat -->
+  <g transform="translate(150, 700)">
+    <path d="M10,0 L10,60 L-10,60 L25,90 L60,60 L40,60 L40,0 Z" fill="#FFB6C1" opacity="0.6"/>
+    <text x="25" y="80" text-anchor="middle" font-size="35" fill="#FF4d4d" class="title-font">mask</text>
+    <text x="25" y="130" text-anchor="middle" font-size="35" fill="#FF4d4d" class="title-font">concat</text>
+    <path d="M10,140 L10,180 L-10,180 L25,210 L60,180 L40,180 L40,140 Z" fill="#FFB6C1" opacity="0.6"/>
+  </g>
+
+  <!-- Image with Mask -->
+  <g transform="translate(200, 700)">
+    <rect x="0" y="0" width="180" height="300" rx="10" fill="#2c3e50"/>
+    <rect x="10" y="10" width="160" height="280" fill="#888" stroke="black"/>
+    <!-- Mask Overlay -->
+    <rect x="30" y="30" width="120" height="240" fill="#FFB6C1" opacity="0.8"/>
+    <text x="90" y="150" text-anchor="middle" font-size="40" fill="white" class="code-font">&lt;AF&gt;13</text>
+    <text x="140" y="260" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Image with Mask</text>
+  </g>
+
+  <!-- Noise -->
+  <g transform="translate(230, 680)">
+    <rect x="0" y="0" width="160" height="240" rx="10" fill="#aaa"/>
+    <rect x="0" y="0" width="160" height="240" rx="10" filter="url(#noiseFilter)"/>
+    <text x="80" y="280" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Noise</text>
+  </g>
+
+  <!-- Inpainting DiT -->
+  <g transform="translate(420, 715)">
+    <path d="M-50,50 L0,50" stroke="#FFB6C1" stroke-width="10" marker-end="url(#arrowPink)"/>
+    <rect x="0" y="0" width="300" height="150" rx="30" fill="#FADBD8" stroke="#FFB6C1" stroke-width="3"/>
+    <text x="150" y="85" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Inpainting DiT</text>
+    <path d="M150,230 L150,160" stroke="#FFB6C1" stroke-width="10" marker-end="url(#arrowPink)"/>
+  </g>
+
+  <!-- Output Crop -->
+  <g transform="translate(600, 680)">
+    <path d="M0,50 L100,50" stroke="#FFB6C1" stroke-width="10" marker-end="url(#arrowPink)"/>
+    <text x="50" y="100" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">crop</text>
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="80" height="100" fill="#ddd" stroke="#FF7675" stroke-width="2"/>
+      <rect x="5" y="5" width="70" height="90" fill="#888" stroke="black"/>
+      <text x="40" y="55" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;12</text>
+      <rect x="90" y="0" width="80" height="100" fill="#ddd" stroke="#FF7675" stroke-width="2"/>
+      <rect x="95" y="5" width="70" height="90" fill="#888" stroke="black"/>
+      <text x="130" y="55" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;09</text>
+    </g>
+  </g>
+
+  <!-- Target Image Pink -->
+  <g transform="translate(680, 650)">
+    <rect x="0" y="0" width="200" height="300" rx="10" fill="#2c3e50"/>
+    <rect x="10" y="10" width="180" height="280" fill="#888" stroke="black"/>
+    <text x="100" y="150" text-anchor="middle" font-size="45" fill="white" class="code-font">&lt;AF&gt;16</text>
+    <text x="100" y="340" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Target</text>
+    <text x="100" y="380" text-anchor="middle" font-size="40" fill="#FF4d4d" class="title-font">Image</text>
+  </g>
+
+  <!-- Prompt Box Pink -->
+  <g transform="translate(380, 860)">
+    <rect x="0" y="0" width="340" height="100" rx="20" fill="none" stroke="#FFB6C1" stroke-width="3" stroke-dasharray="30,10"/>
+    <text x="170" y="40" text-anchor="middle" font-size="35" fill="#FFB6C1" class="title-font">“ A diptych with ... ... but</text>
+    <text x="170" y="85" text-anchor="middle" font-size="40" fill="#FFB6C1" class="title-font">{make her hold a red can}.”</text>
+  </g>
+
+  <!-- ================= SECTION B: RIGHT COLUMN ================= -->
+  
+  <!-- Vertical Divider -->
+  <line x1="850" y1="50" x2="850" y2="880" stroke="#AED6F1" stroke-width="6" stroke-dasharray="20,20"/>
+
+  <!-- 1. Top Right: Generation -->
+  <g transform="translate(870, 20)">
+    <!-- Image 1 -->
+    <g transform="translate(50, 0)">
+      <rect x="0" y="0" width="200" height="200" fill="#888" stroke="black" stroke-width="2"/>
+      <text x="100" y="110" text-anchor="middle" font-size="45" fill="white" class="code-font">&lt;AF&gt;06</text>
+    </g>
+    <!-- Image 2 -->
+    <g transform="translate(220, 0)">
+      <rect x="0" y="0" width="200" height="200" fill="#888" stroke="red" stroke-width="2" stroke-dasharray="10,10"/>
+      <text x="100" y="110" text-anchor="middle" font-size="45" fill="white" class="code-font">&lt;AF&gt;15</text>
+    </g>
+    
+    <text x="340" y="70" text-anchor="middle" font-size="35" fill="black" class="title-font">Edit by</text>
+    <text x="340" y="105" text-anchor="middle" font-size="35" fill="black" class="title-font">In-context</text>
+    <text x="340" y="130" text-anchor="middle" font-size="35" fill="black" class="title-font">Generation</text>
+  </g>
+
+  <!-- Decoder -->
+  <g transform="translate(1020, 220)">
+    <rect x="0" y="0" width="240" height="60" rx="10" fill="#BDE0F5"/>
+    <text x="120" y="40" text-anchor="middle" font-size="35" fill="black" class="title-font">Decoder</text>
+    <path d="M120,0 L120,-40" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  </g>
+
+  <!-- LoRA-MoE Module -->
+  <g transform="translate(1250, 60)">
+    <rect x="0" y="0" width="340" height="580" rx="30" fill="#E3F2FD"/>
+    <text x="330" y="40" text-anchor="end" font-size="35" fill="black" class="title-font">LoRA-MoE Module</text>
+    
+    <!-- Base Layer -->
+    <g transform="translate(20, 170)">
+      <rect x="0" y="0" width="280" height="60" rx="10" fill="#E8DAEF"/>
+      <text x="140" y="40" text-anchor="middle" font-size="35" fill="#4A235A" class="title-font">Base Layer</text>
+      <rect x="220" y="10" width="40" height="40" fill="#888" stroke="black"/>
+      <text x="240" y="35" text-anchor="middle" font-size="10" fill="white" class="code-font">&lt;AF&gt;01</text>
+    </g>
+
+    <!-- Experts -->
+    <g transform="translate(40, 240)">
+      <!-- Expert 1 -->
+      <g transform="translate(0,0)">
+        <path d="M10,0 L130,0 L110,70 L30,70 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <path d="M30,80 L110,80 L130,150 L10,150 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <use href="#fireIcon" x="100" y="90" width="60" height="60"/>
+        <text x="70" y="180" text-anchor="middle" font-size="30" fill="black" class="title-font">Expert 1</text>
+      </g>
+      <!-- Expert 2 -->
+      <g transform="translate(150,0)">
+        <path d="M10,0 L130,0 L110,70 L30,70 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <path d="M30,80 L110,80 L130,150 L10,150 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <use href="#fireIcon" x="100" y="90" width="60" height="60"/>
+        <text x="70" y="180" text-anchor="middle" font-size="30" fill="black" class="title-font">Expert 2</text>
+      </g>
+      <!-- Expert 3 -->
+      <g transform="translate(300,0)">
+        <path d="M10,0 L130,0 L110,70 L30,70 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <path d="M30,80 L110,80 L130,150 L10,150 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <use href="#fireIcon" x="100" y="90" width="60" height="60"/>
+        <text x="70" y="180" text-anchor="middle" font-size="30" fill="black" class="title-font">Expert 3</text>
+      </g>
+      <text x="450" y="70" font-size="40" fill="black" class="title-font">...</text>
+      <!-- Expert N -->
+      <g transform="translate(480,0)">
+        <path d="M10,0 L130,0 L110,70 L30,70 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <path d="M30,80 L110,80 L130,150 L10,150 Z" fill="#BDE0F5" stroke="#4DA6D9" stroke-width="3"/>
+        <use href="#fireIcon" x="100" y="90" width="60" height="60"/>
+        <text x="70" y="180" text-anchor="middle" font-size="30" fill="black" class="title-font">Expert N</text>
+      </g>
+    </g>
+
+    <!-- Dashed Ring -->
+    <path d="M160,170 A250,250 0 0,1 540,170" fill="none" stroke="black" stroke-width="3" stroke-dasharray="20,20"/>
+    <path d="M540,170 A250,250 0 0,1 160,590" fill="none" stroke="black" stroke-width="3" stroke-dasharray="20,20"/>
+    <path d="M160,590 A250,250 0 0,1 540,590" fill="none" stroke="black" stroke-width="3" stroke-dasharray="20,20"/>
+    <path d="M540,590 A250,250 0 0,1 160,170" fill="none" stroke="black" stroke-width="3" stroke-dasharray="20,20"/>
+    
+    <!-- Arrows on ring -->
+    <path d="M250,140 L250,150" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M400,240 L400,230" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M500,350 L520,370" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M450,500 L430,520" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M250,560 L250,550" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M100,450 L80,430" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M100,300 L80,280" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <path d="M200,140 L220,160" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+
+    <!-- Summation -->
+    <g transform="translate(250, 130)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="black" stroke-width="4"/>
+      <line x1="-20" y1="0" x2="20" y2="0" stroke="black" stroke-width="4"/>
+      <line x1="0" y1="-20" x2="0" y2="20" stroke="black" stroke-width="4"/>
+    </g>
+
+    <!-- Top Token Row -->
+    <g transform="translate(180, 80)">
+      <use href="#grid4x4" width="140" height="40"/>
+      <use href="#grid4x4Orange" x="145" y="0" width="140" height="40"/>
+    </g>
+    <path d="M250,110 L250,100" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+
+    <!-- Bottom Token Row -->
+    <g transform="translate(180, 530)">
+      <use href="#grid4x4" width="140" height="40"/>
+      <use href="#grid4x4Orange" x="145" y="0" width="140" height="40"/>
+    </g>
+
+    <!-- Route Chart -->
+    <g transform="translate(180, 380)">
+      <text x="10" y="80" font-size="35" fill="black" class="title-font">TopK=1</text>
+      <rect x="150" y="100" width="200" height="80" rx="10" fill="#BDE0F5"/>
+      <text x="250" y="145" text-anchor="middle" font-size="35" fill="black" class="title-font">Route</text>
+      <use href="#fireIcon" x="280" y="110" width="60" height="60"/>
+      
+      <!-- Bars -->
+      <g transform="translate(130, 0)">
+        <rect x="0" y="100" width="30" height="60" fill="#E6B0AA" stroke="#C0392B"/>
+        <text x="15" y="115" text-anchor="middle" font-size="30" fill="#C0392B" class="title-font">×</text>
+        
+        <rect x="40" y="60" width="30" height="100" fill="#D7BDE2" stroke="#8E44AD"/>
+        <text x="55" y="75" text-anchor="middle" font-size="30" fill="#C0392B" class="title-font">×</text>
+        
+        <rect x="80" y="20" width="30" height="140" fill="#D7BDE2" stroke="#8E44AD"/>
+        <path d="M95,30 L105,40 L115,20" fill="none" stroke="#27AE60" stroke-width="5"/>
+        
+        <rect x="120" y="80" width="30" height="80" fill="#E6B0AA" stroke="#C0392B"/>
+        <text x="135" y="95" text-anchor="middle" font-size="30" fill="#C0392B" class="title-font">×</text>
+      </g>
+      <path d="M250,180 L250,160" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+      <path d="M250,100 L250,80" stroke="black" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    </g>
+  </g>
+
+  <!-- 2. Middle Right: Architecture -->
+  <g transform="translate(870, 270)">
+    <!-- Stack Effect -->
+    <rect x="40" y="0" width="400" height="400" rx="20" fill="#E8DAEF" opacity="0.5"/>
+    <rect x="20" y="20" width="400" height="400" rx="20" fill="#E8DAEF" opacity="0.7"/>
+    <rect x="0" y="40" width="400" height="400" rx="20" fill="#E8DAEF" opacity="0.9"/>
+    
+    <text x="350" y="100" font-size="35" fill="black" class="title-font">N×</text>
+
+    <!-- Internal Blocks -->
+    <g transform="translate(20, 60)">
+      <!-- Top Token Row -->
+      <use href="#grid4x4" width="140" height="40"/>
+      <use href="#grid4x4Orange" x="145" y="0" width="140" height="40"/>
+      <path d="M190,-10 L190,-40" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)"/>
+      
+      <!-- Summation -->
+      <g transform="translate(190, 50)">
+        <circle cx="0" cy="0" r="18" fill="none" stroke="black" stroke-width="4"/>
+        <line x1="-18" y1="0" x2="18" y2="0" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="-18" x2="0" y2="18" stroke="black" stroke-width="4"/>
+      </g>
+      
+      <!-- Out Projection -->
+      <g transform="translate(80, 130)">
+        <rect x="0" y="0" width="300" height="70" rx="10" fill="#F5A9BC" stroke="#FF0000" stroke-width="3"/>
+        <text x="150" y="45" text-anchor="middle" font-size="35" fill="black" class="title-font">Out Projection</text>
+      </g>
+      
+      <!-- MLP & MM Attention -->
+      <g transform="translate(20, 220)">
+        <rect x="0" y="0" width="340" height="100" fill="#E8DAEF" stroke="black" stroke-width="3"/>
+        <rect x="10" y="10" width="100" height="80" rx="10" fill="#F5A9BC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="10,10"/>
+        <text x="60" y="55" text-anchor="middle" font-size="35" fill="black" class="title-font">MLP</text>
+        
+        <rect x="150" y="10" width="180" height="80" rx="10" fill="#F5A9BC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="10,10"/>
+        <text x="240" y="55" text-anchor="middle" font-size="35" fill="black" class="title-font">MM Attention</text>
+      </g>
+      
+      <!-- Norm & Mod -->
+      <g transform="translate(80, 340)">
+        <rect x="0" y="0" width="300" height="60" rx="10" fill="#F5A9BC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="10,10"/>
+        <text x="150" y="40" text-anchor="middle" font-size="35" fill="black" class="title-font">Norm &amp; Mod</text>
+      </g>
+      
+      <!-- Connections -->
+      <path d="M190,68 L190,130" stroke="black" stroke-width="3"/>
+      <path d="M190,200 L190,220" stroke="black" stroke-width="3"/>
+      <path d="M190,320 L190,400" stroke="black" stroke-width="3"/>
+      
+      <!-- Skip Connections -->
+      <path d="M190,400 L20,400 L20,100 L170,100" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)"/>
+      <path d="M190,300 L60,300 L60,180 L170,180" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    </g>
+
+    <!-- Bottom Token Row -->
+    <g transform="translate(20, 420)">
+      <rect x="0" y="0" width="400" height="80" rx="10" fill="none" stroke="black" stroke-width="2"/>
+      <use href="#grid4x4" width="140" height="60" y="10"/>
+      <text x="190" y="50" font-size="50" fill="black" class="title-font">+</text>
+      <text x="190" y="70" font-size="25" fill="black" class="title-font">concat</text>
+      <use href="#grid4x4Orange" x="220" y="10" width="140" height="60"/>
+    </g>
+    
+    <!-- Gradient Arrow -->
+    <path d="M420,200 L500,200 L500,180 L540,210 L500,240 L500,220 L420,220 Z" fill="url(#purpleGradient)"/>
+  </g>
+
+  <!-- 3. Bottom Right: Inputs -->
+  <g transform="translate(870, 680)">
+    <!-- Text Encoder -->
+    <g transform="translate(50, 0)">
+      <rect x="0" y="0" width="250" height="80" rx="15" fill="#BDE0F5"/>
+      <text x="125" y="50" text-anchor="middle" font-size="35" fill="black" class="title-font">Text Encoder</text>
+      <path d="M125,120 L125,85" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    </g>
+    
+    <!-- Image Encoder -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="350" height="80" rx="15" fill="#BDE0F5"/>
+      <text x="175" y="50" text-anchor="middle" font-size="35" fill="black" class="title-font">Image Encoder</text>
+      <path d="M175,120 L175,85" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    </g>
+    
+    <!-- Prompt -->
+    <g transform="translate(50, 130)">
+      <rect x="0" y="0" width="250" height="200" rx="20" fill="none" stroke="black" stroke-width="2"/>
+      <text x="125" y="40" text-anchor="middle" font-size="30" fill="black" class="title-font">“ A diptych with ...</text>
+      <text x="125" y="80" text-anchor="middle" font-size="30" fill="black" class="title-font">but {what if it</text>
+      <text x="125" y="120" text-anchor="middle" font-size="30" fill="black" class="title-font">looks like water</text>
+      <text x="125" y="160" text-anchor="middle" font-size="30" fill="black" class="title-font">color painting?”</text>
+    </g>
+    
+    <!-- Images -->
+    <g transform="translate(250, 130)">
+      <!-- Image 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="150" height="200" fill="#888" stroke="black"/>
+        <text x="75" y="110" text-anchor="middle" font-size="40" fill="white" class="code-font">&lt;AF&gt;07</text>
+      </g>
+      <!-- Image 2 (Mask) -->
+      <g transform="translate(160, 0)">
+        <rect x="0" y="0" width="150" height="200" fill="black" stroke="black"/>
+        <rect x="100" y="0" width="100" height="200" fill="white"/>
+        <text x="150" y="110" text-anchor="end" font-size="40" fill="black" class="title-font">Mask</text>
+      </g>
+      <!-- Image 3 (Noise) -->
+      <g transform="translate(320, 0)">
+        <rect x="0" y="0" width="150" height="200" fill="#aaa" filter="url(#noiseFilter)" stroke="black"/>
+        <text x="150" y="110" text-anchor="end" font-size="40" fill="black" class="title-font">Noise</text>
+      </g>
+      
+      <text x="125" y="110" text-anchor="middle" font-size="40" fill="black" class="title-font">Image</text>
+    </g>
+  </g>
+
+  <!-- 4. Legend -->
+  <g transform="translate(1280, 640)">
+    <rect x="0" y="0" width="310" height="280" rx="20" fill="white" stroke="#4DA6D9" stroke-width="3"/>
+    
+    <!-- Item 1 -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="60" height="60" fill="#888" stroke="black"/>
+      <text x="30" y="35" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;05</text>
+      <text x="80" y="40" font-size="35" fill="black" class="title-font">: Trainabe Parameter</text>
+    </g>
+    
+    <!-- Item 2 -->
+    <g transform="translate(20, 110)">
+      <rect x="0" y="0" width="60" height="60" fill="#888" stroke="black"/>
+      <text x="30" y="35" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;02</text>
+      <text x="80" y="40" font-size="35" fill="black" class="title-font">: Frozen Parameter</text>
+    </g>
+    
+    <!-- Item 3 -->
+    <g transform="translate(20, 200)">
+      <rect x="0" y="0" width="100" height="50" rx="10" fill="#F5A9BC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="10,10"/>
+      <text x="80" y="40" font-size="35" fill="black" class="title-font">: Standard LoRA Tuning</text>
+    </g>
+    
+    <!-- Item 4 -->
+    <g transform="translate(20, 260)">
+      <rect x="0" y="0" width="100" height="60" fill="#888" stroke="black"/>
+      <text x="50" y="35" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;04</text>
+      <text x="110" y="40" font-size="35" fill="black" class="title-font">: LoRA-MoE Tuning</text>
+    </g>
+    
+    <!-- Item 5 -->
+    <g transform="translate(20, 340)">
+      <rect x="0" y="0" width="60" height="60" fill="#888" stroke="black"/>
+      <text x="30" y="35" text-anchor="middle" font-size="12" fill="white" class="code-font">&lt;AF&gt;03</text>
+      <text x="80" y="40" font-size="35" fill="black" class="title-font">: LoRA Adapter</text>
+    </g>
+  </g>
+
+  <!-- ================= FOOTER ================= -->
+  <text x="400" y="980" text-anchor="middle" font-size="60" fill="black" class="title-font">(a) Training-free Structure of ICEdit</text>
+  <text x="1250" y="980" text-anchor="middle" font-size="60" fill="black" class="title-font">(b) Finetuning Strategy for ICEdit</text>
+
+</svg>
