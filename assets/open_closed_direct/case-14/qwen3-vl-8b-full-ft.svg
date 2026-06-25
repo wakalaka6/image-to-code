@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.0 7.0 1631.0 576.0" style="font-family: 'Times New Roman', serif;">
+  <defs>
+    <!-- Arrowheads -->
+    <marker id="arrow-grey" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#666666">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#A9D18E">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-grey-dotted" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#CCCCCC">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-blue-dashed" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#8EAADB">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+    <marker id="arrow-grey-wide" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" fill="#AAAAAA">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" />
+    </marker>
+
+    <!-- Icons -->
+    <g id="icon-fire">
+      <path d="M15,40 Q5,30 10,20 Q15,10 20,25 Q25,5 35,15 Q45,25 35,40 Q30,45 20,45 Q10,45 15,40 Z" fill="#FF4500" />
+      <path d="M18,40 Q12,35 15,28 Q20,20 25,30 Q30,15 38,22 Q42,30 35,40 Q30,43 25,40" fill="#FF8C00" />
+      <path d="M22,40 Q20,38 22,35 Q25,30 28,35 Q30,38 28,40" fill="#FFD700" />
+    </g>
+
+    <g id="icon-snow">
+      <g stroke="#87CEFA" stroke-width="3" fill="none">
+        <path d="M25,5 L25,45 M5,25 L45,25 M10,10 L40,40 M40,10 L10,40" />
+        <path d="M25,5 L18,12 M25,5 L32,12 M25,45 L18,38 M25,45 L32,38" />
+        <path d="M5,25 L12,18 M5,25 L12,32 M45,25 L38,18 M45,25 L38,32" />
+        <path d="M10,10 L17,10 M10,10 L13,17 M40,40 L33,40 M40,40 L37,33" />
+        <path d="M40,10 L33,10 M40,10 L37,17 M10,40 L17,40 M10,40 L13,33" />
+      </g>
+    </g>
+
+    <!-- Mini Graph Template -->
+    <g id="mini-graph">
+      <line x1="10" y1="20" x2="30" y2="10" stroke="black" stroke-width="1.5"/>
+      <line x1="30" y1="10" x2="50" y2="20" stroke="black" stroke-width="1.5"/>
+      <line x1="10" y1="20" x2="10" y2="40" stroke="black" stroke-width="1.5"/>
+      <line x1="10" y1="40" x2="30" y2="50" stroke="black" stroke-width="1.5"/>
+      <line x1="30" y1="10" x2="30" y2="30" stroke="black" stroke-width="1.5"/>
+      <line x1="30" y1="30" x2="50" y2="20" stroke="black" stroke-width="1.5"/>
+      <circle cx="10" cy="20" r="4" fill="#FF7F50" stroke="black"/>
+      <circle cx="30" cy="10" r="4" fill="#FFD700" stroke="black"/>
+      <circle cx="50" cy="20" r="4" fill="#FF7F50" stroke="black"/>
+      <circle cx="10" cy="40" r="4" fill="#FF7F50" stroke="black"/>
+      <circle cx="30" cy="30" r="4" fill="#FFD700" stroke="black"/>
+      <circle cx="30" cy="50" r="4" fill="#FF7F50" stroke="black"/>
+    </g>
+
+    <!-- Mini Gear Template -->
+    <g id="mini-gear">
+      <path d="M25,5 L28,5 L29,10 Q32,11 34,13 L38,11 L40,13 L38,17 Q40,20 40,23 L45,25 L45,28 L40,30 Q40,33 38,36 L40,40 L38,42 L34,40 Q32,42 29,43 L28,48 L25,48 L24,43 Q21,42 19,40 L15,42 L13,40 L15,36 Q13,33 13,30 L8,28 L8,25 L13,23 Q13,20 15,17 L13,13 L15,11 L19,13 Q21,11 24,10 L25,5 Z" fill="none" stroke="#C71585" stroke-width="1.5"/>
+      <circle cx="26.5" cy="26.5" r="8" fill="none" stroke="#C71585" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- ================= LEFT PANEL: DyFlow Framework ================= -->
+  <rect x="5" y="15" width="1070" height="520" rx="15" fill="#F0F7EC" stroke="#666666" stroke-width="3"/>
+  
+  <!-- Title -->
+  <rect x="350" y="15" width="400" height="60" fill="#FFF2CC" stroke="black" stroke-width="2"/>
+  <text x="550" y="58" font-size="44" font-weight="bold" text-anchor="middle" fill="black">DyFlow Framework</text>
+
+  <!-- Task p -->
+  <g transform="translate(100, 70)">
+    <polygon points="20,0 200,0 160,100 -20,100" fill="#BDE0FE" stroke="black" stroke-width="4"/>
+    <text x="90" y="60" font-size="52" text-anchor="middle" fill="black">Task <tspan font-style="italic">p</tspan></text>
+  </g>
+
+  <!-- Arrow Task -> Designer -->
+  <line x1="260" y1="110" x2="530" y2="110" stroke="#666666" stroke-width="6" marker-end="url(#arrow-grey)"/>
+
+  <!-- Designer -->
+  <g transform="translate(540, 80)">
+    <rect x="0" y="0" width="350" height="70" rx="10" fill="#F8CEB6" stroke="black" stroke-width="4"/>
+    <use href="#icon-fire" x="10" y="10" transform="scale(1.5)"/>
+    <text x="175" y="50" font-size="56" text-anchor="middle" fill="black">Designer</text>
+    <use href="#icon-snow" x="260" y="10" transform="scale(1.5)"/>
+  </g>
+
+  <!-- Arrow Designer -> Subgraph -->
+  <line x1="710" y1="150" x2="710" y2="180" stroke="#666666" stroke-width="6" marker-end="url(#arrow-grey)"/>
+
+  <!-- Replan Arrow -->
+  <path d="M120,200 Q120,150 580,150 Q580,150 580,140" fill="none" stroke="#A9D18E" stroke-width="6" marker-end="url(#arrow-green)"/>
+  <text x="300" y="150" font-size="40" font-weight="bold" fill="black">Replan</text>
+
+  <!-- Subgraph Gt -->
+  <g transform="translate(310, 170)">
+    <rect x="0" y="0" width="720" height="360" rx="20" fill="#E2EFDA" stroke="black" stroke-width="4"/>
+    <text x="360" y="50" font-size="52" text-anchor="middle" fill="black">Subgraph <tspan font-style="italic">G<tspan dy="10" font-size="36">t</tspan></tspan></text>
+    <line x1="0" y1="70" x2="720" y2="70" stroke="black" stroke-width="4"/>
+
+    <!-- Op Sequence -->
+    <g transform="translate(40, 80)">
+      <rect x="0" y="0" width="640" height="150" rx="5" fill="#FDF3E6" stroke="black" stroke-width="4"/>
+      <rect x="220" y="-15" width="250" height="50" fill="#FDF3E6" stroke="black" stroke-width="4"/>
+      <text x="345" y="18" font-size="40" font-weight="bold" text-anchor="middle">Op Sequence</text>
+      
+      <!-- Graph Viz -->
+      <g transform="translate(20, 30)">
+        <!-- Nodes -->
+        <circle cx="50" cy="80" r="25" fill="#DDEBF7" stroke="#2F5597" stroke-width="3"/> <!-- Blue Circle -->
+        <rect x="150" y="60" width="100" height="40" rx="10" fill="#E2EFDA" stroke="#70AD47" stroke-width="3"/> <!-- Green Cylinder -->
+        <circle cx="280" cy="80" r="25" fill="#DDEBF7" stroke="#2F5597" stroke-width="3"/> <!-- Blue Circle -->
+        <circle cx="380" cy="40" r="25" fill="#DDEBF7" stroke="#2F5597" stroke-width="3"/> <!-- Blue Circle -->
+        <circle cx="450" cy="100" r="25" fill="#DDEBF7" stroke="#2F5597" stroke-width="3"/> <!-- Blue Circle -->
+        <rect x="520" y="40" width="50" height="50" rx="10" fill="#D9D2E9" stroke="#5B5484" stroke-width="3"/> <!-- Purple Rect -->
+        
+        <!-- Edges -->
+        <path d="M50,55 L50,0 L200,0 L200,55" fill="none" stroke="black" stroke-width="4" marker-end="url(#arrow-grey)"/>
+        <line x1="75" y1="80" x2="145" y2="80" stroke="black" stroke-width="4" marker-end="url(#arrow-grey)"/>
+        <line x1="250" y1="80" x2="270" y2="80" stroke="black" stroke-width="4" marker-end="url(#arrow-grey)"/>
+        <path d="M305,80 L305,0 L380,0 Q420,0 420,35" fill="none" stroke="black" stroke-width="4" marker-end="url(#arrow-grey)"/>
+        <path d="M380,105 Q420,105 420,120 L420,140 L545,140 L545,105" fill="none" stroke="black" stroke-width="4" marker-end="url(#arrow-grey)"/>
+        
+        <!-- Triangle -->
+        <polygon points="400,10 430,45 370,45" fill="#F4B084" stroke="#C00000" stroke-width="2" transform="translate(0, -10)"/>
+      </g>
+      
+      <!-- Ellipsis -->
+      <g transform="translate(620, 20)">
+        <rect x="0" y="0" width="20" height="110" fill="#FDF3E6" stroke="black" stroke-width="2"/>
+        <rect x="5" y="10" width="4" height="4" fill="black"/>
+        <rect x="5" y="20" width="4" height="4" fill="black"/>
+        <rect x="5" y="30" width="4" height="4" fill="black"/>
+        <rect x="5" y="40" width="4" height="4" fill="black"/>
+        <rect x="5" y="50" width="4" height="4" fill="black"/>
+        <rect x="5" y="60" width="4" height="4" fill="black"/>
+        <rect x="5" y="70" width="4" height="4" fill="black"/>
+        <rect x="5" y="80" width="4" height="4" fill="black"/>
+        <rect x="5" y="90" width="4" height="4" fill="black"/>
+      </g>
+    </g>
+
+    <!-- Op Template -->
+    <g transform="translate(40, 240)">
+      <rect x="0" y="0" width="350" height="150" rx="5" fill="#E2EFDA" stroke="black" stroke-width="4"/>
+      <rect x="50" y="-15" width="250" height="50" fill="#E2EFDA" stroke="black" stroke-width="4"/>
+      <text x="175" y="18" font-size="40" font-weight="bold" text-anchor="middle">Op Template</text>
+      
+      <!-- Inner Box -->
+      <rect x="10" y="40" width="330" height="100" rx="10" fill="#DEEBF7" stroke="black" stroke-width="3"/>
+      <!-- Shapes -->
+      <circle cx="60" cy="90" r="25" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="110" y="65" width="100" height="50" rx="10" fill="white" stroke="black" stroke-width="4"/>
+      <polygon points="240,60 270,105 210,105" fill="white" stroke="black" stroke-width="4"/>
+      <rect x="290" y="65" width="50" height="50" rx="10" fill="white" stroke="black" stroke-width="4"/>
+      <text x="175" y="130" font-size="40" font-weight="bold" text-anchor="middle">......</text>
+    </g>
+
+    <!-- Op Instance -->
+    <g transform="translate(410, 240)">
+      <rect x="0" y="0" width="300" height="150" rx="5" fill="#E2EFDA" stroke="black" stroke-width="4"/>
+      <rect x="40" y="-15" width="220" height="50" fill="#E2EFDA" stroke="black" stroke-width="4"/>
+      <text x="150" y="18" font-size="40" font-weight="bold" text-anchor="middle">Op Instance</text>
+      
+      <!-- Inner Box -->
+      <rect x="10" y="40" width="280" height="100" rx="10" fill="#E0F2E9" stroke="black" stroke-width="3"/>
+      <!-- Shapes -->
+      <circle cx="60" cy="90" r="25" fill="#DDEBF7" stroke="#2F5597" stroke-width="3"/>
+      <rect x="100" y="65" width="100" height="50" rx="10" fill="#E2EFDA" stroke="#70AD47" stroke-width="3"/>
+      <polygon points="230,60 260,105 190,105" fill="#F4B084" stroke="#C00000" stroke-width="2"/>
+      <rect x="280" y="65" width="50" height="50" rx="10" fill="#D9D2E9" stroke="#5B5484" stroke-width="3"/>
+      <text x="150" y="130" font-size="40" font-weight="bold" text-anchor="middle">......</text>
+    </g>
+
+    <!-- Connector Phi/Psi -->
+    <line x1="390" y1="315" x2="430" y2="315" stroke="#CCCCCC" stroke-width="6" stroke-dasharray="15,10" marker-end="url(#arrow-grey-dotted)"/>
+    <text x="410" y="300" font-size="50" font-style="italic" text-anchor="middle">ϕ</text>
+    <text x="410" y="350" font-size="50" font-style="italic" text-anchor="middle">ψ</text>
+
+  </g>
+
+  <!-- Left Sidebar -->
+  <!-- Iterate Loop -->
+  <g transform="translate(180, 320)">
+    <path d="M120,0 A70,70 0 1,1 120,80" fill="none" stroke="#A9D18E" stroke-width="12" stroke-opacity="0.6"/>
+    <path d="M120,0 L140,-20 L100,-20 Z" fill="#A9D18E" stroke="none" transform="translate(0, 10)"/>
+    <text x="60" y="50" font-size="40" font-weight="bold" text-anchor="middle">Iterate</text>
+  </g>
+
+  <!-- Summary Box -->
+  <g transform="translate(80, 190)">
+    <rect x="0" y="0" width="80" height="160" rx="10" fill="#FDF1BE" stroke="black" stroke-width="4"/>
+    <text x="40" y="80" font-size="48" font-weight="bold" text-anchor="middle" transform="rotate(-90, 40, 80)">Summary</text>
+  </g>
+  <text x="60" y="450" font-size="48" font-weight="bold" text-anchor="middle" transform="rotate(-90, 60, 450)">Summarize <tspan font-style="italic">f</tspan></text>
+
+  <!-- State Box -->
+  <g transform="translate(80, 400)">
+    <rect x="0" y="0" width="80" height="130" rx="10" fill="#F0E78E" stroke="black" stroke-width="4"/>
+    <text x="40" y="65" font-size="48" font-weight="bold" text-anchor="middle" transform="rotate(-90, 40, 65)">State <tspan font-style="italic">s<tspan dy="10" font-size="32">t</tspan></tspan></text>
+  </g>
+  <text x="230" y="500" font-size="40" font-weight="bold" text-anchor="middle">Save</text>
+
+  <!-- Arrows Left Panel -->
+  <line x1="120" y1="400" x2="120" y2="320" stroke="#666666" stroke-width="4" marker-end="url(#arrow-grey)"/>
+  <line x1="310" y1="470" x2="150" y2="470" stroke="#666666" stroke-width="4" marker-end="url(#arrow-grey)"/>
+
+  <!-- ================= RIGHT PANEL: Training Loop ================= -->
+  <rect x="1095" y="15" width="500" height="520" rx="15" fill="#FDF8F5" stroke="#666666" stroke-width="3"/>
+
+  <!-- Top Section -->
+  <!-- Expert -->
+  <g transform="translate(1120, 40)">
+    <rect x="0" y="0" width="90" height="180" rx="10" fill="#BDE0FE" stroke="black" stroke-width="4"/>
+    <text x="45" y="90" font-size="52" font-weight="bold" text-anchor="middle" transform="rotate(-90, 45, 90)">Expert</text>
+    <use href="#icon-snow" x="15" y="120" transform="scale(1.5)"/>
+  </g>
+
+  <!-- Tasks -->
+  <g transform="translate(1380, 40)">
+    <path d="M20,0 L220,0 A20,35 0 0,1 220,70 L20,70 A20,35 0 0,1 20,0" fill="#FDE5B6" stroke="black" stroke-width="4"/>
+    <rect x="0" y="0" width="20" height="70" rx="10" fill="#FDE5B6" stroke="black" stroke-width="4"/>
+    <text x="110" y="50" font-size="48" text-anchor="middle">Tasks <tspan font-family="cursive" font-weight="bold">P</tspan></text>
+  </g>
+
+  <!-- Sample Arrow -->
+  <line x1="1380" y1="80" x2="1180" y2="80" stroke="#AAAAAA" stroke-width="6" marker-end="url(#arrow-grey-wide)"/>
+  <text x="1280" y="65" font-size="40" font-weight="bold" text-anchor="middle">Sample</text>
+
+  <!-- Expert Trajectories -->
+  <text x="1420" y="130" font-size="36" font-weight="bold" text-anchor="middle">Expert Trajectories</text>
+  <g transform="translate(1240, 140)">
+    <rect x="0" y="0" width="340" height="90" rx="5" fill="#FCD5B4" stroke="black" stroke-width="4"/>
+    <g transform="translate(10, 5) scale(0.8)">
+      <use href="#mini-graph" x="0" y="0"/>
+      <use href="#mini-gear" x="80" y="0"/>
+    </g>
+    <g transform="translate(180, 5) scale(0.8)">
+      <use href="#mini-graph" x="0" y="0"/>
+      <use href="#mini-gear" x="80" y="0"/>
+    </g>
+    <line x1="280" y1="45" x2="320" y2="45" stroke="black" stroke-width="4" stroke-dasharray="10,5"/>
+    <!-- Braces -->
+    <path d="M10,95 Q10,105 50,105 Q90,105 90,95" fill="none" stroke="black" stroke-width="2"/>
+    <text x="50" y="120" font-size="24" font-style="italic" text-anchor="middle">t − 1</text>
+    <path d="M180,95 Q180,105 220,105 Q260,105 260,95" fill="none" stroke="black" stroke-width="2"/>
+    <text x="220" y="120" font-size="24" font-style="italic" text-anchor="middle">t</text>
+  </g>
+
+  <!-- Arrow Expert -> Traj -->
+  <line x1="1180" y1="180" x2="1240" y2="180" stroke="#AAAAAA" stroke-width="6" stroke-dasharray="10,5" marker-end="url(#arrow-grey-wide)"/>
+
+  <!-- Distillation -->
+  <text x="1270" y="250" font-size="44" font-weight="bold" text-anchor="middle">Distillation</text>
+  <text x="1480" y="250" font-size="60" font-family="serif" font-style="italic">L<tspan dy="10" font-size="36" font-style="normal">SFT</tspan></text>
+  <line x1="1420" y1="200" x2="1420" y2="270" stroke="#AAAAAA" stroke-width="4" stroke-dasharray="5,5" marker-end="url(#arrow-grey-wide)"/>
+
+  <!-- DyPlanner -->
+  <g transform="translate(1120, 270)">
+    <rect x="0" y="0" width="440" height="70" rx="10" fill="#FCD5B4" stroke="black" stroke-width="4"/>
+    <use href="#icon-fire" x="10" y="10" transform="scale(1.5)"/>
+    <text x="220" y="50" font-size="56" text-anchor="middle" fill="black">DyPlanner</text>
+  </g>
+
+  <!-- Self-play Loop -->
+  <g transform="translate(1250, 360)">
+    <path d="M120,0 A90,90 0 1,1 120,100" fill="none" stroke="#A9D18E" stroke-width="12" stroke-opacity="0.8"/>
+    <path d="M120,0 L150,-20 L90,-20 Z" fill="#A9D18E" stroke="none" transform="translate(0, 10)"/>
+    <text x="120" y="40" font-size="28" font-weight="bold" text-anchor="middle">Self-play Preference</text>
+    <text x="120" y="70" font-size="28" font-weight="bold" text-anchor="middle">Optimization</text>
+  </g>
+
+  <!-- Bottom Section -->
+  <!-- Generate Arrow -->
+  <line x1="1190" y1="310" x2="1190" y2="450" stroke="#666666" stroke-width="6" marker-end="url(#arrow-grey)"/>
+  <text x="1170" y="400" font-size="48" font-weight="bold" text-anchor="middle" transform="rotate(-90, 1170, 400)">Generate</text>
+
+  <!-- Self-generate Trajectories -->
+  <g transform="translate(1100, 445)">
+    <rect x="0" y="0" width="240" height="130" rx="10" fill="#FCD5B4" stroke="black" stroke-width="4"/>
+    <text x="120" y="50" font-size="44" text-anchor="middle">Self-generate</text>
+    <text x="120" y="110" font-size="44" text-anchor="middle">Trajectories</text>
+  </g>
+
+  <!-- Execution Arrow -->
+  <line x1="1300" y1="490" x2="1390" y2="490" stroke="#666666" stroke-width="6" marker-end="url(#arrow-grey)"/>
+  <text x="1345" y="510" font-size="36" font-weight="bold" text-anchor="middle">Execution</text>
+
+  <!-- Results Box -->
+  <g transform="translate(1390, 445)">
+    <rect x="0" y="0" width="200" height="130" rx="5" fill="#FCD5B4" stroke="black" stroke-width="4"/>
+    <!-- Grid -->
+    <g transform="translate(5, 5)">
+      <!-- Top Left -->
+      <rect x="0" y="0" width="60" height="50" fill="#FCE4D6" stroke="#5B5484" stroke-dasharray="3,3"/>
+      <use href="#mini-graph" x="5" y="5" transform="scale(0.6)"/>
+      <!-- Top Right -->
+      <rect x="65" y="0" width="60" height="50" fill="#FCE4D6" stroke="#5B5484" stroke-dasharray="3,3"/>
+      <use href="#mini-gear" x="70" y="5" transform="scale(0.6)"/>
+      <!-- Bottom Left -->
+      <rect x="0" y="55" width="60" height="50" fill="#FFF2CC" stroke="#DAA520" stroke-dasharray="3,3"/>
+      <use href="#mini-graph" x="5" y="60" transform="scale(0.6)"/>
+      <!-- Bottom Right -->
+      <rect x="65" y="55" width="60" height="50" fill="#FFF2CC" stroke="#DAA520" stroke-dasharray="3,3"/>
+      <use href="#mini-gear" x="70" y="60" transform="scale(0.6)"/>
+    </g>
+    <!-- Check and Cross -->
+    <circle cx="175" cy="30" r="15" fill="#27AE60"/>
+    <path d="M168,30 L173,35 L182,25" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="175" cy="90" r="15" fill="#C0392B"/>
+    <path d="M168,83 L182,97 M182,83 L168,97" fill="none" stroke="white" stroke-width="3"/>
+  </g>
+
+  <!-- KTO Arrow -->
+  <line x1="1490" y1="445" x2="1490" y2="310" stroke="#666666" stroke-width="4" marker-end="url(#arrow-grey)"/>
+  <text x="1490" y="410" font-size="60" font-family="serif" font-style="italic">L<tspan dy="10" font-size="36" font-style="normal">KTO</tspan></text>
+
+  <!-- Global Feedback Arrow (Dotted) -->
+  <path d="M1120,305 Q1050,305 1050,200 Q1050,110 880,110" fill="none" stroke="black" stroke-width="4" stroke-dasharray="5,5" marker-end="url(#arrow-grey)"/>
+  <path d="M1120,305 Q1000,305 1000,200 Q1000,110 880,110" fill="none" stroke="black" stroke-width="4" stroke-dasharray="5,5" marker-end="url(#arrow-grey)"/>
+
+  <!-- Magnifying Glass (Transition) -->
+  <g transform="translate(560, 360)">
+    <circle cx="20" cy="20" r="20" fill="#BDE0FE" stroke="#333" stroke-width="4"/>
+    <circle cx="20" cy="20" r="12" fill="#FCD5B4" stroke="#333" stroke-width="2"/>
+    <line x1="35" y1="35" x2="60" y2="60" stroke="#333" stroke-width="10" stroke-linecap="round"/>
+    <line x1="35" y1="35" x2="60" y2="60" stroke="#FCD5B4" stroke-width="4" stroke-linecap="round"/>
+    <!-- Dashed arrow to Op Instance -->
+    <path d="M40,50 Q60,70 80,80 L100,100" fill="none" stroke="#8EAADB" stroke-width="6" stroke-dasharray="10,5" marker-end="url(#arrow-blue-dashed)"/>
+  </g>
+
+</svg>

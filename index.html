@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diagram Comparison Guide</title>
 <style>
+
   * { box-sizing: border-box; }
   body {
     margin: 0;
@@ -26,6 +27,14 @@
     margin: 0 0 20px;
     color: #526071;
     font-size: 14px;
+  }
+  .intro a {
+    color: #526071;
+    text-decoration: none;
+  }
+  .intro a:hover {
+    color: #172033;
+    text-decoration: underline;
   }
   .rows {
     display: grid;
@@ -81,85 +90,64 @@
       text-align: left;
     }
   }
+
+
+.site-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+}
+.site-nav a {
+  color: #233044;
+  text-decoration: none;
+  border: 1px solid #c8c9bd;
+  background: #fff;
+  border-radius: 5px;
+  padding: 6px 9px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.site-nav a:hover {
+  border-color: #94a3b8;
+  background: #fbfbf7;
+}
+.site-nav a.active {
+  border-color: #647084;
+  background: #eef1f4;
+  font-weight: 700;
+}
+
 </style>
 </head>
 <body>
 <main>
+  <nav class="site-nav"><a class="active" href="index.html">Guide</a><a href="reconstruction/index.html">Reconstruction</a><a href="editing/index.html">Editing</a><a href="additional/index.html">Additional</a></nav>
   <h1>Diagram Comparison Guide</h1>
-  <p class="intro">Open one comparison page directly.</p>
+  <p class="intro">Choose a comparison category.</p>
   <div class="rows">
     
-    <div class="sectionLabel">Reconstruction</div>
-    <a class="guideRow" href="reconstruction.html">
+    <a class="guideRow" href="reconstruction/index.html">
       <div>
         <span>Reconstruction</span>
-        <strong>Overall Comparison</strong>
+        <strong>Image-to-SVG Reconstruction</strong>
       </div>
       <small>30 cases, GT plus three model outputs</small>
     </a>
-    
-    <a class="guideRow" href="anthropic_claude-opus-4-8.html">
-      <div>
-        <span>Reconstruction</span>
-        <strong>claude-opus-4.8</strong>
-      </div>
-      <small>30 reconstruction cases</small>
-    </a>
-    <a class="guideRow" href="openai_gpt-5-5.html">
-      <div>
-        <span>Reconstruction</span>
-        <strong>gpt-5.5</strong>
-      </div>
-      <small>30 reconstruction cases</small>
-    </a>
-    <a class="guideRow" href="google_gemini-3-5-flash.html">
-      <div>
-        <span>Reconstruction</span>
-        <strong>gemini-3.5-flash</strong>
-      </div>
-      <small>30 reconstruction cases</small>
-    </a>
-    
-    <div class="sectionLabel">Editing</div>
-    <a class="guideRow" href="editing.html">
+    <a class="guideRow" href="editing/index.html">
       <div>
         <span>Editing</span>
-        <strong>Overall Comparison</strong>
+        <strong>SVG Editing</strong>
       </div>
       <small>Layout Edits: 19 / Local Edits: 21</small>
     </a>
-    
-    <a class="guideRow" href="editing_anthropic_claude-opus-4-8.html">
-      <div>
-        <span>Editing</span>
-        <strong>claude-opus-4.8</strong>
-      </div>
-      <small>40 editing cases, input SVG vs output SVG</small>
-    </a>
-    <a class="guideRow" href="editing_openai_gpt-5-5.html">
-      <div>
-        <span>Editing</span>
-        <strong>gpt-5.5</strong>
-      </div>
-      <small>40 editing cases, input SVG vs output SVG</small>
-    </a>
-    <a class="guideRow" href="editing_google_gemini-3-5-flash.html">
-      <div>
-        <span>Editing</span>
-        <strong>gemini-3.5-flash</strong>
-      </div>
-      <small>40 editing cases, input SVG vs output SVG</small>
-    </a>
-    
-    <div class="sectionLabel">Additional Comparisons</div>
-    <a class="guideRow" href="additional.html">
+    <a class="guideRow" href="additional/index.html">
       <div>
         <span>Additional</span>
         <strong>Additional Comparisons</strong>
       </div>
-      <small>开源/闭源对比 · Agent 对比</small>
+      <small>原图直出 · Only Layout · Agent 对比</small>
     </a>
-    
   </div>
 </main>
 </body>

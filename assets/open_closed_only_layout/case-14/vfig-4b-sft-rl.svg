@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" style="font-family: 'Times New Roman', serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-grey" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#808080" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#93C47D" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8EA9DB" />
+    </marker>
+    <marker id="arrow-grey-small" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#808080" />
+    </marker>
+  </defs>
+
+  <!-- ==================== LEFT CONTAINER (SUMMARIZE) ==================== -->
+  <rect x="5" y="25" width="1060" height="870" rx="20" fill="#F5F7F5" stroke="#808080" stroke-width="4" />
+  
+  <!-- Main Label -->
+  <text x="40" y="500" transform="rotate(-90, 40, 500)" font-size="60" font-weight="bold" fill="black">Summarize</text>
+
+  <!-- State st -->
+  <rect x="80" y="650" width="100" height="250" rx="15" fill="#F0E699" stroke="black" stroke-width="4" />
+  <text x="130" y="780" transform="rotate(-90, 130, 780)" font-size="60" font-weight="bold" fill="black">State s<tspan dy="10" font-size="40">t</tspan></text>
+
+  <!-- Summary -->
+  <rect x="80" y="300" width="100" height="250" rx="15" fill="#F0E699" stroke="black" stroke-width="4" />
+  <text x="130" y="430" transform="rotate(-90, 130, 430)" font-size="60" font-weight="bold" fill="black">Summary</text>
+
+  <!-- Arrow f -->
+  <line x1="110" y1="650" x2="110" y2="510" stroke="#808080" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <text x="80" y="580" font-size="60" font-style="italic" font-weight="bold" fill="black">f</text>
+
+  <!-- Iterate Loop -->
+  <path d="M 160 550 A 150 150 0 0 1 260 650" fill="none" stroke="#93C47D" stroke-width="15" stroke-linecap="round" />
+  <path d="M 260 650 A 150 150 0 0 1 160 550" fill="none" stroke="#93C47D" stroke-width="15" stroke-linecap="round" marker-end="url(#arrow-green)" />
+  <text x="180" y="570" font-size="55" font-weight="bold" fill="black">Iterate</text>
+
+  <!-- Save Arrow -->
+  <line x1="280" y1="750" x2="150" y2="750" stroke="#808080" stroke-width="5" marker-end="url(#arrow-grey)" />
+  <text x="180" y="790" font-size="60" font-weight="bold" fill="black">Save</text>
+
+  <!-- ==================== CENTER CONTAINER (SUBGRAPH) ==================== -->
+  <rect x="290" y="260" width="720" height="600" rx="30" fill="#E2EFDA" stroke="black" stroke-width="4" />
+  <text x="550" y="330" font-size="80" font-weight="bold" fill="black">Subgraph G<tspan dy="10" font-size="50">t</tspan></text>
+
+  <!-- Op Sequence -->
+  <rect x="350" y="380" width="650" height="250" fill="#FDF5E6" stroke="black" stroke-width="4" />
+  <text x="560" y="420" font-size="60" font-weight="bold" fill="black">Op Sequence</text>
+  
+  <!-- Op Template -->
+  <rect x="350" y="650" width="650" height="250" fill="#E2EFDA" stroke="black" stroke-width="4" />
+  <text x="380" y="690" font-size="60" font-weight="bold" fill="black">Op Template</text>
+  <text x="750" y="690" font-size="60" font-weight="bold" fill="black">Op Instance</text>
+
+  <!-- Op Sequence Internal -->
+  <!-- Left Flow -->
+  <circle cx="380" cy="520" r="40" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="4" />
+  <line x1="380" y1="520" x2="380" y2="480" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <line x1="380" y1="520" x2="460" y2="520" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <line x1="460" y1="520" x2="460" y2="440" stroke="black" stroke-width="4" />
+  <line x1="460" y1="440" x2="380" y2="440" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="460" y="490" width="100" height="60" rx="15" fill="#D5E8D4" stroke="#82B366" stroke-width="4" />
+  <line x1="560" y1="520" x2="590" y2="520" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="570" y="490" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="610" y="525" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;17</text>
+
+  <!-- Right Flow -->
+  <rect x="680" y="460" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="720" y="495" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;12</text>
+  <line x1="720" y1="500" x2="720" y2="540" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <circle cx="770" cy="520" r="40" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="4" />
+  <line x1="770" y1="520" x2="850" y2="520" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="850" y="460" width="80" height="80" rx="15" fill="#D0CEEA" stroke="#6C759E" stroke-width="4" />
+  <line x1="850" y1="520" x2="850" y2="540" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <line x1="850" y1="540" x2="770" y2="540" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="760" y="410" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="800" y="445" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;04</text>
+  <line x1="800" y1="450" x2="850" y2="450" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+
+  <!-- Op Template Internal -->
+  <circle cx="350" cy="770" r="45" fill="white" stroke="black" stroke-width="4" />
+  <rect x="390" y="750" width="100" height="60" rx="15" fill="white" stroke="black" stroke-width="4" />
+  <line x1="490" y1="780" x2="520" y2="780" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="480" y="750" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="520" y="785" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;28</text>
+  <rect x="540" y="750" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="580" y="785" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;29</text>
+  <text x="420" y="830" font-size="20" font-weight="bold" fill="black">......</text>
+  <text x="470" y="830" font-size="20" font-weight="bold" fill="black">......</text>
+
+  <!-- Op Instance Internal -->
+  <rect x="700" y="710" width="280" height="180" rx="15" fill="#E0F2F1" stroke="black" stroke-width="4" />
+  <rect x="720" y="750" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="760" y="785" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;19</text>
+  <rect x="760" y="750" width="100" height="60" rx="15" fill="#D5E8D4" stroke="#82B366" stroke-width="4" />
+  <line x1="860" y1="780" x2="890" y2="780" stroke="black" stroke-width="4" marker-end="url(#arrow-grey-small)" />
+  <rect x="850" y="750" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="890" y="785" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;10</text>
+  <rect x="910" y="750" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="950" y="785" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;07</text>
+  <text x="780" y="830" font-size="20" font-weight="bold" fill="black">......</text>
+  <text x="830" y="830" font-size="20" font-weight="bold" fill="black">......</text>
+
+  <!-- Dashed Blue Arrow -->
+  <path d="M 580 570 L 600 590 L 620 610 L 640 630 L 660 650 L 680 670 L 700 690" fill="none" stroke="#8EA9DB" stroke-width="8" stroke-dasharray="15,10" marker-end="url(#arrow-blue)" />
+  <rect x="530" y="570" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="570" y="605" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;15</text>
+
+  <!-- ==================== TOP LEFT (TASK & DESIGNER) ==================== -->
+  <polygon points="80,100 260,90 260,210 80,220" fill="#CDEBFF" stroke="black" stroke-width="4" />
+  <text x="120" y="170" font-size="80" font-weight="bold" fill="black">Task p</text>
+
+  <rect x="520" y="110" width="320" height="120" rx="20" fill="#FCE4D6" stroke="black" stroke-width="4" />
+  <text x="600" y="170" font-size="80" font-weight="bold" fill="black">Designer</text>
+  <rect x="520" y="120" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="540" y="160" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;09</text>
+  <rect x="760" y="120" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="780" y="160" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;14</text>
+
+  <!-- DyFlow Framework -->
+  <rect x="330" y="30" width="400" height="90" fill="#FFF2CC" stroke="black" stroke-width="4" />
+  <text x="350" y="80" font-size="70" font-weight="bold" fill="black">DyFlow Framework</text>
+
+  <!-- Connections Top Left -->
+  <line x1="260" y1="150" x2="520" y2="150" stroke="#666666" stroke-width="8" marker-end="url(#arrow-grey)" />
+  <line x1="680" y1="170" x2="680" y2="250" stroke="#666666" stroke-width="8" marker-end="url(#arrow-grey)" />
+
+  <!-- Replan Loop -->
+  <path d="M 120 290 Q 120 250 250 250 Q 400 250 520 210" fill="none" stroke="#93C47D" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-green)" />
+  <text x="280" y="220" font-size="60" font-weight="bold" fill="black">Replan</text>
+
+  <!-- ==================== RIGHT CONTAINER (DISTILLATION) ==================== -->
+  <rect x="1050" y="25" width="580" height="870" rx="20" fill="#F5F7F5" stroke="#808080" stroke-width="4" />
+  <text x="1150" y="390" font-size="60" font-weight="bold" fill="black">Distillation</text>
+
+  <!-- Expert -->
+  <rect x="1080" y="60" width="110" height="280" rx="20" fill="#CDEBFF" stroke="black" stroke-width="4" />
+  <text x="1135" y="200" transform="rotate(-90, 1135, 200)" font-size="70" font-weight="bold" fill="black">Expert</text>
+  <rect x="1080" y="250" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1100" y="290" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;24</text>
+
+  <!-- Tasks P -->
+  <rect x="1380" y="60" width="280" height="120" rx="30" fill="#FFE699" stroke="black" stroke-width="4" />
+  <text x="1420" y="130" font-size="70" font-weight="bold" fill="black">Tasks P</text>
+
+  <!-- Expert Trajectories -->
+  <rect x="1230" y="205" width="420" height="140" rx="10" fill="#FCE4D6" stroke="black" stroke-width="4" />
+  <text x="1280" y="190" font-size="60" font-weight="bold" fill="black">Expert Trajectories</text>
+  <rect x="1240" y="210" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1260" y="250" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;02</text>
+  <rect x="1300" y="210" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1320" y="250" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;26</text>
+  <rect x="1360" y="210" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1380" y="250" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;01</text>
+  <rect x="1420" y="210" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1440" y="250" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;05</text>
+  <text x="1520" y="270" font-size="40" font-weight="bold" fill="black">......</text>
+
+  <!-- Curly Braces -->
+  <path d="M 1260 290 Q 1260 300 1270 300 L 1280 300 L 1280 310 L 1290 300 L 1300 300 Q 1310 300 1310 290" fill="none" stroke="black" stroke-width="3" />
+  <text x="1290" y="310" font-size="30" font-weight="bold" fill="black">t-1</text>
+  
+  <path d="M 1380 290 Q 1380 300 1390 300 L 1400 300 L 1400 310 L 1410 300 L 1420 300 Q 1430 300 1430 290" fill="none" stroke="black" stroke-width="3" />
+  <text x="1430" y="310" font-size="30" font-weight="bold" fill="black">t</text>
+
+  <!-- Connections Right -->
+  <line x1="1190" y1="270" x2="1230" y2="270" stroke="#808080" stroke-width="8" stroke-dasharray="15,10" marker-end="url(#arrow-grey)" />
+  <line x1="1380" y1="325" x2="1380" y2="420" stroke="#808080" stroke-width="8" stroke-dasharray="15,10" marker-end="url(#arrow-grey)" />
+  <text x="1450" y="400" font-size="70" font-weight="bold" fill="black">ℒ<tspan dy="10" font-size="50">SFT</tspan></text>
+
+  <!-- DyPlanner -->
+  <rect x="1100" y="420" width="500" height="100" rx="20" fill="#FCE4D6" stroke="black" stroke-width="4" />
+  <text x="1250" y="480" font-size="80" font-weight="bold" fill="black">DyPlanner</text>
+  <rect x="1140" y="430" width="80" height="80" fill="#757575" stroke="black" stroke-width="4" />
+  <text x="1160" y="470" font-size="20" font-weight="bold" fill="white">&lt;AF&gt;16</text>
+
+  <!-- Self-play Loop -->
+  <path d="M 1250 550 Q 1250 650 1350 650 A 150 150 0 0 1 1450 550" fill="none" stroke="#93C47D" stroke-width="15" stroke-linecap="round" />
+  <path d="M 1450 550 A 150 150 0 0 1 1350 650" fill="none" stroke="#93C47D" stroke-width="15" stroke-linecap="round" marker-end="url(#arrow-green)" />
+  <text x="1250" y="620" font-size="50" font-weight="bold" fill="black">Self-play Preference</text>
+  <text x="1250" y="660" font-size="50" font-weight="bold" fill="black">Optimization</text>
+
+  <!-- Self-generate Trajectories -->
+  <rect x="1100" y="720" width="200" height="180" rx="15" fill="#F8CECC" stroke="black" stroke-width="4" />
+  <text x="1120" y="780" font-size="60" font-weight="bold" fill="black">Self-generate</text>
+  <text x="1120" y="840" font-size="60" font-weight="bold" fill="black">Trajectories</text>
+
+  <!-- Execution -->
+  <rect x="1400" y="720" width="280" height="180" rx="15" fill="#F8CECC" stroke="black" stroke-width="4" />
+  <text x="1420" y="780" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;25</text>
+  <text x="1450" y="780" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;21</text>
+  <text x="1480" y="780" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;08</text>
+  <text x="1510" y="780" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;11</text>
+  <text x="1540" y="780" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;22</text>
+  <text x="1420" y="820" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;23</text>
+  <text x="1450" y="820" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;27</text>
+  <text x="1480" y="820" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;06</text>
+  <text x="1510" y="820" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;18</text>
+  <text x="1540" y="820" font-size="20" font-weight="bold" fill="black">&lt;AF&gt;20</text>
+  <rect x="1400" y="720" width="280" height="180" fill="none" stroke="#FFD700" stroke-width="4" stroke-dasharray="5,5" />
+  <rect x="1400" y="720" width="280" height="180" fill="none" stroke="#FFD700" stroke-width="4" stroke-dasharray="5,5" />
+
+  <!-- Connections Right -->
+  <line x1="1190" y1="500" x2="1190" y2="720" stroke="#808080" stroke-width="8" marker-end="url(#arrow-grey)" />
+  <text x="1130" y="600" transform="rotate(-90, 1130, 600)" font-size="60" font-weight="bold" fill="black">Generate</text>
+  <line x1="1480" y1="720" x2="1400" y2="720" stroke="#808080" stroke-width="8" marker-end="url(#arrow-grey)" />
+  <text x="1250" y="810" font-size="60" font-weight="bold" fill="black">Execution</text>
+  <line x1="1500" y1="720" x2="1500" y2="500" stroke="#808080" stroke-width="8" marker-end="url(#arrow-grey)" />
+  <text x="1520" y="650" font-size="70" font-weight="bold" fill="black">ℒ<tspan dy="10" font-size="50">KTO</tspan></text>
+
+  <!-- ==================== CROSS CONTAINER CONNECTIONS ==================== -->
+  
+  <!-- Expert to Designer (Dotted) -->
+  <path d="M 1080 200 Q 1080 150 850 150" fill="none" stroke="black" stroke-width="5" stroke-dasharray="8,8" marker-end="url(#arrow-grey)" />
+  <path d="M 1080 200 Q 1080 300 850 180" fill="none" stroke="black" stroke-width="5" stroke-dasharray="8,8" marker-end="url(#arrow-grey)" />
+
+  <!-- Expert to DyPlanner (Dotted) -->
+  <path d="M 1190 420 Q 1190 480 1100 460" fill="none" stroke="black" stroke-width="5" stroke-dasharray="8,8" marker-end="url(#arrow-grey)" />
+
+  <!-- Tasks P to Expert (Sample) -->
+  <line x1="1380" y1="110" x2="1190" y2="110" stroke="#808080" stroke-width="8" marker-end="url(#arrow-grey)" />
+  <text x="1235" y="90" font-size="60" font-weight="bold" fill="black">Sample</text>
+
+  <!-- Op Template to Op Instance (Dashed Grey) -->
+  <line x1="600" y1="780" x2="700" y2="780" stroke="#808080" stroke-width="8" stroke-dasharray="15,10" marker-end="url(#arrow-grey)" />
+
+</svg>

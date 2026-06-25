@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12.0 22.0 2946.0 1036.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L0,0" fill="black" />
+    </marker>
+
+    <!-- Filters for Image Textures -->
+    <!-- 1. Event Frame Noise (High Frequency) -->
+    <filter id="eventNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 1 0" in="noise" result="coloredNoise" />
+      <feComponentTransfer in="coloredNoise">
+         <feFuncR type="linear" slope="0.5" intercept="0.2"/>
+         <feFuncG type="linear" slope="0.5" intercept="0.2"/>
+         <feFuncB type="linear" slope="0.5" intercept="0.2"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- 2. Energy Map Noise (Less chaotic, dark) -->
+    <filter id="energyNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="2" result="noise" />
+      <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0" in="noise" result="grayNoise" />
+      <feComponentTransfer in="grayNoise">
+         <feFuncR type="linear" slope="1.5" intercept="-0.2"/>
+         <feFuncG type="linear" slope="1.5" intercept="-0.2"/>
+         <feFuncB type="linear" slope="1.5" intercept="-0.2"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- 3. Reference Frame Noise (Static-like) -->
+    <filter id="refNoise">
+      <feTurbulence type="turbulence" baseFrequency="0.9" numOctaves="1" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 1 0" in="noise" />
+    </filter>
+
+    <!-- 4. Confidence Map Heatmap -->
+    <filter id="heatNoise">
+       <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="2" result="noise"/>
+       <feColorMatrix in="noise" type="hueRotate" values="180" result="rotated"/>
+       <feComponentTransfer in="rotated">
+         <feFuncR type="table" tableValues="0 0 1 1 0"/>
+         <feFuncG type="table" tableValues="0 1 1 0 0"/>
+         <feFuncB type="table" tableValues="0 0 0 1 0"/>
+       </feComponentTransfer>
+    </filter>
+    
+    <!-- 5. Disparity Map Heatmap (Smooth gradients) -->
+    <filter id="disparityHeat">
+       <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="1" result="noise"/>
+       <feColorMatrix type="hueRotate" values="240" result="colored"/>
+       <feComponentTransfer in="colored">
+         <feFuncR type="table" tableValues="0 1 1 1 0.5"/>
+         <feFuncG type="table" tableValues="0 0 0 1 1"/>
+         <feFuncB type="table" tableValues="0.5 0 0 1 1"/>
+       </feComponentTransfer>
+    </filter>
+
+    <!-- Reusable Image Content Base (The "Still Life" shape to overlay filters) -->
+    <g id="imageContent">
+        <!-- Background -->
+        <rect width="100%" height="100%" fill="#eee"/>
+        <!-- Apples -->
+        <circle cx="30%" cy="40%" r="25%" fill="#222" />
+        <circle cx="35%" cy="45%" r="20%" fill="#111" />
+        <circle cx="25%" cy="45%" r="18%" fill="#333" />
+        <!-- Bowl -->
+        <path d="M10% 70% Q50% 60% 90% 70% L90% 90% Q50% 100% 10% 90% Z" fill="#ddd" />
+        <!-- Tripod -->
+        <path d="M80% 20% L50% 80% M80% 20% L110% 80% M80% 20% L80% 80%" stroke="#222" stroke-width="4"/>
+        <!-- Bottle -->
+        <rect x="75%" y="10%" width="15%" height="30%" fill="#222"/>
+    </g>
+
+    <!-- Generic 3D Feature Block -->
+    <g id="featureBlock">
+        <!-- Front Face -->
+        <rect x="0" y="30" width="200" height="180" fill="#FFE699" stroke="black" stroke-width="2"/>
+        <!-- Top Face -->
+        <path d="M0 30 L30 0 L230 0 L200 30 Z" fill="#BF9000" stroke="black" stroke-width="2"/>
+        <!-- Side Face -->
+        <path d="M200 30 L230 0 L230 180 L200 210 Z" fill="#BF9000" stroke="black" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <style>
+    text { font-family: "Times New Roman", Times, serif; fill: black; }
+    .label-main { font-size: 48px; }
+    .label-sub { font-size: 36px; }
+    .label-math { font-size: 60px; font-style: italic; }
+    .arrow-line { fill: none; stroke: black; stroke-width: 4; marker-end: url(#arrowhead); }
+    .arrow-line-no-head { fill: none; stroke: black; stroke-width: 4; }
+  </style>
+
+  <!-- ================= LEFT COLUMN: INPUTS ================= -->
+  
+  <!-- Group 1: Captured Event Frames -->
+  <g transform="translate(20, 50)">
+    <!-- Stack Images -->
+    <g transform="translate(60, -20)">
+        <rect width="250" height="160" fill="white" filter="url(#eventNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.7"/>
+    </g>
+    <g transform="translate(30, 30)">
+        <rect width="250" height="160" fill="white" filter="url(#eventNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.7"/>
+    </g>
+    <g transform="translate(0, 60)">
+        <rect width="250" height="160" fill="white" filter="url(#eventNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.7"/>
+    </g>
+    <text x="125" y="210" text-anchor="middle" class="label-main">Captured Event Frames</text>
+    <!-- Arrow Down -->
+    <path d="M140,180 L140,220" class="arrow-line" />
+  </g>
+
+  <!-- Group 2: Energy Map -->
+  <g transform="translate(20, 270)">
+    <g transform="translate(60, -20)">
+        <rect width="250" height="160" fill="white" filter="url(#energyNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.5"/>
+    </g>
+    <g transform="translate(30, 30)">
+        <rect width="250" height="160" fill="white" filter="url(#energyNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.5"/>
+    </g>
+    <g transform="translate(0, 60)">
+        <rect width="250" height="160" fill="white" filter="url(#energyNoise)"/>
+        <use href="#imageContent" width="250" height="160" opacity="0.5"/>
+    </g>
+    <text x="125" y="210" text-anchor="middle" class="label-main">Energy Map</text>
+  </g>
+
+  <!-- Group 3: Reference Frames -->
+  <g transform="translate(20, 490)">
+    <g transform="translate(60, -20)">
+        <rect width="250" height="160" fill="white" filter="url(#refNoise)"/>
+    </g>
+    <g transform="translate(30, 30)">
+        <rect width="250" height="160" fill="white" filter="url(#refNoise)"/>
+    </g>
+    <g transform="translate(0, 60)">
+        <rect width="250" height="160" fill="white" filter="url(#refNoise)"/>
+    </g>
+    <text x="125" y="210" text-anchor="middle" class="label-main">Reference Frames</text>
+  </g>
+
+  <!-- ================= MIDDLE COLUMN: PROCESSING ================= -->
+
+  <!-- Top Feature Extraction -->
+  <g transform="translate(320, 50)">
+    <!-- Input Arrow -->
+    <path d="M-60,110 L20,110" class="arrow-line" />
+    <!-- Network Bars -->
+    <rect x="50" y="30" width="60" height="160" fill="#B4C7E7" />
+    <rect x="120" y="50" width="60" height="120" fill="#B4C7E7" />
+    <rect x="190" y="30" width="60" height="160" fill="#B4C7E7" />
+    <text x="150" y="200" text-anchor="middle" class="label-main">Feature Extraction</text>
+    <!-- Output Arrow -->
+    <path d="M250,100 L400,100" class="arrow-line" />
+  </g>
+
+  <!-- Middle Feature Extraction -->
+  <g transform="translate(320, 270)">
+    <!-- Input Arrow -->
+    <path d="M-60,110 L20,110" class="arrow-line" />
+    <!-- Network Bars -->
+    <rect x="50" y="0" width="60" height="160" fill="#C5E0B4" />
+    <rect x="120" y="20" width="60" height="120" fill="#C5E0B4" />
+    <rect x="190" y="0" width="60" height="160" fill="#C5E0B4" />
+    <text x="150" y="200" text-anchor="middle" class="label-main">Feature Extraction</text>
+    <!-- Output Arrow -->
+    <path d="M250,90 L300,90" class="arrow-line" />
+  </g>
+
+  <!-- Bottom Feature Extraction -->
+  <g transform="translate(320, 490)">
+    <!-- Input Arrow -->
+    <path d="M-60,110 L20,110" class="arrow-line" />
+    <!-- Network Bars -->
+    <rect x="50" y="-10" width="60" height="220" fill="#B4C7E7" />
+    <rect x="120" y="10" width="60" height="160" fill="#B4C7E7" />
+    <rect x="190" y="-10" width="60" height="220" fill="#B4C7E7" />
+    <text x="150" y="220" text-anchor="middle" class="label-main">Feature Extraction</text>
+    <!-- Output Arrow -->
+    <path d="M250,100 L400,100" class="arrow-line" />
+  </g>
+
+  <!-- ================= CENTER COLUMN: FEATURES & MAPS ================= -->
+
+  <!-- Left Features -->
+  <g transform="translate(750, 50)">
+    <!-- Back to Front -->
+    <g transform="translate(60, -20)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">L2</tspan></text>
+    </g>
+    <g transform="translate(30, 30)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">L1</tspan></text>
+    </g>
+    <g transform="translate(0, 60)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">L0</tspan></text>
+    </g>
+    <text x="115" y="170" text-anchor="middle" class="label-main">Left Features</text>
+    
+    <!-- Arrow to Confidence Propagation -->
+    <path d="M115,180 L115,200 L-100,200 L-100,230" class="arrow-line-no-head" /> 
+    <path d="M-100,230 L-100,240" class="arrow-line" /> <!-- Small segment to hit box -->
+  </g>
+
+  <!-- Confidence Guided Estimation Box -->
+  <g transform="translate(570, 250)">
+    <rect x="0" y="0" width="300" height="220" rx="40" fill="#A9D18E" />
+    <text x="150" y="60" text-anchor="middle" class="label-main">Energy-</text>
+    <text x="150" y="110" text-anchor="middle" class="label-main">guided</text>
+    <text x="150" y="160" text-anchor="middle" class="label-main">Confidence</text>
+    <text x="150" y="210" text-anchor="middle" class="label-main">Estimation</text>
+    <!-- Output Arrow -->
+    <path d="M300,110 L380,110" class="arrow-line" />
+  </g>
+
+  <!-- Confidence Maps -->
+  <g transform="translate(850, 270)">
+    <g transform="translate(60, -20)">
+        <rect width="280" height="180" fill="#0000FF" filter="url(#heatNoise)"/>
+        <use href="#imageContent" width="280" height="180" opacity="0.3"/>
+    </g>
+    <g transform="translate(30, 10)">
+        <rect width="280" height="180" fill="#0000FF" filter="url(#heatNoise)"/>
+        <use href="#imageContent" width="280" height="180" opacity="0.3"/>
+    </g>
+    <g transform="translate(0, 40)">
+        <rect width="280" height="180" fill="#0000FF" filter="url(#heatNoise)"/>
+        <use href="#imageContent" width="280" height="180" opacity="0.3"/>
+    </g>
+    <text x="170" y="210" text-anchor="middle" class="label-main">Confidence Maps</text>
+    <!-- Output Arrow -->
+    <path d="M350,90 L420,90" class="arrow-line" />
+  </g>
+
+  <!-- Right Features -->
+  <g transform="translate(750, 470)">
+    <!-- Back to Front -->
+    <g transform="translate(60, -20)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">R2</tspan></text>
+    </g>
+    <g transform="translate(30, 30)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">R1</tspan></text>
+    </g>
+    <g transform="translate(0, 60)">
+        <use href="#featureBlock" />
+        <text x="-10" y="0" text-anchor="end" class="label-math">F<tspan dy="10" font-size="40">R0</tspan></text>
+    </g>
+    <text x="115" y="220" text-anchor="middle" class="label-main">Right Features</text>
+    
+    <!-- Arrow to Confidence Propagation -->
+    <path d="M115,230 L115,250 L550,250 L550,-10" class="arrow-line-no-head" />
+    <path d="M550,-10 L550,-20" class="arrow-line" />
+  </g>
+
+  <!-- ================= RIGHT COLUMN: AGGREGATION ================= -->
+
+  <!-- Cost Volume Box -->
+  <g transform="translate(1380, 50)">
+    <!-- 3D Cube -->
+    <!-- Top Face -->
+    <path d="M50 50 L250 50 L300 0 L100 0 Z" fill="#E2B79B" />
+    <!-- Side Face -->
+    <path d="M250 50 L300 0 L300 150 L250 200 Z" fill="#E29E72" />
+    <!-- Front Face -->
+    <rect x="50" y="50" width="200" height="150" fill="#F4B183" />
+    <text x="150" y="110" text-anchor="middle" class="label-main" style="font-size: 64px;">Cost</text>
+    <text x="150" y="160" text-anchor="middle" class="label-main" style="font-size: 64px;">Volume</text>
+    
+    <!-- Arrow Down -->
+    <path d="M150,160 L150,220" class="arrow-line" />
+  </g>
+
+  <!-- Confidence Propagation Volume Construction -->
+  <g transform="translate(1120, 250)">
+    <rect x="0" y="0" width="300" height="220" rx="40" fill="#F4B183" />
+    <text x="150" y="60" text-anchor="middle" class="label-main">Confidence</text>
+    <text x="150" y="110" text-anchor="middle" class="label-main">Propagation</text>
+    <text x="150" y="160" text-anchor="middle" class="label-main">Volume</text>
+    <text x="150" y="210" text-anchor="middle" class="label-main">Construction</text>
+    
+    <!-- Elbow Arrow to Cost Volume -->
+    <!-- Exits right, goes up, turns right into Cost Volume -->
+    <path d="M300,110 L330,110 L330,-190 L360,-190" class="arrow-line-no-head" />
+    <path d="M360,-190 L360,-200" class="arrow-line" />
+  </g>
+
+  <!-- Cost Aggregation -->
+  <g transform="translate(1380, 250)">
+    <rect x="0" y="0" width="350" height="220" rx="40" fill="#8EAADB" />
+    <text x="175" y="110" text-anchor="middle" class="label-main" style="font-size: 64px;">Cost</text>
+    <text x="175" y="160" text-anchor="middle" class="label-main" style="font-size: 64px;">Aggregation</text>
+    
+    <!-- Arrow Down -->
+    <path d="M175,220 L175,280" class="arrow-line" />
+  </g>
+
+  <!-- Disparity Map -->
+  <g transform="translate(1350, 450)">
+    <!-- Heatmap Image -->
+    <rect width="280" height="150" fill="#0000FF" filter="url(#disparityHeat)"/>
+    <use href="#imageContent" width="280" height="150" opacity="0.4" fill="white"/>
+    <!-- Gradient overlay for depth effect -->
+    <rect x="0" y="120" width="280" height="30" fill="red" opacity="0.6"/>
+    <text x="140" y="210" text-anchor="middle" class="label-main">Disparity</text>
+  </g>
+
+</svg>

@@ -1,0 +1,307 @@
+<svg width="1920" height="1100" viewBox="0 0 1920 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrowhead-grey" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E0E0E0" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FAD7C3" />
+    </marker>
+    <marker id="arrowhead-grey-rev" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#E0E0E0" />
+    </marker>
+    
+    <!-- Font Styles -->
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 80px; font-weight: bold; fill: black; }
+      .header { font-family: Arial, sans-serif; font-size: 60px; font-weight: bold; fill: black; }
+      .label { font-family: Arial, sans-serif; font-size: 48px; fill: black; }
+      .code { font-family: 'Courier New', monospace; font-size: 48px; fill: black; }
+      .json { font-family: 'Courier New', monospace; font-size: 52px; fill: black; }
+      .table-text { font-family: Arial, sans-serif; font-size: 36px; fill: black; }
+      .table-header { font-family: Arial, sans-serif; font-size: 36px; fill: white; }
+      .legend-text { font-family: Arial, sans-serif; font-size: 40px; fill: black; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- Main Container -->
+  <rect x="10" y="10" width="1900" height="1080" rx="30" fill="none" stroke="#E0E0E0" stroke-width="6" stroke-dasharray="20,15" />
+
+  <!-- ================= LEFT COLUMN: Offline Graph Construction ================= -->
+  
+  <!-- Title -->
+  <text x="130" y="95" class="title">Offline Graph Construction</text>
+
+  <!-- Image Sequence -->
+  <g transform="translate(40, 130)">
+    <!-- Image 1 -->
+    <image x="0" y="0" width="150" height="150" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48L3N2Zz4=" />
+    <rect x="10" y="10" width="130" height="130" fill="#808080" />
+    <text x="30" y="70" class="code">&lt;AF&gt;10</text>
+
+    <!-- Image 2 -->
+    <g transform="translate(200, 0)">
+      <image x="0" y="0" width="150" height="150" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48L3N2Zz4=" />
+      <rect x="10" y="10" width="50" height="130" fill="#808080" />
+      <text x="5" y="70" class="code">&lt;AF&gt;09</text>
+      <rect x="60" y="10" width="20" height="130" fill="#808080" />
+      <text x="55" y="70" class="code">&lt;AF&gt;05</text>
+      <rect x="90" y="10" width="40" height="130" fill="#808080" />
+      <text x="85" y="70" class="code">&lt;AF&gt;04</text>
+      <rect x="130" y="10" width="30" height="130" fill="#808080" />
+      <text x="125" y="70" class="code">&lt;AF&gt;03</text>
+    </g>
+
+    <!-- Ellipsis -->
+    <text x="360" y="80" font-size="60" font-weight="bold">...</text>
+
+    <!-- Image 3 -->
+    <g transform="translate(450, 0)">
+      <image x="0" y="0" width="150" height="150" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48L3N2Zz4=" />
+      <rect x="10" y="10" width="20" height="130" fill="#808080" />
+      <text x="5" y="70" class="code">&lt;AF&gt;06</text>
+      <rect x="50" y="10" width="60" height="130" fill="#808080" />
+      <text x="45" y="70" class="code">&lt;AF&gt;07</text>
+    </g>
+
+    <!-- Image 4 -->
+    <g transform="translate(550, 0)">
+      <image x="0" y="0" width="150" height="150" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzQwMDQwMDAiIHN0cm9rZT0iIzQwMDQwMDAiLz48L3N2Zz4=" />
+      <rect x="50" y="10" width="50" height="130" fill="#808080" />
+      <text x="45" y="70" class="code">&lt;AF&gt;02</text>
+    </g>
+  </g>
+
+  <!-- Subtitles Box -->
+  <rect x="110" y="260" width="520" height="100" rx="50" fill="#FAD7C3" />
+  <text x="370" y="310" text-anchor="middle" class="label">Subtitles</text>
+
+  <!-- Arrow 1 -->
+  <line x1="370" y1="360" x2="370" y2="400" stroke="#E0E0E0" stroke-width="15" marker-end="url(#arrowhead-grey)" />
+
+  <!-- LVLM Box -->
+  <rect x="40" y="410" width="640" height="160" rx="30" fill="#DDEBF7" stroke="#8FAADC" stroke-width="4" />
+  <text x="360" y="480" text-anchor="middle" class="label" style="font-size: 80px;">LVLM</text>
+
+  <!-- JSON Output -->
+  <text x="100" y="560" class="json">
+    [{&quot;entity&quot;: &quot;&quot;, &quot;description&quot;: &quot;&quot;}, 
+      ... 
+      {&quot;entity&quot;: &quot;&quot;, &quot;description&quot;: &quot;&quot;}]
+  </text>
+
+  <!-- Entity Merging Box -->
+  <rect x="40" y="660" width="640" height="100" fill="#FAD7C3" />
+  <text x="360" y="710" text-anchor="middle" class="label">Entity Merging and Node Connection</text>
+
+  <!-- Graph Visualization -->
+  <g transform="translate(50, 750)">
+    <!-- Edges (Solid) -->
+    <line x1="50" y1="50" x2="150" y2="20" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="50" y1="50" x2="150" y2="180" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="150" y1="20" x2="350" y2="20" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="150" y1="20" x2="350" y2="180" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="350" y1="20" x2="550" y2="180" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="350" y1="180" x2="550" y2="20" stroke="#B0B0B0" stroke-width="4" />
+    <line x1="350" y1="180" x2="550" y2="180" stroke="#B0B0B0" stroke-width="4" />
+
+    <!-- Edges (Dashed) -->
+    <line x1="50" y1="50" x2="150" y2="180" stroke="#B0B0B0" stroke-width="3" stroke-dasharray="10,5" />
+    <line x1="150" y1="180" x2="350" y2="20" stroke="#B0B0B0" stroke-width="3" stroke-dasharray="10,5" />
+    <line x1="350" y1="20" x2="550" y2="180" stroke="#B0B0B0" stroke-width="3" stroke-dasharray="10,5" />
+    <line x1="350" y1="180" x2="550" y2="20" stroke="#B0B0B0" stroke-width="3" stroke-dasharray="10,5" />
+
+    <!-- Nodes -->
+    <!-- Green Squares -->
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <rect x="130" y="-10" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <rect x="330" y="-10" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <rect x="530" y="150" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+
+    <!-- Blue Squares -->
+    <rect x="280" y="150" width="60" height="60" rx="10" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+    <rect x="630" y="150" width="60" height="60" rx="10" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+
+    <!-- Blue Triangles -->
+    <polygon points="100,180 150,100 100,100" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+    <polygon points="200,180 250,100 200,100" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+    <polygon points="400,180 450,100 400,100" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+    <polygon points="500,180 550,100 500,100" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="5" />
+
+    <!-- Pink Triangle -->
+    <polygon points="380,180 420,100 380,100" fill="#F8CECC" stroke="#C06080" stroke-width="5" />
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 1000)">
+    <text x="0" y="40" class="legend-text">Video Clip</text>
+    <rect x="220" y="10" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    
+    <text x="350" y="40" class="legend-text">Entities (<tspan fill="#C06080">Triangle</tspan>, <tspan fill="#6C8EBF">Square</tspan>, <tspan fill="#6C8EBF">Triangle</tspan>)</text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: Retrieval-Reasoning Augmented Generation ================= -->
+
+  <!-- Title -->
+  <text x="960" y="95" class="title">Retrieval-Reasoning Augmented Generation</text>
+
+  <!-- Question Box -->
+  <g transform="translate(850, 120)">
+    <rect x="0" y="0" width="60" height="60" fill="#808080" />
+    <text x="10" y="35" class="code">&lt;AF&gt;01</text>
+    <text x="70" y="40" class="code" style="font-size: 50px;">Question: Please identify the option that corresponds to the order of events as they</text>
+    <text x="70" y="90" class="code" style="font-size: 50px;">occur in the video. [Zumba, clean and jerk, milking cow, playing trombone]</text>
+  </g>
+
+  <!-- Arrows to Process -->
+  <line x1="1080" y1="210" x2="1080" y2="250" stroke="#FAD7C3" stroke-width="15" marker-end="url(#arrowhead-orange)" />
+  <line x1="1580" y1="210" x2="1580" y2="250" stroke="#FAD7C3" stroke-width="15" marker-end="url(#arrowhead-orange)" />
+
+  <!-- Process 1: Query Keywords Extraction -->
+  <text x="880" y="290" class="header" fill="#0070B0">Query Keywords Extraction</text>
+  <text x="860" y="330" class="code" style="font-size: 50px;">["zumba", "clean", "milking</text>
+  <text x="860" y="370" class="code" style="font-size: 50px;">cow", "playing trombone"]</text>
+
+  <!-- Process 2: Structured Query Refinement -->
+  <text x="1350" y="290" class="header" fill="#0070B0">Strutured Query Refinement</text>
+  <text x="1280" y="330" class="code" style="font-size: 50px;">Q1: Is ‘zumba’ shown in the video?</text>
+  <text x="1280" y="380" class="code" style="font-size: 50px;">Q4: Is ‘trombone’ shown in the video?</text>
+
+  <!-- Green Box Sequence -->
+  <g transform="translate(960, 410)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="30" y="40" text-anchor="middle" class="code" style="font-size: 40px;">3</text>
+    
+    <rect x="70" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="100" y="40" text-anchor="middle" class="code" style="font-size: 40px;">4</text>
+    
+    <rect x="140" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="170" y="40" text-anchor="middle" class="code" style="font-size: 40px;">5</text>
+    
+    <rect x="210" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="240" y="40" text-anchor="middle" class="code" style="font-size: 40px;">11</text>
+    
+    <rect x="280" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="310" y="40" text-anchor="middle" class="code" style="font-size: 40px;">13</text>
+  </g>
+
+  <!-- Arrow to Table -->
+  <line x1="1080" y1="480" x2="1080" y2="520" stroke="#FAD7C3" stroke-width="15" marker-end="url(#arrowhead-orange)" />
+  <text x="800" y="470" class="label">Graph-based</text>
+  <text x="800" y="500" class="label">Clip Retrieval</text>
+
+  <!-- Table -->
+  <g transform="translate(880, 530)">
+    <!-- Headers -->
+    <rect x="0" y="0" width="120" height="60" fill="#89CFF0" />
+    <text x="60" y="40" text-anchor="middle" class="table-header">Clip</text>
+    
+    <rect x="120" y="0" width="100" height="60" fill="#89CFF0" />
+    <text x="170" y="40" text-anchor="middle" class="table-header">Q1</text>
+    
+    <rect x="220" y="0" width="100" height="60" fill="#89CFF0" />
+    <text x="270" y="40" text-anchor="middle" class="table-header">Q2</text>
+    
+    <rect x="320" y="0" width="100" height="60" fill="#89CFF0" />
+    <text x="370" y="40" text-anchor="middle" class="table-header">Q3</text>
+    
+    <rect x="420" y="0" width="100" height="60" fill="#89CFF0" />
+    <text x="470" y="40" text-anchor="middle" class="table-header">Q4</text>
+
+    <!-- Rows -->
+    <!-- Row 1 -->
+    <rect x="0" y="60" width="120" height="60" fill="#F5F5F5" />
+    <text x="60" y="100" text-anchor="middle" class="table-text">3</text>
+    <text x="170" y="100" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="270" y="100" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="370" y="100" text-anchor="middle" fill="#32CD32" font-size="50">✓</text>
+    <text x="470" y="100" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="120" width="120" height="60" fill="#F5F5F5" />
+    <text x="60" y="160" text-anchor="middle" class="table-text">4</text>
+    <text x="170" y="160" text-anchor="middle" fill="#32CD32" font-size="50">✓</text>
+    <text x="270" y="160" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="370" y="160" text-anchor="middle" fill="#32CD32" font-size="50">✓</text>
+    <text x="470" y="160" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="180" width="120" height="60" fill="#F5F5F5" />
+    <text x="60" y="220" text-anchor="middle" class="table-text">5</text>
+    <text x="170" y="220" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="270" y="220" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="370" y="220" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="470" y="220" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+
+    <!-- Row 4 -->
+    <rect x="0" y="240" width="120" height="60" fill="#F5F5F5" />
+    <text x="60" y="280" text-anchor="middle" class="table-text">11</text>
+    <text x="170" y="280" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="270" y="280" text-anchor="middle" fill="#32CD32" font-size="50">✓</text>
+    <text x="370" y="280" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="470" y="280" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+
+    <!-- Row 5 -->
+    <rect x="0" y="300" width="120" height="60" fill="#F5F5F5" />
+    <text x="60" y="340" text-anchor="middle" class="table-text">13</text>
+    <text x="170" y="340" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="270" y="340" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="370" y="340" text-anchor="middle" fill="#FF0000" font-size="50">X</text>
+    <text x="470" y="340" text-anchor="middle" fill="#32CD32" font-size="50">✓</text>
+  </g>
+
+  <!-- Arrow to Info Aggregation -->
+  <line x1="1280" y1="660" x2="1320" y2="660" stroke="#FAD7C3" stroke-width="15" marker-end="url(#arrowhead-orange)" />
+
+  <!-- Information Aggregation -->
+  <text x="1480" y="580" class="header" fill="#0070B0">Information Aggregation</text>
+  <g transform="translate(1350, 600)">
+    <rect x="0" y="0" width="450" height="250" fill="none" stroke="#D35400" stroke-width="6" stroke-dasharray="20,10" />
+    <text x="225" y="60" text-anchor="middle" class="code" style="font-size: 50px;">Milking cow is shown first,</text>
+    <text x="225" y="120" text-anchor="middle" class="code" style="font-size: 50px;">followed by zumba, then</text>
+    <text x="225" y="180" text-anchor="middle" class="code" style="font-size: 50px;">clean, and finally playing</text>
+    <text x="225" y="240" text-anchor="middle" class="code" style="font-size: 50px;">trombone.</text>
+  </g>
+
+  <!-- Refined Clips -->
+  <text x="1100" y="870" text-anchor="middle" class="label">Refined Clips</text>
+  <g transform="translate(980, 880)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="30" y="40" text-anchor="middle" class="code" style="font-size: 40px;">3</text>
+    
+    <rect x="70" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="100" y="40" text-anchor="middle" class="code" style="font-size: 40px;">4</text>
+    
+    <rect x="140" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="170" y="40" text-anchor="middle" class="code" style="font-size: 40px;">11</text>
+    
+    <rect x="210" y="0" width="60" height="60" rx="10" fill="#D0F0C0" stroke="#70C040" stroke-width="5" />
+    <text x="240" y="40" text-anchor="middle" class="code" style="font-size: 40px;">13</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="1600" y1="820" x2="1600" y2="900" stroke="#E0E0E0" stroke-width="15" marker-end="url(#arrowhead-grey)" />
+
+  <!-- Final LVLM Box -->
+  <rect x="820" y="930" width="1160" height="140" rx="30" fill="#DDEBF7" stroke="#8FAADC" stroke-width="4" />
+  <text x="1400" y="1000" text-anchor="middle" class="label" style="font-size: 80px;">LVLM</text>
+
+  <!-- Final Answer -->
+  <g transform="translate(850, 1020)">
+    <rect x="0" y="0" width="60" height="60" fill="#808080" />
+    <text x="10" y="35" class="code">&lt;AF&gt;08</text>
+    <text x="70" y="40" class="code" style="font-size: 50px;">Answer: milking cow --> zumba --> clean and jerk --> playing trombone</text>
+  </g>
+
+  <!-- ================= CROSS COLUMN CONNECTIONS ================= -->
+  
+  <!-- Left to Right -->
+  <path d="M 370 410 L 370 440 L 780 440 L 780 420" fill="none" stroke="#E0E0E0" stroke-width="15" marker-end="url(#arrowhead-grey)" />
+  
+  <!-- Right to Left (Feedback) -->
+  <path d="M 1600 440 L 1600 490 L 1100 490 L 1100 470" fill="none" stroke="#E0E0E0" stroke-width="15" marker-end="url(#arrowhead-grey-rev)" />
+
+</svg>

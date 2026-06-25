@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <!-- Font Styles -->
+    <style>
+      text { font-family: 'Times New Roman', serif; }
+      .label-text { font-size: 48px; fill: black; }
+      .math-text { font-size: 48px; fill: black; }
+      .math-italic { font-style: italic; }
+      .box-stroke { stroke: black; stroke-width: 2; }
+      .dashed-box { fill: none; stroke-width: 3; stroke-dasharray: 15,10; }
+      .buffer-stroke { stroke: black; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- ==================== 1. INPUT SECTION ==================== -->
+  
+  <!-- Image Placeholder -->
+  <rect x="15" y="430" width="180" height="220" fill="#554433" /> <!-- Dark background -->
+  <rect x="40" y="445" width="120" height="150" fill="#888888" /> <!-- Grey box -->
+  <text x="100" y="530" text-anchor="middle" font-size="40" fill="white">&lt;AF&gt;01</text>
+  <text x="100" y="660" text-anchor="middle" font-size="48" fill="black">cat</text>
+
+  <!-- Connector to Teacher -->
+  <line x1="150" y1="430" x2="215" y2="390" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <!-- Connector to Student -->
+  <line x1="150" y1="610" x2="215" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- ==================== 2. LEGEND ==================== -->
+  <rect x="15" y="125" width="190" height="250" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="10,5" />
+  <rect x="25" y="145" width="50" height="50" fill="#99B5E5" stroke="#555" stroke-width="1" />
+  <text x="85" y="180" font-size="48" fill="black">hard label</text>
+  
+  <rect x="25" y="200" width="50" height="50" fill="#A9A9A9" stroke="#555" stroke-width="1" />
+  <text x="85" y="235" font-size="48" fill="black">mask label</text>
+  
+  <rect x="25" y="255" width="50" height="50" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="85" y="290" font-size="48" fill="black">target</text>
+  
+  <rect x="25" y="310" width="50" height="50" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <text x="85" y="345" font-size="48" fill="black">non-target</text>
+
+  <!-- ==================== 3. TEACHER & STUDENT ==================== -->
+  
+  <!-- Teacher Box -->
+  <rect x="220" y="300" width="250" height="200" rx="30" fill="white" stroke="#666" stroke-width="3" />
+  <!-- Teacher 3D Bars -->
+  <g transform="translate(240, 320)">
+    <!-- Bar 1 -->
+    <path d="M0,0 L60,-40 L120,-40 L60,0 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <path d="M0,0 L60,0 L60,120 L0,120 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <!-- Bar 2 -->
+    <path d="M30,30 L90,10 L150,10 L90,30 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <path d="M30,30 L90,30 L90,150 L30,150 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <!-- Bar 3 -->
+    <path d="M60,60 L120,40 L180,40 L120,60 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <path d="M60,60 L120,60 L120,180 L60,180 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <!-- Bar 4 -->
+    <path d="M90,90 L150,70 L210,70 L150,90 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <path d="M90,90 L150,90 L150,210 L90,210 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <!-- Bar 5 -->
+    <path d="M120,120 L180,100 L240,100 L180,120 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <path d="M120,120 L180,120 L180,240 L120,240 Z" fill="#5B9BD5" stroke="#333" stroke-width="1"/>
+    <text x="150" y="220" text-anchor="middle" font-size="48" fill="black">Teacher</text>
+  </g>
+
+  <!-- Student Box -->
+  <rect x="220" y="560" width="250" height="200" rx="30" fill="white" stroke="#666" stroke-width="3" />
+  <!-- Student 3D Bars -->
+  <g transform="translate(240, 580)">
+    <!-- Bar 1 -->
+    <path d="M0,0 L60,-40 L120,-40 L60,0 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <path d="M0,0 L60,0 L60,120 L0,120 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <!-- Bar 2 -->
+    <path d="M30,30 L90,10 L150,10 L90,30 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <path d="M30,30 L90,30 L90,150 L30,150 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <!-- Bar 3 -->
+    <path d="M60,60 L120,40 L180,40 L120,60 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <path d="M60,60 L120,60 L120,180 L60,180 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <!-- Bar 4 -->
+    <path d="M90,90 L150,70 L210,70 L150,90 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <path d="M90,90 L150,90 L150,210 L90,210 Z" fill="#ED7D31" stroke="#333" stroke-width="1"/>
+    <text x="150" y="220" text-anchor="middle" font-size="48" fill="black">Student</text>
+  </g>
+
+  <!-- ==================== 4. FEATURE EXTRACTORS ==================== -->
+  
+  <!-- Ground Truth -->
+  <rect x="220" y="85" width="250" height="130" rx="20" fill="white" stroke="#666" stroke-width="3" />
+  <text x="345" y="150" text-anchor="middle" font-size="56" fill="black">Ground Truth</text>
+  <line x1="430" y1="140" x2="465" y2="140" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Teacher Output -->
+  <rect x="470" y="30" width="80" height="220" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="15,10" />
+  <!-- Blue Top -->
+  <rect x="470" y="45" width="60" height="60" fill="#99B5E5" stroke="#555" stroke-width="1" />
+  <text x="515" y="75" font-size="56" fill="black">1</text>
+  <!-- Grey Bottom -->
+  <rect x="470" y="85" width="60" height="160" fill="#A9A9A9" stroke="#555" stroke-width="1" />
+  <line x1="510" y1="300" x2="510" y2="335" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Student Output -->
+  <rect x="470" y="280" width="80" height="220" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="15,10" />
+  <!-- Yellow Top -->
+  <rect x="470" y="295" width="60" height="60" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="515" y="325" font-size="56" fill="black" class="math-italic">p<tspan dy="10" font-size="36">T</tspan><tspan dy="-10" font-size="36">t</tspan></text>
+  <!-- Green Bottom -->
+  <rect x="470" y="335" width="60" height="160" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <line x1="510" y1="540" x2="510" y2="575" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- ==================== 5. DECOUPLING ==================== -->
+  
+  <text x="570" y="540" font-size="56" fill="black">Decoupling</text>
+  
+  <!-- Row 1: Hard Labels -->
+  <rect x="580" y="45" width="110" height="180" fill="white" stroke="#999" stroke-width="3" stroke-dasharray="10,5" />
+  <rect x="585" y="85" width="50" height="50" fill="#99B5E5" stroke="#555" stroke-width="1" />
+  <text x="600" y="165" font-size="56" fill="black">1</text>
+  <rect x="640" y="85" width="50" height="50" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="630" y="165" font-size="56" fill="black" class="math-italic">p<tspan dy="10" font-size="36">s</tspan><tspan dy="-10" font-size="36">t</tspan></text>
+  <line x1="550" y1="135" x2="575" y2="135" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="690" y1="135" x2="715" y2="135" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 2: Target Labels -->
+  <rect x="580" y="295" width="110" height="180" fill="white" stroke="#999" stroke-width="3" stroke-dasharray="10,5" />
+  <rect x="585" y="335" width="50" height="50" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="570" y="415" font-size="56" fill="black" class="math-italic">p<tspan dy="10" font-size="36">T</tspan><tspan dy="-10" font-size="36">t</tspan></text>
+  <rect x="640" y="335" width="50" height="50" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="630" y="415" font-size="56" fill="black" class="math-italic">p<tspan dy="10" font-size="36">s</tspan><tspan dy="-10" font-size="36">t</tspan></text>
+  <line x1="550" y1="385" x2="575" y2="385" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="690" y1="385" x2="715" y2="385" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 3: Non-Target Labels -->
+  <rect x="580" y="545" width="110" height="180" fill="white" stroke="#999" stroke-width="3" stroke-dasharray="10,5" />
+  <rect x="585" y="560" width="50" height="120" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <rect x="640" y="560" width="50" height="120" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <rect x="585" y="660" width="50" height="60" fill="#A9A9A9" stroke="#555" stroke-width="1" />
+  <rect x="640" y="660" width="50" height="60" fill="#A9A9A9" stroke="#555" stroke-width="1" />
+  <line x1="550" y1="650" x2="575" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="690" y1="650" x2="715" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Dynamic Top-k Mask -->
+  <rect x="500" y="770" width="250" height="70" rx="15" fill="#C8B0D8" stroke="#666" stroke-width="2" />
+  <text x="525" y="815" font-size="48" fill="black">Dynamic Top-k Mask</text>
+  <line x1="500" y1="770" x2="310" y2="770" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- ==================== 6. LOSS & GRADIENT LAYERS ==================== -->
+  
+  <!-- Row 1: TASK -->
+  <rect x="680" y="45" width="220" height="180" fill="none" stroke="#99B5E5" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="840" y="90" text-anchor="middle" font-size="56" fill="black">TASK</text>
+  <rect x="700" y="110" width="200" height="130" rx="20" fill="white" stroke="#99B5E5" stroke-width="3" />
+  <text x="800" y="150" text-anchor="middle" font-size="56" fill="black">Task</text>
+  <text x="800" y="195" text-anchor="middle" font-size="56" fill="black">CE Loss</text>
+  <line x1="900" y1="135" x2="930" y2="135" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 2: TOG -->
+  <rect x="930" y="45" width="220" height="180" fill="none" stroke="#99B5E5" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="1070" y="90" text-anchor="middle" font-size="56" fill="black">TOG</text>
+  <rect x="950" y="110" width="200" height="130" rx="20" fill="#99B5E5" stroke="#555" stroke-width="1" />
+  <text x="1050" y="150" text-anchor="middle" font-size="56" fill="black">Task-oriented</text>
+  <text x="1050" y="195" text-anchor="middle" font-size="56" fill="black">Gradient</text>
+  <line x1="1150" y1="135" x2="1200" y2="135" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 3: NCKD -->
+  <rect x="680" y="295" width="220" height="180" fill="none" stroke="#FFD966" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="840" y="340" text-anchor="middle" font-size="56" fill="black">TCKD</text>
+  <rect x="700" y="360" width="200" height="130" rx="20" fill="white" stroke="#FFD966" stroke-width="3" />
+  <text x="800" y="400" text-anchor="middle" font-size="56" fill="black">Target Class</text>
+  <text x="800" y="445" text-anchor="middle" font-size="56" fill="black">KL Loss</text>
+  <line x1="900" y1="385" x2="930" y2="385" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 4: TCG -->
+  <rect x="930" y="295" width="220" height="180" fill="none" stroke="#FFD966" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="1070" y="340" text-anchor="middle" font-size="56" fill="black">TCG</text>
+  <rect x="950" y="360" width="200" height="130" rx="20" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="1050" y="400" text-anchor="middle" font-size="56" fill="black">Target class</text>
+  <text x="1050" y="445" text-anchor="middle" font-size="56" fill="black">Gradient</text>
+  <line x1="1150" y1="385" x2="1200" y2="385" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 5: NCG -->
+  <rect x="680" y="545" width="220" height="180" fill="none" stroke="#A9D18E" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="840" y="600" text-anchor="middle" font-size="56" fill="black">NCKD</text>
+  <rect x="700" y="620" width="200" height="130" rx="20" fill="white" stroke="#A9D18E" stroke-width="3" />
+  <text x="800" y="660" text-anchor="middle" font-size="56" fill="black">Non-target</text>
+  <text x="800" y="705" text-anchor="middle" font-size="56" fill="black">Class KL Loss</text>
+  <line x1="900" y1="650" x2="930" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Row 6: NCG -->
+  <rect x="930" y="545" width="220" height="180" fill="none" stroke="#A9D18E" stroke-width="3" stroke-dasharray="15,10" />
+  <text x="1070" y="600" text-anchor="middle" font-size="56" fill="black">NCG</text>
+  <rect x="950" y="620" width="200" height="130" rx="20" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <text x="1050" y="660" text-anchor="middle" font-size="56" fill="black">Non-target</text>
+  <text x="1050" y="705" text-anchor="middle" font-size="56" fill="black">class Gradient</text>
+  <line x1="1150" y1="650" x2="1200" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- ==================== 7. MOMENTUM BUFFERS ==================== -->
+  
+  <!-- Blue Buffer -->
+  <rect x="1200" y="90" width="230" height="130" rx="20" fill="#99B5E5" stroke="#555" stroke-width="1" />
+  <text x="1295" y="130" text-anchor="middle" font-size="56" fill="black">Task</text>
+  <text x="1295" y="170" text-anchor="middle" font-size="56" fill="black">Momentum buffer</text>
+  
+  <!-- Yellow Buffer -->
+  <rect x="1200" y="340" width="230" height="130" rx="20" fill="#FFD966" stroke="#555" stroke-width="1" />
+  <text x="1295" y="380" text-anchor="middle" font-size="56" fill="black">Target</text>
+  <text x="1295" y="420" text-anchor="middle" font-size="56" fill="black">Momentum buffer</text>
+  
+  <!-- Green Buffer -->
+  <rect x="1200" y="600" width="230" height="130" rx="20" fill="#A9D18E" stroke="#555" stroke-width="1" />
+  <text x="1295" y="640" text-anchor="middle" font-size="56" fill="black">Non-target</text>
+  <text x="1295" y="680" text-anchor="middle" font-size="56" fill="black">Momentum buffer</text>
+
+  <!-- ==================== 8. UPDATE LOOP ==================== -->
+  
+  <!-- Blue Loop -->
+  <text x="1100" y="60" font-size="56" fill="black" class="math-italic">v &#8594; g + (&#956; + &#916;)v</text>
+  <g transform="translate(1150, 70)">
+    <path d="M10,0 L10,50 M10,0 L20,10 M10,50 L20,40" stroke="#99B5E5" stroke-width="3" fill="none" />
+    <path d="M20,10 L10,0 M20,40 L10,50" stroke="#99B5E5" stroke-width="3" fill="none" />
+  </g>
+  <line x1="1130" y1="135" x2="1190" y2="135" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Yellow Loop -->
+  <text x="1100" y="310" font-size="56" fill="black" class="math-italic">v &#8594; g + (&#956; &#8722; &#916;)v</text>
+  <g transform="translate(1150, 320)">
+    <path d="M10,0 L10,50 M10,0 L20,10 M10,50 L20,40" stroke="#FFD966" stroke-width="3" fill="none" />
+    <path d="M20,10 L10,0 M20,40 L10,50" stroke="#FFD966" stroke-width="3" fill="none" />
+  </g>
+  <line x1="1130" y1="385" x2="1190" y2="385" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Green Loop -->
+  <text x="1100" y="580" font-size="56" fill="black" class="math-italic">v &#8594; g + (&#956; + &#916;)v</text>
+  <g transform="translate(1150, 590)">
+    <path d="M10,0 L10,50 M10,0 L20,10 M10,50 L20,40" stroke="#A9D18E" stroke-width="3" fill="none" />
+    <path d="M20,10 L10,0 M20,40 L10,50" stroke="#A9D18E" stroke-width="3" fill="none" />
+  </g>
+  <line x1="1130" y1="650" x2="1190" y2="650" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Convergence -->
+  <line x1="1430" y1="135" x2="1450" y2="365" stroke="black" stroke-width="3" />
+  <line x1="1430" y1="385" x2="1450" y2="385" stroke="black" stroke-width="3" />
+  <line x1="1430" y1="650" x2="1450" y2="385" stroke="black" stroke-width="3" />
+  
+  <!-- Summation Node -->
+  <circle cx="1450" cy="385" r="30" fill="white" stroke="black" stroke-width="3" />
+  <path d="M1450,365 L1450,405 M1430,385 L1470,385" stroke="black" stroke-width="3" />
+  
+  <!-- Final Update -->
+  <line x1="1480" y1="385" x2="1600" y2="385" stroke="black" stroke-width="3" />
+  <text x="1500" y="420" font-size="56" fill="black">&#952; &#8594; &#952; &#8722; &#947;v</text>
+  <text x="1500" y="420" font-size="56" fill="black">Update</text>
+  
+  <!-- Feedback Loop -->
+  <line x1="1600" y1="385" x2="1600" y2="700" stroke="black" stroke-width="3" />
+  <line x1="1600" y1="700" x2="310" y2="700" stroke="black" stroke-width="3" marker-end="url(#arrow)" />
+
+</svg>

@@ -1,0 +1,180 @@
+<svg width="1400" height="660" viewBox="-8.0 -8.0 1446.0 741.0" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker for Lines (if needed, though using block arrows mostly) -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555" />
+    </marker>
+    
+    <!-- Font Styles -->
+    <style>
+      .serif-text { font-family: "Times New Roman", Times, serif; }
+      .tag-text { font-family: "Times New Roman", Times, serif; font-weight: bold; fill: white; font-size: 16px; }
+      .main-label { font-family: "Times New Roman", Times, serif; fill: black; }
+      .section-label { font-family: "Times New Roman", Times, serif; fill: black; font-size: 48px; }
+      .sub-label { font-family: "Times New Roman", Times, serif; fill: #4A7BC7; font-size: 48px; }
+      .box-border { stroke: #0F2E5D; stroke-width: 4px; }
+      .arrow-fill { fill: #555555; }
+    </style>
+  </defs>
+
+  <!-- 1. Global Background -->
+  <rect x="0" y="0" width="1400" height="660" fill="#F5F5F7" stroke="#C0C0C0" stroke-width="8" />
+
+  <!-- ================= TOP ROW: INPUT REQUESTS ================= -->
+  
+  <!-- Left Box: Text-Only -->
+  <g transform="translate(185, 40)">
+    <rect x="0" y="0" width="410" height="85" rx="15" fill="white" class="box-border" />
+    <!-- Embedded Image Thumbnail -->
+    <rect x="45" y="15" width="75" height="75" fill="#888888" stroke="black" stroke-width="1" />
+    <text x="82" y="55" text-anchor="middle" class="tag-text">&lt;AF&gt;01</text>
+    <!-- Main Text -->
+    <text x="205" y="65" text-anchor="middle" class="section-label" style="font-size: 56px;">Text-Only Request</text>
+  </g>
+
+  <!-- Right Box: Image-Text -->
+  <g transform="translate(815, 40)">
+    <rect x="0" y="0" width="410" height="85" rx="15" fill="white" class="box-border" />
+    <!-- Embedded Image Thumbnail -->
+    <rect x="25" y="25" width="90" height="65" fill="#888888" stroke="black" stroke-width="1" />
+    <text x="70" y="60" text-anchor="middle" class="tag-text">&lt;AF&gt;02</text>
+    <!-- Main Text -->
+    <text x="240" y="65" text-anchor="middle" class="section-label" style="font-size: 56px;">Image-Text Request</text>
+  </g>
+
+  <!-- Arrows Row 1 to 2 -->
+  <g transform="translate(0, 10)"> <!-- Slight offset adjustment -->
+    <!-- Left Arrow -->
+    <path d="M370 95 L370 130 L355 130 L370 155 L385 130 L370 130" fill="#555555" stroke="none" transform="translate(0, 5)"/>
+    <!-- Right Arrow -->
+    <path d="M1020 95 L1020 130 L1005 130 L1020 155 L1035 130 L1020 130" fill="#555555" stroke="none" transform="translate(0, 5)"/>
+  </g>
+
+  <!-- ================= MIDDLE SECTION: MODALITY-LEVEL ================= -->
+  
+  <g transform="translate(75, 145)">
+    <!-- Main Container -->
+    <rect x="0" y="0" width="1250" height="240" class="box-border" />
+    
+    <!-- Left Background (Blue) -->
+    <rect x="2" y="2" width="623" height="236" fill="#DEEBFA" />
+    <!-- Right Background (Pink) -->
+    <rect x="625" y="2" width="623" height="236" fill="#FCE0E0" />
+    
+    <!-- Dashed Divider -->
+    <line x1="625" y1="0" x2="625" y2="240" stroke="black" stroke-width="4" stroke-dasharray="12,8" />
+
+    <!-- LEFT SIDE CONTENT -->
+    <text x="312" y="65" text-anchor="middle" class="section-label">Modality-Level</text>
+    <text x="312" y="115" text-anchor="middle" class="sub-label">(Modality-Aware Load Balancing §3.1)</text>
+    
+    <!-- Internal Boxes Left -->
+    <g transform="translate(60, 140)">
+      <!-- Prefill -->
+      <rect x="0" y="0" width="250" height="120" rx="20" fill="#C6E2FF" class="box-border" />
+      <text x="125" y="70" text-anchor="middle" class="section-label" style="font-size: 48px;">Prefill Stage</text>
+      <!-- Arrow -->
+      <path d="M255 50 L295 50 L295 35 L325 60 L295 85 L295 70 L255 70 Z" fill="#555555" />
+      <!-- Decode -->
+      <rect x="330" y="0" width="300" height="120" rx="20" fill="#C6E2FF" class="box-border" />
+      <text x="480" y="70" text-anchor="middle" class="section-label" style="font-size: 52px;">Decode Stage</text>
+    </g>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <g transform="translate(625, 0)">
+      <!-- Top Box: Encode -->
+      <rect x="180" y="30" width="340" height="120" rx="20" fill="#FFC1C1" class="box-border" />
+      <text x="350" y="100" text-anchor="middle" class="section-label" style="font-size: 52px;">Encode Stage</text>
+      
+      <!-- Diagonal Arrow -->
+      <path d="M220 120 L200 140 L210 145 L180 175 L160 145 L170 140 L190 120 Z" fill="#555555" transform="translate(40, 10) rotate(35, 220, 120)" />
+
+      <!-- Bottom Row Boxes -->
+      <g transform="translate(0, 140)">
+        <!-- Prefill -->
+        <rect x="20" y="0" width="300" height="120" rx="20" fill="#FFC1C1" class="box-border" />
+        <text x="170" y="70" text-anchor="middle" class="section-label" style="font-size: 48px;">Prefill Stage</text>
+        <!-- Arrow -->
+        <path d="M325 50 L365 50 L365 35 L395 60 L365 85 L365 70 L325 70 Z" fill="#555555" />
+        <!-- Decode -->
+        <rect x="400" y="0" width="330" height="120" rx="20" fill="#FFC1C1" class="box-border" />
+        <text x="565" y="70" text-anchor="middle" class="section-label" style="font-size: 52px;">Decode Stage</text>
+      </g>
+    </g>
+
+    <!-- Horizontal Bridge Arrow (Top Level) -->
+    <!-- From Left Blue Area to Right Pink Area -->
+    <path d="M600 60 L600 80 L560 80 L560 100 L520 80 L560 60 L560 80 L600 80 Z" fill="#555555" transform="translate(100,0) scale(-1,1) translate(-1250,0)" /> 
+    <!-- Actually drawing a simpler horizontal double arrow manually -->
+    <path d="M600 70 L560 70 L560 55 L520 80 L560 105 L560 90 L600 90 L600 105 L640 80 L600 55 Z" fill="#555555" />
+  </g>
+
+  <!-- ================= LOWER MIDDLE: STAGE-LEVEL ================= -->
+  
+  <g transform="translate(75, 370)">
+    <!-- Container -->
+    <rect x="0" y="0" width="1250" height="170" rx="5" fill="#FFFEF5" class="box-border" />
+    
+    <!-- Header -->
+    <text x="320" y="55" class="section-label">Stage-Level</text>
+    <text x="480" y="55" class="sub-label">(Elastic Partition Scheduling §3.2)</text>
+    
+    <!-- Yellow Boxes -->
+    <g transform="translate(0, 70)">
+      <!-- Box 1 -->
+      <rect x="90" y="0" width="290" height="120" rx="20" fill="#FCECA8" class="box-border" />
+      <text x="235" y="45" text-anchor="middle" class="section-label" style="font-size: 48px;">Request</text>
+      <text x="235" y="100" text-anchor="middle" class="section-label" style="font-size: 48px;">Scheduling</text>
+      
+      <!-- Arrow 1 -->
+      <path d="M385 50 L465 50 L465 30 L500 60 L465 90 L465 70 L385 70 Z" fill="#555555" />
+
+      <!-- Box 2 -->
+      <rect x="500" y="0" width="300" height="120" rx="20" fill="#FCECA8" class="box-border" />
+      <text x="650" y="45" text-anchor="middle" class="section-label" style="font-size: 48px;">Stage</text>
+      <text x="650" y="100" text-anchor="middle" class="section-label" style="font-size: 48px;">Allocation</text>
+
+      <!-- Arrow 2 -->
+      <path d="M805 50 L885 50 L885 30 L920 60 L885 90 L885 70 L805 70 Z" fill="#555555" />
+
+      <!-- Box 3 -->
+      <rect x="920" y="0" width="330" height="120" rx="20" fill="#FCECA8" class="box-border" />
+      <text x="1085" y="45" text-anchor="middle" class="section-label" style="font-size: 48px;">Elastic</text>
+      <text x="1085" y="100" text-anchor="middle" class="section-label" style="font-size: 48px;">Auto-Scaling</text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  
+  <!-- Left: Unified Cache -->
+  <g transform="translate(75, 565)">
+    <rect x="0" y="0" width="815" height="160" rx="30" fill="#D6EFD0" class="box-border" />
+    <text x="407" y="95" text-anchor="middle" class="section-label" style="font-size: 56px;">Unified Multimodal Prefix Cache <tspan class="sub-label"> (§3.3)</tspan></text>
+  </g>
+
+  <!-- Right: Legend -->
+  <g transform="translate(955, 565)">
+    <rect x="0" y="0" width="380" height="160" fill="white" class="box-border" />
+    
+    <!-- Row 1 -->
+    <g transform="translate(30, 20)">
+      <rect x="0" y="0" width="115" height="50" fill="#888888" stroke="black" stroke-width="2" />
+      <text x="57" y="30" text-anchor="middle" class="tag-text" style="font-size: 14px;">&lt;AF&gt;03</text>
+      <text x="135" y="35" class="section-label" style="font-size: 48px;">Text-Only Group</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(30, 80)">
+      <rect x="0" y="0" width="115" height="50" fill="#FFC1C1" stroke="black" stroke-width="4" />
+      <text x="135" y="35" class="section-label" style="font-size: 48px;">Multimodal Group</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(30, 130)">
+      <!-- Double Arrow Icon -->
+      <path d="M0 15 L25 0 L25 10 L85 10 L85 0 L110 15 L85 30 L85 20 L25 20 L25 30 Z" fill="#555555" />
+      <text x="135" y="25" class="section-label" style="font-size: 48px;">Auto-Scaling</text>
+    </g>
+  </g>
+
+</svg>

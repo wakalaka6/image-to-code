@@ -1,0 +1,2202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editing claude-opus-4.8</title>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: #172033;
+    background: #f6f6f1;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(246, 246, 241, .96);
+    border-bottom: 1px solid #d8d8cf;
+  }
+  .bar {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 12px 18px;
+    display: grid;
+    grid-template-columns: minmax(340px, 620px) 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .summary {
+    margin-top: 8px;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+  .reasonSummary {
+    margin-top: 4px;
+    color: #7c2d12;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .tools {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .tools button {
+    border: 1px solid #c8c9bd;
+    border-radius: 5px;
+    background: #fff;
+    color: #172033;
+    padding: 6px 9px;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .tools button:hover {
+    border-color: #94a3b8;
+    background: #fbfbf7;
+  }
+  .nav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+  }
+  .nav a, .caseHead a, .groupHead a {
+    color: #233044;
+    text-decoration: none;
+    border: 1px solid #c8c9bd;
+    background: #fff;
+    border-radius: 5px;
+    padding: 6px 9px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  main {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 18px;
+  }
+  .editGroup {
+    margin-bottom: 26px;
+  }
+  .groupHead {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 14px 16px;
+    border: 1px solid #d8d8cf;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .groupKicker {
+    color: #687084;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+  .case {
+    margin-bottom: 18px;
+    border: 1px solid #d8d8cf;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .caseHead {
+    padding: 10px 12px;
+    background: #fbfbf7;
+    border-bottom: 1px solid #e5e5dd;
+  }
+  .caseHeadTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .caseActions {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .caseNo {
+    color: #687084;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .caseNo span {
+    margin-left: 8px;
+    color: #475569;
+  }
+  h3 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  p {
+    margin: 6px 0 0;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .card {
+    min-width: 0;
+    border-right: 1px solid #e1e1d8;
+  }
+  .card:last-child {
+    border-right: 0;
+  }
+  .case.editCard[data-edit-value="success"] {
+    box-shadow: inset 0 3px 0 #16a34a;
+  }
+  .case.editCard[data-edit-value="fail"] {
+    box-shadow: inset 0 3px 0 #dc2626;
+  }
+  .cardMedia img,
+  .cardMedia .missing {
+    width: 100%;
+    display: block;
+  }
+  .label {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    background: #f3f5f4;
+    border-bottom: 1px solid #e5e5dd;
+  }
+  .label span {
+    color: #647084;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .editControls {
+    padding: 0;
+    background: transparent;
+  }
+  .markButtons {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .markButtons button {
+    border: 1px solid #c8c9bd;
+    border-radius: 5px;
+    background: #fff;
+    color: #172033;
+    padding: 5px 8px;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .markButtons button:hover {
+    border-color: #94a3b8;
+  }
+  .markButtons button.active[data-edit-mark="success"] {
+    border-color: #15803d;
+    background: #dcfce7;
+    color: #166534;
+  }
+  .markButtons button.active[data-edit-mark="fail"] {
+    border-color: #b91c1c;
+    background: #fee2e2;
+    color: #991b1b;
+  }
+  .editState {
+    color: #647084;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .failReasons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 9px;
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  .failReasons label {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .failReasons input {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #fff;
+  }
+  .missing {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9a3412;
+    background: #fff7ed;
+    font-weight: 700;
+  }
+  .parseFailed {
+    color: #991b1b;
+    background: #fee2e2;
+  }
+  @media (max-width: 900px) {
+    .bar { grid-template-columns: 1fr; }
+    .groupHead { align-items: flex-start; flex-direction: column; }
+    .pair { grid-template-columns: 1fr; }
+    .card { border-right: 0; border-bottom: 1px solid #e1e1d8; }
+    .card:last-child { border-bottom: 0; }
+    main { padding: 10px; }
+  }
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="bar">
+    <div>
+      <h1>Editing claude-opus-4.8</h1>
+      
+      <div class="tools">
+        <button type="button" id="exportEdit">Export Marks JSON</button>
+        <button type="button" id="loadEditDraft">Load Draft</button>
+        <button type="button" id="clearPageMarks">Clear This Page</button>
+        <span class="summary" id="editSummary">0 success / 0 fail / 0 unmarked</span>
+        <span class="reasonSummary" id="reasonSummary">failure reasons: none</span>
+      </div>
+    </div>
+    <nav class="nav"><a href="../../index.html">Guide</a><a href="../../reconstruction/index.html">Reconstruction</a><a class="active" href="../index.html">Editing</a><a href="../../additional/index.html">Additional</a><a class="active" href="../anthropic_claude-opus-4-8.html">claude-opus-4.8</a><a href="../openai_gpt-5-5.html">gpt-5.5</a><a href="../google_gemini-3-5-flash.html">gemini-3.5-flash</a></nav>
+  </div>
+</header>
+<main>
+  
+  <section class="editGroup" id="edit-layout">
+    <div class="groupHead">
+      <div>
+        <div class="groupKicker">Editing Set</div>
+        <h2>Layout Edits</h2>
+        <p>Large layout and icon edits. 19 claude-opus-4.8 cases.</p>
+      </div>
+      <a href="#top">Top</a>
+    </div>
+    
+  <section class="case editCard"
+    id="case-layout-1"
+    data-edit-key="layout||05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_follow_instruction&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">01 <span>Layout Edits</span></div>
+          <h3>05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram</h3>
+          <p>交换三个灰色中间块与其上方彩虹 shortcut 图标的位置：将灰色块移到中间区域，将彩虹图标移到这些块下方，周围标签、箭头、颜色及其他元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" checked>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detectio/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/01_05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detectio/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-2"
+    data-edit-key="layout||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Calibrating Translation Decoding with Quality Estimation on LLMs_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">02 <span>Layout Edits</span></div>
+          <h3>Calibrating Translation Decoding with Quality Estimation on LLMs_diagram</h3>
+          <p>将整体布局从水平排布改为纵向排布。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/02_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/02_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-3"
+    data-edit-key="layout||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Chain-of-Retrieval Augmented Generation_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">03 <span>Layout Edits</span></div>
+          <h3>Chain-of-Retrieval Augmented Generation_diagram</h3>
+          <p>交换 Rejection Sampling 块与 Inference 块的位置；保持各自内部文字、颜色和局部连接不变，仅重新布线必要箭头以维持原流程。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/03_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/03_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-4"
+    data-edit-key="layout||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="d794c629fb49374a8f643e359f9f43a7"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">04 <span>Layout Edits</span></div>
+          <h3>d794c629fb49374a8f643e359f9f43a7</h3>
+          <p>将三个水平行改为从左到右的 Step 1、Step 2、Step 3 三列竖排；每步内部内容、标签、颜色和局部箭头不变，步骤间连线改为横向。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/04_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/04_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-5"
+    data-edit-key="layout||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">05 <span>Layout Edits</span></div>
+          <h3>ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram</h3>
+          <p>将四行堆叠改为三列并排，尽量保留每组内部的文字、颜色、图标和局部箭头。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/05_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Parallelism_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/05_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Parallelism_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-6"
+    data-edit-key="layout||sample_figure||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="sample_figure"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">06 <span>Layout Edits</span></div>
+          <h3>sample_figure</h3>
+          <p>将 (a) 和 (b) 改为两行全宽布局：(a) 放第一行，(b) 放第二行，每 panel 横向铺满可用宽度，保留内部内容和标签。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/06_sample_figure/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/06_sample_figure/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-7"
+    data-edit-key="layout||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">07 <span>Layout Edits</span></div>
+          <h3>A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram</h3>
+          <p>将整体布局改为三列并排：主要 section 均匀分到三列，保留所有内部标签、颜色和箭头，仅重新布线列间连接。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/07_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image_Restoration_Tasks_d/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/07_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image_Restoration_Tasks_d/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-8"
+    data-edit-key="layout||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="AI Debate Aids Assessment of Controversial Claims_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">08 <span>Layout Edits</span></div>
+          <h3>AI Debate Aids Assessment of Controversial Claims_diagram</h3>
+          <p>改为两行布局：Initial Survey 放上行，Consultancy 与 Debate 一起放下行；各区块内部文字、颜色和箭头保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/08_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/08_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-9"
+    data-edit-key="layout||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">09 <span>Layout Edits</span></div>
+          <h3>Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram</h3>
+          <p>删除底行 Truthful LLM 块；其余 pipeline、标签、颜色和箭头不变，并填补删除后留下的空隙。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/09_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Model_Contrastive_Decodi/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/09_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Model_Contrastive_Decodi/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-10"
+    data-edit-key="layout||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_follow_instruction&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">10 <span>Layout Edits</span></div>
+          <h3>Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram</h3>
+          <p>将最右侧粉色框缩小为当前尺寸的 50%，中心仍对齐在同一右侧区域；文字、颜色、箭头及周围元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" checked>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/10_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_Token_Pruning_in_MLLMs/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/10_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_Token_Pruning_in_MLLMs/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-11"
+    data-edit-key="layout||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-parse-failed="true" data-default-status="fail" data-default-reasons="[&quot;parse_failure&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">11 <span>Layout Edits</span></div>
+          <h3>Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram</h3>
+          <p>交换 MLLM 列与 ICL 列的顺序；每列内部内容、标签、颜色和局部箭头不变，仅重新布线列间连接。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure" checked>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><div class="missing parseFailed">解析失败</div></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>解析失败</span></div>
+        <div class="cardMedia"><div class="missing parseFailed">解析失败</div></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-12"
+    data-edit-key="layout||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_follow_instruction&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">12 <span>Layout Edits</span></div>
+          <h3>DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram</h3>
+          <p>在 Teacher 行与 Student 行之间新增 Teacher2 行；新行视觉风格与 Teacher 行一致，其余 diagram 尽量保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" checked>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/12_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/12_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-13"
+    data-edit-key="layout||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">13 <span>Layout Edits</span></div>
+          <h3>DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram</h3>
+          <p>将整体布局从两列改为两行：左列内容移到上行，右列内容移到下行，保留内部标签、颜色、图标和局部箭头。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/13_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/13_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-14"
+    data-edit-key="layout||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_follow_instruction&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">14 <span>Layout Edits</span></div>
+          <h3>Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram</h3>
+          <p>将整体布局从水平排布改为纵向排布。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" checked>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/14_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph_Autoencoders_diagra/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/14_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph_Autoencoders_diagra/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-15"
+    data-edit-key="layout||Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">15 <span>Layout Edits</span></div>
+          <h3>Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram</h3>
+          <p>在 workflow 最右侧新增 Reward 模块；风格与现有 process 模块一致，从原最右侧模块连出，现有块、标签、颜色和箭头保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/15_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysis_Feedback_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/15_Training_Language_Models_to_Generate_Quality_Code_with_Program_Analysis_Feedback_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-16"
+    data-edit-key="layout||Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">16 <span>Layout Edits</span></div>
+          <h3>Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram</h3>
+          <p>垂直翻转布局：当前上部移到底部，当前底部移到顶部；各部分内部内容、标签、颜色和局部箭头不变，仅重新布线主要连接。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/16_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Video_Understanding_di/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/16_Vgent_Graph-based_Retrieval-Reasoning-Augmented_Generation_For_Long_Video_Understanding_di/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-17"
+    data-edit-key="layout||Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_preserve_original&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">17 <span>Layout Edits</span></div>
+          <h3>Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram</h3>
+          <p>将 block (3) 移到新的第二行并横跨整行；block (3) 内部内容、标签、颜色和局部连接器不变，其他块尽量保留。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" checked>没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/17_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanced_Logic_Recommendat/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/17_Who_You_Are_Matters_Bridging_Interests_and_Social_Roles_via_LLM-Enhanced_Logic_Recommendat/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-18"
+    data-edit-key="layout||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">18 <span>Layout Edits</span></div>
+          <h3>CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram</h3>
+          <p>交换图的上下两半；各半内部标签、图标、颜色和局部箭头不变，仅重新布线两半之间的连接。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/18_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_Reward_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/18_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_Reward_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-layout-19"
+    data-edit-key="layout||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="layout"
+    data-edit-group-label="Layout Edits"
+    data-image="EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="fail" data-default-reasons="[&quot;not_follow_instruction&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">19 <span>Layout Edits</span></div>
+          <h3>EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram</h3>
+          <p>在 DenoisingNet 侧新增 VAE Enc 和 CLIP 块，与 ReferenceNet 侧对应块匹配；尽量保留原有风格、颜色、标签和连接。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" checked>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure">解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/19_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Multi-Character_Animati/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/layout/19_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Multi-Character_Animati/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  </section>
+  <section class="editGroup" id="edit-local">
+    <div class="groupHead">
+      <div>
+        <div class="groupKicker">Editing Set</div>
+        <h2>Local Edits</h2>
+        <p>Small color, text, and arrow edits. 21 claude-opus-4.8 cases.</p>
+      </div>
+      <a href="#top">Top</a>
+    </div>
+    
+  <section class="case editCard"
+    id="case-local-1"
+    data-edit-key="local||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Calibrating Translation Decoding with Quality Estimation on LLMs_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">01 <span>Local Edits</span></div>
+          <h3>Calibrating Translation Decoding with Quality Estimation on LLMs_diagram</h3>
+          <p>将上方灰色 NMT 模块的文字改为 Base NMT，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/01_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/01_Calibrating_Translation_Decoding_with_Quality_Estimation_on_LLMs_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-2"
+    data-edit-key="local||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Chain-of-Retrieval Augmented Generation_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">02 <span>Local Edits</span></div>
+          <h3>Chain-of-Retrieval Augmented Generation_diagram</h3>
+          <p>删除左侧 sub-query 1 到 sub-answer 1 的竖直箭头，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/02_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/02_Chain-of-Retrieval_Augmented_Generation_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-3"
+    data-edit-key="local||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="d794c629fb49374a8f643e359f9f43a7"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">03 <span>Local Edits</span></div>
+          <h3>d794c629fb49374a8f643e359f9f43a7</h3>
+          <p>在左侧 World Model Prediction 区域，将 Video Diffusion 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/03_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/03_d794c629fb49374a8f643e359f9f43a7/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-4"
+    data-edit-key="local||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">04 <span>Local Edits</span></div>
+          <h3>ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram</h3>
+          <p>将中间 Stage-Level Elastic Partition Scheduling 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/04_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Parallelism_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/04_ElasticMM_Efficient_Multimodal_LLMs_Serving_with_Elastic_Multimodal_Parallelism_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-5"
+    data-edit-key="local||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">05 <span>Local Edits</span></div>
+          <h3>3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram</h3>
+          <p>删除从模块 e 指向 Predictor P 的箭头，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/05_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Processes_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/05_3D-Prover_Diversity_Driven_Theorem_Proving_With_Determinantal_Point_Processes_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-6"
+    data-edit-key="local||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">06 <span>Local Edits</span></div>
+          <h3>A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram</h3>
+          <p>将 (a) 区域中 Query function q(.) 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/06_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image_Restoration_Tasks_d/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/06_A_Minimalistic_Unified_Framework_for_Incremental_Learning_across_Image_Restoration_Tasks_d/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-7"
+    data-edit-key="local||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="AI Debate Aids Assessment of Controversial Claims_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">07 <span>Local Edits</span></div>
+          <h3>AI Debate Aids Assessment of Controversial Claims_diagram</h3>
+          <p>将左上角标题 Initial Survey 改为 Pre Survey，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/07_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/07_AI_Debate_Aids_Assessment_of_Controversial_Claims_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-8"
+    data-edit-key="local||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">08 <span>Local Edits</span></div>
+          <h3>Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram</h3>
+          <p>在 Inference Stage 中，删除从 Detection 指向 Canada 的箭头，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/08_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Model_Contrastive_Decodi/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/08_Alleviating_Hallucinations_in_Large_Language_Models_through_Multi-Model_Contrastive_Decodi/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-9"
+    data-edit-key="local||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">09 <span>Local Edits</span></div>
+          <h3>Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram</h3>
+          <p>将右侧热力图区域 DPP 块顶部的红色条改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/09_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_Token_Pruning_in_MLLMs/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/09_Beyond_Attention_or_Similarity_Maximizing_Conditional_Diversity_for_Token_Pruning_in_MLLMs/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-10"
+    data-edit-key="local||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-parse-failed="true" data-default-status="fail" data-default-reasons="[&quot;parse_failure&quot;]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">10 <span>Local Edits</span></div>
+          <h3>Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram</h3>
+          <p>将中间 MLLM 区域的标题栏填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success">Success</button>
+              <button type="button" data-edit-mark="fail" active>Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Fail</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction">没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original">没有保留原图</label><label><input type="checkbox" value="parse_failure" checked>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><div class="missing parseFailed">解析失败</div></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>解析失败</span></div>
+        <div class="cardMedia"><div class="missing parseFailed">解析失败</div></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-11"
+    data-edit-key="local||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">11 <span>Local Edits</span></div>
+          <h3>DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram</h3>
+          <p>将从 Update 指向 Student 的箭头改为从 Update 指向 Dynamic Top-k Mask，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/11_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/11_DeepKD_A_Deeply_Decoupled_and_Denoised_Knowledge_Distillation_Trainer_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-12"
+    data-edit-key="local||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">12 <span>Local Edits</span></div>
+          <h3>DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram</h3>
+          <p>将左上角标题 DyFlow framework 改为 Dynamic Workflow Framework，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/12_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/12_DyFlow_Dynamic_Workflow_Framework_for_Agentic_Reasoning_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-13"
+    data-edit-key="local||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">13 <span>Local Edits</span></div>
+          <h3>Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram</h3>
+          <p>将上部 (a) GIBMS 区域的浅蓝色背景改为浅黄色（#FFF9C4），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/13_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph_Autoencoders_diagra/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/13_Dynamic_and_Chemical_Constraints_to_Enhance_the_Molecular_Masked_Graph_Autoencoders_diagra/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-14"
+    data-edit-key="local||A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">14 <span>Local Edits</span></div>
+          <h3>A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram</h3>
+          <p>将顶部红色 Category Diversity (CD) 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/14_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean-label_Backdoor_Atta/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/14_A_Set_of_Generalized_Components_to_Achieve_Effective_Poison-only_Clean-label_Backdoor_Atta/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-15"
+    data-edit-key="local||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">15 <span>Local Edits</span></div>
+          <h3>CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram</h3>
+          <p>将中间 Generated Models 虚线框内的背景区域改为浅黄色（#FFF9C4），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/15_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_Reward_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/15_CAD-Coder_Text-to-CAD_Generation_with_Chain-of-Thought_and_Geometric_Reward_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-16"
+    data-edit-key="local||CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">16 <span>Local Edits</span></div>
+          <h3>CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram</h3>
+          <p>将右侧输出模块下方的 3-D Model 改为 Final 3-D Model，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/16_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinforcement_Fine-Tuning/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/16_CReFT-CAD_Boosting_Orthographic_Projection_Reasoning_for_CAD_via_Reinforcement_Fine-Tuning/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-17"
+    data-edit-key="local||DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">17 <span>Local Edits</span></div>
+          <h3>DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram</h3>
+          <p>将上部 Dynamic Global Reward 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/17_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regressive_GRPO_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/17_DeepVideo-R1_Video_Reinforcement_Fine-Tuning_via_Difficulty-aware_Regressive_GRPO_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-18"
+    data-edit-key="local||Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">18 <span>Local Edits</span></div>
+          <h3>Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram</h3>
+          <p>在 (b) Urban Diffusion Transformer 中，删除 timestep t 与 Embedding layer 之间的连线，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/18_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/18_Diffusion_Transformers_as_Open-World_Spatiotemporal_Foundation_Models_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-19"
+    data-edit-key="local||Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">19 <span>Local Edits</span></div>
+          <h3>Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram</h3>
+          <p>删除 Inversion X N 模块下方的箭头，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/19_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Large_Scale_Diffusion_T/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/19_Enabling_Instructional_Image_Editing_with_In-Context_Generation_in_Large_Scale_Diffusion_T/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-20"
+    data-edit-key="local||Event-based HDR Structured Light_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="Event-based HDR Structured Light_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">20 <span>Local Edits</span></div>
+          <h3>Event-based HDR Structured Light_diagram</h3>
+          <p>将右侧蓝色 Cost Aggregation 模块的填充色改为亮黄色（#FFEB3B），其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/20_Event-based_HDR_Structured_Light_diagram/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/20_Event-based_HDR_Structured_Light_diagram/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  <section class="case editCard"
+    id="case-local-21"
+    data-edit-key="local||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8"
+    data-edit-group="local"
+    data-edit-group-label="Local Edits"
+    data-image="EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram"
+    data-model="anthropic/claude-opus-4.8"
+    data-model-label="claude-opus-4.8" data-default-status="success" data-default-reasons="[]">
+    <div class="caseHead">
+      <div class="caseHeadTop">
+        <div>
+          <div class="caseNo">21 <span>Local Edits</span></div>
+          <h3>EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram</h3>
+          <p>将右侧输出图块下方的 Gen Frames 改为 Generated Frames，其余元素保持不变。</p>
+        </div>
+        <div class="caseActions">
+          <div class="editControls">
+            <div class="markButtons">
+              <button type="button" data-edit-mark="success" active>Success</button>
+              <button type="button" data-edit-mark="fail">Fail</button>
+              <button type="button" data-edit-mark="clear">Clear</button>
+              <span class="editState">Success</span>
+            </div>
+            <div class="failReasons" aria-label="Fail reasons">
+              <label><input type="checkbox" value="not_follow_instruction" disabled>没有 follow 指令</label><label><input type="checkbox" value="not_preserve_original" disabled>没有保留原图</label><label><input type="checkbox" value="parse_failure" disabled>解析失败</label>
+            </div>
+          </div>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <article class="card">
+        <div class="label">Input SVG<span>claude-opus-4.8</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/21_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Multi-Character_Animati/claude-opus-4.8_input.svg?v=1782355036" alt="claude-opus-4.8 input" loading="lazy"></div>
+      </article>
+      <article class="card outputCard">
+        <div class="label">Output SVG<span>valid svg</span></div>
+        <div class="cardMedia"><img src="../../assets/editing/local/21_EverybodyDance_Bipartite_Graph___Based_Identity_Correspondence_for_Multi-Character_Animati/claude-opus-4.8.svg?v=1782355036" alt="claude-opus-4.8 output" loading="lazy"></div>
+      </article>
+    </div>
+  </section>
+  </section>
+</main>
+<script>
+(() => {
+  const READONLY = false;
+  if (READONLY) return;
+  const STORE_KEY = "editing_compare_marks_v2";
+  const MODEL = "anthropic/claude-opus-4.8";
+  const MODEL_LABEL = "claude-opus-4.8";
+  const BAKED_MARKS = {"layout||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["parse_failure"], "group": "layout", "groupLabel": "Layout Edits", "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["parse_failure"], "group": "local", "groupLabel": "Local Edits", "image": "Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner A Case Study with In-Context Representation Learning_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_follow_instruction"], "group": "layout", "groupLabel": "Layout Edits", "image": "05_Truth_over_Tricks_Measuring_and_Mitigating_Shortcut_Learning_in_Misinformation_Detection_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "Chain-of-Retrieval Augmented Generation_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "d794c629fb49374a8f643e359f9f43a7", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||sample_figure||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "sample_figure", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "AI Debate Aids Assessment of Controversial Claims_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_follow_instruction"], "group": "layout", "groupLabel": "Layout Edits", "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_follow_instruction"], "group": "layout", "groupLabel": "Layout Edits", "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_follow_instruction"], "group": "layout", "groupLabel": "Layout Edits", "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_follow_instruction"], "group": "layout", "groupLabel": "Layout Edits", "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Calibrating Translation Decoding with Quality Estimation on LLMs_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Calibrating Translation Decoding with Quality Estimation on LLMs_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Chain-of-Retrieval Augmented Generation_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Chain-of-Retrieval Augmented Generation_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||d794c629fb49374a8f643e359f9f43a7||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "d794c629fb49374a8f643e359f9f43a7", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "ElasticMM Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "3D-Prover Diversity Driven Theorem Proving With Determinantal Point Processes_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "A Minimalistic Unified Framework for Incremental Learning across Image Restoration Tasks_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||AI Debate Aids Assessment of Controversial Claims_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "AI Debate Aids Assessment of Controversial Claims_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Alleviating Hallucinations in Large Language Models through Multi-Model Contrastive Decoding and Dynamic Hallucination Detection_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Beyond Attention or Similarity Maximizing Conditional Diversity for Token Pruning in MLLMs_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "DeepKD A Deeply Decoupled and Denoised Knowledge Distillation Trainer_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "DyFlow Dynamic Workflow Framework for Agentic Reasoning_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Dynamic and Chemical Constraints to Enhance the Molecular Masked Graph Autoencoders_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "A Set of Generalized Components to Achieve Effective Poison-only Clean-label Backdoor Attacks with Collaborative Sample Selection and Triggers_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "CAD-Coder Text-to-CAD Generation with Chain-of-Thought and Geometric Reward_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "CReFT-CAD Boosting Orthographic Projection Reasoning for CAD via Reinforcement Fine-Tuning_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "DeepVideo-R1 Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Diffusion Transformers as Open-World Spatiotemporal Foundation Models_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||Event-based HDR Structured Light_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "Event-based HDR Structured Light_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "local||EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "local", "groupLabel": "Local Edits", "image": "EverybodyDance Bipartite Graphâ€“Based Identity Correspondence for Multi-Character Animation_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "Vgent Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram||anthropic/claude-opus-4.8": {"status": "fail", "reasons": ["not_preserve_original"], "group": "layout", "groupLabel": "Layout Edits", "image": "Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}, "layout||Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram||anthropic/claude-opus-4.8": {"status": "success", "reasons": [], "group": "layout", "groupLabel": "Layout Edits", "image": "Training Language Models to Generate Quality Code with Program Analysis Feedback_diagram", "model": "anthropic/claude-opus-4.8", "modelLabel": "claude-opus-4.8"}};
+  const REASON_LABELS = {"not_follow_instruction": "没有 follow 指令", "not_preserve_original": "没有保留原图", "parse_failure": "解析失败"};
+  const cards = Array.from(document.querySelectorAll(".editCard[data-edit-key]"));
+  const summaryEl = document.getElementById("editSummary");
+  const reasonEl = document.getElementById("reasonSummary");
+  const readStore = () => {
+    try {
+      const local = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+      return { ...local, ...BAKED_MARKS };
+    }
+    catch (_) { return { ...BAKED_MARKS }; }
+  };
+  const writeStore = (store) => localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  const defaultEntry = (card) => {
+    const status = card.dataset.defaultStatus || "";
+    if (status !== "success" && status !== "fail") return null;
+    let reasons = [];
+    try { reasons = JSON.parse(card.dataset.defaultReasons || "[]"); }
+    catch (_) { reasons = []; }
+    return {
+      status,
+      reasons: status === "fail" ? reasons : [],
+      group: card.dataset.editGroup,
+      groupLabel: card.dataset.editGroupLabel,
+      image: card.dataset.image,
+      model: MODEL,
+      modelLabel: MODEL_LABEL
+    };
+  };
+  const checkedReasons = (card) =>
+    Array.from(card.querySelectorAll(".failReasons input:checked")).map((input) => input.value);
+  const setReasons = (card, reasons, enabled) => {
+    const selected = new Set(Array.isArray(reasons) ? reasons : []);
+    card.querySelectorAll(".failReasons input").forEach((input) => {
+      input.checked = selected.has(input.value);
+      input.disabled = !enabled;
+    });
+  };
+  const entryFor = (card, status) => ({
+    status,
+    reasons: status === "fail" ? checkedReasons(card) : [],
+    group: card.dataset.editGroup,
+    groupLabel: card.dataset.editGroupLabel,
+    image: card.dataset.image,
+    model: MODEL,
+    modelLabel: MODEL_LABEL
+  });
+  const applyMark = (card, rawEntry) => {
+    const entry = rawEntry && typeof rawEntry === "object" ? rawEntry : {};
+    const status = entry.status === "success" || entry.status === "fail" ? entry.status : "";
+    card.dataset.editValue = status;
+    card.querySelectorAll("[data-edit-mark]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.editMark === status);
+    });
+    const state = card.querySelector(".editState");
+    if (state) state.textContent = status === "success" ? "Success" : status === "fail" ? "Fail" : "Unmarked";
+    setReasons(card, entry.reasons, status === "fail");
+  };
+  const buildSummary = () => {
+    const summary = {
+      total: cards.length,
+      success: 0,
+      fail: 0,
+      unmarked: 0,
+      reasons: Object.fromEntries(Object.keys(REASON_LABELS).map((key) => [key, 0])),
+      failWithoutReason: 0
+    };
+    for (const card of cards) {
+      const status = card.dataset.editValue || "";
+      if (status === "success") {
+        summary.success += 1;
+      } else if (status === "fail") {
+        summary.fail += 1;
+        const reasons = checkedReasons(card);
+        if (!reasons.length) summary.failWithoutReason += 1;
+        for (const reason of reasons) {
+          summary.reasons[reason] = (summary.reasons[reason] || 0) + 1;
+        }
+      } else {
+        summary.unmarked += 1;
+      }
+    }
+    return summary;
+  };
+  const updateSummary = () => {
+    const summary = buildSummary();
+    summaryEl.textContent = `${summary.success} success / ${summary.fail} fail / ${summary.unmarked} unmarked`;
+    const reasonParts = Object.entries(summary.reasons)
+      .filter(([, count]) => count)
+      .map(([key, count]) => `${REASON_LABELS[key] || key} ${count}`);
+    if (summary.failWithoutReason) reasonParts.push(`未标注失败原因 ${summary.failWithoutReason}`);
+    reasonEl.textContent = `failure reasons: ${reasonParts.length ? reasonParts.join(' / ') : 'none'}`;
+    return summary;
+  };
+  const saveCard = (card, status) => {
+    const store = readStore();
+    const key = card.dataset.editKey;
+    if (status !== "success" && status !== "fail") {
+      delete store[key];
+      writeStore(store);
+      applyMark(card, null);
+      updateSummary();
+      return;
+    }
+    store[key] = entryFor(card, status);
+    writeStore(store);
+    applyMark(card, store[key]);
+    updateSummary();
+  };
+  const hydrate = () => {
+    const store = readStore();
+    writeStore(store);
+    for (const card of cards) {
+      const saved = store[card.dataset.editKey];
+      applyMark(card, saved || defaultEntry(card));
+    }
+    updateSummary();
+  };
+  for (const card of cards) {
+    card.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-edit-mark]");
+      if (!button) return;
+      const mark = button.dataset.editMark;
+      saveCard(card, mark === "clear" ? "" : mark);
+    });
+    card.querySelectorAll(".failReasons input").forEach((input) => {
+      input.addEventListener("change", () => {
+        const store = readStore();
+        store[card.dataset.editKey] = entryFor(card, "fail");
+        writeStore(store);
+        applyMark(card, store[card.dataset.editKey]);
+        updateSummary();
+      });
+    });
+  }
+  window.addEventListener("storage", (event) => {
+    if (event.key === STORE_KEY) hydrate();
+  });
+  window.addEventListener("pageshow", hydrate);
+  window.addEventListener("focus", hydrate);
+  const exportEdit = document.getElementById("exportEdit");
+  if (exportEdit) exportEdit.addEventListener("click", () => {
+    const pageMarks = {};
+    for (const card of cards) {
+      const key = card.dataset.editKey;
+      const status = card.dataset.editValue || "";
+      if (!status) continue;
+      pageMarks[key] = entryFor(card, status);
+    }
+    const payload = {
+      model: MODEL,
+      exportedAt: new Date().toISOString(),
+      marks: pageMarks
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `${MODEL.replaceAll("/", "_").replaceAll(".", "-")}_editing_marks.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  const loadEditDraft = document.getElementById("loadEditDraft");
+  if (loadEditDraft) loadEditDraft.addEventListener("click", () => {
+    const store = readStore();
+    for (const card of cards) {
+      const draft = defaultEntry(card);
+      if (!draft) continue;
+      store[card.dataset.editKey] = draft;
+      applyMark(card, draft);
+    }
+    writeStore(store);
+    updateSummary();
+  });
+  const clearPageMarks = document.getElementById("clearPageMarks");
+  if (clearPageMarks) clearPageMarks.addEventListener("click", () => {
+    if (!confirm("Clear all editing marks on this model page?")) return;
+    const store = readStore();
+    for (const card of cards) delete store[card.dataset.editKey];
+    writeStore(store);
+    for (const card of cards) applyMark(card, null);
+    updateSummary();
+  });
+  hydrate();
+})();
+</script>
+</body>
+</html>

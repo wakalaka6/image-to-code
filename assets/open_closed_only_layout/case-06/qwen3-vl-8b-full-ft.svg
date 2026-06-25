@@ -1,0 +1,506 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 7.0 1776.0 851.0" style="font-family: Arial, Helvetica, sans-serif; background-color: white;">
+
+  <!-- Definitions for reusable markers and gradients -->
+  <defs>
+    <!-- Arrowhead for thin lines -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    
+    <!-- Thick Grey Arrow Marker -->
+    <marker id="thickArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 L3,6 Z" fill="#666666" />
+    </marker>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ================= SECTION A (TOP) ================= -->
+
+  <!-- 1. Input Block -->
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="370" height="310" rx="30" fill="#F2F2F2" stroke="#808080" stroke-width="2"/>
+    
+    <!-- Trajectories -->
+    <!-- Black -->
+    <path d="M 20,150 Q 100,50 160,30" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="20" y1="150" x2="15" y2="155" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/> <!-- Start arrow manual -->
+    
+    <!-- Teal -->
+    <path d="M 30,160 Q 110,60 180,70" fill="none" stroke="#8AB6B0" stroke-width="4" opacity="0.8"/>
+    <circle cx="30" cy="160" r="10" fill="#8AB6B0" opacity="0.8"/>
+    <circle cx="110" cy="100" r="10" fill="#8AB6B0" opacity="0.8"/>
+    <circle cx="180" cy="70" r="10" fill="#8AB6B0" opacity="0.8"/>
+
+    <!-- Red -->
+    <path d="M 40,170 Q 130,70 200,90" fill="none" stroke="#D98A82" stroke-width="4" opacity="0.8"/>
+    <circle cx="40" cy="170" r="10" fill="#D98A82" opacity="0.8"/>
+    <circle cx="110" cy="115" r="10" fill="#D98A82" opacity="0.8"/>
+    <circle cx="180" cy="90" r="10" fill="#D98A82" opacity="0.8"/>
+
+    <!-- Purple -->
+    <path d="M 270,190 C 250,150 240,130 270,110 C 280,90 300,80 360,120" fill="none" stroke="#B592C9" stroke-width="4" opacity="0.8"/>
+    <circle cx="270" cy="190" r="10" fill="#B592C9" opacity="0.8"/>
+    <circle cx="295" cy="160" r="10" fill="#B592C9" opacity="0.8"/>
+    <circle cx="325" cy="145" r="10" fill="#B592C9" opacity="0.8"/>
+    <circle cx="360" cy="120" r="10" fill="#B592C9" opacity="0.8"/>
+
+    <!-- Scaling Arrows -->
+    <line x1="160" y1="30" x2="220" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="200" y1="70" x2="240" y2="50" stroke="#D98A82" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Rotation Icon -->
+    <g transform="translate(180, 180)">
+      <path d="M -60,0 Q -30,-40 30,-20" fill="none" stroke="#8AB6B0" stroke-width="4"/>
+      <circle cx="-60" cy="0" r="10" fill="#8AB6B0" opacity="0.8"/>
+      <circle cx="-15" cy="-30" r="10" fill="#D98A82" opacity="0.8"/>
+      <circle cx="30" cy="-20" r="10" fill="#D98A82" opacity="0.8"/>
+      <path d="M 0,40 A 40,40 0 1,0 40,0" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Translation Icon -->
+    <g transform="translate(40, 230)">
+      <path d="M 0,50 Q 50,-20 100,0" fill="none" stroke="#8AB6B0" stroke-width="4"/>
+      <circle cx="0" cy="50" r="10" fill="#8AB6B0" opacity="0.8"/>
+      <circle cx="50" cy="15" r="10" fill="#D98A82" opacity="0.8"/>
+      <circle cx="100" cy="0" r="10" fill="#D98A82" opacity="0.8"/>
+      <path d="M 0,0 Q 50,-60 100,-10" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- Labels -->
+    <text x="185" y="130" text-anchor="middle" font-size="36" fill="black">Trajectory</text>
+    <text x="185" y="170" text-anchor="middle" font-size="36" fill="black">Scaling</text>
+    <text x="185" y="220" text-anchor="middle" font-size="36" fill="black">Rotation</text>
+    <text x="310" y="220" text-anchor="middle" font-size="36" fill="black">Translation</text>
+    <text x="185" y="300" text-anchor="middle" font-size="40" fill="black">Augmented Trajectories</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="395" y1="190" x2="435" y2="190" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+
+  <!-- 2. Feature Extraction Module -->
+  <g transform="translate(430, 15)">
+    <rect x="0" y="0" width="320" height="310" rx="30" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+    <text x="160" y="50" text-anchor="middle" font-size="44" fill="black">Feature Extraction</text>
+    <text x="160" y="80" text-anchor="middle" font-size="44" fill="black">module</text>
+
+    <!-- Inner Box -->
+    <rect x="20" y="95" width="280" height="270" rx="30" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+    <text x="160" y="130" text-anchor="middle" font-size="38" fill="black">Trajectory Feature</text>
+    <text x="160" y="170" text-anchor="middle" font-size="38" fill="black">Extraction</text>
+
+    <!-- Sub Boxes -->
+    <g transform="translate(35, 155)">
+      <rect x="0" y="0" width="250" height="70" rx="15" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+      <text x="125" y="45" text-anchor="middle" font-size="38" fill="black">Motion Velocity</text>
+    </g>
+    <g transform="translate(35, 190)">
+      <rect x="0" y="0" width="250" height="70" rx="15" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+      <text x="125" y="45" text-anchor="middle" font-size="38" fill="black">Spatial Density</text>
+    </g>
+    <g transform="translate(35, 230)">
+      <rect x="0" y="0" width="250" height="90" rx="15" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+      <text x="125" y="35" text-anchor="middle" font-size="38" fill="black">Interaction</text>
+      <text x="125" y="75" text-anchor="middle" font-size="38" fill="black">Patterns</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="700" y1="190" x2="740" y2="190" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+
+  <!-- 3. Context Encoder -->
+  <g transform="translate(740, 105)">
+    <!-- Shadow Rect -->
+    <rect x="10" y="10" width="260" height="200" rx="30" fill="#AAAAAA" opacity="0.5"/>
+    <!-- Main Rect -->
+    <rect x="0" y="0" width="260" height="200" rx="30" fill="#D4BFE6" stroke="#9673A6" stroke-width="2"/>
+    <text x="130" y="50" text-anchor="middle" font-size="44" fill="black">Context</text>
+    <text x="130" y="90" text-anchor="middle" font-size="44" fill="black">Encoder</text>
+    
+    <!-- Matrix -->
+    <g transform="translate(45, 80)">
+      <rect x="0" y="0" width="170" height="130" fill="white" stroke="#666666" stroke-width="1"/>
+      <!-- Grid Lines -->
+      <path d="M0,25 h170 M0,50 h170 M0,75 h170 M0,100 h170" stroke="#CCCCCC" stroke-width="1"/>
+      <path d="M25,0 v130 M50,0 v130 M75,0 v130 M100,0 v130 M125,0 v130" stroke="#CCCCCC" stroke-width="1"/>
+      <!-- Random colored cells -->
+      <rect x="0" y="0" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="25" y="0" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+      <rect x="50" y="25" width="25" height="25" fill="#D98A82" opacity="0.8"/>
+      <rect x="75" y="0" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      <rect x="100" y="50" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="125" y="25" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      <rect x="150" y="0" width="20" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="25" y="50" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      <rect x="50" y="75" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="75" y="50" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+      <rect x="100" y="75" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      <rect x="125" y="100" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+      <rect x="150" y="75" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="0" y="50" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      <rect x="50" y="100" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+      <rect x="100" y="100" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+      <rect x="150" y="100" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="920" y1="190" x2="960" y2="190" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+
+  <!-- 4. SceneSelect Classifier -->
+  <g transform="translate(965, 105)">
+    <rect x="0" y="0" width="250" height="180" rx="30" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="2"/>
+    <text x="125" y="50" text-anchor="middle" font-size="44" fill="black">SceneSelect</text>
+    <text x="125" y="90" text-anchor="middle" font-size="44" fill="black">Classifier</text>
+    
+    <!-- Inner Box -->
+    <rect x="40" y="80" width="210" height="120" fill="#808080" stroke="black" stroke-width="1"/>
+    <text x="145" y="140" text-anchor="middle" font-size="40" font-weight="bold" fill="white">&lt;AF&gt;04</text>
+  </g>
+
+  <!-- 5. Scheduling Policy (Floating) -->
+  <g transform="translate(970, 275)">
+    <rect x="0" y="0" width="260" height="110" rx="30" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="130" y="50" text-anchor="middle" font-size="44" fill="black">Scheduling</text>
+    <text x="130" y="90" text-anchor="middle" font-size="44" fill="black">Policy</text>
+    
+    <!-- Grid Icon -->
+    <g transform="translate(170, 15)">
+      <rect x="0" y="0" width="100" height="80" fill="#FFF2CC" stroke="black" stroke-width="2"/>
+      <line x1="0" y1="26" x2="100" y2="26" stroke="black" stroke-width="2"/>
+      <line x1="0" y1="53" x2="100" y2="53" stroke="black" stroke-width="2"/>
+      <line x1="25" y1="0" x2="25" y2="80" stroke="black" stroke-width="2"/>
+      <line x1="50" y1="0" x2="50" y2="80" stroke="black" stroke-width="2"/>
+      <line x1="75" y1="0" x2="75" y2="80" stroke="black" stroke-width="2"/>
+      <!-- Fill some cells -->
+      <rect x="0" y="0" width="25" height="26" fill="#D6B656" opacity="0.5"/>
+      <rect x="25" y="26" width="25" height="27" fill="#D6B656" opacity="0.5"/>
+      <rect x="50" y="53" width="25" height="27" fill="#D6B656" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="1150" y1="190" x2="1190" y2="190" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+
+  <!-- 6. Scene-Model Pool -->
+  <g transform="translate(1195, 15)">
+    <rect x="0" y="0" width="310" height="310" rx="30" fill="#FDE2C3" stroke="#D79B45" stroke-width="2"/>
+    <text x="155" y="50" text-anchor="middle" font-size="44" fill="black">Scene-Model Pool</text>
+
+    <!-- Expert 1 -->
+    <g transform="translate(100, 80)">
+      <rect x="0" y="0" width="170" height="60" fill="#808080" stroke="black" stroke-width="1"/>
+      <text x="85" y="40" text-anchor="middle" font-size="30" font-weight="bold" fill="white">&lt;AF&gt;02</text>
+      <text x="85" y="90" text-anchor="middle" font-size="40" fill="black">Expert 1</text>
+    </g>
+
+    <!-- Expert 2 -->
+    <g transform="translate(100, 160)">
+      <rect x="0" y="0" width="160" height="100" fill="#808080" stroke="black" stroke-width="1"/>
+      <text x="80" y="60" text-anchor="middle" font-size="30" font-weight="bold" fill="white">&lt;AF&gt;03</text>
+      <text x="80" y="130" text-anchor="middle" font-size="40" fill="black">Expert 2</text>
+    </g>
+
+    <!-- Expert 3 -->
+    <g transform="translate(100, 240)">
+      <rect x="0" y="0" width="170" height="80" fill="#808080" stroke="black" stroke-width="1"/>
+      <text x="85" y="50" text-anchor="middle" font-size="30" font-weight="bold" fill="white">&lt;AF&gt;01</text>
+      <text x="85" y="110" text-anchor="middle" font-size="40" fill="black">Expert 3</text>
+    </g>
+  </g>
+
+  <!-- 7. Output -->
+  <line x1="1515" y1="190" x2="1555" y2="190" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+  <g transform="translate(1560, 160)">
+    <path d="M 0,100 Q 50,50 100,80" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="10,5"/>
+    <path d="M 100,80 L 110,70" stroke="#666666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M 0,100 L 0,110" stroke="#666666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M 100,80 Q 150,50 160,20" fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="10,5"/>
+    <path d="M 160,20 L 170,10" stroke="#666666" stroke-width="3" marker-end="url(#arrowhead)"/>
+    
+    <text x="80" y="130" text-anchor="middle" font-size="40" fill="black">Predicted</text>
+    <text x="80" y="170" text-anchor="middle" font-size="40" fill="black">Trajectory</text>
+  </g>
+
+  <!-- ================= DIVIDER ================= -->
+  <line x1="10" y1="360" x2="1590" y2="360" stroke="black" stroke-width="3" stroke-dasharray="20,10"/>
+
+  <!-- ================= SECTION B (BOTTOM) ================= -->
+
+  <!-- Label (a) -->
+  <text x="15" y="400" font-size="60" font-weight="bold" fill="black">(a)</text>
+
+  <!-- Scene Context Encoder Container -->
+  <g transform="translate(10, 410)">
+    <rect x="0" y="0" width="850" height="270" rx="30" fill="#EADDF5" stroke="#9673A6" stroke-width="2"/>
+    <text x="425" y="50" text-anchor="middle" font-size="48" fill="black">Scene Context Encoder</text>
+
+    <!-- 1. Raw Features -->
+    <g transform="translate(20, 80)">
+      <text x="65" y="40" text-anchor="middle" font-size="44" fill="black">Raw</text>
+      <text x="65" y="90" text-anchor="middle" font-size="44" fill="black">Features</text>
+      
+      <rect x="10" y="120" width="160" height="35" fill="#8AB6B0" stroke="black" stroke-width="1"/>
+      <rect x="10" y="165" width="160" height="35" fill="#D98A82" stroke="black" stroke-width="1"/>
+      <rect x="10" y="210" width="160" height="35" fill="#D4B86A" stroke="black" stroke-width="1"/>
+      
+      <text x="65" y="280" text-anchor="middle" font-size="36" fill="black">Extracted &amp;</text>
+      <text x="65" y="320" text-anchor="middle" font-size="36" fill="black">kinematic</text>
+      <text x="65" y="360" text-anchor="middle" font-size="36" fill="black">feature vectors</text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="130" y1="180" x2="170" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 2. Random Projection -->
+    <g transform="translate(160, 50)">
+      <rect x="0" y="0" width="210" height="240" rx="30" fill="#EADDF5" stroke="#9673A6" stroke-width="2"/>
+      <text x="105" y="50" text-anchor="middle" font-size="44" fill="black">Random</text>
+      <text x="105" y="100" text-anchor="middle" font-size="44" fill="black">Projection</text>
+      
+      <!-- Matrix Equation -->
+      <g transform="translate(20, 130)">
+        <!-- Matrix 1 -->
+        <rect x="0" y="0" width="110" height="80" fill="white" stroke="black" stroke-width="1"/>
+        <path d="M0,20 h110 M0,40 h110 M0,60 h110 M22,0 v80 M44,0 v80 M66,0 v80 M88,0 v80" stroke="black" stroke-width="1"/>
+        <rect x="0" y="0" width="22" height="20" fill="#B592C9" opacity="0.6"/>
+        <rect x="22" y="20" width="22" height="20" fill="#8AB6B0" opacity="0.6"/>
+        <rect x="44" y="40" width="22" height="20" fill="#B592C9" opacity="0.6"/>
+        <rect x="66" y="60" width="22" height="20" fill="#8AB6B0" opacity="0.6"/>
+        
+        <text x="125" y="50" font-size="40" fill="black">×</text>
+        
+        <!-- Matrix 2 -->
+        <g transform="translate(140, 0)">
+          <rect x="0" y="0" width="100" height="80" fill="white" stroke="black" stroke-width="1"/>
+          <path d="M0,20 h100 M0,40 h100 M0,60 h100 M20,0 v80 M40,0 v80 M60,0 v80 M80,0 v80" stroke="black" stroke-width="1"/>
+          <rect x="0" y="0" width="20" height="20" fill="#D4B86A" opacity="0.6"/>
+          <rect x="20" y="0" width="20" height="20" fill="#D98A82" opacity="0.6"/>
+          <rect x="40" y="20" width="20" height="20" fill="#D4B86A" opacity="0.6"/>
+          <rect x="60" y="40" width="20" height="20" fill="#B592C9" opacity="0.6"/>
+          <rect x="80" y="60" width="20" height="20" fill="#D98A82" opacity="0.6"/>
+        </g>
+      </g>
+      
+      <text x="105" y="300" text-anchor="middle" font-size="36" fill="black">Random</text>
+      <text x="105" y="340" text-anchor="middle" font-size="36" fill="black">matrix</text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="320" y1="180" x2="360" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 3. Sparsification -->
+    <g transform="translate(360, 80)">
+      <text x="0" y="40" font-size="44" fill="black">Sparsification</text>
+      
+      <g transform="translate(10, 100)">
+        <rect x="0" y="0" width="170" height="130" fill="white" stroke="black" stroke-width="1"/>
+        <!-- Grid Lines -->
+        <path d="M0,25 h170 M0,50 h170 M0,75 h170 M0,100 h170" stroke="black" stroke-width="1"/>
+        <path d="M25,0 v130 M50,0 v130 M75,0 v130 M100,0 v130 M125,0 v130" stroke="black" stroke-width="1"/>
+        
+        <!-- Sparse Fills -->
+        <rect x="0" y="0" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+        <rect x="25" y="25" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+        <rect x="75" y="75" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+        <rect x="125" y="100" width="25" height="25" fill="#8AB6B0" opacity="0.8"/>
+        <rect x="150" y="100" width="25" height="25" fill="#B592C9" opacity="0.8"/>
+        <rect x="150" y="125" width="25" height="25" fill="#D5E8D4" opacity="0.8"/>
+      </g>
+      
+      <text x="95" y="270" text-anchor="middle" font-size="38" fill="black">Sparse high-</text>
+      <text x="95" y="310" text-anchor="middle" font-size="38" fill="black">dimensional</text>
+      <text x="95" y="350" text-anchor="middle" font-size="38" fill="black">representation</text>
+    </g>
+
+    <!-- Arrow -->
+    <line x3="320" y1="180" x2="360" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 4. Clustering -->
+    <g transform="translate(530, 50)">
+      <rect x="0" y="0" width="220" height="240" rx="20" fill="#EADDF5" stroke="#9673A6" stroke-width="2"/>
+      <text x="110" y="50" text-anchor="middle" font-size="44" fill="black">Clustering</text>
+      
+      <!-- Axes -->
+      <g transform="translate(20, 220)">
+        <line x1="0" y1="0" x2="0" y2="-180" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+      </g>
+      
+      <!-- Blobs -->
+      <g transform="translate(20, 100)">
+        <!-- Red Blob -->
+        <ellipse cx="60" cy="50" rx="50" ry="25" fill="#F8CECC" stroke="#D98A82" stroke-width="2" transform="rotate(-45, 60, 50)"/>
+        <g fill="#D98A82">
+            <circle cx="40" cy="40" r="5"/> <circle cx="50" cy="30" r="5"/> <circle cx="60" cy="20" r="5"/>
+            <circle cx="70" cy="30" r="5"/> <circle cx="80" cy="40" r="5"/> <circle cx="50" cy="50" r="5"/>
+            <circle cx="60" cy="60" r="5"/> <circle cx="70" cy="50" r="5"/> <circle cx="40" cy="60" r="5"/>
+            <circle cx="55" cy="45" r="5"/> <circle cx="65" cy="35" r="5"/> <circle cx="75" cy="45" r="5"/>
+        </g>
+        
+        <!-- Teal Blob -->
+        <ellipse cx="140" cy="50" rx="25" ry="50" fill="#D0E0E3" stroke="#8AB6B0" stroke-width="2" transform="rotate(10, 140, 50)"/>
+        <g fill="#8AB6B0">
+            <circle cx="130" cy="30" r="5"/> <circle cx="140" cy="20" r="5"/> <circle cx="150" cy="30" r="5"/>
+            <circle cx="120" cy="50" r="5"/> <circle cx="140" cy="50" r="5"/> <circle cx="160" cy="50" r="5"/>
+            <circle cx="130" cy="70" r="5"/> <circle cx="140" cy="80" r="5"/> <circle cx="150" cy="70" r="5"/>
+            <circle cx="140" cy="40" r="5"/> <circle cx="145" cy="60" r="5"/> <circle cx="135" cy="40" r="5"/>
+        </g>
+        
+        <!-- Purple Blob -->
+        <ellipse cx="50" cy="140" rx="40" ry="30" fill="#E1D5E7" stroke="#B592C9" stroke-width="2" transform="rotate(-10, 50, 140)"/>
+        <g fill="#B592C9">
+            <circle cx="30" cy="130" r="5"/> <circle cx="40" cy="140" r="5"/> <circle cx="50" cy="150" r="5"/>
+            <circle cx="60" cy="140" r="5"/> <circle cx="40" cy="150" r="5"/> <circle cx="30" cy="160" r="5"/>
+            <circle cx="45" cy="135" r="5"/> <circle cx="55" cy="145" r="5"/> <circle cx="40" cy="135" r="5"/>
+        </g>
+        
+        <!-- Yellow Blob -->
+        <ellipse cx="130" cy="140" rx="30" ry="40" fill="#FFE6CC" stroke="#D4B86A" stroke-width="2" transform="rotate(10, 130, 140)"/>
+        <g fill="#D4B86A">
+            <circle cx="120" cy="120" r="5"/> <circle cx="130" cy="110" r="5"/> <circle cx="140" cy="120" r="5"/>
+            <circle cx="110" cy="140" r="5"/> <circle cx="130" cy="140" r="5"/> <circle cx="150" cy="140" r="5"/>
+            <circle cx="120" cy="160" r="5"/> <circle cx="130" cy="150" r="5"/> <circle cx="140" cy="160" r="5"/>
+            <circle cx="130" cy="130" r="5"/> <circle cx="125" cy="145" r="5"/> <circle cx="135" cy="135" r="5"/>
+        </g>
+      </g>
+      
+      <text x="110" y="300" text-anchor="middle" font-size="36" fill="black">Unsupervised</text>
+      <text x="110" y="340" text-anchor="middle" font-size="36" fill="black">Clustering</text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="700" y1="180" x2="730" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 5. Pseudo-labels -->
+    <g transform="translate(730, 80)">
+      <text x="0" y="40" font-size="44" fill="black">Pseudo-</text>
+      <text x="20" y="90" font-size="44" fill="black">labels</text>
+      
+      <g transform="translate(-10, 110)">
+        <rect x="0" y="0" width="180" height="45" rx="15" fill="#D98A82" opacity="0.8"/>
+        <text x="90" y="32" text-anchor="middle" font-size="36" fill="black">Scene A</text>
+        
+        <rect x="0" y="55" width="180" height="45" rx="15" fill="#8AB6B0" opacity="0.8"/>
+        <text x="90" y="87" text-anchor="middle" font-size="36" fill="black">Scene B</text>
+        
+        <rect x="0" y="110" width="180" height="45" rx="15" fill="#D4B86A" opacity="0.8"/>
+        <text x="90" y="142" text-anchor="middle" font-size="36" fill="black">Scene C</text>
+      </g>
+      
+      <text x="80" y="290" text-anchor="middle" font-size="36" fill="black">Pseudo-labels</text>
+      <text x="80" y="330" text-anchor="middle" font-size="36" fill="black">(Scene Categories)</text>
+    </g>
+  </g>
+
+  <!-- Arrow connecting (a) to (b) -->
+  <line x1="860" y1="580" x2="900" y2="580" stroke="#666666" stroke-width="5" marker-end="url(#thickArrow)"/>
+
+  <!-- Label (b) -->
+  <text x="890" y="400" font-size="60" font-weight="bold" fill="black">(b)</text>
+
+  <!-- SceneSelect Classifier Container -->
+  <g transform="translate(890, 410)">
+    <rect x="0" y="0" width="700" height="270" rx="30" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="2"/>
+    <text x="350" y="50" text-anchor="middle" font-size="48" fill="black">SceneSelect Classifier</text>
+
+    <!-- 1. Input -->
+    <g transform="translate(20, 80)">
+      <text x="0" y="40" font-size="44" fill="black">Input</text>
+      <text x="0" y="150" font-size="40" fill="black">Pseudo-</text>
+      <text x="20" y="190" font-size="40" fill="black">labels</text>
+      <text x="0" y="230" font-size="40" fill="black">+ Features</text>
+      
+      <line x1="120" y1="170" x2="160" y2="170" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+    </g>
+
+    <!-- 2. Additive Tree -->
+    <g transform="translate(180, 80)">
+      <text x="100" y="40" text-anchor="middle" font-size="44" fill="black">Additive Tree-based</text>
+      <text x="100" y="90" text-anchor="middle" font-size="44" fill="black">Classifier</text>
+      
+      <g transform="translate(0, 110)">
+        <!-- Edges -->
+        <line x1="100" y1="20" x2="40" y2="90" stroke="black" stroke-width="2"/>
+        <line x1="100" y1="20" x2="160" y2="90" stroke="black" stroke-width="2"/>
+        <line x1="40" y1="90" x2="0" y2="180" stroke="black" stroke-width="2"/>
+        <line x1="40" y1="90" x2="80" y2="180" stroke="black" stroke-width="2"/>
+        <line x1="160" y1="90" x2="120" y2="180" stroke="black" stroke-width="2"/>
+        <line x1="160" y1="90" x2="200" y2="180" stroke="black" stroke-width="2"/>
+        
+        <!-- Nodes -->
+        <circle cx="100" cy="20" r="35" fill="#A9C4EB" stroke="#4C7094" stroke-width="3"/>
+        <circle cx="40" cy="90" r="35" fill="#A9C4EB" stroke="#4C7094" stroke-width="3"/>
+        <circle cx="160" cy="90" r="35" fill="#A9C4EB" stroke="#4C7094" stroke-width="3"/>
+        
+        <circle cx="0" cy="180" r="35" fill="#E6A69B" stroke="#4C7094" stroke-width="3"/>
+        <circle cx="80" cy="180" r="35" fill="#9AC7C9" stroke="#4C7094" stroke-width="3"/>
+        <circle cx="120" cy="180" r="35" fill="#E6C276" stroke="#4C7094" stroke-width="3"/>
+        <circle cx="200" cy="180" r="35" fill="#E6C276" stroke="#4C7094" stroke-width="3"/>
+      </g>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="420" y1="180" x2="460" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 3. Output -->
+    <g transform="translate(460, 80)">
+      <text x="0" y="40" font-size="44" fill="black">Scene</text>
+      <text x="-20" y="90" font-size="44" fill="black">Category</text>
+      <text x="0" y="140" font-size="44" fill="black">Output</text>
+      
+      <g transform="translate(-10, 110)">
+        <rect x="0" y="0" width="180" height="45" rx="15" fill="#E6A69B" opacity="0.8"/>
+        <text x="90" y="32" text-anchor="middle" font-size="36" fill="black">Scene A</text>
+        
+        <rect x="0" y="55" width="180" height="45" rx="15" fill="#9AC7C9" opacity="0.8"/>
+        <text x="90" y="87" text-anchor="middle" font-size="36" fill="black">Scene B</text>
+        
+        <rect x="0" y="110" width="180" height="45" rx="15" fill="#E6C276" opacity="0.8"/>
+        <text x="90" y="142" text-anchor="middle" font-size="36" fill="black">Scene C</text>
+      </g>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="580" y1="180" x2="620" y2="180" stroke="#666666" stroke-width="4" marker-end="url(#thickArrow)"/>
+
+    <!-- 4. Scheduling Policy Table -->
+    <g transform="translate(620, 80)">
+      <text x="0" y="40" font-size="44" fill="black">Scheduling</text>
+      <text x="-20" y="90" font-size="44" fill="black">Policy Table</text>
+      
+      <g transform="translate(-20, 100)">
+        <rect x="0" y="0" width="280" height="180" rx="30" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+        
+        <!-- Table -->
+        <g transform="translate(15, 30)">
+          <rect x="0" y="0" width="250" height="130" fill="white" stroke="black" stroke-width="2"/>
+          <line x1="0" y1="43" x2="250" y2="43" stroke="black" stroke-width="2"/>
+          <line x1="0" y1="86" x2="250" y2="86" stroke="black" stroke-width="2"/>
+          <line x1="125" y1="0" x2="125" y2="130" stroke="black" stroke-width="2"/>
+          
+          <text x="10" y="32" font-size="32" fill="black">Scene A</text>
+          <text x="135" y="32" font-size="32" fill="black">Expert 1</text>
+          
+          <text x="10" y="75" font-size="32" fill="black">Scene B</text>
+          <text x="135" y="75" font-size="32" fill="black">Expert 2</text>
+          
+          <text x="60" y="115" font-size="32" fill="black">...</text>
+          <text x="135" y="115" font-size="32" fill="black">Expert 3</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

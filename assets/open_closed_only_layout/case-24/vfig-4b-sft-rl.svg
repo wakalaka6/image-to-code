@@ -1,0 +1,519 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" style="font-family: 'Times New Roman', serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5B9BD5" />
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <marker id="arrow-pink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FF9999" />
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FF9933" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#CC99CC" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FF6666" />
+    </marker>
+    <marker id="arrow-black-dashed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    
+    <!-- Flame Icon -->
+    <g id="icon-flame">
+      <path d="M10,25 Q5,25 5,15 Q5,5 15,0 Q25,5 25,15 Q25,25 10,25 Z" fill="#FF4500" />
+      <path d="M10,25 Q15,20 15,10 Q15,0 25,5 Q35,10 35,20 Q35,25 10,25 Z" fill="#FF8C00" />
+    </g>
+    
+    <!-- Check Icon -->
+    <g id="icon-check">
+      <path d="M5,15 L10,20 L20,5" fill="none" stroke="#00B050" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- ================= SECTION A: TRAINING-FREE STRUCTURE ================= -->
+  <g id="section-a">
+    <!-- Main Container -->
+    <rect x="5" y="20" width="800" height="580" rx="20" fill="none" stroke="#5B9BD5" stroke-width="3" />
+    <rect x="190" y="30" width="600" height="60" rx="10" fill="#D6EAF8" />
+    <text x="200" y="65" font-size="50" fill="#5B9BD5">In-context Editing Framework based on T2I DiT</text>
+
+    <!-- Source Image -->
+    <g transform="translate(70, 80)">
+      <rect x="0" y="0" width="150" height="200" fill="#888" stroke="#5B9BD5" stroke-width="2"/>
+      <rect x="0" y="0" width="150" height="200" fill="url(#img-src)" opacity="0.5"/> <!-- Placeholder -->
+      <rect x="20" y="20" width="110" height="160" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="30" y="120" font-size="40" fill="white">&lt;AF&gt;11</text>
+      <text x="75" y="230" font-size="40" fill="#5B9BD5" text-anchor="middle">Source Image</text>
+    </g>
+
+    <!-- Inverted Noise -->
+    <g transform="translate(30, 330)">
+      <g fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2">
+        <rect x="0" y="0" width="40" height="40"/><rect x="45" y="0" width="40" height="40"/><rect x="90" y="0" width="40" height="40"/>
+        <rect x="0" y="45" width="40" height="40"/><rect x="45" y="45" width="40" height="40"/><rect x="90" y="45" width="40" height="40"/>
+        <rect x="0" y="90" width="40" height="40"/><rect x="45" y="90" width="40" height="40"/><rect x="90" y="90" width="40" height="40"/>
+        <rect x="0" y="135" width="40" height="40"/><rect x="45" y="135" width="40" height="40"/><rect x="90" y="135" width="40" height="40"/>
+      </g>
+      <text x="70" y="170" font-size="40" fill="#5B9BD5" text-anchor="middle">Inverted</text>
+      <text x="70" y="200" font-size="40" fill="#5B9BD5" text-anchor="middle">Noise</text>
+    </g>
+
+    <!-- Random Noise -->
+    <g transform="translate(150, 330)">
+      <g fill="#FFE0B2" stroke="#FF9933" stroke-width="2">
+        <rect x="0" y="0" width="40" height="40"/><rect x="45" y="0" width="40" height="40"/><rect x="90" y="0" width="40" height="40"/>
+        <rect x="0" y="45" width="40" height="40"/><rect x="45" y="45" width="40" height="40"/><rect x="90" y="45" width="40" height="40"/>
+        <rect x="0" y="90" width="40" height="40"/><rect x="45" y="90" width="40" height="40"/><rect x="90" y="90" width="40" height="40"/>
+        <rect x="0" y="135" width="40" height="40"/><rect x="45" y="135" width="40" height="40"/><rect x="90" y="135" width="40" height="40"/>
+      </g>
+      <text x="70" y="170" font-size="40" fill="#FF9933" text-anchor="middle">Random</text>
+      <text x="70" y="200" font-size="40" fill="#FF9933" text-anchor="middle">Noise</text>
+    </g>
+
+    <!-- Concat -->
+    <text x="120" y="390" font-size="40" fill="#5B9BD5" text-anchor="middle">+</text>
+    <text x="120" y="400" font-size="25" fill="#5B9BD5" text-anchor="middle">concat</text>
+
+    <!-- Feature Injection -->
+    <g transform="translate(300, 250)">
+      <text x="60" y="30" font-size="40" fill="#5B9BD5" text-anchor="middle">Feature</text>
+      <text x="60" y="60" font-size="40" fill="#5B9BD5" text-anchor="middle">Injection</text>
+      <path d="M70,70 L70,110 L85,110 L70,130 L70,160 L60,160 L60,130 L45,130 L60,110 L60,70 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+      
+      <!-- Grids -->
+      <g transform="translate(100, 20)" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2">
+        <rect x="0" y="0" width="40" height="40"/><rect x="45" y="0" width="40" height="40"/><rect x="90" y="0" width="40" height="40"/>
+        <rect x="0" y="45" width="40" height="40"/><rect x="45" y="45" width="40" height="40"/><rect x="90" y="45" width="40" height="40"/>
+        <rect x="0" y="90" width="40" height="40"/><rect x="45" y="90" width="40" height="40"/><rect x="90" y="90" width="40" height="40"/>
+        <rect x="0" y="135" width="40" height="40"/><rect x="45" y="135" width="40" height="40"/><rect x="90" y="135" width="40" height="40"/>
+      </g>
+      <path d="M150,70 L180,70 L180,80 L200,80 L200,90 L180,90 L180,100 L150,100 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+      
+      <g transform="translate(210, 20)" fill="#BDE0FE" stroke="#FF9933" stroke-width="2">
+        <rect x="0" y="0" width="40" height="40"/><rect x="45" y="0" width="40" height="40"/><rect x="90" y="0" width="40" height="40"/>
+        <rect x="0" y="45" width="40" height="40"/><rect x="45" y="45" width="40" height="40"/><rect x="90" y="45" width="40" height="40"/>
+        <rect x="0" y="90" width="40" height="40"/><rect x="45" y="90" width="40" height="40"/><rect x="90" y="90" width="40" height="40"/>
+        <rect x="0" y="135" width="40" height="40"/><rect x="45" y="135" width="40" height="40"/><rect x="90" y="135" width="40" height="40"/>
+      </g>
+    </g>
+
+    <!-- Inversion Block -->
+    <g transform="translate(260, 100)">
+      <rect x="0" y="0" width="300" height="150" rx="30" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="3"/>
+      <text x="150" y="80" font-size="40" fill="#5B9BD5" text-anchor="middle">T2I Diffusion Transformer</text>
+      <text x="150" y="180" font-size="40" fill="#5B9BD5" text-anchor="middle" font-style="italic">Inversion × N</text>
+    </g>
+
+    <!-- Inversion Output -->
+    <g transform="translate(650, 110)">
+      <g fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2">
+        <rect x="0" y="0" width="40" height="40"/><rect x="45" y="0" width="40" height="40"/><rect x="90" y="0" width="40" height="40"/>
+        <rect x="0" y="45" width="40" height="40"/><rect x="45" y="45" width="40" height="40"/><rect x="90" y="45" width="40" height="40"/>
+        <rect x="0" y="90" width="40" height="40"/><rect x="45" y="90" width="40" height="40"/><rect x="90" y="90" width="40" height="40"/>
+        <rect x="0" y="135" width="40" height="40"/><rect x="45" y="135" width="40" height="40"/><rect x="90" y="135" width="40" height="40"/>
+      </g>
+      <text x="70" y="180" font-size="40" fill="#5B9BD5" text-anchor="middle">Inverted Noise</text>
+    </g>
+
+    <!-- Denoising Block -->
+    <g transform="translate(260, 360)">
+      <rect x="0" y="0" width="300" height="150" rx="30" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="3"/>
+      <text x="150" y="80" font-size="40" fill="#5B9BD5" text-anchor="middle">T2I Diffusion Transformer</text>
+      <text x="150" y="180" font-size="40" fill="#5B9BD5" text-anchor="middle" font-style="italic">Denoising × N</text>
+    </g>
+
+    <!-- Denoising Input -->
+    <g transform="translate(600, 410)">
+      <rect x="0" y="0" width="70" height="70" fill="#888" stroke="black" stroke-width="2"/>
+      <rect x="70" y="0" width="70" height="70" fill="#888" stroke="black" stroke-width="2"/>
+      <text x="35" y="40" font-size="14" fill="white" text-anchor="middle">&lt;AF&gt;17</text>
+      <text x="105" y="40" font-size="14" fill="white" text-anchor="middle">&lt;AF&gt;14</text>
+      <text x="35" y="90" font-size="30" fill="#5B9BD5" text-anchor="middle">crop</text>
+    </g>
+
+    <!-- Feedback Loops -->
+    <path d="M600,150 L600,250 L260,250 L260,160" fill="none" stroke="#5B9BD5" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M600,360 L600,400 L260,400 L260,380" fill="none" stroke="#5B9BD5" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+    <!-- Generated Image -->
+    <g transform="translate(650, 310)">
+      <rect x="0" y="0" width="150" height="200" fill="#888" stroke="#5B9BD5" stroke-width="2"/>
+      <rect x="0" y="0" width="150" height="200" fill="url(#img-src)" opacity="0.5"/>
+      <rect x="20" y="20" width="110" height="160" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="30" y="120" font-size="40" fill="white">&lt;AF&gt;08</text>
+      <text x="75" y="230" font-size="40" fill="#FF9933" text-anchor="middle">Generated</text>
+      <text x="75" y="260" font-size="40" fill="#FF9933" text-anchor="middle">Target Image</text>
+    </g>
+
+    <!-- Prompt Box -->
+    <g transform="translate(20, 490)">
+      <rect x="0" y="0" width="560" height="180" rx="20" fill="none" stroke="#5B9BD5" stroke-width="3" stroke-dasharray="20,10"/>
+      <text x="20" y="50" font-size="35" fill="#5B9BD5">“ A diptych with two side-by-side images of the same scene.</text>
+      <text x="60" y="90" font-size="35" fill="#5B9BD5">On the right, the scene is the same as on the left  but</text>
+      <text x="120" y="130" font-size="35" fill="#FF9933">{make the man grab a basketball}. ”</text>
+    </g>
+
+  </g>
+
+  <!-- ================= SECTION B: FINETUNING STRATEGY ================= -->
+  <g id="section-b" transform="translate(820, 0)">
+    <!-- Main Container -->
+    <rect x="0" y="20" width="800" height="980" rx="20" fill="none" stroke="#5B9BD5" stroke-width="3" />
+    <text x="400" y="990" font-size="60" fill="black" text-anchor="middle">(b) Finetuning Strategy for ICEdit</text>
+
+    <!-- Top: Edit by In-context Generation -->
+    <g transform="translate(100, 20)">
+      <rect x="0" y="0" width="150" height="180" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="10" y="110" font-size="40" fill="white">&lt;AF&gt;06</text>
+      <rect x="150" y="0" width="100" height="180" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="160" y="110" font-size="40" fill="white">&lt;AF&gt;15</text>
+      <rect x="250" y="0" width="40" height="180" fill="#FF9933" stroke="red" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="270" y="110" font-size="40" fill="white">&lt;AF&gt;01</text>
+      <text x="300" y="80" font-size="35" fill="black">Edit by</text>
+      <text x="300" y="110" font-size="35" fill="black">In-context</text>
+      <text x="300" y="140" font-size="35" fill="black">Generation</text>
+    </g>
+
+    <!-- Decoder -->
+    <g transform="translate(300, 220)">
+      <rect x="0" y="0" width="140" height="60" rx="10" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="2"/>
+      <text x="70" y="40" font-size="35" fill="black" text-anchor="middle">Decoder</text>
+      <line x1="70" y1="0" x2="70" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    </g>
+
+    <!-- Main Stack -->
+    <g transform="translate(100, 270)">
+      <!-- Back layers -->
+      <rect x="20" y="20" width="380" height="420" rx="20" fill="#E6D8E6" stroke="#CC99CC" stroke-width="2"/>
+      <rect x="10" y="10" width="380" height="420" rx="20" fill="#E6D8E6" stroke="#CC99CC" stroke-width="2"/>
+      <rect x="0" y="0" width="380" height="420" rx="20" fill="#E6D8E6" stroke="#CC99CC" stroke-width="2"/>
+      
+      <!-- Front layer -->
+      <rect x="0" y="0" width="380" height="420" rx="20" fill="#E6D8E6" stroke="#CC99CC" stroke-width="2"/>
+      
+      <!-- Top Vector -->
+      <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="45" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="90" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="135" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="180" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="225" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="200" y="60" font-size="35" fill="black" text-anchor="middle">N×</text>
+      </g>
+
+      <!-- Internal Arrows -->
+      <line x1="200" y1="100" x2="200" y2="140" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      <line x1="200" y1="140" x2="200" y2="180" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      
+      <!-- Summation -->
+      <g transform="translate(200, 140)">
+        <circle cx="0" cy="0" r="20" fill="white" stroke="black" stroke-width="2"/>
+        <path d="M-10,0 L10,0 M0,-10 L0,10" stroke="black" stroke-width="2"/>
+      </g>
+      <g transform="translate(200, 180)">
+        <circle cx="0" cy="0" r="20" fill="white" stroke="black" stroke-width="2"/>
+        <path d="M-10,0 L10,0 M0,-10 L0,10" stroke="black" stroke-width="2"/>
+      </g>
+
+      <!-- Out Projection -->
+      <rect x="150" y="180" width="180" height="70" rx="10" fill="#FF9999" stroke="#FF0000" stroke-width="3"/>
+      <text x="240" y="230" font-size="35" fill="black" text-anchor="middle">Out Projection</text>
+      <line x1="200" y1="210" x2="200" y2="190" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <!-- MLP & MM Attention -->
+      <g transform="translate(100, 250)">
+        <rect x="0" y="0" width="80" height="70" rx="10" fill="#FF99CC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="5,3"/>
+        <text x="40" y="45" font-size="35" fill="black" text-anchor="middle">MLP</text>
+        <line x1="40" y1="0" x2="40" y2="-20" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+      <g transform="translate(250, 250)">
+        <rect x="0" y="0" width="160" height="70" rx="10" fill="#FF99CC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="5,3"/>
+        <text x="80" y="45" font-size="35" fill="black" text-anchor="middle">MM Attention</text>
+        <line x1="200" y1="0" x2="200" y2="-20" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+      <line x1="200" y1="250" x2="200" y2="270" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <!-- Norm & Mod -->
+      <g transform="translate(100, 320)">
+        <rect x="0" y="0" width="180" height="70" rx="10" fill="#FF99CC" stroke="#FF00FF" stroke-width="3" stroke-dasharray="5,3"/>
+        <text x="90" y="45" font-size="35" fill="black" text-anchor="middle">Norm &amp; Mod</text>
+        <line x1="200" y1="0" x2="200" y2="-20" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+
+      <!-- Bottom Vector -->
+      <g transform="translate(100, 400)">
+        <rect x="0" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="45" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="90" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="135" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="180" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="225" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="270" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="200" y="30" font-size="35" fill="black" text-anchor="middle">+</text>
+        <text x="200" y="50" font-size="25" fill="black" text-anchor="middle">concat</text>
+      </g>
+      <line x1="200" y1="400" x2="200" y2="380" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    </g>
+
+    <!-- Encoder Inputs -->
+    <g transform="translate(100, 710)">
+      <rect x="0" y="0" width="140" height="80" rx="10" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="2"/>
+      <text x="70" y="50" font-size="35" fill="black" text-anchor="middle">Text Encoder</text>
+      <line x1="70" y1="0" x2="70" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <rect x="180" y="0" width="220" height="80" rx="10" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="2"/>
+      <text x="290" y="50" font-size="35" fill="black" text-anchor="middle">Image Encoder</text>
+      <line x1="290" y1="0" x2="290" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+    </g>
+
+    <!-- Bottom Inputs -->
+    <g transform="translate(100, 820)">
+      <!-- Text Box -->
+      <rect x="0" y="0" width="180" height="150" rx="20" fill="white" stroke="black" stroke-width="2"/>
+      <text x="90" y="30" font-size="30" fill="black" text-anchor="middle">“ A diptych with ...</text>
+      <text x="90" y="60" font-size="30" fill="black" text-anchor="middle">but {what if it</text>
+      <text x="90" y="90" font-size="30" fill="black" text-anchor="middle">looks like water</text>
+      <text x="90" y="120" font-size="30" fill="black" text-anchor="middle">color painting?}”</text>
+      <line x1="90" y1="0" x2="90" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <!-- Image Box -->
+      <g transform="translate(180, 0)">
+        <rect x="0" y="0" width="100" height="150" fill="#777" stroke="black" stroke-width="3"/>
+        <text x="50" y="130" font-size="40" fill="white" text-anchor="middle">&lt;AF&gt;07</text>
+        <rect x="100" y="0" width="100" height="150" fill="white" stroke="black" stroke-width="3"/>
+        <line x1="150" y1="0" x2="150" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+
+      <!-- Mask Box -->
+      <g transform="translate(380, 0)">
+        <rect x="0" y="0" width="100" height="150" fill="white" stroke="black" stroke-width="3"/>
+        <line x1="50" y1="0" x2="50" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+
+      <!-- Noise Box -->
+      <g transform="translate(480, 0)">
+        <rect x="0" y="0" width="100" height="150" fill="#E0E0E0" stroke="black" stroke-width="3"/>
+        <line x1="50" y1="0" x2="50" y2="-40" stroke="black" stroke-width="2" marker-end="url(#arrow-black)"/>
+      </g>
+    </g>
+
+    <!-- LoRA-MoE Module -->
+    <g transform="translate(1000, 60)">
+      <rect x="0" y="0" width="400" height="600" rx="30" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="2"/>
+      <text x="200" y="40" font-size="40" fill="black" text-anchor="middle">LoRA-MoE Module</text>
+
+      <!-- Top Vector -->
+      <g transform="translate(150, 80)">
+        <rect x="0" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="45" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="90" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="135" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="180" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="225" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+      </g>
+
+      <!-- Base Layer -->
+      <g transform="translate(100, 200)">
+        <rect x="0" y="0" width="150" height="50" rx="10" fill="#E6B8D4" stroke="#CC99CC" stroke-width="2"/>
+        <text x="75" y="35" font-size="35" fill="black" text-anchor="middle">Base Layer</text>
+        <rect x="150" y="10" width="40" height="30" fill="#777" stroke="black" stroke-width="2"/>
+        <text x="170" y="25" font-size="10" fill="white" text-anchor="middle">&lt;AF&gt;01</text>
+      </g>
+
+      <!-- Experts -->
+      <g transform="translate(100, 280)">
+        <!-- Expert 1 -->
+        <g transform="translate(0, 0)">
+          <path d="M20,0 L100,0 L100,80 L20,80 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <path d="M20,80 L100,80 L100,0 L20,0 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <use href="#icon-flame" x="80" y="40" transform="scale(1.5)"/>
+          <text x="50" y="110" font-size="30" fill="black" text-anchor="middle">Expert 1</text>
+        </g>
+        <!-- Expert 2 -->
+        <g transform="translate(130, 0)">
+          <path d="M20,0 L100,0 L100,80 L20,80 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <path d="M20,80 L100,80 L100,0 L20,0 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <use href="#icon-flame" x="80" y="40" transform="scale(1.5)"/>
+          <text x="50" y="110" font-size="30" fill="black" text-anchor="middle">Expert 2</text>
+        </g>
+        <!-- Expert 3 -->
+        <g transform="translate(260, 0)">
+          <path d="M20,0 L100,0 L100,80 L20,80 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <path d="M20,80 L100,80 L100,0 L20,0 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <use href="#icon-flame" x="80" y="40" transform="scale(1.5)"/>
+          <text x="50" y="110" font-size="30" fill="black" text-anchor="middle">Expert 3</text>
+        </g>
+        <!-- Ellipsis -->
+        <text x="380" y="50" font-size="40" fill="black">...</text>
+        <!-- Expert N -->
+        <g transform="translate(420, 0)">
+          <path d="M20,0 L100,0 L100,80 L20,80 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <path d="M20,80 L100,80 L100,0 L20,0 Z" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+          <use href="#icon-flame" x="80" y="40" transform="scale(1.5)"/>
+          <text x="50" y="110" font-size="30" fill="black" text-anchor="middle">Expert N</text>
+        </g>
+      </g>
+
+      <!-- Route -->
+      <g transform="translate(100, 450)">
+        <rect x="0" y="0" width="150" height="60" rx="10" fill="#D6EAF8" stroke="#5B9BD5" stroke-width="2"/>
+        <text x="75" y="40" font-size="35" fill="black" text-anchor="middle">Route</text>
+        <use href="#icon-flame" x="160" y="10" transform="scale(1.5)"/>
+      </g>
+
+      <!-- Bottom Vector -->
+      <g transform="translate(100, 550)">
+        <rect x="0" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="45" y="0" width="40" height="40" fill="#BDE0FE" stroke="#5B9BD5" stroke-width="2"/>
+        <rect x="90" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="135" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="180" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+        <rect x="225" y="0" width="40" height="40" fill="#CC99CC" stroke="#FF00FF" stroke-width="2" stroke-dasharray="5,3"/>
+      </g>
+
+      <!-- Dashed Circles -->
+      <circle cx="200" cy="140" r="100" fill="none" stroke="black" stroke-dasharray="10,5" stroke-width="2"/>
+      <circle cx="200" cy="500" r="100" fill="none" stroke="black" stroke-dasharray="10,5" stroke-width="2"/>
+      
+      <!-- Summation -->
+      <g transform="translate(200, 160)">
+        <circle cx="0" cy="0" r="20" fill="white" stroke="black" stroke-width="2"/>
+        <path d="M-10,0 L10,0 M0,-10 L0,10" stroke="black" stroke-width="2"/>
+      </g>
+      <line x1="200" y1="140" x2="200" y2="120" stroke="black" stroke-width="2" marker-end="url(#arrow-black-dashed)"/>
+      <line x1="200" y1="500" x2="200" y2="480" stroke="black" stroke-width="2" marker-end="url(#arrow-black-dashed)"/>
+
+      <!-- TopK -->
+      <g transform="translate(200, 400)">
+        <text x="0" y="0" font-size="35" fill="black" text-anchor="middle">TopK=1</text>
+        <!-- Bar Chart -->
+        <rect x="-50" y="20" width="30" height="40" fill="#E6B8D4" stroke="#CC99CC" stroke-width="2"/>
+        <text x="-35" y="45" font-size="20" fill="red" text-anchor="middle">×</text>
+        <rect x="0" y="0" width="30" height="80" fill="#E6B8D4" stroke="#CC99CC" stroke-width="2"/>
+        <text x="15" y="25" font-size="30" fill="#00B050" text-anchor="middle">✓</text>
+        <rect x="35" y="20" width="30" height="40" fill="#E6B8D4" stroke="#CC99CC" stroke-width="2"/>
+        <text x="50" y="45" font-size="20" fill="red" text-anchor="middle">×</text>
+        <rect x="70" y="20" width="30" height="40" fill="#E6B8D4" stroke="#CC99CC" stroke-width="2"/>
+        <text x="85" y="45" font-size="20" fill="red" text-anchor="middle">×</text>
+      </g>
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(1280, 650)">
+      <rect x="0" y="0" width="380" height="300" rx="20" fill="white" stroke="#5B9BD5" stroke-width="2"/>
+      
+      <!-- Item 1 -->
+      <g transform="translate(20, 30)">
+        <rect x="0" y="0" width="50" height="50" fill="#777" stroke="black" stroke-width="2"/>
+        <text x="60" y="35" font-size="35" fill="black">: Trainabe Parameter</text>
+      </g>
+      <!-- Item 2 -->
+      <g transform="translate(20, 100)">
+        <rect x="0" y="0" width="50" height="50" fill="#777" stroke="black" stroke-width="2"/>
+        <text x="60" y="35" font-size="35" fill="black">: Frozen Parameter</text>
+      </g>
+      <!-- Item 3 -->
+      <g transform="translate(20, 170)">
+        <rect x="0" y="0" width="100" height="40" fill="#E6B8D4" stroke="#FF00FF" stroke-width="3" stroke-dasharray="5,3"/>
+        <text x="110" y="30" font-size="35" fill="black">: Standard LoRA Tuning</text>
+      </g>
+      <!-- Item 4 -->
+      <g transform="translate(20, 240)">
+        <rect x="0" y="0" width="50" height="50" fill="#777" stroke="black" stroke-width="2"/>
+        <text x="60" y="35" font-size="35" fill="black">: LoRA-MoE Tuning</text>
+      </g>
+      <!-- Item 5 -->
+      <g transform="translate(20, 310)">
+        <rect x="0" y="0" width="50" height="50" fill="#777" stroke="black" stroke-width="2"/>
+        <text x="60" y="35" font-size="35" fill="black">: LoRA Adapter</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= SECTION A (Bottom) ================= -->
+  <g id="section-a-bottom" transform="translate(0, 620)">
+    <!-- Main Container -->
+    <rect x="5" y="0" width="800" height="360" rx="20" fill="none" stroke="#FF6666" stroke-width="3" />
+    <rect x="140" y="10" width="650" height="60" rx="10" fill="#FFD1D1" />
+    <text x="150" y="50" font-size="50" fill="#FF6666">In-context Editing Framework based on Inpainting DiT</text>
+
+    <!-- Source Image -->
+    <g transform="translate(10, 30)">
+      <rect x="0" y="0" width="160" height="280" fill="#333" stroke="#FF6666" stroke-width="3"/>
+      <rect x="20" y="20" width="120" height="240" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="30" y="140" font-size="40" fill="white">&lt;AF&gt;10</text>
+      <text x="80" y="310" font-size="40" fill="#FF6666" text-anchor="middle">Source Image</text>
+    </g>
+
+    <!-- Mask -->
+    <g transform="translate(160, 100)">
+      <rect x="0" y="0" width="40" height="40" fill="#FFC0C0" stroke="#FF6666" stroke-width="2"/>
+      <text x="20" y="60" font-size="35" fill="#FF6666" text-anchor="middle">mask</text>
+      <path d="M0,70 L60,70 L60,90 L0,90 Z" fill="#FFC0C0" stroke="#FF6666" stroke-width="2"/>
+      <text x="30" y="120" font-size="35" fill="#FF6666" text-anchor="middle">concat</text>
+    </g>
+
+    <!-- Image with Mask -->
+    <g transform="translate(210, 100)">
+      <rect x="0" y="0" width="160" height="280" fill="#333" stroke="#FF6666" stroke-width="3"/>
+      <rect x="20" y="20" width="120" height="240" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="30" y="140" font-size="40" fill="white">&lt;AF&gt;13</text>
+      <rect x="120" y="20" width="120" height="240" fill="#FFC0C0" stroke="#FF6666" stroke-width="3"/>
+      <text x="180" y="310" font-size="40" fill="#FF6666" text-anchor="middle">Image with Mask</text>
+    </g>
+
+    <!-- Noise -->
+    <g transform="translate(380, 100)">
+      <rect x="0" y="0" width="120" height="280" fill="#999" stroke="#FF6666" stroke-width="3"/>
+      <rect x="0" y="0" width="120" height="280" fill="url(#img-noise)" opacity="0.5"/>
+      <text x="60" y="310" font-size="40" fill="#FF6666" text-anchor="middle">Noise</text>
+    </g>
+
+    <!-- Inpainting DiT -->
+    <g transform="translate(440, 60)">
+      <rect x="0" y="0" width="180" height="120" rx="30" fill="#FFD1D1" stroke="#FF6666" stroke-width="3"/>
+      <text x="90" y="70" font-size="40" fill="#FF6666" text-anchor="middle">Inpainting DiT</text>
+    </g>
+
+    <!-- Crop -->
+    <g transform="translate(620, 100)">
+      <rect x="0" y="0" width="60" height="60" fill="#777" stroke="black" stroke-width="2"/>
+      <text x="30" y="35" font-size="10" fill="white" text-anchor="middle">&lt;AF&gt;12</text>
+      <rect x="60" y="0" width="60" height="60" fill="#777" stroke="black" stroke-width="2"/>
+      <text x="90" y="35" font-size="10" fill="white" text-anchor="middle">&lt;AF&gt;09</text>
+      <path d="M60,60 L120,60 L120,70 L60,70 Z" fill="#FFC0C0" stroke="#FF6666" stroke-width="2"/>
+      <text x="90" y="90" font-size="35" fill="#FF6666" text-anchor="middle">crop</text>
+    </g>
+
+    <!-- Target Image -->
+    <g transform="translate(680, 30)">
+      <rect x="0" y="0" width="160" height="280" fill="#333" stroke="#FF6666" stroke-width="3"/>
+      <rect x="20" y="20" width="120" height="240" fill="#777" stroke="black" stroke-width="3"/>
+      <text x="30" y="140" font-size="40" fill="white">&lt;AF&gt;16</text>
+      <text x="80" y="310" font-size="40" fill="#FF6666" text-anchor="middle">Target</text>
+      <text x="80" y="340" font-size="40" fill="#FF6666" text-anchor="middle">Image</text>
+    </g>
+
+    <!-- Prompt Box -->
+    <g transform="translate(380, 250)">
+      <rect x="0" y="0" width="280" height="100" rx="20" fill="none" stroke="#FF6666" stroke-width="3" stroke-dasharray="20,10"/>
+      <text x="140" y="30" font-size="35" fill="#FF6666" text-anchor="middle">“ A diptych with ... ... but</text>
+      <text x="140" y="70" font-size="35" fill="#FF6666" text-anchor="middle">{make her hold a red can}.”</text>
+    </g>
+
+    <!-- Up Arrow -->
+    <path d="M530,250 L530,200 L510,200 L510,230 L500,230 L520,250 L540,230 L530,230 Z" fill="#FFC0C0" stroke="#FF6666" stroke-width="2"/>
+
+  </g>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <text x="80" y="990" font-size="60" fill="black" text-anchor="middle">(a) Training-free Structure of ICEdit</text>
+  <text x="1000" y="990" font-size="60" fill="black" text-anchor="middle">(b) Finetuning Strategy for ICEEdit</text>
+
+</svg>

@@ -1,0 +1,339 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.0 12.0 1616.0 706.0" style="font-family: 'Times New Roman', Times, serif;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a" />
+    </marker>
+    
+    <!-- Colors -->
+    <style>
+      .bg-gibms { fill: #CFEFE9; }
+      .bg-block { fill: #E6E6E6; }
+      .stroke-brown { stroke: #5B2C2C; stroke-width: 3; }
+      .stroke-brown-thin { stroke: #5B2C2C; stroke-width: 1; }
+      .stroke-navy { stroke: #000040; stroke-width: 2; }
+      .stroke-black { stroke: #1a1a1a; stroke-width: 2.5; fill: none; }
+      .fill-blue-circle { fill: #86B0FF; }
+      .fill-cyan-stack { fill: #9BE6FF; }
+      .fill-yellow-stack { fill: #CDE685; }
+      .fill-beige-stack { fill: #F5F0DC; }
+      .fill-green { fill: #8CD4B0; }
+      .fill-blue { fill: #7DA5F5; }
+      .fill-orange { fill: #FDC05D; }
+      .fill-pink { fill: #FC94A7; }
+      .text-math { font-style: italic; }
+      .text-bold { font-weight: bold; }
+      .text-large { font-size: 48px; }
+      .text-med { font-size: 32px; }
+      .text-small { font-size: 24px; }
+    </style>
+  </defs>
+
+  <!-- PANEL A: GIBMS -->
+  <!-- Background -->
+  <rect x="80" y="20" width="1500" height="320" class="bg-gibms" />
+  <text x="15" y="60" font-size="40">(a)</text>
+  <text x="150" y="60" font-size="40">GIBMS</text>
+
+  <!-- Input Graph G -->
+  <g transform="translate(200, 200)">
+    <!-- Edges -->
+    <line x1="0" y1="-50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="-50" x2="80" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="-50" y1="50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="0" x2="50" y2="50" stroke="#1a1a1a" stroke-width="2" />
+    <!-- Nodes -->
+    <circle cx="0" cy="-50" r="20" class="fill-blue-circle" />
+    <circle cx="80" cy="-50" r="20" class="fill-blue-circle" />
+    <circle cx="0" cy="0" r="20" class="fill-blue-circle" />
+    <circle cx="80" cy="0" r="20" class="fill-blue-circle" />
+    <circle cx="-50" cy="50" r="20" class="fill-blue-circle" />
+    <circle cx="50" cy="50" r="20" class="fill-blue-circle" />
+    <!-- Label -->
+    <text x="0" y="100" text-anchor="middle" font-size="48" class="text-math">G</text>
+  </g>
+
+  <!-- Arrow to Encoder -->
+  <line x1="320" y1="190" x2="395" y2="190" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Encoder Block -->
+  <rect x="400" y="120" width="100" height="180" class="bg-block stroke-brown" />
+  <text x="450" y="210" transform="rotate(-90, 450, 210)" text-anchor="middle" font-size="36" fill="#1a1a1a">Encoder</text>
+
+  <!-- Arrow to H -->
+  <line x1="500" y1="190" x2="555" y2="190" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- H Stack (Cyan) -->
+  <text x="500" y="160" font-size="48" class="text-bold">H</text>
+  <g transform="translate(560, 130)">
+    <rect x="0" y="0" width="70" height="35" class="fill-cyan-stack stroke-navy" />
+    <rect x="0" y="35" width="70" height="35" class="fill-cyan-stack stroke-navy" />
+    <rect x="0" y="70" width="70" height="35" class="fill-cyan-stack stroke-navy" />
+    <rect x="0" y="105" width="70" height="35" class="fill-cyan-stack stroke-navy" />
+    <rect x="0" y="140" width="70" height="35" class="fill-cyan-stack stroke-navy" />
+  </g>
+
+  <!-- Arrow to MLP -->
+  <line x1="610" y1="190" x2="685" y2="190" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- MLP Block -->
+  <rect x="690" y="120" width="100" height="180" class="bg-block stroke-brown" />
+  <text x="740" y="210" transform="rotate(-90, 740, 210)" text-anchor="middle" font-size="36" fill="#1a1a1a">MLP</text>
+
+  <!-- Arrow to Sampled Graph -->
+  <line x1="770" y1="190" x2="830" y2="190" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Sampled Graph -->
+  <g transform="translate(900, 190)">
+    <!-- Edges -->
+    <line x1="0" y1="-50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="-50" x2="80" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="-50" y1="50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="0" x2="50" y2="50" stroke="#1a1a1a" stroke-width="2" />
+    <!-- Nodes with Numbers -->
+    <circle cx="0" cy="-50" r="20" class="fill-blue-circle" />
+    <text x="0" y="-46" text-anchor="middle" font-size="20">0.1</text>
+    
+    <circle cx="80" cy="-50" r="20" class="fill-blue-circle" />
+    <text x="80" y="-46" text-anchor="middle" font-size="20">0.3</text>
+    
+    <circle cx="0" cy="0" r="20" class="fill-blue-circle" />
+    <text x="0" y="4" text-anchor="middle" font-size="20">0.9</text>
+    
+    <circle cx="80" cy="0" r="20" class="fill-blue-circle" />
+    <text x="80" y="4" text-anchor="middle" font-size="20">0.6</text>
+    
+    <circle cx="-50" cy="50" r="20" class="fill-blue-circle" />
+    <text x="-50" y="54" text-anchor="middle" font-size="20">0.7</text>
+    
+    <circle cx="50" cy="50" r="20" class="fill-blue-circle" />
+  </g>
+
+  <!-- Branching Lines -->
+  <line x1="1020" y1="190" x2="1060" y2="190" class="stroke-black" />
+  <line x1="1060" y1="190" x2="1060" y2="105" class="stroke-black" />
+  <line x1="1060" y1="190" x2="1060" y2="275" class="stroke-black" />
+  <line x1="1060" y1="105" x2="1125" y2="105" class="stroke-black" marker-end="url(#arrow)" />
+  <line x1="1060" y1="275" x2="1125" y2="275" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Top G_IB Stack (Yellow) -->
+  <text x="1070" y="60" font-size="40" class="text-math">G<tspan dy="10" font-size="28" font-style="normal">IB</tspan></text>
+  <g transform="translate(1130, 35)">
+    <rect x="0" y="0" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="35" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="70" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="105" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="140" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+  </g>
+
+  <!-- Bottom G_IB Stack (Yellow) -->
+  <text x="1070" y="320" font-size="40" class="text-math">G<tspan dy="10" font-size="28" font-style="normal">IB</tspan></text>
+  <g transform="translate(1130, 210)">
+    <rect x="0" y="0" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="35" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="70" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="105" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+    <rect x="0" y="140" width="70" height="35" class="fill-yellow-stack stroke-navy" />
+  </g>
+
+  <!-- Pooling Arrows -->
+  <text x="1180" y="95" font-size="32">Pool</text>
+  <line x1="1170" y1="105" x2="1260" y2="105" class="stroke-black" marker-end="url(#arrow)" />
+  
+  <text x="1180" y="265" font-size="32">Pool</text>
+  <line x1="1170" y1="275" x2="1260" y2="275" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Pooled Vectors -->
+  <rect x="1265" y="85" width="80" height="45" class="fill-yellow-stack stroke-brown" />
+  <rect x="1265" y="255" width="80" height="45" class="fill-yellow-stack stroke-brown" />
+
+  <!-- Converge to I(Y; G_IB) -->
+  <line x1="1345" y1="105" x2="1390" y2="180" class="stroke-black" />
+  <line x1="1345" y1="275" x2="1390" y2="200" class="stroke-black" />
+  <line x1="1390" y1="190" x2="1410" y2="190" class="stroke-black" marker-end="url(#arrow)" />
+
+  <text x="1420" y="195" font-size="40">
+    <tspan font-family="cursive">I</tspan>(<tspan font-weight="bold">Y</tspan>; <tspan font-style="italic">G</tspan><tspan dy="10" font-size="28" font-style="normal">IB</tspan>)
+  </text>
+
+  <!-- Top Info Theoretic Loss -->
+  <text x="830" y="90" font-size="40">
+    <tspan font-family="cursive">I</tspan>(<tspan font-style="italic">G</tspan>; <tspan font-style="italic">G</tspan><tspan dy="10" font-size="28" font-style="normal">IB</tspan>)
+  </text>
+  <!-- Arrow from H to Top Loss -->
+  <path d="M 580 130 L 580 80 L 825 80" class="stroke-black" marker-end="url(#arrow)" />
+  <!-- Arrow from G_IB to Top Loss -->
+  <path d="M 1130 80 L 970 80" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Bottom Info Theoretic Loss -->
+  <text x="830" y="300" font-size="40">
+    <tspan font-family="cursive">I</tspan>(<tspan font-style="italic">G</tspan>; <tspan font-style="italic">G</tspan><tspan dy="10" font-size="28" font-style="normal">IB</tspan>)
+  </text>
+  <!-- Arrow from H to Bottom Loss -->
+  <path d="M 580 250 L 580 300 L 825 300" class="stroke-black" marker-end="url(#arrow)" />
+  <!-- Arrow from G_IB to Bottom Loss -->
+  <path d="M 1130 300 L 970 300" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Sample Label -->
+  <text x="1070" y="200" font-size="36">Sample</text>
+  <line x1="1040" y1="190" x2="1070" y2="190" stroke="#1a1a1a" stroke-width="3" />
+
+  <!-- PANEL B: SLG -->
+  <!-- Background -->
+  <rect x="0" y="340" width="1600" height="260" fill="white" />
+  <text x="15" y="370" font-size="40">(b)</text>
+  <text x="130" y="375" font-size="40">SLG</text>
+
+  <!-- Input Graph G (Copy) -->
+  <g transform="translate(230, 480)">
+    <line x1="0" y1="-50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="-50" x2="80" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="-50" y1="50" x2="0" y2="0" stroke="#1a1a1a" stroke-width="2" />
+    <line x1="80" y1="0" x2="50" y2="50" stroke="#1a1a1a" stroke-width="2" />
+    <circle cx="0" cy="-50" r="20" class="fill-blue-circle" />
+    <circle cx="80" cy="-50" r="20" class="fill-blue-circle" />
+    <circle cx="0" cy="0" r="20" class="fill-blue-circle" />
+    <circle cx="80" cy="0" r="20" class="fill-blue-circle" />
+    <circle cx="-50" cy="50" r="20" class="fill-blue-circle" />
+    <circle cx="50" cy="50" r="20" class="fill-blue-circle" />
+    <text x="0" y="100" text-anchor="middle" font-size="48" class="text-math">G</text>
+  </g>
+
+  <!-- Branching -->
+  <line x1="340" y1="470" x2="410" y2="420" class="stroke-black" />
+  <line x1="340" y1="470" x2="410" y2="560" class="stroke-black" />
+
+  <!-- Top Branch: GIBMS -->
+  <rect x="420" y="350" width="100" height="160" class="bg-gibms" />
+  <text x="470" y="430" transform="rotate(-90, 470, 430)" text-anchor="middle" font-size="36" fill="#1a1a1a">GIBMS</text>
+  <line x1="500" y1="420" x2="585" y2="420" class="stroke-black" marker-end="url(#arrow)" />
+
+  <rect x="590" y="350" width="100" height="180" class="bg-block" style="stroke: #5c4015; stroke-width: 3;" />
+  <text x="640" y="440" transform="rotate(-90, 640, 440)" text-anchor="middle" font-size="36" fill="#1a1a1a">Encoder</text>
+  <line x1="670" y1="420" x2="755" y2="420" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- H^p Stack -->
+  <text x="700" y="385" font-size="40" class="text-bold">H<tspan dy="-10" font-size="28" font-style="italic">p</tspan></text>
+  <g transform="translate(760, 355)">
+    <rect x="0" y="0" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="35" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="70" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="105" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="140" width="70" height="35" class="fill-beige-stack stroke-navy" />
+  </g>
+
+  <!-- Softmax Top -->
+  <line x1="810" y1="420" x2="900" y2="420" class="stroke-black" />
+  <text x="900" y="425" font-size="36">softmax</text>
+  <g transform="translate(1020, 380)">
+    <!-- Parentheses -->
+    <path d="M 10 0 Q -10 35 10 70" fill="none" stroke="#1a1a1a" stroke-width="3" />
+    <path d="M 130 0 Q 150 35 130 70" fill="none" stroke="#1a1a1a" stroke-width="3" />
+    <!-- Fraction -->
+    <text x="20" y="25" font-size="40" class="text-bold">H<tspan dy="-10" font-size="28" font-style="italic">p</tspan><tspan dy="10"> · Q</tspan></text>
+    <line x1="15" y1="35" x2="125" y2="35" stroke="#1a1a1a" stroke-width="2" />
+    <text x="50" y="65" font-size="36" font-style="italic">T<tspan dy="5" font-size="24">p</tspan></text>
+  </g>
+  <line x1="1170" y1="420" x2="1230" y2="420" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Matrix s^p -->
+  <text x="1180" y="385" font-size="40" font-style="italic">s<tspan dy="-10" font-size="28">p</tspan></text>
+  <g transform="translate(1230, 355)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="0" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="0" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="0" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 2 -->
+    <rect x="0" y="45" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="45" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="45" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="45" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 3 -->
+    <rect x="0" y="90" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="90" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="90" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="90" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 4 -->
+    <rect x="0" y="135" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="135" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="135" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="135" width="45" height="45" class="fill-pink stroke-navy" />
+  </g>
+
+  <!-- Bottom Branch: Tokenizer/Embedding -->
+  <rect x="420" y="490" width="100" height="160" class="bg-block" style="stroke: #5c4015; stroke-width: 3;" />
+  <text x="470" y="570" transform="rotate(-90, 470, 570)" text-anchor="middle" font-size="36" fill="#1a1a1a">Tokenizer</text>
+  <line x1="500" y1="560" x2="585" y2="560" class="stroke-black" marker-end="url(#arrow)" />
+
+  <rect x="590" y="490" width="100" height="220" class="bg-block" style="stroke: #5c4015; stroke-width: 3;" />
+  <text x="640" y="590" transform="rotate(-90, 640, 590)" text-anchor="middle" font-size="36" fill="#1a1a1a">Embedding</text>
+  <line x1="670" y1="560" x2="755" y2="560" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- H^y Stack -->
+  <text x="700" y="525" font-size="40" class="text-bold">H<tspan dy="-10" font-size="28" font-style="italic">y</tspan></text>
+  <g transform="translate(760, 500)">
+    <rect x="0" y="0" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="35" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="70" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="105" width="70" height="35" class="fill-beige-stack stroke-navy" />
+    <rect x="0" y="140" width="70" height="35" class="fill-beige-stack stroke-navy" />
+  </g>
+
+  <!-- Softmax Bottom -->
+  <line x1="810" y1="560" x2="900" y2="560" class="stroke-black" />
+  <text x="900" y="565" font-size="36">softmax</text>
+  <g transform="translate(1020, 520)">
+    <!-- Parentheses -->
+    <path d="M 10 0 Q -10 35 10 70" fill="none" stroke="#1a1a1a" stroke-width="3" />
+    <path d="M 130 0 Q 150 35 130 70" fill="none" stroke="#1a1a1a" stroke-width="3" />
+    <!-- Fraction -->
+    <text x="20" y="25" font-size="40" class="text-bold">H<tspan dy="-10" font-size="28" font-style="italic">y</tspan><tspan dy="10"> · Q</tspan></text>
+    <line x1="15" y1="35" x2="125" y2="35" stroke="#1a1a1a" stroke-width="2" />
+    <text x="50" y="65" font-size="36" font-style="italic">T<tspan dy="5" font-size="24">y</tspan></text>
+  </g>
+  <line x1="1170" y1="560" x2="1230" y2="560" class="stroke-black" marker-end="url(#arrow)" />
+
+  <!-- Matrix s^y -->
+  <text x="1180" y="540" font-size="40" font-style="italic">s<tspan dy="-10" font-size="28">y</tspan></text>
+  <g transform="translate(1230, 500)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="0" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="0" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="0" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 2 -->
+    <rect x="0" y="45" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="45" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="45" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="45" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 3 -->
+    <rect x="0" y="90" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="90" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="90" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="90" width="45" height="45" class="fill-pink stroke-navy" />
+    <!-- Row 4 -->
+    <rect x="0" y="135" width="45" height="45" class="fill-blue stroke-navy" />
+    <rect x="45" y="135" width="45" height="45" class="fill-green stroke-navy" />
+    <rect x="90" y="135" width="45" height="45" class="fill-orange stroke-navy" />
+    <rect x="135" y="135" width="45" height="45" class="fill-pink stroke-navy" />
+  </g>
+
+  <!-- Q Matrix (Legend) -->
+  <text x="910" y="500" font-size="40" class="text-bold">Q</text>
+  <g transform="translate(960, 455)">
+    <rect x="0" y="0" width="45" height="80" class="fill-blue stroke-navy" />
+    <rect x="45" y="0" width="45" height="80" class="fill-green stroke-navy" />
+    <rect x="90" y="0" width="45" height="80" class="fill-orange stroke-navy" />
+    <rect x="135" y="0" width="45" height="80" class="fill-pink stroke-navy" />
+  </g>
+
+  <!-- Loss Function -->
+  <line x1="1380" y1="400" x2="1430" y2="480" class="stroke-black" marker-end="url(#arrow)" />
+  <line x1="1380" y1="560" x2="1430" y2="480" class="stroke-black" marker-end="url(#arrow)" />
+  
+  <text x="1440" y="490" font-size="48">
+    <tspan font-family="cursive">L</tspan><tspan dy="10" font-size="32" font-family="Times New Roman">soft</tspan><tspan dy="-10" font-size="48">(</tspan><tspan font-style="italic">s<tspan dy="-15" font-size="30">y</tspan><tspan dy="15">, s</tspan><tspan dy="-15" font-size="30">p</tspan></tspan><tspan dy="15">)</tspan>
+  </text>
+
+</svg>

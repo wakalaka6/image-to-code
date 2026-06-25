@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4472C4" />
+    </marker>
+    <!-- Font Styles -->
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; }
+      .math { font-style: italic; }
+      .label-text { font-size: 60px; fill: black; }
+      .block-text { font-size: 60px; fill: black; text-anchor: middle; }
+      .token-text { font-size: 60px; fill: black; text-anchor: middle; dominant-baseline: middle; }
+      .small-text { font-size: 40px; fill: black; text-anchor: middle; }
+      .blue-border { stroke: #4472C4; stroke-width: 6; fill: none; }
+      .blue-border-thick { stroke: #4472C4; stroke-width: 8; fill: none; }
+      .blue-arrow { stroke: #4472C4; stroke-width: 6; fill: none; marker-end: url(#arrowhead); }
+      .blue-arrow-thick { stroke: #4472C4; stroke-width: 8; fill: none; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+
+  <!-- ================= LEFT SECTION ================= -->
+  
+  <!-- Top Header -->
+  <rect x="10" y="30" width="1000" height="110" rx="20" fill="#E2EFDA" />
+  <text x="30" y="90" class="serif label-text">
+    Language Model <tspan class="math">f</tspan><tspan dy="10" font-size="40">φ</tspan>
+  </text>
+
+  <!-- Tokenizer Block -->
+  <rect x="40" y="300" width="460" height="140" rx="20" fill="#EAEAEA" />
+  <text x="270" y="370" class="serif block-text">Tokenizer</text>
+
+  <!-- Language Instruction -->
+  <text x="30" y="500" class="serif label-text">
+    Language Instruction <tspan class="math">X</tspan><tspan dy="10" font-size="40">q</tspan><tspan dy="-10"> </tspan><tspan class="math">H</tspan><tspan dy="10" font-size="40">v</tspan>
+  </text>
+
+  <!-- Input Image -->
+  <text x="650" y="880" class="serif label-text">
+    Input Image <tspan class="math">X</tspan><tspan dy="10" font-size="40">v</tspan>
+  </text>
+
+  <!-- Visual Tokens Row -->
+  <g transform="translate(0, 450)">
+    <rect x="560" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+    <rect x="640" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+    <rect x="720" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+    <rect x="800" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+    <rect x="880" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+    <rect x="960" y="0" width="120" height="120" rx="20" fill="#F4C7A5" class="blue-border" />
+  </g>
+
+  <!-- Projector Block -->
+  <rect x="560" y="580" width="440" height="140" rx="20" fill="#FBE5D6" />
+  <text x="780" y="650" class="serif block-text">Projector <tspan class="math">g</tspan></text>
+
+  <!-- Vision Encoder Block -->
+  <rect x="560" y="680" width="440" height="140" rx="20" fill="#DAE3F3" />
+  <text x="780" y="760" class="serif block-text">
+    Vision Encoder <tspan class="math">f</tspan><tspan dy="10" font-size="40">v</tspan>
+  </text>
+
+  <!-- ================= LEFT ARROWS ================= -->
+  
+  <!-- From Input to Encoder -->
+  <line x1="780" y1="830" x2="780" y2="780" class="blue-arrow-thick" />
+  
+  <!-- From Encoder to Projector -->
+  <line x1="780" y1="680" x2="780" y2="630" class="blue-arrow-thick" />
+  
+  <!-- From Projector to Tokens -->
+  <line x1="780" y1="580" x2="780" y2="530" class="blue-arrow-thick" />
+  
+  <!-- From Tokens to CDPruner -->
+  <line x1="780" y1="450" x2="780" y2="400" class="blue-arrow-thick" />
+  
+  <!-- From Tokenizer to Token 2 -->
+  <line x1="270" y1="440" x2="270" y2="390" class="blue-arrow-thick" />
+  
+  <!-- From Tokenizer to Token 1 -->
+  <line x1="270" y1="300" x2="270" y2="250" class="blue-arrow-thick" />
+  
+  <!-- From Token 1 to Language Model -->
+  <line x1="270" y1="180" x2="270" y2="120" class="blue-arrow-thick" />
+
+  <!-- ================= MIDDLE SECTION ================= -->
+
+  <!-- H_q Tokens -->
+  <text x="10" y="230" class="serif label-text">
+    <tspan class="math">H</tspan><tspan dy="10" font-size="40">q</tspan>
+  </text>
+  <rect x="80" y="170" width="100" height="100" rx="20" fill="#E0E0E0" class="blue-border" />
+
+  <!-- H_v Tokens -->
+  <text x="540" y="230" class="serif label-text">
+    <tspan class="math">H</tspan><tspan dy="10" font-size="40">v</tspan><tspan dy="-10">*</tspan>
+  </text>
+  <rect x="610" y="170" width="100" height="100" rx="20" fill="#F4C7A5" class="blue-border" />
+
+  <!-- CDPruner Block -->
+  <rect x="560" y="300" width="440" height="140" rx="20" fill="#FADBD8" />
+  <text x="780" y="370" class="serif block-text">CDPruner</text>
+
+  <!-- ================= RIGHT SECTION ================= -->
+
+  <!-- Container -->
+  <rect x="1050" y="30" width="580" height="870" rx="40" fill="#FBE5E5" stroke="black" stroke-width="3" />
+  
+  <!-- Label L -->
+  <text x="1080" y="680" class="serif label-text" style="font-size: 80px;">L</text>
+
+  <!-- Top: S* -->
+  <text x="1080" y="130" class="serif label-text" style="font-size: 80px;">S*</text>
+  
+  <!-- S* Grid -->
+  <g transform="translate(1100, 75)">
+    <rect x="0" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <text x="50" y="55" class="token-text">1</text>
+    
+    <rect x="100" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <text x="150" y="55" class="token-text">×</text>
+    
+    <rect x="200" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <text x="250" y="55" class="token-text">3</text>
+    
+    <rect x="300" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <text x="350" y="55" class="token-text">4</text>
+    
+    <rect x="400" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <text x="450" y="55" class="token-text">×</text>
+    
+    <rect x="500" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <text x="550" y="55" class="token-text">×</text>
+  </g>
+
+  <!-- DPP Block -->
+  <rect x="1100" y="185" width="380" height="140" rx="20" fill="#F89595" stroke="black" stroke-width="4" />
+  <text x="1290" y="255" class="serif block-text">DPP</text>
+
+  <!-- r Vector -->
+  <text x="1080" y="370" class="serif label-text" style="font-size: 80px;">r</text>
+  <g transform="translate(1100, 315)">
+    <rect x="0" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="100" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="200" y="0" width="100" height="100" fill="#555555" class="blue-border" />
+    <rect x="300" y="0" width="100" height="100" fill="#555555" class="blue-border" />
+    <rect x="400" y="0" width="100" height="100" fill="#B0B0B0" class="blue-border" />
+    <rect x="500" y="0" width="100" height="100" fill="#EAEAEA" class="blue-border" />
+  </g>
+
+  <!-- Matrix L -->
+  <g transform="translate(1100, 425)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="100" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="200" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="300" y="0" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="400" y="0" width="100" height="100" fill="#B05020" class="blue-border" />
+    
+    <!-- Row 2 -->
+    <rect x="0" y="100" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="100" y="100" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="200" y="100" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="300" y="100" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="400" y="100" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    
+    <!-- Row 3 -->
+    <rect x="0" y="200" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="100" y="200" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="200" y="200" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="300" y="200" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="400" y="200" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    
+    <!-- Row 4 -->
+    <rect x="0" y="300" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="100" y="300" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="200" y="300" width="100" height="100" fill="#FBE5D6" class="blue-border" />
+    <rect x="300" y="300" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="400" y="300" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(1550, 425)">
+    <rect x="0" y="0" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="0" y="100" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="0" y="200" width="100" height="100" fill="#555555" class="blue-border" />
+    <rect x="0" y="300" width="100" height="100" fill="#B0B0B0" class="blue-border" />
+    <rect x="0" y="400" width="100" height="100" fill="#EAEAEA" class="blue-border" />
+  </g>
+
+  <!-- ================= RIGHT ARROWS ================= -->
+  
+  <!-- From Matrix to r -->
+  <line x1="1290" y1="425" x2="1290" y2="400" class="blue-arrow-thick" />
+  
+  <!-- From r to DPP -->
+  <line x1="1290" y1="315" x2="1290" y2="280" class="blue-arrow-thick" />
+  
+  <!-- From DPP to S* -->
+  <line x1="1290" y1="185" x2="1290" y2="150" class="blue-arrow-thick" />
+
+  <!-- ================= ICONS ================= -->
+  
+  <!-- CDPruner Icon -->
+  <g transform="translate(1550, 100)">
+    <circle cx="0" cy="0" r="50" fill="#E0E0E0" stroke="black" stroke-width="2" />
+    <circle cx="0" cy="0" r="25" fill="#B0B0B0" />
+    <circle cx="0" cy="0" r="10" fill="white" />
+    <circle cx="0" cy="0" r="3" fill="black" />
+    <text x="0" y="100" class="serif block-text" style="font-size: 80px; text-anchor: middle;">CDPruner</text>
+  </g>
+
+  <!-- ================= LEGEND BOX ================= -->
+  <rect x="10" y="580" width="500" height="280" fill="white" stroke="black" stroke-width="3" />
+  
+  <g transform="translate(20, 600)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="100" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="200" y="0" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <text x="250" y="60" class="serif label-text">Visual Tokens</text>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="110" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="100" y="110" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <rect x="200" y="110" width="100" height="100" fill="#E0E0E0" class="blue-border" />
+    <text x="250" y="170" class="serif label-text">Text Tokens</text>
+    
+    <!-- Row 3 -->
+    <rect x="0" y="220" width="100" height="100" fill="#8B4513" class="blue-border" />
+    <rect x="100" y="220" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <rect x="200" y="220" width="100" height="100" fill="#F4C7A5" class="blue-border" />
+    <text x="250" y="280" class="serif label-text">Feature Similarity</text>
+    
+    <!-- Row 4 -->
+    <rect x="0" y="330" width="100" height="100" fill="#555555" class="blue-border" />
+    <rect x="100" y="330" width="100" height="100" fill="#B0B0B0" class="blue-border" />
+    <rect x="200" y="330" width="100" height="100" fill="#EAEAEA" class="blue-border" />
+    <text x="250" y="390" class="serif label-text">Query Relevance</text>
+  </g>
+
+</svg>

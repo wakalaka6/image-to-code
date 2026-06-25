@@ -1,0 +1,123 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666" />
+    </marker>
+    
+    <!-- Gradients -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B0C4DE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F4B183;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- ==================== TOP SECTION ==================== -->
+  
+  <!-- Title -->
+  <text x="1100" y="50" font-family="Arial, sans-serif" font-size="56" fill="black">Testing Time Optimization</text>
+
+  <!-- Input Text Box (Left) -->
+  <g transform="translate(10, 350)">
+    <path d="M0,0 L380,0 L420,80 L420,520 L0,520 Z" fill="#D9D9D9" stroke="#666666" stroke-width="2"/>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="42" fill="black">Translate the following text from</text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="42" fill="black">English into Chinese.</text>
+    <text x="20" y="200" font-family="Arial, sans-serif" font-size="42" fill="black">English: Amsterdam is famous for</text>
+    <text x="20" y="250" font-family="Arial, sans-serif" font-size="42" fill="black">its hundreds of beautiful canals,</text>
+    <text x="20" y="300" font-family="Arial, sans-serif" font-size="42" fill="black">millions of bicycles, stunning</text>
+    <text x="20" y="350" font-family="Arial, sans-serif" font-size="42" fill="black">summers, and disgusting winters.</text>
+    <text x="20" y="480" font-family="Arial, sans-serif" font-size="42" fill="black">Chinese:</text>
+  </g>
+
+  <!-- Top Arrow (Input to NMT) -->
+  <g transform="translate(450, 350)">
+    <path d="M0,100 L100,20 L130,50 L100,80 L0,100 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Top NMT Box -->
+  <rect x="540" y="185" width="220" height="180" rx="30" fill="#E6E6E6" stroke="black" stroke-width="4"/>
+  <text x="650" y="255" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">NMT</text>
+
+  <!-- Top Arrow (NMT to Sampling) -->
+  <g transform="translate(810, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="42" fill="black">Sampling</text>
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Top Sampling Arrow (Sampling to Quality) -->
+  <g transform="translate(850, 220)">
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Top Quality Graph -->
+  <g transform="translate(1000, 60)">
+    <path d="M0,0 L150,0 C200,0 250,100 250,150 C250,200 200,300 150,300 L0,300 Z" fill="url(#gradBlue)" stroke="black" stroke-width="3" stroke-dasharray="15,10"/>
+    <text x="150" y="350" font-family="Arial, sans-serif" font-size="42" font-style="italic" text-anchor="middle" fill="black">Quality</text>
+  </g>
+
+  <!-- Top Reranking Arrow -->
+  <g transform="translate(1200, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#558B2F">Reranking / Voting</text>
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Top Output Box -->
+  <rect x="1400" y="180" width="350" height="180" fill="#F5F5F5" stroke="black" stroke-width="3"/>
+  <text x="1575" y="225" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="black">Highest-scoring</text>
+  <text x="1575" y="260" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="black">Output</text>
+
+  <!-- ==================== DIVIDER ==================== -->
+  <line x1="480" y1="510" x2="1600" y2="510" stroke="black" stroke-width="5" stroke-dasharray="20,20"/>
+
+  <!-- ==================== BOTTOM SECTION ==================== -->
+
+  <!-- Title -->
+  <text x="1100" y="560" font-family="Arial, sans-serif" font-size="56" fill="black">Training Time Optimization</text>
+
+  <!-- Bottom Arrow (Output to NMT) -->
+  <g transform="translate(450, 670)">
+    <path d="M0,100 L100,20 L130,50 L100,80 L0,100 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom NMT Box -->
+  <rect x="540" y="740" width="220" height="180" rx="30" fill="#C5E0B4" stroke="black" stroke-width="4"/>
+  <text x="650" y="810" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">NMT<tspan dy="10" font-size="40">θ</tspan></text>
+
+  <!-- Bottom Arrow (NMT to Sampling) -->
+  <g transform="translate(810, 775)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="42" fill="black">Sampling</text>
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Sampling Arrow (Sampling to Calibration) -->
+  <g transform="translate(850, 775)">
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Calibration Arrow -->
+  <g transform="translate(1200, 775)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FF0000">Calibration</text>
+    <path d="M0,30 L100,30 L100,15 L130,40 L100,65 L100,50 L0,50 Z" fill="#808080" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Left Graph -->
+  <g transform="translate(1000, 630)">
+    <path d="M0,0 L150,0 C200,0 250,100 250,150 C250,200 200,300 150,300 L0,300 Z" fill="url(#gradOrange)" stroke="black" stroke-width="3" stroke-dasharray="15,10"/>
+    <text x="150" y="350" font-family="Arial, sans-serif" font-size="42" font-style="italic" text-anchor="middle" fill="black">Likelihood</text>
+  </g>
+
+  <!-- Bottom Right Graph -->
+  <g transform="translate(1400, 630)">
+    <path d="M0,0 L150,0 C200,0 250,100 250,150 C250,200 200,300 150,300 L0,300 Z" fill="url(#gradOrange)" stroke="black" stroke-width="3" stroke-dasharray="15,10"/>
+    <text x="150" y="350" font-family="Arial, sans-serif" font-size="42" font-style="italic" text-anchor="middle" fill="black">Likelihood -> Quality</text>
+  </g>
+
+</svg>

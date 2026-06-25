@@ -1,0 +1,240 @@
+<svg width="1920" height="1100" viewBox="0 0 1920 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2B579A" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2F6E62" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6A4C91" />
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+    
+    <!-- Gradients for Backgrounds -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6F2FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F7F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Global Background -->
+  <rect width="100%" height="100%" fill="#F4F6FC" />
+  
+  <!-- Abstract Network Overlay -->
+  <g fill="none" stroke="#D0D8E6" stroke-width="1" opacity="0.6">
+    <path d="M100,100 L200,150 M200,150 L300,100 M300,100 L400,150 M400,150 L500,100 M500,100 L600,150 M600,150 L700,100 M700,100 L800,150 M800,150 L900,100 M900,100 L1000,150 M1000,150 L1100,100 M1100,100 L1200,150 M1200,150 L1300,100 M1300,100 L1400,150 M1400,150 L1500,100 M1500,100 L1600,150 M1600,150 L1700,100 M1700,100 L1800,150 M1800,150 L1900,100" />
+    <path d="M100,200 L200,250 M200,250 L300,200 M300,200 L400,250 M400,250 L500,200 M500,200 L600,250 M600,250 L700,200 M700,200 L800,250 M800,250 L900,200 M900,200 L1000,250 M1000,250 L1100,200 M1100,200 L1200,250 M1200,250 L1300,200 M1300,200 L1400,250 M1400,250 L1500,200 M1500,200 L1600,250 M1600,250 L1700,200 M1700,200 L1800,250 M1800,250 L1900,200" />
+    <path d="M100,300 L200,350 M200,350 L300,300 M300,300 L400,350 M400,350 L500,300 M500,300 L600,350 M600,350 L700,300 M700,300 L800,350 M800,350 L900,300 M900,300 L1000,350 M1000,350 L1100,300 M1100,300 L1200,350 M1200,350 L1300,300 M1300,300 L1400,350 M1400,350 L1500,300 M1500,300 L1600,350 M1600,350 L1700,300 M1700,300 L1800,350 M1800,350 L1900,300" />
+  </g>
+
+  <!-- 2. Main Container -->
+  <rect x="40" y="120" width="1840" height="900" rx="40" fill="white" stroke="#D0D8E6" stroke-width="2" />
+  <text x="960" y="180" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="black">World Model Pipeline</text>
+
+  <!-- 3. STEP 1 (Top Left) -->
+  <g transform="translate(80, 200)">
+    <rect x="0" y="0" width="440" height="280" rx="30" fill="url(#grad-blue)" />
+    <rect x="110" y="20" width="180" height="70" rx="15" fill="#4A90E2" />
+    <text x="200" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="white">STEP 1</text>
+    <text x="220" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">COARSE 3D</text>
+    <text x="220" y="170" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">SANDBOX</text>
+    <text x="220" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">GENERATION</text>
+  </g>
+
+  <!-- 4. STEP 2 (Middle Left) -->
+  <g transform="translate(80, 450)">
+    <rect x="0" y="0" width="440" height="280" rx="30" fill="url(#grad-green)" />
+    <rect x="110" y="20" width="180" height="70" rx="15" fill="#4DB6AC" />
+    <text x="200" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="white">STEP 2</text>
+    <text x="220" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">VLM-BASED</text>
+    <text x="220" y="170" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">PHYSICAL MOTION</text>
+    <text x="220" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">PREDICTION</text>
+  </g>
+
+  <!-- 5. STEP 3 (Bottom Left) -->
+  <g transform="translate(80, 750)">
+    <rect x="0" y="0" width="440" height="280" rx="30" fill="url(#grad-purple)" />
+    <rect x="110" y="20" width="180" height="70" rx="15" fill="#8E5EC0" />
+    <text x="200" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="white">STEP 3</text>
+    <text x="220" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">VIDEO DIFFUSION</text>
+    <text x="220" y="170" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">&amp; SYNTHESIS</text>
+  </g>
+
+  <!-- 6. Input Prompt -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Input Prompt</text>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="42" font-weight="normal" text-anchor="middle" fill="black">"A ball rolls down</text>
+  <text x="600" y="355" font-family="Arial, sans-serif" font-size="42" font-weight="normal" text-anchor="middle" fill="black">a rocky ramp"</text>
+
+  <!-- 7. Coarse 3D Scene Generation Model -->
+  <g transform="translate(830, 210)">
+    <rect x="0" y="0" width="380" height="220" rx="30" fill="url(#grad-blue)" stroke="#4A90E2" stroke-width="3" />
+    <text x="190" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Coarse 3D Scene</text>
+    <text x="190" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Generation Model</text>
+    
+    <!-- Internal Boxes -->
+    <rect x="20" y="20" width="140" height="140" fill="#757575" />
+    <text x="90" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;06</text>
+    
+    <rect x="180" y="40" width="80" height="100" fill="#757575" />
+    <text x="220" y="90" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;04</text>
+    
+    <rect x="280" y="40" width="80" height="100" fill="#757575" />
+    <text x="320" y="90" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;03</text>
+  </g>
+
+  <!-- 8. Coarse 3D Representation -->
+  <g transform="translate(1250, 210)">
+    <rect x="0" y="0" width="520" height="220" rx="30" fill="url(#grad-blue)" stroke="#4A90E2" stroke-width="3" />
+    <text x="260" y="200" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Coarse 3D Representation</text>
+    
+    <rect x="40" y="40" width="160" height="160" fill="#757575" />
+    <text x="120" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;07</text>
+    
+    <rect x="220" y="40" width="220" height="160" fill="#757575" />
+    <text x="330" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;11</text>
+  </g>
+
+  <!-- 9. Physics Laws -->
+  <g transform="translate(600, 480)">
+    <text x="0" y="60" font-family="Times New Roman, serif" font-size="48" text-anchor="middle">
+      <tspan font-style="italic">f</tspan> = <tspan font-style="italic">∫</tspan><tspan dy="-10" font-size="32">0</tspan><tspan dy="10" dx="-10" font-size="32">t</tspan><tspan dy="-10" font-size="32">-</tspan><tspan dy="10" font-size="32">1</tspan> <tspan font-style="italic">∂V</tspan>/<tspan font-style="italic">∂t</tspan>
+    </text>
+    <text x="0" y="100" font-family="Times New Roman, serif" font-size="48" text-anchor="middle">
+      <tspan font-style="italic">∂u</tspan>/<tspan font-style="italic">∂t</tspan> + <tspan font-size="32">1</tspan>/<tspan font-size="32">2</tspan> <tspan font-style="italic">C</tspan><tspan dy="5" font-size="24">x</tspan><tspan dy="-5" font-size="32">i</tspan>(<tspan font-style="italic">C</tspan>)
+    </text>
+    <text x="0" y="140" font-family="Times New Roman, serif" font-size="48" text-anchor="middle">
+      <tspan font-style="italic">E</tspan> = <tspan font-style="italic">√</tspan>(<tspan font-style="italic">n</tspan><tspan dy="5" font-size="24">2</tspan><tspan dy="-5" font-size="32"> + h</tspan><tspan dy="5" font-size="24">2</tspan>)
+    </text>
+    <text x="0" y="180" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="black">Physics Laws</text>
+    <text x="0" y="220" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" fill="black">&amp; Constraints</text>
+  </g>
+
+  <!-- 10. VLM Language Model -->
+  <g transform="translate(770, 480)">
+    <rect x="0" y="0" width="420" height="220" rx="30" fill="url(#grad-green)" stroke="#4DB6AC" stroke-width="3" />
+    <text x="210" y="100" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#2F6E62">VLM</text>
+    <text x="270" y="140" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Physical</text>
+    <text x="270" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Language</text>
+    <text x="270" y="220" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Model</text>
+    
+    <rect x="20" y="40" width="120" height="140" fill="#757575" />
+    <text x="80" y="110" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;02</text>
+  </g>
+
+  <!-- 11. Physical Motion Prediction -->
+  <g transform="translate(1200, 470)">
+    <rect x="0" y="0" width="600" height="280" rx="30" fill="url(#grad-green)" stroke="#4DB6AC" stroke-width="3" />
+    <text x="300" y="60" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="black">Physical Motion Prediction</text>
+    
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="120" height="140" fill="#757575" />
+      <text x="60" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;08</text>
+      <text x="60" y="160" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">t=0</text>
+      
+      <line x1="120" y1="70" x2="150" y2="70" stroke="#2F6E62" stroke-width="3" marker-end="url(#arrow-green)" />
+      
+      <rect x="150" y="0" width="120" height="140" fill="#757575" />
+      <text x="210" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;01</text>
+      <text x="210" y="160" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">t=1</text>
+      
+      <line x1="270" y1="70" x2="300" y2="70" stroke="#2F6E62" stroke-width="3" marker-end="url(#arrow-green)" />
+      
+      <rect x="300" y="0" width="120" height="140" fill="#757575" />
+      <text x="360" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;09</text>
+      <text x="360" y="160" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">t=2</text>
+      
+      <line x1="420" y1="70" x2="450" y2="70" stroke="#2F6E62" stroke-width="3" marker-end="url(#arrow-green)" />
+      
+      <rect x="450" y="0" width="120" height="140" fill="#757575" />
+      <text x="510" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;05</text>
+      <text x="510" y="160" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="black">t=3</text>
+      
+      <text x="600" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="black">...</text>
+    </g>
+    <text x="300" y="240" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">4D Sequence (Time-Varying 3D)</text>
+  </g>
+
+  <!-- 12. Video Diffusion -->
+  <g transform="translate(770, 750)">
+    <rect x="0" y="0" width="380" height="220" rx="30" fill="url(#grad-purple)" stroke="#8E5EC0" stroke-width="3" />
+    <text x="190" y="100" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="black">Video</text>
+    <text x="190" y="150" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="black">Diffusion</text>
+    
+    <rect x="20" y="40" width="120" height="140" fill="#757575" />
+    <text x="80" y="110" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">&lt;AF&gt;10</text>
+    
+    <text x="190" y="200" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="black">Conditioned on 4D Data</text>
+  </g>
+
+  <!-- 13. Generated Video -->
+  <g transform="translate(1200, 750)">
+    <rect x="0" y="0" width="600" height="280" rx="30" fill="url(#grad-orange)" stroke="#F4B084" stroke-width="3" />
+    <text x="300" y="200" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="black">GENERATED HIGH-QUALITY VIDEO</text>
+    
+    <!-- Video Frames Simulation -->
+    <g transform="translate(20, 20)">
+      <!-- Frame 1 -->
+      <rect x="0" y="0" width="200" height="200" fill="#8B4513" /> <!-- Rock -->
+      <circle cx="100" cy="100" r="40" fill="#CD5C5C" /> <!-- Ball -->
+      <path d="M100,100 L100,140" stroke="#333" stroke-width="2" opacity="0.5"/> <!-- Shadow -->
+      
+      <!-- Frame 2 -->
+      <rect x="200" y="0" width="200" height="200" fill="#8B4513" />
+      <circle cx="300" cy="100" r="40" fill="#CD5C5C" />
+      <path d="M300,100 L300,140" stroke="#333" stroke-width="2" opacity="0.5"/>
+      <path d="M250,80 Q300,60 350,80" stroke="#8B4513" stroke-width="2" opacity="0.5"/> <!-- Dust trail -->
+      
+      <!-- Frame 3 -->
+      <rect x="400" y="0" width="200" height="200" fill="#8B4513" />
+      <circle cx="500" cy="100" r="40" fill="#CD5C5C" />
+      <path d="M500,100 L500,140" stroke="#333" stroke-width="2" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- 14. Connectors -->
+  <!-- Blue Arrow: Prompt -> Model -->
+  <line x1="760" y1="300" x2="820" y2="300" stroke="#2B579A" stroke-width="5" marker-end="url(#arrow-blue)" />
+  
+  <!-- Blue Arrow: Model -> Representation -->
+  <line x1="1210" y1="300" x2="1300" y2="300" stroke="#2B579A" stroke-width="5" marker-end="url(#arrow-blue)" />
+  
+  <!-- Blue Arrow: Representation -> VLM -->
+  <path d="M1600,430 L1600,450 L960,450 L960,480" fill="none" stroke="#2B579A" stroke-width="5" marker-end="url(#arrow-blue)" />
+  
+  <!-- Green Arrow: Physics -> VLM -->
+  <line x1="680" y1="560" x2="760" y2="560" stroke="#2F6E62" stroke-width="5" marker-end="url(#arrow-green)" />
+  
+  <!-- Green Arrow: VLM -> Motion -->
+  <line x1="1190" y1="580" x2="1240" y2="580" stroke="#2F6E62" stroke-width="5" marker-end="url(#arrow-green)" />
+  
+  <!-- Green Arrow: VLM -> Video Diffusion (Bottom) -->
+  <path d="M1060,600 L1060,680 L960,680 L960,740" fill="none" stroke="#2F6E62" stroke-width="5" marker-end="url(#arrow-green)" />
+  
+  <!-- Purple Arrow: Step 3 -> Video Diffusion -->
+  <line x1="520" y1="860" x2="760" y2="860" stroke="#6A4C91" stroke-width="5" marker-end="url(#arrow-purple)" />
+  
+  <!-- Purple Arrow: Video Diffusion -> Video -->
+  <line x1="1150" y1="860" x2="1240" y2="860" stroke="#6A4C91" stroke-width="5" marker-end="url(#arrow-purple)" />
+
+  <!-- 15. Header & Footer -->
+  <text x="960" y="80" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="black">WORLD MODEL: FROM STATIC 3D TO DYNAMIC VIDEO FLOW</text>
+  
+  <text x="960" y="1060" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="black">Leveraging physical prediction and diffusion for realistic video creation.</text>
+
+</svg>

@@ -1,0 +1,557 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 12.0 1626.0 766.0" style="font-family: Arial, sans-serif; background-color: white;">
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1F618D" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#70AD47" />
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#E69138" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#805685" />
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <marker id="arrow-brown" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8B4513" />
+    </marker>
+
+    <!-- Icons -->
+    <g id="icon-fire">
+      <path d="M15,40 Q5,30 10,15 Q15,0 25,10 Q35,0 40,15 Q45,30 35,40 Q25,50 25,35 Q25,50 15,40 Z" fill="#E70000" />
+      <path d="M20,38 Q15,30 20,20 Q25,10 30,20 Q35,30 30,38 Z" fill="#FF9900" />
+    </g>
+    <g id="icon-snow">
+      <path d="M25,5 L25,45 M5,25 L45,25 M10,10 L40,40 M40,10 L10,40" stroke="#4682B4" stroke-width="4" stroke-linecap="round" />
+      <circle cx="25" cy="25" r="5" fill="#4682B4" />
+    </g>
+    <g id="icon-plus">
+      <circle cx="25" cy="25" r="22" fill="white" stroke="black" stroke-width="3" />
+      <line x1="25" y1="5" x2="25" y2="45" stroke="black" stroke-width="3" />
+      <line x1="5" y1="25" x2="45" y2="25" stroke="black" stroke-width="3" />
+    </g>
+
+    <!-- Gradients/Patterns -->
+    <linearGradient id="grad-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E7D32" />
+      <stop offset="100%" style="stop-color:#81C784" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== LEGEND ==================== -->
+  <g transform="translate(1300, 130)">
+    <rect x="0" y="0" width="300" height="180" fill="none" stroke="#00334E" stroke-width="4" stroke-dasharray="15,10" rx="5" />
+    <g transform="translate(20, 30)">
+      <use href="#icon-plus" transform="scale(0.8)" />
+      <text x="60" y="25" font-size="28" fill="black">Point-wise Addition</text>
+    </g>
+    <g transform="translate(20, 70)">
+      <use href="#icon-fire" transform="scale(0.8)" />
+      <text x="60" y="25" font-size="28" fill="black">Stage2 Trainable Modules</text>
+    </g>
+    <g transform="translate(20, 110)">
+      <use href="#icon-fire" transform="scale(0.8)" />
+      <text x="60" y="25" font-size="28" fill="black">Stage3 Trainable Modules</text>
+    </g>
+    <g transform="translate(20, 150)">
+      <use href="#icon-snow" transform="scale(0.8)" />
+      <text x="60" y="25" font-size="28" fill="black">Frozen Components</text>
+    </g>
+  </g>
+
+  <!-- ==================== STAGE 1: INPUTS ==================== -->
+  <!-- Timeline -->
+  <g transform="translate(20, 680)">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="black" stroke-width="6" />
+    <circle cx="0" cy="0" r="10" fill="black" />
+    <circle cx="120" cy="0" r="10" fill="black" />
+    <circle cx="240" cy="0" r="10" fill="black" />
+    <circle cx="360" cy="0" r="10" fill="black" />
+    <circle cx="480" cy="0" r="10" fill="black" />
+    <circle cx="600" cy="0" r="10" fill="black" />
+    <circle cx="720" cy="0" r="10" fill="black" />
+    <circle cx="840" cy="0" r="10" fill="black" />
+    <circle cx="960" cy="0" r="10" fill="black" />
+    <circle cx="1080" cy="0" r="10" fill="black" />
+    <circle cx="1200" cy="0" r="10" fill="black" />
+    
+    <!-- Timeline Labels -->
+    <g font-size="30" fill="black">
+      <text x="0" y="35">0s</text>
+      <text x="120" y="35">6s</text>
+      <text x="180" y="35">50s</text>
+      <text x="380" y="35">60s</text>
+      <text x="430" y="35">97s</text>
+      <text x="660" y="35">106s</text>
+      <text x="730" y="35">256s</text>
+      <text x="940" y="35">267s</text>
+      <text x="1000" y="35">1747s</text>
+      <text x="1180" y="35">1759s</text>
+    </g>
+  </g>
+
+  <!-- Film Strips -->
+  <g transform="translate(15, 620)">
+    <!-- Strip 1 -->
+    <g>
+      <rect x="0" y="0" width="130" height="90" fill="black" />
+      <rect x="5" y="5" width="120" height="80" fill="white" />
+      <!-- Sprockets -->
+      <path d="M5,2 h10 v6 h-10 z M20,2 h10 v6 h-10 z M35,2 h10 v6 h-10 z M50,2 h10 v6 h-10 z M65,2 h10 v6 h-10 z M80,2 h10 v6 h-10 z M95,2 h10 v6 h-10 z M110,2 h10 v6 h-10 z" fill="white" />
+      <path d="M5,82 h10 v6 h-10 z M20,82 h10 v6 h-10 z M35,82 h10 v6 h-10 z M50,82 h10 v6 h-10 z M65,82 h10 v6 h-10 z M80,82 h10 v6 h-10 z M95,82 h10 v6 h-10 z M110,82 h10 v6 h-10 z" fill="white" />
+      <!-- Image Content (Man) -->
+      <image href="" x="5" y="5" width="120" height="80" /> 
+      <!-- Placeholder Graphic for Man -->
+      <rect x="5" y="5" width="120" height="80" fill="#ddd" />
+      <rect x="5" y="50" width="120" height="35" fill="#333" /> <!-- Street -->
+      <circle cx="65" cy="40" r="20" fill="#dcb" /> <!-- Face -->
+      <rect x="45" y="55" width="40" height="25" rx="5" fill="white" /> <!-- Mask -->
+      <path d="M45,55 q10,15 20,0" stroke="#333" fill="none" /> <!-- Mask detail -->
+      <path d="M40,80 q25,-10 50,0" fill="#333" /> <!-- Shirt -->
+    </g>
+    <text x="140" y="50" font-size="40" font-weight="bold">. . .</text>
+
+    <!-- Strip 2 -->
+    <g transform="translate(170, 0)">
+      <rect x="0" y="0" width="250" height="90" fill="black" />
+      <rect x="5" y="5" width="240" height="80" fill="white" />
+      <!-- Sprockets -->
+      <path d="M5,2 h10 v6 h-10 z M20,2 h10 v6 h-10 z M35,2 h10 v6 h-10 z M50,2 h10 v6 h-10 z M65,2 h10 v6 h-10 z M80,2 h10 v6 h-10 z M95,2 h10 v6 h-10 z M110,2 h10 v6 h-10 z M125,2 h10 v6 h-10 z M140,2 h10 v6 h-10 z M155,2 h10 v6 h-10 z M170,2 h10 v6 h-10 z M185,2 h10 v6 h-10 z M200,2 h10 v6 h-10 z M215,2 h10 v6 h-10 z M230,2 h10 v6 h-10 z" fill="white" />
+      <path d="M5,82 h10 v6 h-10 z M20,82 h10 v6 h-10 z M35,82 h10 v6 h-10 z M50,82 h10 v6 h-10 z M65,82 h10 v6 h-10 z M80,82 h10 v6 h-10 z M95,82 h10 v6 h-10 z M110,82 h10 v6 h-10 z M125,82 h10 v6 h-10 z M140,82 h10 v6 h-10 z M155,82 h10 v6 h-10 z M170,82 h10 v6 h-10 z M185,82 h10 v6 h-10 z M200,82 h10 v6 h-10 z M215,82 h10 v6 h-10 z M230,82 h10 v6 h-10 z" fill="white" />
+      <!-- Image Content (Street) -->
+      <rect x="5" y="5" width="118" height="80" fill="#ccc" />
+      <rect x="127" y="5" width="118" height="80" fill="#ccc" />
+      <!-- Buildings -->
+      <rect x="5" y="5" width="118" height="30" fill="#999" />
+      <rect x="127" y="5" width="118" height="30" fill="#999" />
+      <!-- Crowd -->
+      <circle cx="60" cy="60" r="5" fill="#333" />
+      <circle cx="190" cy="60" r="5" fill="#333" />
+    </g>
+    <text x="430" y="50" font-size="40" font-weight="bold">. . .</text>
+
+    <!-- Strip 3 -->
+    <g transform="translate(450, 0)">
+      <rect x="0" y="0" width="280" height="90" fill="black" />
+      <rect x="5" y="5" width="270" height="80" fill="white" />
+      <!-- Sprockets -->
+      <path d="M5,2 h10 v6 h-10 z M20,2 h10 v6 h-10 z M35,2 h10 v6 h-10 z M50,2 h10 v6 h-10 z M65,2 h10 v6 h-10 z M80,2 h10 v6 h-10 z M95,2 h10 v6 h-10 z M110,2 h10 v6 h-10 z M125,2 h10 v6 h-10 z M140,2 h10 v6 h-10 z M155,2 h10 v6 h-10 z M170,2 h10 v6 h-10 z M185,2 h10 v6 h-10 z M200,2 h10 v6 h-10 z M215,2 h10 v6 h-10 z M230,2 h10 v6 h-10 z M245,2 h10 v6 h-10 z" fill="white" />
+      <path d="M5,82 h10 v6 h-10 z M20,82 h10 v6 h-10 z M35,82 h10 v6 h-10 z M50,82 h10 v6 h-10 z M65,82 h10 v6 h-10 z M80,82 h10 v6 h-10 z M95,82 h10 v6 h-10 z M110,82 h10 v6 h-10 z M125,82 h10 v6 h-10 z M140,82 h10 v6 h-10 z M155,82 h10 v6 h-10 z M170,82 h10 v6 h-10 z M185,82 h10 v6 h-10 z M200,82 h10 v6 h-10 z M215,82 h10 v6 h-10 z M230,82 h10 v6 h-10 z M245,82 h10 v6 h-10 z" fill="white" />
+      <!-- Content: Man + Hands -->
+      <rect x="5" y="5" width="134" height="80" fill="#ccc" />
+      <rect x="141" y="5" width="129" height="80" fill="#ccc" />
+      <circle cx="70" cy="40" r="18" fill="#dcb" />
+      <rect x="52" y="50" width="36" height="22" rx="5" fill="white" />
+      <path d="M52,50 q18,15 36,0" stroke="#333" fill="none" />
+      <path d="M45,80 q25,-10 50,0" fill="#333" />
+      <!-- Hands -->
+      <path d="M120,30 l10,10 l-5,10 l10,5 l-5,10 l10,5" stroke="#dcb" stroke-width="4" fill="none" />
+    </g>
+    <text x="740" y="50" font-size="40" font-weight="bold">. . .</text>
+
+    <!-- Strip 4 -->
+    <g transform="translate(720, 0)">
+      <rect x="0" y="0" width="280" height="90" fill="black" />
+      <rect x="5" y="5" width="270" height="80" fill="white" />
+      <!-- Sprockets -->
+      <path d="M5,2 h10 v6 h-10 z M20,2 h10 v6 h-10 z M35,2 h10 v6 h-10 z M50,2 h10 v6 h-10 z M65,2 h10 v6 h-10 z M80,2 h10 v6 h-10 z M95,2 h10 v6 h-10 z M110,2 h10 v6 h-10 z M125,2 h10 v6 h-10 z M140,2 h10 v6 h-10 z M155,2 h10 v6 h-10 z M170,2 h10 v6 h-10 z M185,2 h10 v6 h-10 z M200,2 h10 v6 h-10 z M215,2 h10 v6 h-10 z M230,2 h10 v6 h-10 z M245,2 h10 v6 h-10 z" fill="white" />
+      <path d="M5,82 h10 v6 h-10 z M20,82 h10 v6 h-10 z M35,82 h10 v6 h-10 z M50,82 h10 v6 h-10 z M65,82 h10 v6 h-10 z M80,82 h10 v6 h-10 z M95,82 h10 v6 h-10 z M110,82 h10 v6 h-10 z M125,82 h10 v6 h-10 z M140,82 h10 v6 h-10 z M155,82 h10 v6 h-10 z M170,82 h10 v6 h-10 z M185,82 h10 v6 h-10 z M200,82 h10 v6 h-10 z M215,82 h10 v6 h-10 z M230,82 h10 v6 h-10 z M245,82 h10 v6 h-10 z" fill="white" />
+      <!-- Content: Street -->
+      <rect x="5" y="5" width="134" height="80" fill="#ccc" />
+      <rect x="141" y="5" width="129" height="80" fill="#ccc" />
+      <rect x="5" y="5" width="134" height="30" fill="#999" />
+      <rect x="141" y="5" width="129" height="30" fill="#999" />
+      <circle cx="70" cy="60" r="5" fill="#333" />
+      <circle cx="180" cy="60" r="5" fill="#333" />
+    </g>
+    <text x="1010" y="50" font-size="40" font-weight="bold">. . .</text>
+
+    <!-- Strip 5 -->
+    <g transform="translate(1000, 0)">
+      <rect x="0" y="0" width="280" height="90" fill="black" />
+      <rect x="5" y="5" width="270" height="80" fill="white" />
+      <!-- Sprockets -->
+      <path d="M5,2 h10 v6 h-10 z M20,2 h10 v6 h-10 z M35,2 h10 v6 h-10 z M50,2 h10 v6 h-10 z M65,2 h10 v6 h-10 z M80,2 h10 v6 h-10 z M95,2 h10 v6 h-10 z M110,2 h10 v6 h-10 z M125,2 h10 v6 h-10 z M140,2 h10 v6 h-10 z M155,2 h10 v6 h-10 z M170,2 h10 v6 h-10 z M185,2 h10 v6 h-10 z M200,2 h10 v6 h-10 z M215,2 h10 v6 h-10 z M230,2 h10 v6 h-10 z M245,2 h10 v6 h-10 z" fill="white" />
+      <path d="M5,82 h10 v6 h-10 z M20,82 h10 v6 h-10 z M35,82 h10 v6 h-10 z M50,82 h10 v6 h-10 z M65,82 h10 v6 h-10 z M80,82 h10 v6 h-10 z M95,82 h10 v6 h-10 z M110,82 h10 v6 h-10 z M125,82 h10 v6 h-10 z M140,82 h10 v6 h-10 z M155,82 h10 v6 h-10 z M170,82 h10 v6 h-10 z M185,82 h10 v6 h-10 z M200,82 h10 v6 h-10 z M215,82 h10 v6 h-10 z M230,82 h10 v6 h-10 z M245,82 h10 v6 h-10 z" fill="white" />
+      <!-- Content: Man -->
+      <rect x="5" y="5" width="134" height="80" fill="#ccc" />
+      <rect x="141" y="5" width="129" height="80" fill="#ccc" />
+      <circle cx="70" cy="40" r="18" fill="#dcb" />
+      <rect x="52" y="50" width="36" height="22" rx="5" fill="white" />
+      <path d="M52,50 q18,15 36,0" stroke="#333" fill="none" />
+      <path d="M45,80 q25,-10 50,0" fill="#333" />
+    </g>
+  </g>
+
+  <!-- ==================== STAGE 2: ENCODERS ==================== -->
+  
+  <!-- Vision Input (Left) -->
+  <g transform="translate(20, 540)">
+    <rect x="0" y="0" width="400" height="80" fill="none" stroke="#1F618D" stroke-width="4" stroke-dasharray="15,10" />
+    <!-- Image 1 -->
+    <rect x="10" y="10" width="110" height="60" fill="#ddd" />
+      <rect x="10" y="10" width="110" height="60" fill="none" stroke="white" stroke-width="2"/>
+      <circle cx="65" cy="30" r="15" fill="#dcb" />
+      <rect x="50" y="40" width="30" height="15" fill="white" />
+    <!-- Image 2 -->
+    <rect x="130" y="10" width="110" height="60" fill="#ddd" />
+      <rect x="130" y="10" width="110" height="60" fill="none" stroke="white" stroke-width="2"/>
+      <rect x="130" y="10" width="110" height="30" fill="#999" />
+      <circle cx="180" cy="50" r="5" fill="#333" />
+    <!-- Image 3 -->
+    <rect x="250" y="10" width="110" height="60" fill="#ddd" />
+      <rect x="250" y="10" width="110" height="60" fill="none" stroke="white" stroke-width="2"/>
+      <rect x="250" y="10" width="110" height="30" fill="#999" />
+      <circle cx="300" cy="50" r="5" fill="#333" />
+    <text x="290" y="55" font-size="30" font-weight="bold">. . .</text>
+  </g>
+
+  <!-- Vision Encoder -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="300" height="70" fill="#E8F0F8" stroke="#1F618D" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#1F618D" text-anchor="middle">Vision Encoder</text>
+    <use href="#icon-snow" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#1F618D" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">v</tspan></text>
+  </g>
+
+  <!-- Vision Projector -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="300" height="70" fill="#E8F0F8" stroke="#1F618D" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#1F618D" text-anchor="middle">Vision Projector</text>
+    <use href="#icon-fire" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#1F618D" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">'v</tspan></text>
+  </g>
+
+  <!-- Audio Input (Center) -->
+  <g transform="translate(480, 540)">
+    <rect x="0" y="0" width="320" height="80" fill="#C6E5B3" stroke="#2E7D32" stroke-width="4" stroke-dasharray="15,10" />
+    <!-- Waveform -->
+    <g fill="#2E7D32">
+      <rect x="10" y="30" width="5" height="20" rx="2" />
+      <rect x="20" y="20" width="5" height="40" rx="2" />
+      <rect x="30" y="10" width="5" height="60" rx="2" />
+      <rect x="40" y="25" width="5" height="30" rx="2" />
+      <rect x="50" y="5" width="5" height="70" rx="2" />
+      <rect x="60" y="15" width="5" height="50" rx="2" />
+      <rect x="70" y="30" width="5" height="20" rx="2" />
+      <rect x="80" y="10" width="5" height="60" rx="2" />
+      <rect x="90" y="20" width="5" height="40" rx="2" />
+      <rect x="100" y="5" width="5" height="70" rx="2" />
+      <rect x="110" y="15" width="5" height="50" rx="2" />
+      <rect x="120" y="30" width="5" height="20" rx="2" />
+      <rect x="130" y="10" width="5" height="60" rx="2" />
+      <rect x="140" y="25" width="5" height="30" rx="2" />
+      <rect x="150" y="5" width="5" height="70" rx="2" />
+      <rect x="160" y="15" width="5" height="50" rx="2" />
+      <rect x="170" y="30" width="5" height="20" rx="2" />
+      <rect x="180" y="10" width="5" height="60" rx="2" />
+      <rect x="190" y="20" width="5" height="40" rx="2" />
+      <rect x="200" y="5" width="5" height="70" rx="2" />
+      <rect x="210" y="15" width="5" height="50" rx="2" />
+      <rect x="220" y="30" width="5" height="20" rx="2" />
+      <rect x="230" y="10" width="5" height="60" rx="2" />
+      <rect x="240" y="25" width="5" height="30" rx="2" />
+      <rect x="250" y="5" width="5" height="70" rx="2" />
+      <rect x="260" y="15" width="5" height="50" rx="2" />
+      <rect x="270" y="30" width="5" height="20" rx="2" />
+      <rect x="280" y="20" width="5" height="40" rx="2" />
+      <rect x="290" y="10" width="5" height="60" rx="2" />
+    </g>
+  </g>
+
+  <!-- Audio Encoder -->
+  <g transform="translate(500, 480)">
+    <rect x="0" y="0" width="300" height="70" fill="#DFF0D8" stroke="#2E7D32" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#2E7D32" text-anchor="middle">Audio Encoder</text>
+    <use href="#icon-snow" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#2E7D32" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">a</tspan></text>
+  </g>
+
+  <!-- Audio Projector -->
+  <g transform="translate(500, 420)">
+    <rect x="0" y="0" width="300" height="70" fill="#DFF0D8" stroke="#2E7D32" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#2E7D32" text-anchor="middle">Audio Projector</text>
+    <use href="#icon-fire" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#2E7D32" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">'a</tspan></text>
+  </g>
+
+  <!-- Speech Input (Right) -->
+  <g transform="translate(900, 540)">
+    <rect x="0" y="0" width="320" height="80" fill="#F4CCB6" stroke="#8B4513" stroke-width="4" stroke-dasharray="15,10" />
+    <!-- Waveform -->
+    <g fill="#8B4513">
+      <rect x="10" y="30" width="5" height="20" rx="2" />
+      <rect x="20" y="20" width="5" height="40" rx="2" />
+      <rect x="30" y="10" width="5" height="60" rx="2" />
+      <rect x="40" y="25" width="5" height="30" rx="2" />
+      <rect x="50" y="5" width="5" height="70" rx="2" />
+      <rect x="60" y="15" width="5" height="50" rx="2" />
+      <rect x="70" y="30" width="5" height="20" rx="2" />
+      <rect x="80" y="10" width="5" height="60" rx="2" />
+      <rect x="90" y="20" width="5" height="40" rx="2" />
+      <rect x="100" y="5" width="5" height="70" rx="2" />
+      <rect x="110" y="15" width="5" height="50" rx="2" />
+      <rect x="120" y="30" width="5" height="20" rx="2" />
+      <rect x="130" y="10" width="5" height="60" rx="2" />
+      <rect x="140" y="25" width="5" height="30" rx="2" />
+      <rect x="150" y="5" width="5" height="70" rx="2" />
+      <rect x="160" y="15" width="5" height="50" rx="2" />
+      <rect x="170" y="30" width="5" height="20" rx="2" />
+      <rect x="180" y="10" width="5" height="60" rx="2" />
+      <rect x="190" y="20" width="5" height="40" rx="2" />
+      <rect x="200" y="5" width="5" height="70" rx="2" />
+      <rect x="210" y="15" width="5" height="50" rx="2" />
+      <rect x="220" y="30" width="5" height="20" rx="2" />
+      <rect x="230" y="10" width="5" height="60" rx="2" />
+      <rect x="240" y="25" width="5" height="30" rx="2" />
+      <rect x="250" y="5" width="5" height="70" rx="2" />
+      <rect x="260" y="15" width="5" height="50" rx="2" />
+      <rect x="270" y="30" width="5" height="20" rx="2" />
+      <rect x="280" y="20" width="5" height="40" rx="2" />
+      <rect x="290" y="10" width="5" height="60" rx="2" />
+    </g>
+  </g>
+
+  <!-- Speech Encoder -->
+  <g transform="translate(920, 480)">
+    <rect x="0" y="0" width="300" height="70" fill="#F4CCB6" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#8B4513" text-anchor="middle">Speech Encoder</text>
+    <use href="#icon-snow" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#8B4513" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">s</tspan></text>
+  </g>
+
+  <!-- Speech Projector -->
+  <g transform="translate(920, 420)">
+    <rect x="0" y="0" width="300" height="70" fill="#F4CCB6" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#8B4513" text-anchor="middle">Speech Projector</text>
+    <use href="#icon-fire" x="240" y="15" />
+    <text x="260" y="90" font-size="32" fill="#8B4513" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">'s</tspan></text>
+  </g>
+
+  <!-- Time Encoder (Far Right) -->
+  <g transform="translate(1180, 430)">
+    <rect x="0" y="0" width="200" height="80" fill="#EBC699" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="100" y="35" font-size="36" fill="#8B4513" text-anchor="middle">Time</text>
+    <text x="100" y="70" font-size="36" fill="#8B4513" text-anchor="middle">Encoder</text>
+    <use href="#icon-fire" x="140" y="10" transform="scale(0.8)" />
+    <use href="#icon-fire" x="150" y="30" transform="scale(0.8)" />
+  </g>
+
+  <!-- ==================== STAGE 3: CONNECTOR ==================== -->
+  
+  <!-- Dashed Container -->
+  <rect x="10" y="130" width="1280" height="300" fill="none" stroke="#1F618D" stroke-width="4" stroke-dasharray="15,10" rx="5" />
+  <text x="1000" y="160" font-size="32" fill="#1F618D" font-weight="bold">Query-Based Connector</text>
+
+  <!-- Arrows from Encoders to Tokens -->
+  <!-- Vision -->
+  <line x1="230" y1="420" x2="230" y2="390" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <line x1="230" y1="540" x2="230" y2="510" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <!-- Audio -->
+  <line x1="630" y1="420" x2="630" y2="390" stroke="#2E7D32" stroke-width="3" marker-end="url(#arrow-green)" />
+  <line x1="630" y1="540" x2="630" y2="510" stroke="#2E7D32" stroke-width="3" marker-end="url(#arrow-green)" />
+  <!-- Speech -->
+  <line x1="1030" y1="420" x2="1030" y2="390" stroke="#8B4513" stroke-width="3" marker-end="url(#arrow-brown)" />
+  <line x1="1030" y1="540" x2="1030" y2="510" stroke="#8B4513" stroke-width="3" marker-end="url(#arrow-brown)" />
+
+  <!-- Vision Tokens -->
+  <g transform="translate(160, 370)">
+    <text x="-120" y="30" font-size="28" fill="#1F618D">Vision Tokens</text>
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#eee" />
+    <rect x="10" y="10" width="40" height="40" rx="5" fill="#A9CCE3" />
+    <rect x="60" y="10" width="40" height="40" rx="5" fill="#A9CCE3" />
+    <rect x="110" y="10" width="40" height="40" rx="5" fill="#A9CCE3" />
+  </g>
+
+  <!-- Audio Tokens -->
+  <g transform="translate(560, 370)">
+    <text x="-120" y="30" font-size="28" fill="#2E7D32">Audio Tokens</text>
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#eee" />
+    <rect x="10" y="10" width="40" height="40" rx="5" fill="#AED581" />
+    <rect x="60" y="10" width="40" height="40" rx="5" fill="#AED581" />
+    <rect x="110" y="10" width="40" height="40" rx="5" fill="#AED581" />
+  </g>
+
+  <!-- Speech Tokens -->
+  <g transform="translate(960, 370)">
+    <text x="-120" y="30" font-size="28" fill="#8B4513">Speech Tokens</text>
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#eee" />
+    <rect x="10" y="10" width="40" height="40" rx="5" fill="#F4A460" />
+    <rect x="60" y="10" width="40" height="40" rx="5" fill="#F4A460" />
+    <rect x="110" y="10" width="40" height="40" rx="5" fill="#F4A460" />
+  </g>
+
+  <!-- Text Input (Bottom Right) -->
+  <g transform="translate(1200, 620)">
+    <rect x="0" y="0" width="420" height="150" fill="#FDB813" stroke="black" stroke-width="2" />
+    <text x="20" y="30" font-size="28" fill="black">
+      <tspan font-weight="bold">Query:</tspan> Locate the moment where “A
+    </text>
+    <text x="20" y="60" font-size="28" fill="black">
+      man <tspan fill="#1F618D">wearing a white mask</tspan> is talking
+    </text>
+    <text x="20" y="90" font-size="28" fill="black">
+      about the <tspan fill="#8B4513">sponsor</tspan> under <tspan fill="#2E7D32">noisy street</tspan>
+    </text>
+    <text x="20" y="120" font-size="28" fill="black">
+      <tspan fill="#2E7D32">sound</tspan>, which they have been <tspan fill="#E69138">trying for</tspan>
+    </text>
+    <text x="20" y="150" font-size="28" fill="black">
+      <tspan fill="#E69138">over a year</tspan>”, return precise timestamps
+    </text>
+  </g>
+
+  <!-- Text Tokenizer -->
+  <g transform="translate(1380, 550)">
+    <rect x="0" y="0" width="220" height="70" fill="#E8F0F8" stroke="#805685" stroke-width="4" rx="2" />
+    <text x="110" y="45" font-size="32" fill="#805685" text-anchor="middle">Text Tokenizer</text>
+  </g>
+
+  <!-- Text Tokens -->
+  <g transform="translate(1400, 490)">
+    <text x="-120" y="30" font-size="28" fill="#805685">Text Tokens</text>
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#eee" />
+    <rect x="10" y="10" width="40" height="40" rx="5" fill="#A569BD" />
+    <rect x="60" y="10" width="40" height="40" rx="5" fill="#A569BD" />
+    <rect x="110" y="10" width="40" height="40" rx="5" fill="#A569BD" />
+  </g>
+
+  <!-- Arrows into Cross Attention -->
+  <!-- Vision Path -->
+  <line x1="320" y1="370" x2="320" y2="350" stroke="#805685" stroke-width="3" marker-end="url(#arrow-purple)" />
+  <line x1="700" y1="370" x2="700" y2="350" stroke="#805685" stroke-width="3" marker-end="url(#arrow-purple)" />
+  
+  <!-- Audio Path -->
+  <line x1="630" y1="370" x2="630" y2="350" stroke="#2E7D32" stroke-width="3" marker-end="url(#arrow-green)" />
+  
+  <!-- Speech Path -->
+  <line x1="1030" y1="370" x2="1030" y2="350" stroke="#E69138" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <line x1="1090" y1="410" x2="1090" y2="350" stroke="#805685" stroke-width="3" marker-end="url(#arrow-purple)" />
+
+  <!-- Text Path (Complex) -->
+  <path d="M1480,490 L1480,400 L20,400 L20,350" fill="none" stroke="#805685" stroke-width="3" marker-end="url(#arrow-purple)" />
+  <text x="1450" y="400" font-size="32" fill="#805685" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">q</tspan></text>
+
+  <!-- Cross Attention Blocks -->
+  <!-- Vision -->
+  <g transform="translate(100, 310)">
+    <rect x="0" y="0" width="260" height="70" fill="#E8F0F8" stroke="#1F618D" stroke-width="4" rx="2" />
+    <text x="130" y="45" font-size="36" fill="#1F618D" text-anchor="middle">Cross Attention</text>
+  </g>
+  <!-- Audio -->
+  <g transform="translate(500, 310)">
+    <rect x="0" y="0" width="300" height="70" fill="#DFF0D8" stroke="#2E7D32" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#2E7D32" text-anchor="middle">Cross Attention</text>
+  </g>
+  <!-- Speech -->
+  <g transform="translate(910, 305)">
+    <rect x="0" y="0" width="300" height="70" fill="#F4CCB6" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="150" y="45" font-size="36" fill="#8B4513" text-anchor="middle">Cross Attention</text>
+  </g>
+
+  <!-- ==================== STAGE 4: FUSION ==================== -->
+  
+  <!-- Fusion Logic -->
+  <!-- Wa Oval -->
+  <g transform="translate(580, 275)">
+    <ellipse cx="70" cy="20" rx="70" ry="20" fill="#DFF0D8" stroke="#2E7D32" stroke-width="4" />
+    <text x="70" y="28" font-size="36" fill="#2E7D32" text-anchor="middle">Wa</text>
+  </g>
+  <!-- Ws Oval -->
+  <g transform="translate(880, 235)">
+    <ellipse cx="70" cy="20" rx="70" ry="20" fill="#F4CCB6" stroke="#8B4513" stroke-width="4" />
+    <text x="70" y="28" font-size="36" fill="#8B4513" text-anchor="middle">Ws</text>
+  </g>
+  <!-- Wv Oval -->
+  <g transform="translate(300, 235)">
+    <ellipse cx="70" cy="20" rx="70" ry="20" fill="#E8F0F8" stroke="#1F618D" stroke-width="4" />
+    <text x="70" y="28" font-size="36" fill="#1F618D" text-anchor="middle">Wv</text>
+  </g>
+
+  <!-- Arrows to Fusion -->
+  <line x1="630" y1="310" x2="630" y2="300" stroke="#2E7D32" stroke-width="3" marker-end="url(#arrow-green)" />
+  <line x1="1030" y1="305" x2="1030" y2="250" stroke="#E69138" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <line x1="1030" y1="250" x2="660" y2="250" stroke="#E69138" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <text x="860" y="270" font-size="32" fill="#E69138" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">s,q</tspan></text>
+
+  <line x1="230" y1="310" x2="230" y2="245" stroke="#1F618D" stroke-width="3" />
+  <line x1="230" y1="245" x2="610" y2="245" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <text x="400" y="270" font-size="32" fill="#1F618D" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">v,q</tspan></text>
+
+  <!-- Point-wise Addition -->
+  <g transform="translate(630, 250)">
+    <use href="#icon-plus" transform="scale(1.2)" />
+    <text x="40" y="50" font-size="32" fill="#70AD47" font-style="italic">f<tspan dy="5" font-size="20">i</tspan><tspan dy="-15" font-size="20">a,q</tspan></text>
+  </g>
+
+  <!-- ==================== STAGE 5: OUTPUT ==================== -->
+  
+  <!-- Multimodal Tokens -->
+  <g transform="translate(400, 190)">
+    <text x="-120" y="35" font-size="30" fill="#1F618D">Multimodal tokens</text>
+    <rect x="0" y="0" width="530" height="50" rx="10" fill="#eee" />
+    <text x="20" y="35" font-size="36" fill="#1F618D">Concat</text>
+    <text x="100" y="35" font-size="36" fill="#1F618D">(</text>
+    <text x="110" y="35" font-size="32" fill="#1F618D">Wv *</text>
+    <rect x="170" y="10" width="40" height="30" rx="5" fill="#A9CCE3" />
+    <rect x="215" y="10" width="40" height="30" rx="5" fill="#A9CCE3" />
+    <text x="260" y="35" font-size="32" fill="#1F618D">Wa *</text>
+    <rect x="300" y="10" width="40" height="30" rx="5" fill="#AED581" />
+    <rect x="345" y="10" width="40" height="30" rx="5" fill="#AED581" />
+    <text x="390" y="35" font-size="32" fill="#1F618D">Ws *</text>
+    <rect x="430" y="10" width="40" height="30" rx="5" fill="#F4CCB6" />
+    <rect x="475" y="10" width="40" height="30" rx="5" fill="#F4CCB6" />
+    <text x="515" y="35" font-size="36" fill="#1F618D">)</text>
+    <rect x="520" y="10" width="40" height="30" rx="5" fill="#EBC699" />
+  </g>
+
+  <!-- Arrow to MLP -->
+  <line x1="630" y1="190" x2="630" y2="175" stroke="black" stroke-width="3" marker-end="url(#arrow-black)" />
+
+  <!-- MLP -->
+  <g transform="translate(450, 140)">
+    <rect x="0" y="0" width="400" height="60" fill="#F4E1D2" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="200" y="40" font-size="36" fill="#8B4513" text-anchor="middle">Compress &amp; Two-layer MLP</text>
+  </g>
+
+  <!-- Arrow to LLM -->
+  <line x1="630" y1="140" x2="630" y2="125" stroke="black" stroke-width="3" marker-end="url(#arrow-black)" />
+
+  <!-- LLM -->
+  <g transform="translate(100, 70)">
+    <rect x="0" y="0" width="1060" height="70" fill="#F4E1D2" stroke="#8B4513" stroke-width="4" rx="2" />
+    <text x="530" y="45" font-size="40" fill="#8B4513" text-anchor="middle">Large Language Model</text>
+    <use href="#icon-fire" x="20" y="10" transform="scale(1.5)" />
+  </g>
+
+  <!-- ==================== HEADS ==================== -->
+  
+  <!-- Heads Input Arrows -->
+  <line x1="820" y1="70" x2="820" y2="50" stroke="black" stroke-width="3" marker-end="url(#arrow-black)" />
+  <line x1="1080" y1="70" x2="1080" y2="50" stroke="black" stroke-width="3" marker-end="url(#arrow-black)" />
+
+  <!-- Time Head -->
+  <g transform="translate(730, 20)">
+    <rect x="0" y="0" width="220" height="40" fill="#E8F0F8" stroke="#805685" stroke-width="4" rx="2" />
+    <text x="110" y="28" font-size="32" fill="#805685" text-anchor="middle">Time Head</text>
+    <use href="#icon-fire" x="10" y="5" transform="scale(0.8)" />
+    <use href="#icon-fire" x="180" y="5" transform="scale(0.8)" />
+  </g>
+
+  <!-- LM Head -->
+  <g transform="translate(1000, 20)">
+    <rect x="0" y="0" width="220" height="40" fill="#E8F0F8" stroke="#805685" stroke-width="4" rx="2" />
+    <text x="110" y="28" font-size="32" fill="#805685" text-anchor="middle">LM Head</text>
+    <use href="#icon-fire" x="10" y="5" transform="scale(0.8)" />
+    <use href="#icon-fire" x="180" y="5" transform="scale(0.8)" />
+  </g>
+
+  <!-- Sync Arrow -->
+  <line x1="950" y1="30" x2="1000" y2="30" stroke="black" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#arrow-black)" marker-start="url(#arrow-black)" />
+  <text x="975" y="25" font-size="28" fill="black" text-anchor="middle" font-style="italic">&lt;sync&gt;</text>
+
+</svg>

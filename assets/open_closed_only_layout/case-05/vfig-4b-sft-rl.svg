@@ -1,0 +1,126 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555" />
+    </marker>
+    <!-- Double Arrowhead Marker (for bidirectional) -->
+    <marker id="arrowhead-start" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#555555" />
+    </marker>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect x="0" y="0" width="1600" height="1000" fill="#F5F5F5" stroke="#CCCCCC" stroke-width="2" />
+
+  <!-- 2. Top Input Nodes -->
+  <!-- Left Node -->
+  <g transform="translate(220, 50)">
+    <rect x="0" y="0" width="440" height="130" rx="20" fill="white" stroke="#001F4D" stroke-width="4" />
+    <!-- Icon -->
+    <rect x="10" y="30" width="70" height="70" fill="#777777" />
+    <text x="45" y="65" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">&lt;AF&gt;01</text>
+    <!-- Text -->
+    <text x="90" y="80" font-family="Times New Roman, serif" font-size="60" fill="black">Text-Only Request</text>
+  </g>
+
+  <!-- Right Node -->
+  <g transform="translate(920, 50)">
+    <rect x="0" y="0" width="440" height="130" rx="20" fill="white" stroke="#001F4D" stroke-width="4" />
+    <!-- Icon -->
+    <rect x="10" y="30" width="70" height="70" fill="#777777" />
+    <text x="45" y="65" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">&lt;AF&gt;02</text>
+    <!-- Text -->
+    <text x="90" y="80" font-family="Times New Roman, serif" font-size="60" fill="black">Image-Text Request</text>
+  </g>
+
+  <!-- 3. Vertical Connectors -->
+  <line x1="440" y1="140" x2="440" y2="190" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+  <line x1="1140" y1="140" x2="1140" y2="190" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 4. Middle Section: Modality-Level -->
+  <!-- Left Container -->
+  <rect x="90" y="190" width="750" height="350" fill="#E6F0FF" stroke="#001F4D" stroke-width="4" />
+  <text x="365" y="250" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Modality-Level</text>
+  <text x="365" y="305" font-family="Times New Roman, serif" font-size="65" fill="#4472C4" text-anchor="middle">(Modality-Aware Load Balancing §3.1)</text>
+
+  <!-- Left Stage Boxes -->
+  <rect x="140" y="355" width="300" height="160" rx="20" fill="#CDE6FF" stroke="#001F4D" stroke-width="4" />
+  <text x="300" y="430" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Prefill Stage</text>
+
+  <rect x="490" y="355" width="300" height="160" rx="20" fill="#CDE6FF" stroke="#001F4D" stroke-width="4" />
+  <text x="650" y="430" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Decode Stage</text>
+
+  <!-- Right Container -->
+  <rect x="810" y="190" width="750" height="350" fill="#FBE5E5" stroke="#001F4D" stroke-width="4" />
+  <text x="1200" y="250" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Encode Stage</text>
+
+  <!-- Right Stage Boxes -->
+  <rect x="860" y="355" width="300" height="160" rx="20" fill="#FBCBCB" stroke="#001F4D" stroke-width="4" />
+  <text x="1020" y="430" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Prefill Stage</text>
+
+  <rect x="1210" y="355" width="300" height="160" rx="20" fill="#FBCBCB" stroke="#001F4D" stroke-width="4" />
+  <text x="1370" y="430" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Decode Stage</text>
+
+  <!-- Internal Arrows Middle -->
+  <line x1="440" y1="410" x2="490" y2="410" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+  <line x1="1140" y1="410" x2="1210" y2="410" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- Cross-Container Arrow -->
+  <line x1="760" y1="240" x2="860" y2="240" stroke="#555555" stroke-width="8" marker-start="url(#arrowhead-start)" marker-end="url(#arrowhead)" />
+
+  <!-- Diagonal Arrow -->
+  <line x1="1020" y1="355" x2="1020" y2="355" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" /> <!-- Placeholder for visual alignment -->
+  <line x1="1020" y1="355" x2="1020" y2="355" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" /> <!-- Redrawing diagonal -->
+  <line x1="1020" y1="355" x2="1020" y2="355" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" /> 
+  <!-- Actually, the diagonal arrow goes from Encode Stage to Prefill Stage. Let's draw it properly. -->
+  <line x1="1020" y1="290" x2="960" y2="350" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 5. Middle Section: Stage-Level -->
+  <rect x="90" y="540" width="1350" height="280" fill="#FFFCF5" stroke="#001F4D" stroke-width="4" />
+  <text x="400" y="595" font-family="Times New Roman, serif" font-size="70" fill="black" text-anchor="middle">Stage-Level (Elastic Partition Scheduling §3.2)</text>
+
+  <!-- Stage Boxes -->
+  <rect x="190" y="615" width="340" height="180" rx="20" fill="#FFF2CC" stroke="#001F4D" stroke-width="4" />
+  <text x="360" y="675" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Request</text>
+  <text x="360" y="735" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Scheduling</text>
+
+  <rect x="670" y="615" width="340" height="180" rx="20" fill="#FFF2CC" stroke="#001F4D" stroke-width="4" />
+  <text x="810" y="675" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Stage</text>
+  <text x="810" y="735" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Allocation</text>
+
+  <rect x="1090" y="615" width="340" height="180" rx="20" fill="#FFF2CC" stroke="#001F4D" stroke-width="4" />
+  <text x="1230" y="675" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Elastic</text>
+  <text x="1230" y="735" font-family="Times New Roman, serif" font-size="65" fill="black" text-anchor="middle">Auto-Scaling</text>
+
+  <!-- Internal Arrows Middle -->
+  <line x1="530" y1="680" x2="670" y2="680" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+  <line x1="1010" y1="680" x2="1090" y2="680" stroke="#555555" stroke-width="8" marker-end="url(#arrowhead)" />
+
+  <!-- 6. Bottom Section: Unified Cache -->
+  <rect x="90" y="830" width="950" height="200" rx="40" fill="#E2F0D9" stroke="#001F4D" stroke-width="4" />
+  <text x="565" y="925" font-family="Times New Roman, serif" font-size="70" fill="black" text-anchor="middle">Unified Multimodal Prefix Cache (§3.3)</text>
+
+  <!-- 7. Legend -->
+  <rect x="1080" y="820" width="460" height="180" fill="white" stroke="#001F4D" stroke-width="4" />
+  
+  <!-- Legend Item 1 -->
+  <g transform="translate(1100, 835)">
+    <rect x="0" y="0" width="90" height="60" fill="#777777" />
+    <text x="45" y="35" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">&lt;AF&gt;03</text>
+    <text x="110" y="40" font-family="Times New Roman, serif" font-size="55" fill="black">Text-Only Group</text>
+  </g>
+
+  <!-- Legend Item 2 -->
+  <g transform="translate(1100, 870)">
+    <rect x="0" y="0" width="90" height="60" fill="#FBCBCB" stroke="black" stroke-width="4" />
+    <text x="110" y="40" font-family="Times New Roman, serif" font-size="55" fill="black">Multimodal Group</text>
+  </g>
+
+  <!-- Legend Item 3 -->
+  <g transform="translate(1100, 930)">
+    <line x1="0" y1="20" x2="180" y2="20" stroke="#555555" stroke-width="8" marker-start="url(#arrowhead-start)" marker-end="url(#arrowhead)" />
+    <text x="200" y="35" font-family="Times New Roman, serif" font-size="55" fill="black">Auto-Scaling</text>
+  </g>
+
+</svg>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image-to-SVG Reconstruction</title>
+<style>
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: #172033;
+    background: #f6f6f1;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+  }
+  main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 18px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .intro {
+    margin: 0 0 20px;
+    color: #526071;
+    font-size: 14px;
+  }
+  .intro a {
+    color: #526071;
+    text-decoration: none;
+  }
+  .intro a:hover {
+    color: #172033;
+    text-decoration: underline;
+  }
+  .rows {
+    display: grid;
+    gap: 12px;
+  }
+  .guideRow {
+    min-height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #d8d8cf;
+    border-radius: 8px;
+    background: #fff;
+    color: #172033;
+    text-decoration: none;
+  }
+  .guideRow:hover {
+    border-color: #94a3b8;
+    background: #fbfbf7;
+  }
+  .guideRow span {
+    display: block;
+    margin-bottom: 6px;
+    color: #647084;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .guideRow strong {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  .guideRow small {
+    color: #526071;
+    font-size: 13px;
+    text-align: right;
+  }
+  .sectionLabel {
+    margin: 14px 0 4px;
+    color: #647084;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  @media (max-width: 860px) {
+    .guideRow {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .guideRow small {
+      text-align: left;
+    }
+  }
+
+
+.site-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+}
+.site-nav a {
+  color: #233044;
+  text-decoration: none;
+  border: 1px solid #c8c9bd;
+  background: #fff;
+  border-radius: 5px;
+  padding: 6px 9px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.site-nav a:hover {
+  border-color: #94a3b8;
+  background: #fbfbf7;
+}
+.site-nav a.active {
+  border-color: #647084;
+  background: #eef1f4;
+  font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+<main>
+  <nav class="site-nav"><a href="../index.html">Guide</a><a class="active" href="index.html">Reconstruction</a><a href="../editing/index.html">Editing</a><a href="../additional/index.html">Additional</a></nav>
+  <h1>Image-to-SVG Reconstruction</h1>
+  <p class="intro"><a href="../index.html">← Back to Guide</a></p>
+  <div class="rows">
+    
+    
+    <a class="guideRow" href="overall.html">
+      <div>
+        <span>Reconstruction</span>
+        <strong>Overall Comparison</strong>
+      </div>
+      <small>30 cases, GT plus three model outputs</small>
+    </a>
+    <div class="sectionLabel">By Model</div>
+    
+    <a class="guideRow" href="anthropic_claude-opus-4-8.html">
+      <div>
+        <span>Model</span>
+        <strong>claude-opus-4.8</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+    <a class="guideRow" href="openai_gpt-5-5.html">
+      <div>
+        <span>Model</span>
+        <strong>gpt-5.5</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+    <a class="guideRow" href="google_gemini-3-5-flash.html">
+      <div>
+        <span>Model</span>
+        <strong>gemini-3.5-flash</strong>
+      </div>
+      <small>30 reconstruction cases</small>
+    </a>
+  </div>
+</main>
+</body>
+</html>

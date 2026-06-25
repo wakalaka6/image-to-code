@@ -1,0 +1,375 @@
+<svg width="1600" height="700" viewBox="-8.0 -8.0 1676.0 716.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6F0FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F5FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D6EAF8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EBF5FB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D5F5E3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E9F7EF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="step3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DAEF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4ECF7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="box1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D6EAF8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="box2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D5F5E3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="box3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4ECF7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#1F618D" />
+    </marker>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#16A085" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#6C3483" />
+    </marker>
+    <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <!-- Subtle Network Pattern -->
+  <path d="M0,0 L1600,0 L1600,700 L0,700 Z" fill="none" />
+  <g stroke="#A0AEC0" stroke-width="1" opacity="0.4">
+    <!-- Random mesh generation simulation -->
+    <path d="M0,100 L100,0 M100,0 L200,100 M200,100 L300,0 M300,0 L400,100 M400,100 L500,0 M500,0 L600,100 M600,100 L700,0 M700,0 L800,100 M800,100 L900,0 M900,0 L1000,100 M1000,100 L1100,0 M1100,0 L1200,100 M1200,100 L1300,0 M1300,0 L1400,100 M1400,100 L1500,0 M1500,0 L1600,100" />
+    <path d="M0,200 L100,300 M100,300 L200,200 M200,200 L300,300 M300,300 L400,200 M400,200 L500,300 M500,300 L600,200 M600,200 L700,300 M700,300 L800,200 M800,200 L900,300 M900,300 L1000,200 M1000,200 L1100,300 M1100,300 L1200,200 M1200,200 L1300,300 M1300,300 L1400,200 M1400,200 L1500,300 M1500,300 L1600,200" />
+    <path d="M0,300 L100,400 M100,400 L200,300 M200,300 L300,400 M300,400 L400,300 M400,300 L500,400 M500,400 L600,300 M600,300 L700,400 M700,400 L800,300 M800,300 L900,400 M900,400 L1000,300 M1000,300 L1100,400 M1100,400 L1200,300 M1200,300 L1300,400 M1300,400 L1400,300 M1400,300 L1500,400 M1500,400 L1600,300" />
+    <path d="M0,400 L100,500 M100,500 L200,400 M200,400 L300,500 M300,500 L400,400 M400,400 L500,500 M500,500 L600,400 M600,400 L700,500 M700,500 L800,400 M800,400 L900,500 M900,500 L1000,400 M1000,400 L1100,500 M1100,500 L1200,400 M1200,400 L1300,500 M1300,500 L1400,400 M1400,400 L1500,500 M1500,500 L1600,400" />
+    <path d="M0,500 L100,600 M100,600 L200,500 M200,500 L300,600 M300,600 L400,500 M400,500 L500,600 M500,600 L600,500 M600,500 L700,600 M700,600 L800,500 M800,500 L900,600 M900,600 L1000,500 M1000,500 L1100,600 M1100,600 L1200,500 M1200,500 L1300,600 M1300,600 L1400,500 M1400,500 L1500,600 M1500,600 L1600,500" />
+  </g>
+
+  <!-- Main Title -->
+  <text x="800" y="60" font-family="Arial, sans-serif" font-weight="900" font-size="52" text-anchor="middle" fill="#0B1F2A">WORLD MODEL: FROM STATIC 3D TO DYNAMIC VIDEO FLOW</text>
+
+  <!-- Main Container -->
+  <rect x="50" y="85" width="1500" height="580" rx="30" fill="#FFFFFF" filter="url(#shadow)" />
+  <text x="830" y="135" font-family="Arial, sans-serif" font-weight="bold" font-size="42" text-anchor="middle" fill="#0B1F2A">World Model Pipeline</text>
+
+  <!-- ================= ROW 1 ================= -->
+  
+  <!-- Step 1 Box -->
+  <g transform="translate(70, 140)">
+    <rect width="330" height="170" rx="20" fill="url(#step1Grad)" filter="url(#shadow)" />
+    <rect x="90" y="15" width="160" height="45" rx="10" fill="#3498DB" />
+    <text x="170" y="47" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="white" text-anchor="middle">STEP 1</text>
+    <text x="165" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">COARSE 3D</text>
+    <text x="165" y="125" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">SANDBOX</text>
+    <text x="165" y="160" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">GENERATION</text>
+  </g>
+
+  <!-- Input Prompt -->
+  <g transform="translate(460, 200)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="black">Input Prompt</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="24" fill="black">“A ball rolls down</text>
+    <text x="10" y="65" font-family="Arial, sans-serif" font-size="24" fill="black">a rocky ramp”</text>
+  </g>
+  <!-- Arrow Prompt -> Box 1 -->
+  <line x1="640" y1="210" x2="720" y2="210" stroke="#1F618D" stroke-width="3" marker-end="url(#arrowBlue)" />
+
+  <!-- Box 1: Coarse 3D Scene Gen -->
+  <g transform="translate(725, 150)">
+    <rect width="340" height="160" rx="20" fill="url(#box1Grad)" stroke="#3498DB" stroke-width="4" />
+    <!-- Neural Net Icon -->
+    <g transform="translate(40, 20)" stroke="#1F618D" stroke-width="2" fill="none">
+      <circle cx="10" cy="10" r="6" /><circle cx="10" cy="40" r="6" /><circle cx="10" cy="70" r="6" />
+      <circle cx="40" cy="20" r="6" /><circle cx="40" cy="50" r="6" /><circle cx="40" cy="80" r="6" />
+      <circle cx="70" cy="10" r="6" /><circle cx="70" cy="40" r="6" /><circle cx="70" cy="70" r="6" />
+      <line x1="10" y1="10" x2="40" y2="20" /><line x1="10" y1="10" x2="40" y2="50" /><line x1="10" y1="10" x2="40" y2="80" />
+      <line x1="10" y1="40" x2="40" y2="20" /><line x1="10" y1="40" x2="40" y2="50" /><line x1="10" y1="40" x2="40" y2="80" />
+      <line x1="10" y1="70" x2="40" y2="20" /><line x1="10" y1="70" x2="40" y2="50" /><line x1="10" y1="70" x2="40" y2="80" />
+      <line x1="40" y1="20" x2="70" y2="10" /><line x1="40" y1="20" x2="70" y2="40" /><line x1="40" y1="20" x2="70" y2="70" />
+      <line x1="40" y1="50" x2="70" y2="10" /><line x1="40" y1="50" x2="70" y2="40" /><line x1="40" y1="50" x2="70" y2="70" />
+      <line x1="40" y1="80" x2="70" y2="10" /><line x1="40" y1="80" x2="70" y2="40" /><line x1="40" y1="80" x2="70" y2="70" />
+    </g>
+    <!-- Database Icon -->
+    <g transform="translate(150, 20)" fill="none" stroke="#1F618D" stroke-width="2">
+      <ellipse cx="30" cy="10" rx="30" ry="10" />
+      <path d="M0,10 v40 a30,10 0 0,0 60,0 v-40" />
+      <path d="M0,25 a30,10 0 0,0 60,0" />
+      <path d="M0,40 a30,10 0 0,0 60,0" />
+    </g>
+    <!-- Cubes Icon -->
+    <g transform="translate(250, 20)" fill="none" stroke="#1F618D" stroke-width="2">
+      <path d="M20,0 L40,10 L20,20 L0,10 Z" fill="#D6EAF8" />
+      <path d="M0,10 L20,20 v20 L0,10" fill="#AED6F1" />
+      <path d="M40,10 L40,30 L20,40 L20,20" fill="#AED6F1" />
+      <g transform="translate(0, 30)">
+         <path d="M20,0 L40,10 L20,20 L0,10 Z" fill="#AED6F1" />
+         <path d="M0,10 L20,20 v20 L0,10" fill="#3498DB" />
+         <path d="M40,10 L40,30 L20,40 L20,20" fill="#3498DB" />
+      </g>
+      <g transform="translate(30, 15)">
+         <path d="M20,0 L40,10 L20,20 L0,10 Z" fill="none" stroke="#1F618D" />
+         <path d="M0,10 L20,20 v20 L0,10" fill="none" stroke="#1F618D" />
+         <path d="M40,10 L40,30 L20,40 L20,20" fill="none" stroke="#1F618D" />
+      </g>
+    </g>
+    <text x="170" y="115" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#0B1F2A" text-anchor="middle">Coarse 3D Scene</text>
+    <text x="170" y="145" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#0B1F2A" text-anchor="middle">Generation Model</text>
+  </g>
+  <!-- Arrow Box 1 -> Box 2 -->
+  <line x1="1065" y1="210" x2="1145" y2="210" stroke="#1F618D" stroke-width="3" marker-end="url(#arrowBlue)" />
+
+  <!-- Box 2: Coarse 3D Rep -->
+  <g transform="translate(1145, 150)">
+    <rect width="400" height="160" rx="20" fill="url(#box1Grad)" stroke="#AED6F1" stroke-width="4" />
+    <!-- Wireframe Ramp -->
+    <g transform="translate(50, 30)" stroke="#333" stroke-width="1" fill="none">
+      <path d="M0,20 L60,0 L120,20 L60,40 Z" /> <!-- Top -->
+      <path d="M0,20 L0,100 L60,120 L60,40" /> <!-- Left -->
+      <path d="M120,20 L120,100 L60,120" /> <!-- Right -->
+      <circle cx="60" cy="70" r="25" fill="#999" opacity="0.5" />
+      <path d="M60,45 v50 M35,70 h50" stroke="white" stroke-width="1" />
+    </g>
+    <!-- Mesh Ball -->
+    <g transform="translate(200, 60)">
+       <circle cx="25" cy="25" r="25" fill="#999" />
+       <path d="M0,25 Q12,0 25,25 T50,25" fill="none" stroke="#555" stroke-width="0.5" />
+       <path d="M0,25 Q12,50 25,25 T50,25" fill="none" stroke="#555" stroke-width="0.5" />
+       <path d="M25,0 Q37,25 25,50" fill="none" stroke="#555" stroke-width="0.5" />
+       <path d="M25,0 Q12,25 25,50" fill="none" stroke="#555" stroke-width="0.5" />
+    </g>
+    <!-- Mesh Ramp -->
+    <g transform="translate(260, 30)" stroke="#333" stroke-width="1" fill="#BBB">
+      <path d="M0,80 L80,120 L160,40 L80,0 Z" />
+      <path d="M0,80 L80,120 L80,100 Z" fill="#888" />
+      <path d="M80,120 L160,40 L160,20 Z" fill="#888" />
+      <path d="M0,80 L80,0 L160,40" fill="none" />
+    </g>
+    <text x="200" y="140" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#0B1F2A" text-anchor="middle">Coarse 3D Representation</text>
+  </g>
+
+  <!-- Connector Row 1 -> Row 2 -->
+  <path d="M1345,310 L1345,290 Q1345,280 1335,280 L855,280 Q845,280 845,290 L845,320" fill="none" stroke="#1F618D" stroke-width="3" marker-end="url(#arrowBlue)" />
+
+  <!-- ================= ROW 2 ================= -->
+
+  <!-- Step 2 Box -->
+  <g transform="translate(70, 305)">
+    <rect width="330" height="170" rx="20" fill="url(#step2Grad)" filter="url(#shadow)" />
+    <rect x="90" y="15" width="160" height="45" rx="10" fill="#38B7AB" />
+    <text x="170" y="47" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="white" text-anchor="middle">STEP 2</text>
+    <text x="165" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">VLM-BASED</text>
+    <text x="165" y="125" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">PHYSICAL MOTION</text>
+    <text x="165" y="160" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">PREDICTION</text>
+  </g>
+
+  <!-- Math & Input -->
+  <g transform="translate(460, 320)">
+    <!-- Equations -->
+    <text x="0" y="20" font-family="Times New Roman, serif" font-style="italic" font-size="24" fill="black">
+      f = ∫<tspan dy="5" font-size="16">t=1</tspan><tspan dy="-15" font-size="16">0</tspan><tspan dy="10" font-size="24"> </tspan>
+      <tspan text-decoration="overline" dx="5">∂</tspan>V
+    </text>
+    <line x1="85" y1="15" x2="115" y2="15" stroke="black" stroke-width="1" />
+    <text x="100" y="35" font-family="Times New Roman, serif" font-style="italic" font-size="18" fill="black">∂t</text>
+
+    <text x="0" y="60" font-family="Times New Roman, serif" font-style="italic" font-size="18" fill="black">
+       <tspan text-decoration="overline" dx="0">∂</tspan>u   1
+    </text>
+    <line x1="5" y1="55" x2="25" y2="55" stroke="black" stroke-width="1" />
+    <text x="5" y="75" font-family="Times New Roman, serif" font-style="italic" font-size="18" fill="black">∂t</text>
+    <text x="35" y="65" font-family="Times New Roman, serif" font-size="18" fill="black">+</text>
+    <text x="55" y="60" font-family="Times New Roman, serif" font-size="14" fill="black">2</text>
+    <text x="70" y="60" font-family="Times New Roman, serif" font-style="italic" font-size="18" fill="black">C<tspan dy="3" font-size="14">r</tspan><tspan dy="-3">(C)</tspan></text>
+
+    <text x="0" y="100" font-family="Times New Roman, serif" font-style="italic" font-size="24" fill="black">
+      E = √<tspan text-decoration="overline">n</tspan><tspan dy="-8" font-size="16">2</tspan><tspan dy="8"> + </tspan><tspan text-decoration="overline">h</tspan><tspan dy="-8" font-size="16">2</tspan>
+    </text>
+    <path d="M30,90 L35,105 L40,90" fill="none" stroke="black" stroke-width="1" />
+
+    <text x="0" y="130" font-family="Arial, sans-serif" font-size="26" fill="black">Physics Laws</text>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="26" fill="black">&amp; Constraints</text>
+  </g>
+  <!-- Arrow Math -> Box 3 -->
+  <line x1="590" y1="375" x2="650" y2="375" stroke="#16A085" stroke-width="3" marker-end="url(#arrowTeal)" />
+
+  <!-- Box 3: VLM -->
+  <g transform="translate(655, 325)">
+    <rect width="370" height="120" rx="20" fill="url(#box2Grad)" stroke="#38B7AB" stroke-width="4" />
+    <!-- Brain Icon -->
+    <g transform="translate(30, 25)" stroke="#0B3B38" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30,60 C10,60 0,45 0,30 C0,10 15,0 35,0 C45,0 50,5 50,10" />
+      <path d="M30,60 C50,60 60,45 60,30 C60,10 45,0 25,0 C15,0 10,5 10,10" />
+      <path d="M10,20 Q20,10 30,20 Q40,10 50,20" />
+      <path d="M10,35 Q20,25 30,35 Q40,25 50,35" />
+      <path d="M10,50 Q20,40 30,50 Q40,40 50,50" />
+      <path d="M30,60 Q20,50 30,40 Q40,50 30,60" />
+      <path d="M30,60 Q20,70 10,60" />
+      <path d="M30,60 Q40,70 50,60" />
+    </g>
+    <text x="140" y="70" font-family="Arial, sans-serif" font-weight="900" font-size="44" fill="#0B3B38">VLM</text>
+    <text x="240" y="40" font-family="Arial, sans-serif" font-size="24" fill="black">Physical</text>
+    <text x="240" y="65" font-family="Arial, sans-serif" font-size="24" fill="black">Language</text>
+    <text x="240" y="90" font-family="Arial, sans-serif" font-size="24" fill="black">Model</text>
+  </g>
+  <!-- Arrow Box 3 -> Box 4 -->
+  <line x1="1025" y1="385" x2="1080" y2="385" stroke="#16A085" stroke-width="3" marker-end="url(#arrowTeal)" />
+
+  <!-- Box 4: Motion Prediction -->
+  <g transform="translate(1080, 310)">
+    <rect width="460" height="170" rx="20" fill="url(#box2Grad)" stroke="#38B7AB" stroke-width="4" />
+    <text x="230" y="35" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="black" text-anchor="middle">Physical Motion Prediction</text>
+    
+    <!-- Sequence -->
+    <g transform="translate(20, 60)">
+      <!-- Frame 1 -->
+      <g transform="translate(0,0)">
+        <path d="M0,20 L60,0 L100,60 L40,80 Z" fill="#BBB" stroke="#555" />
+        <path d="M0,20 L40,80 L40,90 L0,30 Z" fill="#999" />
+        <circle cx="40" cy="30" r="15" fill="#999" stroke="#555" />
+        <text x="30" y="110" font-family="Arial, sans-serif" font-size="24" fill="black">t=0</text>
+      </g>
+      <line x1="110" y1="40" x2="140" y2="40" stroke="black" stroke-width="1.5" marker-end="url(#arrowBlack)" />
+      
+      <!-- Frame 2 -->
+      <g transform="translate(150,0)">
+        <path d="M0,20 L60,0 L100,60 L40,80 Z" fill="#BBB" stroke="#555" />
+        <path d="M0,20 L40,80 L40,90 L0,30 Z" fill="#999" />
+        <circle cx="45" cy="35" r="15" fill="#999" stroke="#555" />
+        <text x="30" y="110" font-family="Arial, sans-serif" font-size="24" fill="black">t=1</text>
+      </g>
+      <line x1="260" y1="40" x2="290" y2="40" stroke="black" stroke-width="1.5" marker-end="url(#arrowBlack)" />
+
+      <!-- Frame 3 -->
+      <g transform="translate(300,0)">
+        <path d="M0,20 L60,0 L100,60 L40,80 Z" fill="#BBB" stroke="#555" />
+        <path d="M0,20 L40,80 L40,90 L0,30 Z" fill="#999" />
+        <circle cx="50" cy="45" r="15" fill="#999" stroke="#555" />
+        <text x="30" y="110" font-family="Arial, sans-serif" font-size="24" fill="black">t=2</text>
+      </g>
+      <line x1="410" y1="40" x2="440" y2="40" stroke="black" stroke-width="1.5" marker-end="url(#arrowBlack)" />
+
+      <!-- Frame 4 -->
+      <g transform="translate(450,0)">
+        <path d="M0,20 L60,0 L100,60 L40,80 Z" fill="#BBB" stroke="#555" />
+        <path d="M0,20 L40,80 L40,90 L0,30 Z" fill="#999" />
+        <circle cx="55" cy="55" r="15" fill="#999" stroke="#555" />
+        <text x="30" y="110" font-family="Arial, sans-serif" font-size="24" fill="black">t=3</text>
+      </g>
+      <text x="560" y="50" font-family="Arial, sans-serif" font-size="30" fill="black">...</text>
+    </g>
+    <text x="230" y="155" font-family="Arial, sans-serif" font-weight="bold" font-size="26" fill="#0B1F2A" text-anchor="middle">4D Sequence (Time-Varying 3D)</text>
+  </g>
+
+  <!-- Connector Row 2 -> Row 3 -->
+  <path d="M910,430 L910,450 Q910,460 900,460 L835,460 Q825,460 825,470 L825,500" fill="none" stroke="#16A085" stroke-width="3" marker-end="url(#arrowTeal)" />
+
+  <!-- ================= ROW 3 ================= -->
+
+  <!-- Step 3 Box -->
+  <g transform="translate(70, 495)">
+    <rect width="330" height="170" rx="20" fill="url(#step3Grad)" filter="url(#shadow)" />
+    <rect x="90" y="15" width="160" height="45" rx="10" fill="#8E44AD" />
+    <text x="170" y="47" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="white" text-anchor="middle">STEP 3</text>
+    <text x="165" y="100" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">VIDEO DIFFUSION</text>
+    <text x="165" y="140" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="black" text-anchor="middle">&amp; SYNTHESIS</text>
+  </g>
+  <!-- Arrow Step 3 -> Box 5 -->
+  <line x1="400" y1="570" x2="650" y2="570" stroke="#6C3483" stroke-width="3" marker-end="url(#arrowPurple)" />
+
+  <!-- Box 5: Video Diffusion -->
+  <g transform="translate(650, 495)">
+    <rect width="350" height="140" rx="20" fill="url(#box3Grad)" stroke="#8E44AD" stroke-width="4" />
+    <!-- Cloud Icon -->
+    <g transform="translate(30, 20)" stroke="#6C3483" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M15,40 Q5,40 5,30 Q5,15 20,15 Q25,0 45,0 Q65,0 70,15 Q85,15 85,30 Q85,40 75,40" />
+      <circle cx="10" cy="55" r="3" fill="none" stroke="#6C3483" stroke-width="3" />
+      <circle cx="25" cy="55" r="3" fill="none" stroke="#6C3483" stroke-width="3" />
+      <circle cx="40" cy="55" r="3" fill="none" stroke="#6C3483" stroke-width="3" />
+      <circle cx="55" cy="55" r="3" fill="none" stroke="#6C3483" stroke-width="3" />
+      <circle cx="70" cy="55" r="3" fill="none" stroke="#6C3483" stroke-width="3" />
+      <path d="M35,40 v15" />
+      <path d="M50,40 v15" />
+      <path d="M20,40 v15" />
+      <path d="M20,55 h10" />
+      <path d="M50,55 h10" />
+    </g>
+    <text x="160" y="60" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#0B0B36">Video</text>
+    <text x="140" y="100" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#0B0B36">Diffusion</text>
+    <text x="175" y="170" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#6C3483" text-anchor="middle">Conditioned on 4D Data</text>
+  </g>
+  <!-- Arrow Box 5 -> Box 6 -->
+  <line x1="1000" y1="570" x2="1080" y2="570" stroke="#6C3483" stroke-width="3" marker-end="url(#arrowPurple)" />
+
+  <!-- Box 6: Output Video -->
+  <g transform="translate(1080, 490)">
+    <rect width="460" height="170" rx="20" fill="#FDF2E9" stroke="#E67E22" stroke-width="4" />
+    <!-- Simulated Video Strip -->
+    <g transform="translate(15, 15)">
+      <!-- Clip 1 -->
+      <defs>
+        <clipPath id="vidClip1"><rect width="140" height="120" /></clipPath>
+      </defs>
+      <rect width="140" height="120" fill="url(#vidGrad)" clip-path="url(#vidClip1)" />
+      <rect width="140" height="120" fill="black" opacity="0.3" clip-path="url(#vidClip1)" />
+      <path d="M0,80 L140,60 L140,120 L0,120 Z" fill="#8B4513" opacity="0.5" clip-path="url(#vidClip1)" />
+      <path d="M0,80 L140,60" stroke="#F5F5DC" stroke-width="2" clip-path="url(#vidClip1)" />
+      <circle cx="70" cy="60" r="20" fill="#A93226" />
+      <path d="M60,50 Q70,40 80,50" stroke="#F5CBA7" stroke-width="2" fill="none" clip-path="url(#vidClip1)" />
+      
+      <!-- Clip 2 -->
+      <g transform="translate(145, 0)">
+        <rect width="140" height="120" fill="url(#vidGrad)" clip-path="url(#vidClip1)" />
+        <rect width="140" height="120" fill="black" opacity="0.3" clip-path="url(#vidClip1)" />
+        <path d="M0,80 L140,60 L140,120 L0,120 Z" fill="#8B4513" opacity="0.5" clip-path="url(#vidClip1)" />
+        <path d="M0,80 L140,60" stroke="#F5F5DC" stroke-width="2" clip-path="url(#vidClip1)" />
+        <circle cx="70" cy="60" r="20" fill="#A93226" />
+        <path d="M60,50 Q70,40 80,50" stroke="#F5CBA7" stroke-width="2" fill="none" clip-path="url(#vidClip1)" />
+      </g>
+      
+      <!-- Clip 3 -->
+      <g transform="translate(290, 0)">
+        <rect width="140" height="120" fill="url(#vidGrad)" clip-path="url(#vidClip1)" />
+        <rect width="140" height="120" fill="black" opacity="0.3" clip-path="url(#vidClip1)" />
+        <path d="M0,80 L140,60 L140,120 L0,120 Z" fill="#8B4513" opacity="0.5" clip-path="url(#vidClip1)" />
+        <path d="M0,80 L140,60" stroke="#F5F5DC" stroke-width="2" clip-path="url(#vidClip1)" />
+        <circle cx="70" cy="60" r="20" fill="#A93226" />
+        <path d="M60,50 Q70,40 80,50" stroke="#F5CBA7" stroke-width="2" fill="none" clip-path="url(#vidClip1)" />
+      </g>
+    </g>
+    <text x="230" y="155" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#0B1F2A" text-anchor="middle">GENERATED HIGH-QUALITY VIDEO</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="800" y="690" font-family="Arial, sans-serif" font-style="italic" font-size="30" fill="#0B1F2A" text-anchor="middle">Leveraging physical prediction and diffusion for realistic video creation.</text>
+
+</svg>

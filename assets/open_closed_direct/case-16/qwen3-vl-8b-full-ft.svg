@@ -1,0 +1,330 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22.0 2.0 1616.0 776.0" style="font-family: Arial, sans-serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L0,0" fill="#FF4444" />
+    </marker>
+    <marker id="arrowhead-black" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L0,0" fill="black" />
+    </marker>
+    <!-- Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ==================== TOP ROW ==================== -->
+
+  <!-- 1. Task Description Box -->
+  <g transform="translate(40, 90)">
+    <!-- Container -->
+    <rect x="10" y="10" width="410" height="260" rx="20" fill="#E0E0E0" stroke="black" stroke-width="3" />
+    <rect x="0" y="0" width="410" height="260" rx="20" fill="#E0E0E0" stroke="black" stroke-width="3" />
+    
+    <!-- Text -->
+    <text x="50" y="45" font-size="32" font-weight="bold" fill="black">Task Description</text>
+    
+    <!-- Inner Box -->
+    <rect x="30" y="60" width="350" height="180" fill="white" stroke="black" stroke-width="3" stroke-dasharray="8,5" />
+    <text x="50" y="110" font-family="Times New Roman, serif" font-style="italic" font-size="34" fill="black">
+      <tspan x="50" dy="0">Count the number of</tspan>
+      <tspan x="50" dy="45">items in DB with a price</tspan>
+      <tspan x="50" dy="45">within the range specified</tspan>
+      <tspan x="50" dy="45">by the user's inputs.</tspan>
+    </text>
+
+    <!-- Icon: Question Bubble -->
+    <g transform="translate(-10, -20)">
+      <circle cx="40" cy="40" r="40" fill="#66CCCC" stroke="black" stroke-width="4"/>
+      <path d="M20,70 L10,85 L30,75" fill="#66CCCC" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+      <text x="40" y="60" font-size="60" font-weight="bold" fill="black" text-anchor="middle">?</text>
+    </g>
+  </g>
+
+  <!-- 2. Policy Model -->
+  <g transform="translate(480, 150)">
+    <!-- Neural Net Graphic -->
+    <g stroke="black" stroke-width="3">
+      <!-- Edges -->
+      <line x1="30" y1="50" x2="70" y2="30" marker-end="url(#arrowhead-black)" />
+      <line x1="30" y1="90" x2="70" y2="90" marker-end="url(#arrowhead-black)" />
+      <line x1="30" y1="130" x2="70" y2="150" marker-end="url(#arrowhead-black)" />
+      <line x1="30" y1="50" x2="70" y2="90" marker-end="url(#arrowhead-black)" />
+      <line x1="30" y1="130" x2="70" y2="90" marker-end="url(#arrowhead-black)" />
+      
+      <line x1="90" y1="30" x2="130" y2="50" marker-end="url(#arrowhead-black)" />
+      <line x1="90" y1="90" x2="130" y2="90" marker-end="url(#arrowhead-black)" />
+      <line x1="90" y1="150" x2="130" y2="130" marker-end="url(#arrowhead-black)" />
+      <line x1="90" y1="90" x2="130" y2="50" marker-end="url(#arrowhead-black)" />
+      
+      <!-- Nodes -->
+      <circle cx="30" cy="50" r="15" fill="#20B2AA" />
+      <circle cx="30" cy="90" r="15" fill="#20B2AA" />
+      <circle cx="30" cy="130" r="15" fill="#20B2AA" />
+      
+      <circle cx="90" cy="30" r="15" fill="#F4C430" stroke="black" stroke-width="4"/>
+      <circle cx="90" cy="70" r="15" fill="#F4C430" stroke="black" stroke-width="4"/>
+      <circle cx="90" cy="110" r="15" fill="#F4C430" stroke="black" stroke-width="4"/>
+      <circle cx="90" cy="150" r="15" fill="#F4C430" stroke="black" stroke-width="4"/>
+      
+      <circle cx="150" cy="70" r="15" fill="#DC143C" stroke="black" stroke-width="4"/>
+      <circle cx="150" cy="110" r="15" fill="#DC143C" stroke="black" stroke-width="4"/>
+    </g>
+    <text x="90" y="200" font-size="36" font-weight="bold" text-anchor="middle" fill="black">Policy Model</text>
+  </g>
+
+  <!-- 3. Generated Program Box -->
+  <g transform="translate(700, 90)">
+    <!-- Container -->
+    <rect x="10" y="10" width="670" height="260" rx="20" fill="#E0E0E0" stroke="black" stroke-width="3" />
+    <rect x="0" y="0" width="670" height="260" rx="20" fill="#E0E0E0" stroke="black" stroke-width="3" />
+    
+    <text x="40" y="45" font-size="32" font-weight="bold" fill="black">Generated Program</text>
+    
+    <!-- Inner Code Box -->
+    <rect x="20" y="60" width="630" height="200" fill="white" stroke="black" stroke-width="3" stroke-dasharray="8,5" />
+    
+    <!-- Code Content -->
+    <text font-family="Courier New, monospace" font-size="28" x="35" y="90">
+      <tspan fill="black">cur = </tspan><tspan fill="#00AA00" font-weight="bold">sqlite3.connect</tspan><tspan fill="black">(DB).</tspan><tspan fill="#0000FF" font-weight="bold">cursor</tspan><tspan fill="black">()</tspan>
+      
+      <tspan x="35" dy="35" fill="black">min = </tspan><tspan fill="#0000FF" font-weight="bold">input</tspan><tspan fill="black">('Min?');</tspan> <tspan fill="#CC0000" font-weight="bold">max</tspan> <tspan fill="black">= </tspan><tspan fill="#0000FF" font-weight="bold">input</tspan><tspan fill="black">('Max?')</tspan>
+      
+      <tspan x="35" dy="35" fill="black">...</tspan>
+      
+      <tspan x="35" dy="35" fill="#CC0000" font-weight="bold">Q</tspan> <tspan fill="black">= </tspan><tspan fill="black" font-weight="bold">"</tspan><tspan fill="#00AA00" font-weight="bold">SELECT COUNT</tspan><tspan fill="black">(*)</tspan> <tspan fill="#00AA00" font-weight="bold">FROM</tspan> <tspan fill="black" font-weight="bold">items</tspan> <tspan fill="black">\</tspan>
+      <tspan x="130" dy="35" fill="#00AA00" font-weight="bold">WHERE</tspan> <tspan fill="black">price &lt;= </tspan><tspan fill="#CC0000" font-weight="bold">{max}</tspan> <tspan fill="black">\</tspan>
+      <tspan x="130" dy="35" fill="#00AA00" font-weight="bold">AND</tspan> <tspan fill="black">price &gt;= </tspan><tspan fill="#CC0000" font-weight="bold">{min}"</tspan>
+      
+      <tspan x="35" dy="45" fill="black">cur.</tspan><tspan fill="#0000FF" font-weight="bold">execute</tspan><tspan fill="black">(</tspan><tspan fill="#CC0000" font-weight="bold">Q</tspan><tspan fill="black">)</tspan>
+    </text>
+
+    <!-- Icon: Code File -->
+    <g transform="translate(-10, -20)">
+      <path d="M10,10 L60,10 L80,30 L80,90 L10,90 Z" fill="white" stroke="#4B0082" stroke-width="5" />
+      <path d="M60,10 L60,30 L80,30" fill="white" stroke="#4B0082" stroke-width="5" stroke-linejoin="round"/>
+      <text x="45" y="65" font-family="monospace" font-weight="bold" font-size="40" fill="#9370DB" text-anchor="middle">&lt;/&gt;</text>
+    </g>
+  </g>
+
+  <!-- 4. Hybrid Reward -->
+  <g transform="translate(1380, 290)">
+    <rect x="0" y="0" width="220" height="60" rx="20" fill="white" stroke="black" stroke-width="3" />
+    <text x="110" y="40" font-size="34" font-weight="bold" text-anchor="middle" fill="black">Hybrid Reward</text>
+  </g>
+
+  <!-- 5. Advantage -->
+  <g transform="translate(1400, 100)">
+    <!-- Bars -->
+    <rect x="20" y="80" width="30" height="60" fill="#F4C430" stroke="black" stroke-width="4" />
+    <rect x="80" y="60" width="30" height="80" fill="#40E0D0" stroke="black" stroke-width="4" />
+    <rect x="140" y="40" width="30" height="100" fill="#87CEFA" stroke="black" stroke-width="4" />
+    
+    <!-- Stars -->
+    <polygon points="45,20 50,35 65,35 55,45 60,60 45,50 30,60 35,45 25,35 40,35" fill="#F4C430" stroke="black" stroke-width="3" />
+    <polygon points="105,0 110,15 125,15 115,25 120,40 105,30 90,40 95,25 85,15 100,15" fill="#F4C430" stroke="black" stroke-width="3" />
+    
+    <!-- Crown -->
+    <path d="M140,30 L140,10 L150,10 L150,0 L160,10 L170,10 L170,30" fill="#F4C430" stroke="black" stroke-width="3" />
+    <rect x="135" y="30" width="50" height="10" fill="#000080" stroke="black" stroke-width="3" />
+    
+    <text x="100" y="150" font-size="40" font-weight="bold" text-anchor="middle" fill="black">Advantage</text>
+  </g>
+
+  <!-- ==================== BOTTOM ROW ==================== -->
+
+  <!-- 6. Vulnerability Detector -->
+  <g transform="translate(40, 360)">
+    <!-- Container -->
+    <rect x="10" y="10" width="900" height="340" rx="30" fill="#FDF5E6" stroke="black" stroke-width="3" />
+    <rect x="0" y="0" width="900" height="340" rx="30" fill="#FDF5E6" stroke="black" stroke-width="3" />
+    
+    <text x="30" y="50" font-size="40" font-weight="bold" fill="black">Vulnerability Detector <tspan font-style="italic" font-size="30">(via Program Analysis)</tspan></text>
+    <text x="30" y="80" font-size="24" font-weight="bold" font-style="italic" fill="black">Example: SQL Injection Detector</text>
+    
+    <!-- Inner Dashed Box -->
+    <rect x="25" y="100" width="750" height="220" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8,5" />
+    <line x1="240" y1="100" x2="240" y2="320" stroke="black" stroke-width="2" stroke-dasharray="8,5" />
+    
+    <!-- Left: CFG -->
+    <text x="130" y="130" font-size="30" font-weight="bold" text-anchor="middle">CFG</text>
+    <g transform="translate(30, 140)">
+      <line x1="90" y1="40" x2="40" y2="90" stroke="black" stroke-width="4" />
+      <line x1="90" y1="40" x2="130" y2="90" stroke="black" stroke-width="4" />
+      <line x1="130" y1="140" x2="90" y2="190" stroke="black" stroke-width="4" />
+      <line x1="130" y1="140" x2="180" y2="190" stroke="black" stroke-width="4" />
+      
+      <circle cx="40" cy="90" r="30" fill="#F0F0F0" stroke="black" stroke-width="4" />
+      <circle cx="130" cy="90" r="30" fill="#F4C430" stroke="black" stroke-width="4" />
+      <circle cx="130" cy="190" r="30" fill="#F4C430" stroke="black" stroke-width="4" />
+      <circle cx="90" cy="240" r="30" fill="#F0F0F0" stroke="black" stroke-width="4" />
+      
+      <text x="90" y="60" font-size="40" font-weight="bold" text-anchor="middle">1</text>
+      <text x="130" y="110" font-size="40" font-weight="bold" text-anchor="middle">2</text>
+      <text x="170" y="200" font-size="40" font-weight="bold" text-anchor="middle">3</text>
+    </g>
+    
+    <!-- Right: Tainted Analysis -->
+    <text x="500" y="130" font-size="30" font-weight="bold" text-anchor="middle">Tainted Analysis</text>
+    <g transform="translate(260, 160)" font-family="Times New Roman, serif" font-size="32">
+      <text x="0" y="0">
+        <tspan fill="#CC0000" font-weight="bold">{max,min}</tspan>
+        <tspan fill="black" font-style="italic"> 1. User inputs as taint </tspan>
+        <tspan fill="#CC0000" font-weight="bold" font-style="italic">src.</tspan>
+      </text>
+      <line x1="-10" y1="5" x2="40" y2="5" stroke="black" stroke-width="2" stroke-dasharray="5,3" />
+      <circle cx="450" cy="5" r="8" fill="none" stroke="black" stroke-width="3" />
+      <circle cx="450" cy="5" r="3" fill="black" />
+
+      <text x="0" y="60">
+        <tspan fill="#CC0000" font-weight="bold">{max,min,Q}</tspan>
+        <tspan fill="black" font-style="italic"> 2. Propagate tainted var.</tspan>
+      </text>
+      <line x1="-10" y1="65" x2="40" y2="65" stroke="black" stroke-width="2" stroke-dasharray="5,3" />
+      <circle cx="450" cy="65" r="8" fill="none" stroke="black" stroke-width="3" />
+      <circle cx="450" cy="65" r="3" fill="black" />
+
+      <text x="0" y="120">
+        <tspan fill="black" font-style="italic">cur.</tspan><tspan fill="#0000FF" font-weight="bold" font-style="italic">execute</tspan><tspan fill="black">(</tspan><tspan fill="#CC0000" font-weight="bold" font-style="italic">Q</tspan><tspan fill="black">)</tspan>
+        <tspan fill="black" font-style="italic"> 3. SQL exec. as </tspan><tspan fill="black" font-weight="bold" font-style="italic">sink.</tspan>
+      </text>
+      <line x1="-10" y1="125" x2="40" y2="125" stroke="black" stroke-width="2" stroke-dasharray="5,3" />
+      <circle cx="450" cy="125" r="8" fill="none" stroke="black" stroke-width="3" />
+      <circle cx="450" cy="125" r="3" fill="black" />
+    </g>
+
+    <!-- Reward Label -->
+    <text x="800" y="200" font-size="30" font-weight="bold" text-anchor="end" fill="black">Reward:</text>
+    <text x="800" y="230" font-size="30" font-weight="bold" text-anchor="end" fill="#40E0D0">Pass</text>
+    <text x="805" y="230" font-size="30" font-weight="bold" text-anchor="start" fill="black">or</text>
+    <text x="815" y="230" font-size="30" font-weight="bold" text-anchor="start" fill="#CC0000">Fail</text>
+
+    <!-- Footer -->
+    <text x="50" y="300" font-size="30" fill="black">
+      <tspan>Convert the program into a </tspan>
+      <tspan font-weight="bold">Control Flow Graph (CFG)</tspan>
+      <tspan> and conduct</tspan>
+    </text>
+    <text x="140" y="340" font-size="30" font-weight="bold" fill="black">
+      <tspan>Taint Analysis</tspan>
+      <tspan> to detect SQL injection vulnerabilities.</tspan>
+    </text>
+  </g>
+
+  <!-- 7. Functionality Verifier -->
+  <g transform="translate(1030, 360)">
+    <!-- Container -->
+    <rect x="10" y="10" width="560" height="340" rx="30" fill="#D8E6E6" stroke="black" stroke-width="3" />
+    <rect x="0" y="0" width="560" height="340" rx="30" fill="#D8E6E6" stroke="black" stroke-width="3" />
+    
+    <text x="30" y="50" font-size="40" font-weight="bold" fill="black">Functionality Verifier <tspan font-style="italic" font-size="30">(via Unit Tests)</tspan></text>
+    
+    <!-- Inner Dashed Box -->
+    <rect x="30" y="80" width="400" height="230" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8,5" />
+    
+    <!-- Info Icons & Tests -->
+    <g transform="translate(50, 110)">
+      <!-- Test 1 -->
+      <circle cx="30" cy="30" r="30" fill="none" stroke="#333" stroke-width="5" />
+      <text x="30" y="40" font-size="40" font-weight="bold" text-anchor="middle">i</text>
+      <text x="80" y="30" font-size="32" font-weight="bold" font-family="Times New Roman, serif">
+        <tspan font-style="italic">Test 1:</tspan> <tspan font-family="Arial, sans-serif"> $2.5~$10&#8594;3</tspan>
+      </text>
+      
+      <!-- Test 2 -->
+      <circle cx="30" cy="100" r="30" fill="none" stroke="#333" stroke-width="5" />
+      <text x="30" y="110" font-size="40" font-weight="bold" text-anchor="middle">i</text>
+      <text x="80" y="100" font-size="32" font-weight="bold" font-family="Times New Roman, serif">
+        <tspan font-style="italic">Test 2:</tspan> <tspan font-family="Arial, sans-serif"> $3~$1&#8594;0</tspan>
+      </text>
+      
+      <text x="100" y="160" font-size="32" font-weight="bold">......</text>
+      
+      <!-- Test n -->
+      <circle cx="30" cy="200" r="30" fill="none" stroke="#333" stroke-width="5" />
+      <text x="30" y="210" font-size="40" font-weight="bold" text-anchor="middle">i</text>
+      <text x="80" y="200" font-size="32" font-weight="bold" font-family="Times New Roman, serif">
+        <tspan font-style="italic">Test n:</tspan> <tspan font-family="Arial, sans-serif"> $7~$100&#8594;10</tspan>
+      </text>
+    </g>
+    
+    <!-- Generated Program Icon Box -->
+    <g transform="translate(380, 110)">
+      <rect x="0" y="0" width="220" height="200" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8,5" />
+      <g transform="translate(50, 20)">
+        <path d="M10,10 L100,10 L130,40 L130,130 L10,130 Z" fill="white" stroke="#4B0082" stroke-width="8" />
+        <path d="M100,10 L100,40 L130,40" fill="white" stroke="#4B0082" stroke-width="8" stroke-linejoin="round"/>
+        <text x="70" y="90" font-family="monospace" font-weight="bold" font-size="60" fill="#9370DB" text-anchor="middle">&lt;/&gt;</text>
+      </g>
+      <text x="110" y="170" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Generated</text>
+      <text x="110" y="200" font-size="32" font-weight="bold" text-anchor="middle" fill="black">Program</text>
+    </g>
+    
+    <!-- Arrows -->
+    <line x1="400" y1="120" x2="470" y2="150" stroke="black" stroke-width="6" marker-end="url(#arrowhead-black)" />
+    <line x1="400" y1="180" x2="470" y2="180" stroke="black" stroke-width="6" marker-end="url(#arrowhead-black)" />
+    <line x1="400" y1="260" x2="470" y2="210" stroke="black" stroke-width="6" marker-end="url(#arrowhead-black)" />
+    
+    <!-- Footer Reward -->
+    <text x="300" y="320" font-size="36" font-weight="bold" text-anchor="end" fill="black">Reward:</text>
+    <text x="310" y="295" font-size="28" fill="black">
+      <tspan font-family="Times New Roman, serif">#</tspan> passed tests
+    </text>
+    <line x1="310" y1="305" x2="480" y2="305" stroke="black" stroke-width="2" />
+    <text x="310" y="330" font-size="28" fill="black">
+      <tspan font-family="Times New Roman, serif">#</tspan> total tests
+    </text>
+  </g>
+
+  <!-- Plus Sign -->
+  <g transform="translate(960, 520)">
+    <line x1="0" y1="0" x2="0" y2="60" stroke="black" stroke-width="10" />
+    <line x1="0" y1="0" x2="60" y2="0" stroke="black" stroke-width="10" />
+  </g>
+
+  <!-- ==================== CONNECTORS ==================== -->
+  
+  <!-- Red Arrow 1: Task -> Policy -->
+  <path d="M460,215 L570,215" stroke="#FF4444" stroke-width="6" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Red Arrow 2: Policy -> Gen Program -->
+  <path d="M640,215 L700,215" stroke="#FF4444" stroke-width="6" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Red Arrow 3: Gen Program -> Vuln Detector -->
+  <path d="M820,320 L820,360" stroke="#FF4444" stroke-width="12" fill="none" />
+  <path d="M820,360 L780,380" stroke="#FF4444" stroke-width="12" fill="none" />
+  <polygon points="780,380 795,360 815,360" fill="#FF4444" /> <!-- Manual Arrowhead for thickness -->
+
+  <!-- Red Arrow 4: Vuln Detector -> Functionality Verifier -->
+  <path d="M1200,320 L1200,360" stroke="#FF4444" stroke-width="12" fill="none" />
+  <path d="M1200,360 L1160,380" stroke="#FF4444" stroke-width="12" fill="none" />
+  <polygon points="1160,380 1175,360 1195,360" fill="#FF4444" />
+
+  <!-- Red Arrow 5: Functionality Verifier -> Hybrid Reward -->
+  <path d="M1500,360 L1500,350" stroke="#FF4444" stroke-width="6" fill="none" />
+  <path d="M1500,350 L1500,250" stroke="#FF4444" stroke-width="6" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Red Arrow 6: Hybrid Reward -> Advantage -->
+  <path d="M1490,290 L1490,250" stroke="#FF4444" stroke-width="6" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Red Arrow 7: Advantage -> Gen Program -->
+  <path d="M1500,100 L1500,40" stroke="#FF4444" stroke-width="6" fill="none" />
+  <path d="M1500,40 L570,40" stroke="#FF4444" stroke-width="6" fill="none" />
+  <path d="M570,40 L570,150" stroke="#FF4444" stroke-width="6" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Policy Gradient Label (Top) -->
+  <g transform="translate(930, 10)">
+    <rect x="10" y="10" width="340" height="60" rx="15" fill="white" stroke="black" stroke-width="3" />
+    <rect x="0" y="0" width="340" height="60" rx="15" fill="white" stroke="black" stroke-width="3" />
+    <text x="170" y="40" font-size="34" font-weight="bold" text-anchor="middle" fill="black">Policy Gradient</text>
+  </g>
+
+</svg>

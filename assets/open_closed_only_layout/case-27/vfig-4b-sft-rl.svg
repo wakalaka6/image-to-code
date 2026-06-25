@@ -1,0 +1,418 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" style="font-family: 'Times New Roman', Times, serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2E6E38" />
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5E4688" />
+    </marker>
+    
+    <!-- Document Icon Symbol -->
+    <symbol id="doc-icon" viewBox="0 0 100 100">
+      <path d="M0,0 L100,0 L100,80 L0,80 Z" fill="white" stroke="black" stroke-width="3"/>
+      <path d="M100,0 L100,20 L80,20 Z" fill="white" stroke="black" stroke-width="3"/>
+    </symbol>
+  </defs>
+
+  <!-- ================= SECTION A: LEARNING ================= -->
+  <rect x="10" y="20" width="1580" height="510" rx="40" fill="#F0F7F0" />
+  <text x="40" y="330" transform="rotate(-90, 40, 330)" font-size="50" font-weight="bold" fill="black">Learning</text>
+
+  <!-- DROID Dataset Cylinder -->
+  <g transform="translate(80, 160)">
+    <path d="M0,40 L0,220 A100,30 0 0,0 200,220 L200,40" fill="white" stroke="#808080" stroke-width="4"/>
+    <ellipse cx="100" cy="40" rx="100" ry="30" fill="white" stroke="#808080" stroke-width="4"/>
+    <text x="100" y="150" text-anchor="middle" font-size="40" font-weight="bold" fill="black">DROID</text>
+    <text x="100" y="190" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Dataset</text>
+  </g>
+
+  <!-- Arrow from Cylinder to Frames -->
+  <path d="M180,280 L220,280" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M220,150 L220,440" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M220,150 L240,150" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M220,440 L240,440" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+
+  <!-- Section (a) Keyframe Extraction -->
+  <rect x="220" y="30" width="420" height="480" rx="40" fill="white" />
+  <text x="430" y="70" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(a) Keyframe Extraction</text>
+
+  <!-- Frame Grid Container -->
+  <rect x="230" y="85" width="380" height="200" fill="#E2F0E2" />
+  <rect x="230" y="220" width="380" height="200" fill="#E2F0E2" />
+  <rect x="230" y="370" width="380" height="200" fill="#E2F0E2" />
+
+  <!-- Frame 1 Images (Simulated) -->
+  <g transform="translate(240, 95)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 1</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/> <!-- Placeholder -->
+  </g>
+  <g transform="translate(370, 95)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 2</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <g transform="translate(500, 95)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 7</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <text x="460" y="150" font-size="30">...</text>
+
+  <!-- Frame 2 Images -->
+  <g transform="translate(240, 225)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 1</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <g transform="translate(370, 225)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 2</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <g transform="translate(500, 225)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 9</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <text x="460" y="280" font-size="30">...</text>
+
+  <!-- Frame 3 Images -->
+  <g transform="translate(240, 375)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 1</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <g transform="translate(370, 375)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 2</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <g transform="translate(500, 375)">
+    <rect width="120" height="120" fill="#ddd" stroke="#999"/>
+    <text x="10" y="30" font-size="40">Frame 8</text>
+    <image href="" x="0" y="0" width="120" height="120" preserveAspectRatio="none"/>
+  </g>
+  <text x="460" y="430" font-size="30">...</text>
+
+  <!-- Ellipsis -->
+  <text x="390" y="360" font-size="40">⋮</text>
+
+  <!-- Arrow from Frames to (b) -->
+  <path d="M650,150 L680,150" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M650,280 L680,280" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M650,440 L680,440" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+
+  <!-- ================= SECTION B: ATOMIC DOMAIN GENERATION ================= -->
+  <rect x="650" y="30" width="520" height="510" rx="40" fill="white" />
+  <text x="810" y="75" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(b) Atomic Domain Generation</text>
+
+  <!-- Top Box -->
+  <rect x="680" y="110" width="440" height="130" rx="20" fill="#D5F0D5" />
+  <text x="700" y="150" font-size="48" font-weight="bold" fill="black">Domain Construction</text>
+  <text x="700" y="180" font-size="48" font-weight="bold" fill="black">&amp; Revision</text>
+  
+  <!-- <AF>07 -->
+  <rect x="685" y="125" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="690" y="160" font-size="24" fill="white">&lt;AF&gt;07</text>
+
+  <!-- Code Box -->
+  <g transform="translate(960, 110)">
+    <rect width="130" height="130" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M130,0 L160,0 L160,30 L130,30 Z" fill="white" stroke="black" stroke-width="3"/>
+    <text x="10" y="30" font-size="24" fill="#0070C0">:predicates (...)</text>
+    <text x="10" y="60" font-size="24" fill="#008000">:actions ...</text>
+    <text x="10" y="90" font-size="24" fill="#D2691E">:precondition (...)</text>
+    <text x="10" y="120" font-size="24" fill="#D02090">:effect (...)</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="890" y1="195" x2="890" y2="225" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- Bottom Box -->
+  <rect x="680" y="225" width="440" height="300" rx="20" fill="#D5F0D5" />
+  
+  <!-- Solvability Check -->
+  <rect x="685" y="240" width="180" height="120" rx="20" fill="#D5F0D5" />
+  <text x="720" y="290" font-size="48" font-weight="bold" fill="black">Solvability</text>
+  <text x="720" y="325" font-size="48" font-weight="bold" fill="black">Check</text>
+  
+  <!-- <AF>04, 02 -->
+  <rect x="685" y="245" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="690" y="275" font-size="24" fill="white">&lt;AF&gt;04</text>
+  <rect x="685" y="300" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="690" y="325" font-size="24" fill="white">&lt;AF&gt;02</text>
+
+  <!-- Arrow Down -->
+  <line x1="770" y1="350" x2="770" y2="375" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- Solution Verification -->
+  <rect x="685" y="375" width="180" height="120" rx="20" fill="#D5F0D5" />
+  <text x="720" y="415" font-size="48" font-weight="bold" fill="black">Solution</text>
+  <text x="720" y="450" font-size="48" font-weight="bold" fill="black">Verification</text>
+  
+  <!-- <AF>01 -->
+  <rect x="685" y="390" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="690" y="420" font-size="24" fill="white">&lt;AF&gt;01</text>
+
+  <!-- Feedback Arrows -->
+  <line x1="920" y1="280" x2="880" y2="280" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="880" y1="300" x2="880" y2="310" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="880" y1="300" x2="960" y2="300" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="960" y1="300" x2="960" y2="280" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <text x="890" y="330" font-size="36" font-weight="bold" fill="black">Feedback</text>
+
+  <line x1="920" y1="435" x2="880" y2="435" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="880" y1="455" x2="880" y2="465" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="880" y1="455" x2="960" y2="455" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="960" y1="455" x2="960" y2="435" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  
+  <text x="890" y="420" font-size="36" font-weight="bold" fill="black">Feedback</text>
+
+  <!-- Closed-Loop Refinement -->
+  <rect x="960" y="240" width="180" height="300" rx="20" fill="#D5F0D5" />
+  <text x="995" y="340" font-size="48" font-weight="bold" fill="black">Closed-Loop</text>
+  <text x="995" y="375" font-size="48" font-weight="bold" fill="black">Refinement</text>
+  
+  <!-- <AF>06 -->
+  <rect x="990" y="250" width="80" height="80" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="1000" y="280" font-size="24" fill="white">&lt;AF&gt;06</text>
+
+  <!-- Code Box 2 -->
+  <g transform="translate(960, 380)">
+    <rect width="130" height="130" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M130,0 L160,0 L160,30 L130,30 Z" fill="white" stroke="black" stroke-width="3"/>
+    <text x="10" y="30" font-size="24" fill="#0070C0">:predicates (...)</text>
+    <text x="10" y="60" font-size="24" fill="#008000">:actions ...</text>
+    <text x="10" y="90" font-size="24" fill="#D2691E">:precondition (...)</text>
+    <text x="10" y="120" font-size="24" fill="#D02090">:effect (...)</text>
+  </g>
+
+  <!-- Arrow to (c) -->
+  <path d="M1140,435 L1180,435 L1180,170 L1220,170" stroke="#2E6E38" stroke-width="4" fill="none" marker-end="url(#arrow-green)"/>
+
+  <!-- ================= SECTION C: DOMAIN FUSION ================= -->
+  <rect x="1200" y="30" width="580" height="510" rx="40" fill="white" />
+  <text x="1400" y="75" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(c) Domain Fusion</text>
+
+  <!-- Unified Domain -->
+  <g transform="translate(1200, 95)">
+    <rect width="580" height="130" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M580,0 L610,0 L610,30 L580,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="300" y="50" text-anchor="middle" font-size="48" font-weight="bold" fill="black">Unified Domain</text>
+  </g>
+
+  <!-- Atomic Domains -->
+  <g transform="translate(1200, 135)">
+    <rect width="110" height="110" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M110,0 L140,0 L140,30 L110,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="60" y="50" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Atomic</text>
+    <text x="60" y="85" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Domain</text>
+  </g>
+  <g transform="translate(1300, 135)">
+    <rect width="110" height="110" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M110,0 L140,0 L140,30 L110,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="60" y="50" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Atomic</text>
+    <text x="60" y="85" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Domain</text>
+  </g>
+  <text x="1400" y="180" font-size="40">...</text>
+  <g transform="translate(1400, 135)">
+    <rect width="110" height="110" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M110,0 L140,0 L140,30 L110,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="60" y="50" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Atomic</text>
+    <text x="60" y="85" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Domain</text>
+  </g>
+  <g transform="translate(1500, 135)">
+    <rect width="110" height="110" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M110,0 L140,0 L140,30 L110,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="60" y="50" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Atomic</text>
+    <text x="60" y="85" text-anchor="middle" font-size="36" font-weight="bold" fill="black">Domain</text>
+  </g>
+
+  <!-- Meta Domains -->
+  <g transform="translate(1200, 265)">
+    <rect width="180" height="130" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M180,0 L210,0 L210,30 L180,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="100" y="60" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Meta</text>
+    <text x="100" y="100" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Domain</text>
+  </g>
+  <text x="1400" y="330" font-size="40">...</text>
+  <g transform="translate(1400, 265)">
+    <rect width="180" height="130" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M180,0 L210,0 L210,30 L180,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="100" y="60" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Meta</text>
+    <text x="100" y="100" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Domain</text>
+  </g>
+
+  <!-- <AF>10, 08 -->
+  <rect x="1260" y="215" width="70" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="1270" y="245" font-size="24" fill="white">&lt;AF&gt;10</text>
+  <rect x="1480" y="215" width="70" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="1490" y="245" font-size="24" fill="white">&lt;AF&gt;08</text>
+
+  <!-- Arrows to Meta Domains -->
+  <line x1="1285" y1="215" x2="1285" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1305" y1="215" x2="1305" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1425" y1="215" x2="1425" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1545" y1="215" x2="1545" y2="260" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- <AF>03 -->
+  <rect x="1360" y="350" width="70" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="1370" y="380" font-size="24" fill="white">&lt;AF&gt;03</text>
+
+  <!-- Arrows to Bottom Meta Domain -->
+  <line x1="1300" y1="350" x2="1300" y2="390" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1400" y1="350" x2="1400" y2="390" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1480" y1="350" x2="1480" y2="390" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+  <line x1="1580" y1="350" x2="1580" y2="390" stroke="black" stroke-width="3" marker-end="url(#arrow-black)"/>
+
+  <!-- Bottom Meta Domain -->
+  <g transform="translate(1300, 395)">
+    <rect width="200" height="130" fill="white" stroke="black" stroke-width="4"/>
+    <path d="M200,0 L230,0 L230,30 L200,30 Z" fill="white" stroke="black" stroke-width="4"/>
+    <text x="110" y="60" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Meta</text>
+    <text x="110" y="100" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Domain</text>
+  </g>
+
+  <!-- ================= SECTION D: PLANNING ================= -->
+  <rect x="10" y="540" width="1580" height="440" rx="40" fill="#F3E8F9" />
+  <text x="25" y="800" transform="rotate(-90, 25, 800)" font-size="50" font-weight="bold" fill="black">Planning</text>
+
+  <!-- Problem Text -->
+  <rect x="70" y="560" width="350" height="220" rx="30" fill="white" />
+  <text x="245" y="600" text-anchor="middle" font-size="38" font-weight="bold" fill="black">Move the corn from the pot</text>
+  <text x="245" y="635" text-anchor="middle" font-size="38" font-weight="bold" fill="black">into the orange bowl, wipe the</text>
+  <text x="245" y="670" text-anchor="middle" font-size="38" font-weight="bold" fill="black">table with the towel in the</text>
+  <text x="245" y="705" text-anchor="middle" font-size="38" font-weight="bold" fill="black">drawer and put it back to the</text>
+  <text x="245" y="740" text-anchor="middle" font-size="38" font-weight="bold" fill="black">closed drawer.</text>
+
+  <!-- Kitchen Image -->
+  <g transform="translate(80, 740)">
+    <image href="" width="300" height="250" preserveAspectRatio="none"/>
+  </g>
+
+  <!-- Arrow from Text to (d) -->
+  <path d="M380,670 L400,670 L400,860 L430,860" stroke="#5E4688" stroke-width="5" fill="none" marker-end="url(#arrow-purple)"/>
+
+  <!-- Section (d) Problem Generation -->
+  <rect x="420" y="560" width="350" height="440" rx="40" fill="white" />
+  <text x="595" y="610" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(d) Problem Generation</text>
+
+  <!-- Meta Domain -->
+  <g transform="translate(440, 640)">
+    <rect width="140" height="130" fill="#F0FFFF" stroke="black" stroke-width="4"/>
+    <path d="M140,0 L170,0 L170,30 L140,30 Z" fill="#F0FFFF" stroke="black" stroke-width="4"/>
+    <text x="70" y="60" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Meta</text>
+    <text x="70" y="100" text-anchor="middle" font-size="40" font-weight="bold" fill="black">Domain</text>
+  </g>
+
+  <!-- Arrow to Predicate Grouping -->
+  <line x1="580" y1="695" x2="600" y2="695" stroke="#5E4688" stroke-width="5" marker-end="url(#arrow-purple)"/>
+
+  <!-- Predicate Grouping -->
+  <rect x="600" y="640" width="160" height="130" rx="20" fill="#E0D8FF" />
+  <text x="680" y="680" text-anchor="middle" font-size="48" font-weight="bold" fill="black">Predicate</text>
+  <text x="680" y="720" text-anchor="middle" font-size="48" font-weight="bold" fill="black">Grouping</text>
+
+  <!-- Arrow to Predicate Filtering -->
+  <line x1="680" y1="735" x2="680" y2="765" stroke="#5E4688" stroke-width="5" marker-end="url(#arrow-purple)"/>
+
+  <!-- Predicate & Operator Filtering -->
+  <rect x="440" y="765" width="320" height="130" rx="20" fill="#E0D8FF" />
+  <text x="500" y="805" font-size="48" font-weight="bold" fill="black">Predicate</text>
+  <text x="500" y="845" font-size="48" font-weight="bold" fill="black">&amp; Operator Filtering</text>
+  
+  <!-- <AF>05 -->
+  <rect x="450" y="780" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="455" y="815" font-size="24" fill="white">&lt;AF&gt;05</text>
+
+  <!-- Arrow to Problem Generation -->
+  <line x1="580" y1="860" x2="580" y2="890" stroke="#5E4688" stroke-width="5" marker-end="url(#arrow-purple)"/>
+
+  <!-- Problem Generation -->
+  <rect x="440" y="890" width="320" height="130" rx="20" fill="#E0D8FF" />
+  <text x="500" y="930" font-size="48" font-weight="bold" fill="black">Problem</text>
+  <text x="500" y="970" font-size="48" font-weight="bold" fill="black">Generation</text>
+  
+  <!-- <AF>11 -->
+  <rect x="450" y="905" width="60" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="455" y="940" font-size="24" fill="white">&lt;AF&gt;11</text>
+
+  <!-- Code Box -->
+  <g transform="translate(650, 900)">
+    <rect width="110" height="100" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M110,0 L140,0 L140,30 L110,30 Z" fill="white" stroke="black" stroke-width="3"/>
+    <text x="10" y="30" font-size="24" fill="#0070C0">:objects (...)</text>
+    <text x="10" y="60" font-size="24" fill="#D02090">:init ...</text>
+    <text x="10" y="90" font-size="24" fill="#D2691E">:goal (...)</text>
+  </g>
+
+  <!-- Arrow to (e) -->
+  <path d="M760,945 L780,945 L780,860 L810,860" stroke="#5E4688" stroke-width="5" fill="none" marker-end="url(#arrow-purple)"/>
+
+  <!-- Section (e) Planning -->
+  <rect x="780" y="560" width="280" height="440" rx="40" fill="white" />
+  <text x="920" y="610" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(e) Planning</text>
+
+  <!-- PDDL Solver -->
+  <rect x="800" y="640" width="240" height="130" rx="20" fill="#E0D8FF" />
+  <text x="920" y="680" text-anchor="middle" font-size="48" font-weight="bold" fill="black">PDDL</text>
+  <text x="920" y="720" text-anchor="middle" font-size="48" font-weight="bold" fill="black">Solver</text>
+  
+  <!-- <AF>09 -->
+  <rect x="840" y="650" width="70" height="70" fill="#808080" stroke="black" stroke-width="2"/>
+  <text x="850" y="690" font-size="24" fill="white">&lt;AF&gt;09</text>
+
+  <!-- Arrow to Code -->
+  <line x1="920" y1="735" x2="920" y2="765" stroke="#5E4688" stroke-width="5" marker-end="url(#arrow-purple)"/>
+
+  <!-- Code Box -->
+  <g transform="translate(800, 765)">
+    <rect width="250" height="200" fill="white" stroke="black" stroke-width="3"/>
+    <path d="M250,0 L280,0 L280,30 L250,30 Z" fill="white" stroke="black" stroke-width="3"/>
+    <text x="10" y="40" font-size="32" font-weight="bold" fill="#008000">remove_lid (lid)</text>
+    <text x="10" y="80" font-size="32" font-weight="bold" fill="#008000">pick_from_rack (bowl)</text>
+    <text x="10" y="120" font-size="32" font-weight="bold" fill="#008000">place_on_table (bowl)</text>
+    <text x="10" y="160" font-size="32" font-weight="bold" fill="#008000">...</text>
+    <text x="10" y="190" font-size="32" font-weight="bold" fill="#008000">wipe_table (towel)</text>
+    <text x="10" y="230" font-size="32" font-weight="bold" fill="#008000">place_in_drawer (towel)</text>
+    <text x="10" y="270" font-size="32" font-weight="bold" fill="#008000">close_drawer (drawer)</text>
+  </g>
+
+  <!-- Arrow to (f) -->
+  <path d="M1050,860 L1070,860 L1070,670 L1100,670" stroke="#5E4688" stroke-width="5" fill="none" marker-end="url(#arrow-purple)"/>
+
+  <!-- Section (f) Execution -->
+  <rect x="1070" y="560" width="520" height="440" rx="40" fill="white" />
+  <text x="1330" y="610" text-anchor="middle" font-size="48" font-weight="bold" fill="black">(f) Execution</text>
+
+  <!-- 4x4 Grid Images -->
+  <g transform="translate(1080, 620)">
+    <!-- Row 1 -->
+    <image href="" x="0" y="0" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="130" y="0" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="260" y="0" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="390" y="0" width="130" height="130" preserveAspectRatio="none"/>
+    <!-- Row 2 -->
+    <image href="" x="0" y="130" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="130" y="130" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="260" y="130" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="390" y="130" width="130" height="130" preserveAspectRatio="none"/>
+    <!-- Row 3 -->
+    <image href="" x="0" y="260" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="130" y="260" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="260" y="260" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="390" y="260" width="130" height="130" preserveAspectRatio="none"/>
+    <!-- Row 4 -->
+    <image href="" x="0" y="390" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="130" y="390" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="260" y="390" width="130" height="130" preserveAspectRatio="none"/>
+    <image href="" x="390" y="390" width="130" height="130" preserveAspectRatio="none"/>
+  </g>
+
+</svg>

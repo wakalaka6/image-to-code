@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12.0 12.0 1396.0 876.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="black" />
+    </marker>
+    
+    <!-- Fonts and Styles -->
+    <style>
+      .header-text { font-family: Arial, Helvetica, sans-serif; font-size: 42px; fill: black; }
+      .label-text { font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 48px; fill: black; text-anchor: middle; dominant-baseline: middle; }
+      .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; }
+      .math-symbol { font-family: "Times New Roman", Times, serif; }
+      .box-stroke { stroke-width: 3px; }
+      .connector { fill: none; stroke: black; stroke-width: 3.5px; marker-end: url(#arrow); }
+      .brace { fill: none; stroke: black; stroke-width: 3.5px; }
+      
+      /* Colors */
+      .bg-green { fill: #D5E8D4; stroke: #82B366; }
+      .bg-blue { fill: #DAE8FC; stroke: #6C8EBF; }
+      .bg-grey { fill: #607385; stroke: #4E5D6B; }
+      .bg-purple { fill: #E1D5E7; stroke: #9673A6; }
+      .bg-red { fill: #F8CECC; stroke: #B85450; }
+      .bg-container { fill: #F5F5F5; stroke: #666666; }
+    </style>
+  </defs>
+
+  <!-- ==================== GRID & LAYOUT ==================== -->
+  
+  <!-- Vertical Dashed Lines -->
+  <line x1="20" y1="20" x2="20" y2="630" stroke="black" stroke-width="5" stroke-dasharray="20,15" />
+  <line x1="580" y1="20" x2="580" y2="630" stroke="black" stroke-width="5" stroke-dasharray="20,15" />
+  <line x1="860" y1="20" x2="860" y2="630" stroke="black" stroke-width="5" stroke-dasharray="20,15" />
+  <line x1="1400" y1="20" x2="1400" y2="630" stroke="black" stroke-width="5" stroke-dasharray="20,15" />
+
+  <!-- Header Text -->
+  <text x="25" y="60" class="header-text">1. Tokenize and combine</text>
+  <text x="80" y="100" class="header-text">goal and tactic</text>
+  
+  <text x="600" y="60" class="header-text">2. Create goal-aware</text>
+  <text x="620" y="100" class="header-text">tactic embedding</text>
+  
+  <text x="875" y="60" class="header-text">3. Train embedding to</text>
+  <text x="900" y="100" class="header-text">encode transition</text>
+  <text x="970" y="140" class="header-text" text-anchor="middle">data</text>
+
+  <!-- ==================== COLUMN 1: INPUTS ==================== -->
+  
+  <!-- Green Input Stack -->
+  <g transform="translate(300, 180)">
+    <rect x="0" y="0" width="160" height="150" class="bg-green box-stroke" />
+    <text x="80" y="75" class="label-text">rw</text>
+    
+    <rect x="0" y="150" width="160" height="150" class="bg-green box-stroke" />
+    <text x="80" y="225" class="label-text">[</text>
+    
+    <rect x="0" y="300" width="160" height="150" class="bg-green box-stroke" />
+    <text x="80" y="375" class="label-text">...</text>
+  </g>
+
+  <!-- Blue Input Stack -->
+  <g transform="translate(300, 430)">
+    <rect x="0" y="0" width="160" height="150" class="bg-blue box-stroke" />
+    <text x="80" y="75" class="math-text" font-size="48" text-anchor="middle" dominant-baseline="middle">a</text>
+    
+    <rect x="0" y="150" width="160" height="150" class="bg-blue box-stroke" />
+    <text x="80" y="225" class="math-text" font-size="48" text-anchor="middle" dominant-baseline="middle">,</text>
+    
+    <rect x="0" y="300" width="160" height="150" class="bg-blue box-stroke" />
+    <text x="80" y="375" class="label-text">...</text>
+  </g>
+
+  <!-- Large Blue Box (Goal Logic) -->
+  <rect x="35" y="460" width="250" height="170" class="bg-blue box-stroke" />
+  <g transform="translate(50, 490)" class="math-text" font-size="44">
+    <text x="0" y="0">a,b,c : &#x2102;</text>
+    <text x="0" y="60">h<tspan dy="5" font-size="30">0</tspan><tspan dy="-5"> : a + b = 2c</tspan></text>
+    <text x="0" y="120">h<tspan dy="5" font-size="30">1</tspan><tspan dy="-5"> : c = i</tspan></text>
+    <text x="0" y="180">&#x22A2; ac + bc = &#x2212;2</text>
+  </g>
+
+  <!-- Braces -->
+  <!-- Top Brace -->
+  <path d="M 370 180 Q 400 180 400 210 L 400 285 Q 400 300 420 300 Q 400 300 400 315 L 400 390 Q 400 420 370 420" class="brace" />
+  <!-- Bottom Brace -->
+  <path d="M 370 430 Q 400 430 400 460 L 400 535 Q 400 550 420 550 Q 400 550 400 565 L 400 640 Q 400 670 370 670" class="brace" />
+
+  <!-- Intermediate Boxes Col 1 -->
+  <rect x="425" y="250" width="170" height="150" class="bg-green box-stroke" />
+  <text x="460" y="325" class="label-text" font-size="60">t</text>
+
+  <rect x="425" y="500" width="170" height="150" class="bg-blue box-stroke" />
+  <text x="460" y="575" class="label-text" font-size="60">g</text>
+
+  <!-- Small Green Box (RW h1) -->
+  <rect x="75" y="260" width="180" height="110" class="bg-green box-stroke" />
+  <text x="100" y="325" class="math-text" font-size="48">rw&#x2009;[h<tspan dy="5" font-size="30">1</tspan><tspan dy="-5">]</tspan></text>
+
+  <!-- ==================== COLUMN 2: PROCESSING ==================== -->
+  
+  <!-- Top Concat -->
+  <rect x="425" y="390" width="200" height="110" class="bg-grey box-stroke" />
+  <text x="525" y="445" class="label-text" fill="white" font-size="50">concat</text>
+
+  <!-- Arrows into Top Concat -->
+  <path d="M 460 325 L 460 390" class="connector" />
+  <path d="M 460 500 L 460 400" class="connector" />
+
+  <!-- Encoder Container -->
+  <rect x="600" y="150" width="270" height="430" class="bg-container box-stroke" />
+
+  <!-- Encoder Box -->
+  <rect x="660" y="170" width="200" height="170" class="bg-red box-stroke" />
+  <text x="710" y="210" class="label-text" font-size="40">Encoder</text>
+  <text x="710" y="280" class="math-text" font-size="50" text-anchor="middle" dominant-baseline="middle">E</text>
+
+  <!-- Split Boxes -->
+  <rect x="650" y="320" width="160" height="130" class="bg-green box-stroke" />
+  <text x="680" y="385" class="label-text" font-size="60">t'</text>
+  
+  <rect x="730" y="320" width="160" height="130" class="bg-blue box-stroke" />
+  <text x="760" y="385" class="label-text" font-size="60">g'</text>
+
+  <!-- Pool Box -->
+  <rect x="650" y="410" width="160" height="70" fill="#7F6B99" stroke="#5A4572" stroke-width="3" />
+  <text x="680" y="455" class="label-text" fill="white" font-size="40">pool</text>
+
+  <!-- Embedding Box (e) -->
+  <rect x="650" y="490" width="160" height="150" class="bg-green box-stroke" />
+  <text x="680" y="565" class="label-text" font-size="60">e</text>
+
+  <!-- Bottom Concat -->
+  <rect x="630" y="600" width="200" height="110" class="bg-grey box-stroke" />
+  <text x="730" y="655" class="label-text" fill="white" font-size="50">concat</text>
+
+  <!-- Internal Col 2 Arrows -->
+  <!-- Concat to Encoder -->
+  <path d="M 570 425 L 620 425 L 620 215 L 660 215" class="connector" />
+  
+  <!-- Encoder to Split -->
+  <path d="M 720 270 L 720 290 L 690 290 L 690 320" class="connector" />
+  <path d="M 720 290 L 780 290 L 780 320" class="connector" />
+  
+  <!-- Split to Pool -->
+  <path d="M 690 390 L 690 410" class="connector" />
+  
+  <!-- Pool to e -->
+  <path d="M 690 480 L 690 500" class="connector" />
+  
+  <!-- e to Bottom Concat -->
+  <path d="M 690 560 L 690 600" class="connector" />
+
+  <!-- ==================== COLUMN 3: PREDICTION ==================== -->
+  
+  <!-- Predictor Box -->
+  <rect x="920" y="180" width="200" height="180" class="bg-red box-stroke" />
+  <text x="960" y="225" class="label-text" font-size="40">Predictor</text>
+  <text x="960" y="290" class="math-text" font-size="50" text-anchor="middle" dominant-baseline="middle">P</text>
+
+  <!-- Decoder Box -->
+  <rect x="900" y="420" width="220" height="160" class="bg-red box-stroke" />
+  <text x="960" y="480" class="label-text" font-size="40">Decoder</text>
+  <text x="960" y="550" class="math-text" font-size="50" text-anchor="middle" dominant-baseline="middle">D</text>
+
+  <!-- Output Box -->
+  <rect x="1110" y="390" width="280" height="200" class="bg-purple box-stroke" />
+  <g transform="translate(1140, 430)" class="math-text" font-size="44">
+    <text x="0" y="0">Output&#x2009;(ô)</text>
+    <text x="0" y="50">a,b,c : &#x2102;</text>
+    <text x="0" y="100">h<tspan dy="5" font-size="30">0</tspan><tspan dy="-5"> : a + b = 2c</tspan></text>
+    <text x="0" y="150">h<tspan dy="5" font-size="30">1</tspan><tspan dy="-5"> : c = i</tspan></text>
+    <text x="0" y="200">&#x22A2; ai + bi = &#x2212;2</text>
+  </g>
+
+  <!-- Arrows Col 3 -->
+  <!-- Bottom Concat to Predictor (Long path around) -->
+  <path d="M 730 655 L 880 655 L 880 235 L 920 235" class="connector" />
+  
+  <!-- e to Decoder (Merging path) -->
+  <path d="M 710 530 L 880 530 L 880 655" fill="none" stroke="black" stroke-width="3.5" />
+  
+  <!-- Predictor to Outputs -->
+  <path d="M 1050 240 L 1110 240" fill="none" stroke="black" stroke-width="3.5" />
+  <path d="M 1110 240 L 1110 180 L 1140 180" class="connector" />
+  <path d="M 1110 240 L 1110 310 L 1180 310" class="connector" />
+  
+  <!-- Decoder to Output -->
+  <path d="M 1070 500 L 1110 500" class="connector" />
+
+  <!-- ==================== FLOATING OUTPUTS ==================== -->
+  
+  <!-- Status Box -->
+  <rect x="1140" y="150" width="230" height="130" class="bg-purple box-stroke" />
+  <text x="1200" y="180" class="label-text" font-size="40">Status&#x2009;(s&#x0302;)</text>
+  <text x="1200" y="240" class="label-text" font-family="Arial, Helvetica, sans-serif" font-size="40">success</text>
+
+  <!-- Time Box -->
+  <rect x="1180" y="260" width="170" height="160" class="bg-purple box-stroke" />
+  <text x="1200" y="310" class="label-text" font-size="40">Time&#x2009;(&#x03C4;&#x0302;)</text>
+  <text x="1200" y="380" class="label-text" font-size="50">0.1</text>
+
+</svg>

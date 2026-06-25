@@ -1,0 +1,415 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.0 -8.0 1616.0 536.0" font-family="Arial, sans-serif">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="black" />
+    </marker>
+    
+    <!-- Cat Image Placeholder Pattern -->
+    <clipPath id="catClip">
+      <rect x="15" y="260" width="150" height="150" rx="2" />
+    </clipPath>
+    <g id="catContent">
+      <!-- Den Background -->
+      <rect width="150" height="150" fill="#3e2b26" />
+      <path d="M0,100 L150,80 M20,150 L100,50" stroke="#2e1e1e" stroke-width="5" />
+      <!-- Straw -->
+      <path d="M0,120 Q30,110 60,130 T120,120 T150,140" stroke="#C2B280" stroke-width="2" fill="none"/>
+      <path d="M10,140 Q40,130 70,150 T130,140" stroke="#C2B280" stroke-width="2" fill="none"/>
+      <!-- Cat Body -->
+      <ellipse cx="75" cy="110" rx="45" ry="35" fill="#f0f0f0" />
+      <path d="M30,110 Q10,130 10,150 L40,150 Z" fill="#f0f0f0" />
+      <path d="M120,110 Q140,130 140,150 L110,150 Z" fill="#f0f0f0" />
+      <!-- Cat Head -->
+      <circle cx="75" cy="80" r="30" fill="#f0f0f0" />
+      <!-- Tabby Stripes -->
+      <path d="M45,50 Q55,60 65,50" stroke="#888" stroke-width="3" fill="none"/>
+      <path d="M65,50 Q75,60 85,50" stroke="#888" stroke-width="3" fill="none"/>
+      <path d="M50,70 Q60,80 50,90" stroke="#888" stroke-width="2" fill="none"/>
+      <path d="M80,70 Q90,80 80,90" stroke="#888" stroke-width="2" fill="none"/>
+      <path d="M70,55 Q80,65 75,75" stroke="#888" stroke-width="4" fill="none"/>
+      <!-- Ears -->
+      <path d="M45,55 L40,30 L60,50 Z" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+      <path d="M60,30 L55,55 L45,50 Z" fill="#888" />
+      <path d="M105,55 L110,30 L90,50 Z" fill="#f0f0f0" stroke="#888" stroke-width="1"/>
+      <path d="M90,30 L95,55 L105,50 Z" fill="#888" />
+      <!-- Eyes -->
+      <circle cx="65" cy="75" r="4" fill="#6b8e23" />
+      <circle cx="85" cy="75" r="4" fill="#6b8e23" />
+      <circle cx="65" cy="75" r="1.5" fill="black" />
+      <circle cx="85" cy="75" r="1.5" fill="black" />
+      <!-- Nose -->
+      <path d="M70,85 L80,85 L75,90 Z" fill="pink" />
+    </g>
+
+    <!-- 4-Cell Vertical Stack Definition -->
+    <g id="vStack4">
+      <rect y="0" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="25" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="50" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="75" width="40" height="25" stroke="#888" stroke-width="1" />
+    </g>
+    
+    <!-- 6-Cell Vertical Stack Definition -->
+    <g id="vStack6">
+      <rect y="0" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="25" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="50" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="75" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="100" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="125" width="40" height="25" stroke="#888" stroke-width="1" />
+    </g>
+
+    <!-- 2-Cell Vertical Stack Definition -->
+    <g id="vStack2">
+      <rect y="0" width="40" height="25" stroke="#888" stroke-width="1" />
+      <rect y="25" width="40" height="25" stroke="#888" stroke-width="1" />
+    </g>
+
+    <!-- 2-Cell Horizontal Stack Definition -->
+    <g id="hStack2">
+      <rect x="0" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="25" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+    </g>
+
+    <!-- 3-Cell Horizontal Stack Definition -->
+    <g id="hStack3">
+      <rect x="0" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="25" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="50" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+    </g>
+
+    <!-- 4-Cell Horizontal Stack Definition -->
+    <g id="hStack4">
+      <rect x="0" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="25" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="50" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+      <rect x="75" y="0" width="25" height="40" stroke="#888" stroke-width="1" />
+    </g>
+
+    <!-- Double Headed Arrow Shape -->
+    <path id="doubleArrow" d="M10,0 L20,10 L15,10 L15,25 L20,25 L10,35 L0,25 L5,25 L5,10 L0,10 Z" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="480" fill="white" />
+
+  <!-- === LEGEND === -->
+  <g transform="translate(15, 85)">
+    <rect x="0" y="0" width="170" height="170" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <!-- Hard Label -->
+    <rect x="10" y="20" width="35" height="35" fill="#8DAAD6" stroke="#5B8DD5" stroke-width="2" />
+    <text x="55" y="45" font-size="30" fill="black">hard label</text>
+    <!-- Mask Label -->
+    <rect x="10" y="65" width="35" height="35" fill="#999999" stroke="#666666" stroke-width="2" />
+    <text x="55" y="90" font-size="30" fill="black">mask label</text>
+    <!-- Target -->
+    <rect x="10" y="110" width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+    <text x="55" y="135" font-size="30" fill="black">target</text>
+    <!-- Non-Target -->
+    <rect x="10" y="155" width="35" height="35" fill="#B5D698" stroke="#8CBF70" stroke-width="2" />
+    <text x="55" y="180" font-size="30" fill="black">non-target</text>
+  </g>
+
+  <!-- === INPUT IMAGE === -->
+  <g transform="translate(15, 260)">
+    <use href="#catClip" />
+    <use href="#catContent" />
+    <text x="90" y="190" font-size="32" text-anchor="middle" fill="black">cat</text>
+    <!-- Arrows to Teacher/Student -->
+    <line x1="150" y1="0" x2="210" y2="-50" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="150" y1="150" x2="210" y2="190" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === TEACHER & STUDENT === -->
+  <!-- Teacher -->
+  <g transform="translate(220, 195)">
+    <rect x="0" y="0" width="250" height="130" rx="20" fill="white" stroke="#888888" stroke-width="2" />
+    <text x="125" y="115" font-size="32" text-anchor="middle" fill="black">Teacher</text>
+    <!-- CNN Blocks -->
+    <g transform="translate(20, 20)">
+      <!-- Block 1 -->
+      <path d="M0,10 L20,-10 L40,-10 L20,10 Z" fill="#5B8DD5" /> <!-- Top -->
+      <path d="M40,-10 L40,90 L20,110 L20,10 Z" fill="#5B8DD5" /> <!-- Side -->
+      <rect x="0" y="10" width="20" height="100" fill="#6FA8DC" /> <!-- Face -->
+      <!-- Block 2 -->
+      <path d="M30,10 L50,-10 L70,-10 L50,10 Z" fill="#5B8DD5" />
+      <path d="M70,-10 L70,90 L50,110 L50,10 Z" fill="#5B8DD5" />
+      <rect x="30" y="10" width="20" height="100" fill="#6FA8DC" />
+      <!-- Block 3 -->
+      <path d="M60,10 L80,-10 L100,-10 L80,10 Z" fill="#5B8DD5" />
+      <path d="M100,-10 L100,90 L80,110 L80,10 Z" fill="#5B8DD5" />
+      <rect x="60" y="10" width="20" height="100" fill="#6FA8DC" />
+      <!-- Block 4 -->
+      <path d="M90,10 L110,-10 L130,-10 L110,10 Z" fill="#5B8DD5" />
+      <path d="M130,-10 L130,70 L110,90 L110,10 Z" fill="#5B8DD5" />
+      <rect x="90" y="10" width="20" height="80" fill="#6FA8DC" />
+      <!-- Block 5 -->
+      <path d="M120,10 L140,-10 L160,-10 L140,10 Z" fill="#5B8DD5" />
+      <path d="M160,-10 L160,50 L140,70 L140,10 Z" fill="#5B8DD5" />
+      <rect x="120" y="10" width="20" height="60" fill="#6FA8DC" />
+      <!-- Block 6 -->
+      <path d="M150,10 L170,-10 L190,-10 L170,10 Z" fill="#5B8DD5" />
+      <path d="M190,-10 L190,30 L170,50 L170,10 Z" fill="#5B8DD5" />
+      <rect x="150" y="10" width="20" height="40" fill="#6FA8DC" />
+    </g>
+    <line x1="250" y1="65" x2="280" y2="65" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Student -->
+  <g transform="translate(220, 340)">
+    <rect x="0" y="0" width="250" height="130" rx="20" fill="white" stroke="#888888" stroke-width="2" />
+    <text x="125" y="115" font-size="32" text-anchor="middle" fill="black">Student</text>
+    <!-- CNN Blocks (Orange) -->
+    <g transform="translate(20, 20)">
+      <path d="M0,10 L20,-10 L40,-10 L20,10 Z" fill="#D67828" />
+      <path d="M40,-10 L40,90 L20,110 L20,10 Z" fill="#D67828" />
+      <rect x="0" y="10" width="20" height="100" fill="#ED8F44" />
+      
+      <path d="M30,10 L50,-10 L70,-10 L50,10 Z" fill="#D67828" />
+      <path d="M70,-10 L70,90 L50,110 L50,10 Z" fill="#D67828" />
+      <rect x="30" y="10" width="20" height="100" fill="#ED8F44" />
+      
+      <path d="M60,10 L80,-10 L100,-10 L80,10 Z" fill="#D67828" />
+      <path d="M100,-10 L100,70 L80,90 L80,10 Z" fill="#D67828" />
+      <rect x="60" y="10" width="20" height="80" fill="#ED8F44" />
+      
+      <path d="M90,10 L110,-10 L130,-10 L110,10 Z" fill="#D67828" />
+      <path d="M130,-10 L130,50 L110,70 L110,10 Z" fill="#D67828" />
+      <rect x="90" y="10" width="20" height="60" fill="#ED8F44" />
+      
+      <path d="M120,10 L140,-10 L160,-10 L140,10 Z" fill="#D67828" />
+      <path d="M160,-10 L160,30 L140,50 L140,10 Z" fill="#D67828" />
+      <rect x="120" y="10" width="20" height="40" fill="#ED8F44" />
+    </g>
+    <line x1="250" y1="65" x2="280" y2="65" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === GROUND TRUTH === -->
+  <g transform="translate(220, 60)">
+    <rect x="0" y="0" width="250" height="75" rx="15" fill="white" stroke="#888888" stroke-width="2" />
+    <text x="125" y="48" font-size="32" text-anchor="middle" fill="black">Ground Truth</text>
+    <line x1="250" y1="37" x2="280" y2="37" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === DECOUPLING === -->
+  <g transform="translate(480, 20)">
+    <rect x="0" y="0" width="80" height="430" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <text x="130" y="300" font-size="32" fill="black">Decoupling</text>
+    
+    <!-- Top Stack -->
+    <g transform="translate(20, 10)">
+      <rect width="35" height="35" fill="#8DAAD6" stroke="#5B8DD5" stroke-width="2" />
+      <text x="45" y="30" font-family="serif" font-size="30">1</text>
+      <g transform="translate(0, 35)" fill="#999999">
+        <use href="#vStack4" />
+      </g>
+    </g>
+    <line x1="80" y1="75" x2="115" y2="75" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Middle Stack -->
+    <g transform="translate(20, 170)">
+      <rect width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+      <text x="45" y="30" font-family="serif" font-style="italic" font-size="30">p<tspan dy="5" font-size="20">t</tspan><tspan dy="-15" font-size="20">T</tspan></text>
+      <g transform="translate(0, 35)" fill="#B5D698">
+        <use href="#vStack6" />
+      </g>
+    </g>
+    <line x1="80" y1="225" x2="115" y2="225" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Bottom Stack -->
+    <g transform="translate(20, 315)">
+      <rect width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+      <text x="45" y="30" font-family="serif" font-style="italic" font-size="30">p<tspan dy="5" font-size="20">t</tspan><tspan dy="-15" font-size="20">S</tspan></text>
+      <g transform="translate(0, 35)" fill="#B5D698">
+        <use href="#vStack6" />
+      </g>
+    </g>
+    <line x1="80" y1="370" x2="115" y2="370" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === MASKING BLOCK === -->
+  <g transform="translate(600, 320)">
+    <rect x="0" y="0" width="100" height="120" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <!-- Left Column -->
+    <g transform="translate(10, 10)">
+      <g fill="#B5D698"><use href="#vStack6" /></g>
+      <g fill="#999999" transform="translate(0, 75)"><use href="#vStack2" /></g>
+    </g>
+    <!-- Right Column -->
+    <g transform="translate(60, 10)">
+      <g fill="#B5D698"><use href="#vStack6" /></g>
+      <g fill="#999999" transform="translate(0, 75)"><use href="#vStack2" /></g>
+    </g>
+    <line x1="100" y1="60" x2="135" y2="60" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === DYNAMIC TOP-K MASK === -->
+  <g transform="translate(525, 460)">
+    <rect x="0" y="0" width="270" height="45" rx="8" fill="#D1C4E9" />
+    <text x="135" y="32" font-size="28" text-anchor="middle" fill="black">Dynamic Top-k Mask</text>
+    <!-- Arrow Up -->
+    <path d="M135,-10 L145,5 L140,5 L140,20 L150,20 L135,35 L120,20 L130,20 L130,5 L120,5 Z" 
+          fill="none" stroke="#D1C4E9" stroke-width="3" transform="translate(0, -10)" />
+  </g>
+
+  <!-- === ROW 1: TASK (Blue) === -->
+  <g transform="translate(600, 30)">
+    <!-- TASK Column -->
+    <rect x="0" y="0" width="280" height="125" fill="none" stroke="#A9C4EB" stroke-width="3" stroke-dasharray="15,10" />
+    <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">TASK</text>
+    <rect x="10" y="50" width="260" height="85" rx="15" fill="white" stroke="#8DAAD6" stroke-width="3" />
+    <text x="140" y="80" font-size="28" text-anchor="middle" fill="black">Task</text>
+    <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">CE Loss</text>
+    <line x1="280" y1="62" x2="315" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- TOG Column -->
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="280" height="125" fill="none" stroke="#A9C4EB" stroke-width="3" stroke-dasharray="15,10" />
+      <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">TOG</text>
+      <rect x="10" y="50" width="260" height="85" rx="15" fill="#8DAAD6" />
+      <text x="140" y="75" font-size="28" text-anchor="middle" fill="black">Task-oriented</text>
+      <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">Gradient</text>
+      <line x1="280" y1="62" x2="380" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+
+    <!-- Buffer -->
+    <g transform="translate(630, 32)">
+      <text x="0" y="-15" font-family="serif" font-style="italic" font-size="28">v &#8592; g + (&#956; + &#916;)v</text>
+      <path d="M20,0 L30,10 L25,10 L25,30 L30,30 L20,40 L10,30 L15,30 L15,10 L10,10 Z" 
+            fill="none" stroke="#A9C4EB" stroke-width="3" transform="translate(20, -10)" />
+      <rect x="0" y="0" width="280" height="85" rx="15" fill="#8DAAD6" />
+      <text x="140" y="35" font-size="28" text-anchor="middle" fill="black">Task</text>
+      <text x="140" y="65" font-size="28" text-anchor="middle" fill="black">Momentum buffer</text>
+      <line x1="280" y1="42" x2="350" y2="42" stroke="black" stroke-width="2" />
+      <line x1="350" y1="42" x2="350" y2="185" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+  </g>
+
+  <!-- === ROW 2: TARGET (Yellow) === -->
+  <g transform="translate(600, 190)">
+    <!-- TCKD Column -->
+    <rect x="0" y="0" width="280" height="125" fill="none" stroke="#FDE698" stroke-width="3" stroke-dasharray="15,10" />
+    <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">TCKD</text>
+    <rect x="10" y="50" width="260" height="85" rx="15" fill="white" stroke="#FDD85D" stroke-width="3" />
+    <text x="140" y="75" font-size="28" text-anchor="middle" fill="black">Target Class</text>
+    <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">KL Loss</text>
+    <line x1="280" y1="62" x2="315" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- TCG Column -->
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="280" height="125" fill="none" stroke="#FDE698" stroke-width="3" stroke-dasharray="15,10" />
+      <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">TCG</text>
+      <rect x="10" y="50" width="260" height="85" rx="15" fill="#FDD85D" />
+      <text x="140" y="75" font-size="28" text-anchor="middle" fill="black">Target class</text>
+      <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">Gradient</text>
+      <line x1="280" y1="62" x2="380" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+
+    <!-- Buffer -->
+    <g transform="translate(630, 32)">
+      <text x="0" y="-15" font-family="serif" font-style="italic" font-size="28">v &#8592; g + (&#956; &#8722; &#916;)v</text>
+      <path d="M20,0 L30,10 L25,10 L25,30 L30,30 L20,40 L10,30 L15,30 L15,10 L10,10 Z" 
+            fill="none" stroke="#FDD85D" stroke-width="3" transform="translate(20, -10)" />
+      <rect x="0" y="0" width="280" height="85" rx="15" fill="#FDD85D" />
+      <text x="140" y="35" font-size="28" text-anchor="middle" fill="black">Target</text>
+      <text x="140" y="65" font-size="28" text-anchor="middle" fill="black">Momentum buffer</text>
+      <line x1="280" y1="42" x2="350" y2="42" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+  </g>
+
+  <!-- === ROW 3: NON-TARGET (Green) === -->
+  <g transform="translate(600, 345)">
+    <!-- NCKD Column -->
+    <rect x="0" y="0" width="280" height="125" fill="none" stroke="#CDE4BE" stroke-width="3" stroke-dasharray="15,10" />
+    <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">NCKD</text>
+    <rect x="10" y="50" width="260" height="85" rx="15" fill="white" stroke="#B5D698" stroke-width="3" />
+    <text x="140" y="75" font-size="28" text-anchor="middle" fill="black">Non-target</text>
+    <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">Class KL Loss</text>
+    <line x1="280" y1="62" x2="315" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- NCG Column -->
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="280" height="125" fill="none" stroke="#CDE4BE" stroke-width="3" stroke-dasharray="15,10" />
+      <text x="140" y="35" font-size="32" text-anchor="middle" fill="black">NCG</text>
+      <rect x="10" y="50" width="260" height="85" rx="15" fill="#B5D698" />
+      <text x="140" y="75" font-size="28" text-anchor="middle" fill="black">Non-target</text>
+      <text x="140" y="105" font-size="28" text-anchor="middle" fill="black">class Gradient</text>
+      <line x1="280" y1="62" x2="380" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+
+    <!-- Buffer -->
+    <g transform="translate(630, 32)">
+      <text x="0" y="-15" font-family="serif" font-style="italic" font-size="28">v &#8592; g + (&#956; + &#916;)v</text>
+      <path d="M20,0 L30,10 L25,10 L25,30 L30,30 L20,40 L10,30 L15,30 L15,10 L10,10 Z" 
+            fill="none" stroke="#B5D698" stroke-width="3" transform="translate(20, -10)" />
+      <rect x="0" y="0" width="280" height="85" rx="15" fill="#B5D698" />
+      <text x="140" y="35" font-size="28" text-anchor="middle" fill="black">Non-target</text>
+      <text x="140" y="65" font-size="28" text-anchor="middle" fill="black">Momentum buffer</text>
+      <line x1="280" y1="42" x2="350" y2="42" stroke="black" stroke-width="2" />
+      <line x1="350" y1="42" x2="350" y2="-100" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+    </g>
+  </g>
+
+  <!-- === INPUTS FOR COLUMNS === -->
+  <!-- Input for TASK -->
+  <g transform="translate(600, 30)">
+    <rect x="0" y="0" width="100" height="125" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <g transform="translate(10, 30)">
+      <rect width="35" height="35" fill="#8DAAD6" stroke="#5B8DD5" stroke-width="2" />
+      <text x="10" y="65" font-family="serif" font-size="30">1</text>
+      <g transform="translate(60, 0)">
+        <rect width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+        <text x="10" y="65" font-family="serif" font-style="italic" font-size="30">p<tspan dy="5" font-size="20">t</tspan><tspan dy="-15" font-size="20">S</tspan></text>
+      </g>
+    </g>
+    <line x1="100" y1="62" x2="135" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Input for TARGET -->
+  <g transform="translate(600, 190)">
+    <rect x="0" y="0" width="100" height="125" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <g transform="translate(10, 30)">
+      <rect width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+      <text x="10" y="65" font-family="serif" font-style="italic" font-size="30">p<tspan dy="5" font-size="20">t</tspan><tspan dy="-15" font-size="20">T</tspan></text>
+      <g transform="translate(60, 0)">
+        <rect width="35" height="35" fill="#FDD85D" stroke="#FBC02D" stroke-width="2" />
+        <text x="10" y="65" font-family="serif" font-style="italic" font-size="30">p<tspan dy="5" font-size="20">t</tspan><tspan dy="-15" font-size="20">S</tspan></text>
+      </g>
+    </g>
+    <line x1="100" y1="62" x2="135" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Input for NON-TARGET -->
+  <g transform="translate(600, 345)">
+    <rect x="0" y="0" width="100" height="125" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-dasharray="15,10" />
+    <g transform="translate(10, 10)">
+      <g fill="#B5D698"><use href="#vStack6" /></g>
+      <g fill="#999999" transform="translate(0, 75)"><use href="#vStack2" /></g>
+    </g>
+    <g transform="translate(60, 10)">
+      <g fill="#B5D698"><use href="#vStack6" /></g>
+      <g fill="#999999" transform="translate(0, 75)"><use href="#vStack2" /></g>
+    </g>
+    <line x1="100" y1="62" x2="135" y2="62" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- === UPDATE LOOP === -->
+  <g transform="translate(1480, 245)">
+    <!-- Summation Circle -->
+    <circle cx="0" cy="0" r="20" fill="white" stroke="black" stroke-width="2" />
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="black" stroke-width="2" />
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="black" stroke-width="2" />
+    
+    <!-- Equation -->
+    <text x="25" y="-10" font-family="serif" font-style="italic" font-size="28">&#952; &#8592; &#952; &#8722; &#947;v</text>
+    <text x="25" y="40" font-size="32" fill="black">Update</text>
+    
+    <!-- Feedback Loop -->
+    <line x1="20" y1="0" x2="120" y2="0" stroke="black" stroke-width="2" />
+    <line x1="120" y1="0" x2="120" y2="250" stroke="black" stroke-width="2" />
+    <line x1="120" y1="250" x2="-230" y2="250" stroke="black" stroke-width="2" />
+    <line x1="-230" y1="250" x2="-230" y2="170" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+</svg>

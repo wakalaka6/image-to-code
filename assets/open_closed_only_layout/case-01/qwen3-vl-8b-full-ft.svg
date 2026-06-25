@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.0 22.0 1596.0 936.0" style="background-color: white;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A9A9A9" />
+    </marker>
+    <!-- Font Styles -->
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; }
+      .sans { font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+      .comic { font-family: "Comic Sans MS", "Chalkboard SE", sans-serif; }
+      .box-bg { fill: #808080; stroke: black; stroke-width: 1.5; }
+      .dashed-container { fill: none; stroke: #C0C0C0; stroke-width: 6; stroke-dasharray: 25, 15; stroke-linecap: round; }
+      .solid-container { fill: #D3D3D3; }
+      .code-text { fill: white; font-size: 42px; text-anchor: middle; dominant-baseline: middle; }
+      .label-text { fill: black; font-size: 55px; text-anchor: middle; }
+      .list-text { fill: black; font-size: 55px; text-anchor: start; }
+      .arrow-line { fill: none; stroke: #A9A9A9; stroke-width: 5; }
+    </style>
+  </defs>
+
+  <!-- ==================== LEFT COLUMN ==================== -->
+  
+  <!-- 1. Sentiment Container -->
+  <rect x="10" y="10" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 20)" />
+  <rect x="45" y="40" width="130" height="130" class="box-bg" />
+  <text x="110" y="90" class="sans code-text">&lt;AF&gt;07</text>
+  <text x="180" y="90" class="serif list-text">
+    <tspan x="180" dy="-10">(a) positive</tspan>
+    <tspan x="180" dy="70">(b) negative</tspan>
+    <tspan x="180" dy="70">(c) neutral</tspan>
+  </text>
+  <text x="100" y="175" class="serif label-text">Sentiment</text>
+
+  <!-- 2. Style Container -->
+  <rect x="10" y="240" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 0)" />
+  <rect x="50" y="215" width="130" height="130" class="box-bg" />
+  <text x="115" y="265" class="sans code-text">&lt;AF&gt;03</text>
+  <text x="180" y="265" class="serif list-text">
+    <tspan x="180" dy="-10">(a) subjective</tspan>
+    <tspan x="180" dy="70">(b) neutral</tspan>
+  </text>
+  <text x="100" y="325" class="serif label-text">Style</text>
+
+  <!-- 3. Topic Container -->
+  <rect x="10" y="450" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 0)" />
+  <rect x="48" y="375" width="130" height="130" class="box-bg" />
+  <text x="113" y="425" class="sans code-text">&lt;AF&gt;04</text>
+  <text x="180" y="425" class="serif list-text">
+    <tspan x="180" dy="-10">(a) sports</tspan>
+    <tspan x="180" dy="60">(b) crime</tspan>
+    <tspan x="180" dy="60">(c) politics</tspan>
+    <tspan x="180" dy="40">......</tspan>
+  </text>
+  <text x="100" y="500" class="serif label-text">Topic</text>
+
+  <!-- 4. Perplexity Container -->
+  <rect x="10" y="660" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 0)" />
+  <rect x="65" y="540" width="100" height="150" class="box-bg" />
+  <text x="115" y="580" class="sans code-text" style="font-size: 32px;"><tspan dy="-10">&lt;AF&gt;09</tspan><tspan x="115" dy="40">......</tspan></text>
+  <text x="180" y="590" class="serif list-text">
+    <tspan x="180" dy="-10">(a) high</tspan>
+    <tspan x="180" dy="70">(b) low</tspan>
+  </text>
+  <text x="100" y="675" class="serif label-text">Perplexity</text>
+
+  <!-- ==================== RIGHT COLUMN ==================== -->
+
+  <!-- 1. Vanilla Container -->
+  <rect x="1230" y="10" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 20)" />
+  <rect x="1265" y="55" width="190" height="150" class="box-bg" />
+  <text x="1360" y="130" class="sans code-text">&lt;AF&gt;01</text>
+  <text x="1400" y="115" class="serif list-text comic" style="font-size: 48px;">
+    <tspan x="1400" dy="0">Please rewrite it</tspan>
+    <tspan x="1400" dy="60">to make it more</tspan>
+    <tspan x="1400" dy="60">convincing.</tspan>
+  </text>
+  <text x="1320" y="190" class="serif label-text">Vanilla</text>
+
+  <!-- 2. Explicit Container -->
+  <rect x="1230" y="240" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 0)" />
+  <rect x="1265" y="285" width="190" height="150" class="box-bg" />
+  <text x="1360" y="340" class="sans code-text">&lt;AF&gt;02</text>
+  <text x="1400" y="315" class="serif list-text comic" style="font-size: 48px;">
+    <tspan x="1400" dy="0">Make the {word</tspan>
+    <tspan x="1400" dy="60">choice} of the</tspan>
+    <tspan x="1400" dy="60">rewritten content</tspan>
+    <tspan x="1400" dy="60">{simple}.</tspan>
+  </text>
+  <text x="1320" y="415" class="serif label-text">Explicit</text>
+
+  <!-- 3. Implicit Container -->
+  <rect x="1230" y="450" width="360" height="200" rx="40" class="dashed-container" transform="translate(0, 0)" />
+  <rect x="1265" y="525" width="190" height="150" class="box-bg" />
+  <text x="1360" y="580" class="sans code-text">&lt;AF&gt;06</text>
+  <text x="1400" y="555" class="serif list-text comic" style="font-size: 48px;">
+    <tspan x="1400" dy="0">You are</tspan>
+    <tspan x="1400" dy="60">{elderly}. Please</tspan>
+    <tspan x="1400" dy="60">rewrite this</tspan>
+    <tspan x="1400" dy="60">passage.</tspan>
+  </text>
+  <text x="1320" y="655" class="serif label-text">Implicit</text>
+
+  <!-- ==================== CENTER COLUMN ==================== -->
+
+  <!-- Header -->
+  <text x="820" y="180" class="serif label-text" style="font-size: 70px;">TruthOverTricks</text>
+  <text x="820" y="215" class="serif list-text comic" style="font-size: 55px; text-anchor: middle;">
+    <tspan x="820" dy="0">Evaluate Shortcut Learning in</tspan>
+    <tspan x="820" dy="65">Misinformation Detection</tspan>
+  </text>
+
+  <!-- Misinformation Benchmarks -->
+  <rect x="600" y="250" width="450" height="180" rx="20" class="solid-container" />
+  <rect x="610" y="260" width="190" height="160" class="box-bg" />
+  <text x="660" y="340" class="sans code-text">&lt;AF&gt;11</text>
+  <text x="880" y="310" class="serif label-text" style="font-size: 60px;">
+    <tspan x="880" dy="-10">Misinformation</tspan>
+    <tspan x="880" dy="70">Benchmarks</tspan>
+  </text>
+
+  <!-- Intrinsic Shortcut Induction -->
+  <rect x="440" y="370" width="340" height="580" rx="20" class="solid-container" />
+  <text x="600" y="420" class="serif label-text" style="font-size: 65px;">
+    <tspan x="600" dy="-10">Intrinsic</tspan>
+    <tspan x="600" dy="75">Shortcut</tspan>
+    <tspan x="600" dy="75">Induction</tspan>
+  </text>
+  <rect x="520" y="490" width="220" height="220" class="box-bg" />
+  <text x="605" y="560" class="sans code-text">&lt;AF&gt;08</text>
+  <text x="600" y="660" class="serif label-text comic" style="font-size: 55px;">Indicator Classifier</text>
+
+  <!-- Extrinsic Shortcut Injection -->
+  <rect x="880" y="370" width="340" height="580" rx="20" class="solid-container" />
+  <text x="1030" y="420" class="serif label-text" style="font-size: 65px;">
+    <tspan x="1030" dy="-10">Extrinsic</tspan>
+    <tspan x="1030" dy="75">Shortcut</tspan>
+    <tspan x="1030" dy="75">Injection</tspan>
+  </text>
+  <rect x="970" y="500" width="220" height="200" class="box-bg" />
+  <text x="1040" y="570" class="sans code-text">&lt;AF&gt;10</text>
+  <text x="1030" y="660" class="serif label-text comic" style="font-size: 55px;">LLM Injector</text>
+
+  <!-- Top Center Box -->
+  <rect x="730" y="30" width="240" height="150" class="box-bg" />
+  <text x="840" y="100" class="sans code-text">&lt;AF&gt;05</text>
+
+  <!-- ==================== ARROWS ==================== -->
+
+  <!-- Left Side Arrows -->
+  <!-- From Intrinsic to 4 boxes -->
+  <path d="M 440 530 L 410 530" class="arrow-line" /> <!-- Main Exit -->
+  <path d="M 410 530 L 410 115 L 365 115" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Sentiment -->
+  <path d="M 410 530 L 410 280 L 365 280" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Style -->
+  <path d="M 410 530 L 410 445 L 365 445" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Topic -->
+  <path d="M 410 530 L 410 600 L 365 600" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Perplexity -->
+
+  <!-- Right Side Arrows -->
+  <!-- From Extrinsic to 3 boxes -->
+  <path d="M 1220 530 L 1200 530" class="arrow-line" /> <!-- Main Exit -->
+  <path d="M 1200 530 L 1200 125 L 1235 125" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Vanilla -->
+  <path d="M 1200 530 L 1200 360 L 1235 360" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Explicit -->
+  <path d="M 1200 530 L 1200 590 L 1235 590" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Implicit -->
+
+  <!-- Center Arrows -->
+  <!-- From Top Center down -->
+  <path d="M 840 180 L 840 250" class="arrow-line" />
+  
+  <!-- From Benchmarks Split to Induction/Extraction -->
+  <path d="M 825 370 L 825 530 L 760 530" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Induction -->
+  <path d="M 825 370 L 825 530 L 880 530" class="arrow-line" marker-end="url(#arrow)" /> <!-- To Extrinsic -->
+
+</svg>

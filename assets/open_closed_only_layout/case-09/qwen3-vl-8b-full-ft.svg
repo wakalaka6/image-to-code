@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.0 22.0 1633.0 1151.0" style="font-family: Arial, Helvetica, sans-serif; background-color: white;">
+  <defs>
+    <!-- Arrowhead Markers -->
+    <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="black" />
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#FF3333" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#33FF33" />
+    </marker>
+    
+    <!-- Tag Style -->
+    <rect id="tagRect" width="60" height="70" fill="#999999" stroke="black" stroke-width="2" />
+  </defs>
+
+  <!-- ================= LEFT COLUMN: Initial Survey ================= -->
+  
+  <!-- Header -->
+  <text x="240" y="45" font-size="40" font-weight="bold" text-anchor="middle" fill="black">Initial Survey</text>
+
+  <!-- Prolific Box -->
+  <rect x="55" y="55" width="370" height="140" fill="#7683D2" />
+  <text x="240" y="90" font-size="34" font-weight="bold" fill="white" text-anchor="middle">Prolific Screening</text>
+  
+  <!-- Inner White Box Prolific -->
+  <rect x="70" y="95" width="340" height="100" fill="#F2F3FA" />
+  <g transform="translate(90, 105)" font-size="32" fill="black">
+    <!-- Checkmark 1 -->
+    <path d="M0,5 L10,15 L25,-5" stroke="#33FF33" stroke-width="5" fill="none" transform="translate(0, 5) scale(0.8)"/>
+    <text x="40" y="20">US residents</text>
+    <!-- Checkmark 2 -->
+    <path d="M0,5 L10,15 L25,-5" stroke="#33FF33" stroke-width="5" fill="none" transform="translate(0, 40) scale(0.8)"/>
+    <text x="40" y="55">English speaking</text>
+    <!-- Checkmark 3 -->
+    <path d="M0,5 L10,15 L25,-5" stroke="#33FF33" stroke-width="5" fill="none" transform="translate(0, 80) scale(0.8)"/>
+    <text x="40" y="95">COVID/Climate views (+ or -)</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="240" y1="150" x2="240" y2="175" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)" />
+
+  <!-- Tag & Stats -->
+  <use href="#tagRect" x="220" y="170" />
+  <text x="250" y="190" font-size="14" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;02</text>
+  <text x="320" y="180" font-size="30" fill="black">1650</text>
+  <text x="320" y="200" font-size="30" fill="black" dy="20">screened</text>
+  
+  <!-- Arrow Down -->
+  <line x1="240" y1="200" x2="240" y2="215" stroke="black" stroke-width="3" marker-end="url(#arrowBlack)" />
+
+  <!-- Belief Assessment Box -->
+  <rect x="55" y="210" width="370" height="190" fill="#7683D2" />
+  <text x="240" y="245" font-size="34" font-weight="bold" fill="white" text-anchor="middle">Belief Assessment</text>
+  <rect x="65" y="240" width="350" height="130" fill="#F2F3FA" />
+  <text x="240" y="270" font-size="28" fill="black" text-anchor="middle">
+    <tspan x="240" dy="0">COVID origin: man-made vs natural?</tspan>
+    <tspan x="240" dy="35">COVID vaccines: safe and effective?</tspan>
+    <tspan x="240" dy="35">Climate: human-caused vs natural cycles?</tspan>
+    <tspan x="240" dy="30">............</tspan>
+  </text>
+
+  <!-- Branching Arrows -->
+  <path d="M240,320 L240,340 L110,340 L110,360" fill="none" stroke="#FF3333" stroke-width="4" marker-end="url(#arrowRed)" />
+  <path d="M240,340 L360,340 L360,360" fill="none" stroke="#33FF33" stroke-width="4" marker-end="url(#arrowGreen)" />
+
+  <!-- Belief Split Boxes -->
+  <!-- Left: Skeptical -->
+  <g transform="translate(8, 360)">
+    <rect width="225" height="120" fill="#BDD7EE" />
+    <text x="112" y="45" font-size="36" text-anchor="middle" fill="black">Skeptical belief</text>
+    <text x="112" y="80" font-size="32" text-anchor="middle" fill="black">107 participants</text>
+    <rect y="120" width="225" height="120" fill="#CCCCCC" />
+    <g transform="translate(10, 140)" font-size="30" fill="black">
+      <!-- Row 1 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#FF3333" stroke-width="6" transform="translate(0, 5)" fill="none"/>
+      <text x="15" y="20">COVID is human made</text>
+      <!-- Row 2 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#FF3333" stroke-width="6" transform="translate(0, 50) rotate(180 5 5)" fill="none"/>
+      <text x="25" y="60">Vaccine are safe</text>
+      <!-- Row 3 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#FF3333" stroke-width="6" transform="translate(0, 95) rotate(180 5 5)" fill="none"/>
+      <text x="15" y="115">Climate is human-caused</text>
+    </g>
+  </g>
+
+  <!-- Right: Mainstream -->
+  <g transform="translate(242, 360)">
+    <rect width="225" height="120" fill="#BDD7EE" />
+    <text x="112" y="45" font-size="36" text-anchor="middle" fill="black">Mainstream belief</text>
+    <text x="112" y="80" font-size="32" text-anchor="middle" fill="black">107 participants</text>
+    <rect y="120" width="225" height="120" fill="#CCCCCC" />
+    <g transform="translate(10, 140)" font-size="30" fill="black">
+      <!-- Row 1 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#33FF33" stroke-width="6" transform="translate(0, 5)" fill="none"/>
+      <text x="25" y="20">COVID is human made</text>
+      <!-- Row 2 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#33FF33" stroke-width="6" transform="translate(0, 50)" fill="none"/>
+      <text x="25" y="60">Vaccine are safe</text>
+      <!-- Row 3 -->
+      <path d="M-10,0 L0,10 L15,-10" stroke="#33FF33" stroke-width="6" transform="translate(0, 95)" fill="none"/>
+      <text x="15" y="115">Climate is human-caused</text>
+    </g>
+  </g>
+
+  <!-- Plus Sign -->
+  <text x="240" y="520" font-size="80" font-weight="bold" text-anchor="middle" fill="black">+</text>
+
+  <!-- Demographic Box -->
+  <rect x="55" y="510" width="370" height="200" fill="#7683D2" />
+  <text x="240" y="545" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Demographic Information</text>
+  <rect x="65" y="555" width="350" height="130" fill="#F2F3FA" />
+  <text x="240" y="585" font-size="30" fill="black" text-anchor="middle">
+    <tspan x="240" dy="0">Age, Gender, Education,</tspan>
+    <tspan x="240" dy="40">Residence, Political Stance, Income</tspan>
+  </text>
+
+  <!-- ================= RIGHT COLUMN: Protocols ================= -->
+  
+  <text x="920" y="45" font-size="40" font-weight="bold" text-anchor="middle" fill="black">Protocols</text>
+
+  <!-- Legend -->
+  <g transform="translate(1130, 30)">
+    <rect width="380" height="120" rx="15" fill="#D9D9D9" />
+    <use href="#tagRect" x="15" y="10" />
+    <text x="45" y="35" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;01</text>
+    <text x="190" y="40" font-size="30" fill="#0099FF" text-anchor="middle">AI expert can access corresponding</text>
+    <text x="190" y="75" font-size="30" fill="#0099FF" text-anchor="middle" text-decoration="underline">sources and cite them</text>
+    
+    <use href="#tagRect" x="15" y="70" />
+    <text x="45" y="95" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;12</text>
+    <text x="190" y="100" font-size="30" fill="#0099FF" text-anchor="middle">Cited references are shown to judges</text>
+  </g>
+
+  <!-- Example Claim -->
+  <g transform="translate(485, 60)">
+    <text x="175" y="30" font-size="36" font-weight="bold" fill="#0033CC" text-anchor="middle">Example Claim</text>
+    <rect x="0" y="30" width="350" height="80" fill="#D0D0D0" />
+    <text x="175" y="55" font-size="30" font-style="italic" fill="black" text-anchor="middle">Cloth masks less effective than</text>
+    <text x="175" y="85" font-size="30" font-style="italic" fill="black" text-anchor="middle">surgical masks</text>
+  </g>
+
+  <!-- Judge Initial Belief -->
+  <g transform="translate(800, 70)">
+    <rect x="0" y="0" width="320" height="100" fill="none" stroke="#999999" stroke-width="3" stroke-dasharray="4,2" rx="5" />
+    <text x="160" y="40" font-size="30" fill="black" text-anchor="middle">Judge's Initial Belief: True/False</text>
+    <text x="160" y="75" font-size="30" fill="black" text-anchor="middle">Confidence: (0-100%)</text>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="900" y1="170" x2="900" y2="580" stroke="black" stroke-width="3" />
+
+  <!-- Consultancy Column -->
+  <g transform="translate(465, 140)">
+    <!-- Header -->
+    <rect width="450" height="70" fill="#7683D2" />
+    <text x="225" y="45" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Consultancy</text>
+    
+    <!-- Vertical Label -->
+    <rect x="-20" y="70" width="40" height="420" fill="white" stroke="black" rx="10" />
+    <text transform="rotate(-90 -10 280)" x="-10" y="280" font-size="28" fill="black" text-anchor="middle">One AI consultant argues a random position between True (50%) or False (50%)</text>
+
+    <!-- Round 1 -->
+    <rect x="20" y="80" width="410" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="110" font-size="36" font-weight="bold" fill="black">Round 1</text>
+    <!-- Bubble 1 -->
+    <path d="M180,120 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="145" font-size="28" fill="black">Studies show surgical masks filter</text>
+    <text x="190" y="175" font-size="28" fill="black">60-80% of particles...</text>
+    <use href="#tagRect" x="40" y="135" />
+    <text x="70" y="155" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;10</text>
+    <!-- Bubble 2 -->
+    <path d="M180,200 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="230" font-size="28" fill="black">What about multi-layer cloth masks?</text>
+    <use href="#tagRect" x="40" y="205" />
+    <text x="70" y="225" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;17</text>
+
+    <!-- Round 2 -->
+    <rect x="20" y="290" width="410" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="320" font-size="36" font-weight="bold" fill="black">Round 2</text>
+    <!-- Bubble 1 -->
+    <path d="M180,330 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="355" font-size="28" fill="black">Even 3-layer cloth masks only achieve</text>
+    <text x="190" y="385" font-size="28" fill="black">50% filtration...</text>
+    <use href="#tagRect" x="40" y="345" />
+    <text x="70" y="365" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;06</text>
+    <!-- Bubble 2 -->
+    <path d="M180,410 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="440" font-size="28" fill="black">Are there any exceptions to this?</text>
+    <use href="#tagRect" x="40" y="415" />
+    <text x="70" y="435" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;08</text>
+
+    <!-- Round 3 -->
+    <rect x="20" y="500" width="410" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="530" font-size="36" font-weight="bold" fill="black">Round 3</text>
+    <!-- Bubble 1 -->
+    <path d="M180,540 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="565" font-size="28" fill="black">WHO recommends surgical over cloth</text>
+    <text x="190" y="595" font-size="28" fill="black">masks...</text>
+    <use href="#tagRect" x="40" y="555" />
+    <text x="70" y="575" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;07</text>
+    <!-- Bubble 2 -->
+    <path d="M180,620 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="650" font-size="28" fill="black">Final decision: True/False</text>
+    <text x="190" y="680" font-size="28" fill="black">Confidence: 0-100% | Justification</text>
+    <use href="#tagRect" x="40" y="635" />
+    <text x="70" y="655" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;18</text>
+  </g>
+
+  <!-- Debate Column -->
+  <g transform="translate(925, 140)">
+    <!-- Header -->
+    <rect width="680" height="70" fill="#7683D2" />
+    <text x="340" y="45" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Debate</text>
+    
+    <!-- Vertical Label -->
+    <rect x="660" y="70" width="40" height="420" fill="white" stroke="black" rx="10" />
+    <text transform="rotate(-90 680 280)" x="680" y="280" font-size="28" fill="black" text-anchor="middle">Two AI debaters argue opposing positions between True vs. False (100%)</text>
+
+    <!-- Round 1 -->
+    <rect x="20" y="80" width="640" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="110" font-size="36" font-weight="bold" fill="black">Round 1</text>
+    <!-- Bubble 1 -->
+    <path d="M180,120 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="145" font-size="28" fill="black">Surgical masks filter 60-80%...</text>
+    <use href="#tagRect" x="40" y="135" />
+    <text x="70" y="155" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;03</text>
+    <!-- Bubble 2 -->
+    <path d="M180,200 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="230" font-size="28" fill="black">Quality cloth masks can be</text>
+    <text x="190" y="260" font-size="28" fill="black">effective...</text>
+    <use href="#tagRect" x="40" y="205" />
+    <text x="70" y="225" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;16</text>
+    <!-- Bubble 3 (Overlapping) -->
+    <path d="M180,300 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="330" font-size="28" fill="black">What defines 'quality' cloth masks?</text>
+    <use href="#tagRect" x="40" y="315" />
+    <text x="70" y="335" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;11</text>
+
+    <!-- Round 2 -->
+    <rect x="20" y="390" width="640" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="420" font-size="36" font-weight="bold" fill="black">Round 2</text>
+    <!-- Bubble 1 -->
+    <path d="M180,430 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="455" font-size="28" fill="black">3-layer cloth still only 50%</text>
+    <text x="190" y="485" font-size="28" fill="black">effective...</text>
+    <use href="#tagRect" x="40" y="445" />
+    <text x="70" y="465" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;13</text>
+    <!-- Bubble 2 -->
+    <path d="M180,510 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="540" font-size="28" fill="black">But availability and fit matter</text>
+    <text x="190" y="570" font-size="28" fill="black">too...</text>
+    <use href="#tagRect" x="40" y="525" />
+    <text x="70" y="545" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;05</text>
+    <!-- Bubble 3 -->
+    <path d="M180,620 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="650" font-size="28" fill="black">How important is proper fit?</text>
+    <use href="#tagRect" x="40" y="635" />
+    <text x="70" y="655" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;15</text>
+
+    <!-- Round 3 -->
+    <rect x="20" y="710" width="640" height="200" rx="20" fill="#D0D0D0" />
+    <text x="40" y="740" font-size="36" font-weight="bold" fill="black">Round 3</text>
+    <!-- Bubble 1 -->
+    <path d="M180,750 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="775" font-size="28" fill="black">Medical studies prove</text>
+    <text x="190" y="805" font-size="28" fill="black">superiority...</text>
+    <use href="#tagRect" x="40" y="765" />
+    <text x="70" y="785" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;09</text>
+    <!-- Bubble 2 -->
+    <path d="M180,830 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="860" font-size="28" fill="black">Real-world usage differs from</text>
+    <text x="190" y="890" font-size="28" fill="black">labs...</text>
+    <use href="#tagRect" x="40" y="845" />
+    <text x="70" y="865" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;04</text>
+    <!-- Bubble 3 -->
+    <path d="M180,940 h480 a10,10 0 0 1 10,10 v60 a10,10 0 0 1 -10,10 h-480 a10,10 0 0 1 -10,-10 v-10 l-40,-10 l40,-10 v-30 a10,10 0 0 1 10,-10 z" fill="white" />
+    <text x="190" y="970" font-size="28" fill="black">Final decision: True/False</text>
+    <text x="190" y="1000" font-size="28" fill="black">Confidence: 0-100% | Justification</text>
+    <use href="#tagRect" x="40" y="955" />
+    <text x="70" y="975" font-size="12" font-weight="bold" fill="white" text-anchor="middle">&lt;AF&gt;14</text>
+  </g>
+
+  <!-- Outer Borders for Protocol Columns -->
+  <rect x="465" y="140" width="450" height="450" rx="15" fill="none" stroke="black" stroke-width="2" />
+  <rect x="925" y="140" width="680" height="450" rx="15" fill="none" stroke="black" stroke-width="2" />
+
+</svg>
