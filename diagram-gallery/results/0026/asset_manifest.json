@@ -1,0 +1,86 @@
+[
+  {
+    "slot_id": "slot_video_clip_1",
+    "filename": "assets/raster_required/video_clip_1.png",
+    "bbox_xywh": [
+      46,
+      116,
+      164,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "video thumbnail with natural scene texture and photographic content"
+  },
+  {
+    "slot_id": "slot_video_clip_2",
+    "filename": "assets/raster_required/video_clip_2.png",
+    "bbox_xywh": [
+      230,
+      116,
+      128,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "video thumbnail with complex lighting and photographic content"
+  },
+  {
+    "slot_id": "slot_video_clip_3",
+    "filename": "assets/raster_required/video_clip_3.png",
+    "bbox_xywh": [
+      406,
+      116,
+      132,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "video thumbnail with photo-like sports frame"
+  },
+  {
+    "slot_id": "slot_video_clip_4",
+    "filename": "assets/raster_required/video_clip_4.png",
+    "bbox_xywh": [
+      548,
+      116,
+      130,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "video thumbnail with dark photo-like frame and object texture"
+  },
+  {
+    "slot_id": "slot_thinking_emoji",
+    "filename": "assets/svg_candidate/thinking_emoji.png",
+    "bbox_xywh": [
+      845,
+      100,
+      52,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat emoji-style icon with simple circular shapes and clear boundary"
+  },
+  {
+    "slot_id": "slot_entity_graph",
+    "filename": "assets/svg_candidate/entity_graph.png",
+    "bbox_xywh": [
+      70,
+      645,
+      590,
+      292
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple graph schematic composed of lines, rounded rectangles, triangles, squares, and text"
+  },
+  {
+    "slot_id": "slot_answer_robot",
+    "filename": "assets/svg_candidate/answer_robot.png",
+    "bbox_xywh": [
+      842,
+      907,
+      62,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat robot icon with simple outline and geometric shapes"
+  }
+]

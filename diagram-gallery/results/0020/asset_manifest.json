@@ -1,0 +1,230 @@
+[
+  {
+    "slot_id": "slot_source_image_t2i",
+    "filename": "assets/raster_required/source_image_t2i.png",
+    "bbox_xywh": [
+      85,
+      73,
+      137,
+      201
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like source image with person and background"
+  },
+  {
+    "slot_id": "slot_generated_target_t2i",
+    "filename": "assets/raster_required/generated_target_t2i.png",
+    "bbox_xywh": [
+      773,
+      323,
+      168,
+      243
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like generated target image with person and ball"
+  },
+  {
+    "slot_id": "slot_crop_preview_t2i",
+    "filename": "assets/raster_required/crop_preview_t2i.png",
+    "bbox_xywh": [
+      686,
+      440,
+      111,
+      57
+    ],
+    "classification": "raster_required",
+    "reason": "tiny raster crop preview containing photographic thumbnails"
+  },
+  {
+    "slot_id": "slot_source_image_inpaint",
+    "filename": "assets/raster_required/source_image_inpaint.png",
+    "bbox_xywh": [
+      17,
+      707,
+      155,
+      227
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like source image with person"
+  },
+  {
+    "slot_id": "slot_image_with_mask_inpaint",
+    "filename": "assets/raster_required/image_with_mask_inpaint.png",
+    "bbox_xywh": [
+      249,
+      757,
+      228,
+      146
+    ],
+    "classification": "raster_required",
+    "reason": "mixed photo/mask/noise raster region"
+  },
+  {
+    "slot_id": "slot_crop_preview_inpaint",
+    "filename": "assets/raster_required/crop_preview_inpaint.png",
+    "bbox_xywh": [
+      724,
+      747,
+      78,
+      56
+    ],
+    "classification": "raster_required",
+    "reason": "tiny raster crop preview containing image thumbnails"
+  },
+  {
+    "slot_id": "slot_target_image_inpaint",
+    "filename": "assets/raster_required/target_image_inpaint.png",
+    "bbox_xywh": [
+      797,
+      711,
+      150,
+      228
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like target image with edited object"
+  },
+  {
+    "slot_id": "slot_context_image_original",
+    "filename": "assets/raster_required/context_image_original.png",
+    "bbox_xywh": [
+      1092,
+      17,
+      119,
+      186
+    ],
+    "classification": "raster_required",
+    "reason": "portrait photo with natural texture"
+  },
+  {
+    "slot_id": "slot_context_image_painted",
+    "filename": "assets/raster_required/context_image_painted.png",
+    "bbox_xywh": [
+      1215,
+      17,
+      121,
+      186
+    ],
+    "classification": "raster_required",
+    "reason": "painted/photo-like portrait reference"
+  },
+  {
+    "slot_id": "slot_encoder_inputs",
+    "filename": "assets/raster_required/encoder_inputs.png",
+    "bbox_xywh": [
+      1258,
+      868,
+      278,
+      147
+    ],
+    "classification": "raster_required",
+    "reason": "contains photo crop, mask, and dense noise texture"
+  },
+  {
+    "slot_id": "slot_inverted_noise_grid",
+    "filename": "assets/svg_candidate/inverted_noise_grid.png",
+    "bbox_xywh": [
+      31,
+      347,
+      82,
+      72
+    ],
+    "classification": "svg_candidate",
+    "reason": "regular flat grid of pale blue squares"
+  },
+  {
+    "slot_id": "slot_random_noise_grid",
+    "filename": "assets/svg_candidate/random_noise_grid.png",
+    "bbox_xywh": [
+      176,
+      347,
+      82,
+      72
+    ],
+    "classification": "svg_candidate",
+    "reason": "regular flat grid of pale orange squares"
+  },
+  {
+    "slot_id": "slot_feature_injection_tokens",
+    "filename": "assets/svg_candidate/feature_injection_tokens.png",
+    "bbox_xywh": [
+      512,
+      225,
+      178,
+      76
+    ],
+    "classification": "svg_candidate",
+    "reason": "small colored square-token diagram with clean geometry"
+  },
+  {
+    "slot_id": "slot_decoder_tokens",
+    "filename": "assets/svg_candidate/decoder_tokens.png",
+    "bbox_xywh": [
+      1191,
+      313,
+      181,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat colored token row"
+  },
+  {
+    "slot_id": "slot_lora_tokens_top",
+    "filename": "assets/svg_candidate/lora_tokens_top.png",
+    "bbox_xywh": [
+      1618,
+      118,
+      181,
+      25
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat colored token row"
+  },
+  {
+    "slot_id": "slot_lora_tokens_bottom",
+    "filename": "assets/svg_candidate/lora_tokens_bottom.png",
+    "bbox_xywh": [
+      1630,
+      629,
+      162,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat colored token row"
+  },
+  {
+    "slot_id": "slot_lora_expert_adapters",
+    "filename": "assets/svg_candidate/lora_expert_adapters.png",
+    "bbox_xywh": [
+      1552,
+      266,
+      337,
+      125
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated LoRA adapter icons and flame symbols with simple outlines"
+  },
+  {
+    "slot_id": "slot_route_topk_fire",
+    "filename": "assets/svg_candidate/route_topk_fire.png",
+    "bbox_xywh": [
+      1672,
+      466,
+      91,
+      45
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple bar/route diagram and fire icon"
+  },
+  {
+    "slot_id": "slot_legend_icons",
+    "filename": "assets/svg_candidate/legend_icons.png",
+    "bbox_xywh": [
+      1568,
+      704,
+      72,
+      255
+    ],
+    "classification": "svg_candidate",
+    "reason": "legend icons made from flat flame, cube, rounded rectangles, and adapter outline"
+  }
+]

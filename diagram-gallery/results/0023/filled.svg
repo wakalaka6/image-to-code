@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#444"/>
+  </marker>
+  <marker id="arrowSmall" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L8,4 L0,8 Z" fill="#000"/>
+  </marker>
+  <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#d7a7a1"/>
+  </marker>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+    .flowArrow { stroke: #676767; stroke-width: 3.3; fill: none; marker-end: url(#arrow); }
+    .thinArrow { stroke: #555; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .dashSep { stroke: #000; stroke-width: 1.8; stroke-dasharray: 10 8; }
+    .placeholder rect.slot { fill: #f8f8f8; stroke: #666; stroke-width: 1.6; stroke-dasharray: 5 4; }
+    .placeholder line.diag { stroke: #aaa; stroke-width: 1; }
+    .placeholder text { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #777; text-anchor: middle; dominant-baseline: middle; }
+  </style>
+</defs>
+
+<rect x="0" y="0" width="1408" height="768" fill="#f4f4f4"/>
+<rect x="2" y="12" width="342" height="327" rx="18" fill="#ededed" stroke="#8f8f8f" stroke-width="2.2"/>
+<rect x="385" y="11" width="229" height="329" rx="18" fill="#dfead8" stroke="#87ad77" stroke-width="2.2"/>
+<rect x="654" y="87" width="149" height="180" rx="16" fill="#dfcce7" stroke="#ae79be" stroke-width="2.2"/>
+<rect x="848" y="88" width="157" height="178" rx="16" fill="#d6e7f3" stroke="#8db5d9" stroke-width="2.2"/>
+<rect x="1060" y="11" width="223" height="331" rx="18" fill="#f8e7cd" stroke="#d49d48" stroke-width="2.2"/>
+<rect x="847" y="289" width="197" height="70" rx="16" fill="#f3e6b1" stroke="#d5bc63" stroke-width="2.2"/>
+<text class="title" x="500" y="43" text-anchor="middle">Feature Extraction</text>
+<text class="title" x="500" y="74" text-anchor="middle">module</text>
+<text class="title" x="728" y="118" text-anchor="middle">Context</text>
+<text class="title" x="728" y="149" text-anchor="middle">Encoder</text>
+<text class="title" x="928" y="117" text-anchor="middle">SceneSelect</text>
+<text class="title" x="928" y="148" text-anchor="middle">Classifier</text>
+<text class="title" x="1172" y="43" text-anchor="middle">Scene-Model Pool</text>
+<text class="label" x="144" y="123" text-anchor="middle">Trajectory</text>
+<text class="label" x="174" y="147" text-anchor="middle">Scaling</text>
+<text class="label" x="176" y="230" text-anchor="middle">Rotation</text>
+<text class="label" x="280" y="230" text-anchor="middle">Translation</text>
+<text class="title" x="170" y="321" text-anchor="middle">Augmented Trajectories</text>
+<path d="M344 184 L382 184" class="flowArrow"/>
+<path d="M614 184 L652 184" class="flowArrow"/>
+<path d="M803 184 L845 184" class="flowArrow"/>
+<path d="M1006 184 L1057 184" class="flowArrow"/>
+<path d="M1284 184 L1320 184" class="flowArrow"/>
+<path d="M1322 184 C1347 184,1365 184,1385 184" class="flowArrow"/>
+<path d="M1315 184 Q1345 169 1382 150" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<text class="label" x="1367" y="234" text-anchor="middle">Predicted</text>
+<text class="label" x="1367" y="257" text-anchor="middle">Trajectory</text>
+<rect x="416" y="87" width="169" height="229" rx="16" fill="#e5ecd9" stroke="#87ad77" stroke-width="2"/>
+<text class="label" x="501" y="120" text-anchor="middle">Trajectory Feature</text>
+<text class="label" x="501" y="144" text-anchor="middle">Extraction</text>
+<rect x="417" y="159" width="168" height="39" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="185" text-anchor="middle">Motion Velocity</text>
+<rect x="417" y="206" width="168" height="39" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="232" text-anchor="middle">Spatial Density</text>
+<rect x="417" y="252" width="168" height="54" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="275" text-anchor="middle">Interaction</text><text class="label" x="501" y="299" text-anchor="middle">Patterns</text>
+<text class="label" x="1180" y="144" text-anchor="middle">Expert 1</text>
+<text class="label" x="1180" y="237" text-anchor="middle">Expert 2</text>
+<text class="label" x="1180" y="326" text-anchor="middle">Expert 3</text>
+<text class="label" x="946" y="319" text-anchor="middle">Scheduling</text>
+<text class="label" x="946" y="344" text-anchor="middle">Policy</text>
+<line x1="989" y1="301" x2="989" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1001" y1="301" x2="1001" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1013" y1="301" x2="1013" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1025" y1="301" x2="1025" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="301" x2="1025" y2="301" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="312" x2="1025" y2="312" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="323" x2="1025" y2="323" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="334" x2="1025" y2="334" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="345" x2="1025" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="8" y1="384" x2="1400" y2="384" class="dashSep"/>
+<text class="title" x="16" y="425">(a)</text>
+<text class="title" x="777" y="425">(b)</text>
+<rect x="14" y="440" width="742" height="318" rx="18" fill="#eadfed" stroke="#ae79be" stroke-width="2.2"/>
+<rect x="775" y="440" width="624" height="318" rx="18" fill="#d6e7f3" stroke="#8db5d9" stroke-width="2.2"/>
+<text class="title" x="385" y="480" text-anchor="middle">Scene Context Encoder</text>
+<text class="title" x="1087" y="480" text-anchor="middle">SceneSelect Classifier</text>
+<text class="label" x="79" y="529" text-anchor="middle">Raw</text><text class="label" x="79" y="557" text-anchor="middle">Features</text>
+<text class="label" x="221" y="532" text-anchor="middle">Random</text><text class="label" x="221" y="560" text-anchor="middle">Projection</text>
+<text class="label" x="389" y="543" text-anchor="middle">Sparsification</text>
+<text class="label" x="546" y="542" text-anchor="middle">Clustering</text>
+<text class="label" x="688" y="526" text-anchor="middle">Pseudo-</text><text class="label" x="688" y="554" text-anchor="middle">labels</text>
+<text class="label" x="819" y="540" text-anchor="middle">Input</text>
+<text class="label" x="955" y="523" text-anchor="middle">Additive Tree-based</text><text class="label" x="955" y="551" text-anchor="middle">Classifier</text>
+<text class="label" x="1155" y="523" text-anchor="middle">Scene</text><text class="label" x="1155" y="550" text-anchor="middle">Category</text><text class="label" x="1155" y="576" text-anchor="middle">Output</text>
+<text class="label" x="1308" y="523" text-anchor="middle">Scheduling</text><text class="label" x="1308" y="550" text-anchor="middle">Policy Table</text>
+<rect x="36" y="590" width="89" height="16" fill="#84c4c1" stroke="#333" stroke-width="1.5"/>
+<rect x="36" y="617" width="89" height="16" fill="#d9958f" stroke="#333" stroke-width="1.5"/>
+<rect x="36" y="644" width="89" height="16" fill="#dcc163" stroke="#333" stroke-width="1.5"/>
+<text class="small" x="96" y="695" text-anchor="middle">Extracted &amp;</text><text class="small" x="96" y="718" text-anchor="middle">kinematic</text><text class="small" x="96" y="741" text-anchor="middle">feature vectors</text>
+<path d="M126 622 L156 622" class="thinArrow"/>
+<rect x="156" y="500" width="138" height="184" rx="16" fill="#eadff2" stroke="#ae79be" stroke-width="2"/>
+<rect x="169" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/>
+<rect x="241" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/>
+<text class="label" x="227" y="631" text-anchor="middle">×</text>
+<text class="small" x="225" y="716" text-anchor="middle">Random</text><text class="small" x="225" y="740" text-anchor="middle">matrix</text>
+<path d="M295 622 L322 622" class="thinArrow"/>
+<rect x="341" y="578" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="353" y="578" width="12" height="12" fill="#e7dcd1" stroke="#333" stroke-width="1"/><rect x="365" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="590" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="365" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="602" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="401" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="626" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="401" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="638" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/>
+<text class="small" x="396" y="698" text-anchor="middle">Sparse high-</text><text class="small" x="396" y="722" text-anchor="middle">dimensional</text><text class="small" x="396" y="746" text-anchor="middle">representation</text>
+<path d="M434 622 L480 622" class="thinArrow"/>
+<rect x="482" y="500" width="130" height="184" rx="16" fill="#eadff2" stroke="#ae79be" stroke-width="2"/>
+<path d="M494 672 L594 672" class="thinArrow"/>
+<path d="M494 672 L494 570" class="thinArrow"/>
+<text class="small" x="550" y="710" text-anchor="middle">Unsupervised</text><text class="small" x="550" y="734" text-anchor="middle">Clustering</text>
+<path d="M612 622 L641 622" class="thinArrow"/>
+<rect x="650" y="580" width="78" height="28" rx="10" fill="#d9958f" opacity="0.95"/><text class="label" x="689" y="599" text-anchor="middle">Scene A</text>
+<rect x="650" y="612" width="78" height="28" rx="10" fill="#84c4c1" opacity="0.95"/><text class="label" x="689" y="631" text-anchor="middle">Scene B</text>
+<rect x="650" y="644" width="78" height="28" rx="10" fill="#dcc163" opacity="0.95"/><text class="label" x="689" y="663" text-anchor="middle">Scene C</text>
+<text class="small" x="688" y="706" text-anchor="middle">Pseudo-labels</text><text class="small" x="688" y="728" text-anchor="middle">(Scene Categories)</text>
+<path d="M729 622 L779 622" class="flowArrow"/>
+<text class="label" x="831" y="611" text-anchor="middle">Pseudo-</text><text class="label" x="831" y="636" text-anchor="middle">labels</text><text class="label" x="804" y="660" text-anchor="middle">+</text><text class="label" x="848" y="660" text-anchor="middle">Features</text>
+<path d="M856 622 L888 622" class="thinArrow"/>
+<path d="M1061 622 L1109 622" class="thinArrow"/>
+<rect x="1116" y="594" width="78" height="28" rx="10" fill="#d9958f" opacity="0.95"/><text class="label" x="1155" y="613" text-anchor="middle">Scene A</text>
+<rect x="1116" y="626" width="78" height="28" rx="10" fill="#84c4c1" opacity="0.95"/><text class="label" x="1155" y="645" text-anchor="middle">Scene B</text>
+<rect x="1116" y="658" width="78" height="28" rx="10" fill="#dcc163" opacity="0.95"/><text class="label" x="1155" y="677" text-anchor="middle">Scene C</text>
+<path d="M1196 622 L1230 622" class="thinArrow"/>
+<rect x="1232" y="576" width="151" height="123" rx="14" fill="#f7efc7" stroke="#d5bc63" stroke-width="2"/>
+<rect x="1245" y="597" width="124" height="84" fill="#fff7db" stroke="#555" stroke-width="1.4"/>
+<line x1="1313" y1="597" x2="1313" y2="681" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="625" x2="1369" y2="625" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="653" x2="1369" y2="653" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="681" x2="1369" y2="681" stroke="#555" stroke-width="1.2"/>
+<text class="small" x="1276" y="616" text-anchor="middle">Scene A</text><text class="small" x="1333" y="616" text-anchor="middle">Expert 1</text>
+<text class="small" x="1276" y="644" text-anchor="middle">Scene B</text><text class="small" x="1333" y="644" text-anchor="middle">Expert 2</text>
+<text class="small" x="1276" y="672" text-anchor="middle">…</text><text class="small" x="1333" y="672" text-anchor="middle">Expert 3</text>
+<g id="svg_augtraj_scaling_graph" data-source-slot="slot_augtraj_scaling_graph" transform="translate(24,28) scale(1.0000,1.0000)">
+    <path d="M20 120 Q60 75 105 62 Q135 53 165 38" fill="none" stroke="#84c4c1" stroke-width="3"/>
+    <circle cx="22" cy="120" r="5" fill="#84c4c1"/><circle cx="68" cy="83" r="5" fill="#84c4c1"/><circle cx="145" cy="53" r="5" fill="#84c4c1"/>
+    <path d="M38 102 Q78 76 112 70 Q145 65 182 42" fill="none" stroke="#d9958f" stroke-width="3"/>
+    <circle cx="58" cy="88" r="5" fill="#d9958f"/><circle cx="118" cy="68" r="5" fill="#d9958f"/><circle cx="152" cy="68" r="5" fill="#d9958f"/>
+    <line x1="10" y1="100" x2="100" y2="12" stroke="#000" stroke-width="2.6" marker-end="url(#arrow)"/>
+    <line x1="18" y1="95" x2="188" y2="10" stroke="#000" stroke-width="2.6" marker-end="url(#arrow)"/>
+    <line x1="170" y1="58" x2="200" y2="30" stroke="#d7a7a1" stroke-width="2.6" marker-end="url(#arrowPink)"/>
+    </g>
+<g id="svg_augtraj_rotation_translation" data-source-slot="slot_augtraj_rotation_translation" transform="translate(34,146) scale(1.0000,1.0000)">
+      <path d="M15 100 Q36 82 61 78" fill="none" stroke="#84c4c1" stroke-width="3"/>
+      <circle cx="22" cy="100" r="5" fill="#84c4c1"/><circle cx="57" cy="79" r="5" fill="#84c4c1"/>
+      <line x1="18" y1="85" x2="75" y2="83" stroke="#000" stroke-width="2.4" marker-end="url(#arrow)"/>
+      <path d="M75 84 Q106 92 138 89 Q164 88 178 82" fill="none" stroke="#c58c8d" stroke-width="3"/>
+      <circle cx="92" cy="88" r="5" fill="#d9958f"/><circle cx="136" cy="92" r="5" fill="#d9958f"/><circle cx="199" cy="89" r="5" fill="#b490c6"/>
+      <path d="M80 24 Q105 15 126 24" fill="none" stroke="#84c4c1" stroke-width="3"/>
+      <circle cx="64" cy="24" r="5" fill="#84c4c1"/><circle cx="119" cy="19" r="5" fill="#d9958f"/><circle cx="143" cy="23" r="5" fill="#d9958f"/>
+      <path d="M170 16 Q194 14 216 8 Q235 4 256 -24" fill="none" stroke="#b490c6" stroke-width="3"/>
+      <circle cx="188" cy="16" r="5" fill="#b490c6"/><circle cx="224" cy="8" r="5" fill="#b490c6"/><circle cx="258" cy="-20" r="5" fill="#b490c6"/>
+      <path d="M122 54 A26 26 0 1 1 153 24" fill="none" stroke="#000" stroke-width="2.4" marker-end="url(#arrow)"/>
+    </g>
+<g id="svg_context_encoder_heatmap" data-source-slot="slot_context_encoder_heatmap"><rect x="686.00" y="163.00" width="11.91" height="11.91" fill="#e7ebef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="163.00" width="11.91" height="11.91" fill="#d8cae8" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="163.00" width="11.91" height="11.91" fill="#ecefea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="163.00" width="11.91" height="11.91" fill="#e4eef4" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="163.00" width="11.91" height="11.91" fill="#f5f5f0" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="163.00" width="11.91" height="11.91" fill="#dfe4ef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="163.00" width="11.91" height="11.91" fill="#e8e8ea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="174.71" width="11.91" height="11.91" fill="#e7efe3" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="174.71" width="11.91" height="11.91" fill="#d6d1ec" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="174.71" width="11.91" height="11.91" fill="#c7d7ef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="174.71" width="11.91" height="11.91" fill="#ebf0e3" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="174.71" width="11.91" height="11.91" fill="#efeae0" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="174.71" width="11.91" height="11.91" fill="#e2e5f0" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="174.71" width="11.91" height="11.91" fill="#e4e4e0" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="186.43" width="11.91" height="11.91" fill="#d9e6cf" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="186.43" width="11.91" height="11.91" fill="#e2d7ee" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="186.43" width="11.91" height="11.91" fill="#ececec" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="186.43" width="11.91" height="11.91" fill="#d8e9e6" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="186.43" width="11.91" height="11.91" fill="#c2d7ea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="186.43" width="11.91" height="11.91" fill="#e6e6dc" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="186.43" width="11.91" height="11.91" fill="#e9deeb" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="198.14" width="11.91" height="11.91" fill="#ebe9ef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="198.14" width="11.91" height="11.91" fill="#eef1e8" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="198.14" width="11.91" height="11.91" fill="#c9d9e9" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="198.14" width="11.91" height="11.91" fill="#e7efe8" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="198.14" width="11.91" height="11.91" fill="#e5d9ee" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="198.14" width="11.91" height="11.91" fill="#d9e1ea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="198.14" width="11.91" height="11.91" fill="#dde9d7" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="209.86" width="11.91" height="11.91" fill="#dee4ef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="209.86" width="11.91" height="11.91" fill="#dcead8" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="209.86" width="11.91" height="11.91" fill="#efece3" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="209.86" width="11.91" height="11.91" fill="#ddd0eb" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="209.86" width="11.91" height="11.91" fill="#e4e4e4" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="209.86" width="11.91" height="11.91" fill="#d0ddec" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="209.86" width="11.91" height="11.91" fill="#d5e6d6" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="221.57" width="11.91" height="11.91" fill="#e6e7df" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="221.57" width="11.91" height="11.91" fill="#c5d8ea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="221.57" width="11.91" height="11.91" fill="#ede9e2" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="221.57" width="11.91" height="11.91" fill="#e0ebdd" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="221.57" width="11.91" height="11.91" fill="#e8dced" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="221.57" width="11.91" height="11.91" fill="#ccddee" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="221.57" width="11.91" height="11.91" fill="#e8ebe3" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686.00" y="233.29" width="11.91" height="11.91" fill="#d2daf0" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="697.71" y="233.29" width="11.91" height="11.91" fill="#ece8ef" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="709.43" y="233.29" width="11.91" height="11.91" fill="#dfe8d7" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="721.14" y="233.29" width="11.91" height="11.91" fill="#e9e9ea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="732.86" y="233.29" width="11.91" height="11.91" fill="#d8dcea" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="744.57" y="233.29" width="11.91" height="11.91" fill="#d4e3d1" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="756.29" y="233.29" width="11.91" height="11.91" fill="#c8d4e8" stroke="#d0c9d7" stroke-width="0.6"/>
+<rect x="686" y="163" width="82" height="82" fill="none" stroke="#8f8f8f" stroke-width="1.2"/></g>
+<g id="svg_scene_select_tree_icon" data-source-slot="slot_scene_select_tree_icon" transform="translate(897,170) scale(1.0000,1.0000)"><line x1="37" y1="10" x2="22" y2="35" stroke="#333" stroke-width="1.8"/>
+<line x1="37" y1="10" x2="52" y2="35" stroke="#333" stroke-width="1.8"/>
+<circle cx="22" cy="35" r="7" fill="#bcd1ee" stroke="#333" stroke-width="1.8"/>
+<circle cx="52" cy="35" r="7" fill="#bcd1ee" stroke="#333" stroke-width="1.8"/>
+<circle cx="37" cy="10" r="7" fill="#bcd1ee" stroke="#333" stroke-width="1.8"/>
+<line x1="22" y1="35" x2="9" y2="63" stroke="#333" stroke-width="1.8"/>
+<circle cx="9" cy="63" r="6.5" fill="#e6988f" stroke="#333" stroke-width="1.8"/>
+<line x1="22" y1="35" x2="27" y2="63" stroke="#333" stroke-width="1.8"/>
+<circle cx="27" cy="63" r="6.5" fill="#e6988f" stroke="#333" stroke-width="1.8"/>
+<line x1="52" y1="35" x2="45" y2="63" stroke="#333" stroke-width="1.8"/>
+<circle cx="45" cy="63" r="6.5" fill="#e3c35f" stroke="#333" stroke-width="1.8"/>
+<line x1="52" y1="35" x2="63" y2="63" stroke="#333" stroke-width="1.8"/>
+<circle cx="63" cy="63" r="6.5" fill="#e3c35f" stroke="#333" stroke-width="1.8"/></g>
+<g id="svg_scene_model_pool_icons" data-source-slot="slot_scene_model_pool_icons" transform="translate(1128,62) scale(1.0000,1.0000)"><path d="M53 18 A20 20 0 1 1 47 55" fill="none" stroke="#000" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M45 58 A20 20 0 1 1 53 21" fill="none" stroke="#000" stroke-width="2.2" marker-end="url(#arrow)"/>
+<line x1="26" y1="104" x2="52" y2="104" stroke="#000" stroke-width="2"/>
+<rect x="52" y="99" width="11" height="10" fill="none" stroke="#000" stroke-width="1.6"/>
+<line x1="63" y1="104" x2="88" y2="104" stroke="#000" stroke-width="1.8" marker-end="url(#arrowSmall)"/>
+<line x1="26" y1="114" x2="52" y2="114" stroke="#000" stroke-width="2"/>
+<rect x="52" y="109" width="11" height="10" fill="none" stroke="#000" stroke-width="1.6"/>
+<line x1="63" y1="114" x2="88" y2="114" stroke="#000" stroke-width="1.8" marker-end="url(#arrowSmall)"/>
+<line x1="26" y1="124" x2="52" y2="124" stroke="#000" stroke-width="2"/>
+<rect x="52" y="119" width="11" height="10" fill="none" stroke="#000" stroke-width="1.6"/>
+<line x1="63" y1="124" x2="88" y2="124" stroke="#000" stroke-width="1.8" marker-end="url(#arrowSmall)"/>
+<line x1="26" y1="134" x2="52" y2="134" stroke="#000" stroke-width="2"/>
+<rect x="52" y="129" width="11" height="10" fill="none" stroke="#000" stroke-width="1.6"/>
+<line x1="63" y1="134" x2="88" y2="134" stroke="#000" stroke-width="1.8" marker-end="url(#arrowSmall)"/>
+<path d="M18 119 C26 119,26 89,52 104" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M18 119 C26 119,26 99,52 114" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M18 119 C26 119,26 109,52 124" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M18 119 C26 119,26 119,52 134" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M25 205 l10 8 l0 20 l-10 8 z" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M44 205 l10 8 l0 20 l-10 8 z" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M63 205 l10 8 l0 20 l-10 8 z" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="73" y1="221" x2="90" y2="221" stroke="#000" stroke-width="2" marker-end="url(#arrowSmall)"/></g>
+<g id="svg_clustering_blobs" data-source-slot="slot_clustering_blobs" transform="translate(507,576) scale(1.0000,1.0000)"><ellipse cx="23" cy="30" rx="22" ry="16" fill="#f4d3d0" stroke="#e79c8e" stroke-width="2"/>
+<circle cx="17" cy="27" r="1.8" fill="#e79c8e"/>
+<circle cx="22" cy="25" r="1.8" fill="#e79c8e"/>
+<circle cx="27" cy="29" r="1.8" fill="#e79c8e"/>
+<circle cx="20" cy="33" r="1.8" fill="#e79c8e"/>
+<circle cx="29" cy="34" r="1.8" fill="#e79c8e"/>
+<circle cx="24" cy="36" r="1.8" fill="#e79c8e"/>
+<ellipse cx="67" cy="28" rx="22" ry="16" fill="#d7efe9" stroke="#8fc8c0" stroke-width="2"/>
+<circle cx="61" cy="25" r="1.8" fill="#8fc8c0"/>
+<circle cx="66" cy="23" r="1.8" fill="#8fc8c0"/>
+<circle cx="71" cy="27" r="1.8" fill="#8fc8c0"/>
+<circle cx="64" cy="31" r="1.8" fill="#8fc8c0"/>
+<circle cx="73" cy="32" r="1.8" fill="#8fc8c0"/>
+<circle cx="68" cy="34" r="1.8" fill="#8fc8c0"/>
+<ellipse cx="24" cy="70" rx="22" ry="16" fill="#eadcf2" stroke="#b791c8" stroke-width="2"/>
+<circle cx="18" cy="67" r="1.8" fill="#b791c8"/>
+<circle cx="23" cy="65" r="1.8" fill="#b791c8"/>
+<circle cx="28" cy="69" r="1.8" fill="#b791c8"/>
+<circle cx="21" cy="73" r="1.8" fill="#b791c8"/>
+<circle cx="30" cy="74" r="1.8" fill="#b791c8"/>
+<circle cx="25" cy="76" r="1.8" fill="#b791c8"/>
+<ellipse cx="65" cy="62" rx="22" ry="16" fill="#eddc93" stroke="#cfb04a" stroke-width="2"/>
+<circle cx="59" cy="59" r="1.8" fill="#cfb04a"/>
+<circle cx="64" cy="57" r="1.8" fill="#cfb04a"/>
+<circle cx="69" cy="61" r="1.8" fill="#cfb04a"/>
+<circle cx="62" cy="65" r="1.8" fill="#cfb04a"/>
+<circle cx="71" cy="66" r="1.8" fill="#cfb04a"/>
+<circle cx="66" cy="68" r="1.8" fill="#cfb04a"/></g>
+<g id="svg_big_tree_classifier" data-source-slot="slot_big_tree_classifier" transform="translate(883,565) scale(0.9778,1.0200)"><line x1="90" y1="18" x2="45" y2="64" stroke="#333" stroke-width="2.2"/>
+<line x1="90" y1="18" x2="135" y2="64" stroke="#333" stroke-width="2.2"/>
+<circle cx="45" cy="64" r="15" fill="#bcd1ee" stroke="#333" stroke-width="2.2"/>
+<circle cx="135" cy="64" r="15" fill="#bcd1ee" stroke="#333" stroke-width="2.2"/>
+<circle cx="90" cy="18" r="15" fill="#bcd1ee" stroke="#333" stroke-width="2.2"/>
+<line x1="45" y1="64" x2="22" y2="120" stroke="#333" stroke-width="2.2"/>
+<circle cx="22" cy="120" r="14" fill="#e6988f" stroke="#333" stroke-width="2.2"/>
+<line x1="45" y1="64" x2="67" y2="120" stroke="#333" stroke-width="2.2"/>
+<circle cx="67" cy="120" r="14" fill="#94c2b7" stroke="#333" stroke-width="2.2"/>
+<line x1="135" y1="64" x2="113" y2="120" stroke="#333" stroke-width="2.2"/>
+<circle cx="113" cy="120" r="14" fill="#e3c35f" stroke="#333" stroke-width="2.2"/>
+<line x1="135" y1="64" x2="158" y2="120" stroke="#333" stroke-width="2.2"/>
+<circle cx="158" cy="120" r="14" fill="#e3c35f" stroke="#333" stroke-width="2.2"/></g>
+</svg>

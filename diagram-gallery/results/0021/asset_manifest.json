@@ -1,0 +1,134 @@
+[
+  {
+    "slot_id": "slot_captured_event_frames",
+    "filename": "assets/raster_required/captured_event_frames.png",
+    "bbox_xywh": [
+      30,
+      38,
+      350,
+      190
+    ],
+    "classification": "raster_required",
+    "reason": "noisy photographic event-frame stack with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_feature_bars_top",
+    "filename": "assets/svg_candidate/feature_bars_top.png",
+    "bbox_xywh": [
+      450,
+      74,
+      180,
+      170
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vertical translucent feature bars with flat color"
+  },
+  {
+    "slot_id": "slot_left_features_stack",
+    "filename": "assets/svg_candidate/left_features_stack.png",
+    "bbox_xywh": [
+      838,
+      45,
+      276,
+      210
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple layered cuboid feature blocks and editable labels"
+  },
+  {
+    "slot_id": "slot_energy_map",
+    "filename": "assets/raster_required/energy_map.png",
+    "bbox_xywh": [
+      30,
+      345,
+      350,
+      220
+    ],
+    "classification": "raster_required",
+    "reason": "grayscale event/energy image stack with dense image texture"
+  },
+  {
+    "slot_id": "slot_feature_bars_middle",
+    "filename": "assets/svg_candidate/feature_bars_middle.png",
+    "bbox_xywh": [
+      450,
+      360,
+      180,
+      175
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vertical translucent feature bars with flat color"
+  },
+  {
+    "slot_id": "slot_confidence_maps",
+    "filename": "assets/raster_required/confidence_maps.png",
+    "bbox_xywh": [
+      1012,
+      336,
+      314,
+      210
+    ],
+    "classification": "raster_required",
+    "reason": "dense pseudo-color confidence-map stack with complex texture"
+  },
+  {
+    "slot_id": "slot_reference_frames",
+    "filename": "assets/raster_required/reference_frames.png",
+    "bbox_xywh": [
+      30,
+      638,
+      350,
+      230
+    ],
+    "classification": "raster_required",
+    "reason": "dense binary/noisy reference-frame stack"
+  },
+  {
+    "slot_id": "slot_feature_bars_bottom",
+    "filename": "assets/svg_candidate/feature_bars_bottom.png",
+    "bbox_xywh": [
+      450,
+      646,
+      180,
+      175
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vertical translucent feature bars with flat color"
+  },
+  {
+    "slot_id": "slot_right_features_stack",
+    "filename": "assets/svg_candidate/right_features_stack.png",
+    "bbox_xywh": [
+      835,
+      625,
+      278,
+      200
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple layered cuboid feature blocks and editable labels"
+  },
+  {
+    "slot_id": "slot_cost_volume",
+    "filename": "assets/svg_candidate/cost_volume.png",
+    "bbox_xywh": [
+      1660,
+      64,
+      255,
+      170
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple 3D cuboid block with flat faces and text"
+  },
+  {
+    "slot_id": "slot_disparity",
+    "filename": "assets/raster_required/disparity.png",
+    "bbox_xywh": [
+      1645,
+      660,
+      293,
+      170
+    ],
+    "classification": "raster_required",
+    "reason": "dense pseudo-color disparity image with gradients and texture"
+  }
+]

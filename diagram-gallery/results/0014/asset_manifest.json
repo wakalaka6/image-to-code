@@ -1,0 +1,110 @@
+[
+  {
+    "slot_id": "slot_input_cat_photo",
+    "bbox_xywh": [
+      18,
+      363,
+      158,
+      130
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/input_cat_photo.png",
+    "reason": "photo-like cat image with texture, fur detail, and natural shading"
+  },
+  {
+    "slot_id": "slot_teacher_feature_stack",
+    "bbox_xywh": [
+      260,
+      270,
+      200,
+      112
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/teacher_feature_stack.png",
+    "reason": "flat 3D-style blue feature bars with clear polygonal boundaries"
+  },
+  {
+    "slot_id": "slot_student_feature_stack",
+    "bbox_xywh": [
+      260,
+      499,
+      172,
+      110
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/student_feature_stack.png",
+    "reason": "flat 3D-style orange feature bars with clear polygonal boundaries"
+  },
+  {
+    "slot_id": "slot_hard_label_vector",
+    "bbox_xywh": [
+      523,
+      31,
+      30,
+      172
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/hard_label_vector.png",
+    "reason": "simple colored and gray rectangular label stack"
+  },
+  {
+    "slot_id": "slot_teacher_target_nontarget_vector",
+    "bbox_xywh": [
+      523,
+      215,
+      31,
+      205
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/teacher_target_nontarget_vector.png",
+    "reason": "simple yellow and green rectangular target/non-target stack"
+  },
+  {
+    "slot_id": "slot_student_target_nontarget_vector",
+    "bbox_xywh": [
+      523,
+      469,
+      31,
+      174
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/student_target_nontarget_vector.png",
+    "reason": "simple yellow and green rectangular target/non-target stack"
+  },
+  {
+    "slot_id": "slot_task_label_pair",
+    "bbox_xywh": [
+      644,
+      69,
+      78,
+      32
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/task_label_pair.png",
+    "reason": "two simple colored rectangular tokens"
+  },
+  {
+    "slot_id": "slot_tckd_target_pair",
+    "bbox_xywh": [
+      643,
+      291,
+      81,
+      31
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/tckd_target_pair.png",
+    "reason": "two simple yellow rectangular target tokens"
+  },
+  {
+    "slot_id": "slot_nckd_mask_pair",
+    "bbox_xywh": [
+      643,
+      489,
+      81,
+      139
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/nckd_mask_pair.png",
+    "reason": "two simple green/gray masked token columns"
+  }
+]

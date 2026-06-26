@@ -1,0 +1,14 @@
+template.svg
+assets/svg_candidate/teacher_feature_stack.png
+assets/svg_candidate/student_feature_stack.png
+assets/svg_candidate/hard_label_vector.png
+assets/svg_candidate/teacher_target_nontarget_vector.png
+assets/svg_candidate/student_target_nontarget_vector.png
+assets/svg_candidate/task_label_pair.png
+assets/svg_candidate/tckd_target_pair.png
+assets/svg_candidate/nckd_mask_pair.png
+assets/raster_required/input_cat_photo.png
+asset_manifest.json
+svg_candidate_snippets.svg
+filled.svg
+classification_summary.txt

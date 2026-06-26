@@ -1,0 +1,10 @@
+svg_candidate: 7
+raster_required: 0
+
+- slot_s_star_sequence: svg_candidate (assets/svg_candidate/s_star_sequence.png) — token sequence composed of flat cells, simple text, and clean strokes
+- slot_cdpruner_selector_icon: svg_candidate (assets/svg_candidate/cdpruner_selector_icon.png) — small circular selector icon with simple concentric geometry
+- slot_query_relevance_bar: svg_candidate (assets/svg_candidate/query_relevance_bar.png) — single-row grayscale bar with rectangular cells
+- slot_selection_marker_top: svg_candidate (assets/svg_candidate/selection_marker_top.png) — small flat blue X marker with clear outline
+- slot_feature_similarity_matrix: svg_candidate (assets/svg_candidate/feature_similarity_matrix.png) — heatmap-like grid made of rectangular cells with flat colors
+- slot_selection_marker_right: svg_candidate (assets/svg_candidate/selection_marker_right.png) — small flat blue X marker with clear outline
+- slot_query_relevance_column: svg_candidate (assets/svg_candidate/query_relevance_column.png) — vertical grayscale relevance bar with rectangular cells

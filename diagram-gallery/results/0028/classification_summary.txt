@@ -1,0 +1,17 @@
+svg_candidate: 12
+raster_required: 2
+
+slot_input_aerial_stack: raster_required -> assets/raster_required/input_aerial_stack.png (stacked aerial video frames with photographic texture and small detection boxes)
+slot_visual_encoder_wedge: svg_candidate -> assets/svg_candidate/visual_encoder_wedge.png (simple colored encoder wedge with two text labels and crisp boundaries)
+slot_scale_feature_stack: svg_candidate -> assets/svg_candidate/scale_feature_stack.png (simple stacked parallelogram feature maps)
+slot_language_encoder_wedge: svg_candidate -> assets/svg_candidate/language_encoder_wedge.png (simple colored encoder wedge with crisp boundaries)
+slot_lincat_tokens: svg_candidate -> assets/svg_candidate/lincat_tokens.png (simple vertical LinCat block and small square tokens)
+slot_cross_scale_branch: svg_candidate -> assets/svg_candidate/cross_scale_branch.png (vector-style branch diagram made of boxes, token squares, arrows and text)
+slot_intra_scale_branch: svg_candidate -> assets/svg_candidate/intra_scale_branch.png (vector-style multimodality interaction branch with simple tokens and arrows)
+slot_multi_level_language_modulation: svg_candidate -> assets/svg_candidate/multi_level_language_modulation.png (simple rounded label block)
+slot_query_position_generator: svg_candidate -> assets/svg_candidate/query_position_generator.png (simple rounded label block)
+slot_spatial_decoder: svg_candidate -> assets/svg_candidate/spatial_decoder.png (vector-style decoder block with tokens, arrows and rounded modules)
+slot_predicted_tube: raster_required -> assets/raster_required/predicted_tube.png (predicted tube contains aerial video frames with photographic detail)
+slot_bottom_interaction_branch: svg_candidate -> assets/svg_candidate/bottom_interaction_branch.png (large schematic interaction branch composed of simple tokens, boxes and arrows)
+slot_bottom_fusion_branch: svg_candidate -> assets/svg_candidate/bottom_fusion_branch.png (schematic fusion branch with simple blocks, arrows and labels)
+slot_bottom_fusion_modules: svg_candidate -> assets/svg_candidate/bottom_fusion_modules.png (simple convolution and fusion submodules made of rectangles and arrows)

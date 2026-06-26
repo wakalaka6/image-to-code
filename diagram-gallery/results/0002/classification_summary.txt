@@ -1,0 +1,16 @@
+Hybrid SVG classification summary
+
+Input image: 0002.jpg
+svg_candidate count: 0
+raster_required count: 0
+
+Detected assets:
+- None. The figure contains only editable layout/text/geometric primitives, with no icon/photo/screenshot/texture-like non-layout regions requiring asset placeholders or crops.
+
+Files:
+1. template.svg
+2. assets/svg_candidate/  (empty)
+3. assets/raster_required/ (empty)
+4. asset_manifest.json
+5. svg_candidate_snippets.svg
+6. filled.svg

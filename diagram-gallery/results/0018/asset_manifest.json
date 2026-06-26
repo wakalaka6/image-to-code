@@ -1,0 +1,158 @@
+[
+  {
+    "slot_id": "slot_a_molecular_graph_left",
+    "filename": "assets/svg_candidate/a_molecular_graph_left.png",
+    "bbox_xywh": [
+      150,
+      150,
+      175,
+      145
+    ],
+    "classification": "svg_candidate",
+    "reason": "molecular graph icon made of simple nodes and edges"
+  },
+  {
+    "slot_id": "slot_a_hidden_state_H",
+    "filename": "assets/svg_candidate/a_hidden_state_H.png",
+    "bbox_xywh": [
+      555,
+      150,
+      62,
+      166
+    ],
+    "classification": "svg_candidate",
+    "reason": "stacked hidden-state vector drawn with simple rectangular cells"
+  },
+  {
+    "slot_id": "slot_a_weighted_graph",
+    "filename": "assets/svg_candidate/a_weighted_graph.png",
+    "bbox_xywh": [
+      850,
+      150,
+      170,
+      145
+    ],
+    "classification": "svg_candidate",
+    "reason": "weighted molecular graph icon with flat nodes, edges, and small numeric labels"
+  },
+  {
+    "slot_id": "slot_a_gib_stack_top",
+    "filename": "assets/svg_candidate/a_gib_stack_top.png",
+    "bbox_xywh": [
+      1149,
+      36,
+      60,
+      166
+    ],
+    "classification": "svg_candidate",
+    "reason": "G_IB sampled feature stack with repeated simple cells"
+  },
+  {
+    "slot_id": "slot_a_pool_top",
+    "filename": "assets/svg_candidate/a_pool_top.png",
+    "bbox_xywh": [
+      1309,
+      66,
+      65,
+      46
+    ],
+    "classification": "svg_candidate",
+    "reason": "pooled vector block, a simple filled rectangle"
+  },
+  {
+    "slot_id": "slot_a_gib_stack_bottom",
+    "filename": "assets/svg_candidate/a_gib_stack_bottom.png",
+    "bbox_xywh": [
+      1149,
+      263,
+      60,
+      166
+    ],
+    "classification": "svg_candidate",
+    "reason": "G_IB sampled feature stack with repeated simple cells"
+  },
+  {
+    "slot_id": "slot_a_pool_bottom",
+    "filename": "assets/svg_candidate/a_pool_bottom.png",
+    "bbox_xywh": [
+      1309,
+      325,
+      65,
+      46
+    ],
+    "classification": "svg_candidate",
+    "reason": "pooled vector block, a simple filled rectangle"
+  },
+  {
+    "slot_id": "slot_b_molecular_graph_left",
+    "filename": "assets/svg_candidate/b_molecular_graph_left.png",
+    "bbox_xywh": [
+      150,
+      547,
+      175,
+      132
+    ],
+    "classification": "svg_candidate",
+    "reason": "molecular graph icon made of simple nodes and edges"
+  },
+  {
+    "slot_id": "slot_b_hidden_p",
+    "filename": "assets/svg_candidate/b_hidden_p.png",
+    "bbox_xywh": [
+      759,
+      475,
+      60,
+      166
+    ],
+    "classification": "svg_candidate",
+    "reason": "H^p feature vector with simple rectangular cells"
+  },
+  {
+    "slot_id": "slot_b_hidden_y",
+    "filename": "assets/svg_candidate/b_hidden_y.png",
+    "bbox_xywh": [
+      759,
+      678,
+      60,
+      168
+    ],
+    "classification": "svg_candidate",
+    "reason": "H^y feature vector with simple rectangular cells"
+  },
+  {
+    "slot_id": "slot_b_query_vector",
+    "filename": "assets/svg_candidate/b_query_vector.png",
+    "bbox_xywh": [
+      967,
+      618,
+      160,
+      69
+    ],
+    "classification": "svg_candidate",
+    "reason": "query vector with four flat colored blocks"
+  },
+  {
+    "slot_id": "slot_b_sp_matrix",
+    "filename": "assets/svg_candidate/b_sp_matrix.png",
+    "bbox_xywh": [
+      1276,
+      475,
+      159,
+      169
+    ],
+    "classification": "svg_candidate",
+    "reason": "s^p matrix with repeated colored cells"
+  },
+  {
+    "slot_id": "slot_b_sy_matrix",
+    "filename": "assets/svg_candidate/b_sy_matrix.png",
+    "bbox_xywh": [
+      1276,
+      678,
+      159,
+      169
+    ],
+    "classification": "svg_candidate",
+    "reason": "s^y matrix with repeated colored cells"
+  }
+]

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1688" height="860" viewBox="0 0 1688 860">
+<rect x="0" y="0" width="1688" height="860" fill="white"/>
+
+<g id="svg_a_molecular_graph_left" data-source-slot="slot_a_molecular_graph_left" transform="translate(150,150)">
+<line x1="82" y1="20" x2="82" y2="88" stroke="#111" stroke-width="1.4"/>
+<line x1="82" y1="88" x2="24" y2="92" stroke="#111" stroke-width="1.4"/>
+<line x1="82" y1="88" x2="142" y2="94" stroke="#111" stroke-width="1.4"/>
+<line x1="145" y1="43" x2="142" y2="94" stroke="#111" stroke-width="1.4"/>
+<circle cx="82" cy="20" r="17" fill="#8db1ef"/>
+<circle cx="82" cy="88" r="17" fill="#8db1ef"/>
+<circle cx="24" cy="92" r="17" fill="#8db1ef"/>
+<circle cx="145" cy="43" r="17" fill="#8db1ef"/>
+<circle cx="142" cy="94" r="17" fill="#8db1ef"/>
+</g>
+<g id="svg_a_hidden_state_H" data-source-slot="slot_a_hidden_state_H" transform="translate(555,150)">
+<rect x="2" y="2" width="58" height="162" fill="#acf0f8" stroke="#102849" stroke-width="2"/>
+<line x1="2" y1="34.40" x2="60" y2="34.40" stroke="#102849" stroke-width="2"/>
+<line x1="2" y1="66.80" x2="60" y2="66.80" stroke="#102849" stroke-width="2"/>
+<line x1="2" y1="99.20" x2="60" y2="99.20" stroke="#102849" stroke-width="2"/>
+<line x1="2" y1="131.60" x2="60" y2="131.60" stroke="#102849" stroke-width="2"/>
+</g>
+<g id="svg_a_weighted_graph" data-source-slot="slot_a_weighted_graph" transform="translate(850,150)">
+<line x1="23" y1="91" x2="83" y2="58" stroke="#111" stroke-width="1.4"/>
+<line x1="83" y1="58" x2="84" y2="18" stroke="#111" stroke-width="1.4"/>
+<line x1="83" y1="58" x2="143" y2="93" stroke="#111" stroke-width="1.4"/>
+<line x1="145" y1="37" x2="143" y2="93" stroke="#111" stroke-width="1.4"/>
+<circle cx="23" cy="91" r="17" fill="#8db1ef"/>
+<text x="23" y="96" font-family="Times New Roman, Times, serif" font-size="17" text-anchor="middle">0.7</text>
+<circle cx="83" cy="58" r="17" fill="#8db1ef"/>
+<text x="83" y="63" font-family="Times New Roman, Times, serif" font-size="17" text-anchor="middle">0.9</text>
+<circle cx="84" cy="18" r="17" fill="#8db1ef"/>
+<text x="84" y="23" font-family="Times New Roman, Times, serif" font-size="17" text-anchor="middle">0.1</text>
+<circle cx="145" cy="37" r="17" fill="#8db1ef"/>
+<text x="145" y="42" font-family="Times New Roman, Times, serif" font-size="17" text-anchor="middle">0.3</text>
+<circle cx="143" cy="93" r="17" fill="#8db1ef"/>
+<text x="143" y="98" font-family="Times New Roman, Times, serif" font-size="17" text-anchor="middle">0.6</text>
+</g>
+<g id="svg_a_gib_stack_top" data-source-slot="slot_a_gib_stack_top" transform="translate(1149,36)">
+<rect x="2" y="2" width="56" height="162" fill="#dbe88e" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="34.40" x2="58" y2="34.40" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="66.80" x2="58" y2="66.80" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="99.20" x2="58" y2="99.20" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="131.60" x2="58" y2="131.60" stroke="#253451" stroke-width="2"/>
+</g>
+<g id="svg_a_pool_top" data-source-slot="slot_a_pool_top" transform="translate(1309,66)">
+<rect x="2" y="2" width="61" height="42" fill="#dce88d" stroke="#6b3635" stroke-width="2"/>
+</g>
+<g id="svg_a_gib_stack_bottom" data-source-slot="slot_a_gib_stack_bottom" transform="translate(1149,263)">
+<rect x="2" y="2" width="56" height="162" fill="#dbe88e" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="34.40" x2="58" y2="34.40" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="66.80" x2="58" y2="66.80" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="99.20" x2="58" y2="99.20" stroke="#253451" stroke-width="2"/>
+<line x1="2" y1="131.60" x2="58" y2="131.60" stroke="#253451" stroke-width="2"/>
+</g>
+<g id="svg_a_pool_bottom" data-source-slot="slot_a_pool_bottom" transform="translate(1309,325)">
+<rect x="2" y="2" width="61" height="42" fill="#dce88d" stroke="#6b3635" stroke-width="2"/>
+</g>
+<g id="svg_b_molecular_graph_left" data-source-slot="slot_b_molecular_graph_left" transform="translate(150,547)">
+<line x1="84" y1="16" x2="84" y2="72" stroke="#111" stroke-width="1.4"/>
+<line x1="84" y1="72" x2="25" y2="92" stroke="#111" stroke-width="1.4"/>
+<line x1="84" y1="72" x2="145" y2="92" stroke="#111" stroke-width="1.4"/>
+<line x1="148" y1="42" x2="145" y2="92" stroke="#111" stroke-width="1.4"/>
+<circle cx="84" cy="16" r="17" fill="#8db1ef"/>
+<circle cx="84" cy="72" r="17" fill="#8db1ef"/>
+<circle cx="25" cy="92" r="17" fill="#8db1ef"/>
+<circle cx="148" cy="42" r="17" fill="#8db1ef"/>
+<circle cx="145" cy="92" r="17" fill="#8db1ef"/>
+</g>
+<g id="svg_b_hidden_p" data-source-slot="slot_b_hidden_p" transform="translate(759,475)">
+<rect x="2" y="2" width="56" height="162" fill="#f7f5e6" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="34.40" x2="58" y2="34.40" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="66.80" x2="58" y2="66.80" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="99.20" x2="58" y2="99.20" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="131.60" x2="58" y2="131.60" stroke="#1e254b" stroke-width="2"/>
+</g>
+<g id="svg_b_hidden_y" data-source-slot="slot_b_hidden_y" transform="translate(759,678)">
+<rect x="2" y="2" width="56" height="164" fill="#f7f5e6" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="34.80" x2="58" y2="34.80" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="67.60" x2="58" y2="67.60" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="100.40" x2="58" y2="100.40" stroke="#1e254b" stroke-width="2"/>
+<line x1="2" y1="133.20" x2="58" y2="133.20" stroke="#1e254b" stroke-width="2"/>
+</g>
+<g id="svg_b_query_vector" data-source-slot="slot_b_query_vector" transform="translate(967,618)">
+<rect x="2" y="2" width="156" height="65" fill="none" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="2" width="39.00" height="65" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="41.00" y="2" width="39.00" height="65" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="80.00" y="2" width="39.00" height="65" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="119.00" y="2" width="39.00" height="65" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+</g>
+<g id="svg_b_sp_matrix" data-source-slot="slot_b_sp_matrix" transform="translate(1276,475)">
+<rect x="2.00" y="2.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="2.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="2.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="2.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="35.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="35.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="35.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="35.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="68.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="68.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="68.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="68.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="101.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="101.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="101.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="101.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="134.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="134.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="134.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="134.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+</g>
+<g id="svg_b_sy_matrix" data-source-slot="slot_b_sy_matrix" transform="translate(1276,678)">
+<rect x="2.00" y="2.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="2.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="2.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="2.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="35.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="35.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="35.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="35.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="68.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="68.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="68.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="68.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="101.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="101.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="101.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="101.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+<rect x="2.00" y="134.00" width="38.75" height="33.00" fill="#8fb3f2" stroke="#20264f" stroke-width="2"/>
+<rect x="40.75" y="134.00" width="38.75" height="33.00" fill="#a9dfc2" stroke="#20264f" stroke-width="2"/>
+<rect x="79.50" y="134.00" width="38.75" height="33.00" fill="#ffd06c" stroke="#20264f" stroke-width="2"/>
+<rect x="118.25" y="134.00" width="38.75" height="33.00" fill="#ee8da9" stroke="#20264f" stroke-width="2"/>
+</g>
+</svg>

@@ -1,0 +1,290 @@
+[
+  {
+    "slot_id": "slot_fire_llm_left",
+    "filename": "assets/svg_candidate/fire_llm_left.png",
+    "bbox_xywh": [
+      132,
+      85,
+      38,
+      56
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat red flame icon"
+  },
+  {
+    "slot_id": "slot_fire_time_head_left",
+    "filename": "assets/svg_candidate/fire_time_head_left.png",
+    "bbox_xywh": [
+      811,
+      22,
+      20,
+      27
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat red flame icon"
+  },
+  {
+    "slot_id": "slot_fire_time_head_right",
+    "filename": "assets/svg_candidate/fire_time_head_right.png",
+    "bbox_xywh": [
+      1001,
+      22,
+      19,
+      27
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat red flame icon"
+  },
+  {
+    "slot_id": "slot_fire_lm_head_left",
+    "filename": "assets/svg_candidate/fire_lm_head_left.png",
+    "bbox_xywh": [
+      1123,
+      22,
+      20,
+      27
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat red flame icon"
+  },
+  {
+    "slot_id": "slot_fire_lm_head_right",
+    "filename": "assets/svg_candidate/fire_lm_head_right.png",
+    "bbox_xywh": [
+      1297,
+      22,
+      20,
+      27
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat red flame icon"
+  },
+  {
+    "slot_id": "slot_fire_query_connector",
+    "filename": "assets/svg_candidate/fire_query_connector.png",
+    "bbox_xywh": [
+      1119,
+      169,
+      22,
+      40
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red flame symbol next to label"
+  },
+  {
+    "slot_id": "slot_fire_vision_projector",
+    "filename": "assets/svg_candidate/fire_vision_projector.png",
+    "bbox_xywh": [
+      378,
+      588,
+      22,
+      40
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red flame symbol on projector module"
+  },
+  {
+    "slot_id": "slot_fire_audio_projector",
+    "filename": "assets/svg_candidate/fire_audio_projector.png",
+    "bbox_xywh": [
+      826,
+      588,
+      22,
+      40
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red flame symbol on projector module"
+  },
+  {
+    "slot_id": "slot_fire_speech_projector",
+    "filename": "assets/svg_candidate/fire_speech_projector.png",
+    "bbox_xywh": [
+      1276,
+      588,
+      22,
+      40
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red flame symbol on projector module"
+  },
+  {
+    "slot_id": "slot_fire_time_encoder",
+    "filename": "assets/svg_candidate/fire_time_encoder.png",
+    "bbox_xywh": [
+      1482,
+      605,
+      24,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "two simple red flame symbols on time encoder"
+  },
+  {
+    "slot_id": "slot_fire_legend_stage2",
+    "filename": "assets/svg_candidate/fire_legend_stage2.png",
+    "bbox_xywh": [
+      1533,
+      183,
+      33,
+      47
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat red flame legend icon"
+  },
+  {
+    "slot_id": "slot_fire_legend_stage3",
+    "filename": "assets/svg_candidate/fire_legend_stage3.png",
+    "bbox_xywh": [
+      1531,
+      244,
+      38,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat red flame legend icon"
+  },
+  {
+    "slot_id": "slot_snow_vision_encoder",
+    "filename": "assets/svg_candidate/snow_vision_encoder.png",
+    "bbox_xywh": [
+      369,
+      670,
+      32,
+      42
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake frozen-component icon"
+  },
+  {
+    "slot_id": "slot_snow_audio_encoder",
+    "filename": "assets/svg_candidate/snow_audio_encoder.png",
+    "bbox_xywh": [
+      823,
+      671,
+      32,
+      42
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake frozen-component icon"
+  },
+  {
+    "slot_id": "slot_snow_speech_encoder",
+    "filename": "assets/svg_candidate/snow_speech_encoder.png",
+    "bbox_xywh": [
+      1267,
+      671,
+      32,
+      42
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake frozen-component icon"
+  },
+  {
+    "slot_id": "slot_snow_legend",
+    "filename": "assets/svg_candidate/snow_legend.png",
+    "bbox_xywh": [
+      1533,
+      286,
+      34,
+      42
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake legend icon"
+  },
+  {
+    "slot_id": "slot_wave_audio_input",
+    "filename": "assets/svg_candidate/wave_audio_input.png",
+    "bbox_xywh": [
+      579,
+      777,
+      295,
+      59
+    ],
+    "classification": "svg_candidate",
+    "reason": "one-dimensional audio waveform with simple vertical bars"
+  },
+  {
+    "slot_id": "slot_wave_speech_input",
+    "filename": "assets/svg_candidate/wave_speech_input.png",
+    "bbox_xywh": [
+      1024,
+      777,
+      295,
+      59
+    ],
+    "classification": "svg_candidate",
+    "reason": "one-dimensional speech waveform with simple vertical bars"
+  },
+  {
+    "slot_id": "slot_vision_input_frames",
+    "filename": "assets/raster_required/vision_input_frames.png",
+    "bbox_xywh": [
+      31,
+      759,
+      448,
+      84
+    ],
+    "classification": "raster_required",
+    "reason": "photo/video frames with human and scene texture"
+  },
+  {
+    "slot_id": "slot_timeline_clip_0s_6s",
+    "filename": "assets/raster_required/timeline_clip_0s_6s.png",
+    "bbox_xywh": [
+      20,
+      852,
+      136,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "raster video strip with photo frames and film perforations"
+  },
+  {
+    "slot_id": "slot_timeline_clip_50s_60s",
+    "filename": "assets/raster_required/timeline_clip_50s_60s.png",
+    "bbox_xywh": [
+      204,
+      852,
+      264,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "raster video strip with photo frames and film perforations"
+  },
+  {
+    "slot_id": "slot_timeline_clip_97s_106s",
+    "filename": "assets/raster_required/timeline_clip_97s_106s.png",
+    "bbox_xywh": [
+      512,
+      852,
+      263,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "raster video strip with photo frames and film perforations"
+  },
+  {
+    "slot_id": "slot_timeline_clip_256s_267s",
+    "filename": "assets/raster_required/timeline_clip_256s_267s.png",
+    "bbox_xywh": [
+      813,
+      852,
+      265,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "raster video strip with photo frames and film perforations"
+  },
+  {
+    "slot_id": "slot_timeline_clip_147s_1759s",
+    "filename": "assets/raster_required/timeline_clip_147s_1759s.png",
+    "bbox_xywh": [
+      1130,
+      852,
+      263,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "raster video strip with photo frames and film perforations"
+  }
+]

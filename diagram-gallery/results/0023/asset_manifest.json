@@ -1,0 +1,86 @@
+[
+  {
+    "slot_id": "slot_augtraj_scaling_graph",
+    "filename": "assets/svg_candidate/augtraj_scaling_graph.png",
+    "bbox_xywh": [
+      24,
+      28,
+      210,
+      150
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple colored trajectory curves and arrows that can be recreated with SVG paths and circles"
+  },
+  {
+    "slot_id": "slot_augtraj_rotation_translation",
+    "filename": "assets/svg_candidate/augtraj_rotation_translation.png",
+    "bbox_xywh": [
+      34,
+      146,
+      282,
+      150
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple schematic trajectory lines, circles, and rotation arrow"
+  },
+  {
+    "slot_id": "slot_context_encoder_heatmap",
+    "filename": "assets/svg_candidate/context_encoder_heatmap.png",
+    "bbox_xywh": [
+      686,
+      163,
+      82,
+      82
+    ],
+    "classification": "svg_candidate",
+    "reason": "small low-detail grid heatmap with flat colored cells"
+  },
+  {
+    "slot_id": "slot_scene_select_tree_icon",
+    "filename": "assets/svg_candidate/scene_select_tree_icon.png",
+    "bbox_xywh": [
+      897,
+      170,
+      75,
+      73
+    ],
+    "classification": "svg_candidate",
+    "reason": "tree diagram icon with circles and lines, suitable for vector reconstruction"
+  },
+  {
+    "slot_id": "slot_scene_model_pool_icons",
+    "filename": "assets/svg_candidate/scene_model_pool_icons.png",
+    "bbox_xywh": [
+      1128,
+      62,
+      97,
+      261
+    ],
+    "classification": "svg_candidate",
+    "reason": "collection of simple expert icons composed of arrows and geometric shapes"
+  },
+  {
+    "slot_id": "slot_clustering_blobs",
+    "filename": "assets/svg_candidate/clustering_blobs.png",
+    "bbox_xywh": [
+      507,
+      576,
+      94,
+      91
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple clustering illustration with pastel ellipses and dots"
+  },
+  {
+    "slot_id": "slot_big_tree_classifier",
+    "filename": "assets/svg_candidate/big_tree_classifier.png",
+    "bbox_xywh": [
+      883,
+      565,
+      176,
+      153
+    ],
+    "classification": "svg_candidate",
+    "reason": "tree classifier icon with colored leaves and connecting lines"
+  }
+]

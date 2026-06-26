@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1637" height="864" viewBox="0 0 1637 864">
+<defs>
+  <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+  </marker>
+  <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L12,6 L0,12 z" fill="#ff4c4c"/>
+  </marker>
+  <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
+    <feDropShadow dx="4" dy="4" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="1637" height="864" fill="#efefef"/>
+<path d="M545 23 H1492 V86" fill="none" stroke="#ff4747" stroke-width="6"/>
+<path d="M545 23 V160" fill="none" stroke="#ff4747" stroke-width="6" marker-end="url(#arrowRed)"/>
+<path d="M1487 418 V261" fill="none" stroke="#ff4747" stroke-width="6" marker-end="url(#arrowRed)"/>
+<rect x="878" y="14" rx="18" ry="18" width="284" height="48" fill="#f6f6f6" stroke="#111" stroke-width="3" filter="url(#shadow)"/>
+<text x="1020" y="47" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Policy Gradient</text>
+<rect x="38" y="92" rx="18" ry="18" width="395" height="296" fill="#ffffff" stroke="#111" stroke-width="3" filter="url(#shadow)"/>
+<g id="slot_task_icon_question_bubble" data-bbox="[4,58,88,85]" data-role="asset">
+  <rect x="4" y="58" width="88" height="85" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="4" y1="58" x2="92" y2="143" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="92" y1="58" x2="4" y2="143" stroke="#aaa" stroke-width="1.5"/>
+  <text x="48.0" y="100.5" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="88" y="131" font-family="Arial, sans-serif" font-size="30" font-weight="700">Task Description</text>
+<rect x="64" y="148" width="350" height="209" fill="#fff" stroke="#111" stroke-width="3" stroke-dasharray="6 6" filter="url(#shadow)"/>
+<text x="86" y="201" font-family="Arial, sans-serif" font-size="29" font-style="italic" fill="#222">Count the number of</text>
+<text x="86" y="241" font-family="Arial, sans-serif" font-size="29" font-style="italic" fill="#222">items in DB with a price</text>
+<text x="86" y="281" font-family="Arial, sans-serif" font-size="29" font-style="italic" fill="#222">within the range specified</text>
+<text x="86" y="321" font-family="Arial, sans-serif" font-size="29" font-style="italic" fill="#222">by the user's inputs.</text>
+<line x1="433" y1="239" x2="490" y2="239" stroke="#ff4c4c" stroke-width="6" marker-end="url(#arrowRed)"/>
+<g id="slot_policy_model_network" data-bbox="[488,166,122,142]" data-role="asset">
+  <rect x="488" y="166" width="122" height="142" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="488" y1="166" x2="610" y2="308" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="610" y1="166" x2="488" y2="308" stroke="#aaa" stroke-width="1.5"/>
+  <text x="549.0" y="237.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="452" y="339" font-family="Arial, sans-serif" font-size="29" font-weight="700">Policy Model</text>
+<line x1="606" y1="239" x2="663" y2="239" stroke="#ff4c4c" stroke-width="6" marker-end="url(#arrowRed)"/>
+<rect x="666" y="95" rx="20" ry="20" width="686" height="293" fill="#fff" stroke="#111" stroke-width="3" filter="url(#shadow)"/>
+<g id="slot_generated_program_code_icon" data-bbox="[658,52,82,86]" data-role="asset">
+  <rect x="658" y="52" width="82" height="86" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="658" y1="52" x2="740" y2="138" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="740" y1="52" x2="658" y2="138" stroke="#aaa" stroke-width="1.5"/>
+  <text x="699.0" y="95.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="724" y="131" font-family="Arial, sans-serif" font-size="31" font-weight="700">Generated Program</text>
+<rect x="694" y="148" width="620" height="220" fill="#fff" stroke="#111" stroke-width="3" stroke-dasharray="6 6"/>
+<g font-family="Courier New, monospace" font-size="24">
+<text x="714" y="176"><tspan fill="#444">cur = </tspan><tspan fill="#08923b" font-weight="700">sqlite3</tspan><tspan fill="#000">.</tspan><tspan fill="#1e73d8" font-weight="700">connect</tspan><tspan fill="#444">(DB).</tspan><tspan fill="#1e73d8" font-weight="700">cursor</tspan><tspan fill="#444">()</tspan></text>
+<text x="714" y="205"><tspan fill="#c5162e" font-weight="700">min</tspan><tspan fill="#444"> = </tspan><tspan fill="#1e73d8" font-weight="700">input</tspan><tspan fill="#444">('Min?'); </tspan><tspan fill="#c5162e" font-weight="700">max</tspan><tspan fill="#444"> = </tspan><tspan fill="#1e73d8" font-weight="700">input</tspan><tspan fill="#444">('Max?')</tspan></text>
+<text x="714" y="235" fill="#444">...</text>
+<text x="714" y="264"><tspan fill="#c5162e" font-weight="700">Q</tspan><tspan fill="#444"> = </tspan><tspan fill="#08923b" font-weight="700">"SELECT COUNT</tspan><tspan fill="#444">(*) </tspan><tspan fill="#08923b" font-weight="700">FROM</tspan><tspan fill="#444"> items \</tspan></text>
+<text x="830" y="295"><tspan fill="#08923b" font-weight="700">WHERE</tspan><tspan fill="#444"> price &lt;= </tspan><tspan fill="#c5162e" font-weight="700">{max}</tspan><tspan fill="#444"> \</tspan></text>
+<text x="830" y="326"><tspan fill="#08923b" font-weight="700">AND</tspan><tspan fill="#444"> price &gt;= </tspan><tspan fill="#c5162e" font-weight="700">{min}</tspan><tspan fill="#444">"</tspan></text>
+<text x="714" y="354"><tspan fill="#444">cur.</tspan><tspan fill="#1e73d8" font-weight="700">execute</tspan><tspan fill="#444">(</tspan><tspan fill="#c5162e" font-weight="700">Q</tspan><tspan fill="#444">)</tspan></text>
+</g>
+<line x1="777" y1="369" x2="777" y2="432" stroke="#ff4c4c" stroke-width="7" marker-end="url(#arrowRed)"/>
+<line x1="1173" y1="369" x2="1173" y2="432" stroke="#ff4c4c" stroke-width="7" marker-end="url(#arrowRed)"/>
+<g id="slot_advantage_badge_group" data-bbox="[1458,96,122,140]" data-role="asset">
+  <rect x="1458" y="96" width="122" height="140" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1458" y1="96" x2="1580" y2="236" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1580" y1="96" x2="1458" y2="236" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1519.0" y="166.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="1497" y="267" font-family="Arial, sans-serif" font-size="29" font-weight="700" text-anchor="middle">Advantage</text>
+<rect x="1383" y="335" rx="18" ry="18" width="212" height="51" fill="#fff" stroke="#111" stroke-width="3" filter="url(#shadow)"/>
+<text x="1490" y="369" font-family="Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle">Hybrid Reward</text>
+<rect x="38" y="420" rx="24" ry="24" width="856" height="438" fill="#f0e9de" stroke="#111" stroke-width="3"/>
+<text x="61" y="463" font-family="Arial, sans-serif" font-size="38" font-weight="700">Vulnerability Detector</text>
+<text x="450" y="463" font-family="Arial, sans-serif" font-size="22" font-style="italic" font-weight="600">(via Program Analysis)</text>
+<text x="61" y="493" font-family="Arial, sans-serif" font-size="24" font-style="italic" font-weight="700">Example: SQL Injection Detector</text>
+<rect x="61" y="508" width="692" height="254" fill="#f7f7f7" stroke="#111" stroke-width="3" stroke-dasharray="6 6" filter="url(#shadow)"/>
+<line x1="259" y1="508" x2="259" y2="762" stroke="#111" stroke-width="2" stroke-dasharray="5 7"/>
+<text x="134" y="539" font-family="Arial, sans-serif" font-size="27" font-weight="700">CFG</text>
+<text x="408" y="539" font-family="Arial, sans-serif" font-size="27" font-weight="700">Tainted Analysis</text>
+<g id="slot_vulnerability_cfg_graph" data-bbox="[72,548,170,180]" data-role="asset">
+  <rect x="72" y="548" width="170" height="180" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="72" y1="548" x2="242" y2="728" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="242" y1="548" x2="72" y2="728" stroke="#aaa" stroke-width="1.5"/>
+  <text x="157.0" y="638.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g font-family="Arial, sans-serif">
+<text x="282" y="580" font-size="24" fill="#c5162e" font-family="Courier New, monospace" font-weight="700">{max,min}</text>
+<text x="448" y="580" font-size="22" font-style="italic">1. User inputs as taint</text><text x="702" y="580" font-size="22" font-style="italic" font-weight="700">src.</text>
+<text x="280" y="644" font-size="24" fill="#c5162e" font-family="Courier New, monospace">{max,min,</text><text x="439" y="644" font-size="24" fill="#c5162e" font-family="Courier New, monospace" font-weight="700">Q</text><text x="459" y="644" font-size="24" fill="#c5162e" font-family="Courier New, monospace">}</text>
+<text x="447" y="644" font-size="22" font-style="italic">2. Propagate tainted var.</text>
+<text x="282" y="713" font-size="24" fill="#444" font-family="Courier New, monospace">cur.</text><text x="352" y="713" font-size="24" fill="#1e73d8" font-family="Courier New, monospace" font-weight="700">execute</text><text x="440" y="713" font-size="24" fill="#444" font-family="Courier New, monospace">(</text><text x="455" y="713" font-size="24" fill="#c5162e" font-family="Courier New, monospace" font-weight="700">Q</text><text x="472" y="713" font-size="24" fill="#444" font-family="Courier New, monospace">)</text>
+<text x="510" y="713" font-size="22" font-style="italic">3. SQL exec. as</text><text x="683" y="713" font-size="22" font-style="italic" font-weight="700">sink.</text>
+</g>
+<line x1="744" y1="560" x2="744" y2="720" stroke="#111" stroke-width="4" marker-end="url(#arrowBlack)"/>
+<text x="778" y="627" font-family="Arial, sans-serif" font-size="23" font-weight="700">Reward:</text>
+<text x="765" y="662" font-family="Arial, sans-serif" font-size="21" font-style="italic" fill="#169b34">Pass</text>
+<text x="810" y="662" font-family="Arial, sans-serif" font-size="21" font-style="italic">or</text>
+<text x="850" y="662" font-family="Arial, sans-serif" font-size="21" font-style="italic" fill="#d22020">Fail</text>
+<text x="84" y="808" font-family="Arial, sans-serif" font-size="26">Convert the program into a</text>
+<text x="401" y="808" font-family="Arial, sans-serif" font-size="26" font-weight="700">Control Flow Graph (CFG)</text>
+<text x="84" y="842" font-family="Arial, sans-serif" font-size="26"><tspan x="166" font-weight="700">Taint Analysis</tspan> to detect SQL injection vulnerabilities.</text>
+<text x="910" y="675" font-family="Arial, sans-serif" font-size="82" font-weight="700">+</text>
+<rect x="979" y="420" rx="24" ry="24" width="602" height="438" fill="#ddecef" stroke="#111" stroke-width="3"/>
+<text x="1004" y="465" font-family="Arial, sans-serif" font-size="38" font-weight="700">Functionality Verifier</text>
+<text x="1370" y="465" font-family="Arial, sans-serif" font-size="22" font-style="italic" font-weight="600">(via Unit Tests)</text>
+<rect x="1002" y="500" width="307" height="263" fill="#fff" stroke="#111" stroke-width="3" stroke-dasharray="6 6" filter="url(#shadow)"/>
+<text x="1020" y="538" font-family="Arial, sans-serif" font-size="24" font-weight="700">Unit Tests</text>
+<text x="1157" y="538" font-family="Arial, sans-serif" font-size="18" font-style="italic" font-weight="600">(e.g. min~max→output)</text>
+<g id="slot_unit_test_info_icon_1" data-bbox="[1026,549,61,57]" data-role="asset">
+  <rect x="1026" y="549" width="61" height="57" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1026" y1="549" x2="1087" y2="606" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1087" y1="549" x2="1026" y2="606" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1056.5" y="577.5" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_unit_test_info_icon_2" data-bbox="[1027,631,60,57]" data-role="asset">
+  <rect x="1027" y="631" width="60" height="57" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1027" y1="631" x2="1087" y2="688" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1087" y1="631" x2="1027" y2="688" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1057.0" y="659.5" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_unit_test_info_icon_3" data-bbox="[1028,721,60,58]" data-role="asset">
+  <rect x="1028" y="721" width="60" height="58" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1028" y1="721" x2="1088" y2="779" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1088" y1="721" x2="1028" y2="779" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1058.0" y="750.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g font-family="Arial, sans-serif" font-size="25">
+<text x="1086" y="584"><tspan font-style="italic" font-weight="700">Test 1:</tspan><tspan> $2.5~$10→3</tspan></text>
+<text x="1086" y="646"><tspan font-style="italic" font-weight="700">Test 2:</tspan><tspan> $3~$1→0</tspan></text>
+<text x="1122" y="690">......</text>
+<text x="1086" y="742"><tspan font-style="italic" font-weight="700">Test n:</tspan><tspan> $7~$100→10</tspan></text>
+</g>
+<rect x="1373" y="543" width="35" height="154" fill="#d3e0e3" opacity="0.85"/>
+<line x1="1361" y1="572" x2="1433" y2="599" stroke="#111" stroke-width="5" marker-end="url(#arrowBlack)"/>
+<line x1="1362" y1="640" x2="1433" y2="640" stroke="#111" stroke-width="5" marker-end="url(#arrowBlack)"/>
+<line x1="1361" y1="722" x2="1433" y2="669" stroke="#111" stroke-width="5" marker-end="url(#arrowBlack)"/>
+<rect x="1370" y="542" width="156" height="220" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="6 6"/>
+<g id="slot_verifier_generated_program_icon" data-bbox="[1436,546,109,120]" data-role="asset">
+  <rect x="1436" y="546" width="109" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1436" y1="546" x2="1545" y2="666" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1545" y1="546" x2="1436" y2="666" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1490.5" y="606.0" font-size="12" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="1453" y="717" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Generated</text>
+<text x="1453" y="752" font-family="Arial, sans-serif" font-size="23" font-weight="700" text-anchor="middle">Program</text>
+<text x="1178" y="823" font-family="Arial, sans-serif" font-size="26" font-weight="700">Reward:</text>
+<line x1="1300" y1="807" x2="1453" y2="807" stroke="#111" stroke-width="2"/>
+<text x="1308" y="800" font-family="Times New Roman, serif" font-size="21"># passed tests</text>
+<text x="1318" y="833" font-family="Times New Roman, serif" font-size="21"># total tests</text>
+</svg>

@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1809" height="890" viewBox="0 0 1809 890">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 5 L 0 10 z" fill="#000"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="16" markerHeight="14" refX="15" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 16 7 L 0 14 z" fill="#dedede"/>
+    </marker>
+    <linearGradient id="udtGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f97883"/>
+      <stop offset="46%" stop-color="#f4d78b"/>
+      <stop offset="100%" stop-color="#c8f5d7"/>
+    </linearGradient>
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; fill:#000; }
+      .label { font-family: "Times New Roman", Times, serif; fill:#000; font-size:34px; }
+      .small-label { font-family: "Times New Roman", Times, serif; fill:#000; font-size:30px; }
+      .caption { font-family: "Times New Roman", Times, serif; fill:#000; font-size:36px; }
+      .panel { fill:#fff; stroke:#000; stroke-width:3; }
+      .box { fill:#efefef; stroke:#000; stroke-width:3; }
+      .dash { fill:none; stroke:#000; stroke-width:3; stroke-dasharray:10 6; }
+      .line { stroke:#000; stroke-width:3; fill:none; }
+      .thin { stroke:#000; stroke-width:2.5; fill:none; }
+      .slot-label { font-family:Arial, sans-serif; font-size:13px; fill:#666; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1809" height="890" fill="#fff"/>
+
+<!-- Panel (a): Datasets -->
+<rect x="14" y="25" width="482" height="802" rx="22" class="panel"/>
+<line x1="14" y1="458" x2="496" y2="458" stroke="#000" stroke-width="3" stroke-dasharray="2 5"/>
+<path d="M150,85.0 L162,85.0 L162,65 L190,105 L162,145 L162,125.0 L150,125.0 Z" fill="#dedede" stroke="none"/>
+<path d="M143,230.5 L162,230.5 L162,213 L190,248 L162,283 L162,265.5 L143,265.5 Z" fill="#dedede" stroke="none"/>
+<path d="M365,208.0 L402,208.0 L402,187 L430,229 L402,271 L402,250.0 L365,250.0 Z" fill="#dedede" stroke="none"/>
+<image id="raster_diff_data_stack" data-source-slot="slot_diff_data_stack" href="assets/raster_required/diff_data_stack.png" xlink:href="assets/raster_required/diff_data_stack.png" x="20" y="58" width="128" height="112" preserveAspectRatio="none"/>
+<image id="raster_diff_data_graph_boxes" data-source-slot="slot_diff_data_graph_boxes" href="assets/raster_required/diff_data_graph_boxes.png" xlink:href="assets/raster_required/diff_data_graph_boxes.png" x="28" y="201" width="115" height="98" preserveAspectRatio="none"/>
+<image id="raster_seq_grid_graph" data-source-slot="slot_seq_grid_graph" href="assets/raster_required/seq_grid_graph.png" xlink:href="assets/raster_required/seq_grid_graph.png" x="192" y="45" width="180" height="126" preserveAspectRatio="none"/>
+<image id="raster_seq_format_graph" data-source-slot="slot_seq_format_graph" href="assets/raster_required/seq_format_graph.png" xlink:href="assets/raster_required/seq_format_graph.png" x="198" y="214" width="178" height="111" preserveAspectRatio="none"/>
+<image id="raster_domain_heatmap" data-source-slot="slot_domain_heatmap" href="assets/raster_required/domain_heatmap.png" xlink:href="assets/raster_required/domain_heatmap.png" x="40" y="488" width="123" height="104" preserveAspectRatio="none"/>
+<image id="raster_domain_city" data-source-slot="slot_domain_city" href="assets/raster_required/domain_city.png" xlink:href="assets/raster_required/domain_city.png" x="194" y="489" width="122" height="104" preserveAspectRatio="none"/>
+<image id="raster_domain_train" data-source-slot="slot_domain_train" href="assets/raster_required/domain_train.png" xlink:href="assets/raster_required/domain_train.png" x="352" y="488" width="122" height="104" preserveAspectRatio="none"/>
+<image id="raster_domain_road_network" data-source-slot="slot_domain_road_network" href="assets/raster_required/domain_road_network.png" xlink:href="assets/raster_required/domain_road_network.png" x="40" y="617" width="123" height="94" preserveAspectRatio="none"/>
+<image id="raster_domain_grid_heatmap" data-source-slot="slot_domain_grid_heatmap" href="assets/raster_required/domain_grid_heatmap.png" xlink:href="assets/raster_required/domain_grid_heatmap.png" x="194" y="617" width="122" height="94" preserveAspectRatio="none"/>
+<image id="raster_domain_flow_field" data-source-slot="slot_domain_flow_field" href="assets/raster_required/domain_flow_field.png" xlink:href="assets/raster_required/domain_flow_field.png" x="354" y="617" width="122" height="94" preserveAspectRatio="none"/>
+<text class="serif" x="95" y="382" font-size="33" text-anchor="middle">
+<tspan x="95" dy="0">Different</tspan>
+<tspan x="95" dy="42">data types</tspan>
+</text>
+<text class="serif" x="408" y="382" font-size="33" text-anchor="middle">
+<tspan x="408" dy="0">Sequential</tspan>
+<tspan x="408" dy="42">format</tspan>
+</text>
+<text class="serif" x="248" y="748" font-size="34" text-anchor="middle">
+<tspan x="248" dy="0">Multiple Domains</tspan>
+<tspan x="248" dy="42">Multiple Cities</tspan>
+</text>
+<text class="serif" x="250" y="874" font-size="37" text-anchor="middle">(a) Datasets</text>
+<path class="line" marker-end="url(#arrow)" d="M496,755 L545,755"/>
+<path class="line" marker-end="url(#arrow)" d="M496,330 C520,400 525,505 545,558"/>
+<!-- Panel (b): Urban Diffusion Transformer -->
+<text class="serif" x="820" y="45" font-size="40" text-anchor="middle">Output</text>
+<path class="line" marker-end="url(#arrow)" d="M820,126 L820,56"/>
+<rect x="560" y="96" width="520" height="56" rx="5" class="box"/>
+<text class="serif" x="820" y="136" font-size="38" text-anchor="middle">Reshape</text>
+<image id="raster_noisy_patch_row" data-source-slot="slot_noisy_patch_row" href="assets/raster_required/noisy_patch_row.png" xlink:href="assets/raster_required/noisy_patch_row.png" x="574" y="185" width="505" height="53" preserveAspectRatio="none"/>
+<line x1="602" y1="238" x2="602" y2="270" class="line"/>
+<line x1="675" y1="238" x2="675" y2="270" class="line"/>
+<line x1="747" y1="238" x2="747" y2="270" class="line"/>
+<line x1="820" y1="238" x2="820" y2="270" class="line"/>
+<line x1="900" y1="238" x2="900" y2="270" class="line"/>
+<line x1="974" y1="238" x2="974" y2="270" class="line"/>
+<line x1="1046" y1="238" x2="1046" y2="270" class="line"/>
+<line x1="820" y1="152" x2="820" y2="185" class="line"/>
+<rect x="545" y="270" width="560" height="146" rx="20" fill="url(#udtGrad)" stroke="#000" stroke-width="3"/>
+<text class="serif" x="825" y="354" font-size="40" text-anchor="middle">Urban Diffusion Transformer</text>
+<rect x="546" y="505" width="304" height="120" rx="11" class="box"/>
+<text class="serif" x="700" y="548" font-size="36" text-anchor="middle">
+<tspan x="700" dy="0">Spatio-temporal</tspan>
+<tspan x="700" dy="42">patching</tspan>
+</text>
+<rect x="875" y="505" width="232" height="120" rx="11" class="box"/>
+<text class="serif" x="992" y="548" font-size="36" text-anchor="middle">
+<tspan x="992" dy="0">Embedding</tspan>
+<tspan x="992" dy="42">layer</tspan>
+</text>
+<rect x="546" y="695" width="304" height="120" rx="11" class="box"/>
+<text class="serif" x="700" y="745" font-size="36" text-anchor="middle">
+<tspan x="700" dy="0">Noisy</tspan>
+<tspan x="700" dy="44">ST data</tspan>
+</text>
+<rect x="885" y="695" width="222" height="120" rx="11" class="box"/>
+<text class="serif" x="996" y="745" font-size="36" text-anchor="middle">Timestep</text>
+<text class="serif" x="996" y="787" font-size="38" text-anchor="middle" font-style="italic">t</text>
+<rect x="773" y="437" width="147" height="44" rx="5" fill="#fff" stroke="#000" stroke-width="3"/>
+<text class="serif" x="846" y="469" font-size="34" text-anchor="middle">Concat</text>
+<line x1="700" y1="416" x2="700" y2="505" class="line"/>
+<line x1="992" y1="416" x2="992" y2="505" class="line"/>
+<path class="line" marker-end="url(#arrow)" d="M773,459 L696,459"/>
+<path class="line" marker-end="url(#arrow)" d="M986,459 L920,459"/>
+<path class="line" d="M992,625 L992,695"/>
+<path class="line" d="M700,625 L700,695"/>
+<path class="line" marker-end="url(#arrow)" d="M885,667 L700,667"/>
+<path class="line" d="M700,667 L700,625"/>
+<path class="line" d="M992,625 L992,657"/>
+<path class="line" d="M992,657 C990,670 978,670 976,657"/>
+<path class="line" d="M976,657 L700,657"/>
+<path class="line" d="M1105,306 L1196,306"/>
+<path class="line" d="M1105,306 L1105,459 L995,459"/>
+<path class="line" d="M1105,667 L1244,667"/>
+<path class="line" d="M700,667 L1244,667"/>
+<text class="serif" x="820" y="870" font-size="36" text-anchor="middle">(b) Urban Diffusion Transformer</text>
+<!-- Panel (d): Unified Prompt Learning -->
+<rect x="1196" y="20" width="610" height="590" rx="26" class="panel"/>
+<rect x="1222" y="36" width="454" height="308" rx="22" class="dash"/>
+<rect x="1224" y="368" width="454" height="206" rx="13" class="dash"/>
+<text class="serif" x="1301" y="300" font-size="30" text-anchor="middle">
+<tspan x="1301" dy="0">Data</tspan>
+<tspan x="1301" dy="33">memory</tspan>
+</text>
+<rect x="1370" y="60" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="91" font-size="32" text-anchor="middle">Frequency pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,82 L1345,82"/>
+<rect x="1370" y="143" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="174" font-size="32" text-anchor="middle">Temporal pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,165 L1345,165"/>
+<rect x="1370" y="225" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="256" font-size="32" text-anchor="middle">Spatial pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,247 L1345,247"/>
+<text class="serif" x="1540" y="326" font-size="34" text-anchor="middle" font-weight="bold" font-style="italic">Data-driven prompt</text>
+<text class="serif" x="1760" y="162" font-size="34" text-anchor="middle">ST</text>
+<text class="serif" x="1760" y="203" font-size="34" text-anchor="middle">Data</text>
+<path class="thin" marker-end="url(#arrow)" d="M1710,172 L1668,172"/>
+<text class="serif" x="1295" y="498" font-size="30" text-anchor="middle">
+<tspan x="1295" dy="0">Task</tspan>
+<tspan x="1295" dy="34">memory</tspan>
+</text>
+<rect x="1384" y="373" width="43" height="120" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+<text class="serif" x="1414" y="432" font-size="28" text-anchor="middle" transform="rotate(90 1414 432)">Attention</text>
+<image id="raster_task_mask_pattern" data-source-slot="slot_task_mask_pattern" href="assets/raster_required/task_mask_pattern.png" xlink:href="assets/raster_required/task_mask_pattern.png" x="1474" y="405" width="192" height="91" preserveAspectRatio="none"/>
+<path class="thin" marker-end="url(#arrow)" d="M1474,448 L1430,448"/>
+<path class="thin" marker-end="url(#arrow)" d="M1384,448 L1349,448"/>
+<path class="thin" marker-end="url(#arrow)" d="M1723,470 L1668,470"/>
+<text class="serif" x="1755" y="474" font-size="34" text-anchor="middle">Mask</text>
+<text class="serif" x="1536" y="558" font-size="34" text-anchor="middle" font-weight="bold" font-style="italic">Task-specific prompt</text>
+<text class="serif" x="1475" y="628" font-size="36" text-anchor="middle">(d) Unified Prompt Learning</text>
+<!-- Panel (c): Masking Strategies -->
+<rect x="1244" y="660" width="516" height="165" rx="8" class="panel"/>
+<image id="raster_masking_strategies_examples" data-source-slot="slot_masking_strategies_examples" href="assets/raster_required/masking_strategies_examples.png" xlink:href="assets/raster_required/masking_strategies_examples.png" x="1266" y="668" width="392" height="118" preserveAspectRatio="none"/>
+<text class="serif" x="1498" y="870" font-size="36" text-anchor="middle">(c) Masking Strategies</text>
+<g id="svg_seq_cubes" data-source-slot="slot_seq_cubes" transform="translate(445,92)">
+<g transform="translate(8,0)">
+<polygon points="0,8 14,3 26,8 12,14" fill="#6fa1d9" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="0,8 12,14 12,30 0,24" fill="#4d87c8" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="12,14 26,8 26,24 12,30" fill="#2f6fb1" stroke="#477bb6" stroke-width="1.2"/>
+</g>
+<g transform="translate(8,43)">
+<polygon points="0,8 14,3 26,8 12,14" fill="#6fa1d9" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="0,8 12,14 12,30 0,24" fill="#4d87c8" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="12,14 26,8 26,24 12,30" fill="#2f6fb1" stroke="#477bb6" stroke-width="1.2"/>
+</g>
+<g transform="translate(8,84)">
+<polygon points="0,8 14,3 26,8 12,14" fill="#6fa1d9" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="0,8 12,14 12,30 0,24" fill="#4d87c8" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="12,14 26,8 26,24 12,30" fill="#2f6fb1" stroke="#477bb6" stroke-width="1.2"/>
+</g>
+<g transform="translate(8,126)">
+<polygon points="0,8 14,3 26,8 12,14" fill="#6fa1d9" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="0,8 12,14 12,30 0,24" fill="#4d87c8" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="12,14 26,8 26,24 12,30" fill="#2f6fb1" stroke="#477bb6" stroke-width="1.2"/>
+</g>
+<g transform="translate(8,166)">
+<polygon points="0,8 14,3 26,8 12,14" fill="#6fa1d9" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="0,8 12,14 12,30 0,24" fill="#4d87c8" stroke="#477bb6" stroke-width="1.2"/>
+<polygon points="12,14 26,8 26,24 12,30" fill="#2f6fb1" stroke="#477bb6" stroke-width="1.2"/>
+</g>
+<circle cx="21" cy="85" r="2" fill="#000"/><circle cx="21" cy="93" r="2" fill="#000"/><circle cx="21" cy="101" r="2" fill="#000"/>
+</g>
+<g id="svg_data_memory_icons" data-source-slot="slot_data_memory_icons" transform="translate(1244,38)">
+<g transform="translate(0,5) scale(1.0)">
+<path d="M40,10 C28,8 25,21 27,31 C16,31 12,43 19,52 C12,61 18,74 30,72 C32,82 43,83 47,74 L47,15 C45,13 43,11 40,10 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53,15 L53,74 C58,83 69,82 71,72 C83,74 88,61 81,52 C88,43 84,31 73,31 C75,21 72,8 60,10 C57,11 55,13 53,15 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50" y1="8" x2="50" y2="78" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round"/>
+<path d="M32,45 C42,38 28,33 38,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+<path d="M68,45 C58,38 72,33 62,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(0,90) scale(1.0)">
+<path d="M40,10 C28,8 25,21 27,31 C16,31 12,43 19,52 C12,61 18,74 30,72 C32,82 43,83 47,74 L47,15 C45,13 43,11 40,10 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53,15 L53,74 C58,83 69,82 71,72 C83,74 88,61 81,52 C88,43 84,31 73,31 C75,21 72,8 60,10 C57,11 55,13 53,15 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50" y1="8" x2="50" y2="78" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round"/>
+<path d="M32,45 C42,38 28,33 38,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+<path d="M68,45 C58,38 72,33 62,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(0,176) scale(1.0)">
+<path d="M40,10 C28,8 25,21 27,31 C16,31 12,43 19,52 C12,61 18,74 30,72 C32,82 43,83 47,74 L47,15 C45,13 43,11 40,10 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53,15 L53,74 C58,83 69,82 71,72 C83,74 88,61 81,52 C88,43 84,31 73,31 C75,21 72,8 60,10 C57,11 55,13 53,15 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50" y1="8" x2="50" y2="78" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round"/>
+<path d="M32,45 C42,38 28,33 38,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+<path d="M68,45 C58,38 72,33 62,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+</g>
+</g>
+<g id="svg_task_memory_icon" data-source-slot="slot_task_memory_icon" transform="translate(1250,398)">
+<g transform="translate(0,0) scale(1.0)">
+<path d="M40,10 C28,8 25,21 27,31 C16,31 12,43 19,52 C12,61 18,74 30,72 C32,82 43,83 47,74 L47,15 C45,13 43,11 40,10 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53,15 L53,74 C58,83 69,82 71,72 C83,74 88,61 81,52 C88,43 84,31 73,31 C75,21 72,8 60,10 C57,11 55,13 53,15 Z" fill="none" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50" y1="8" x2="50" y2="78" stroke="#3b3b9c" stroke-width="5" stroke-linecap="round"/>
+<path d="M32,45 C42,38 28,33 38,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+<path d="M68,45 C58,38 72,33 62,27" fill="none" stroke="#f1b52a" stroke-width="4" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

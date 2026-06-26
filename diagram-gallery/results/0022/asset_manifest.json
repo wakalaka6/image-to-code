@@ -1,0 +1,110 @@
+[
+  {
+    "slot_id": "slot_ref_pose_skeleton",
+    "bbox_xywh": [
+      10,
+      29,
+      203,
+      200
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/ref_pose_skeleton.png",
+    "reason": "black-background pose is sparse colored line art and can be approximated with SVG polylines"
+  },
+  {
+    "slot_id": "slot_ref_img_photo",
+    "bbox_xywh": [
+      0,
+      276,
+      214,
+      204
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/ref_img_photo.png",
+    "reason": "photo/video-frame region with human appearance, texture, shadows, and soft background"
+  },
+  {
+    "slot_id": "slot_tgt_pose_stack",
+    "bbox_xywh": [
+      0,
+      525,
+      216,
+      240
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/tgt_pose_stack.png",
+    "reason": "stacked pose frames with pixel-level line detail and repeated frame offsets"
+  },
+  {
+    "slot_id": "slot_noise_stack_texture",
+    "bbox_xywh": [
+      176,
+      850,
+      154,
+      146
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/noise_stack_texture.png",
+    "reason": "dense stochastic noise texture cannot be faithfully represented by simple SVG geometry"
+  },
+  {
+    "slot_id": "slot_mask_single_silhouettes",
+    "bbox_xywh": [
+      548,
+      860,
+      146,
+      142
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/mask_single_silhouettes.png",
+    "reason": "colored human silhouettes have irregular raster mask boundaries"
+  },
+  {
+    "slot_id": "slot_mask_stack_silhouettes",
+    "bbox_xywh": [
+      708,
+      858,
+      150,
+      145
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/mask_stack_silhouettes.png",
+    "reason": "stacked mask frames include complex silhouette contours and frame shadows"
+  },
+  {
+    "slot_id": "slot_img_module_c1_graph",
+    "bbox_xywh": [
+      936,
+      817,
+      124,
+      141
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/img_module_c1_graph.png",
+    "reason": "small diagram uses circles, arrows, dashed lines, and hatch fills that are cleanly vectorizable"
+  },
+  {
+    "slot_id": "slot_img_module_cN_graph",
+    "bbox_xywh": [
+      1138,
+      850,
+      124,
+      141
+    ],
+    "classification": "svg_candidate",
+    "filename": "assets/svg_candidate/img_module_cN_graph.png",
+    "reason": "small diagram uses simple repeated geometric shapes and arrows"
+  },
+  {
+    "slot_id": "slot_gen_frames_photo_stack",
+    "bbox_xywh": [
+      1576,
+      562,
+      201,
+      188
+    ],
+    "classification": "raster_required",
+    "filename": "assets/raster_required/gen_frames_photo_stack.png",
+    "reason": "generated video frames are photo-like and contain human figures with texture and shading"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "slot_id": "slot_task_icon_question_bubble",
+    "filename": "assets/svg_candidate/task_icon_question_bubble.png",
+    "bbox_xywh": [
+      4,
+      58,
+      88,
+      85
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat question bubble icon with clear outline and fill"
+  },
+  {
+    "slot_id": "slot_policy_model_network",
+    "filename": "assets/svg_candidate/policy_model_network.png",
+    "bbox_xywh": [
+      488,
+      166,
+      122,
+      142
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple neural network illustration made of circles and arrows"
+  },
+  {
+    "slot_id": "slot_generated_program_code_icon",
+    "filename": "assets/svg_candidate/generated_program_code_icon.png",
+    "bbox_xywh": [
+      658,
+      52,
+      82,
+      86
+    ],
+    "classification": "svg_candidate",
+    "reason": "document/code icon with simple vector shapes"
+  },
+  {
+    "slot_id": "slot_advantage_badge_group",
+    "filename": "assets/svg_candidate/advantage_badge_group.png",
+    "bbox_xywh": [
+      1458,
+      96,
+      122,
+      140
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple grouped decorative icons consisting of bars, star and crown"
+  },
+  {
+    "slot_id": "slot_vulnerability_cfg_graph",
+    "filename": "assets/svg_candidate/vulnerability_cfg_graph.png",
+    "bbox_xywh": [
+      72,
+      548,
+      170,
+      180
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple control flow graph diagram composed of circles, numbers and arrows"
+  },
+  {
+    "slot_id": "slot_unit_test_info_icon_1",
+    "filename": "assets/svg_candidate/unit_test_info_icon_1.png",
+    "bbox_xywh": [
+      1026,
+      549,
+      61,
+      57
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple info icon with black outline"
+  },
+  {
+    "slot_id": "slot_unit_test_info_icon_2",
+    "filename": "assets/svg_candidate/unit_test_info_icon_2.png",
+    "bbox_xywh": [
+      1027,
+      631,
+      60,
+      57
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple info icon with black outline"
+  },
+  {
+    "slot_id": "slot_unit_test_info_icon_3",
+    "filename": "assets/svg_candidate/unit_test_info_icon_3.png",
+    "bbox_xywh": [
+      1028,
+      721,
+      60,
+      58
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple info icon with black outline"
+  },
+  {
+    "slot_id": "slot_verifier_generated_program_icon",
+    "filename": "assets/svg_candidate/verifier_generated_program_icon.png",
+    "bbox_xywh": [
+      1436,
+      546,
+      109,
+      120
+    ],
+    "classification": "svg_candidate",
+    "reason": "document/code icon with simple vector shapes"
+  }
+]

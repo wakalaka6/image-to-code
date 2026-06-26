@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1950" height="956" viewBox="0 0 1950 956">
+  <defs>
+    <marker id="arrowGrey" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 16 8 L 0 16 z" fill="#a8a8a8"/>
+    </marker>
+    <style>
+      .icon-stroke{stroke:#111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+      .thin-stroke{stroke:#111;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+      .mid-stroke{stroke:#111;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;}
+    </style>
+  </defs>
+  <rect width="1950" height="956" fill="#ffffff"/>
+  <rect x="18" y="25" width="426" height="214" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="18" y="263" width="426" height="215" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="18" y="503" width="426" height="177" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="18" y="705" width="426" height="250" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="1515" y="25" width="420" height="252" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="1515" y="365" width="420" height="250" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <rect x="1515" y="705" width="420" height="250" rx="25" ry="25" fill="none" stroke="#b9b9b9" stroke-width="4" stroke-dasharray="30 18" stroke-linecap="round"/>
+  <g id="layout_connectors" fill="none" stroke="#a8a8a8" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter">
+    <line x1="500" y1="130" x2="500" y2="820"/>
+    <line x1="500" y1="130" x2="444" y2="130" marker-end="url(#arrowGrey)"/>
+    <line x1="500" y1="365" x2="444" y2="365" marker-end="url(#arrowGrey)"/>
+    <line x1="500" y1="610" x2="444" y2="610" marker-end="url(#arrowGrey)"/>
+    <line x1="500" y1="820" x2="444" y2="820" marker-end="url(#arrowGrey)"/>
+    <line x1="500" y1="735" x2="545" y2="735"/>
+    <line x1="985" y1="462" x2="985" y2="735"/>
+    <line x1="900" y1="735" x2="1056" y2="735" marker-start="url(#arrowGrey)" marker-end="url(#arrowGrey)"/>
+    <line x1="1411" y1="735" x2="1455" y2="735"/>
+    <line x1="1455" y1="150" x2="1455" y2="825"/>
+    <line x1="1455" y1="150" x2="1515" y2="150" marker-end="url(#arrowGrey)"/>
+    <line x1="1455" y1="490" x2="1515" y2="490" marker-end="url(#arrowGrey)"/>
+    <line x1="1455" y1="825" x2="1515" y2="825" marker-end="url(#arrowGrey)"/>
+  </g>
+  <rect x="728" y="332" width="512" height="130" rx="9" fill="#d9d9d9"/>
+  <rect x="545" y="516" width="355" height="440" rx="8" fill="#d9d9d9"/>
+  <rect x="1056" y="516" width="355" height="440" rx="8" fill="#d9d9d9"/>
+  <g id="editable_text" fill="#000000" font-family="Times New Roman, Times, serif">
+    <text x="38" y="205" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Sentiment</text>
+    <text x="82" y="438" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Style</text>
+    <text x="74" y="682" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Topic</text>
+    <text x="38" y="925" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Perplexity</text>
+    <text x="220" y="84" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(a) positive</text>
+    <text x="220" y="139" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(b) negative</text>
+    <text x="220" y="194" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(c) neutral</text>
+    <text x="220" y="338" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(a) subjective</text>
+    <text x="220" y="430" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(b) neutral</text>
+    <text x="220" y="555" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(a) sports</text>
+    <text x="220" y="608" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(b) crime</text>
+    <text x="220" y="660" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(c) politics</text>
+    <text x="220" y="696" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">......</text>
+    <text x="220" y="818" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(a) high</text>
+    <text x="220" y="909" font-size="40" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">(b) low</text>
+    <text x="985" y="214" font-size="54" font-weight="bold" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Truth Over Tricks</text>
+    <text x="985" y="265" font-size="36" font-weight="normal" font-style="italic" text-anchor="middle" font-family="Times New Roman, Times, serif">Evaluate Shortcut Learning in</text>
+    <text x="985" y="306" font-size="36" font-weight="normal" font-style="italic" text-anchor="middle" font-family="Times New Roman, Times, serif">Misinformation Detection</text>
+    <text x="1008" y="403" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Misinformation</text>
+    <text x="1008" y="457" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Benchmarks</text>
+    <text x="722" y="567" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Intrinsic</text>
+    <text x="722" y="620" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Shortcut</text>
+    <text x="722" y="674" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Induction</text>
+    <text x="722" y="927" font-size="34" font-weight="normal" font-style="italic" text-anchor="middle" font-family="Times New Roman, Times, serif">Indicator Classifier</text>
+    <text x="1234" y="567" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Extrinsic</text>
+    <text x="1234" y="620" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Shortcut</text>
+    <text x="1234" y="674" font-size="46" font-weight="normal" font-style="normal" text-anchor="middle" font-family="Times New Roman, Times, serif">Injection</text>
+    <text x="1234" y="927" font-size="34" font-weight="normal" font-style="italic" text-anchor="middle" font-family="Times New Roman, Times, serif">LLM Injector</text>
+    <text x="1540" y="242" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Vanilla</text>
+    <text x="1535" y="571" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Explicit</text>
+    <text x="1535" y="922" font-size="42" font-weight="normal" font-style="normal" text-anchor="start" font-family="Times New Roman, Times, serif">Implicit</text>
+    <text x="1680" y="123" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">Please rewrite it</text>
+    <text x="1680" y="164" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">to make it more</text>
+    <text x="1680" y="205" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">convincing.</text>
+    <text x="1680" y="442" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">Make the {word</text>
+    <text x="1680" y="482" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">choice} of the</text>
+    <text x="1680" y="522" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">rewritten content</text>
+    <text x="1680" y="562" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">{simple}.</text>
+    <text x="1670" y="778" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">You are</text>
+    <text x="1670" y="816" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">{elderly}. Please</text>
+    <text x="1670" y="854" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">rewrite this</text>
+    <text x="1670" y="892" font-size="32" font-weight="normal" font-style="italic" text-anchor="start" font-family="Times New Roman, Times, serif">passage.</text>
+  </g>
+  <g id="slot_left_sentiment_icon" data-bbox="[55,35,125,115]" data-role="asset">
+    <rect x="55" y="35" width="125" height="115" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="55" y1="35" x2="180" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="180" y1="35" x2="55" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    <text x="117.5" y="92.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_left_style_icon" data-bbox="[70,285,105,95]" data-role="asset">
+    <rect x="70" y="285" width="105" height="95" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="70" y1="285" x2="175" y2="380" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="175" y1="285" x2="70" y2="380" stroke="#aaa" stroke-width="1.5"/>
+    <text x="122.5" y="332.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_left_topic_icon" data-bbox="[65,515,125,120]" data-role="asset">
+    <rect x="65" y="515" width="125" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="65" y1="515" x2="190" y2="635" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="190" y1="515" x2="65" y2="635" stroke="#aaa" stroke-width="1.5"/>
+    <text x="127.5" y="575.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_left_perplexity_icon" data-bbox="[72,760,105,110]" data-role="asset">
+    <rect x="72" y="760" width="105" height="110" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="72" y1="760" x2="177" y2="870" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="177" y1="760" x2="72" y2="870" stroke="#aaa" stroke-width="1.5"/>
+    <text x="124.5" y="815.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_title_meter_icon" data-bbox="[875,30,245,120]" data-role="asset">
+    <rect x="875" y="30" width="245" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="875" y1="30" x2="1120" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1120" y1="30" x2="875" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    <text x="997.5" y="90.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_benchmark_database_icon" data-bbox="[735,350,130,120]" data-role="asset">
+    <rect x="735" y="350" width="130" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="735" y1="350" x2="865" y2="470" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="865" y1="350" x2="735" y2="470" stroke="#aaa" stroke-width="1.5"/>
+    <text x="800.0" y="410.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_intrinsic_classifier_icon" data-bbox="[625,680,210,190]" data-role="asset">
+    <rect x="625" y="680" width="210" height="190" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="625" y1="680" x2="835" y2="870" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="835" y1="680" x2="625" y2="870" stroke="#aaa" stroke-width="1.5"/>
+    <text x="730.0" y="775.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_extrinsic_injector_icon" data-bbox="[1165,704,150,165]" data-role="asset">
+    <rect x="1165" y="704" width="150" height="165" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1165" y1="704" x2="1315" y2="869" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1315" y1="704" x2="1165" y2="869" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1240.0" y="786.5" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_right_vanilla_icon" data-bbox="[1530,55,150,130]" data-role="asset">
+    <rect x="1530" y="55" width="150" height="130" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1530" y1="55" x2="1680" y2="185" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1680" y1="55" x2="1530" y2="185" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1605.0" y="120.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_right_explicit_icon" data-bbox="[1535,385,140,150]" data-role="asset">
+    <rect x="1535" y="385" width="140" height="150" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1535" y1="385" x2="1675" y2="535" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1675" y1="385" x2="1535" y2="535" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1605.0" y="460.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+  <g id="slot_right_implicit_icon" data-bbox="[1545,735,120,120]" data-role="asset">
+    <rect x="1545" y="735" width="120" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1545" y1="735" x2="1665" y2="855" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1665" y1="735" x2="1545" y2="855" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1605.0" y="795.0" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="#555" font-family="Arial, sans-serif">ASSET_SLOT</text>
+  </g>
+</svg>

@@ -1,0 +1,230 @@
+[
+  {
+    "slot_id": "slot_componentA_large_trigger_texture",
+    "filename": "assets/raster_required/componentA_large_trigger_texture.png",
+    "bbox_xywh": [
+      35,
+      291,
+      70,
+      77
+    ],
+    "classification": "raster_required",
+    "reason": "small photographic/texture-like trigger crop with irregular shading and edge detail"
+  },
+  {
+    "slot_id": "slot_componentA_large_trigger_patch",
+    "filename": "assets/svg_candidate/componentA_large_trigger_patch.png",
+    "bbox_xywh": [
+      118,
+      292,
+      74,
+      69
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat single-color patch with simple rectangular boundary"
+  },
+  {
+    "slot_id": "slot_componentA_small_trigger_texture",
+    "filename": "assets/raster_required/componentA_small_trigger_texture.png",
+    "bbox_xywh": [
+      36,
+      376,
+      70,
+      68
+    ],
+    "classification": "raster_required",
+    "reason": "small photographic/texture-like trigger crop with irregular shading and edge detail"
+  },
+  {
+    "slot_id": "slot_componentA_small_trigger_patch",
+    "filename": "assets/svg_candidate/componentA_small_trigger_patch.png",
+    "bbox_xywh": [
+      128,
+      378,
+      64,
+      57
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat single-color patch with simple rectangular boundary"
+  },
+  {
+    "slot_id": "slot_componentA_red_runner_icon",
+    "filename": "assets/svg_candidate/componentA_red_runner_icon.png",
+    "bbox_xywh": [
+      855,
+      330,
+      27,
+      36
+    ],
+    "classification": "svg_candidate",
+    "reason": "tiny flat colored icon that can be approximated with simple SVG strokes and circles"
+  },
+  {
+    "slot_id": "slot_componentA_stealth_icon",
+    "filename": "assets/svg_candidate/componentA_stealth_icon.png",
+    "bbox_xywh": [
+      881,
+      331,
+      45,
+      35
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat icon with clear colored contours and simple symbol-like structure"
+  },
+  {
+    "slot_id": "slot_componentB_top_left_photo",
+    "filename": "assets/raster_required/componentB_top_left_photo.png",
+    "bbox_xywh": [
+      1016,
+      178,
+      150,
+      171
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like background with complex object texture and lighting"
+  },
+  {
+    "slot_id": "slot_componentB_top_right_bottle",
+    "filename": "assets/raster_required/componentB_top_right_bottle.png",
+    "bbox_xywh": [
+      1194,
+      176,
+      151,
+      172
+    ],
+    "classification": "raster_required",
+    "reason": "bottle image on dark background with shading and photographic detail"
+  },
+  {
+    "slot_id": "slot_componentB_bottom_left_photo",
+    "filename": "assets/raster_required/componentB_bottom_left_photo.png",
+    "bbox_xywh": [
+      1016,
+      407,
+      150,
+      133
+    ],
+    "classification": "raster_required",
+    "reason": "complex illustration/photo-like region with transparency and object texture"
+  },
+  {
+    "slot_id": "slot_componentB_bottom_right_texture",
+    "filename": "assets/raster_required/componentB_bottom_right_texture.png",
+    "bbox_xywh": [
+      1194,
+      405,
+      151,
+      135
+    ],
+    "classification": "raster_required",
+    "reason": "dense texture/pattern image that cannot be faithfully redrawn with simple SVG"
+  },
+  {
+    "slot_id": "slot_componentB_black_trigger_icon",
+    "filename": "assets/svg_candidate/componentB_black_trigger_icon.png",
+    "bbox_xywh": [
+      1496,
+      219,
+      15,
+      29
+    ],
+    "classification": "svg_candidate",
+    "reason": "solid black vertical rectangular trigger mark"
+  },
+  {
+    "slot_id": "slot_componentB_kitty_icon",
+    "filename": "assets/svg_candidate/componentB_kitty_icon.png",
+    "bbox_xywh": [
+      1494,
+      417,
+      38,
+      32
+    ],
+    "classification": "svg_candidate",
+    "reason": "small line-art style icon with simple colored details"
+  },
+  {
+    "slot_id": "slot_componentB_note_stealth_icon",
+    "filename": "assets/svg_candidate/componentB_note_stealth_icon.png",
+    "bbox_xywh": [
+      1801,
+      330,
+      39,
+      25
+    ],
+    "classification": "svg_candidate",
+    "reason": "tiny flat trigger-like symbol with clear boundary"
+  },
+  {
+    "slot_id": "slot_componentC_eye_icon",
+    "filename": "assets/svg_candidate/componentC_eye_icon.png",
+    "bbox_xywh": [
+      134,
+      1044,
+      79,
+      20
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple eye line drawing that can be represented by SVG curves"
+  },
+  {
+    "slot_id": "slot_componentC_mild_photo",
+    "filename": "assets/raster_required/componentC_mild_photo.png",
+    "bbox_xywh": [
+      586,
+      874,
+      253,
+      222
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like human/object image with complex shading and texture"
+  },
+  {
+    "slot_id": "slot_componentC_severe_photo",
+    "filename": "assets/raster_required/componentC_severe_photo.png",
+    "bbox_xywh": [
+      889,
+      874,
+      253,
+      222
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like human/object image with green channel distortion and complex texture"
+  },
+  {
+    "slot_id": "slot_componentC_subtle_photo",
+    "filename": "assets/raster_required/componentC_subtle_photo.png",
+    "bbox_xywh": [
+      1192,
+      874,
+      253,
+      222
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like human/object image with blue channel distortion and complex texture"
+  },
+  {
+    "slot_id": "slot_componentC_green_sample",
+    "filename": "assets/raster_required/componentC_green_sample.png",
+    "bbox_xywh": [
+      1551,
+      936,
+      151,
+      145
+    ],
+    "classification": "raster_required",
+    "reason": "dense green-dominated sample image with lighting, texture, and shadows"
+  },
+  {
+    "slot_id": "slot_componentC_blue_sample",
+    "filename": "assets/raster_required/componentC_blue_sample.png",
+    "bbox_xywh": [
+      1747,
+      936,
+      139,
+      145
+    ],
+    "classification": "raster_required",
+    "reason": "dense blue-dominated sample image with lighting and high-frequency texture"
+  }
+]

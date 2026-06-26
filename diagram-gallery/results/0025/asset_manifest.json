@@ -1,0 +1,218 @@
+[
+  {
+    "slot_id": "slot_keyframe_photo_grid",
+    "filename": "assets/raster_required/keyframe_photo_grid.png",
+    "bbox_xywh": [
+      262,
+      84,
+      455,
+      403
+    ],
+    "classification": "raster_required",
+    "reason": "multi-frame real robot demonstrations with photographic texture and overlaid frame labels"
+  },
+  {
+    "slot_id": "slot_planning_input_photo",
+    "filename": "assets/raster_required/planning_input_photo.png",
+    "bbox_xywh": [
+      101,
+      787,
+      343,
+      240
+    ],
+    "classification": "raster_required",
+    "reason": "real-world tabletop photograph with complex texture, lighting, and objects"
+  },
+  {
+    "slot_id": "slot_execution_photo_grid",
+    "filename": "assets/raster_required/execution_photo_grid.png",
+    "bbox_xywh": [
+      1308,
+      659,
+      580,
+      384
+    ],
+    "classification": "raster_required",
+    "reason": "multi-frame execution photo grid with dense visual details"
+  },
+  {
+    "slot_id": "slot_droid_dataset_icon",
+    "filename": "assets/svg_candidate/droid_dataset_icon.png",
+    "bbox_xywh": [
+      82,
+      170,
+      130,
+      242
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple database cylinder icon and text can be reconstructed with vector ellipse, paths, and text"
+  },
+  {
+    "slot_id": "slot_openai_domain_construction",
+    "filename": "assets/svg_candidate/openai_domain_construction.png",
+    "bbox_xywh": [
+      822,
+      128,
+      49,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat monochrome logo-like line icon with clear contour"
+  },
+  {
+    "slot_id": "slot_domain_doc_top",
+    "filename": "assets/svg_candidate/domain_doc_top.png",
+    "bbox_xywh": [
+      1170,
+      116,
+      150,
+      78
+    ],
+    "classification": "svg_candidate",
+    "reason": "small folded document with editable colored text and simple lines"
+  },
+  {
+    "slot_id": "slot_openai_solvability",
+    "filename": "assets/svg_candidate/openai_solvability.png",
+    "bbox_xywh": [
+      822,
+      259,
+      49,
+      49
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat monochrome logo-like line icon with clear contour"
+  },
+  {
+    "slot_id": "slot_solvability_tree_icon",
+    "filename": "assets/svg_candidate/solvability_tree_icon.png",
+    "bbox_xywh": [
+      824,
+      318,
+      54,
+      47
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple hierarchy icon with square nodes and straight connectors"
+  },
+  {
+    "slot_id": "slot_openai_refinement",
+    "filename": "assets/svg_candidate/openai_refinement.png",
+    "bbox_xywh": [
+      1218,
+      261,
+      49,
+      49
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat monochrome logo-like line icon with clear contour"
+  },
+  {
+    "slot_id": "slot_openai_solution",
+    "filename": "assets/svg_candidate/openai_solution.png",
+    "bbox_xywh": [
+      822,
+      421,
+      49,
+      49
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat monochrome logo-like line icon with clear contour"
+  },
+  {
+    "slot_id": "slot_domain_doc_refinement",
+    "filename": "assets/svg_candidate/domain_doc_refinement.png",
+    "bbox_xywh": [
+      1168,
+      405,
+      150,
+      84
+    ],
+    "classification": "svg_candidate",
+    "reason": "small folded document with editable colored text and simple lines"
+  },
+  {
+    "slot_id": "slot_openai_fusion_left",
+    "filename": "assets/svg_candidate/openai_fusion_left.png",
+    "bbox_xywh": [
+      1517,
+      188,
+      50,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat logo-like line icon inside domain fusion graph"
+  },
+  {
+    "slot_id": "slot_openai_fusion_right",
+    "filename": "assets/svg_candidate/openai_fusion_right.png",
+    "bbox_xywh": [
+      1785,
+      188,
+      50,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat logo-like line icon inside domain fusion graph"
+  },
+  {
+    "slot_id": "slot_openai_fusion_center",
+    "filename": "assets/svg_candidate/openai_fusion_center.png",
+    "bbox_xywh": [
+      1642,
+      362,
+      50,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat logo-like line icon inside domain fusion graph"
+  },
+  {
+    "slot_id": "slot_openai_filter",
+    "filename": "assets/svg_candidate/openai_filter.png",
+    "bbox_xywh": [
+      548,
+      827,
+      52,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat logo-like line icon in problem generation block"
+  },
+  {
+    "slot_id": "slot_openai_problem_generator",
+    "filename": "assets/svg_candidate/openai_problem_generator.png",
+    "bbox_xywh": [
+      548,
+      954,
+      52,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat logo-like line icon in problem generation block"
+  },
+  {
+    "slot_id": "slot_problem_doc",
+    "filename": "assets/svg_candidate/problem_doc.png",
+    "bbox_xywh": [
+      763,
+      956,
+      112,
+      69
+    ],
+    "classification": "svg_candidate",
+    "reason": "small folded document with editable colored text and simple outline"
+  },
+  {
+    "slot_id": "slot_pddl_solver_icon",
+    "filename": "assets/svg_candidate/pddl_solver_icon.png",
+    "bbox_xywh": [
+      1017,
+      702,
+      70,
+      70
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple hierarchy/solver icon composed of squares and connector lines"
+  }
+]

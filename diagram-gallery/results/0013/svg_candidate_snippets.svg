@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+<defs>
+  <marker id="arrow_green" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#39856f"/>
+  </marker>
+</defs>
+<g id="svg_icon_neural_network" data-source-slot="slot_icon_neural_network" transform="translate(642,156)">
+  <g stroke="#394a50" stroke-width="2" fill="none" stroke-linecap="round">
+    <line x1="42" y1="8" x2="20" y2="18"/><line x1="42" y1="8" x2="63" y2="18"/>
+    <line x1="20" y1="18" x2="12" y2="34"/><line x1="20" y1="18" x2="42" y2="34"/>
+    <line x1="63" y1="18" x2="42" y2="34"/><line x1="63" y1="18" x2="72" y2="34"/>
+    <line x1="12" y1="34" x2="22" y2="52"/><line x1="42" y1="34" x2="22" y2="52"/><line x1="42" y1="34" x2="62" y2="52"/>
+    <line x1="72" y1="34" x2="62" y2="52"/>
+    <line x1="12" y1="34" x2="42" y2="34"/><line x1="42" y1="34" x2="72" y2="34"/>
+    <line x1="20" y1="18" x2="63" y2="18"/><line x1="22" y1="52" x2="62" y2="52"/>
+  </g>
+  <g fill="#d8edf2" stroke="#394a50" stroke-width="2">
+    <circle cx="42" cy="8" r="5"/><circle cx="20" cy="18" r="5"/><circle cx="63" cy="18" r="5"/>
+    <circle cx="12" cy="34" r="5"/><circle cx="42" cy="34" r="5"/><circle cx="72" cy="34" r="5"/>
+    <circle cx="22" cy="52" r="5"/><circle cx="62" cy="52" r="5"/>
+  </g>
+</g>
+<g id="svg_icon_database" data-source-slot="slot_icon_database" transform="translate(742,165)">
+  <path d="M5,8 C5,4 35,4 35,8 L35,40 C35,45 5,45 5,40 Z" fill="#d9f1f1" stroke="#2f4a52" stroke-width="2"/>
+  <ellipse cx="20" cy="8" rx="15" ry="5.5" fill="#e7f6f5" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,18 C5,23 35,23 35,18" fill="none" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,29 C5,34 35,34 35,29" fill="none" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,40 C5,45 35,45 35,40" fill="none" stroke="#2f4a52" stroke-width="2"/>
+</g>
+<g id="svg_icon_cubes" data-source-slot="slot_icon_cubes" transform="translate(803,159)">
+  <polygon points="31.0,-2.0 44.2,5.2 31.0,13.6 17.8,5.2" fill="#e2f2f2" stroke="#344851" stroke-width="1.6"/><polygon points="17.8,5.2 31.0,13.6 31.0,29.2 17.8,22.0" fill="#8eb6c9" stroke="#344851" stroke-width="1.6"/><polygon points="44.2,5.2 31.0,13.6 31.0,29.2 44.2,22.0" fill="#c4e0e5" stroke="#344851" stroke-width="1.6"/>
+  <polygon points="18.0,22.0 31.2,29.2 18.0,37.6 4.8,29.2" fill="#cde6ea" stroke="#344851" stroke-width="1.6"/><polygon points="4.8,29.2 18.0,37.6 18.0,53.2 4.8,46.0" fill="#4d8da8" stroke="#344851" stroke-width="1.6"/><polygon points="31.2,29.2 18.0,37.6 18.0,53.2 31.2,46.0" fill="#7eb3c8" stroke="#344851" stroke-width="1.6"/>
+  <polygon points="48.0,22.0 61.2,29.2 48.0,37.6 34.8,29.2" fill="#eef6f4" stroke="#344851" stroke-width="1.6"/><polygon points="34.8,29.2 48.0,37.6 48.0,53.2 34.8,46.0" fill="#b7d9dc" stroke="#344851" stroke-width="1.6"/><polygon points="61.2,29.2 48.0,37.6 48.0,53.2 61.2,46.0" fill="#dceeed" stroke="#344851" stroke-width="1.6"/>
+</g>
+<g id="svg_coarse_3d_representation" data-source-slot="slot_coarse_3d_representation" transform="translate(1026,158)">
+  <defs>
+    <radialGradient id="grad_rep_sphere" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#d7dddd"/><stop offset="55%" stop-color="#9da2a0"/><stop offset="100%" stop-color="#6f7372"/>
+    </radialGradient>
+    <radialGradient id="grad_rep_ball" cx="35%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#d5d6d3"/><stop offset="100%" stop-color="#747a78"/>
+    </radialGradient>
+  </defs>
+  <g stroke="#333" stroke-width="0.8" fill="none" opacity="0.9">
+    <path d="M8,18 L56,2 L104,18 L56,34 Z"/>
+    <path d="M8,18 L8,53 L56,69 L56,34"/>
+    <path d="M104,18 L104,53 L56,69"/>
+    <path d="M8,53 L56,36 L104,53"/>
+    <path d="M56,2 L56,34"/>
+  </g>
+  <circle cx="56" cy="43" r="16" fill="url(#grad_rep_sphere)" opacity="0.85"/>
+  <g transform="translate(150,34)">
+    <circle cx="0" cy="0" r="18" fill="url(#grad_rep_ball)" stroke="#666" stroke-width="0.8"/>
+    <g stroke="#575d5c" stroke-width="0.55" fill="none" opacity="0.8">
+      <ellipse cx="0" cy="0" rx="18" ry="5"/><ellipse cx="0" cy="0" rx="18" ry="10"/>
+      <ellipse cx="0" cy="0" rx="6" ry="18"/><ellipse cx="0" cy="0" rx="12" ry="18"/>
+      <line x1="-18" y1="0" x2="18" y2="0"/><line x1="0" y1="-18" x2="0" y2="18"/>
+    </g>
+  </g>
+  <g stroke="#555" stroke-width="0.8">
+    <polygon points="208,7 262,30 226,77 168,55" fill="#bfc4c4"/>
+    <polygon points="168,55 226,77 262,30 208,7" fill="#b7bbbb"/>
+    <line x1="168" y1="55" x2="208" y2="7"/>
+    <line x1="226" y1="77" x2="262" y2="30"/>
+  </g>
+</g>
+<g id="svg_vlm_brain" data-source-slot="slot_vlm_brain" transform="translate(592,357)">
+  <g fill="none" stroke="#2d5c48" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34,9 C27,2 17,6 16,15 C7,16 3,23 7,31 C0,37 5,49 16,47 C19,55 32,56 36,47 C41,56 55,54 56,45 C68,45 72,32 65,26 C69,16 61,8 51,10 C47,2 38,2 34,9 Z"/>
+    <path d="M34,9 C31,16 32,22 38,26"/>
+    <path d="M16,15 C24,16 27,22 25,28"/>
+    <path d="M7,31 C15,29 22,31 26,38"/>
+    <path d="M36,47 C37,38 34,31 26,28"/>
+    <path d="M51,10 C47,15 49,21 57,24"/>
+    <path d="M65,26 C56,27 50,31 48,39"/>
+    <path d="M56,45 C49,45 43,42 40,36"/>
+    <path d="M30,20 C37,18 45,20 48,26"/>
+  </g>
+</g>
+<g id="svg_motion_sequence" data-source-slot="slot_motion_sequence" transform="translate(918,368)">
+  <g transform="translate(2,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_0" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="35" cy="22" r="10" fill="url(#grad_motion_ball_0)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=0</text>
+</g>
+  <g transform="translate(101,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_1" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="28" cy="23" r="10" fill="url(#grad_motion_ball_1)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=1</text>
+</g>
+  <g transform="translate(205,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_2" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="40" cy="33" r="10" fill="url(#grad_motion_ball_2)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=2</text>
+</g>
+  <g transform="translate(310,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_3" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="56" cy="49" r="10" fill="url(#grad_motion_ball_3)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=3</text>
+</g>
+  <g stroke="#36716b" stroke-width="1.8" fill="none" marker-end="url(#arrow_green)">
+    <line x1="77" y1="38" x2="98" y2="38"/>
+    <line x1="181" y1="38" x2="202" y2="38"/>
+    <line x1="285" y1="38" x2="306" y2="38"/>
+  </g>
+  <text x="382" y="40" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#111">...</text>
+</g>
+<g id="svg_video_diffusion_icon" data-source-slot="slot_video_diffusion_icon" transform="translate(573,548)">
+  <g fill="none" stroke="#4c4a54" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18,31 C9,31 4,25 5,18 C6,10 14,7 21,11 C25,2 40,2 45,13 C52,12 60,17 60,26 C67,27 70,36 64,42 C60,46 54,45 51,45 L20,45 C12,45 7,40 8,34"/>
+    <line x1="25" y1="44" x2="25" y2="58"/>
+    <line x1="38" y1="44" x2="38" y2="66"/>
+    <line x1="51" y1="44" x2="51" y2="58"/>
+    <path d="M25,58 C22,58 20,60 20,63"/>
+    <path d="M51,58 C54,58 56,60 56,63"/>
+  </g>
+  <g fill="#4c4a54">
+    <circle cx="11" cy="62" r="3.2"/><circle cx="25" cy="64" r="3.2"/><circle cx="38" cy="70" r="3.2"/><circle cx="51" cy="64" r="3.2"/><circle cx="65" cy="62" r="3.2"/>
+  </g>
+</g>
+</svg>

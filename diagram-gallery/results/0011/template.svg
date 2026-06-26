@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1830" height="1152" viewBox="0 0 1830 1152">
+<defs>
+  <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L12,6 L0,12 z" fill="#075f7b"/>
+  </marker>
+  <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+    <rect width="10" height="10" fill="#f5f5f5"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#cfcfcf" stroke-width="4"/>
+  </pattern>
+  <style>
+    .txt { font-family: Arial, Helvetica, sans-serif; fill:#111; }
+    .hand { font-family: "Courier New", monospace; fill:#777; font-style:italic; letter-spacing:4px; }
+    .caption { font-family: "Courier New", monospace; fill:#111; font-weight:700; letter-spacing:4px; }
+    .thin { stroke:#075f7b; stroke-width:3; fill:none; }
+    .boxText { font-size:30px; }
+    .smallText { font-size:28px; }
+  </style>
+</defs>
+<rect x="0" y="0" width="1830" height="1152" fill="#ffffff"/>
+
+<rect x="151" y="13" width="1390" height="90" rx="10" ry="10" fill="none" stroke="#ee6c2f" stroke-width="3"/>
+<text x="288" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >LLM</text>
+<text x="462" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >retriever</text>
+<text x="687" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >answer</text>
+<rect x="858" y="34" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#111" stroke-width="4"/>
+<text x="932" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >chosen state</text>
+<rect x="1174" y="34" width="56" height="57" rx="6" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="4"/>
+<text x="1256" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >discarded state</text>
+<rect x="272" y="136" width="312" height="66" rx="8" ry="8" fill="#f7f7f7" stroke="#0a2b35" stroke-width="3"/>
+<text x="428" y="181" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="normal" text-anchor="middle" fill="#111" >Query</text>
+<line x1="427" y1="202" x2="427" y2="280" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="202" x2="135" y2="280" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="202" x2="674" y2="284" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="282" width="225" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="128" y="326" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query 1</text>
+<rect x="317" y="278" width="222" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="429" y="322" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query 1*</text>
+<text x="673" y="333" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="129" y1="361" x2="129" y2="448" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="356" x2="427" y2="448" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="18" y="450" width="226" height="78" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="494" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer 1</text>
+<rect x="314" y="450" width="233" height="78" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="430" y="494" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer 1*</text>
+<text x="127" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="422" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="675" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="130" y1="596" x2="130" y2="679" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="596" x2="427" y2="676" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="688" width="225" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="733" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query n</text>
+<rect x="316" y="683" width="223" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="429" y="728" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query n*</text>
+<text x="676" y="721" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="130" y1="766" x2="130" y2="855" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="761" x2="427" y2="851" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="854" width="226" height="80" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="900" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer n</text>
+<rect x="306" y="850" width="239" height="80" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="426" y="896" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer n*</text>
+<text x="674" y="894" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="123" y1="934" x2="123" y2="1012" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="420" y1="930" x2="420" y2="1011" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="674" y1="940" x2="674" y2="1012" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="35" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 1)</text>
+<text x="336" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 2)</text>
+<text x="589" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 3)</text>
+<text x="16" y="1136" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Rejection Sampling</text>
+<line x1="831" y1="132" x2="831" y2="1137" stroke="#b9b9b9" stroke-width="3" fill="none" stroke-dasharray="12 8"/>
+<line x1="831" y1="322" x2="1830" y2="322" stroke="#b9b9b9" stroke-width="3" fill="none" stroke-dasharray="12 8"/>
+<text x="858" y="165" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Training</text>
+<path d="M917 188 H1138 Q1149 188 1149 199 V267 Q1149 278 1138 278 H981 L948 300 V278 H917 Q906 278 906 267 V199 Q906 188 917 188 Z" fill="#ffffff" stroke="#111" stroke-width="5"/>
+<text x="1028" y="238" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >Current State</text>
+<line x1="1156" y1="238" x2="1225" y2="238" stroke="#1398cf" stroke-width="4" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1235" y="186" width="254" height="77" rx="8" ry="8" fill="#ffd2bd" stroke="#0a2b35" stroke-width="3"/>
+<text x="1362" y="234" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="normal" text-anchor="middle" fill="#111" >LLM</text>
+<line x1="1499" y1="238" x2="1564" y2="238" stroke="#1398cf" stroke-width="4" fill="none" marker-end="url(#arrowTeal)"/>
+<path d="M1595 187 H1770 Q1783 187 1783 200 V267 Q1783 280 1770 280 H1632 L1605 299 V280 H1595 Q1582 280 1582 267 V200 Q1582 187 1595 187 Z" fill="#ffffff" stroke="#111" stroke-width="5"/>
+<text x="1690" y="238" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >Next Action</text>
+<text x="860" y="1134" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Inference</text>
+<ellipse cx="990" cy="386" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="990" y="396" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="990" y1="429" x2="990" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="963" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="990" y1="565" x2="990" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="990" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="990" y1="693" x2="990" y2="754" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="963" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="990" y1="811" x2="990" y2="869" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<ellipse cx="991" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="991" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<text x="927" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Greedy</text>
+<ellipse cx="1244" cy="385" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1244" y="395" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="1244" y1="429" x2="1144" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1244" y1="429" x2="1244" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1244" y1="429" x2="1343" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1115" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1217" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1320" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1143" y1="565" x2="1143" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1245" y1="565" x2="1245" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1348" y1="565" x2="1348" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1141" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="1245" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="1348" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1143" y1="693" x2="1143" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1245" y1="693" x2="1245" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1348" y1="693" x2="1348" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1116" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1218" y="754" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1322" y="754" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1144" y1="811" x2="1245" y2="872" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1246" y1="811" x2="1246" y2="872" stroke="#b9b9b9" stroke-width="3" fill="none" marker-end="url(#arrowTeal)" opacity="0.65"/>
+<line x1="1350" y1="811" x2="1246" y2="872" stroke="#b9b9b9" stroke-width="3" fill="none" marker-end="url(#arrowTeal)" opacity="0.65"/>
+<ellipse cx="1246" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1246" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<text x="1160" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Best-of-N</text>
+<ellipse cx="1620" cy="385" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1620" y="395" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="1620" y1="429" x2="1517" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1620" y1="429" x2="1620" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1620" y1="429" x2="1717" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1490" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1593" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1689" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1428" y="608" width="130" height="244" fill="none" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1517" y1="565" x2="1493" y2="608" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1454" y="629" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1503" y="629" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1470" y1="659" x2="1470" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1519" y1="659" x2="1519" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1494" y="729" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1470" y1="750" x2="1470" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1519" y1="750" x2="1519" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1454" y="811" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1503" y="811" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<text x="1433" y="886" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="start" fill="#111" >rollouts</text>
+<line x1="1620" y1="565" x2="1620" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1620" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1620" y1="693" x2="1620" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1595" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1622" y1="811" x2="1622" y2="869" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<ellipse cx="1623" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1623" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<rect x="1693" y="606" width="129" height="246" fill="none" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1717" y1="565" x2="1758" y2="607" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1708" y="627" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1760" y="627" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1724" y1="657" x2="1724" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1776" y1="657" x2="1776" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1751" y="729" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1724" y1="750" x2="1724" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1776" y1="750" x2="1776" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1708" y="810" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1760" y="810" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<text x="1700" y="886" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="start" fill="#111" >rollouts</text>
+<text x="1512" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Tree Search</text>
+
+<!-- Asset placeholders: icon-like non-layout elements -->
+
+<g id="slot_legend_llm" data-bbox="[175,18,80,76]" data-role="asset">
+  <rect x="175" y="18" width="80" height="76" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="175" y1="18" x2="255" y2="94" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="255" y1="18" x2="175" y2="94" stroke="#aaa" stroke-width="1.2"/>
+  <text x="215.0" y="56.0" font-size="11.4" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_legend_retriever" data-bbox="[392,31,62,62]" data-role="asset">
+  <rect x="392" y="31" width="62" height="62" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="392" y1="31" x2="454" y2="93" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="454" y1="31" x2="392" y2="93" stroke="#aaa" stroke-width="1.2"/>
+  <text x="423.0" y="62.0" font-size="8.9" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_legend_answer" data-bbox="[612,25,64,67]" data-role="asset">
+  <rect x="612" y="25" width="64" height="67" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="612" y1="25" x2="676" y2="92" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="676" y1="25" x2="612" y2="92" stroke="#aaa" stroke-width="1.2"/>
+  <text x="644.0" y="58.5" font-size="9.1" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_root" data-bbox="[38,202,78,72]" data-role="asset">
+  <rect x="38" y="202" width="78" height="72" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="38" y1="202" x2="116" y2="274" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="116" y1="202" x2="38" y2="274" stroke="#aaa" stroke-width="1.2"/>
+  <text x="77.0" y="238.0" font-size="11.1" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col1_mid" data-bbox="[147,369,80,78]" data-role="asset">
+  <rect x="147" y="369" width="80" height="78" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="147" y1="369" x2="227" y2="447" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="227" y1="369" x2="147" y2="447" stroke="#aaa" stroke-width="1.2"/>
+  <text x="187.0" y="408.0" font-size="11.4" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col1_lower" data-bbox="[32,607,88,83]" data-role="asset">
+  <rect x="32" y="607" width="88" height="83" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="32" y1="607" x2="120" y2="690" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="120" y1="607" x2="32" y2="690" stroke="#aaa" stroke-width="1.2"/>
+  <text x="76.0" y="648.5" font-size="12.6" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col1_bottom" data-bbox="[147,785,80,83]" data-role="asset">
+  <rect x="147" y="785" width="80" height="83" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="147" y1="785" x2="227" y2="868" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="227" y1="785" x2="147" y2="868" stroke="#aaa" stroke-width="1.2"/>
+  <text x="187.0" y="826.5" font-size="11.4" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col2_mid" data-bbox="[443,368,82,78]" data-role="asset">
+  <rect x="443" y="368" width="82" height="78" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="443" y1="368" x2="525" y2="446" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="525" y1="368" x2="443" y2="446" stroke="#aaa" stroke-width="1.2"/>
+  <text x="484.0" y="407.0" font-size="11.7" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col2_lower" data-bbox="[330,607,88,83]" data-role="asset">
+  <rect x="330" y="607" width="88" height="83" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="330" y1="607" x2="418" y2="690" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="418" y1="607" x2="330" y2="690" stroke="#aaa" stroke-width="1.2"/>
+  <text x="374.0" y="648.5" font-size="12.6" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_col2_bottom" data-bbox="[444,785,82,83]" data-role="asset">
+  <rect x="444" y="785" width="82" height="83" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="444" y1="785" x2="526" y2="868" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="526" y1="785" x2="444" y2="868" stroke="#aaa" stroke-width="1.2"/>
+  <text x="485.0" y="826.5" font-size="11.7" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_llm_chain3" data-bbox="[688,893,95,90]" data-role="asset">
+  <rect x="688" y="893" width="95" height="90" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="688" y1="893" x2="783" y2="983" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="783" y1="893" x2="688" y2="983" stroke="#aaa" stroke-width="1.2"/>
+  <text x="735.5" y="938.0" font-size="13.0" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_retriever_col1_upper" data-bbox="[57,380,66,63]" data-role="asset">
+  <rect x="57" y="380" width="66" height="63" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="57" y1="380" x2="123" y2="443" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="123" y1="380" x2="57" y2="443" stroke="#aaa" stroke-width="1.2"/>
+  <text x="90.0" y="411.5" font-size="9.4" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_retriever_col1_lower" data-bbox="[57,790,67,64]" data-role="asset">
+  <rect x="57" y="790" width="67" height="64" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="57" y1="790" x2="124" y2="854" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="124" y1="790" x2="57" y2="854" stroke="#aaa" stroke-width="1.2"/>
+  <text x="90.5" y="822.0" font-size="9.6" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_retriever_col2_upper" data-bbox="[352,375,68,66]" data-role="asset">
+  <rect x="352" y="375" width="68" height="66" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="352" y1="375" x2="420" y2="441" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="420" y1="375" x2="352" y2="441" stroke="#aaa" stroke-width="1.2"/>
+  <text x="386.0" y="408.0" font-size="9.7" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_retriever_col2_lower" data-bbox="[352,786,68,66]" data-role="asset">
+  <rect x="352" y="786" width="68" height="66" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="352" y1="786" x2="420" y2="852" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="420" y1="786" x2="352" y2="852" stroke="#aaa" stroke-width="1.2"/>
+  <text x="386.0" y="819.0" font-size="9.7" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_answer_chain1" data-bbox="[48,935,64,62]" data-role="asset">
+  <rect x="48" y="935" width="64" height="62" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="48" y1="935" x2="112" y2="997" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="112" y1="935" x2="48" y2="997" stroke="#aaa" stroke-width="1.2"/>
+  <text x="80.0" y="966.0" font-size="9.1" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_answer_chain2" data-bbox="[344,935,64,62]" data-role="asset">
+  <rect x="344" y="935" width="64" height="62" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="344" y1="935" x2="408" y2="997" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="408" y1="935" x2="344" y2="997" stroke="#aaa" stroke-width="1.2"/>
+  <text x="376.0" y="966.0" font-size="9.1" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_left_answer_chain3" data-bbox="[602,934,66,64]" data-role="asset">
+  <rect x="602" y="934" width="66" height="64" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="602" y1="934" x2="668" y2="998" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="668" y1="934" x2="602" y2="998" stroke="#aaa" stroke-width="1.2"/>
+  <text x="635.0" y="966.0" font-size="9.4" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_training_flame" data-bbox="[1236,215,38,47]" data-role="asset">
+  <rect x="1236" y="215" width="38" height="47" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1236" y1="215" x2="1274" y2="262" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1274" y1="215" x2="1236" y2="262" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1255.0" y="238.5" font-size="8.0" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_best_of_n_reward" data-bbox="[1117,824,64,68]" data-role="asset">
+  <rect x="1117" y="824" width="64" height="68" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1117" y1="824" x2="1181" y2="892" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1181" y1="824" x2="1117" y2="892" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1149.0" y="858.0" font-size="9.1" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_selected_check" data-bbox="[388,1073,55,53]" data-role="asset">
+  <rect x="388" y="1073" width="55" height="53" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="388" y1="1073" x2="443" y2="1126" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="443" y1="1073" x2="388" y2="1126" stroke="#aaa" stroke-width="1.2"/>
+  <text x="415.5" y="1099.5" font-size="8.0" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+</svg>

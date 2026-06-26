@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1839" height="794" viewBox="0 0 1839 794">
+  <defs>
+    <marker id="arrowBlue" markerWidth="13" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L13 5 L0 10 Z" fill="#85a8dc"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="13" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L13 5 L0 10 Z" fill="#ad72a1"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-family: "Times New Roman", Georgia, serif; font-weight: 700; font-size: 39px; letter-spacing: 1px; fill: #111; }
+    .label { font-family: "Times New Roman", Georgia, serif; font-size: 30px; fill:#111; }
+    .serifText { font-family: "Times New Roman", Georgia, serif; font-size: 30px; fill:#111; }
+    .italicHead { font-family: "Times New Roman", Georgia, serif; font-size: 37px; font-weight: 700; font-style: italic; fill:#111; }
+    .hand { font-family: "Comic Sans MS", "Marker Felt", cursive; font-size: 31px; font-weight: 700; letter-spacing: 2px; }
+    .orthText { font-family: "Times New Roman", Georgia, serif; font-size: 34px; font-weight: 700; fill:#000; }
+    .modelText { font-family: "Times New Roman", Georgia, serif; font-size: 39px; font-weight: 700; letter-spacing: 2px; fill:#000; }
+  </style>
+  <!-- template.svg: layout and placeholders only; no real asset content is embedded. -->
+  <rect x="0" y="0" width="1839" height="794" fill="#ffffff"/>
+  <rect x="0" y="24" width="636" height="273" rx="23" ry="23" fill="#e6e6e6"/>
+  <text x="318" y="64" text-anchor="middle" class="title">Expert Knowledge</text>
+  <g id="slot_expert_drawing" data-bbox="[35,82,240,170]" data-role="asset">
+    <rect x="35" y="82" width="240" height="170" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="35" y1="82" x2="275" y2="252" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="275" y1="82" x2="35" y2="252" stroke="#aaa" stroke-width="1.5"/>
+    <text x="155.0" y="167.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_constraints_icon" data-bbox="[318,104,100,130]" data-role="asset">
+    <rect x="318" y="104" width="100" height="130" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="318" y1="104" x2="418" y2="234" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="418" y1="104" x2="318" y2="234" stroke="#aaa" stroke-width="1.5"/>
+    <text x="368.0" y="169.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_text_icon" data-bbox="[498,126,92,100]" data-role="asset">
+    <rect x="498" y="126" width="92" height="100" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="498" y1="126" x2="590" y2="226" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="590" y1="126" x2="498" y2="226" stroke="#aaa" stroke-width="1.5"/>
+    <text x="544.0" y="176.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_parameter_space_icon" data-bbox="[288,588,138,150]" data-role="asset">
+    <rect x="288" y="588" width="138" height="150" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="288" y1="588" x2="426" y2="738" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="426" y1="588" x2="288" y2="738" stroke="#aaa" stroke-width="1.5"/>
+    <text x="357.0" y="663.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_dxf_icon" data-bbox="[995,96,146,145]" data-role="asset">
+    <rect x="995" y="96" width="146" height="145" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="995" y1="96" x2="1141" y2="241" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1141" y1="96" x2="995" y2="241" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1068.0" y="168.5" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_code_python_icon" data-bbox="[1070,500,185,170]" data-role="asset">
+    <rect x="1070" y="500" width="185" height="170" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="1070" y1="500" x2="1255" y2="670" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1255" y1="500" x2="1070" y2="670" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1162.5" y="585.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_ortho_front" data-bbox="[1466,47,178,137]" data-role="asset">
+    <rect x="1466" y="47" width="178" height="137" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="1466" y1="47" x2="1644" y2="184" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1644" y1="47" x2="1466" y2="184" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1555.0" y="115.5" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_ortho_side" data-bbox="[1676,47,143,136]" data-role="asset">
+    <rect x="1676" y="47" width="143" height="136" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="1676" y1="47" x2="1819" y2="183" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1819" y1="47" x2="1676" y2="183" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1747.5" y="115.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_ortho_top" data-bbox="[1468,212,185,120]" data-role="asset">
+    <rect x="1468" y="212" width="185" height="120" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="1468" y1="212" x2="1653" y2="332" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1653" y1="212" x2="1468" y2="332" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1560.5" y="272.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_model_3d" data-bbox="[1518,402,300,336]" data-role="asset">
+    <rect x="1518" y="402" width="300" height="336" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="1518" y1="402" x2="1818" y2="738" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1818" y1="402" x2="1518" y2="738" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1668.0" y="570.0" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <text x="155" y="282" text-anchor="middle" class="label">Drawing</text>
+  <text x="370" y="282" text-anchor="middle" class="label">Constraints</text>
+  <text x="546" y="282" text-anchor="middle" class="label">Text</text>
+  <rect x="346" y="298" width="24" height="221" fill="#66aba0"/>
+  <polygon points="319,516 397,516 358,563" fill="#66aba0"/>
+  <text x="481" y="368" text-anchor="middle" class="serifText">Inter-/Intra-View</text>
+  <text x="481" y="402" text-anchor="middle" class="serifText">Constraints</text>
+  <text x="155" y="425" text-anchor="middle" class="hand" fill="#66a79c">Step 1:</text>
+  <text x="154" y="463" text-anchor="middle" class="hand" fill="#66a79c">Constraint-Guided</text>
+  <text x="154" y="501" text-anchor="middle" class="hand" fill="#66a79c">Parameter Sampling</text>
+  <text x="356" y="771" text-anchor="middle" class="label">Parameter Space</text>
+  <path d="M456 603 H630 Q654 603 654 579 V190 Q654 166 678 166 H970" stroke="#85a8dc" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M456 603 H1046" stroke="#ad72a1" stroke-width="4" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M1148 167 H1427" stroke="#85a8dc" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M1264 583 C1346 583 1433 583 1517 584" stroke="#ad72a1" stroke-width="4" fill="none" marker-end="url(#arrowPurple)"/>
+  <text x="735" y="87" class="italicHead">Layers</text>
+  <text x="735" y="129" class="italicHead">separating</text>
+  <text x="736" y="529" class="italicHead">Entities</text>
+  <text x="736" y="571" class="italicHead">separating</text>
+  <text x="1197" y="137" class="italicHead">Rendering</text>
+  <text x="1304" y="559" class="italicHead">Execute</text>
+  <text x="668" y="385" font-family="Comic Sans MS, Marker Felt, cursive" font-size="39" fill="#111">ez</text>
+  <text x="717" y="385" font-family="Comic Sans MS, Marker Felt, cursive" font-size="39" fill="#8b95e6">dxf</text>
+  <text x="1085" y="271" text-anchor="middle" class="hand" fill="#86a8dc">Step 2: 2D Drawing and Raster</text>
+  <text x="1085" y="310" text-anchor="middle" class="hand" fill="#86a8dc">Image Generation</text>
+  <text x="1029" y="780" text-anchor="middle" class="hand" fill="#b677a3">Step 3: 3D Model Generation</text>
+  <rect x="1439" y="11" width="399" height="349" rx="31" ry="31" fill="none" stroke="#000" stroke-width="2.4" stroke-dasharray="8 8"/>
+  <text x="1736" y="259" text-anchor="middle" class="orthText">Orthographic</text>
+  <text x="1736" y="294" text-anchor="middle" class="orthText">Projection</text>
+  <text x="1669" y="791" text-anchor="middle" class="modelText">3-D Model</text>
+</svg>

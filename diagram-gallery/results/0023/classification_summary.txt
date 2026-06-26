@@ -1,0 +1,11 @@
+svg_candidate count: 7
+raster_required count: 0
+
+Asset classifications:
+- slot_augtraj_scaling_graph: svg_candidate (assets/svg_candidate/augtraj_scaling_graph.png)
+- slot_augtraj_rotation_translation: svg_candidate (assets/svg_candidate/augtraj_rotation_translation.png)
+- slot_context_encoder_heatmap: svg_candidate (assets/svg_candidate/context_encoder_heatmap.png)
+- slot_scene_select_tree_icon: svg_candidate (assets/svg_candidate/scene_select_tree_icon.png)
+- slot_scene_model_pool_icons: svg_candidate (assets/svg_candidate/scene_model_pool_icons.png)
+- slot_clustering_blobs: svg_candidate (assets/svg_candidate/clustering_blobs.png)
+- slot_big_tree_classifier: svg_candidate (assets/svg_candidate/big_tree_classifier.png)

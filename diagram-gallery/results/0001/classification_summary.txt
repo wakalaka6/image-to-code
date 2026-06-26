@@ -1,0 +1,15 @@
+Hybrid SVG asset classification summary
+svg_candidate count: 11
+raster_required count: 0
+
+- slot_left_sentiment_icon: svg_candidate (simple flat sentiment/gauge icon with clear outlines and solid colors)
+- slot_left_style_icon: svg_candidate (simple stylized letter/document icon using flat colors and strokes)
+- slot_left_topic_icon: svg_candidate (simple flat speech-bubble topic icon with clear boundaries)
+- slot_left_perplexity_icon: svg_candidate (simple flat human/question-mark icon with clear boundaries)
+- slot_title_meter_icon: svg_candidate (simple gauge indicator with flat color sectors and needle)
+- slot_benchmark_database_icon: svg_candidate (flat database/folder icon composed of simple shapes and arrows)
+- slot_intrinsic_classifier_icon: svg_candidate (flat magnifier and document classifier icon suitable for vector paths)
+- slot_extrinsic_injector_icon: svg_candidate (flat robot/injector icon with simple geometry and text)
+- slot_right_vanilla_icon: svg_candidate (simple vanilla flower/quill icon with flat fills and strokes)
+- slot_right_explicit_icon: svg_candidate (simple flat explicit lightbulb/hand icon with clear outlines)
+- slot_right_implicit_icon: svg_candidate (simple flat person/thumbs/document icon with clear outlines)

@@ -1,0 +1,9 @@
+svg_candidate: 7
+raster_required: 0
+- slot_icon_designer_fire: svg_candidate — simple flat flame icon with clear colors and boundaries
+- slot_icon_designer_snowflake: svg_candidate — simple blue snowflake line icon
+- slot_icon_magnifier: svg_candidate — simple magnifying glass icon composed of circle and handle
+- slot_icon_expert_snowflake: svg_candidate — simple blue snowflake line icon
+- slot_expert_trajectory_content: svg_candidate — small vector-style trajectory diagrams with nodes, lines and simple symbols
+- slot_icon_dyplanner_fire: svg_candidate — simple flat flame icon with clear colors and boundaries
+- slot_preference_result_content: svg_candidate — vector-style preference thumbnails, dotted boxes, check and cross marks

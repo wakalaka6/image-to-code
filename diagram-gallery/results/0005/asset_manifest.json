@@ -1,0 +1,326 @@
+[
+  {
+    "slot_id": "slot_screening_check_1",
+    "filename": "assets/svg_candidate/screening_check_1.png",
+    "bbox_xywh": [
+      116,
+      108,
+      28,
+      24
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_screening_check_2",
+    "filename": "assets/svg_candidate/screening_check_2.png",
+    "bbox_xywh": [
+      116,
+      136,
+      28,
+      24
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_screening_check_3",
+    "filename": "assets/svg_candidate/screening_check_3.png",
+    "bbox_xywh": [
+      116,
+      164,
+      28,
+      24
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_initial_survey_participant",
+    "filename": "assets/svg_candidate/initial_survey_participant.png",
+    "bbox_xywh": [
+      267,
+      225,
+      58,
+      67
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_skeptical_red_check",
+    "filename": "assets/svg_candidate/skeptical_red_check.png",
+    "bbox_xywh": [
+      13,
+      619,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_skeptical_red_cross_vaccine",
+    "filename": "assets/svg_candidate/skeptical_red_cross_vaccine.png",
+    "bbox_xywh": [
+      14,
+      649,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red cross mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_skeptical_red_cross_climate",
+    "filename": "assets/svg_candidate/skeptical_red_cross_climate.png",
+    "bbox_xywh": [
+      14,
+      680,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple red cross mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_mainstream_green_cross_covid",
+    "filename": "assets/svg_candidate/mainstream_green_cross_covid.png",
+    "bbox_xywh": [
+      306,
+      619,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green cross mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_mainstream_green_check_vaccine",
+    "filename": "assets/svg_candidate/mainstream_green_check_vaccine.png",
+    "bbox_xywh": [
+      306,
+      649,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_mainstream_green_check_climate",
+    "filename": "assets/svg_candidate/mainstream_green_check_climate.png",
+    "bbox_xywh": [
+      306,
+      680,
+      28,
+      26
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green tick mark with clear flat geometry"
+  },
+  {
+    "slot_id": "slot_legend_ai_expert_icon",
+    "filename": "assets/svg_candidate/legend_ai_expert_icon.png",
+    "bbox_xywh": [
+      1381,
+      34,
+      34,
+      46
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_legend_judge_icon",
+    "filename": "assets/svg_candidate/legend_judge_icon.png",
+    "bbox_xywh": [
+      1373,
+      96,
+      59,
+      56
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_consultancy_round1_ai_icon",
+    "filename": "assets/svg_candidate/consultancy_round1_ai_icon.png",
+    "bbox_xywh": [
+      622,
+      301,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_consultancy_round1_judge_icon",
+    "filename": "assets/svg_candidate/consultancy_round1_judge_icon.png",
+    "bbox_xywh": [
+      619,
+      397,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_consultancy_round2_ai_icon",
+    "filename": "assets/svg_candidate/consultancy_round2_ai_icon.png",
+    "bbox_xywh": [
+      622,
+      517,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_consultancy_round2_judge_icon",
+    "filename": "assets/svg_candidate/consultancy_round2_judge_icon.png",
+    "bbox_xywh": [
+      619,
+      617,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_consultancy_round3_ai_icon",
+    "filename": "assets/svg_candidate/consultancy_round3_ai_icon.png",
+    "bbox_xywh": [
+      622,
+      738,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_consultancy_round3_judge_icon",
+    "filename": "assets/svg_candidate/consultancy_round3_judge_icon.png",
+    "bbox_xywh": [
+      619,
+      834,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_debate_round1_left_ai_icon",
+    "filename": "assets/svg_candidate/debate_round1_left_ai_icon.png",
+    "bbox_xywh": [
+      1132,
+      301,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round1_right_ai_icon",
+    "filename": "assets/svg_candidate/debate_round1_right_ai_icon.png",
+    "bbox_xywh": [
+      1509,
+      301,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round1_judge_icon",
+    "filename": "assets/svg_candidate/debate_round1_judge_icon.png",
+    "bbox_xywh": [
+      1311,
+      389,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_debate_round2_left_ai_icon",
+    "filename": "assets/svg_candidate/debate_round2_left_ai_icon.png",
+    "bbox_xywh": [
+      1132,
+      516,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round2_right_ai_icon",
+    "filename": "assets/svg_candidate/debate_round2_right_ai_icon.png",
+    "bbox_xywh": [
+      1509,
+      516,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round2_judge_icon",
+    "filename": "assets/svg_candidate/debate_round2_judge_icon.png",
+    "bbox_xywh": [
+      1311,
+      612,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  },
+  {
+    "slot_id": "slot_debate_round3_left_ai_icon",
+    "filename": "assets/svg_candidate/debate_round3_left_ai_icon.png",
+    "bbox_xywh": [
+      1132,
+      737,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round3_right_ai_icon",
+    "filename": "assets/svg_candidate/debate_round3_right_ai_icon.png",
+    "bbox_xywh": [
+      1509,
+      737,
+      33,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple robot line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_debate_round3_judge_icon",
+    "filename": "assets/svg_candidate/debate_round3_judge_icon.png",
+    "bbox_xywh": [
+      1311,
+      834,
+      60,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with head and shoulder outlines"
+  }
+]

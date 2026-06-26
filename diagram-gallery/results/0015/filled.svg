@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1809" height="890" viewBox="0 0 1809 890">
+<defs>
+  <marker id="arrow_black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
+  </marker>
+  <marker id="arrow_gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#555"/>
+  </marker>
+  <marker id="arrow_green" viewBox="0 0 24 24" refX="21" refY="12" markerWidth="24" markerHeight="24" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L24,12 L0,24 Z" fill="#13a54a"/>
+  </marker>
+  <marker id="arrow_red" viewBox="0 0 24 24" refX="21" refY="12" markerWidth="24" markerHeight="24" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L24,12 L0,24 Z" fill="#ff6d6d"/>
+  </marker>
+  <marker id="arrow_red_small" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L12,6 L0,12 Z" fill="#f06464"/>
+  </marker>
+  <linearGradient id="pinkfade" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#ffcbd9" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#ff005b" stop-opacity="0.95"/>
+  </linearGradient>
+  <linearGradient id="greenfade" x1="0" x2="0" y1="1" y2="0">
+    <stop offset="0%" stop-color="#12a64a" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#b5f3c4" stop-opacity="0.7"/>
+  </linearGradient>
+  <style>
+    .title { font-family: "Times New Roman", serif; font-size: 35px; font-weight: 700; letter-spacing: .6px; }
+    .panel-title { font-family: "Times New Roman", serif; font-size: 35px; font-weight: 700; letter-spacing: .5px; }
+    .math { font-family: "Times New Roman", serif; font-size: 33px; font-style: italic; }
+    .label { font-family: Arial, sans-serif; font-size: 23px; }
+    .boxtext { font-family: "Times New Roman", serif; font-size: 33px; }
+    .mono { font-family: "Courier New", monospace; font-size: 26px; }
+    .thin { stroke:#555; stroke-width:3; fill:none; }
+  </style>
+</defs>
+<rect x="0" y="0" width="1932" height="913" fill="#ffffff"/>
+<rect x="7" y="16" width="1918" height="395" rx="18" fill="#fff" stroke="#000" stroke-width="2.7"/>
+<text x="28" y="52" class="title">Measure Difficulty based on Relative Reward Statistics</text>
+<g>
+  <rect x="16" y="123" width="300" height="180" rx="6" fill="#fff" stroke="#f4f4f4" stroke-width="2"/>
+  <image id="raster_top_video_frames_left" data-source-slot="slot_top_video_frames_left" href="assets/raster_required/top_video_frames_left.png" xlink:href="assets/raster_required/top_video_frames_left.png" x="39" y="136" width="105" height="72" preserveAspectRatio="none"/>
+  <image id="raster_top_video_frames_right" data-source-slot="slot_top_video_frames_right" href="assets/raster_required/top_video_frames_right.png" xlink:href="assets/raster_required/top_video_frames_right.png" x="194" y="136" width="106" height="72" preserveAspectRatio="none"/>
+  <text x="140" y="191" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+  <text x="32" y="226" font-family="Arial" font-size="24" font-weight="700">Question:</text>
+  <text x="139" y="225" font-family="Courier New" font-size="22" fill="#a66b36">What action</text>
+  <text x="32" y="255" font-family="Courier New" font-size="22" fill="#a66b36">should I take next in</text>
+  <text x="32" y="284" font-family="Courier New" font-size="22" fill="#a66b36">order to eat the celery?</text>
+</g>
+<path d="M316 213 L350 213" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<g>
+  <rect x="350" y="174" width="136" height="112" rx="9" fill="#fffdf4" stroke="#f0d7a7" stroke-width="4"/>
+  <text x="418" y="219" font-family="Arial" font-size="31" text-anchor="middle">Video</text>
+  <text x="418" y="258" font-family="Arial" font-size="31" text-anchor="middle">LLM</text>
+</g>
+<path d="M487 230 C516 230 514 146 543 146" class="thin" marker-end="url(#arrow_gray)"/>
+<path d="M487 230 C514 230 514 212 543 212" class="thin" marker-end="url(#arrow_gray)"/>
+<path d="M487 230 C516 230 514 318 543 318" class="thin" marker-end="url(#arrow_gray)"/>
+<g>
+  <rect x="543" y="117" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="154.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">1</tspan></text>
+</g>
+<g>
+  <rect x="543" y="184" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="221.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">2</tspan></text>
+</g>
+<g>
+  <rect x="543" y="287" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="324.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">G</tspan></text>
+</g>
+<text x="632" y="269" font-family="Arial" font-size="33" text-anchor="middle">...</text>
+<path d="M759 146 L812 146" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M759 212 L812 212" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M759 318 L812 318" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<text x="842" y="94" class="math">R<tspan baseline-shift="sub" font-style="normal" font-size="24">group</tspan></text>
+<g>
+  <rect x="812" y="108" width="168" height="242" rx="15" fill="#e8f6df" stroke="#7fd35c" stroke-width="4" stroke-dasharray="15 12"/>
+  <text x="842" y="158" class="math">R(x, y<tspan baseline-shift="super" font-size="20">1</tspan>)</text>
+  <text x="889" y="230" class="boxtext">...</text>
+  <text x="842" y="315" class="math">R(x, y<tspan baseline-shift="super" font-size="20">G</tspan>)</text>
+</g>
+<text x="1018" y="93" class="math">Â<tspan baseline-shift="super" font-size="18">(i)</tspan> = </text>
+<text x="1135" y="75" class="math">R(x, y<tspan baseline-shift="super" font-size="18">(i)</tspan>) − μ<tspan baseline-shift="sub" font-style="normal" font-size="20">r</tspan></text>
+<line x1="1135" y1="88" x2="1390" y2="88" stroke="#111" stroke-width="2"/>
+<text x="1235" y="121" class="math">σ<tspan baseline-shift="sub" font-style="normal" font-size="20">r</tspan></text>
+<rect x="1002" y="155" width="407" height="57" rx="7" fill="#fff" stroke="#f35d5d" stroke-width="4"/>
+<text x="1012" y="193" class="math">R<tspan baseline-shift="sub" font-style="normal" font-size="21">group</tspan> = {0.0, 0.0, ..., 0.0, 0.0}</text>
+<rect x="1002" y="240" width="407" height="57" rx="7" fill="#fff" stroke="#555" stroke-width="4"/>
+<text x="1012" y="278" class="math">R<tspan baseline-shift="sub" font-style="normal" font-size="21">group</tspan> = {1.1, 0.3, ..., 1.9, 0.8}</text>
+<rect x="1002" y="323" width="407" height="57" rx="7" fill="#fff" stroke="#02a844" stroke-width="4"/>
+<text x="1012" y="361" class="math">R<tspan baseline-shift="sub" font-style="normal" font-size="21">group</tspan> = {2.0, 2.0, ..., 2.0, 2.0}</text>
+<rect x="1431" y="25" width="484" height="378" rx="18" fill="#fff" stroke="#888" stroke-width="4" stroke-dasharray="15 10"/>
+<text x="1445" y="59" class="title">Dynamic Global Reward</text>
+<text x="1454" y="115" font-family="Arial" font-size="22">Reward</text>
+<path d="M1490 337 L1796 337" stroke="#111" stroke-width="2.5" marker-end="url(#arrow_black)"/>
+<path d="M1490 337 L1490 128" stroke="#111" stroke-width="2.5" marker-end="url(#arrow_black)"/>
+<line x1="1490" y1="158" x2="1780" y2="158" stroke="#d7d7d7" stroke-width="1.5"/>
+<line x1="1490" y1="194" x2="1780" y2="194" stroke="#d7d7d7" stroke-width="1.5"/>
+<line x1="1490" y1="230" x2="1780" y2="230" stroke="#d7d7d7" stroke-width="1.5"/>
+<line x1="1490" y1="266" x2="1780" y2="266" stroke="#d7d7d7" stroke-width="1.5"/>
+<line x1="1490" y1="302" x2="1780" y2="302" stroke="#d7d7d7" stroke-width="1.5"/>
+<rect x="1645" y="163" width="94" height="154" fill="#fff9a6" opacity="0.55"/>
+<polyline points="1490,321 1520,321 1550,285 1585,249 1655,215 1688,222 1740,193" fill="none" stroke="#2d6f8e" stroke-width="2"/>
+<path d="M1646 319 L1739 319" stroke="#f05d7a" stroke-width="2" marker-start="url(#arrow_red_small)" marker-end="url(#arrow_red_small)"/>
+<text x="1670" y="298" font-family="Times New Roman" font-style="italic" font-size="37">B<tspan baseline-shift="super" font-size="24">W</tspan></text>
+<g id="svg_reply_buffer_stack_icon" data-source-slot="slot_reply_buffer_stack_icon" transform="translate(1818,142) scale(1.000000,1.000000)">
+  <ellipse cx="28" cy="13" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 13 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 17 8 13Z" fill="#050505"/>
+  <ellipse cx="28" cy="22" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 27 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 31 8 27Z" fill="#050505"/>
+  <ellipse cx="28" cy="36" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 41 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 45 8 41Z" fill="#050505"/>
+  <ellipse cx="28" cy="50" rx="20" ry="7" fill="#050505"/>
+  <path d="M14 19 C24 23 34 23 43 19" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+  <path d="M14 33 C24 37 34 37 43 33" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+  <path d="M14 47 C24 51 34 51 43 47" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+</g>
+<text x="1845" y="267" font-family="Arial" font-size="24" text-anchor="middle">Reply</text>
+<text x="1845" y="294" font-family="Arial" font-size="24" text-anchor="middle">Buffer</text>
+<text x="1810" y="344" font-family="Arial" font-size="21">Iteration</text>
+<rect x="7" y="466" width="1918" height="439" rx="17" fill="#fff" stroke="#000" stroke-width="2.7"/>
+<path d="M1146 380 C1146 455 1088 446 1025 446 L566 446 C530 446 525 471 525 471" fill="none" stroke="#ff6f6f" stroke-width="28" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow_red)"/>
+<path d="M1231 380 C1231 446 1308 446 1352 446 L1430 446 C1468 446 1475 472 1475 472" fill="none" stroke="#11a64d" stroke-width="28" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow_green)"/>
+<rect x="7" y="466" width="1918" height="439" rx="17" fill="none" stroke="#000" stroke-width="2.7"/>
+<line x1="1031" y1="466" x2="1031" y2="905" stroke="#888" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="28" y="532" class="panel-title">Difficulty Decreasement Augmentation</text>
+<text x="1044" y="532" class="panel-title">Difficulty Increasement Augmentation</text>
+<g>
+  <rect x="16" y="545" width="302" height="250" rx="6" fill="#fff" stroke="#f4f4f4" stroke-width="2"/>
+  <image id="raster_decrease_video_frames_left" data-source-slot="slot_decrease_video_frames_left" href="assets/raster_required/decrease_video_frames_left.png" xlink:href="assets/raster_required/decrease_video_frames_left.png" x="39" y="559" width="105" height="72" preserveAspectRatio="none"/>
+  <image id="raster_decrease_video_frames_right" data-source-slot="slot_decrease_video_frames_right" href="assets/raster_required/decrease_video_frames_right.png" xlink:href="assets/raster_required/decrease_video_frames_right.png" x="194" y="559" width="106" height="72" preserveAspectRatio="none"/>
+  <text x="140" y="614" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+  <text x="32" y="687" font-family="Arial" font-size="24" font-weight="700">Question:</text>
+  <text x="139" y="687" font-family="Courier New" font-size="22" fill="#a66b36">What action</text>
+  <text x="32" y="717" font-family="Courier New" font-size="22" fill="#a66b36">should I take next in</text>
+  <text x="32" y="747" font-family="Courier New" font-size="22" fill="#a66b36">order to eat the celery?</text>
+  <text x="32" y="781" font-family="Arial" font-size="22" font-weight="700">GT:</text>
+  <text x="78" y="781" font-family="Courier New" font-size="22" fill="#05a344">B. pick up celery</text>
+</g>
+<path d="M318 675 L350 675" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<g>
+  <rect x="350" y="620" width="136" height="112" rx="9" fill="#fffdf4" stroke="#f0d7a7" stroke-width="4"/>
+  <text x="418" y="665" font-family="Arial" font-size="31" text-anchor="middle">Video</text>
+  <text x="418" y="704" font-family="Arial" font-size="31" text-anchor="middle">LLM</text>
+</g>
+<path d="M486 676 C517 676 514 595 543 595" class="thin" marker-end="url(#arrow_gray)"/>
+<path d="M486 676 C516 676 514 659 543 659" class="thin" marker-end="url(#arrow_gray)"/>
+<path d="M486 676 C517 676 514 762 543 762" class="thin" marker-end="url(#arrow_gray)"/>
+<g>
+  <rect x="543" y="565" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="602.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">1</tspan><tspan baseline-shift="sub" font-size="18">gt</tspan></text>
+</g>
+<g>
+  <rect x="543" y="630" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="667.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">2</tspan><tspan baseline-shift="sub" font-size="18">gt</tspan></text>
+</g>
+<g>
+  <rect x="543" y="735" width="216" height="57" fill="#fbfbfb" stroke="#4c76a1" stroke-width="3" rx="2"/>
+  <text x="565" y="772.5" class="boxtext" fill="#111">Response <tspan font-style="italic">y</tspan><tspan baseline-shift="super" font-size="21">G</tspan><tspan baseline-shift="sub" font-size="18">gt</tspan></text>
+</g>
+<text x="634" y="716" font-family="Arial" font-size="33" text-anchor="middle">...</text>
+<path d="M759 594 L812 594" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M759 659 L812 659" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M759 764 L812 764" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<text x="842" y="543" class="math">R<tspan baseline-shift="sub" font-style="normal" font-size="24">group</tspan></text>
+<rect x="812" y="552" width="168" height="240" rx="15" fill="#e8f6df" stroke="#7fd35c" stroke-width="4" stroke-dasharray="15 12"/>
+<text x="837" y="602" class="math">R(x, y<tspan baseline-shift="super" font-size="20">1</tspan><tspan baseline-shift="sub" font-style="normal" font-size="18">gt</tspan>)</text>
+<text x="879" y="674" class="boxtext">...</text>
+<text x="837" y="758" class="math">R(x, y<tspan baseline-shift="super" font-size="20">G</tspan><tspan baseline-shift="sub" font-style="normal" font-size="18">gt</tspan>)</text>
+<g id="svg_trophy_icon" data-source-slot="slot_trophy_icon" transform="translate(975,628) scale(1.000000,1.000000)">
+  <path d="M15 8 H38 L35 31 C34 38 19 38 18 31 Z" fill="#d9a51c" stroke="#87650e" stroke-width="2" />
+  <path d="M16 11 H37 L36 16 H17 Z" fill="#f0c942" opacity="0.9"/>
+  <path d="M15 12 C6 12 7 20 11 24 C13 26 15 25 17 24" fill="none" stroke="#b9820c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 12 C47 12 46 20 42 24 C40 26 38 25 36 24" fill="none" stroke="#b9820c" stroke-width="4" stroke-linecap="round"/>
+  <rect x="24" y="35" width="6" height="11" fill="#b9820c" stroke="#87650e" stroke-width="1.5"/>
+  <path d="M17 47 H37 L40 56 H14 Z" fill="#d9a51c" stroke="#87650e" stroke-width="2"/>
+  <rect x="11" y="55" width="31" height="4" rx="1.5" fill="#805c08"/>
+  <path d="M22 12 C20 20 21 27 26 32" fill="none" stroke="#fff1a7" stroke-width="2" opacity="0.55"/>
+</g>
+<text x="28" y="838" class="math">y<tspan baseline-shift="super" font-size="20">2</tspan><tspan baseline-shift="sub" font-style="normal" font-size="18">gt</tspan></text>
+<text x="96" y="837" font-family="Courier New" font-size="23">&lt;think&gt; The video shows a person preparing ... </text>
+<text x="662" y="837" font-family="Courier New" font-size="23" fill="#08a247">To make a slice of celery you</text>
+<text x="96" y="867" font-family="Courier New" font-size="23" fill="#08a247">should bring it from the bag.</text>
+<text x="481" y="867" font-family="Courier New" font-size="23"> &lt;/think&gt;&lt;answer&gt;B. pick up celery&lt;/answer&gt;</text>
+<path d="M433 889 L150 889" stroke="#14a34a" stroke-width="12" stroke-opacity="0.95" marker-end="url(#arrow_green)"/>
+<text x="445" y="899" font-family="Times New Roman" font-size="25" font-weight="700">Guidance Level</text>
+<image id="raster_increase_source_frames_left" data-source-slot="slot_increase_source_frames_left" href="assets/raster_required/increase_source_frames_left.png" xlink:href="assets/raster_required/increase_source_frames_left.png" x="1080" y="566" width="105" height="73" preserveAspectRatio="none"/>
+<image id="raster_increase_source_frames_right" data-source-slot="slot_increase_source_frames_right" href="assets/raster_required/increase_source_frames_right.png" xlink:href="assets/raster_required/increase_source_frames_right.png" x="1235" y="566" width="105" height="73" preserveAspectRatio="none"/>
+<text x="1188" y="613" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+<path d="M1340 620 C1420 620 1432 594 1570 596" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M1340 620 C1450 620 1425 703 1570 704" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<path d="M1340 620 C1450 620 1425 812 1570 812" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrow_gray)"/>
+<image id="raster_perturb_row1_frames_left" data-source-slot="slot_perturb_row1_frames_left" href="assets/raster_required/perturb_row1_frames_left.png" xlink:href="assets/raster_required/perturb_row1_frames_left.png" x="1567" y="566" width="112" height="73" preserveAspectRatio="none"/>
+<image id="raster_perturb_row1_frames_right" data-source-slot="slot_perturb_row1_frames_right" href="assets/raster_required/perturb_row1_frames_right.png" xlink:href="assets/raster_required/perturb_row1_frames_right.png" x="1720" y="566" width="112" height="73" preserveAspectRatio="none"/>
+<image id="raster_perturb_row2_frames_left" data-source-slot="slot_perturb_row2_frames_left" href="assets/raster_required/perturb_row2_frames_left.png" xlink:href="assets/raster_required/perturb_row2_frames_left.png" x="1568" y="672" width="112" height="73" preserveAspectRatio="none"/>
+<image id="raster_perturb_row2_frames_right" data-source-slot="slot_perturb_row2_frames_right" href="assets/raster_required/perturb_row2_frames_right.png" xlink:href="assets/raster_required/perturb_row2_frames_right.png" x="1721" y="672" width="112" height="73" preserveAspectRatio="none"/>
+<image id="raster_perturb_row3_frames_left" data-source-slot="slot_perturb_row3_frames_left" href="assets/raster_required/perturb_row3_frames_left.png" xlink:href="assets/raster_required/perturb_row3_frames_left.png" x="1569" y="779" width="112" height="73" preserveAspectRatio="none"/>
+<image id="raster_perturb_row3_frames_right" data-source-slot="slot_perturb_row3_frames_right" href="assets/raster_required/perturb_row3_frames_right.png" xlink:href="assets/raster_required/perturb_row3_frames_right.png" x="1722" y="779" width="112" height="73" preserveAspectRatio="none"/>
+<text x="1681" y="609" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+<text x="1683" y="715" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+<text x="1684" y="824" font-family="Arial" font-size="34" letter-spacing="5">...</text>
+<text x="1144" y="746" class="math">Δ<tspan baseline-shift="sub" font-size="22">R</tspan> &lt; 0</text>
+<text x="1144" y="806" class="math">Δ<tspan baseline-shift="sub" font-size="22">R</tspan> ≈ 0</text>
+<text x="1144" y="865" class="math">Δ<tspan baseline-shift="sub" font-size="22">R</tspan> &gt; 0</text>
+<line x1="1368" y1="711" x2="1368" y2="880" stroke="url(#pinkfade)" stroke-width="17" marker-end="url(#arrow_red)"/>
+<line x1="1398" y1="880" x2="1398" y2="711" stroke="url(#greenfade)" stroke-width="17" marker-end="url(#arrow_green)"/>
+<line x1="1854" y1="566" x2="1854" y2="846" stroke="url(#pinkfade)" stroke-width="17" marker-end="url(#arrow_red)"/>
+<text transform="translate(1877 678) rotate(90)" font-family="Times New Roman" font-weight="700" font-size="25">Perturbation Level</text>
+</svg>

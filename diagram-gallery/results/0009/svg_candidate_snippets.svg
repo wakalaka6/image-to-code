@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1045" viewBox="0 0 1840 1045">
+  <defs>
+    <marker id="arrowHead" markerWidth="34" markerHeight="24" refX="32" refY="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L34,12 L0,24 Z" fill="#777" stroke="#111" stroke-width="1.2"/>
+    </marker>
+    <linearGradient id="blueDensityGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8cff2" stop-opacity="0.95"/>
+      <stop offset="0.62" stop-color="#dfeaf9" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="orangeDensityGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffa04d" stop-opacity="0.92"/>
+      <stop offset="0.62" stop-color="#ffd9b5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <g id="svg_quality_distribution_testing" data-source-slot="slot_quality_distribution_testing" transform="translate(1144,57)">
+    <path d="M0,0 C38,16 95,47 139,78 C172,101 181,126 151,148 C124,166 66,169 48,205 C35,232 64,263 94,291 C122,316 111,338 72,347 C42,353 17,352 0,353 Z" fill="url(#blueDensityGrad)"/>
+    <path d="M0,0 C38,16 95,47 139,78 C172,101 181,126 151,148 C124,166 66,169 48,205 C35,232 64,263 94,291 C122,316 111,338 72,347 C42,353 17,352 0,353" fill="none" stroke="#183150" stroke-width="1.8" stroke-dasharray="7 6"/>
+  </g>
+
+  <g id="svg_likelihood_distribution_training_raw" data-source-slot="slot_likelihood_distribution_training_raw" transform="translate(1144,645)">
+    <path d="M0,0 C31,18 63,61 63,98 C63,132 20,162 8,202 C-5,247 50,272 111,287 C165,300 197,312 185,324 C166,343 67,352 0,355 Z" fill="url(#orangeDensityGrad)"/>
+    <path d="M0,0 C31,18 63,61 63,98 C63,132 20,162 8,202 C-5,247 50,272 111,287 C165,300 197,312 185,324 C166,343 67,352 0,355" fill="none" stroke="#183150" stroke-width="1.8" stroke-dasharray="7 6"/>
+  </g>
+
+  <g id="svg_likelihood_quality_distribution_calibrated" data-source-slot="slot_likelihood_quality_distribution_calibrated" transform="translate(1605,639)">
+    <path d="M0,0 C43,16 115,52 153,92 C184,125 171,147 132,162 C93,178 54,193 48,235 C43,271 87,294 101,324 C116,353 45,358 0,361 Z" fill="url(#orangeDensityGrad)"/>
+    <path d="M0,0 C43,16 115,52 153,92 C184,125 171,147 132,162 C93,178 54,193 48,235 C43,271 87,294 101,324 C116,353 45,358 0,361" fill="none" stroke="#183150" stroke-width="1.8" stroke-dasharray="7 6"/>
+  </g>
+</svg>

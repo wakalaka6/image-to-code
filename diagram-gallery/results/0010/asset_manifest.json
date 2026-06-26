@@ -1,0 +1,110 @@
+[
+  {
+    "slot_id": "slot_mllm_train_optional_flame",
+    "filename": "assets/svg_candidate/mllm_train_optional_flame.png",
+    "bbox_xywh": [
+      505,
+      58,
+      24,
+      34
+    ],
+    "classification": "svg_candidate",
+    "reason": "small stylized flame icon with clean boundaries and flat colors"
+  },
+  {
+    "slot_id": "slot_mllm_projector_flame",
+    "filename": "assets/svg_candidate/mllm_projector_flame.png",
+    "bbox_xywh": [
+      761,
+      317,
+      24,
+      31
+    ],
+    "classification": "svg_candidate",
+    "reason": "small stylized flame icon with clean boundaries and flat colors"
+  },
+  {
+    "slot_id": "slot_icrl_projector_snowflake",
+    "filename": "assets/svg_candidate/icrl_projector_snowflake.png",
+    "bbox_xywh": [
+      1426,
+      309,
+      26,
+      27
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake icon composed of thin strokes"
+  },
+  {
+    "slot_id": "slot_modality_icon_image",
+    "filename": "assets/svg_candidate/modality_icon_image.png",
+    "bbox_xywh": [
+      733,
+      626,
+      47,
+      39
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple black image icon that can be reconstructed with paths and shapes"
+  },
+  {
+    "slot_id": "slot_modality_icon_video",
+    "filename": "assets/svg_candidate/modality_icon_video.png",
+    "bbox_xywh": [
+      804,
+      621,
+      49,
+      46
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple black video or clapperboard icon with clear structure"
+  },
+  {
+    "slot_id": "slot_modality_icon_graph",
+    "filename": "assets/svg_candidate/modality_icon_graph.png",
+    "bbox_xywh": [
+      878,
+      619,
+      49,
+      48
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple node-link graph icon that can be rebuilt with circles and lines"
+  },
+  {
+    "slot_id": "slot_legend_train_optional",
+    "filename": "assets/svg_candidate/legend_train_optional.png",
+    "bbox_xywh": [
+      14,
+      786,
+      24,
+      35
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flame legend marker with clear silhouette"
+  },
+  {
+    "slot_id": "slot_legend_train_required",
+    "filename": "assets/svg_candidate/legend_train_required.png",
+    "bbox_xywh": [
+      224,
+      783,
+      27,
+      35
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flame legend marker with clear silhouette"
+  },
+  {
+    "slot_id": "slot_legend_train_free",
+    "filename": "assets/svg_candidate/legend_train_free.png",
+    "bbox_xywh": [
+      436,
+      787,
+      27,
+      28
+    ],
+    "classification": "svg_candidate",
+    "reason": "small snowflake legend marker with simple line geometry"
+  }
+]

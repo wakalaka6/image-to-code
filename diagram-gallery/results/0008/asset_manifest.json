@@ -1,0 +1,242 @@
+[
+  {
+    "slot_id": "slot_left_dataset_folder",
+    "filename": "assets/svg_candidate/left_dataset_folder.png",
+    "bbox_xywh": [
+      34,
+      489,
+      91,
+      105
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat folder/document dataset icon with clear edges"
+  },
+  {
+    "slot_id": "slot_command_sequence_doc",
+    "filename": "assets/svg_candidate/command_sequence_doc.png",
+    "bbox_xywh": [
+      246,
+      354,
+      76,
+      94
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat document icon labeled JSON"
+  },
+  {
+    "slot_id": "slot_text_description_doc",
+    "filename": "assets/svg_candidate/text_description_doc.png",
+    "bbox_xywh": [
+      246,
+      481,
+      76,
+      105
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat document icon labeled TEXT"
+  },
+  {
+    "slot_id": "slot_ground_truth_step_doc",
+    "filename": "assets/svg_candidate/ground_truth_step_doc.png",
+    "bbox_xywh": [
+      246,
+      663,
+      78,
+      91
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat document icon labeled STEP"
+  },
+  {
+    "slot_id": "slot_llm_whale_icon",
+    "filename": "assets/svg_candidate/llm_whale_icon.png",
+    "bbox_xywh": [
+      402,
+      380,
+      94,
+      63
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple stylized whale icon with flat color"
+  },
+  {
+    "slot_id": "slot_cadquery_logo_left",
+    "filename": "assets/svg_candidate/cadquery_logo_left.png",
+    "bbox_xywh": [
+      409,
+      463,
+      77,
+      75
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue square logo with white text"
+  },
+  {
+    "slot_id": "slot_discard_trash_icon",
+    "filename": "assets/svg_candidate/discard_trash_icon.png",
+    "bbox_xywh": [
+      407,
+      611,
+      88,
+      126
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat trash-bin icon with simple paper shapes"
+  },
+  {
+    "slot_id": "slot_generated_check_icon",
+    "filename": "assets/svg_candidate/generated_check_icon.png",
+    "bbox_xywh": [
+      560,
+      406,
+      58,
+      57
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green check mark symbol"
+  },
+  {
+    "slot_id": "slot_model_step_doc",
+    "filename": "assets/svg_candidate/model_step_doc.png",
+    "bbox_xywh": [
+      1669,
+      371,
+      76,
+      88
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat document icon labeled STEP"
+  },
+  {
+    "slot_id": "slot_model_text_doc",
+    "filename": "assets/svg_candidate/model_text_doc.png",
+    "bbox_xywh": [
+      1665,
+      507,
+      79,
+      105
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat document icon labeled TEXT"
+  },
+  {
+    "slot_id": "slot_cadquery_logo_right",
+    "filename": "assets/svg_candidate/cadquery_logo_right.png",
+    "bbox_xywh": [
+      1663,
+      686,
+      77,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue square logo with white text"
+  },
+  {
+    "slot_id": "slot_dataset_folder_plus",
+    "filename": "assets/svg_candidate/dataset_folder_plus.png",
+    "bbox_xywh": [
+      1810,
+      488,
+      88,
+      124
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat folder/document dataset icon with plus badge"
+  },
+  {
+    "slot_id": "slot_generated_model_plain",
+    "filename": "assets/raster_required/generated_model_plain.png",
+    "bbox_xywh": [
+      665,
+      420,
+      185,
+      82
+    ],
+    "classification": "raster_required",
+    "reason": "3D shaded CAD render with smooth gradients"
+  },
+  {
+    "slot_id": "slot_generated_model_holes",
+    "filename": "assets/raster_required/generated_model_holes.png",
+    "bbox_xywh": [
+      885,
+      414,
+      198,
+      90
+    ],
+    "classification": "raster_required",
+    "reason": "3D shaded CAD render with holes and gradients"
+  },
+  {
+    "slot_id": "slot_generated_model_flange",
+    "filename": "assets/raster_required/generated_model_flange.png",
+    "bbox_xywh": [
+      1097,
+      405,
+      187,
+      96
+    ],
+    "classification": "raster_required",
+    "reason": "3D shaded CAD render with complex highlights and depth"
+  },
+  {
+    "slot_id": "slot_point_model_plain",
+    "filename": "assets/raster_required/point_model_plain.png",
+    "bbox_xywh": [
+      669,
+      592,
+      188,
+      88
+    ],
+    "classification": "raster_required",
+    "reason": "point-cloud style model with dense texture"
+  },
+  {
+    "slot_id": "slot_point_model_holes",
+    "filename": "assets/raster_required/point_model_holes.png",
+    "bbox_xywh": [
+      886,
+      581,
+      198,
+      95
+    ],
+    "classification": "raster_required",
+    "reason": "point-cloud style model with dense stippled texture"
+  },
+  {
+    "slot_id": "slot_point_model_selected",
+    "filename": "assets/raster_required/point_model_selected.png",
+    "bbox_xywh": [
+      1098,
+      576,
+      187,
+      94
+    ],
+    "classification": "raster_required",
+    "reason": "point-cloud style model with shaded texture"
+  },
+  {
+    "slot_id": "slot_ground_truth_model_dark",
+    "filename": "assets/raster_required/ground_truth_model_dark.png",
+    "bbox_xywh": [
+      1409,
+      396,
+      188,
+      82
+    ],
+    "classification": "raster_required",
+    "reason": "3D shaded dark CAD model with gradients"
+  },
+  {
+    "slot_id": "slot_python_selected_model",
+    "filename": "assets/raster_required/python_selected_model.png",
+    "bbox_xywh": [
+      1408,
+      591,
+      190,
+      86
+    ],
+    "classification": "raster_required",
+    "reason": "point-cloud style selected model with dense texture"
+  }
+]

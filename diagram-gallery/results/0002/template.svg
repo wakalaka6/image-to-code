@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1533" height="851" viewBox="0 0 1533 851">
+  <defs>
+    <marker id="arrowhead" markerWidth="11" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#000000"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 29px; fill: #111; }
+      .box-label { font-family: Arial, Helvetica, sans-serif; font-size: 28px; fill:#111; }
+      .math { font-family: "DejaVu Serif", "Times New Roman", Times, serif; font-size: 29px; fill:#111; font-style: italic; }
+      .math-small { font-family: "DejaVu Serif", "Times New Roman", Times, serif; font-size: 28px; fill:#111; font-style: italic; }
+      .mono { font-family: "Courier New", Courier, monospace; font-size: 28px; font-weight: 700; fill:#111; }
+      .mono-small { font-family: "Courier New", Courier, monospace; font-size: 26px; font-weight: 700; fill:#111; }
+      .green-fill { fill:#e4f0df; stroke:#82b96a; stroke-width:2; }
+      .blue-fill { fill:#dceafc; stroke:#7da1d4; stroke-width:2; }
+      .pink-fill { fill:#f8d1d0; stroke:#bf5d5f; stroke-width:2; }
+      .lavender-fill { fill:#e7ddee; stroke:#9b7aad; stroke-width:2; }
+      .dark-fill { fill:#586b7a; stroke:#455562; stroke-width:2; }
+      .stage-bg { fill:#f7f7f7; stroke:#777; stroke-width:2; }
+      .arrow { fill:none; stroke:#000; stroke-width:2.2; stroke-linecap:square; stroke-linejoin:miter; }
+      .sep { stroke:#000; stroke-width:5; stroke-dasharray:15 12; }
+      .brace { fill:none; stroke:#000; stroke-width:2.2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1533" height="851" fill="#ffffff"/>
+
+  <!-- vertical dashed panel separators -->
+  <line class="sep" x1="21" y1="18" x2="21" y2="851"/>
+  <line class="sep" x1="636" y1="18" x2="636" y2="851"/>
+  <line class="sep" x1="941" y1="18" x2="941" y2="851"/>
+  <line class="sep" x1="1531" y1="18" x2="1531" y2="851"/>
+
+  <!-- panel titles -->
+  <text class="title" x="205" y="55" text-anchor="middle">1. Tokenize and combine</text>
+  <text class="title" x="171" y="90" text-anchor="middle">goal and tactic</text>
+
+  <text class="title" x="785" y="55" text-anchor="middle">2. Create goal-aware</text>
+  <text class="title" x="777" y="90" text-anchor="middle">tactic embedding</text>
+
+  <text class="title" x="1092" y="55" text-anchor="middle">3. Train embedding to</text>
+  <text class="title" x="1093" y="88" text-anchor="middle">encode transition</text>
+  <text class="title" x="1093" y="120" text-anchor="middle">data</text>
+
+  <!-- stage 1: tokenize and combine -->
+  <rect class="green-fill" x="89" y="323" width="177" height="70"/>
+  <text class="mono-small" x="107" y="367">rw [h_-1]</text>
+
+  <rect class="green-fill" x="330" y="217" width="95" height="281"/>
+  <line x1="330" y1="310" x2="425" y2="310" stroke="#82b96a" stroke-width="2"/>
+  <line x1="330" y1="404" x2="425" y2="404" stroke="#82b96a" stroke-width="2"/>
+  <text class="mono-small" x="378" y="272" text-anchor="middle">rw</text>
+  <text class="mono-small" x="378" y="366" text-anchor="middle">[</text>
+  <text class="mono-small" x="378" y="428" text-anchor="middle">...</text>
+  <path class="brace" d="M424,217 C444,217 448,220 448,244 L448,329 C448,347 458,354 464,357 C458,360 448,367 448,385 L448,471 C448,495 444,498 424,498"/>
+
+  <rect class="green-fill" x="471" y="310" width="95" height="95"/>
+  <text class="mono" x="519" y="366" text-anchor="middle">t</text>
+  <path class="arrow" d="M519,405 L519,493" marker-end="url(#arrowhead)"/>
+
+  <rect class="blue-fill" x="48" y="581" width="258" height="212"/>
+  <text class="math" x="64" y="612">a, b, c : C</text>
+  <text class="math" x="64" y="656">h₀ : a + b = 2c</text>
+  <text class="math" x="64" y="702">h₁ : c = i</text>
+  <text class="math" x="64" y="744">⊢ ac + bc = −2</text>
+
+  <rect class="blue-fill" x="330" y="546" width="95" height="281"/>
+  <line x1="330" y1="639" x2="425" y2="639" stroke="#7da1d4" stroke-width="2"/>
+  <line x1="330" y1="733" x2="425" y2="733" stroke="#7da1d4" stroke-width="2"/>
+  <text class="math" x="378" y="600" text-anchor="middle">a</text>
+  <text class="math" x="378" y="694" text-anchor="middle">,</text>
+  <text class="mono-small" x="378" y="793" text-anchor="middle">...</text>
+  <path class="brace" d="M424,546 C444,546 448,549 448,573 L448,660 C448,678 458,684 464,687 C458,690 448,696 448,714 L448,800 C448,824 444,827 424,827"/>
+
+  <rect class="blue-fill" x="471" y="638" width="95" height="95"/>
+  <text class="mono" x="519" y="695" text-anchor="middle">g</text>
+  <path class="arrow" d="M519,638 L519,574" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M519,733 L519,803 L678,803" marker-end="url(#arrowhead)"/>
+
+  <rect class="dark-fill" x="471" y="498" width="141" height="71"/>
+  <text x="541" y="543" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="27" fill="#ffffff">concat</text>
+  <path class="arrow" d="M612,534 L676,534 L676,263 L719,263" marker-end="url(#arrowhead)"/>
+
+  <!-- stage 2: goal-aware tactic embedding -->
+  <rect class="stage-bg" x="659" y="169" width="260" height="565"/>
+
+  <rect class="pink-fill" x="723" y="199" width="131" height="129"/>
+  <text class="box-label" x="789" y="226" text-anchor="middle">Encoder</text>
+  <text class="math" x="789" y="288" text-anchor="middle">E</text>
+
+  <path class="arrow" d="M789,328 L789,358"/>
+  <path class="arrow" d="M789,358 L754,400" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M789,358 L848,400" marker-end="url(#arrowhead)"/>
+
+  <rect class="green-fill" x="706" y="405" width="94" height="93"/>
+  <text class="mono" x="753" y="460" text-anchor="middle">t′</text>
+  <rect class="blue-fill" x="800" y="405" width="94" height="93"/>
+  <text class="mono" x="847" y="460" text-anchor="middle">g′</text>
+
+  <path class="arrow" d="M753,498 L753,517" marker-end="url(#arrowhead)"/>
+  <rect x="706" y="521" width="94" height="48" fill="#75628f" stroke="#5c4a73" stroke-width="2"/>
+  <text x="753" y="553" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="28" fill="#ffffff">pool</text>
+
+  <path class="arrow" d="M753,569 L753,612" marker-end="url(#arrowhead)"/>
+  <rect class="green-fill" x="706" y="616" width="94" height="94"/>
+  <text class="mono" x="753" y="673" text-anchor="middle">e</text>
+  <path class="arrow" d="M753,710 L753,764" marker-end="url(#arrowhead)"/>
+
+  <rect class="dark-fill" x="682" y="768" width="143" height="70"/>
+  <text x="753" y="813" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="27" fill="#ffffff">concat</text>
+
+  <!-- stage 3 connectors from embedding -->
+  <path class="arrow" d="M800,662 L965,662 L965,287 L1007,287" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M825,803 L1082,803 L1082,726" marker-end="url(#arrowhead)"/>
+
+  <!-- stage 3: train embedding to encode transition data -->
+  <rect class="pink-fill" x="1011" y="217" width="141" height="140"/>
+  <text class="box-label" x="1081" y="249" text-anchor="middle">Predictor</text>
+  <text class="math" x="1081" y="314" text-anchor="middle">P</text>
+
+  <path class="arrow" d="M1152,287 L1223,287"/>
+  <path class="arrow" d="M1223,287 L1223,217 L1253,217" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M1223,287 L1223,386 L1291,386" marker-end="url(#arrowhead)"/>
+
+  <rect class="lavender-fill" x="1257" y="169" width="225" height="95"/>
+  <text class="mono" x="1369" y="199" text-anchor="middle">Status (ŝ)</text>
+  <text class="mono" x="1369" y="249" text-anchor="middle">success</text>
+
+  <rect class="lavender-fill" x="1295" y="323" width="149" height="128"/>
+  <text class="mono" x="1369" y="371" text-anchor="middle">Time (τ̂)</text>
+  <text class="mono" x="1369" y="421" text-anchor="middle">0.1</text>
+
+  <rect class="pink-fill" x="988" y="534" width="188" height="188"/>
+  <text class="box-label" x="1082" y="591" text-anchor="middle">Decoder</text>
+  <text class="math" x="1082" y="655" text-anchor="middle">D</text>
+
+  <path class="arrow" d="M1176,628 L1222,628" marker-end="url(#arrowhead)"/>
+
+  <rect class="lavender-fill" x="1226" y="499" width="288" height="258"/>
+  <text class="mono" x="1370" y="542" text-anchor="middle">Output (ô)</text>
+  <text class="math-small" x="1260" y="576">a, b, c : C</text>
+  <text class="math-small" x="1260" y="620">h₀ : a + b = 2c</text>
+  <text class="math-small" x="1260" y="664">h₁ : c = i</text>
+  <text class="math-small" x="1260" y="707">⊢ ai + bi = −2</text>
+</svg>

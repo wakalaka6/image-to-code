@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1839" height="794" viewBox="0 0 1839 794">
+  <defs>
+    <marker id="arrowBlue" markerWidth="13" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L13 5 L0 10 Z" fill="#85a8dc"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="13" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L13 5 L0 10 Z" fill="#ad72a1"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-family: "Times New Roman", Georgia, serif; font-weight: 700; font-size: 39px; letter-spacing: 1px; fill: #111; }
+    .label { font-family: "Times New Roman", Georgia, serif; font-size: 30px; fill:#111; }
+    .serifText { font-family: "Times New Roman", Georgia, serif; font-size: 30px; fill:#111; }
+    .italicHead { font-family: "Times New Roman", Georgia, serif; font-size: 37px; font-weight: 700; font-style: italic; fill:#111; }
+    .hand { font-family: "Comic Sans MS", "Marker Felt", cursive; font-size: 31px; font-weight: 700; letter-spacing: 2px; }
+    .orthText { font-family: "Times New Roman", Georgia, serif; font-size: 34px; font-weight: 700; fill:#000; }
+    .modelText { font-family: "Times New Roman", Georgia, serif; font-size: 39px; font-weight: 700; letter-spacing: 2px; fill:#000; }
+  </style>
+  <!-- filled.svg: hybrid SVG. SVG candidates are vector code; raster-required assets are external images. -->
+  <rect x="0" y="0" width="1839" height="794" fill="#ffffff"/>
+  <rect x="0" y="24" width="636" height="273" rx="23" ry="23" fill="#e6e6e6"/>
+  <text x="318" y="64" text-anchor="middle" class="title">Expert Knowledge</text>
+  <image id="raster_expert_drawing" data-source-slot="slot_expert_drawing" href="assets/raster_required/expert_drawing.png" xlink:href="assets/raster_required/expert_drawing.png" x="35" y="82" width="240" height="170" preserveAspectRatio="none"/>
+  <g id="svg_constraints_icon" data-source-slot="slot_constraints_icon" transform="translate(318,104)">
+    <path d="M18 30 H83 Q90 30 90 37 V126 Q90 130 86 130 H12 Q8 130 8 126 V37 Q8 30 18 30 Z" fill="#2d2d2d"/>
+    <path d="M34 14 H43 Q47 4 55 4 Q64 4 67 14 H78 V33 H34 Z" fill="#2d2d2d"/>
+    <rect x="43" y="20" width="26" height="5" fill="#eeeeee"/>
+    <path d="M25 50 L41 66 M41 50 L25 66" stroke="#eeeeee" stroke-width="12" stroke-linecap="square"/>
+    <path d="M30 86 L48 104 L82 61" fill="none" stroke="#eeeeee" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+  <g id="svg_text_icon" data-source-slot="slot_text_icon" transform="translate(498,126)">
+    <rect x="5" y="15" width="82" height="80" rx="13" ry="13" fill="none" stroke="#050505" stroke-width="5"/>
+    <path d="M32 15 H53" stroke="#050505" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 10"/>
+    <line x1="20" y1="42" x2="73" y2="42" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+    <line x1="20" y1="61" x2="73" y2="61" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+    <line x1="20" y1="81" x2="73" y2="81" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g id="svg_parameter_space_icon" data-source-slot="slot_parameter_space_icon" transform="translate(288,588)">
+    <rect x="34" y="25" width="100" height="124" rx="8" fill="#000000"/>
+    <rect x="0" y="0" width="104" height="130" rx="8" fill="#000000"/>
+    <rect x="12" y="18" width="48" height="9" fill="#ffffff"/>
+    <line x1="12" y1="42" x2="93" y2="42" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="61" x2="93" y2="61" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="76" x2="82" y2="76" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="92" x2="93" y2="92" stroke="#ffffff" stroke-width="5"/>
+    <line x1="67" y1="106" x2="93" y2="106" stroke="#ffffff" stroke-width="5"/>
+  </g>
+  <g id="svg_dxf_icon" data-source-slot="slot_dxf_icon" transform="translate(995,96)">
+    <path d="M70 12 L139 12 L139 132 L70 132 Z" fill="#ffffff" stroke="#000000" stroke-width="6"/>
+    <path d="M0 2 L82 16 L82 140 L0 126 Z" fill="#ffffff" stroke="#000000" stroke-width="6" stroke-linejoin="miter"/>
+    <text x="43" y="81" transform="skewY(-5)" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#000000">DXF</text>
+  </g>
+  <g id="svg_code_python_icon" data-source-slot="slot_code_python_icon" transform="translate(1070,500)">
+    <rect x="7" y="2" width="154" height="166" rx="2" fill="#ffffff" stroke="#5d6872" stroke-width="6"/>
+    <rect x="28" y="22" width="55" height="22" fill="none" stroke="#2eaa92" stroke-width="5"/>
+    <rect x="30" y="70" width="57" height="23" fill="none" stroke="#2eaa92" stroke-width="5"/>
+    <line x1="58" y1="45" x2="58" y2="70" stroke="#bfc5c9" stroke-width="7"/>
+    <path d="M28 112 L51 136 L75 136" fill="none" stroke="#2e9cca" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M111 94 H154 Q169 94 169 109 V122 Q169 137 154 137 H132 V147 H96 Q83 147 83 133 Q83 119 96 119 H128 Q139 119 139 108 V102 H111 Z" fill="#2aa6df"/>
+    <path d="M132 72 H161 Q173 72 173 86 V102 H128 Q116 102 116 116 H99 V88 Q99 72 115 72 H132 Z" fill="#2aa6df"/>
+    <rect x="134" y="81" width="10" height="4" fill="#ffffff"/>
+    <rect x="120" y="153" width="10" height="4" fill="#ffffff"/>
+  </g>
+  <image id="raster_ortho_front" data-source-slot="slot_ortho_front" href="assets/raster_required/ortho_front.png" xlink:href="assets/raster_required/ortho_front.png" x="1466" y="47" width="178" height="137" preserveAspectRatio="none"/>
+  <image id="raster_ortho_side" data-source-slot="slot_ortho_side" href="assets/raster_required/ortho_side.png" xlink:href="assets/raster_required/ortho_side.png" x="1676" y="47" width="143" height="136" preserveAspectRatio="none"/>
+  <image id="raster_ortho_top" data-source-slot="slot_ortho_top" href="assets/raster_required/ortho_top.png" xlink:href="assets/raster_required/ortho_top.png" x="1468" y="212" width="185" height="120" preserveAspectRatio="none"/>
+  <image id="raster_model_3d" data-source-slot="slot_model_3d" href="assets/raster_required/model_3d.png" xlink:href="assets/raster_required/model_3d.png" x="1518" y="402" width="300" height="336" preserveAspectRatio="none"/>
+  <text x="155" y="282" text-anchor="middle" class="label">Drawing</text>
+  <text x="370" y="282" text-anchor="middle" class="label">Constraints</text>
+  <text x="546" y="282" text-anchor="middle" class="label">Text</text>
+  <rect x="346" y="298" width="24" height="221" fill="#66aba0"/>
+  <polygon points="319,516 397,516 358,563" fill="#66aba0"/>
+  <text x="481" y="368" text-anchor="middle" class="serifText">Inter-/Intra-View</text>
+  <text x="481" y="402" text-anchor="middle" class="serifText">Constraints</text>
+  <text x="155" y="425" text-anchor="middle" class="hand" fill="#66a79c">Step 1:</text>
+  <text x="154" y="463" text-anchor="middle" class="hand" fill="#66a79c">Constraint-Guided</text>
+  <text x="154" y="501" text-anchor="middle" class="hand" fill="#66a79c">Parameter Sampling</text>
+  <text x="356" y="771" text-anchor="middle" class="label">Parameter Space</text>
+  <path d="M456 603 H630 Q654 603 654 579 V190 Q654 166 678 166 H970" stroke="#85a8dc" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M456 603 H1046" stroke="#ad72a1" stroke-width="4" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M1148 167 H1427" stroke="#85a8dc" stroke-width="4" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M1264 583 C1346 583 1433 583 1517 584" stroke="#ad72a1" stroke-width="4" fill="none" marker-end="url(#arrowPurple)"/>
+  <text x="735" y="87" class="italicHead">Layers</text>
+  <text x="735" y="129" class="italicHead">separating</text>
+  <text x="736" y="529" class="italicHead">Entities</text>
+  <text x="736" y="571" class="italicHead">separating</text>
+  <text x="1197" y="137" class="italicHead">Rendering</text>
+  <text x="1304" y="559" class="italicHead">Execute</text>
+  <text x="668" y="385" font-family="Comic Sans MS, Marker Felt, cursive" font-size="39" fill="#111">ez</text>
+  <text x="717" y="385" font-family="Comic Sans MS, Marker Felt, cursive" font-size="39" fill="#8b95e6">dxf</text>
+  <text x="1085" y="271" text-anchor="middle" class="hand" fill="#86a8dc">Step 2: 2D Drawing and Raster</text>
+  <text x="1085" y="310" text-anchor="middle" class="hand" fill="#86a8dc">Image Generation</text>
+  <text x="1029" y="780" text-anchor="middle" class="hand" fill="#b677a3">Step 3: 3D Model Generation</text>
+  <rect x="1439" y="11" width="399" height="349" rx="31" ry="31" fill="none" stroke="#000" stroke-width="2.4" stroke-dasharray="8 8"/>
+  <text x="1736" y="259" text-anchor="middle" class="orthText">Orthographic</text>
+  <text x="1736" y="294" text-anchor="middle" class="orthText">Projection</text>
+  <text x="1669" y="791" text-anchor="middle" class="modelText">3-D Model</text>
+</svg>

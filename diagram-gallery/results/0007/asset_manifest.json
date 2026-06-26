@@ -1,0 +1,86 @@
+[
+  {
+    "slot_id": "slot_s_star_sequence",
+    "filename": "assets/svg_candidate/s_star_sequence.png",
+    "bbox_xywh": [
+      1120,
+      58,
+      374,
+      64
+    ],
+    "classification": "svg_candidate",
+    "reason": "token sequence composed of flat cells, simple text, and clean strokes"
+  },
+  {
+    "slot_id": "slot_cdpruner_selector_icon",
+    "filename": "assets/svg_candidate/cdpruner_selector_icon.png",
+    "bbox_xywh": [
+      1533,
+      65,
+      47,
+      47
+    ],
+    "classification": "svg_candidate",
+    "reason": "small circular selector icon with simple concentric geometry"
+  },
+  {
+    "slot_id": "slot_query_relevance_bar",
+    "filename": "assets/svg_candidate/query_relevance_bar.png",
+    "bbox_xywh": [
+      1120,
+      260,
+      374,
+      63
+    ],
+    "classification": "svg_candidate",
+    "reason": "single-row grayscale bar with rectangular cells"
+  },
+  {
+    "slot_id": "slot_selection_marker_top",
+    "filename": "assets/svg_candidate/selection_marker_top.png",
+    "bbox_xywh": [
+      1295,
+      329,
+      25,
+      24
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat blue X marker with clear outline"
+  },
+  {
+    "slot_id": "slot_feature_similarity_matrix",
+    "filename": "assets/svg_candidate/feature_similarity_matrix.png",
+    "bbox_xywh": [
+      1120,
+      351,
+      374,
+      374
+    ],
+    "classification": "svg_candidate",
+    "reason": "heatmap-like grid made of rectangular cells with flat colors"
+  },
+  {
+    "slot_id": "slot_selection_marker_right",
+    "filename": "assets/svg_candidate/selection_marker_right.png",
+    "bbox_xywh": [
+      1496,
+      527,
+      25,
+      24
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat blue X marker with clear outline"
+  },
+  {
+    "slot_id": "slot_query_relevance_column",
+    "filename": "assets/svg_candidate/query_relevance_column.png",
+    "bbox_xywh": [
+      1522,
+      351,
+      64,
+      374
+    ],
+    "classification": "svg_candidate",
+    "reason": "vertical grayscale relevance bar with rectangular cells"
+  }
+]

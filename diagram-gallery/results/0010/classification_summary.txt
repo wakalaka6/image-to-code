@@ -1,0 +1,13 @@
+svg_candidate count: 9
+raster_required count: 0
+
+Asset classifications:
+- slot_mllm_train_optional_flame: svg_candidate (assets/svg_candidate/mllm_train_optional_flame.png)
+- slot_mllm_projector_flame: svg_candidate (assets/svg_candidate/mllm_projector_flame.png)
+- slot_icrl_projector_snowflake: svg_candidate (assets/svg_candidate/icrl_projector_snowflake.png)
+- slot_modality_icon_image: svg_candidate (assets/svg_candidate/modality_icon_image.png)
+- slot_modality_icon_video: svg_candidate (assets/svg_candidate/modality_icon_video.png)
+- slot_modality_icon_graph: svg_candidate (assets/svg_candidate/modality_icon_graph.png)
+- slot_legend_train_optional: svg_candidate (assets/svg_candidate/legend_train_optional.png)
+- slot_legend_train_required: svg_candidate (assets/svg_candidate/legend_train_required.png)
+- slot_legend_train_free: svg_candidate (assets/svg_candidate/legend_train_free.png)

@@ -1,0 +1,38 @@
+[
+  {
+    "slot_id": "slot_quality_distribution_testing",
+    "filename": "assets/svg_candidate/quality_distribution_testing.png",
+    "bbox_xywh": [
+      1144,
+      57,
+      184,
+      353
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vector-style distribution shape with gradient fill and dashed contour"
+  },
+  {
+    "slot_id": "slot_likelihood_distribution_training_raw",
+    "filename": "assets/svg_candidate/likelihood_distribution_training_raw.png",
+    "bbox_xywh": [
+      1144,
+      645,
+      196,
+      355
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vector-style likelihood curve with flat/gradient fill and dashed outline"
+  },
+  {
+    "slot_id": "slot_likelihood_quality_distribution_calibrated",
+    "filename": "assets/svg_candidate/likelihood_quality_distribution_calibrated.png",
+    "bbox_xywh": [
+      1605,
+      639,
+      170,
+      361
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vector-style calibrated distribution shape with gradient fill and dashed outline"
+  }
+]

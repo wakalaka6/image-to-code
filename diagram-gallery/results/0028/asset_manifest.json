@@ -1,0 +1,170 @@
+[
+  {
+    "slot_id": "slot_input_aerial_stack",
+    "filename": "assets/raster_required/input_aerial_stack.png",
+    "bbox_xywh": [
+      18,
+      38,
+      282,
+      168
+    ],
+    "classification": "raster_required",
+    "reason": "stacked aerial video frames with photographic texture and small detection boxes"
+  },
+  {
+    "slot_id": "slot_visual_encoder_wedge",
+    "filename": "assets/svg_candidate/visual_encoder_wedge.png",
+    "bbox_xywh": [
+      312,
+      46,
+      134,
+      162
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple colored encoder wedge with two text labels and crisp boundaries"
+  },
+  {
+    "slot_id": "slot_scale_feature_stack",
+    "filename": "assets/svg_candidate/scale_feature_stack.png",
+    "bbox_xywh": [
+      458,
+      70,
+      132,
+      102
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple stacked parallelogram feature maps"
+  },
+  {
+    "slot_id": "slot_language_encoder_wedge",
+    "filename": "assets/svg_candidate/language_encoder_wedge.png",
+    "bbox_xywh": [
+      312,
+      252,
+      134,
+      148
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple colored encoder wedge with crisp boundaries"
+  },
+  {
+    "slot_id": "slot_lincat_tokens",
+    "filename": "assets/svg_candidate/lincat_tokens.png",
+    "bbox_xywh": [
+      485,
+      238,
+      108,
+      145
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple vertical LinCat block and small square tokens"
+  },
+  {
+    "slot_id": "slot_cross_scale_branch",
+    "filename": "assets/svg_candidate/cross_scale_branch.png",
+    "bbox_xywh": [
+      656,
+      26,
+      335,
+      190
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-style branch diagram made of boxes, token squares, arrows and text"
+  },
+  {
+    "slot_id": "slot_intra_scale_branch",
+    "filename": "assets/svg_candidate/intra_scale_branch.png",
+    "bbox_xywh": [
+      656,
+      216,
+      335,
+      214
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-style multimodality interaction branch with simple tokens and arrows"
+  },
+  {
+    "slot_id": "slot_multi_level_language_modulation",
+    "filename": "assets/svg_candidate/multi_level_language_modulation.png",
+    "bbox_xywh": [
+      1036,
+      56,
+      170,
+      138
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple rounded label block"
+  },
+  {
+    "slot_id": "slot_query_position_generator",
+    "filename": "assets/svg_candidate/query_position_generator.png",
+    "bbox_xywh": [
+      1036,
+      232,
+      170,
+      128
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple rounded label block"
+  },
+  {
+    "slot_id": "slot_spatial_decoder",
+    "filename": "assets/svg_candidate/spatial_decoder.png",
+    "bbox_xywh": [
+      1228,
+      31,
+      411,
+      360
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-style decoder block with tokens, arrows and rounded modules"
+  },
+  {
+    "slot_id": "slot_predicted_tube",
+    "filename": "assets/raster_required/predicted_tube.png",
+    "bbox_xywh": [
+      1640,
+      42,
+      160,
+      360
+    ],
+    "classification": "raster_required",
+    "reason": "predicted tube contains aerial video frames with photographic detail"
+  },
+  {
+    "slot_id": "slot_bottom_interaction_branch",
+    "filename": "assets/svg_candidate/bottom_interaction_branch.png",
+    "bbox_xywh": [
+      85,
+      480,
+      700,
+      405
+    ],
+    "classification": "svg_candidate",
+    "reason": "large schematic interaction branch composed of simple tokens, boxes and arrows"
+  },
+  {
+    "slot_id": "slot_bottom_fusion_branch",
+    "filename": "assets/svg_candidate/bottom_fusion_branch.png",
+    "bbox_xywh": [
+      792,
+      476,
+      583,
+      420
+    ],
+    "classification": "svg_candidate",
+    "reason": "schematic fusion branch with simple blocks, arrows and labels"
+  },
+  {
+    "slot_id": "slot_bottom_fusion_modules",
+    "filename": "assets/svg_candidate/bottom_fusion_modules.png",
+    "bbox_xywh": [
+      1404,
+      480,
+      246,
+      420
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple convolution and fusion submodules made of rectangles and arrows"
+  }
+]

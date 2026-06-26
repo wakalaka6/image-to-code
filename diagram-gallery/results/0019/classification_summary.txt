@@ -1,0 +1,6 @@
+svg_candidate: 2
+raster_required: 0
+
+Asset classification results:
+- slot_text_only_request_icon: svg_candidate — simple monochrome document icon with clear lines and flat fills
+- slot_image_text_request_icon: svg_candidate — simple flat picture icon with clear boundary and few colors

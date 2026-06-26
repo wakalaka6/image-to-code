@@ -1,0 +1,194 @@
+[
+  {
+    "slot_id": "slot_seq_cubes",
+    "filename": "assets/svg_candidate/seq_cubes.png",
+    "bbox_xywh": [
+      445,
+      92,
+      35,
+      185
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated blue cube icon stack with clear edges"
+  },
+  {
+    "slot_id": "slot_data_memory_icons",
+    "filename": "assets/svg_candidate/data_memory_icons.png",
+    "bbox_xywh": [
+      1244,
+      38,
+      86,
+      241
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated brain-memory line icons, suitable for SVG paths"
+  },
+  {
+    "slot_id": "slot_task_memory_icon",
+    "filename": "assets/svg_candidate/task_memory_icon.png",
+    "bbox_xywh": [
+      1250,
+      398,
+      77,
+      85
+    ],
+    "classification": "svg_candidate",
+    "reason": "single brain-memory line icon with flat strokes"
+  },
+  {
+    "slot_id": "slot_diff_data_stack",
+    "filename": "assets/raster_required/diff_data_stack.png",
+    "bbox_xywh": [
+      20,
+      58,
+      128,
+      112
+    ],
+    "classification": "raster_required",
+    "reason": "dense gridded spatiotemporal matrix texture"
+  },
+  {
+    "slot_id": "slot_diff_data_graph_boxes",
+    "filename": "assets/raster_required/diff_data_graph_boxes.png",
+    "bbox_xywh": [
+      28,
+      201,
+      115,
+      98
+    ],
+    "classification": "raster_required",
+    "reason": "complex graph and spatial boxes with overlapping linework"
+  },
+  {
+    "slot_id": "slot_seq_grid_graph",
+    "filename": "assets/raster_required/seq_grid_graph.png",
+    "bbox_xywh": [
+      192,
+      45,
+      180,
+      126
+    ],
+    "classification": "raster_required",
+    "reason": "complex sequential graph/grid schematic with nodes and translucent regions"
+  },
+  {
+    "slot_id": "slot_seq_format_graph",
+    "filename": "assets/raster_required/seq_format_graph.png",
+    "bbox_xywh": [
+      198,
+      214,
+      178,
+      111
+    ],
+    "classification": "raster_required",
+    "reason": "complex graph schematic with translucent circular regions"
+  },
+  {
+    "slot_id": "slot_domain_heatmap",
+    "filename": "assets/raster_required/domain_heatmap.png",
+    "bbox_xywh": [
+      40,
+      488,
+      123,
+      104
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like heatmap/remote sensing texture"
+  },
+  {
+    "slot_id": "slot_domain_city",
+    "filename": "assets/raster_required/domain_city.png",
+    "bbox_xywh": [
+      194,
+      489,
+      122,
+      104
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like city image"
+  },
+  {
+    "slot_id": "slot_domain_train",
+    "filename": "assets/raster_required/domain_train.png",
+    "bbox_xywh": [
+      352,
+      488,
+      122,
+      104
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like traffic/train image"
+  },
+  {
+    "slot_id": "slot_domain_road_network",
+    "filename": "assets/raster_required/domain_road_network.png",
+    "bbox_xywh": [
+      40,
+      617,
+      123,
+      94
+    ],
+    "classification": "raster_required",
+    "reason": "complex road network map image"
+  },
+  {
+    "slot_id": "slot_domain_grid_heatmap",
+    "filename": "assets/raster_required/domain_grid_heatmap.png",
+    "bbox_xywh": [
+      194,
+      617,
+      122,
+      94
+    ],
+    "classification": "raster_required",
+    "reason": "dense heatmap/map pattern"
+  },
+  {
+    "slot_id": "slot_domain_flow_field",
+    "filename": "assets/raster_required/domain_flow_field.png",
+    "bbox_xywh": [
+      354,
+      617,
+      122,
+      94
+    ],
+    "classification": "raster_required",
+    "reason": "dense flow-field visualization"
+  },
+  {
+    "slot_id": "slot_noisy_patch_row",
+    "filename": "assets/raster_required/noisy_patch_row.png",
+    "bbox_xywh": [
+      574,
+      185,
+      505,
+      53
+    ],
+    "classification": "raster_required",
+    "reason": "seven noisy spatiotemporal patch thumbnails"
+  },
+  {
+    "slot_id": "slot_task_mask_pattern",
+    "filename": "assets/raster_required/task_mask_pattern.png",
+    "bbox_xywh": [
+      1474,
+      405,
+      192,
+      91
+    ],
+    "classification": "raster_required",
+    "reason": "complex multicolor masked spatiotemporal data stack"
+  },
+  {
+    "slot_id": "slot_masking_strategies_examples",
+    "filename": "assets/raster_required/masking_strategies_examples.png",
+    "bbox_xywh": [
+      1266,
+      668,
+      392,
+      118
+    ],
+    "classification": "raster_required",
+    "reason": "multiple dense multicolor masking strategy examples"
+  }
+]

@@ -1,0 +1,18 @@
+svg_candidate 数量: 10
+raster_required 数量: 5
+
+slot_training_subject_uncertainty_icon: svg_candidate -> assets/svg_candidate/training_subject_uncertainty_icon.png (flat cartoon subject/question icon with simple shapes and clear boundaries)
+slot_train_fmri_subjects: raster_required -> assets/raster_required/train_fmri_subjects.png (dense cartoon illustration with monitor, brain, waveform and multiple subject faces; raster crop preserves details)
+slot_stack_E: svg_candidate -> assets/svg_candidate/stack_E.png (repeated vertical feature bars with simple outlines and fills)
+slot_stack_Ei: svg_candidate -> assets/svg_candidate/stack_Ei.png (repeated vertical feature bars with simple outlines and fills)
+slot_stack_Es: svg_candidate -> assets/svg_candidate/stack_Es.png (repeated vertical feature bars with simple outlines and fills)
+slot_stack_Fi: svg_candidate -> assets/svg_candidate/stack_Fi.png (repeated vertical feature bars with simple outlines and fills)
+slot_stack_Fs: svg_candidate -> assets/svg_candidate/stack_Fs.png (repeated vertical feature bars with simple outlines and fills)
+slot_stack_F: svg_candidate -> assets/svg_candidate/stack_F.png (repeated vertical feature bars with simple outlines and fills)
+slot_semantic_cartoon_group: raster_required -> assets/raster_required/semantic_cartoon_group.png (cartoon dog/person/cat group with fine facial details and shading)
+slot_visual_stimuli_stack: raster_required -> assets/raster_required/visual_stimuli_stack.png (stacked natural image thumbnails with colored frames and detailed picture contents)
+slot_unseen_subject_fmri: raster_required -> assets/raster_required/unseen_subject_fmri.png (cartoon portrait plus fMRI monitor and waveform, too detailed for faithful SVG redrawing)
+slot_reconstructed_images: raster_required -> assets/raster_required/reconstructed_images.png (stacked reconstructed image thumbnails with animal illustration and frame details)
+slot_training_visual_stimuli_graph: svg_candidate -> assets/svg_candidate/training_visual_stimuli_graph.png (small node-link graph with colored circles and simple connecting arrows)
+slot_inference_snowflake_vision: svg_candidate -> assets/svg_candidate/inference_snowflake_vision.png (simple snowflake symbol used as a frozen-module marker)
+slot_inference_snowflake_sdxl: svg_candidate -> assets/svg_candidate/inference_snowflake_sdxl.png (simple snowflake symbol used as a frozen-module marker)

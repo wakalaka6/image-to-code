@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1908" height="1071" viewBox="0 0 1908 1071">
+<defs>
+  <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 4 L 0 8 z" fill="#333"/>
+  </marker>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#7590a0" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<style>
+  .label { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+  .blue { fill:#3e8ac6; }
+  .pink { fill:#e85e83; }
+  .caption { font-family: Georgia, 'Times New Roman', serif; font-size:32px; font-weight:700; }
+  .small { font-size:18px; }
+</style>
+
+<rect x="0" y="0" width="1908" height="1071" fill="#ffffff" stroke="none" stroke-width="1" />
+<rect x="7" y="20" width="954" height="619" rx="12" ry="12" fill="#fbfdff" stroke="#62b7e8" stroke-width="2" />
+<rect x="7" y="659" width="954" height="354" rx="12" ry="12" fill="#fffafc" stroke="#fb7b99" stroke-width="2" />
+<line x1="1009" y1="46" x2="1009" y2="640" stroke="#87c4ea" stroke-width="2" fill="none" stroke-dasharray="18 18" opacity="0.9"/>
+<line x1="1009" y1="659" x2="1009" y2="1015" stroke="#87c4ea" stroke-width="2" fill="none" stroke-dasharray="18 18" opacity="0.9"/>
+<rect x="222" y="31" width="742" height="40" rx="7" ry="7" fill="#d6eefa" stroke="none" stroke-width="1" opacity="0.9" />
+<text x="593" y="60" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#4a90c8" text-anchor="middle"  style="letter-spacing:4px">In-context Editing Framework based on T2I DiT</text>
+<rect x="180" y="671" width="705" height="40" rx="7" ry="7" fill="#ffe0e9" stroke="none" stroke-width="1" opacity="0.95" />
+<text x="533" y="700" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#e14d5f" text-anchor="middle"  style="letter-spacing:3px">In-context Editing Framework based on Inpainting DiT</text>
+<line x1="210" y1="149" x2="339" y2="149" stroke="#2c9aea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="101" width="337" height="97" rx="16" ry="16" fill="#dff1fe" stroke="#71b9e8" stroke-width="2" />
+<text x="508.5" y="157.83333333333334" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#5d99ca" text-anchor="middle" dominant-baseline="middle" style="">T2I Diffusion Transformer</text>
+<line x1="677" y1="149" x2="761" y2="149" stroke="#2c9aea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<line x1="318" y1="162" x2="318" y2="257" stroke="#33a3ed" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="706" y1="198" x2="706" y2="317" stroke="#2c9aea" stroke-width="2" fill="none"/>
+<line x1="210" y1="426" x2="338" y2="426" stroke="#2c9aea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="381" width="340" height="96" rx="16" ry="16" fill="#dff1fe" stroke="#71b9e8" stroke-width="2" />
+<text x="510.0" y="437.3333333333333" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#5d99ca" text-anchor="middle" dominant-baseline="middle" style="">T2I Diffusion Transformer</text>
+<line x1="680" y1="426" x2="764" y2="426" stroke="#2c9aea" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<line x1="318" y1="426" x2="318" y2="287" stroke="#33a3ed" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="706" y1="426" x2="706" y2="504" stroke="#2c9aea" stroke-width="2" fill="none"/>
+<line x1="260" y1="426" x2="260" y2="260" stroke="#33a3ed" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="85" y1="149" x2="112" y2="149" stroke="#2c9aea" stroke-width="3" fill="none"/>
+<line x1="72" y1="426" x2="112" y2="426" stroke="#2c9aea" stroke-width="3" fill="none"/>
+<polyline points="114,149 307,149 307,257" fill="none" stroke="#2c9aea" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="224,426 307,426 307,287" fill="none" stroke="#2c9aea" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="700" y1="260" x2="383" y2="260" stroke="#2c9aea" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="700" y1="326" x2="383" y2="326" stroke="#2c9aea" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="479" y="236" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="#5b99c6" text-anchor="middle"  style="font-style:italic">Inversion × N</text>
+<text x="480" y="355" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="#5b99c6" text-anchor="middle"  style="font-style:italic">Denoising × N</text>
+<text x="369" y="285" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#4f93c5" text-anchor="middle"  style="">Feature</text>
+<text x="369" y="312" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#4f93c5" text-anchor="middle"  style="">Injection</text>
+<line x1="483" y1="263" x2="483" y2="317" stroke="#8fb8cf" stroke-width="14" fill="none" marker-end="url(#arrow)" opacity="0.7"/>
+<text x="367" y="151" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" fill="#111" text-anchor="start"  style="">Input Prompt</text>
+<text x="444" y="219" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#222" text-anchor="middle" style="">
+<tspan x="444" dy="0">“A ball rolls down</tspan>
+<tspan x="444" dy="24.200000000000003">a rocky ramp”</tspan>
+</text>
+<text x="129" y="304" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#4b8fc8" text-anchor="middle"  style="">Source Image</text>
+<text x="73" y="467" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#4b8fc8" text-anchor="middle"  style="">Inverted</text>
+<text x="73" y="494" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#4b8fc8" text-anchor="middle"  style="">Noise</text>
+<text x="144" y="414" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#70b1db" text-anchor="middle"  style="">+</text>
+<text x="144" y="423" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#2775b1" text-anchor="middle"  style="">concat</text>
+<text x="220" y="467" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#f3a03e" text-anchor="middle"  style="">Random</text>
+<text x="220" y="494" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#f3a03e" text-anchor="middle"  style="">Noise</text>
+<text x="852" y="581" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#eaa046" text-anchor="middle"  style="">Generated</text>
+<text x="852" y="608" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#eaa046" text-anchor="middle"  style="">Target Image</text>
+<rect x="26" y="526" width="662" height="94" rx="0" ry="0" fill="none" stroke="#97c7ef" stroke-width="1.5" stroke-dasharray="13 12" />
+<text x="345" y="555" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#4391ce" text-anchor="middle" style="">
+<tspan x="345" dy="0">“ A diptych with two side-by-side images of the same scene.</tspan>
+</text>
+<text x="311" y="601" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#4391ce" text-anchor="middle"  style="">On the right, the scene is the same as on the left but</text>
+<text x="373" y="626" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ee8f2d" text-anchor="middle"  style="">{make the man grab a basketball}.”</text>
+<text x="84" y="978" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">Source Image</text>
+<text x="320" y="944" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">Image with Mask</text>
+<text x="483" y="866" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">Noise</text>
+<rect x="520" y="778" width="197" height="48" rx="12" ry="12" fill="#fff2f6" stroke="#f58aa3" stroke-width="2" />
+<text x="618.5" y="809.6666666666666" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#e95c7c" text-anchor="middle" dominant-baseline="middle" style="">Inpainting DiT</text>
+<text x="725" y="849" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">crop</text>
+<text x="865" y="969" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">Target</text>
+<text x="865" y="997" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#e35d7d" text-anchor="middle"  style="">Image</text>
+<text x="213" y="828" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#f06e8f" text-anchor="middle"  style="">mask</text>
+<text x="211" y="860" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#f06e8f" text-anchor="middle"  style="">concat</text>
+<line x1="171" y1="812" x2="248" y2="812" stroke="#f7adc0" stroke-width="8" fill="none" marker-end="url(#arrow)" opacity="0.9"/>
+<line x1="476" y1="820" x2="515" y2="820" stroke="#f7adc0" stroke-width="8" fill="none" marker-end="url(#arrow)" opacity="0.9"/>
+<line x1="721" y1="817" x2="792" y2="817" stroke="#f7adc0" stroke-width="8" fill="none" marker-end="url(#arrow)" opacity="0.9"/>
+<line x1="615" y1="880" x2="615" y2="808" stroke="#f7adc0" stroke-width="14" fill="none" marker-end="url(#arrow)" opacity="0.9"/>
+<rect x="466" y="936" width="344" height="66" rx="0" ry="0" fill="none" stroke="#ff95ad" stroke-width="1.5" stroke-dasharray="12 10" />
+<text x="646" y="963" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#f06e8f" text-anchor="middle"  style="">“ A diptych with … but</text>
+<text x="645" y="991" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#f06e8f" text-anchor="middle"  style="">{make her hold a red can}”</text>
+<text x="432" y="1055" font-family="Georgia, 'Times New Roman', serif" font-size="37" font-weight="700" fill="#111" text-anchor="middle"  style="">(a) Training-free Structure of ICEdit</text>
+<text x="1360" y="1060" font-family="Georgia, 'Times New Roman', serif" font-size="37" font-weight="700" fill="#111" text-anchor="middle"  style="">(b) Finetuning Strategy for ICEdit</text>
+<text x="1368" y="107" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#111" text-anchor="center"  style="">Edit by</text>
+<text x="1370" y="136" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#111" text-anchor="center"  style="">In-context</text>
+<text x="1370" y="166" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#111" text-anchor="center"  style="">Generation</text>
+<rect x="1204" y="236" width="140" height="41" rx="7" ry="7" fill="#d4f1fb" stroke="none" stroke-width="2" />
+<text x="1274.0" y="263.8333333333333" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0d2635" text-anchor="middle" dominant-baseline="middle" style="">Decoder</text>
+<line x1="1273" y1="238" x2="1273" y2="203" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1273" y1="279" x2="1273" y2="236" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="1094" y="281" width="420" height="430" rx="16" ry="16" fill="#ead9ec" stroke="none" stroke-width="1" opacity="0.35" />
+<rect x="1084" y="291" width="420" height="430" rx="16" ry="16" fill="#ead9ec" stroke="none" stroke-width="1" opacity="0.45" />
+<rect x="1074" y="301" width="420" height="430" rx="16" ry="16" fill="#ead9ec" stroke="none" stroke-width="1" opacity="0.6" />
+<rect x="1060" y="315" width="420" height="430" rx="16" ry="16" fill="#ead9ec" stroke="none" stroke-width="1" opacity="1" />
+<rect x="1080" y="374" width="291" height="43" rx="0" ry="0" fill="none" stroke="#111" stroke-width="2" />
+<line x1="1080" y1="374" x2="1112" y2="374" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1112" y1="374" x2="1112" y2="492" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1112" y1="492" x2="1112" y2="615" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1371" y1="374" x2="1371" y2="492" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1143" y1="373" x2="1259" y2="373" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1112" y1="493" x2="1272" y2="493" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1272" y1="375" x2="1272" y2="457" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1272" y1="457" x2="1272" y2="544" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1272" y1="619" x2="1272" y2="544" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1272" y1="544" x2="1272" y2="615" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1144" y1="615" x2="1414" y2="615" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1144" y1="615" x2="1144" y2="674" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1414" y1="615" x2="1414" y2="674" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1272" y1="615" x2="1272" y2="579" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1080" y1="374" x2="1080" y2="590" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1080" y1="590" x2="1108" y2="590" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1108" y1="590" x2="1108" y2="715" stroke="#111" stroke-width="2" fill="none"/>
+<rect x="1170" y="433" width="198" height="43" rx="8" ry="8" fill="none" stroke="#ee3d45" stroke-width="5" />
+<text x="1269" y="463" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111" text-anchor="middle"  style="">Out Projection</text>
+<rect x="1127" y="507" width="72" height="42" rx="6" ry="6" fill="#eee6ef" stroke="#ff2b98" stroke-width="2" stroke-dasharray="10 8" />
+<text x="1163" y="536" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111" text-anchor="middle"  style="">MLP</text>
+<rect x="1280" y="507" width="164" height="42" rx="6" ry="6" fill="#eee6ef" stroke="#ff2b98" stroke-width="2" stroke-dasharray="10 8" />
+<text x="1362" y="536" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111" text-anchor="middle"  style="">MM Attention</text>
+<rect x="1170" y="578" width="199" height="42" rx="6" ry="6" fill="#eee6ef" stroke="#ff2b98" stroke-width="2" stroke-dasharray="10 8" />
+<text x="1270" y="607" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111" text-anchor="middle"  style="">Norm &amp; Mod</text>
+<rect x="1100" y="657" width="344" height="39" rx="8" ry="8" fill="none" stroke="#111" stroke-width="2" />
+<text x="1247" y="684" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111" text-anchor="middle"  style="">+</text>
+<text x="1248" y="705" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#111" text-anchor="middle"  style="">concat</text>
+<rect x="1075" y="753" width="150" height="52" rx="7" ry="7" fill="#d4f1fb" stroke="none" stroke-width="2" />
+<text x="1150.0" y="786.3333333333334" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0d2635" text-anchor="middle" dominant-baseline="middle" style="">Text Encoder</text>
+<rect x="1267" y="753" width="245" height="52" rx="7" ry="7" fill="#d4f1fb" stroke="none" stroke-width="2" />
+<text x="1389.5" y="786.3333333333334" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0d2635" text-anchor="middle" dominant-baseline="middle" style="">Image Encoder</text>
+<line x1="1148" y1="835" x2="1148" y2="807" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1300" y1="835" x2="1300" y2="807" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1395" y1="835" x2="1395" y2="807" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1497" y1="835" x2="1497" y2="807" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1146" y1="753" x2="1146" y2="720" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<line x1="1300" y1="753" x2="1300" y2="696" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1497" y1="753" x2="1497" y2="696" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1108" y1="715" x2="1108" y2="753" stroke="#111" stroke-width="2" fill="none"/>
+<line x1="1414" y1="715" x2="1414" y2="753" stroke="#111" stroke-width="2" fill="none"/>
+<rect x="1056" y="871" width="185" height="139" rx="16" ry="16" fill="#fff" stroke="#444" stroke-width="2" />
+<text x="1149" y="911" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#333" text-anchor="middle" style="">
+<tspan x="1149" dy="0">A diptych with …</tspan>
+<tspan x="1149" dy="24.200000000000003">but {what if</tspan>
+<tspan x="1149" dy="24.200000000000003">looks like water</tspan>
+<tspan x="1149" dy="24.200000000000003">color painting?}</tspan>
+</text>
+<text x="1307" y="832" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#111" text-anchor="middle"  style="">Image</text>
+<text x="1428" y="835" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#111" text-anchor="middle"  style="">Mask</text>
+<text x="1510" y="836" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#111" text-anchor="middle"  style="">Noise</text>
+<line x1="1406" y1="458" x2="1511" y2="458" stroke="#cc79c4" stroke-width="20" fill="none" marker-end="url(#arrow)" opacity="0.55"/>
+<rect x="1507" y="17" width="394" height="660" rx="18" ry="18" fill="#eaf4fe" stroke="none" stroke-width="1" opacity="0.85" />
+<text x="1790" y="81" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#111" text-anchor="middle"  style="">LoRA-MoE Module</text>
+<rect x="1517" y="219" width="167" height="44" rx="6" ry="6" fill="#e7ccdc" stroke="none" stroke-width="1" />
+<text x="1600" y="249" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111" text-anchor="middle"  style="">Base Layer</text>
+<polyline points="1530,530 1530,300 1548,245" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="14 14"/>
+<polyline points="1545,530 1545,566 1714,566" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="14 14"/>
+<polyline points="1770,530 1770,405 1722,158 1706,153" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="14 14"/>
+<polyline points="1720,153 1720,245" fill="none" stroke="#222" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="14 14"/>
+<text x="1705" y="147" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="400" fill="#111" text-anchor="middle"  style="">⊕</text>
+<text x="1789" y="353" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111" text-anchor="middle"  style="">...</text>
+<text x="1595" y="424" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle"  style="">Expert 1</text>
+<text x="1680" y="424" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle"  style="">Expert 2</text>
+<text x="1768" y="424" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle"  style="">Expert 3</text>
+<text x="1862" y="424" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle"  style="">Expert N</text>
+<text x="1639" y="492" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#111" text-anchor="middle"  style="">TopK=1</text>
+<rect x="1656" y="534" width="127" height="41" rx="7" ry="7" fill="#d7f1fc" stroke="none" stroke-width="2" />
+<text x="1719.5" y="561.5" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#111" text-anchor="middle" dominant-baseline="middle" style="">Route</text>
+<rect x="1551" y="699" width="357" height="289" rx="12" ry="12" fill="none" stroke="#80c9ef" stroke-width="2" />
+<text x="1650" y="733" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#222" text-anchor="start"  style="">: Trainabe Parameter</text>
+<text x="1650" y="797" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#222" text-anchor="start"  style="">: Frozen Parameter</text>
+<text x="1650" y="863" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#222" text-anchor="start"  style="">: Standard LoRA Tuning</text>
+<text x="1650" y="930" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#222" text-anchor="start"  style="">: LoRA-MoE Tuning</text>
+<text x="1650" y="986" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#222" text-anchor="start"  style="">: LoRA Adapter</text>
+<g id="slot_source_image_t2i" data-bbox="[85,73,137,201]" data-role="asset">
+  <rect x="85" y="73" width="137" height="201" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="85" y1="73" x2="222" y2="274" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="222" y1="73" x2="85" y2="274" stroke="#aaa" stroke-width="1.5"/>
+  <text x="153.5" y="173.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_generated_target_t2i" data-bbox="[773,323,168,243]" data-role="asset">
+  <rect x="773" y="323" width="168" height="243" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="773" y1="323" x2="941" y2="566" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="941" y1="323" x2="773" y2="566" stroke="#aaa" stroke-width="1.5"/>
+  <text x="857.0" y="444.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_crop_preview_t2i" data-bbox="[686,440,111,57]" data-role="asset">
+  <rect x="686" y="440" width="111" height="57" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="686" y1="440" x2="797" y2="497" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="797" y1="440" x2="686" y2="497" stroke="#aaa" stroke-width="1.5"/>
+  <text x="741.5" y="468.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_source_image_inpaint" data-bbox="[17,707,155,227]" data-role="asset">
+  <rect x="17" y="707" width="155" height="227" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="17" y1="707" x2="172" y2="934" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="172" y1="707" x2="17" y2="934" stroke="#aaa" stroke-width="1.5"/>
+  <text x="94.5" y="820.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_image_with_mask_inpaint" data-bbox="[249,757,228,146]" data-role="asset">
+  <rect x="249" y="757" width="228" height="146" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="249" y1="757" x2="477" y2="903" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="477" y1="757" x2="249" y2="903" stroke="#aaa" stroke-width="1.5"/>
+  <text x="363.0" y="830.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_crop_preview_inpaint" data-bbox="[724,747,78,56]" data-role="asset">
+  <rect x="724" y="747" width="78" height="56" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="724" y1="747" x2="802" y2="803" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="802" y1="747" x2="724" y2="803" stroke="#aaa" stroke-width="1.5"/>
+  <text x="763.0" y="775.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_target_image_inpaint" data-bbox="[797,711,150,228]" data-role="asset">
+  <rect x="797" y="711" width="150" height="228" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="797" y1="711" x2="947" y2="939" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="947" y1="711" x2="797" y2="939" stroke="#aaa" stroke-width="1.5"/>
+  <text x="872.0" y="825.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_context_image_original" data-bbox="[1092,17,119,186]" data-role="asset">
+  <rect x="1092" y="17" width="119" height="186" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1092" y1="17" x2="1211" y2="203" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1211" y1="17" x2="1092" y2="203" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1151.5" y="110.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_context_image_painted" data-bbox="[1215,17,121,186]" data-role="asset">
+  <rect x="1215" y="17" width="121" height="186" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1215" y1="17" x2="1336" y2="203" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1336" y1="17" x2="1215" y2="203" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1275.5" y="110.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_encoder_inputs" data-bbox="[1258,868,278,147]" data-role="asset">
+  <rect x="1258" y="868" width="278" height="147" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1258" y1="868" x2="1536" y2="1015" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1536" y1="868" x2="1258" y2="1015" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1397.0" y="941.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_inverted_noise_grid" data-bbox="[31,347,82,72]" data-role="asset">
+  <rect x="31" y="347" width="82" height="72" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="31" y1="347" x2="113" y2="419" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="113" y1="347" x2="31" y2="419" stroke="#aaa" stroke-width="1.5"/>
+  <text x="72.0" y="383.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_random_noise_grid" data-bbox="[176,347,82,72]" data-role="asset">
+  <rect x="176" y="347" width="82" height="72" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="176" y1="347" x2="258" y2="419" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="258" y1="347" x2="176" y2="419" stroke="#aaa" stroke-width="1.5"/>
+  <text x="217.0" y="383.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_feature_injection_tokens" data-bbox="[512,225,178,76]" data-role="asset">
+  <rect x="512" y="225" width="178" height="76" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="512" y1="225" x2="690" y2="301" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="690" y1="225" x2="512" y2="301" stroke="#aaa" stroke-width="1.5"/>
+  <text x="601.0" y="263.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_decoder_tokens" data-bbox="[1191,313,181,26]" data-role="asset">
+  <rect x="1191" y="313" width="181" height="26" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1191" y1="313" x2="1372" y2="339" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1372" y1="313" x2="1191" y2="339" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1281.5" y="326.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_lora_tokens_top" data-bbox="[1618,118,181,25]" data-role="asset">
+  <rect x="1618" y="118" width="181" height="25" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1618" y1="118" x2="1799" y2="143" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1799" y1="118" x2="1618" y2="143" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1708.5" y="130.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_lora_tokens_bottom" data-bbox="[1630,629,162,26]" data-role="asset">
+  <rect x="1630" y="629" width="162" height="26" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1630" y1="629" x2="1792" y2="655" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1792" y1="629" x2="1630" y2="655" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1711.0" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_lora_expert_adapters" data-bbox="[1552,266,337,125]" data-role="asset">
+  <rect x="1552" y="266" width="337" height="125" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1552" y1="266" x2="1889" y2="391" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1889" y1="266" x2="1552" y2="391" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1720.5" y="328.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_route_topk_fire" data-bbox="[1672,466,91,45]" data-role="asset">
+  <rect x="1672" y="466" width="91" height="45" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1672" y1="466" x2="1763" y2="511" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1763" y1="466" x2="1672" y2="511" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1717.5" y="488.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_legend_icons" data-bbox="[1568,704,72,255]" data-role="asset">
+  <rect x="1568" y="704" width="72" height="255" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <line x1="1568" y1="704" x2="1640" y2="959" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1640" y1="704" x2="1568" y2="959" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1604.0" y="831.5" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+Hybrid SVG reconstruction summary
+
+svg_candidate: 2
+raster_required: 12
+
+- slot_top_video_frames_left: raster_required — video-frame/photo-like crop with hand and celery texture
+- slot_top_video_frames_right: raster_required — video-frame/photo-like crop with complex natural texture
+- slot_decrease_video_frames_left: raster_required — video-frame/photo-like crop with complex natural texture
+- slot_decrease_video_frames_right: raster_required — video-frame/photo-like crop with complex natural texture
+- slot_increase_source_frames_left: raster_required — video-frame/photo-like crop used as perturbation source
+- slot_increase_source_frames_right: raster_required — video-frame/photo-like crop used as perturbation source
+- slot_perturb_row1_frames_left: raster_required — perturbed video frames with dense pixel texture
+- slot_perturb_row1_frames_right: raster_required — perturbed video frames with dense pixel texture
+- slot_perturb_row2_frames_left: raster_required — perturbed video frames with dense pixel texture
+- slot_perturb_row2_frames_right: raster_required — perturbed video frames with dense pixel texture
+- slot_perturb_row3_frames_left: raster_required — perturbed video frames with dense pixel texture
+- slot_perturb_row3_frames_right: raster_required — perturbed video frames with dense pixel texture
+- slot_trophy_icon: svg_candidate — simple flat trophy icon with clear colored shapes
+- slot_reply_buffer_stack_icon: svg_candidate — simple black cylinder stack icon that can be redrawn with ellipses and rectangles

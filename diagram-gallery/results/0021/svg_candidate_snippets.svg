@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1932" height="921" viewBox="0 0 1932 921" font-family="Times New Roman, Times, serif">
+  <title>SVG candidate snippets generated from crop references</title>
+  <g id="svg_feature_bars_top" data-source-slot="slot_feature_bars_top" transform="translate(450,74)">
+    <rect x="0" y="0" width="38" height="165" fill="#9fb7dc" opacity="0.65"/><rect x="70" y="25" width="34" height="110" fill="#9fb7dc" opacity="0.65"/><rect x="136" y="0" width="38" height="165" fill="#9fb7dc" opacity="0.65"/>
+  </g>
+  <g id="svg_feature_bars_middle" data-source-slot="slot_feature_bars_middle" transform="translate(450,360)">
+    <rect x="0" y="0" width="38" height="170" fill="#b6d9a4" opacity="0.65"/><rect x="70" y="25" width="34" height="140" fill="#b6d9a4" opacity="0.65"/><rect x="136" y="0" width="38" height="170" fill="#b6d9a4" opacity="0.65"/>
+  </g>
+  <g id="svg_feature_bars_bottom" data-source-slot="slot_feature_bars_bottom" transform="translate(450,646)">
+    <rect x="0" y="0" width="38" height="170" fill="#b6cae8" opacity="0.65"/><rect x="70" y="25" width="34" height="140" fill="#b6cae8" opacity="0.65"/><rect x="136" y="0" width="38" height="170" fill="#b6cae8" opacity="0.65"/>
+  </g>
+  <g id="svg_left_features_stack" data-source-slot="slot_left_features_stack" transform="translate(838,45)">
+    <polygon points="108,18 132,-4 256,-4 232,18" fill="#d2b116" stroke="#111" stroke-width="2"/>
+<polygon points="232,18 256,-4 256,114 232,136" fill="#caa300" stroke="#111" stroke-width="2"/>
+<rect x="108" y="18" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="82,35 106,13 230,13 206,35" fill="#ead15b" stroke="#111" stroke-width="2"/>
+<polygon points="206,35 230,13 230,131 206,153" fill="#cfb21d" stroke="#111" stroke-width="2"/>
+<rect x="82" y="35" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="55,52 79,30 203,30 179,52" fill="#f7e48c" stroke="#111" stroke-width="2"/>
+<polygon points="179,52 203,30 203,148 179,170" fill="#ddc13d" stroke="#111" stroke-width="2"/>
+<rect x="55" y="52" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="28,69 52,47 176,47 152,69" fill="#fdeaa2" stroke="#111" stroke-width="2"/>
+<polygon points="152,69 176,47 176,165 152,187" fill="#e2c75b" stroke="#111" stroke-width="2"/>
+<rect x="28" y="69" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><text x="4" y="79" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L0</tspan></text>
+<text x="30" y="36" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L1</tspan></text>
+<text x="66" y="0" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L2</tspan></text>
+  </g>
+  <g id="svg_right_features_stack" data-source-slot="slot_right_features_stack" transform="translate(835,625)">
+    <polygon points="108,18 132,-4 256,-4 232,18" fill="#d2b116" stroke="#111" stroke-width="2"/>
+<polygon points="232,18 256,-4 256,114 232,136" fill="#caa300" stroke="#111" stroke-width="2"/>
+<rect x="108" y="18" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="82,35 106,13 230,13 206,35" fill="#ead15b" stroke="#111" stroke-width="2"/>
+<polygon points="206,35 230,13 230,131 206,153" fill="#cfb21d" stroke="#111" stroke-width="2"/>
+<rect x="82" y="35" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="55,52 79,30 203,30 179,52" fill="#f7e48c" stroke="#111" stroke-width="2"/>
+<polygon points="179,52 203,30 203,148 179,170" fill="#ddc13d" stroke="#111" stroke-width="2"/>
+<rect x="55" y="52" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="28,69 52,47 176,47 152,69" fill="#fdeaa2" stroke="#111" stroke-width="2"/>
+<polygon points="152,69 176,47 176,165 152,187" fill="#e2c75b" stroke="#111" stroke-width="2"/>
+<rect x="28" y="69" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><text x="0" y="79" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R0</tspan></text>
+<text x="26" y="36" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R1</tspan></text>
+<text x="62" y="0" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R2</tspan></text>
+  </g>
+  <g id="svg_cost_volume" data-source-slot="slot_cost_volume" transform="translate(1660,64)">
+    <polygon points="42,42 82,0 253,0 210,42" fill="#f3be94"/>
+    <polygon points="210,42 253,0 253,132 210,170" fill="#d69766"/>
+    <rect x="0" y="42" width="210" height="128" fill="#efb081"/>
+    <text x="105" y="94" font-size="42" text-anchor="middle" font-family="Times New Roman, Times, serif">Cost</text>
+    <text x="105" y="151" font-size="42" text-anchor="middle" font-family="Times New Roman, Times, serif">Volume</text>
+  </g>
+</svg>

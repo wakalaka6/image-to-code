@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1839" height="794" viewBox="0 0 1839 794">
+  <style>text { font-family: Arial, Helvetica, sans-serif; }</style>
+  <!-- svg_candidate_snippets.svg: each group corresponds to a crop in assets/svg_candidate and contains no image/base64. -->
+  <g id="svg_constraints_icon" data-source-slot="slot_constraints_icon" transform="translate(318,104)">
+    <path d="M18 30 H83 Q90 30 90 37 V126 Q90 130 86 130 H12 Q8 130 8 126 V37 Q8 30 18 30 Z" fill="#2d2d2d"/>
+    <path d="M34 14 H43 Q47 4 55 4 Q64 4 67 14 H78 V33 H34 Z" fill="#2d2d2d"/>
+    <rect x="43" y="20" width="26" height="5" fill="#eeeeee"/>
+    <path d="M25 50 L41 66 M41 50 L25 66" stroke="#eeeeee" stroke-width="12" stroke-linecap="square"/>
+    <path d="M30 86 L48 104 L82 61" fill="none" stroke="#eeeeee" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+
+  <g id="svg_text_icon" data-source-slot="slot_text_icon" transform="translate(498,126)">
+    <rect x="5" y="15" width="82" height="80" rx="13" ry="13" fill="none" stroke="#050505" stroke-width="5"/>
+    <path d="M32 15 H53" stroke="#050505" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 10"/>
+    <line x1="20" y1="42" x2="73" y2="42" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+    <line x1="20" y1="61" x2="73" y2="61" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+    <line x1="20" y1="81" x2="73" y2="81" stroke="#050505" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g id="svg_parameter_space_icon" data-source-slot="slot_parameter_space_icon" transform="translate(288,588)">
+    <rect x="34" y="25" width="100" height="124" rx="8" fill="#000000"/>
+    <rect x="0" y="0" width="104" height="130" rx="8" fill="#000000"/>
+    <rect x="12" y="18" width="48" height="9" fill="#ffffff"/>
+    <line x1="12" y1="42" x2="93" y2="42" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="61" x2="93" y2="61" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="76" x2="82" y2="76" stroke="#ffffff" stroke-width="5"/>
+    <line x1="12" y1="92" x2="93" y2="92" stroke="#ffffff" stroke-width="5"/>
+    <line x1="67" y1="106" x2="93" y2="106" stroke="#ffffff" stroke-width="5"/>
+  </g>
+
+  <g id="svg_dxf_icon" data-source-slot="slot_dxf_icon" transform="translate(995,96)">
+    <path d="M70 12 L139 12 L139 132 L70 132 Z" fill="#ffffff" stroke="#000000" stroke-width="6"/>
+    <path d="M0 2 L82 16 L82 140 L0 126 Z" fill="#ffffff" stroke="#000000" stroke-width="6" stroke-linejoin="miter"/>
+    <text x="43" y="81" transform="skewY(-5)" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#000000">DXF</text>
+  </g>
+
+  <g id="svg_code_python_icon" data-source-slot="slot_code_python_icon" transform="translate(1070,500)">
+    <rect x="7" y="2" width="154" height="166" rx="2" fill="#ffffff" stroke="#5d6872" stroke-width="6"/>
+    <rect x="28" y="22" width="55" height="22" fill="none" stroke="#2eaa92" stroke-width="5"/>
+    <rect x="30" y="70" width="57" height="23" fill="none" stroke="#2eaa92" stroke-width="5"/>
+    <line x1="58" y1="45" x2="58" y2="70" stroke="#bfc5c9" stroke-width="7"/>
+    <path d="M28 112 L51 136 L75 136" fill="none" stroke="#2e9cca" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M111 94 H154 Q169 94 169 109 V122 Q169 137 154 137 H132 V147 H96 Q83 147 83 133 Q83 119 96 119 H128 Q139 119 139 108 V102 H111 Z" fill="#2aa6df"/>
+    <path d="M132 72 H161 Q173 72 173 86 V102 H128 Q116 102 116 116 H99 V88 Q99 72 115 72 H132 Z" fill="#2aa6df"/>
+    <rect x="134" y="81" width="10" height="4" fill="#ffffff"/>
+    <rect x="120" y="153" width="10" height="4" fill="#ffffff"/>
+  </g>
+</svg>

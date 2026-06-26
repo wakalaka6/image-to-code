@@ -1,0 +1,26 @@
+[
+  {
+    "slot_id": "slot_text_only_request_icon",
+    "filename": "assets/svg_candidate/text_only_request_icon.png",
+    "bbox_xywh": [
+      246,
+      52,
+      45,
+      52
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome document icon with clear lines and flat fills"
+  },
+  {
+    "slot_id": "slot_image_text_request_icon",
+    "filename": "assets/svg_candidate/image_text_request_icon.png",
+    "bbox_xywh": [
+      956,
+      60,
+      52,
+      40
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat picture icon with clear boundary and few colors"
+  }
+]

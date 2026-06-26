@@ -1,0 +1,13 @@
+svg_candidate count: 8
+raster_required count: 1
+
+Per-asset classification:
+- slot_input_cat_photo: raster_required (assets/raster_required/input_cat_photo.png) — photo-like cat image with texture, fur detail, and natural shading
+- slot_teacher_feature_stack: svg_candidate (assets/svg_candidate/teacher_feature_stack.png) — flat 3D-style blue feature bars with clear polygonal boundaries
+- slot_student_feature_stack: svg_candidate (assets/svg_candidate/student_feature_stack.png) — flat 3D-style orange feature bars with clear polygonal boundaries
+- slot_hard_label_vector: svg_candidate (assets/svg_candidate/hard_label_vector.png) — simple colored and gray rectangular label stack
+- slot_teacher_target_nontarget_vector: svg_candidate (assets/svg_candidate/teacher_target_nontarget_vector.png) — simple yellow and green rectangular target/non-target stack
+- slot_student_target_nontarget_vector: svg_candidate (assets/svg_candidate/student_target_nontarget_vector.png) — simple yellow and green rectangular target/non-target stack
+- slot_task_label_pair: svg_candidate (assets/svg_candidate/task_label_pair.png) — two simple colored rectangular tokens
+- slot_tckd_target_pair: svg_candidate (assets/svg_candidate/tckd_target_pair.png) — two simple yellow rectangular target tokens
+- slot_nckd_mask_pair: svg_candidate (assets/svg_candidate/nckd_mask_pair.png) — two simple green/gray masked token columns

@@ -1,0 +1,98 @@
+[
+  {
+    "slot_id": "slot_train_llm_top",
+    "filename": "assets/svg_candidate/robot_train_llm_top.png",
+    "bbox_xywh": [
+      542,
+      124,
+      112,
+      128
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat robot icon with clear black outline"
+  },
+  {
+    "slot_id": "slot_train_llm_bottom",
+    "filename": "assets/svg_candidate/robot_train_llm_bottom.png",
+    "bbox_xywh": [
+      542,
+      322,
+      112,
+      128
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat robot icon with clear black outline"
+  },
+  {
+    "slot_id": "slot_train_truthful_llm",
+    "filename": "assets/svg_candidate/robot_train_truthful_llm.png",
+    "bbox_xywh": [
+      1752,
+      120,
+      158,
+      132
+    ],
+    "classification": "svg_candidate",
+    "reason": "angel robot line icon with flat fills and clear contours"
+  },
+  {
+    "slot_id": "slot_train_evil_llm",
+    "filename": "assets/svg_candidate/robot_train_evil_llm.png",
+    "bbox_xywh": [
+      1765,
+      319,
+      145,
+      156
+    ],
+    "classification": "svg_candidate",
+    "reason": "devil robot line icon with flat fills and clear contours"
+  },
+  {
+    "slot_id": "slot_infer_llm",
+    "filename": "assets/svg_candidate/robot_infer_llm.png",
+    "bbox_xywh": [
+      543,
+      611,
+      112,
+      105
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat robot icon with clear black outline"
+  },
+  {
+    "slot_id": "slot_infer_evil_llm",
+    "filename": "assets/svg_candidate/robot_infer_evil_llm.png",
+    "bbox_xywh": [
+      535,
+      741,
+      142,
+      126
+    ],
+    "classification": "svg_candidate",
+    "reason": "devil robot line icon with flat fills and clear contours"
+  },
+  {
+    "slot_id": "slot_infer_truthful_llm",
+    "filename": "assets/svg_candidate/robot_infer_truthful_llm.png",
+    "bbox_xywh": [
+      536,
+      897,
+      143,
+      124
+    ],
+    "classification": "svg_candidate",
+    "reason": "angel robot line icon with flat fills and clear contours"
+  },
+  {
+    "slot_id": "slot_detection_check",
+    "filename": "assets/svg_candidate/detection_check.png",
+    "bbox_xywh": [
+      1708,
+      733,
+      62,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple green circular check mark symbol"
+  }
+]

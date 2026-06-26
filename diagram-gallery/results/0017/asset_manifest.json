@@ -1,0 +1,86 @@
+[
+  {
+    "slot_id": "slot_icon_designer_fire",
+    "filename": "assets/svg_candidate/icon_designer_fire.png",
+    "bbox_xywh": [
+      619,
+      97,
+      65,
+      63
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat flame icon with clear colors and boundaries"
+  },
+  {
+    "slot_id": "slot_icon_designer_snowflake",
+    "filename": "assets/svg_candidate/icon_designer_snowflake.png",
+    "bbox_xywh": [
+      891,
+      98,
+      72,
+      65
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue snowflake line icon"
+  },
+  {
+    "slot_id": "slot_icon_magnifier",
+    "filename": "assets/svg_candidate/icon_magnifier.png",
+    "bbox_xywh": [
+      626,
+      520,
+      70,
+      70
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple magnifying glass icon composed of circle and handle"
+  },
+  {
+    "slot_id": "slot_icon_expert_snowflake",
+    "filename": "assets/svg_candidate/icon_expert_snowflake.png",
+    "bbox_xywh": [
+      1290,
+      198,
+      55,
+      55
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue snowflake line icon"
+  },
+  {
+    "slot_id": "slot_expert_trajectory_content",
+    "filename": "assets/svg_candidate/expert_trajectory_content.png",
+    "bbox_xywh": [
+      1466,
+      162,
+      395,
+      88
+    ],
+    "classification": "svg_candidate",
+    "reason": "small vector-style trajectory diagrams with nodes, lines and simple symbols"
+  },
+  {
+    "slot_id": "slot_icon_dyplanner_fire",
+    "filename": "assets/svg_candidate/icon_dyplanner_fire.png",
+    "bbox_xywh": [
+      1351,
+      393,
+      58,
+      60
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat flame icon with clear colors and boundaries"
+  },
+  {
+    "slot_id": "slot_preference_result_content",
+    "filename": "assets/svg_candidate/preference_result_content.png",
+    "bbox_xywh": [
+      1650,
+      669,
+      228,
+      120
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-style preference thumbnails, dotted boxes, check and cross marks"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "slot_id": "slot_input_image_stack",
+    "filename": "assets/raster_required/input_image_stack.png",
+    "bbox_xywh": [
+      332,
+      162,
+      166,
+      210
+    ],
+    "classification": "raster_required",
+    "reason": "overlapped natural-image restoration samples with complex photographic texture"
+  },
+  {
+    "slot_id": "slot_backbone_mini_conv_visual",
+    "filename": "assets/svg_candidate/backbone_mini_conv_visual.png",
+    "bbox_xywh": [
+      690,
+      217,
+      350,
+      166
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat schematic with simple trapezoids and colored bars that can be redrawn as SVG primitives"
+  },
+  {
+    "slot_id": "slot_output_image_stack",
+    "filename": "assets/raster_required/output_image_stack.png",
+    "bbox_xywh": [
+      1246,
+      162,
+      169,
+      210
+    ],
+    "classification": "raster_required",
+    "reason": "overlapped restored photo-like samples with complex texture and shading"
+  },
+  {
+    "slot_id": "slot_bias_embedding_stack",
+    "filename": "assets/svg_candidate/bias_embedding_stack.png",
+    "bbox_xywh": [
+      296,
+      580,
+      92,
+      75
+    ],
+    "classification": "svg_candidate",
+    "reason": "regular 3D stack made from flat colored polygons and rectangles"
+  },
+  {
+    "slot_id": "slot_weight_embedding_stack",
+    "filename": "assets/svg_candidate/weight_embedding_stack.png",
+    "bbox_xywh": [
+      271,
+      659,
+      133,
+      131
+    ],
+    "classification": "svg_candidate",
+    "reason": "regular 3D tensor stack with clean vector-like faces and repeated layers"
+  },
+  {
+    "slot_id": "slot_bias_filter_block",
+    "filename": "assets/svg_candidate/bias_filter_block.png",
+    "bbox_xywh": [
+      459,
+      589,
+      34,
+      70
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue vertical slab/filter icon with crisp edges"
+  },
+  {
+    "slot_id": "slot_weight_filter_block",
+    "filename": "assets/svg_candidate/weight_filter_block.png",
+    "bbox_xywh": [
+      457,
+      670,
+      45,
+      121
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple blue pair of vertical slab/filter icons with crisp edges"
+  }
+]

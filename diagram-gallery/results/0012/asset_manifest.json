@@ -1,0 +1,122 @@
+[
+  {
+    "slot_id": "slot_expert_drawing",
+    "filename": "assets/raster_required/expert_drawing.png",
+    "bbox_xywh": [
+      35,
+      82,
+      240,
+      170
+    ],
+    "classification": "raster_required",
+    "reason": "dense CAD drawing with fine measurements, hatching, and text annotations; preserving as raster avoids losing details"
+  },
+  {
+    "slot_id": "slot_constraints_icon",
+    "filename": "assets/svg_candidate/constraints_icon.png",
+    "bbox_xywh": [
+      318,
+      104,
+      100,
+      130
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat clipboard/check/cross icon with clear edges and solid fills"
+  },
+  {
+    "slot_id": "slot_text_icon",
+    "filename": "assets/svg_candidate/text_icon.png",
+    "bbox_xywh": [
+      498,
+      126,
+      92,
+      100
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple outline text-document icon made of rounded rectangle and horizontal strokes"
+  },
+  {
+    "slot_id": "slot_parameter_space_icon",
+    "filename": "assets/svg_candidate/parameter_space_icon.png",
+    "bbox_xywh": [
+      288,
+      588,
+      138,
+      150
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat stacked-document icon with solid black fill and white lines"
+  },
+  {
+    "slot_id": "slot_dxf_icon",
+    "filename": "assets/svg_candidate/dxf_icon.png",
+    "bbox_xywh": [
+      995,
+      96,
+      146,
+      145
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line-art DXF document icon with flat strokes and editable text"
+  },
+  {
+    "slot_id": "slot_code_python_icon",
+    "filename": "assets/svg_candidate/code_python_icon.png",
+    "bbox_xywh": [
+      1070,
+      500,
+      185,
+      170
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat vector-style code and Python logo icon with simple lines and blocks"
+  },
+  {
+    "slot_id": "slot_ortho_front",
+    "filename": "assets/raster_required/ortho_front.png",
+    "bbox_xywh": [
+      1466,
+      47,
+      178,
+      137
+    ],
+    "classification": "raster_required",
+    "reason": "orthographic CAD projection screenshot with fine dimension lines and dense grey annotations"
+  },
+  {
+    "slot_id": "slot_ortho_side",
+    "filename": "assets/raster_required/ortho_side.png",
+    "bbox_xywh": [
+      1676,
+      47,
+      143,
+      136
+    ],
+    "classification": "raster_required",
+    "reason": "orthographic CAD projection screenshot with fine dimension lines and dense grey annotations"
+  },
+  {
+    "slot_id": "slot_ortho_top",
+    "filename": "assets/raster_required/ortho_top.png",
+    "bbox_xywh": [
+      1468,
+      212,
+      185,
+      120
+    ],
+    "classification": "raster_required",
+    "reason": "top-view CAD drawing with small dimension labels and multiple fine curves"
+  },
+  {
+    "slot_id": "slot_model_3d",
+    "filename": "assets/raster_required/model_3d.png",
+    "bbox_xywh": [
+      1518,
+      402,
+      300,
+      336
+    ],
+    "classification": "raster_required",
+    "reason": "rendered 3D model region with shading, perspective, and pixel-based background"
+  }
+]

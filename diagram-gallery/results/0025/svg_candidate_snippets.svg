@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1071" viewBox="0 0 1920 1071">
+<title>SVG candidate snippets generated from individual crops</title>
+<g id="svg_droid_dataset_icon" data-source-slot="slot_droid_dataset_icon" fill="none" stroke="#777" stroke-width="3">
+  <path d="M 86,200 C 86,178 208,178 208,200"/>
+  <ellipse cx="147.0" cy="200" rx="61.0" ry="28" fill="#f4f4f4"/>
+  <path d="M 86,200 L 86,382 C 86,404 208,404 208,382 L 208,200" fill="#f7f7f7"/>
+  <path d="M 86,382 C 86,404 208,404 208,382"/>
+  <text x="147.0" y="290" font-size="30" fill="#111" stroke="none" font-family="Arial" text-anchor="middle">DROID</text>
+  <text x="147.0" y="328" font-size="30" fill="#111" stroke="none" font-family="Arial" text-anchor="middle">Dataset</text>
+</g>
+<g id="svg_openai_domain_construction" data-source-slot="slot_openai_domain_construction" transform="translate(846.5 152.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-15.8 C 14,-15.8 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-15.8 -4,-15.8 Z"/>
+  <path d="M 15.8,-5 C 15.8,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 15.8,-10 15.8,-5 Z" transform="rotate(60)"/>
+  <path d="M 15.8,-5 C 15.8,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 15.8,-10 15.8,-5 Z" transform="rotate(120)"/>
+  <path d="M 15.8,-5 C 15.8,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 15.8,-10 15.8,-5 Z" transform="rotate(180)"/>
+  <path d="M 15.8,-5 C 15.8,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 15.8,-10 15.8,-5 Z" transform="rotate(240)"/>
+  <path d="M 15.8,-5 C 15.8,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 15.8,-10 15.8,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_domain_doc_top" data-source-slot="slot_domain_doc_top">
+<path d="M1170,116 H1300 L1320,136 V194 H1170 Z" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<path d="M1300,116 V136 H1320" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="1178" y="133" font-size="16" font-family="Times New Roman" font-style="italic" fill="#1847b8">:predicates <tspan fill="#111">(...)</tspan></text>
+<text x="1178" y="151" font-size="16" font-family="Times New Roman" font-style="italic" fill="#047c18">:actions <tspan fill="#111">(...)</tspan></text>
+<text x="1178" y="169" font-size="16" font-family="Times New Roman" font-style="italic" fill="#c03030">:precondition <tspan fill="#111">(...)</tspan></text>
+<text x="1178" y="187" font-size="16" font-family="Times New Roman" font-style="italic" fill="#7a1aa0">:effect <tspan fill="#111">(...)</tspan></text>
+</g>
+<g id="svg_openai_solvability" data-source-slot="slot_openai_solvability" transform="translate(846.5 283.5)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.2 C 14,-16.2 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.2 -4,-16.2 Z"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_solvability_tree_icon" data-source-slot="slot_solvability_tree_icon" fill="none" stroke="#111" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+  <rect x="842.0" y="325" width="18" height="18" rx="2" fill="#fff"/>
+  <path d="M 851.0,343 V 341.5 M 851.0,341.5 H 838 V 335 M 851.0,341.5 H 864 V 335"/>
+  <rect x="829" y="335" width="18" height="18" rx="2" fill="#fff"/>
+  <rect x="855" y="335" width="18" height="18" rx="2" fill="#fff"/>
+</g>
+<g id="svg_openai_refinement" data-source-slot="slot_openai_refinement" transform="translate(1242.5 285.5)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.2 C 14,-16.2 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.2 -4,-16.2 Z"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_openai_solution" data-source-slot="slot_openai_solution" transform="translate(846.5 445.5)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.2 C 14,-16.2 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.2 -4,-16.2 Z"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.2,-5 C 16.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.2,-10 16.2,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_domain_doc_refinement" data-source-slot="slot_domain_doc_refinement">
+<path d="M1168,405 H1298 L1318,425 V489 H1168 Z" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<path d="M1298,405 V425 H1318" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="1176" y="422" font-size="15" font-family="Times New Roman" font-style="italic" fill="#1847b8">:predicates <tspan fill="#111">(...)</tspan></text>
+<text x="1176" y="439" font-size="15" font-family="Times New Roman" font-style="italic" fill="#047c18">:actions <tspan fill="#111">(...)</tspan></text>
+<text x="1176" y="456" font-size="15" font-family="Times New Roman" font-style="italic" fill="#c03030">:precondition <tspan fill="#111">(...)</tspan></text>
+<text x="1176" y="473" font-size="15" font-family="Times New Roman" font-style="italic" fill="#7a1aa0">:effect <tspan fill="#111">(...)</tspan></text>
+</g>
+<g id="svg_openai_fusion_left" data-source-slot="slot_openai_fusion_left" transform="translate(1542.0 214.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.5 C 14,-16.5 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.5 -4,-16.5 Z"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_openai_fusion_right" data-source-slot="slot_openai_fusion_right" transform="translate(1810.0 214.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.5 C 14,-16.5 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.5 -4,-16.5 Z"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_openai_fusion_center" data-source-slot="slot_openai_fusion_center" transform="translate(1667.0 388.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-16.5 C 14,-16.5 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-16.5 -4,-16.5 Z"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(60)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(120)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(180)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(240)"/>
+  <path d="M 16.5,-5 C 16.5,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 16.5,-10 16.5,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_openai_filter" data-source-slot="slot_openai_filter" transform="translate(574.0 853.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-17.2 C 14,-17.2 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-17.2 -4,-17.2 Z"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(60)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(120)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(180)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(240)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_openai_problem_generator" data-source-slot="slot_openai_problem_generator" transform="translate(574.0 980.0)" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -4,-17.2 C 14,-17.2 22,-18 16,-6 C 10,6 -7,2 -12,-6 C -18,-18 -10,-17.2 -4,-17.2 Z"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(60)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(120)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(180)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(240)"/>
+  <path d="M 17.2,-5 C 17.2,14 18,22 6,16 C -6,10 -2,-7 6,-12 C 18,-18 17.2,-10 17.2,-5 Z" transform="rotate(300)"/>
+</g>
+<g id="svg_problem_doc" data-source-slot="slot_problem_doc">
+<path d="M763,956 H855 L875,976 V1025 H763 Z" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<path d="M855,956 V976 H875" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="771" y="973" font-size="16" font-family="Times New Roman" font-style="italic" fill="#1847b8">objects <tspan fill="#111">(...)</tspan></text>
+<text x="771" y="991" font-size="16" font-family="Times New Roman" font-style="italic" fill="#047c18">:init <tspan fill="#111">(...)</tspan></text>
+<text x="771" y="1009" font-size="16" font-family="Times New Roman" font-style="italic" fill="#b36b00">:goal <tspan fill="#111">(...)</tspan></text>
+</g>
+<g id="svg_pddl_solver_icon" data-source-slot="slot_pddl_solver_icon" fill="none" stroke="#111" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+  <rect x="1043.0" y="709" width="18" height="18" rx="2" fill="#fff"/>
+  <path d="M 1052.0,727 V 737.0 M 1052.0,737.0 H 1031 V 742 M 1052.0,737.0 H 1073 V 742"/>
+  <rect x="1022" y="742" width="18" height="18" rx="2" fill="#fff"/>
+  <rect x="1064" y="742" width="18" height="18" rx="2" fill="#fff"/>
+</g>
+</svg>

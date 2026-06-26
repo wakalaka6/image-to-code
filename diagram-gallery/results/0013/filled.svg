@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#2b5164"/>
+  </marker>
+  <marker id="arrow_green" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#39856f"/>
+  </marker>
+  <marker id="arrow_purple" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#6b408d"/>
+  </marker>
+  <linearGradient id="blueCard" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#e2f4fc"/>
+    <stop offset="100%" stop-color="#dceef8"/>
+  </linearGradient>
+  <linearGradient id="greenCard" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#e3f8ee"/>
+    <stop offset="100%" stop-color="#d9f2e8"/>
+  </linearGradient>
+  <linearGradient id="purpleCard" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#eee7f7"/>
+    <stop offset="100%" stop-color="#ebe4f4"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#617282" flood-opacity="0.25"/>
+  </filter>
+  <filter id="softPanelShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#607080" flood-opacity="0.17"/>
+  </filter>
+</defs>
+<rect x="0" y="0" width="1408" height="768" fill="#e8f2f8"/>
+
+<g opacity="0.28" stroke="#93a9bd" stroke-width="1.2" fill="none">
+  <line x1="1210" y1="0" x2="1264" y2="110"/><line x1="1264" y1="110" x2="1368" y2="280"/><line x1="1264" y1="110" x2="1370" y2="20"/>
+  <line x1="1210" y1="0" x2="1345" y2="40"/><line x1="1350" y1="0" x2="1408" y2="142"/><line x1="1170" y1="80" x2="1400" y2="270"/>
+  <line x1="0" y1="528" x2="96" y2="727"/><line x1="0" y1="735" x2="130" y2="664"/><line x1="130" y1="664" x2="225" y2="768"/>
+  <line x1="0" y1="528" x2="82" y2="620"/><line x1="82" y1="620" x2="0" y2="735"/>
+  <circle cx="1264" cy="110" r="4" fill="#93a9bd" stroke="none"/><circle cx="1368" cy="280" r="5" fill="#93a9bd" stroke="none"/>
+  <circle cx="0" cy="528" r="5" fill="#93a9bd" stroke="none"/><circle cx="82" cy="620" r="4" fill="#93a9bd" stroke="none"/>
+</g>
+<text x="704" y="54" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="800" letter-spacing="5" fill="#111d2b">WORLD MODEL: FROM STATIC 3D TO DYNAMIC VIDEO FLOW</text>
+
+<rect x="50" y="80" width="1308" height="610" rx="22" fill="#f8fbff" opacity="0.92" filter="url(#shadow)"/>
+<text x="704" y="124" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#111624">World Model Pipeline</text>
+
+<!-- left step cards -->
+<g filter="url(#softPanelShadow)">
+  <rect x="68" y="134" width="275" height="154" rx="13" fill="url(#blueCard)" opacity="0.86"/>
+  <rect x="140" y="144" width="120" height="34" rx="6" fill="#2f91d0"/>
+  <text x="200" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1">STEP 1</text>
+  <text x="205" y="209" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#111" letter-spacing="1">
+    <tspan x="205" dy="0">COARSE 3D</tspan><tspan x="205" dy="29">SANDBOX</tspan><tspan x="205" dy="29">GENERATION</tspan>
+  </text>
+
+  <rect x="68" y="316" width="275" height="154" rx="13" fill="url(#greenCard)" opacity="0.86"/>
+  <rect x="140" y="326" width="120" height="34" rx="6" fill="#39a675"/>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1">STEP 2</text>
+  <text x="205" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#111" letter-spacing="1">
+    <tspan x="205" dy="0">VLM-BASED</tspan><tspan x="205" dy="29">PHYSICAL MOTION</tspan><tspan x="205" dy="29">PREDICTION</tspan>
+  </text>
+
+  <rect x="68" y="518" width="275" height="172" rx="13" fill="url(#purpleCard)" opacity="0.92"/>
+  <rect x="136" y="555" width="125" height="35" rx="6" fill="#7d45b1"/>
+  <text x="198" y="579" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="1">STEP 3</text>
+  <text x="205" y="625" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#111" letter-spacing="1">
+    <tspan x="205" dy="0">VIDEO DIFFUSION</tspan><tspan x="205" dy="31">&amp; SYNTHESIS</tspan>
+  </text>
+</g>
+
+<!-- input prompt and equation text -->
+<text x="393" y="194" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111">Input Prompt</text>
+<text x="385" y="217" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+  <tspan x="385" dy="0">“A ball rolls down</tspan><tspan x="385" dy="25">a rocky ramp”</tspan>
+</text>
+
+<text x="386" y="356" font-family="Times New Roman, serif" font-size="15" font-style="italic" fill="#111">
+  <tspan x="406" dy="0">f = ∫</tspan><tspan font-size="10" dy="-7">t</tspan><tspan font-size="15" dy="7"> ∂v</tspan>
+  <tspan x="406" dy="24">∂u / ∂t = 1/2 C|u|</tspan>
+  <tspan x="406" dy="24">E = √(n² + h²)</tspan>
+</text>
+<text x="386" y="431" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+  <tspan x="386" dy="0">Physics Laws</tspan><tspan x="386" dy="24">&amp; Constraints</tspan>
+</text>
+
+<!-- panels -->
+<g filter="url(#softPanelShadow)">
+  <rect x="610" y="145" width="280" height="143" rx="12" fill="#e8f2f6" stroke="#4f93b3" stroke-width="2.6"/>
+  <text x="750" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#111">
+    <tspan x="750" dy="0">Coarse 3D Scene</tspan><tspan x="750" dy="27">Generation Model</tspan>
+  </text>
+
+  <rect x="978" y="145" width="359" height="143" rx="12" fill="#e8f2f6" stroke="#6ca2b7" stroke-width="2.6"/>
+  <text x="1158" y="274" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#111">Coarse 3D Representation</text>
+
+  <rect x="556" y="337" width="304" height="109" rx="12" fill="#dff3ea" stroke="#53a283" stroke-width="2.6"/>
+  <text x="718" y="403" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="800" fill="#2d6f61" letter-spacing="4">VLM</text>
+  <text x="812" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <tspan x="812" dy="0">Physical</tspan><tspan x="812" dy="22">Language</tspan><tspan x="812" dy="22">Model</tspan>
+  </text>
+
+  <rect x="912" y="326" width="425" height="168" rx="12" fill="#e2f4ec" stroke="#63a891" stroke-width="2.4"/>
+  <text x="1124" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" fill="#111">Physical Motion Prediction</text>
+  <text x="1124" y="477" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#111">4D Sequence (Time-Varying 3D)</text>
+
+  <rect x="548" y="519" width="290" height="136" rx="12" fill="#eee6f5" stroke="#8048a2" stroke-width="2.5"/>
+  <text x="725" y="588" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#111">
+    <tspan x="725" dy="0">Video</tspan><tspan x="725" dy="31">Diffusion</tspan>
+  </text>
+  <text x="693" y="684" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#111">Conditioned on 4D Data</text>
+
+  <rect x="916" y="516" width="421" height="187" rx="12" fill="#fff8ee" stroke="#c57e56" stroke-width="2.5"/>
+  <text x="1125" y="685" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#111" letter-spacing="1">GENERATED HIGH-QUALITY VIDEO</text>
+</g>
+
+<!-- connectors -->
+<g fill="none" stroke-linecap="square">
+  <line x1="542" y1="207" x2="609" y2="207" stroke="#2b5164" stroke-width="3" marker-end="url(#arrow)" fill="none"/>
+  <line x1="890" y1="207" x2="977" y2="207" stroke="#2b5164" stroke-width="3" marker-end="url(#arrow)" fill="none"/>
+  <path d="M1170,288 L1170,304 L704,304 L704,337" stroke="#2b5164" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="498" y1="391" x2="556" y2="391" stroke="#39856f" stroke-width="3" marker-end="url(#arrow_green)" fill="none"/>
+  <line x1="860" y1="405" x2="912" y2="405" stroke="#39856f" stroke-width="3" marker-end="url(#arrow_green)" fill="none"/>
+  <path d="M752,446 L752,477 L704,477 L704,519" stroke="#2b5164" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="343" y1="599" x2="548" y2="599" stroke="#6b408d" stroke-width="3" marker-end="url(#arrow_purple)" fill="none"/>
+  <line x1="838" y1="599" x2="916" y2="599" stroke="#6b408d" stroke-width="3" marker-end="url(#arrow_purple)" fill="none"/>
+</g>
+
+<text x="704" y="725" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-style="italic" fill="#111">Leveraging physical prediction and diffusion for realistic video creation.</text>
+
+
+<g id="svg_icon_neural_network" data-source-slot="slot_icon_neural_network" transform="translate(642,156)">
+  <g stroke="#394a50" stroke-width="2" fill="none" stroke-linecap="round">
+    <line x1="42" y1="8" x2="20" y2="18"/><line x1="42" y1="8" x2="63" y2="18"/>
+    <line x1="20" y1="18" x2="12" y2="34"/><line x1="20" y1="18" x2="42" y2="34"/>
+    <line x1="63" y1="18" x2="42" y2="34"/><line x1="63" y1="18" x2="72" y2="34"/>
+    <line x1="12" y1="34" x2="22" y2="52"/><line x1="42" y1="34" x2="22" y2="52"/><line x1="42" y1="34" x2="62" y2="52"/>
+    <line x1="72" y1="34" x2="62" y2="52"/>
+    <line x1="12" y1="34" x2="42" y2="34"/><line x1="42" y1="34" x2="72" y2="34"/>
+    <line x1="20" y1="18" x2="63" y2="18"/><line x1="22" y1="52" x2="62" y2="52"/>
+  </g>
+  <g fill="#d8edf2" stroke="#394a50" stroke-width="2">
+    <circle cx="42" cy="8" r="5"/><circle cx="20" cy="18" r="5"/><circle cx="63" cy="18" r="5"/>
+    <circle cx="12" cy="34" r="5"/><circle cx="42" cy="34" r="5"/><circle cx="72" cy="34" r="5"/>
+    <circle cx="22" cy="52" r="5"/><circle cx="62" cy="52" r="5"/>
+  </g>
+</g>
+<g id="svg_icon_database" data-source-slot="slot_icon_database" transform="translate(742,165)">
+  <path d="M5,8 C5,4 35,4 35,8 L35,40 C35,45 5,45 5,40 Z" fill="#d9f1f1" stroke="#2f4a52" stroke-width="2"/>
+  <ellipse cx="20" cy="8" rx="15" ry="5.5" fill="#e7f6f5" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,18 C5,23 35,23 35,18" fill="none" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,29 C5,34 35,34 35,29" fill="none" stroke="#2f4a52" stroke-width="2"/>
+  <path d="M5,40 C5,45 35,45 35,40" fill="none" stroke="#2f4a52" stroke-width="2"/>
+</g>
+<g id="svg_icon_cubes" data-source-slot="slot_icon_cubes" transform="translate(803,159)">
+  <polygon points="31.0,-2.0 44.2,5.2 31.0,13.6 17.8,5.2" fill="#e2f2f2" stroke="#344851" stroke-width="1.6"/><polygon points="17.8,5.2 31.0,13.6 31.0,29.2 17.8,22.0" fill="#8eb6c9" stroke="#344851" stroke-width="1.6"/><polygon points="44.2,5.2 31.0,13.6 31.0,29.2 44.2,22.0" fill="#c4e0e5" stroke="#344851" stroke-width="1.6"/>
+  <polygon points="18.0,22.0 31.2,29.2 18.0,37.6 4.8,29.2" fill="#cde6ea" stroke="#344851" stroke-width="1.6"/><polygon points="4.8,29.2 18.0,37.6 18.0,53.2 4.8,46.0" fill="#4d8da8" stroke="#344851" stroke-width="1.6"/><polygon points="31.2,29.2 18.0,37.6 18.0,53.2 31.2,46.0" fill="#7eb3c8" stroke="#344851" stroke-width="1.6"/>
+  <polygon points="48.0,22.0 61.2,29.2 48.0,37.6 34.8,29.2" fill="#eef6f4" stroke="#344851" stroke-width="1.6"/><polygon points="34.8,29.2 48.0,37.6 48.0,53.2 34.8,46.0" fill="#b7d9dc" stroke="#344851" stroke-width="1.6"/><polygon points="61.2,29.2 48.0,37.6 48.0,53.2 61.2,46.0" fill="#dceeed" stroke="#344851" stroke-width="1.6"/>
+</g>
+<g id="svg_coarse_3d_representation" data-source-slot="slot_coarse_3d_representation" transform="translate(1026,158)">
+  <defs>
+    <radialGradient id="grad_rep_sphere" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#d7dddd"/><stop offset="55%" stop-color="#9da2a0"/><stop offset="100%" stop-color="#6f7372"/>
+    </radialGradient>
+    <radialGradient id="grad_rep_ball" cx="35%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#d5d6d3"/><stop offset="100%" stop-color="#747a78"/>
+    </radialGradient>
+  </defs>
+  <g stroke="#333" stroke-width="0.8" fill="none" opacity="0.9">
+    <path d="M8,18 L56,2 L104,18 L56,34 Z"/>
+    <path d="M8,18 L8,53 L56,69 L56,34"/>
+    <path d="M104,18 L104,53 L56,69"/>
+    <path d="M8,53 L56,36 L104,53"/>
+    <path d="M56,2 L56,34"/>
+  </g>
+  <circle cx="56" cy="43" r="16" fill="url(#grad_rep_sphere)" opacity="0.85"/>
+  <g transform="translate(150,34)">
+    <circle cx="0" cy="0" r="18" fill="url(#grad_rep_ball)" stroke="#666" stroke-width="0.8"/>
+    <g stroke="#575d5c" stroke-width="0.55" fill="none" opacity="0.8">
+      <ellipse cx="0" cy="0" rx="18" ry="5"/><ellipse cx="0" cy="0" rx="18" ry="10"/>
+      <ellipse cx="0" cy="0" rx="6" ry="18"/><ellipse cx="0" cy="0" rx="12" ry="18"/>
+      <line x1="-18" y1="0" x2="18" y2="0"/><line x1="0" y1="-18" x2="0" y2="18"/>
+    </g>
+  </g>
+  <g stroke="#555" stroke-width="0.8">
+    <polygon points="208,7 262,30 226,77 168,55" fill="#bfc4c4"/>
+    <polygon points="168,55 226,77 262,30 208,7" fill="#b7bbbb"/>
+    <line x1="168" y1="55" x2="208" y2="7"/>
+    <line x1="226" y1="77" x2="262" y2="30"/>
+  </g>
+</g>
+<g id="svg_vlm_brain" data-source-slot="slot_vlm_brain" transform="translate(592,357)">
+  <g fill="none" stroke="#2d5c48" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34,9 C27,2 17,6 16,15 C7,16 3,23 7,31 C0,37 5,49 16,47 C19,55 32,56 36,47 C41,56 55,54 56,45 C68,45 72,32 65,26 C69,16 61,8 51,10 C47,2 38,2 34,9 Z"/>
+    <path d="M34,9 C31,16 32,22 38,26"/>
+    <path d="M16,15 C24,16 27,22 25,28"/>
+    <path d="M7,31 C15,29 22,31 26,38"/>
+    <path d="M36,47 C37,38 34,31 26,28"/>
+    <path d="M51,10 C47,15 49,21 57,24"/>
+    <path d="M65,26 C56,27 50,31 48,39"/>
+    <path d="M56,45 C49,45 43,42 40,36"/>
+    <path d="M30,20 C37,18 45,20 48,26"/>
+  </g>
+</g>
+<g id="svg_motion_sequence" data-source-slot="slot_motion_sequence" transform="translate(918,368)">
+  <g transform="translate(2,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_0" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="35" cy="22" r="10" fill="url(#grad_motion_ball_0)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=0</text>
+</g>
+  <g transform="translate(101,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_1" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="28" cy="23" r="10" fill="url(#grad_motion_ball_1)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=1</text>
+</g>
+  <g transform="translate(205,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_2" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="40" cy="33" r="10" fill="url(#grad_motion_ball_2)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=2</text>
+</g>
+  <g transform="translate(310,0)">
+  <defs>
+    <radialGradient id="grad_motion_ball_3" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#d9dcda"/><stop offset="100%" stop-color="#777f7d"/>
+    </radialGradient>
+  </defs>
+  <polygon points="0,22 31,13 70,58 31,67" fill="#a4abaa" stroke="#666" stroke-width="0.8"/>
+  <polygon points="31,13 70,58 84,51 46,6" fill="#c0c7c6" stroke="#666" stroke-width="0.8"/>
+  <line x1="0" y1="22" x2="31" y2="67" stroke="#666" stroke-width="0.8"/>
+  <circle cx="56" cy="49" r="10" fill="url(#grad_motion_ball_3)" stroke="#6f7775" stroke-width="0.8"/>
+  <text x="39" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#111">t=3</text>
+</g>
+  <g stroke="#36716b" stroke-width="1.8" fill="none" marker-end="url(#arrow_green)">
+    <line x1="77" y1="38" x2="98" y2="38"/>
+    <line x1="181" y1="38" x2="202" y2="38"/>
+    <line x1="285" y1="38" x2="306" y2="38"/>
+  </g>
+  <text x="382" y="40" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#111">...</text>
+</g>
+<g id="svg_video_diffusion_icon" data-source-slot="slot_video_diffusion_icon" transform="translate(573,548)">
+  <g fill="none" stroke="#4c4a54" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18,31 C9,31 4,25 5,18 C6,10 14,7 21,11 C25,2 40,2 45,13 C52,12 60,17 60,26 C67,27 70,36 64,42 C60,46 54,45 51,45 L20,45 C12,45 7,40 8,34"/>
+    <line x1="25" y1="44" x2="25" y2="58"/>
+    <line x1="38" y1="44" x2="38" y2="66"/>
+    <line x1="51" y1="44" x2="51" y2="58"/>
+    <path d="M25,58 C22,58 20,60 20,63"/>
+    <path d="M51,58 C54,58 56,60 56,63"/>
+  </g>
+  <g fill="#4c4a54">
+    <circle cx="11" cy="62" r="3.2"/><circle cx="25" cy="64" r="3.2"/><circle cx="38" cy="70" r="3.2"/><circle cx="51" cy="64" r="3.2"/><circle cx="65" cy="62" r="3.2"/>
+  </g>
+</g>
+<image id="raster_generated_video_frames"
+       data-source-slot="slot_generated_video_frames"
+       href="assets/raster_required/generated_video_frames.png"
+       x="927" y="528" width="399" height="90"
+       preserveAspectRatio="none"/>
+</svg>

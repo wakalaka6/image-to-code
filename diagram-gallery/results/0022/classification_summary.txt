@@ -1,0 +1,13 @@
+svg_candidate count: 3
+raster_required count: 6
+
+Per-asset classification:
+- slot_ref_pose_skeleton: svg_candidate — black-background pose is sparse colored line art and can be approximated with SVG polylines
+- slot_ref_img_photo: raster_required — photo/video-frame region with human appearance, texture, shadows, and soft background
+- slot_tgt_pose_stack: raster_required — stacked pose frames with pixel-level line detail and repeated frame offsets
+- slot_noise_stack_texture: raster_required — dense stochastic noise texture cannot be faithfully represented by simple SVG geometry
+- slot_mask_single_silhouettes: raster_required — colored human silhouettes have irregular raster mask boundaries
+- slot_mask_stack_silhouettes: raster_required — stacked mask frames include complex silhouette contours and frame shadows
+- slot_img_module_c1_graph: svg_candidate — small diagram uses circles, arrows, dashed lines, and hatch fills that are cleanly vectorizable
+- slot_img_module_cN_graph: svg_candidate — small diagram uses simple repeated geometric shapes and arrows
+- slot_gen_frames_photo_stack: raster_required — generated video frames are photo-like and contain human figures with texture and shading

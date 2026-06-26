@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1637" height="864" viewBox="0 0 1637 864">
+<g id="svg_task_icon_question_bubble" data-source-slot="slot_task_icon_question_bubble" transform="translate(4,58) scale(1.0000,1.0000)">
+  <ellipse cx="39" cy="39" rx="33" ry="34" fill="#7ec8e3" stroke="#333" stroke-width="5"/>
+  <path d="M55 59 L72 75 L53 72 Z" fill="#7ec8e3" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+  <text x="39" y="53" font-family="Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle" fill="#333">?</text>
+</g>
+<g id="svg_policy_model_network" data-source-slot="slot_policy_model_network" transform="translate(488,166) scale(1.0000,1.0000)">
+  <g stroke="#333" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="22" y1="25" x2="54" y2="10"/>
+    <line x1="22" y1="25" x2="54" y2="35"/>
+    <line x1="22" y1="62" x2="54" y2="47"/>
+    <line x1="22" y1="62" x2="54" y2="70"/>
+    <line x1="22" y1="99" x2="54" y2="84"/>
+    <line x1="22" y1="99" x2="54" y2="108"/>
+    <line x1="68" y1="10" x2="98" y2="24"/>
+    <line x1="68" y1="35" x2="98" y2="24"/>
+    <line x1="68" y1="47" x2="98" y2="61"/>
+    <line x1="68" y1="70" x2="98" y2="61"/>
+    <line x1="68" y1="84" x2="98" y2="96"/>
+    <line x1="68" y1="108" x2="98" y2="96"/>
+  </g>
+  <g fill="#48dce4" stroke="#333" stroke-width="4">
+    <circle cx="14" cy="25" r="12"/>
+    <circle cx="14" cy="62" r="12"/>
+    <circle cx="14" cy="99" r="12"/>
+  </g>
+  <g fill="#f2cb34" stroke="#333" stroke-width="4">
+    <circle cx="56" cy="10" r="12"/>
+    <circle cx="56" cy="47" r="12"/>
+    <circle cx="56" cy="84" r="12"/>
+    <circle cx="56" cy="121" r="12"/>
+  </g>
+  <g fill="#e8485a" stroke="#333" stroke-width="4">
+    <circle cx="110" cy="47" r="12"/>
+    <circle cx="110" cy="84" r="12"/>
+  </g>
+</g>
+<g id="svg_generated_program_code_icon" data-source-slot="slot_generated_program_code_icon" transform="translate(658,52) scale(1.0000,1.0000)">
+  <path d="M8 8 H55 L74 27 V72 H8 Z" fill="#f4eefc" stroke="#4b0a72" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M55 8 V27 H74" fill="none" stroke="#4b0a72" stroke-width="5" stroke-linejoin="round"/>
+  <text x="41" y="53" font-family="Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle" fill="#9b7ae6">&lt;/&gt;</text>
+</g>
+<g id="svg_advantage_badge_group" data-source-slot="slot_advantage_badge_group" transform="translate(1458,96) scale(1.0000,1.0000)">
+  <g stroke="#111" stroke-width="4" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M28 35 l6 14 l15 1 l-12 9 l4 14 l-13 -8 l-13 8 l4 -14 l-12 -9 l15 -1 z" fill="#f2d54a"/>
+    <path d="M12 58 l7 4 l7 -4 l-4 8 l4 8 l-7 -4 l-7 4 l4 -8 z" fill="#4f7bff"/>
+  </g>
+  <g>
+    <rect x="18" y="88" width="22" height="41" fill="#f1d96a" stroke="#111" stroke-width="4"/>
+    <rect x="64" y="64" width="22" height="65" fill="#4be3ae" stroke="#111" stroke-width="4"/>
+    <rect x="108" y="44" width="22" height="85" fill="#79b4ef" stroke="#111" stroke-width="4"/>
+  </g>
+  <g stroke="#111" stroke-width="4" fill="#f0c62e" stroke-linejoin="round">
+    <path d="M85 26 h10 l6 -8 l6 8 h10 l-3 12 H88 Z"/>
+    <circle cx="90" cy="24" r="3" fill="#f0c62e"/>
+    <circle cx="101" cy="15" r="3" fill="#f0c62e"/>
+    <circle cx="113" cy="24" r="3" fill="#f0c62e"/>
+  </g>
+</g>
+<g id="svg_vulnerability_cfg_graph" data-source-slot="slot_vulnerability_cfg_graph" transform="translate(72,548) scale(1.0000,1.0000)">
+  <g stroke="#111" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="30" y1="90" x2="78" y2="40"/>
+    <line x1="78" y1="40" x2="124" y2="92"/>
+    <line x1="70" y1="160" x2="124" y2="92"/>
+    <line x1="124" y1="92" x2="154" y2="146"/>
+  </g>
+  <g fill="#fff" stroke="#111" stroke-width="4">
+    <circle cx="30" cy="90" r="23"/>
+    <circle cx="70" cy="160" r="23"/>
+  </g>
+  <g fill="#efc17b" stroke="#111" stroke-width="5">
+    <circle cx="78" cy="40" r="24"/>
+    <circle cx="124" cy="92" r="24"/>
+    <circle cx="154" cy="146" r="24"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="78" y="43">1</text>
+    <text x="124" y="95">2</text>
+    <text x="154" y="149">3</text>
+  </g>
+</g>
+<g id="svg_unit_test_info_icon_1" data-source-slot="slot_unit_test_info_icon_1" transform="translate(1026,549) scale(1.0000,1.0000)">
+  <g fill="#fff" stroke="#111" stroke-width="4">
+    <circle cx="31" cy="28" r="21"/>
+  </g>
+  <g fill="#111" font-family="Arial, sans-serif" font-size="33" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="31" y="31">i</text>
+  </g>
+</g>
+<g id="svg_unit_test_info_icon_2" data-source-slot="slot_unit_test_info_icon_2" transform="translate(1027,631) scale(0.9836,1.0000)">
+  <g fill="#fff" stroke="#111" stroke-width="4">
+    <circle cx="31" cy="28" r="21"/>
+  </g>
+  <g fill="#111" font-family="Arial, sans-serif" font-size="33" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="31" y="31">i</text>
+  </g>
+</g>
+<g id="svg_unit_test_info_icon_3" data-source-slot="slot_unit_test_info_icon_3" transform="translate(1028,721) scale(0.9836,1.0175)">
+  <g fill="#fff" stroke="#111" stroke-width="4">
+    <circle cx="31" cy="28" r="21"/>
+  </g>
+  <g fill="#111" font-family="Arial, sans-serif" font-size="33" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="31" y="31">i</text>
+  </g>
+</g>
+<g id="svg_verifier_generated_program_icon" data-source-slot="slot_verifier_generated_program_icon" transform="translate(1436,546) scale(1.0000,1.0000)">
+  <path d="M12 12 H73 L96 35 V99 H12 Z" fill="#f4eefc" stroke="#4b0a72" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M73 12 V35 H96" fill="none" stroke="#4b0a72" stroke-width="6" stroke-linejoin="round"/>
+  <text x="54" y="72" font-family="Arial, sans-serif" font-size="46" font-weight="700" text-anchor="middle" fill="#9b7ae6">&lt;/&gt;</text>
+</g>
+</svg>

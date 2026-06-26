@@ -1,0 +1,25 @@
+Hybrid SVG reconstruction for: Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer_diagram(2).jpg
+
+svg_candidate count: 9
+raster_required count: 10
+
+Assets:
+- slot_source_image_t2i: raster_required (photo-like source image with person and background)
+- slot_generated_target_t2i: raster_required (photo-like generated target image with person and ball)
+- slot_crop_preview_t2i: raster_required (tiny raster crop preview containing photographic thumbnails)
+- slot_source_image_inpaint: raster_required (photo-like source image with person)
+- slot_image_with_mask_inpaint: raster_required (mixed photo/mask/noise raster region)
+- slot_crop_preview_inpaint: raster_required (tiny raster crop preview containing image thumbnails)
+- slot_target_image_inpaint: raster_required (photo-like target image with edited object)
+- slot_context_image_original: raster_required (portrait photo with natural texture)
+- slot_context_image_painted: raster_required (painted/photo-like portrait reference)
+- slot_encoder_inputs: raster_required (contains photo crop, mask, and dense noise texture)
+- slot_inverted_noise_grid: svg_candidate (regular flat grid of pale blue squares)
+- slot_random_noise_grid: svg_candidate (regular flat grid of pale orange squares)
+- slot_feature_injection_tokens: svg_candidate (small colored square-token diagram with clean geometry)
+- slot_decoder_tokens: svg_candidate (flat colored token row)
+- slot_lora_tokens_top: svg_candidate (flat colored token row)
+- slot_lora_tokens_bottom: svg_candidate (flat colored token row)
+- slot_lora_expert_adapters: svg_candidate (repeated LoRA adapter icons and flame symbols with simple outlines)
+- slot_route_topk_fire: svg_candidate (simple bar/route diagram and fire icon)
+- slot_legend_icons: svg_candidate (legend icons made from flat flame, cube, rounded rectangles, and adapter outline)

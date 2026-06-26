@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1908" height="844" viewBox="0 0 1908 844">
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000"/>
+    </marker>
+    <marker id="smallArrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#000"/>
+    </marker>
+    <style>
+      .title { font-family: 'Times New Roman', serif; font-size: 34px; font-style: italic; }
+      .paneltag { font-family: 'Times New Roman', serif; font-size: 32px; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 26px; }
+      .labelSmall { font-family: Arial, Helvetica, sans-serif; font-size: 22px; }
+      .labelBold { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; }
+      .serif { font-family: 'Times New Roman', serif; }
+      .italic { font-style: italic; }
+      .bigi { font-family: 'Times New Roman', serif; font-size: 26px; font-style: italic; }
+      .box { fill: none; stroke: #000; stroke-width: 2; }
+      .lightbox { fill: none; stroke: #000; stroke-width: 1.8; }
+      .token { fill: #ddd; stroke: #000; stroke-width: 1.8; }
+      .tokenBlue { fill: #dce9f7; stroke: #2a66a5; stroke-width: 2; }
+      .tokenPurple { fill: #f1dbf5; stroke: #91388d; stroke-width: 2; }
+      .alignedBlue { fill: #d7e6f6; stroke: #2d6ebb; stroke-width: 2; }
+      .alignedOrange { fill: none; stroke: #e0702d; stroke-width: 2; }
+      .fm { fill: #e6d8e8; stroke: #91388d; stroke-width: 2; }
+      .embedbox { fill: none; stroke: #000; stroke-width: 2; }
+      .bluebox { fill: #cfe0f2; stroke: #2d6ebb; stroke-width: 2; }
+      .orangebox { fill: none; stroke: #e0702d; stroke-width: 2; }
+      .dash { fill: none; stroke: #000; stroke-width: 2; stroke-dasharray: 10 7; }
+      .orangedash { fill: none; stroke: #d56428; stroke-width: 2.3; stroke-dasharray: 12 8; }
+      .slottext { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #666; }
+      .placeholder rect.slot { fill: #f8f8f8; stroke: #666; stroke-width: 1.6; stroke-dasharray: 5 4; }
+      .placeholder line.diag { stroke: #aaa; stroke-width: 1; }
+      .placeholder text { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #777; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+  </defs>
+<rect x="0" y="0" width="1908" height="844" fill="#efefef"/>
+<line x1="407" y1="30" x2="407" y2="739" stroke="#000" stroke-width="2.4" stroke-dasharray="13 10"/>
+<line x1="990" y1="30" x2="990" y2="739" stroke="#000" stroke-width="2.4" stroke-dasharray="13 10"/>
+<text class="title" x="185" y="45" text-anchor="middle">ICL</text>
+<text class="title" x="690" y="45" text-anchor="middle">MLLM</text>
+<text class="title" x="1460" y="45" text-anchor="middle">ICRL</text>
+<rect x="28" y="62" width="340" height="43" class="box"/><text class="label" x="198" y="93" text-anchor="middle">LLM</text>
+<rect x="476" y="62" width="459" height="43" class="box"/><text class="label" x="705" y="93" text-anchor="middle">LLM</text>
+<rect x="1038" y="62" width="836" height="43" class="box"/><text class="label" x="1456" y="93" text-anchor="middle">LLM</text>
+<rect x="84" y="178" width="196" height="48" class="token"/>
+<rect x="92" y="184" width="196" height="48" class="token"/>
+<rect x="100" y="190" width="196" height="48" class="token"/>
+<line x1="188" y1="170" x2="188" y2="114" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M79 182 C65 182,65 182,65 191 L65 221 C65 230,70 230,79 230" fill="none" stroke="#000" stroke-width="2.2"/>
+<text class="labelBold" x="44" y="216" text-anchor="middle">N</text>
+<rect x="71" y="324" width="235" height="57" class="box"/><text class="label" x="188" y="360" text-anchor="middle">Embedding Layer</text>
+<line x1="188" y1="311" x2="188" y2="256" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="68" y="442" width="233" height="47" class="token"/>
+<rect x="76" y="448" width="233" height="47" class="token"/>
+<rect x="84" y="454" width="233" height="47" class="token"/>
+<text class="label" x="200" y="490" text-anchor="middle">Input x<tspan baseline-shift="sub" font-size="18">i</tspan>, Label y<tspan baseline-shift="sub" font-size="18">i</tspan></text>
+<line x1="188" y1="442" x2="188" y2="388" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="0" y="580" width="370" height="55" class="token"/>
+<rect x="8" y="586" width="370" height="55" class="token"/>
+<rect x="16" y="592" width="370" height="55" class="token"/>
+<text x="202" y="615" text-anchor="middle" class="labelBold italic">Input X (SMILES sequence): CC(C)(C)CCO</text>
+<text x="200" y="645" text-anchor="middle" class="labelBold italic">Label Y (Predicted Property): 1.15</text>
+<line x1="188" y1="585" x2="188" y2="518" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<text class="paneltag" x="150" y="756" text-anchor="middle">(a)</text>
+<g id="slot_mllm_train_optional_flame" data-bbox="[505,58,24,34]" data-role="asset" class="placeholder">
+  <rect class="slot" x="505" y="58" width="24" height="34" rx="2"/>
+  <line class="diag" x1="505" y1="58" x2="529" y2="92"/>
+  <line class="diag" x1="529" y1="58" x2="505" y2="92"/>
+  <text x="517.0" y="75.0">ASSET_SLOT</text>
+</g>
+<rect x="507" y="143" width="379" height="63" rx="20" ry="20" class="dash"/>
+<rect x="520" y="150" width="46" height="49" class="token"/>
+<rect x="520" y="150" width="46" height="49" class="token"/>
+<rect x="566" y="150" width="46" height="49" class="token"/>
+<rect x="612" y="150" width="46" height="49" class="token"/>
+<rect x="658" y="150" width="46" height="49" class="token"/>
+<rect x="704" y="150" width="46" height="49" class="alignedBlue"/>
+<rect x="750" y="150" width="46" height="49" class="alignedBlue"/>
+<rect x="796" y="150" width="46" height="49" class="alignedBlue"/>
+<rect x="842" y="150" width="46" height="49" class="alignedBlue"/>
+<line x1="703" y1="150" x2="703" y2="199" stroke="#2d6ebb" stroke-width="2"/>
+<line x1="699" y1="144" x2="699" y2="110" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M504 175 L479 175 L479 243 L449 243" fill="none" stroke="#000" stroke-width="2.4" marker-end="url(#smallArrow)"/>
+<path d="M886 176 L951 176 L951 243 L918 243" fill="none" stroke="#000" stroke-width="2.4" marker-end="url(#smallArrow)"/>
+<rect x="449" y="220" width="216" height="47" class="token"/>
+<line x1="503" y1="220" x2="503" y2="267" stroke="#000" stroke-width="1.8"/>
+<line x1="557" y1="220" x2="557" y2="267" stroke="#000" stroke-width="1.8"/>
+<line x1="611" y1="220" x2="611" y2="267" stroke="#000" stroke-width="1.8"/>
+<rect x="734" y="219" width="184" height="47" class="alignedBlue"/>
+<line x1="780" y1="219" x2="780" y2="266" stroke="#2d6ebb" stroke-width="2"/>
+<line x1="826" y1="219" x2="826" y2="266" stroke="#2d6ebb" stroke-width="2"/>
+<line x1="872" y1="219" x2="872" y2="266" stroke="#2d6ebb" stroke-width="2"/>
+<path d="M555 307 L555 281" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="447" y="337" width="227" height="60" class="box"/><text class="label" x="560" y="376" text-anchor="middle">Embedding Layer</text>
+<path d="M555 460 L555 405" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="470" y="469" width="166" height="120" class="box"/>
+<text class="labelSmall" x="553" y="509" text-anchor="middle">Text Input: x<tspan baseline-shift="sub" font-size="16">i</tspan></text>
+<text class="labelSmall" x="553" y="538" text-anchor="middle">Modality Input: m<tspan baseline-shift="sub" font-size="16">i</tspan></text>
+<text class="labelSmall" x="553" y="567" text-anchor="middle">Label y<tspan baseline-shift="sub" font-size="16">i</tspan></text>
+<path d="M689 648 L638 648 L638 515 L471 515" fill="none" stroke="#000" stroke-width="2.4" marker-end="url(#smallArrow)"/>
+<rect x="699" y="307" width="252" height="376" class="dash"/>
+<g id="slot_mllm_projector_flame" data-bbox="[761,317,24,31]" data-role="asset" class="placeholder">
+  <rect class="slot" x="761" y="317" width="24" height="31" rx="2"/>
+  <line class="diag" x1="761" y1="317" x2="785" y2="348"/>
+  <line class="diag" x1="785" y1="317" x2="761" y2="348"/>
+  <text x="773.0" y="332.5">ASSET_SLOT</text>
+</g>
+<rect x="757" y="316" width="138" height="38" class="bluebox"/>
+<text class="label" x="832" y="343" text-anchor="middle">Projector</text>
+<line x1="823" y1="404" x2="823" y2="359" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="759" y="404" width="116" height="40" rx="10" ry="10" class="dash"/>
+<rect x="768" y="410" width="28" height="31" class="alignedBlue"/>
+<rect x="804" y="410" width="28" height="31" class="alignedBlue"/>
+<rect x="840" y="410" width="28" height="31" class="alignedBlue"/>
+<path d="M823 309 L823 281" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M823 487 L823 456" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M823 595 L823 636" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<polygon points="738,493 917,493 929,588 726,588" fill="#a8c7e7" stroke="#2d6ebb" stroke-width="2"/>
+<text class="label" x="826" y="534" text-anchor="middle">Pre-trained</text>
+<text class="label" x="826" y="568" text-anchor="middle">Modality Encoder</text>
+<g id="slot_modality_icon_image" data-bbox="[733,626,47,39]" data-role="asset" class="placeholder">
+  <rect class="slot" x="733" y="626" width="47" height="39" rx="2"/>
+  <line class="diag" x1="733" y1="626" x2="780" y2="665"/>
+  <line class="diag" x1="780" y1="626" x2="733" y2="665"/>
+  <text x="756.5" y="645.5">ASSET_SLOT</text>
+</g>
+<g id="slot_modality_icon_video" data-bbox="[804,621,49,46]" data-role="asset" class="placeholder">
+  <rect class="slot" x="804" y="621" width="49" height="46" rx="2"/>
+  <line class="diag" x1="804" y1="621" x2="853" y2="667"/>
+  <line class="diag" x1="853" y1="621" x2="804" y2="667"/>
+  <text x="828.5" y="644.0">ASSET_SLOT</text>
+</g>
+<g id="slot_modality_icon_graph" data-bbox="[878,619,49,48]" data-role="asset" class="placeholder">
+  <rect class="slot" x="878" y="619" width="49" height="48" rx="2"/>
+  <line class="diag" x1="878" y1="619" x2="927" y2="667"/>
+  <line class="diag" x1="927" y1="619" x2="878" y2="667"/>
+  <text x="902.5" y="643.0">ASSET_SLOT</text>
+</g>
+<path d="M811 284 l28 0 l0 -11 l24 17 l-24 17 l0 -11 l-28 0 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M811 456 l28 0 l0 -11 l24 17 l-24 17 l0 -11 l-28 0 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<text class="paneltag" x="768" y="756" text-anchor="middle">(b)</text>
+<text class="labelBold italic" x="1253" y="139">Text Level</text>
+<text class="labelBold italic" x="1535" y="139" text-anchor="middle">Embedding Level</text>
+<line x1="1387" y1="119" x2="1387" y2="486" stroke="#000" stroke-width="2.2" stroke-dasharray="12 10"/>
+<rect x="1089" y="180" width="200" height="46" class="token"/>
+<rect x="1097" y="186" width="200" height="46" class="token"/>
+<rect x="1105" y="192" width="200" height="46" class="token"/>
+<line x1="1197" y1="170" x2="1197" y2="126" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1058" y="289" width="285" height="34" class="box"/><text class="label" x="1200" y="313" text-anchor="middle">Embedding Layer</text>
+<line x1="1197" y1="278" x2="1197" y2="243" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1035" y="398" width="132" height="57" rx="12" ry="12" class="dash"/>
+<rect x="1047" y="404" width="29" height="34" class="tokenPurple"/>
+<rect x="1085" y="404" width="29" height="34" class="tokenPurple"/>
+<rect x="1123" y="404" width="29" height="34" class="tokenPurple"/>
+<path d="M1090 488 l20 0 l0 -11 l23 17 l-23 17 l0 -11 l-20 0 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1036" y="492" width="121" height="76" class="fm"/>
+<text class="label" x="1096" y="527" text-anchor="middle">Pre-trained</text>
+<text class="label" x="1096" y="560" text-anchor="middle">FM</text>
+<line x1="1097" y1="622" x2="1097" y2="575" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1099" y="613" width="497" height="61" class="token"/>
+<rect x="1107" y="619" width="497" height="61" class="token"/>
+<rect x="1115" y="625" width="497" height="61" class="token"/>
+<text x="1360" y="646" text-anchor="middle" class="labelBold italic">Input X (SMILES sequence): Oc1ccccc1O</text>
+<text x="1360" y="678" text-anchor="middle" class="labelBold italic">Label Y (Predicted Property): -6.36</text>
+<line x1="1320" y1="620" x2="1320" y2="482" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<text class="labelSmall" x="1187" y="422" text-anchor="start">Stringify</text>
+<line x1="1169" y1="426" x2="1257" y2="426" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1243" y="369" width="92" height="105" class="box"/>
+<rect x="1250" y="362" width="92" height="105" class="box" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="1257" y="355" width="92" height="105" class="box" fill="none" stroke="#000" stroke-width="2"/>
+<text class="label" x="1303" y="421" text-anchor="middle"><tspan fill="#91388d">Rep</tspan> r<tspan baseline-shift="sub" font-size="18">i</tspan></text>
+<text class="label" x="1303" y="454" text-anchor="middle">Label y<tspan baseline-shift="sub" font-size="18">i</tspan></text>
+<path d="M1206 352 L1206 324 L1197 324" fill="none" stroke="#000" stroke-width="2.4"/>
+<path d="M1197 352 L1197 324" fill="none" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1410" y="398" width="132" height="57" rx="12" ry="12" class="dash"/>
+<rect x="1422" y="404" width="29" height="34" class="tokenPurple"/>
+<rect x="1460" y="404" width="29" height="34" class="tokenPurple"/>
+<rect x="1498" y="404" width="29" height="34" class="tokenPurple"/>
+<path d="M1469 488 l20 0 l0 -11 l23 17 l-23 17 l0 -11 l-20 0 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1410" y="492" width="121" height="76" class="fm"/>
+<text class="label" x="1470" y="527" text-anchor="middle">Pre-trained</text>
+<text class="label" x="1470" y="560" text-anchor="middle">FM</text>
+<line x1="1470" y1="492" x2="1470" y2="349" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1428" y="300" width="138" height="38" class="orangebox"/>
+<g id="slot_icrl_projector_snowflake" data-bbox="[1426,309,26,27]" data-role="asset" class="placeholder">
+  <rect class="slot" x="1426" y="309" width="26" height="27" rx="2"/>
+  <line class="diag" x1="1426" y1="309" x2="1452" y2="336"/>
+  <line class="diag" x1="1452" y1="309" x2="1426" y2="336"/>
+  <text x="1439.0" y="322.5">ASSET_SLOT</text>
+</g>
+<text class="label" x="1504" y="327" text-anchor="middle">Projector</text>
+<path d="M1458 281 l28 0 l0 -11 l24 17 l-24 17 l0 -11 l-28 0 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1464" y="180" width="40" height="50" class="alignedOrange"/>
+<rect x="1472" y="186" width="40" height="50" class="alignedOrange"/>
+<rect x="1480" y="192" width="40" height="50" class="alignedOrange"/>
+<text class="labelBold" x="1566" y="252" text-anchor="start">M<tspan baseline-shift="sub" font-size="18">inj</tspan></text>
+<path d="M1528 242 C1598 242,1580 275,1624 275" class="orangedash" marker-end="url(#smallArrow)"/>
+<rect x="1629" y="180" width="200" height="46" class="token"/>
+<rect x="1637" y="186" width="200" height="46" class="token"/>
+<rect x="1645" y="192" width="200" height="46" class="token"/>
+<rect x="1739" y="192" width="46" height="46" class="alignedOrange"/>
+<line x1="1749" y1="170" x2="1749" y2="126" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1627 276 C1718 276,1718 309,1737 309" class="orangedash" marker-end="url(#smallArrow)"/>
+<path d="M1779 303 l0 -17 l-9 0 l13 -24 l13 24 l-9 0 l0 17 z" fill="#fff" stroke="#000" stroke-width="2"/>
+<rect x="1635" y="303" width="212" height="66" rx="16" ry="16" class="dash"/>
+<rect x="1632" y="304" width="184" height="48" class="token"/>
+<rect x="1640" y="310" width="184" height="48" class="token"/>
+<rect x="1648" y="316" width="184" height="48" class="token"/>
+<rect x="1635" y="413" width="236" height="34" class="box"/><text class="label" x="1753" y="437" text-anchor="middle">Embedding Layer</text>
+<line x1="1752" y1="402" x2="1752" y2="376" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1752" y1="487" x2="1752" y2="450" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1596" y="487" width="274" height="68" class="token"/>
+<rect x="1604" y="493" width="274" height="68" class="token"/>
+<rect x="1612" y="499" width="274" height="68" class="token"/>
+<rect x="1682" y="511" width="84" height="34" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text class="label" x="1748" y="537" text-anchor="middle">Rep r<tspan baseline-shift="sub" font-size="18">i</tspan>, Label y<tspan baseline-shift="sub" font-size="18">i</tspan></text>
+<line x1="1752" y1="621" x2="1752" y2="574" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1609 652 L1536 652" fill="none" stroke="#000" stroke-width="2.6"/>
+<text class="paneltag" x="1360" y="756" text-anchor="middle">(c)</text>
+<g id="slot_legend_train_optional" data-bbox="[14,786,24,35]" data-role="asset" class="placeholder">
+  <rect class="slot" x="14" y="786" width="24" height="35" rx="2"/>
+  <line class="diag" x1="14" y1="786" x2="38" y2="821"/>
+  <line class="diag" x1="38" y1="786" x2="14" y2="821"/>
+  <text x="26.0" y="803.5">ASSET_SLOT</text>
+</g>
+<g id="slot_legend_train_required" data-bbox="[224,783,27,35]" data-role="asset" class="placeholder">
+  <rect class="slot" x="224" y="783" width="27" height="35" rx="2"/>
+  <line class="diag" x1="224" y1="783" x2="251" y2="818"/>
+  <line class="diag" x1="251" y1="783" x2="224" y2="818"/>
+  <text x="237.5" y="800.5">ASSET_SLOT</text>
+</g>
+<g id="slot_legend_train_free" data-bbox="[436,787,27,28]" data-role="asset" class="placeholder">
+  <rect class="slot" x="436" y="787" width="27" height="28" rx="2"/>
+  <line class="diag" x1="436" y1="787" x2="463" y2="815"/>
+  <line class="diag" x1="463" y1="787" x2="436" y2="815"/>
+  <text x="449.5" y="801.0">ASSET_SLOT</text>
+</g>
+<text class="labelSmall" x="40" y="813">: Train-optional</text>
+<text class="labelSmall" x="252" y="813">: Train-required</text>
+<text class="labelSmall" x="464" y="813">: Train-free</text>
+<rect x="642" y="781" width="36" height="35" class="token"/><text class="labelSmall" x="685" y="812">: Text token</text>
+<rect x="854" y="780" width="34" height="34" class="tokenBlue"/><rect x="894" y="780" width="34" height="34" class="tokenPurple"/><text class="labelSmall" x="938" y="812">: Modality token</text>
+<rect x="1144" y="781" width="34" height="34" class="alignedBlue"/><rect x="1184" y="781" width="34" height="34" class="alignedOrange"/><text class="labelSmall" x="1227" y="812">: Aligned token</text>
+<text class="labelBold" x="1416" y="813">N</text><text class="labelSmall" x="1432" y="813">: Example nums</text>
+<text class="labelBold" x="1621" y="813">M<tspan baseline-shift="sub" font-size="16">inj</tspan></text><text class="labelSmall" x="1662" y="813">: Injection strategy</text>
+</svg>

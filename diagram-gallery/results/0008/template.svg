@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1932" height="806" viewBox="0 0 1932 806">
+<defs>
+  <marker id="arrow_black" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+  </marker>
+  <marker id="arrow_green" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#7fc94f"/>
+  </marker>
+  <marker id="arrow_pink" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#f5a9b8"/>
+  </marker>
+  <marker id="arrow_down" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+  </marker>
+  <style>
+    .panel { fill-opacity: 1; stroke: #d6d6d6; stroke-width: 4; }
+    .dash-dark { fill: none; stroke: #7b7b7b; stroke-width: 3; stroke-dasharray: 13 10; stroke-linecap: round; }
+    .dash-green { fill: none; stroke: #85c84e; stroke-width: 3.5; stroke-dasharray: 14 12; stroke-linecap: round; }
+    .dash-gray { fill: none; stroke: #777; stroke-width: 3.5; stroke-dasharray: 16 12; stroke-linecap: round; }
+    .dash-red { fill: none; stroke: #ff0000; stroke-width: 3.5; stroke-dasharray: 13 9; stroke-linecap: round; }
+    .code { font-family: Consolas, "Courier New", monospace; font-size: 15px; }
+    .label { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+    .greenLabel { fill: #255b1b; font-weight: 700; }
+    .small { font-size: 18px; }
+  </style>
+</defs>
+<rect x="0" y="0" width="1932" height="806" fill="#ffffff"/>
+<rect x="14" y="17" width="438" height="310" rx="18" class="dash-dark"/>
+<rect x="464" y="17" width="405" height="310" rx="18" class="dash-dark"/>
+<rect x="879" y="17" width="1050" height="310" rx="18" class="dash-dark"/>
+<line x1="879" y1="160" x2="1929" y2="160" stroke="#777" stroke-width="3" stroke-dasharray="13 10" stroke-linecap="round"/>
+<text x="34" y="43" font-size="15" fill="#e96676" font-family="Consolas, &quot;Courier New&quot;, monospace" text-anchor="start" >
+<tspan x="34" dy="0.0">{</tspan>
+<tspan x="34" dy="17.2">  "steps": [</tspan>
+<tspan x="34" dy="17.2">    {</tspan>
+<tspan x="34" dy="17.2">      "sketch": {</tspan>
+<tspan x="34" dy="17.2">        "circles": [</tspan>
+<tspan x="34" dy="17.2">          {"center": [0, 0], "radius": 60},</tspan>
+<tspan x="34" dy="17.2">          {"center": [10, 0], "radius": 25}</tspan>
+<tspan x="34" dy="17.2">        ]</tspan>
+<tspan x="34" dy="17.2">      },</tspan>
+<tspan x="34" dy="17.2">      "extrusion": {</tspan>
+<tspan x="34" dy="17.2">        "direction": [0, 0, 1],</tspan>
+<tspan x="34" dy="17.2">        "origin": [0, 0, 0],</tspan>
+<tspan x="34" dy="17.2">        "depth": 15,</tspan>
+<tspan x="34" dy="17.2">        "operation": "NewBody"</tspan>
+<tspan x="34" dy="17.2">      }</tspan>
+<tspan x="34" dy="17.2">    },...]</tspan>
+<tspan x="34" dy="17.2">}</tspan>
+</text>
+<text x="333" y="307" font-size="22" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">Command Sequence</text>
+<text x="483" y="42" font-size="15" fill="#6ca05d" font-family="Consolas, &quot;Courier New&quot;, monospace" text-anchor="start" >
+<tspan x="483" dy="0.0">Text_Description = """</tspan>
+<tspan x="483" dy="17.1">This circular flange is a metal component</tspan>
+<tspan x="483" dy="17.1">featuring a flat base plate with a</tspan>
+<tspan x="483" dy="17.1">diameter of 120 mm and thickness of 15 mm.</tspan>
+<tspan x="483" dy="17.1">The design includes a central bore</tspan>
+<tspan x="483" dy="17.1">measuring 50 mm in diameter surrounded by</tspan>
+<tspan x="483" dy="17.1">a raised concentric ring with an outer</tspan>
+<tspan x="483" dy="17.1">diameter of 70 mm and height of 8 mm that</tspan>
+<tspan x="483" dy="17.1">shares the same inner diameter as the</tspan>
+<tspan x="483" dy="17.1">central bore. Six equidistant mounting</tspan>
+<tspan x="483" dy="17.1">holes measuring 12 mm in diameter are</tspan>
+<tspan x="483" dy="17.1">arranged in a circular pattern with a</tspan>
+<tspan x="483" dy="17.1">diameter of 90 mm around the periphery.</tspan>
+<tspan x="483" dy="17.1">"""</tspan>
+</text>
+<text x="761" y="307" font-size="22" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">Text Description</text>
+<text x="900" y="53" class="code" fill="#e96676">System_prompt = """</text>
+<text x="900" y="78" class="code" fill="#6ca05d">Please convert the following CAD command sequence into CAD-Query code, with the final model represented as 'r';</text>
+<text x="900" y="103" class="code" fill="#6ca05d">"""</text>
+<text x="900" y="128" class="code" fill="#6ca05d"></text>
+<text x="900" y="153" class="code" fill="#7b828e"># The CoT system prompt can be found in the appendix.</text>
+<text x="1824" y="132" font-size="23" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">System prompt</text>
+<text x="900" y="193" class="code" fill="#c069d3">import cadquery as cq</text>
+<text x="900" y="220" class="code" fill="#333"></text>
+<text x="900" y="247" class="code" fill="#d94c42">flange = (cq.Workplane("XY")</text>
+<text x="900" y="274" class="code" fill="#2d93d4">          .circle(60).circle(25).extrude(15)</text>
+<text x="900" y="301" class="code" fill="#2d93d4">          .faces("&gt;Z").workplane().polarArray(45, 0, 360, 6).circle(6).cutThruAll()</text>
+<text x="900" y="328" class="code" fill="#2d93d4">          .faces("&gt;Z").workplane().add(cq.Workplane("XY").circle(35).circle(25).workplane(offset=15).extrude(8)))</text>
+<text x="900" y="355" class="code" fill="#d94c42">result = flange</text>
+<text x="1816" y="307" font-size="22" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">CadQuery Code</text>
+<rect x="14" y="344" width="514" height="448" rx="34" class="panel" fill="#f3f6fb"/>
+<rect x="540" y="344" width="1074" height="448" rx="34" class="panel" fill="#f4fbf0"/>
+<rect x="1629" y="344" width="303" height="448" rx="28" class="panel" fill="#fff7f0"/>
+<rect x="234" y="350" width="105" height="294" fill="none" stroke="#000" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="130" y1="544" x2="232" y2="544" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow_black)"/>
+<path d="M178,544 V400 H229" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<path d="M178,544 V710 H232" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<path d="M322,411 H367 V411 H403" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<path d="M339,461 H369 V411 H403" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<line x1="447" y1="444" x2="447" y2="463" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow_black)"/>
+<line x1="447" y1="537" x2="447" y2="611" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow_black)"/>
+<path d="M486,503 H556 V470 H624" stroke="#85c84e" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_green)"/>
+<text x="78" y="618" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Text2CAD</text>
+<text x="78" y="648" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Dataset</text>
+<text x="286" y="435" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Command</text>
+<text x="286" y="461" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">sequence</text>
+<text x="286" y="610" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Text</text>
+<text x="286" y="636" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Description</text>
+<text x="286" y="780" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Ground–Truth Model</text>
+<text x="447" y="367" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">LLMs</text>
+<text x="447" y="594" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">CadQuery</text>
+<text x="451" y="782" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Discard</text>
+<rect x="624" y="381" width="686" height="181" rx="15" class="dash-green"/>
+<rect x="831" y="358" width="240" height="42" rx="6" fill="#e6f2dd" stroke="#85c84e" stroke-width="3" stroke-dasharray="12 9"/>
+<text x="951" y="379" font-size="22" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">Generated Models</text>
+<rect x="625" y="604" width="690" height="137" rx="7" class="dash-gray"/>
+<rect x="842" y="720" width="246" height="44" rx="6" fill="#e6f2dd" stroke="#777" stroke-width="3" stroke-dasharray="15 10"/>
+<text x="965" y="741" font-size="23" fill="#24551b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="700">3D Point Models</text>
+<rect x="1092" y="590" width="211" height="112" rx="6" class="dash-red"/>
+<text x="1172" y="748" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Select by CD</text>
+<line x1="973" y1="560" x2="973" y2="606" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow_black)"/>
+<text x="1015" y="582" font-size="20" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Sample</text>
+<text x="1505" y="539" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Ground–Truth Models</text>
+<path d="M1500,484 V586" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<text x="1545" y="568" font-size="20" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Sample</text>
+<text x="1372" y="613" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Chamfer</text>
+<text x="1372" y="641" font-size="19" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Distance</text>
+<line x1="1305" y1="648" x2="1399" y2="648" stroke="#f5a9b8" stroke-width="4" marker-end="url(#arrow_pink)"/>
+<line x1="1399" y1="648" x2="1305" y2="648" stroke="#f5a9b8" stroke-width="4" marker-end="url(#arrow_pink)"/>
+<path d="M1362,667 V730 H1662" stroke="#f5a9b8" stroke-width="4" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_pink)"/>
+<text x="1502" y="722" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Python code</text>
+<text x="1502" y="752" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">selection</text>
+<rect x="1648" y="358" width="106" height="291" fill="none" stroke="#000" stroke-width="2.5" stroke-dasharray="8 7"/>
+<path d="M1744,502 H1780 V564 H1807" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<path d="M1741,716 H1780 V564 H1807" stroke="#000" stroke-width="3" fill="none" stroke-linejoin="miter" stroke-linecap="butt" marker-end="url(#arrow_black)"/>
+<text x="1701" y="477" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Model</text>
+<text x="1701" y="638" font-size="20" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Text</text>
+<text x="1701" y="665" font-size="20" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Description</text>
+<text x="1700" y="767" font-size="21" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">C adQuery</text>
+<text x="1848" y="636" font-size="22" fill="#111" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Our Dataset</text>
+<g id="slot_left_dataset_folder" data-bbox="[34,489,91,105]" data-role="asset">
+  <rect x="34" y="489" width="91" height="105" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="34" y1="489" x2="125" y2="594" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="125" y1="489" x2="34" y2="594" stroke="#aaa" stroke-width="1.5"/>
+  <text x="79.5" y="541.5" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_command_sequence_doc" data-bbox="[246,354,76,94]" data-role="asset">
+  <rect x="246" y="354" width="76" height="94" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="246" y1="354" x2="322" y2="448" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="322" y1="354" x2="246" y2="448" stroke="#aaa" stroke-width="1.5"/>
+  <text x="284.0" y="401.0" font-size="12.7" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_text_description_doc" data-bbox="[246,481,76,105]" data-role="asset">
+  <rect x="246" y="481" width="76" height="105" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="246" y1="481" x2="322" y2="586" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="322" y1="481" x2="246" y2="586" stroke="#aaa" stroke-width="1.5"/>
+  <text x="284.0" y="533.5" font-size="12.7" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_ground_truth_step_doc" data-bbox="[246,663,78,91]" data-role="asset">
+  <rect x="246" y="663" width="78" height="91" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="246" y1="663" x2="324" y2="754" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="324" y1="663" x2="246" y2="754" stroke="#aaa" stroke-width="1.5"/>
+  <text x="285.0" y="708.5" font-size="13.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_llm_whale_icon" data-bbox="[402,380,94,63]" data-role="asset">
+  <rect x="402" y="380" width="94" height="63" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="402" y1="380" x2="496" y2="443" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="496" y1="380" x2="402" y2="443" stroke="#aaa" stroke-width="1.5"/>
+  <text x="449.0" y="411.5" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_cadquery_logo_left" data-bbox="[409,463,77,75]" data-role="asset">
+  <rect x="409" y="463" width="77" height="75" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="409" y1="463" x2="486" y2="538" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="486" y1="463" x2="409" y2="538" stroke="#aaa" stroke-width="1.5"/>
+  <text x="447.5" y="500.5" font-size="12.8" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_discard_trash_icon" data-bbox="[407,611,88,126]" data-role="asset">
+  <rect x="407" y="611" width="88" height="126" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="407" y1="611" x2="495" y2="737" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="495" y1="611" x2="407" y2="737" stroke="#aaa" stroke-width="1.5"/>
+  <text x="451.0" y="674.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_generated_check_icon" data-bbox="[560,406,58,57]" data-role="asset">
+  <rect x="560" y="406" width="58" height="57" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="560" y1="406" x2="618" y2="463" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="618" y1="406" x2="560" y2="463" stroke="#aaa" stroke-width="1.5"/>
+  <text x="589.0" y="434.5" font-size="10.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_model_step_doc" data-bbox="[1669,371,76,88]" data-role="asset">
+  <rect x="1669" y="371" width="76" height="88" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1669" y1="371" x2="1745" y2="459" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1745" y1="371" x2="1669" y2="459" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1707.0" y="415.0" font-size="12.7" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_model_text_doc" data-bbox="[1665,507,79,105]" data-role="asset">
+  <rect x="1665" y="507" width="79" height="105" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1665" y1="507" x2="1744" y2="612" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1744" y1="507" x2="1665" y2="612" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1704.5" y="559.5" font-size="13.2" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_cadquery_logo_right" data-bbox="[1663,686,77,62]" data-role="asset">
+  <rect x="1663" y="686" width="77" height="62" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1663" y1="686" x2="1740" y2="748" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1740" y1="686" x2="1663" y2="748" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1701.5" y="717.0" font-size="12.8" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_dataset_folder_plus" data-bbox="[1810,488,88,124]" data-role="asset">
+  <rect x="1810" y="488" width="88" height="124" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1810" y1="488" x2="1898" y2="612" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1898" y1="488" x2="1810" y2="612" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1854.0" y="550.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_generated_model_plain" data-bbox="[665,420,185,82]" data-role="asset">
+  <rect x="665" y="420" width="185" height="82" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="665" y1="420" x2="850" y2="502" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="850" y1="420" x2="665" y2="502" stroke="#aaa" stroke-width="1.5"/>
+  <text x="757.5" y="461.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_generated_model_holes" data-bbox="[885,414,198,90]" data-role="asset">
+  <rect x="885" y="414" width="198" height="90" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="885" y1="414" x2="1083" y2="504" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1083" y1="414" x2="885" y2="504" stroke="#aaa" stroke-width="1.5"/>
+  <text x="984.0" y="459.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_generated_model_flange" data-bbox="[1097,405,187,96]" data-role="asset">
+  <rect x="1097" y="405" width="187" height="96" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1097" y1="405" x2="1284" y2="501" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1284" y1="405" x2="1097" y2="501" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1190.5" y="453.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_point_model_plain" data-bbox="[669,592,188,88]" data-role="asset">
+  <rect x="669" y="592" width="188" height="88" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="669" y1="592" x2="857" y2="680" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="857" y1="592" x2="669" y2="680" stroke="#aaa" stroke-width="1.5"/>
+  <text x="763.0" y="636.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_point_model_holes" data-bbox="[886,581,198,95]" data-role="asset">
+  <rect x="886" y="581" width="198" height="95" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="886" y1="581" x2="1084" y2="676" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1084" y1="581" x2="886" y2="676" stroke="#aaa" stroke-width="1.5"/>
+  <text x="985.0" y="628.5" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_point_model_selected" data-bbox="[1098,576,187,94]" data-role="asset">
+  <rect x="1098" y="576" width="187" height="94" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1098" y1="576" x2="1285" y2="670" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1285" y1="576" x2="1098" y2="670" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1191.5" y="623.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_ground_truth_model_dark" data-bbox="[1409,396,188,82]" data-role="asset">
+  <rect x="1409" y="396" width="188" height="82" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1409" y1="396" x2="1597" y2="478" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1597" y1="396" x2="1409" y2="478" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1503.0" y="437.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_python_selected_model" data-bbox="[1408,591,190,86]" data-role="asset">
+  <rect x="1408" y="591" width="190" height="86" fill="#f8f8f8" fill-opacity="0.75" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1408" y1="591" x2="1598" y2="677" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1598" y1="591" x2="1408" y2="677" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1503.0" y="634.0" font-size="14.0" fill="#555" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+</svg>

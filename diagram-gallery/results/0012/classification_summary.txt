@@ -1,0 +1,13 @@
+svg_candidate: 5
+raster_required: 5
+
+- slot_expert_drawing: raster_required -> assets/raster_required/expert_drawing.png (dense CAD drawing with fine measurements, hatching, and text annotations; preserving as raster avoids losing details)
+- slot_constraints_icon: svg_candidate -> assets/svg_candidate/constraints_icon.png (simple flat clipboard/check/cross icon with clear edges and solid fills)
+- slot_text_icon: svg_candidate -> assets/svg_candidate/text_icon.png (simple outline text-document icon made of rounded rectangle and horizontal strokes)
+- slot_parameter_space_icon: svg_candidate -> assets/svg_candidate/parameter_space_icon.png (simple flat stacked-document icon with solid black fill and white lines)
+- slot_dxf_icon: svg_candidate -> assets/svg_candidate/dxf_icon.png (simple line-art DXF document icon with flat strokes and editable text)
+- slot_code_python_icon: svg_candidate -> assets/svg_candidate/code_python_icon.png (flat vector-style code and Python logo icon with simple lines and blocks)
+- slot_ortho_front: raster_required -> assets/raster_required/ortho_front.png (orthographic CAD projection screenshot with fine dimension lines and dense grey annotations)
+- slot_ortho_side: raster_required -> assets/raster_required/ortho_side.png (orthographic CAD projection screenshot with fine dimension lines and dense grey annotations)
+- slot_ortho_top: raster_required -> assets/raster_required/ortho_top.png (top-view CAD drawing with small dimension labels and multiple fine curves)
+- slot_model_3d: raster_required -> assets/raster_required/model_3d.png (rendered 3D model region with shading, perspective, and pixel-based background)

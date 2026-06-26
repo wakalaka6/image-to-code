@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1771" height="736" viewBox="0 0 1771 736">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#000"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#99add3"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#f7c938"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#9cc77f"/>
+    </marker>
+    <style>
+      .main { font-family: Arial, Helvetica, sans-serif; fill:#000; }
+      .math { font-family: 'Times New Roman', Times, serif; font-style: italic; fill:#000; }
+      .box { fill:#fff; stroke:#777; stroke-width:2; }
+      .dash { fill:none; stroke:#a9a9a9; stroke-width:2; stroke-dasharray:18 8; }
+      .dash-blue { fill:none; stroke:#abc0df; stroke-width:2; stroke-dasharray:18 8; }
+      .dash-yellow { fill:none; stroke:#f2d66c; stroke-width:2; stroke-dasharray:18 8; }
+      .dash-green { fill:none; stroke:#b7d79f; stroke-width:2; stroke-dasharray:18 8; }
+      .label-small { font-size:24px; }
+      .label-med { font-size:30px; }
+      .label-large { font-size:32px; }
+    </style>
+  </defs>
+<rect width="1771" height="736" fill="#ffffff"/>
+<g class="main">
+  <g id="svg_teacher_feature_stack" data-source-slot="slot_teacher_feature_stack" transform="translate(260,270)">
+    <g opacity="0.98">
+      <polygon points="0,38 31,6 31,111 0,111" fill="#4d9ad2"/>
+      <polygon points="31,6 43,6 12,38 0,38" fill="#70b2dd"/>
+      <polygon points="31,6 43,6 43,96 31,111" fill="#2e82bd"/>
+      <polygon points="24,31 55,0 55,105 24,105" fill="#4d9ad2"/>
+      <polygon points="55,0 67,0 36,31 24,31" fill="#70b2dd"/>
+      <polygon points="55,0 67,0 67,90 55,105" fill="#2e82bd"/>
+      <polygon points="48,30 80,1 80,104 48,104" fill="#4d9ad2"/>
+      <polygon points="80,1 92,1 60,30 48,30" fill="#70b2dd"/>
+      <polygon points="80,1 92,1 92,88 80,104" fill="#2e82bd"/>
+      <polygon points="90,28 117,0 117,77 90,77" fill="#4d9ad2"/>
+      <polygon points="117,0 129,0 103,28 90,28" fill="#70b2dd"/>
+      <polygon points="117,0 129,0 129,63 117,77" fill="#2e82bd"/>
+      <polygon points="116,25 143,2 143,75 116,75" fill="#4d9ad2"/>
+      <polygon points="143,2 155,2 129,25 116,25" fill="#70b2dd"/>
+      <polygon points="143,2 155,2 155,62 143,75" fill="#2e82bd"/>
+      <polygon points="143,25 166,10 166,61 143,61" fill="#4d9ad2"/>
+      <polygon points="166,10 177,10 154,25 143,25" fill="#70b2dd"/>
+      <polygon points="166,10 177,10 177,50 166,61" fill="#2e82bd"/>
+      <polygon points="171,39 198,25 198,47 171,61" fill="#4d9ad2"/>
+      <polygon points="198,25 210,25 183,39 171,39" fill="#70b2dd"/>
+      <polygon points="198,25 210,25 210,36 198,47" fill="#2e82bd"/>
+    </g>
+  </g>
+  <g id="svg_student_feature_stack" data-source-slot="slot_student_feature_stack" transform="translate(260,499)">
+    <g opacity="0.98">
+      <polygon points="0,37 33,4 33,110 0,110" fill="#f58220"/>
+      <polygon points="33,4 47,4 14,37 0,37" fill="#f6a15b"/>
+      <polygon points="33,4 47,4 47,95 33,110" fill="#cb6416"/>
+      <polygon points="28,29 61,0 61,104 28,104" fill="#f58220"/>
+      <polygon points="61,0 75,0 42,29 28,29" fill="#f6a15b"/>
+      <polygon points="61,0 75,0 75,88 61,104" fill="#cb6416"/>
+      <polygon points="61,27 92,1 92,84 61,84" fill="#f58220"/>
+      <polygon points="92,1 106,1 75,27 61,27" fill="#f6a15b"/>
+      <polygon points="92,1 106,1 106,72 92,84" fill="#cb6416"/>
+      <polygon points="87,37 116,16 116,76 87,76" fill="#f58220"/>
+      <polygon points="116,16 129,16 101,37 87,37" fill="#f6a15b"/>
+      <polygon points="116,16 129,16 129,65 116,76" fill="#cb6416"/>
+      <polygon points="112,49 135,29 135,62 112,62" fill="#f58220"/>
+      <polygon points="135,29 147,29 124,49 112,49" fill="#f6a15b"/>
+      <polygon points="135,29 147,29 147,51 135,62" fill="#cb6416"/>
+    </g>
+  </g>
+  <g id="svg_hard_label_vector" data-source-slot="slot_hard_label_vector" transform="translate(523,31)">
+    <rect x="1" y="1" width="28" height="29" fill="#9ab4df" stroke="#7d9acc" stroke-width="2"/>
+    <rect x="1" y="35" width="28" height="27" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="63" width="28" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="91" width="28" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="119" width="28" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="147" width="28" height="24" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+  </g>
+  <g id="svg_teacher_target_nontarget_vector" data-source-slot="slot_teacher_target_nontarget_vector" transform="translate(523,215)">
+    <rect x="1" y="1" width="29" height="29" fill="#ffd65a" stroke="#f2bf2e" stroke-width="2"/>
+    <rect x="1" y="32" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="60" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="88" width="29" height="29" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="117" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="145" width="29" height="29" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="174" width="29" height="30" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+  </g>
+  <g id="svg_student_target_nontarget_vector" data-source-slot="slot_student_target_nontarget_vector" transform="translate(523,469)">
+    <rect x="1" y="1" width="29" height="29" fill="#ffd65a" stroke="#f2bf2e" stroke-width="2"/>
+    <rect x="1" y="32" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="60" width="29" height="29" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="89" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="117" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="145" width="29" height="28" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+  </g>
+  <g id="svg_task_label_pair" data-source-slot="slot_task_label_pair" transform="translate(644,69)">
+    <rect x="0" y="0" width="30" height="32" fill="#9ab4df" stroke="#7d9acc" stroke-width="2"/>
+    <rect x="48" y="0" width="30" height="32" fill="#ffd65a" stroke="#f2bf2e" stroke-width="2"/>
+  </g>
+  <g id="svg_tckd_target_pair" data-source-slot="slot_tckd_target_pair" transform="translate(643,291)">
+    <rect x="1" y="0" width="30" height="31" fill="#ffd65a" stroke="#f2bf2e" stroke-width="2"/>
+    <rect x="51" y="0" width="30" height="31" fill="#ffd65a" stroke="#f2bf2e" stroke-width="2"/>
+  </g>
+  <g id="svg_nckd_mask_pair" data-source-slot="slot_nckd_mask_pair" transform="translate(643,489)">
+    <rect x="1" y="0" width="29" height="27" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="51" y="0" width="29" height="27" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="27" width="29" height="27" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="51" y="27" width="29" height="27" fill="#b8dca4" stroke="#95c77b" stroke-width="2"/>
+    <rect x="1" y="54" width="29" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="51" y="54" width="29" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="82" width="29" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="51" y="82" width="29" height="28" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="1" y="110" width="29" height="29" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+    <rect x="51" y="110" width="29" height="29" fill="#9f9f9f" stroke="#747474" stroke-width="2"/>
+  </g>
+</g>
+</svg>

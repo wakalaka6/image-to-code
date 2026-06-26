@@ -1,0 +1,254 @@
+[
+  {
+    "slot_id": "slot_legend_llm",
+    "filename": "assets/svg_candidate/slot_legend_llm.png",
+    "bbox_xywh": [
+      175,
+      18,
+      80,
+      76
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple black-line LLM robot icon with clear vector geometry"
+  },
+  {
+    "slot_id": "slot_legend_retriever",
+    "filename": "assets/svg_candidate/slot_legend_retriever.png",
+    "bbox_xywh": [
+      392,
+      31,
+      62,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple magnifying-glass icon with circle and handle"
+  },
+  {
+    "slot_id": "slot_legend_answer",
+    "filename": "assets/svg_candidate/slot_legend_answer.png",
+    "bbox_xywh": [
+      612,
+      25,
+      64,
+      67
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat green answer bubble icon with editable text"
+  },
+  {
+    "slot_id": "slot_left_llm_root",
+    "filename": "assets/svg_candidate/slot_left_llm_root.png",
+    "bbox_xywh": [
+      38,
+      202,
+      78,
+      72
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col1_mid",
+    "filename": "assets/svg_candidate/slot_left_llm_col1_mid.png",
+    "bbox_xywh": [
+      147,
+      369,
+      80,
+      78
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col1_lower",
+    "filename": "assets/svg_candidate/slot_left_llm_col1_lower.png",
+    "bbox_xywh": [
+      32,
+      607,
+      88,
+      83
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col1_bottom",
+    "filename": "assets/svg_candidate/slot_left_llm_col1_bottom.png",
+    "bbox_xywh": [
+      147,
+      785,
+      80,
+      83
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col2_mid",
+    "filename": "assets/svg_candidate/slot_left_llm_col2_mid.png",
+    "bbox_xywh": [
+      443,
+      368,
+      82,
+      78
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col2_lower",
+    "filename": "assets/svg_candidate/slot_left_llm_col2_lower.png",
+    "bbox_xywh": [
+      330,
+      607,
+      88,
+      83
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_col2_bottom",
+    "filename": "assets/svg_candidate/slot_left_llm_col2_bottom.png",
+    "bbox_xywh": [
+      444,
+      785,
+      82,
+      83
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_llm_chain3",
+    "filename": "assets/svg_candidate/slot_left_llm_chain3.png",
+    "bbox_xywh": [
+      688,
+      893,
+      95,
+      90
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated LLM robot line icon"
+  },
+  {
+    "slot_id": "slot_left_retriever_col1_upper",
+    "filename": "assets/svg_candidate/slot_left_retriever_col1_upper.png",
+    "bbox_xywh": [
+      57,
+      380,
+      66,
+      63
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated magnifying-glass icon"
+  },
+  {
+    "slot_id": "slot_left_retriever_col1_lower",
+    "filename": "assets/svg_candidate/slot_left_retriever_col1_lower.png",
+    "bbox_xywh": [
+      57,
+      790,
+      67,
+      64
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated magnifying-glass icon"
+  },
+  {
+    "slot_id": "slot_left_retriever_col2_upper",
+    "filename": "assets/svg_candidate/slot_left_retriever_col2_upper.png",
+    "bbox_xywh": [
+      352,
+      375,
+      68,
+      66
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated magnifying-glass icon"
+  },
+  {
+    "slot_id": "slot_left_retriever_col2_lower",
+    "filename": "assets/svg_candidate/slot_left_retriever_col2_lower.png",
+    "bbox_xywh": [
+      352,
+      786,
+      68,
+      66
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple repeated magnifying-glass icon"
+  },
+  {
+    "slot_id": "slot_left_answer_chain1",
+    "filename": "assets/svg_candidate/slot_left_answer_chain1.png",
+    "bbox_xywh": [
+      48,
+      935,
+      64,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat green answer icon"
+  },
+  {
+    "slot_id": "slot_left_answer_chain2",
+    "filename": "assets/svg_candidate/slot_left_answer_chain2.png",
+    "bbox_xywh": [
+      344,
+      935,
+      64,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat green answer icon"
+  },
+  {
+    "slot_id": "slot_left_answer_chain3",
+    "filename": "assets/svg_candidate/slot_left_answer_chain3.png",
+    "bbox_xywh": [
+      602,
+      934,
+      66,
+      64
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat green answer icon"
+  },
+  {
+    "slot_id": "slot_training_flame",
+    "filename": "assets/svg_candidate/slot_training_flame.png",
+    "bbox_xywh": [
+      1236,
+      215,
+      38,
+      47
+    ],
+    "classification": "svg_candidate",
+    "reason": "small flat flame icon with simple color regions"
+  },
+  {
+    "slot_id": "slot_best_of_n_reward",
+    "filename": "assets/svg_candidate/slot_best_of_n_reward.png",
+    "bbox_xywh": [
+      1117,
+      824,
+      64,
+      68
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat reward badge/ribbon symbol with simple shapes"
+  },
+  {
+    "slot_id": "slot_selected_check",
+    "filename": "assets/svg_candidate/slot_selected_check.png",
+    "bbox_xywh": [
+      388,
+      1073,
+      55,
+      53
+    ],
+    "classification": "svg_candidate",
+    "reason": "single green check mark drawn as a simple path"
+  }
+]

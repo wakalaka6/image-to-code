@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1905" height="1060" viewBox="0 0 1905 1060">
+<defs>
+  <marker id="arrowBlack" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker>
+  <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#14486e"/></marker>
+  <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#6fb642"/></marker>
+  <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#e97934"/></marker>
+  <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#8a6aa7"/></marker>
+  <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#dca75b"/></marker>
+</defs>
+<rect x="0" y="0" width="1905" height="1060" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="807" y="19" width="204" height="40" rx="0" fill="#f6d7ef" stroke="#8a0f6c" stroke-width="3"/>
+<text x="903" y="47" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#4b2644" text-anchor="middle" >Time Head</text>
+<rect x="1120" y="19" width="190" height="40" rx="0" fill="#f6d7ef" stroke="#8a0f6c" stroke-width="3"/>
+<text x="1216" y="47" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#4b2644" text-anchor="middle" >LM Head</text>
+<line x1="1012" y1="40" x2="1119" y2="40" stroke="#74305e" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowPurple)"/>
+<text x="1065" y="29" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#4b2644" text-anchor="middle" >&lt;sync&gt;</text>
+<line x1="910" y1="79" x2="910" y2="61" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="1215" y1="79" x2="1215" y2="61" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<g id="svg_fire_time_head_left" data-source-slot="slot_fire_time_head_left" transform="translate(811,22) scale(0.83333,0.67500)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<g id="svg_fire_time_head_right" data-source-slot="slot_fire_time_head_right" transform="translate(1001,22) scale(0.79167,0.67500)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<g id="svg_fire_lm_head_left" data-source-slot="slot_fire_lm_head_left" transform="translate(1123,22) scale(0.83333,0.67500)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<g id="svg_fire_lm_head_right" data-source-slot="slot_fire_lm_head_right" transform="translate(1297,22) scale(0.83333,0.67500)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<rect x="121" y="79" width="1185" height="67" rx="3" fill="#fde9df" stroke="#7c381d" stroke-width="2"/>
+<text x="715" y="125" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#6b3a25" text-anchor="middle" >Large Language Model</text>
+<g id="svg_fire_llm_left" data-source-slot="slot_fire_llm_left" transform="translate(132,85) scale(1.58333,1.40000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<rect x="16" y="161" width="1481" height="414" rx="0" fill="none" stroke="#1a5f92" stroke-width="3" stroke-dasharray="10 8"/>
+<rect x="1514" y="160" width="374" height="204" rx="0" fill="none" stroke="#222" stroke-width="3" stroke-dasharray="10 8"/>
+<g transform="translate(1540,169)">
+<circle cx="16" cy="16" r="20" fill="none" stroke="#111" stroke-width="2"/><line x1="-6" y1="16" x2="38" y2="16" stroke="#111" stroke-width="2"/><line x1="16" y1="-6" x2="16" y2="38" stroke="#111" stroke-width="2"/></g>
+<text x="1575" y="199" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#222" text-anchor="start" >Point-wise Addition</text>
+<g id="svg_fire_legend_stage2" data-source-slot="slot_fire_legend_stage2" transform="translate(1533,183) scale(1.37500,1.17500)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="1575" y="248" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#222" text-anchor="start" >Stage2 trainable modules</text>
+<g id="svg_fire_legend_stage3" data-source-slot="slot_fire_legend_stage3" transform="translate(1531,244) scale(1.58333,1.20000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="1575" y="300" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#222" text-anchor="start" >Stage3 Tringble Modules</text>
+<g id="svg_snow_legend" data-source-slot="slot_snow_legend" transform="translate(1533,286)">
+  <g stroke="#2e8fc5" stroke-width="1.55" stroke-linecap="round" opacity="0.95">
+    <line x1="2.72" y1="21.00" x2="31.28" y2="21.00"/><line x1="2.72" y1="21.00" x2="5.64" y2="23.05"/><line x1="2.72" y1="21.00" x2="5.64" y2="18.95"/><line x1="31.28" y1="21.00" x2="28.36" y2="18.95"/><line x1="31.28" y1="21.00" x2="28.36" y2="23.05"/><line x1="9.86" y1="8.63" x2="24.14" y2="33.37"/><line x1="9.86" y1="8.63" x2="9.55" y2="12.19"/><line x1="9.86" y1="8.63" x2="13.10" y2="10.14"/><line x1="24.14" y1="33.37" x2="24.45" y2="29.81"/><line x1="24.14" y1="33.37" x2="20.90" y2="31.86"/><line x1="24.14" y1="8.63" x2="9.86" y2="33.37"/><line x1="24.14" y1="8.63" x2="20.90" y2="10.14"/><line x1="24.14" y1="8.63" x2="24.45" y2="12.19"/><line x1="9.86" y1="33.37" x2="13.10" y2="31.86"/><line x1="9.86" y1="33.37" x2="9.55" y2="29.81"/>
+  </g>
+  <circle cx="17.00" cy="21.00" r="1.53" fill="#2e8fc5" opacity="0.9"/>
+</g>
+<text x="1575" y="349" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#222" text-anchor="start" >Frozen Components</text>
+<rect x="514" y="176" width="420" height="50" rx="2" fill="#fff1e8" stroke="#8a3e20" stroke-width="2"/>
+<text x="724" y="211" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#6d3b26" text-anchor="middle" >Compress &amp; Two-layer MLP</text>
+<line x1="714" y1="176" x2="714" y2="147" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+<line x1="714" y1="255" x2="714" y2="226" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+<text x="242" y="278" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#145376" text-anchor="middle" >Multimodal</text>
+<text x="370" y="278" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#b84f20" text-anchor="middle" >tokens</text>
+<rect x="459" y="215" width="560" height="42" rx="6" fill="#eef2f4" stroke="none" stroke-width="0" opacity="0.85"/>
+<text x="535" y="242" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#31446b" text-anchor="middle" >Concat( Wv*</text>
+<rect x="635" y="220" width="33" height="30" rx="5" fill="#9ec4e5" stroke="none" stroke-width="0"/>
+<rect x="672" y="220" width="33" height="30" rx="5" fill="#9ec4e5" stroke="none" stroke-width="0"/>
+<rect x="773" y="220" width="33" height="30" rx="5" fill="#93c940" stroke="none" stroke-width="0"/>
+<rect x="808" y="220" width="33" height="30" rx="5" fill="#93c940" stroke="none" stroke-width="0"/>
+<rect x="900" y="220" width="33" height="30" rx="5" fill="#f1b391" stroke="none" stroke-width="0"/>
+<rect x="936" y="220" width="33" height="30" rx="5" fill="#f1b391" stroke="none" stroke-width="0"/>
+<rect x="982" y="220" width="33" height="30" rx="5" fill="#e8bd79" stroke="none" stroke-width="0"/>
+<text x="725" y="242" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#285c24" text-anchor="middle" >Wa*</text>
+<text x="857" y="242" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#7f2e19" text-anchor="middle" >Ws*</text>
+<line x1="714" y1="420" x2="714" y2="259" stroke="#79bd42" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<line x1="1156" y1="419" x2="1156" y2="328" stroke="#e97934" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<polyline points="1014,269 1410,269 1410,604" fill="none" stroke="#dca75b" stroke-width="2" marker-end="url(#arrowGold)"/>
+<g id="svg_fire_query_connector" data-source-slot="slot_fire_query_connector" transform="translate(1119,169) scale(0.91667,1.00000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="1155" y="190" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#235a87" text-anchor="start" >Query-Based Connector</text>
+<rect x="121" y="426" width="278" height="63" rx="3" fill="#e4f0fb" stroke="#17496c" stroke-width="3"/>
+<text x="260" y="464" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#24445e" text-anchor="middle" >Cross Attention</text>
+<text x="31" y="528" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#17496c" text-anchor="start" >Vision Tokens</text>
+<rect x="185" y="509" width="148" height="45" rx="7" fill="#eef2f4" stroke="none" stroke-width="0" opacity="0.86"/>
+<rect x="199" y="519" width="33" height="31" rx="5" fill="#a6c7e7" stroke="none" stroke-width="0"/>
+<rect x="246" y="519" width="33" height="31" rx="5" fill="#a6c7e7" stroke="none" stroke-width="0"/>
+<rect x="292" y="519" width="33" height="31" rx="5" fill="#a6c7e7" stroke="none" stroke-width="0"/>
+<line x1="260" y1="584" x2="260" y2="489" stroke="#17496c" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<polyline points="260,426 260,330 340,330" fill="none" stroke="#17496c" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<rect x="340" y="313" width="110" height="36" rx="18" fill="#e4f0fb" stroke="#17496c" stroke-width="3"/>
+<text x="395" y="338" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#24445e" text-anchor="middle" >Wv</text>
+<line x1="450" y1="330" x2="698" y2="330" stroke="#17496c" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<text x="468" y="362" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#17496c" text-anchor="start" >$f_i^v, q$</text>
+<polyline points="377,561 377,493 377,493" fill="none" stroke="#8c6fa8" stroke-width="3" marker-end="url(#arrowPurple)"/>
+<line x1="377" y1="561" x2="377" y2="493" stroke="#8c6fa8" stroke-width="3" marker-end="url(#arrowPurple)"/>
+<rect x="121" y="586" width="278" height="65" rx="2" fill="#e4f0fb" stroke="#17496c" stroke-width="3"/>
+<text x="260" y="626" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#24445e" text-anchor="middle" >Vision Projector</text>
+<g id="svg_fire_vision_projector" data-source-slot="slot_fire_vision_projector" transform="translate(378,588) scale(0.91667,1.00000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="405" y="624" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#17496c" text-anchor="start" >$f_i'{}^v$</text>
+<rect x="121" y="669" width="278" height="65" rx="2" fill="#e4f0fb" stroke="#17496c" stroke-width="3"/>
+<text x="260" y="710" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#24445e" text-anchor="middle" >Vision Encoder</text>
+<g id="svg_snow_vision_encoder" data-source-slot="slot_snow_vision_encoder" transform="translate(369,670)">
+  <g stroke="#2e8fc5" stroke-width="1.55" stroke-linecap="round" opacity="0.95">
+    <line x1="2.56" y1="21.00" x2="29.44" y2="21.00"/><line x1="2.56" y1="21.00" x2="5.31" y2="22.93"/><line x1="2.56" y1="21.00" x2="5.31" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="22.93"/><line x1="9.28" y1="9.36" x2="22.72" y2="32.64"/><line x1="9.28" y1="9.36" x2="8.99" y2="12.71"/><line x1="9.28" y1="9.36" x2="12.33" y2="10.78"/><line x1="22.72" y1="32.64" x2="23.01" y2="29.29"/><line x1="22.72" y1="32.64" x2="19.67" y2="31.22"/><line x1="22.72" y1="9.36" x2="9.28" y2="32.64"/><line x1="22.72" y1="9.36" x2="19.67" y2="10.78"/><line x1="22.72" y1="9.36" x2="23.01" y2="12.71"/><line x1="9.28" y1="32.64" x2="12.33" y2="31.22"/><line x1="9.28" y1="32.64" x2="8.99" y2="29.29"/>
+  </g>
+  <circle cx="16.00" cy="21.00" r="1.44" fill="#2e8fc5" opacity="0.9"/>
+</g>
+<text x="405" y="710" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#17496c" text-anchor="start" >$f_i^v$</text>
+<line x1="260" y1="669" x2="260" y2="652" stroke="#17496c" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<line x1="260" y1="759" x2="260" y2="735" stroke="#17496c" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<image id="raster_vision_input_frames" data-source-slot="slot_vision_input_frames" href="assets/raster_required/vision_input_frames.png" xlink:href="assets/raster_required/vision_input_frames.png" x="31" y="759" width="448" height="84" preserveAspectRatio="none"/>
+<rect x="577" y="423" width="278" height="63" rx="3" fill="#e7f4df" stroke="#2d671e" stroke-width="3"/>
+<text x="716" y="462" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#244f32" text-anchor="middle" >Cross Attention</text>
+<text x="476" y="528" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#2d671e" text-anchor="start" >Audio Tokens</text>
+<rect x="640" y="509" width="148" height="45" rx="7" fill="#eef2f4" stroke="none" stroke-width="0" opacity="0.86"/>
+<rect x="642" y="519" width="33" height="31" rx="5" fill="#99c983" stroke="none" stroke-width="0"/>
+<rect x="688" y="519" width="33" height="31" rx="5" fill="#99c983" stroke="none" stroke-width="0"/>
+<rect x="734" y="519" width="33" height="31" rx="5" fill="#99c983" stroke="none" stroke-width="0"/>
+<rect x="661" y="372" width="108" height="36" rx="18" fill="#e7f4df" stroke="#2d671e" stroke-width="3"/>
+<text x="715" y="397" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#244f32" text-anchor="middle" >Wa</text>
+<g><circle cx="714" cy="330" r="23" fill="#fff" stroke="#111" stroke-width="3"/><line x1="691" y1="330" x2="737" y2="330" stroke="#111" stroke-width="3"/><line x1="714" y1="307" x2="714" y2="353" stroke="#111" stroke-width="3"/></g>
+<line x1="714" y1="372" x2="714" y2="354" stroke="#2d671e" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<line x1="714" y1="423" x2="714" y2="408" stroke="#2d671e" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<line x1="714" y1="586" x2="714" y2="486" stroke="#2d671e" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<line x1="714" y1="661" x2="714" y2="652" stroke="#2d671e" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<line x1="714" y1="759" x2="714" y2="735" stroke="#2d671e" stroke-width="3" marker-end="url(#arrowGreen)"/>
+<text x="735" y="362" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#2d671e" text-anchor="start" >$f^a, q$</text>
+<text x="735" y="298" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#2d671e" text-anchor="start" >$f^a, q$</text>
+<polyline points="789,560 789,487" fill="none" stroke="#8c6fa8" stroke-width="3" marker-end="url(#arrowPurple)"/>
+<rect x="577" y="586" width="278" height="65" rx="2" fill="#e7f4df" stroke="#2d671e" stroke-width="3"/>
+<text x="716" y="626" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#244f32" text-anchor="middle" >Audio Projector</text>
+<g id="svg_fire_audio_projector" data-source-slot="slot_fire_audio_projector" transform="translate(826,588) scale(0.91667,1.00000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="862" y="625" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#2d671e" text-anchor="start" >$f_i'{}^a$</text>
+<rect x="577" y="669" width="278" height="65" rx="2" fill="#e7f4df" stroke="#2d671e" stroke-width="3"/>
+<text x="716" y="710" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#244f32" text-anchor="middle" >Audio Encoder</text>
+<g id="svg_snow_audio_encoder" data-source-slot="slot_snow_audio_encoder" transform="translate(823,671)">
+  <g stroke="#2e8fc5" stroke-width="1.55" stroke-linecap="round" opacity="0.95">
+    <line x1="2.56" y1="21.00" x2="29.44" y2="21.00"/><line x1="2.56" y1="21.00" x2="5.31" y2="22.93"/><line x1="2.56" y1="21.00" x2="5.31" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="22.93"/><line x1="9.28" y1="9.36" x2="22.72" y2="32.64"/><line x1="9.28" y1="9.36" x2="8.99" y2="12.71"/><line x1="9.28" y1="9.36" x2="12.33" y2="10.78"/><line x1="22.72" y1="32.64" x2="23.01" y2="29.29"/><line x1="22.72" y1="32.64" x2="19.67" y2="31.22"/><line x1="22.72" y1="9.36" x2="9.28" y2="32.64"/><line x1="22.72" y1="9.36" x2="19.67" y2="10.78"/><line x1="22.72" y1="9.36" x2="23.01" y2="12.71"/><line x1="9.28" y1="32.64" x2="12.33" y2="31.22"/><line x1="9.28" y1="32.64" x2="8.99" y2="29.29"/>
+  </g>
+  <circle cx="16.00" cy="21.00" r="1.44" fill="#2e8fc5" opacity="0.9"/>
+</g>
+<text x="862" y="710" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#2d671e" text-anchor="start" >$f_i^a$</text>
+<rect x="558" y="758" width="320" height="84" rx="0" fill="none" stroke="#2d671e" stroke-width="3" stroke-dasharray="10 8"/>
+<g id="svg_wave_audio_input" data-source-slot="slot_wave_audio_input" transform="translate(579,777)">
+  <rect x="0" y="0" width="295" height="59" fill="#dff2d9" opacity="0.82"/>
+  <g opacity="0.96">
+    <rect x="0" y="4" width="5" height="38" rx="2.0" fill="#245113"/><rect x="8" y="8" width="4" height="30" rx="2.0" fill="#245113"/><rect x="16" y="0" width="5" height="46" rx="2.0" fill="#245113"/><rect x="24" y="0" width="4" height="54" rx="2.0" fill="#245113"/><rect x="32" y="4" width="5" height="38" rx="2.0" fill="#245113"/><rect x="38" y="12" width="6" height="22" rx="2.0" fill="#245113"/><rect x="46" y="4" width="5" height="38" rx="2.0" fill="#245113"/><rect x="54" y="8" width="4" height="30" rx="2.0" fill="#245113"/><rect x="62" y="0" width="4" height="46" rx="2.0" fill="#245113"/><rect x="69" y="0" width="5" height="54" rx="2.0" fill="#245113"/><rect x="77" y="4" width="5" height="38" rx="2.0" fill="#245113"/><rect x="84" y="13" width="6" height="22" rx="2.0" fill="#245113"/><rect x="92" y="5" width="5" height="38" rx="2.0" fill="#245113"/><rect x="101" y="9" width="5" height="30" rx="2.0" fill="#245113"/><rect x="109" y="1" width="6" height="46" rx="2.0" fill="#245113"/><rect x="118" y="0" width="5" height="55" rx="2.0" fill="#245113"/><rect x="126" y="5" width="5" height="38" rx="2.0" fill="#245113"/><rect x="133" y="14" width="7" height="21" rx="2.0" fill="#245113"/><rect x="141" y="5" width="5" height="38" rx="2.0" fill="#245113"/><rect x="150" y="9" width="5" height="30" rx="2.0" fill="#245113"/><rect x="158" y="2" width="5" height="46" rx="2.0" fill="#245113"/><rect x="167" y="0" width="5" height="56" rx="2.0" fill="#245113"/><rect x="175" y="5" width="5" height="38" rx="2.0" fill="#245113"/><rect x="183" y="15" width="5" height="21" rx="2.0" fill="#245113"/><rect x="192" y="6" width="5" height="38" rx="2.0" fill="#245113"/><rect x="200" y="10" width="5" height="30" rx="2.0" fill="#245113"/><rect x="208" y="2" width="6" height="46" rx="2.0" fill="#245113"/><rect x="217" y="0" width="5" height="56" rx="2.0" fill="#245113"/><rect x="225" y="6" width="5" height="38" rx="2.0" fill="#245113"/><rect x="232" y="16" width="7" height="21" rx="2.0" fill="#245113"/><rect x="241" y="8" width="5" height="37" rx="2.0" fill="#245113"/><rect x="249" y="12" width="5" height="29" rx="2.0" fill="#245113"/><rect x="257" y="4" width="6" height="45" rx="2.0" fill="#245113"/><rect x="266" y="0" width="5" height="57" rx="2.0" fill="#245113"/><rect x="274" y="8" width="5" height="37" rx="2.0" fill="#245113"/><rect x="283" y="20" width="5" height="13" rx="2.0" fill="#245113"/>
+  </g>
+</g>
+<rect x="1017" y="419" width="278" height="63" rx="3" fill="#f4d5c4" stroke="#9a461e" stroke-width="3"/>
+<text x="1156" y="458" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#6e3a23" text-anchor="middle" >Cross Attention</text>
+<text x="894" y="528" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9a461e" text-anchor="start" >Speech Tokens</text>
+<rect x="1082" y="509" width="148" height="45" rx="7" fill="#eef2f4" stroke="none" stroke-width="0" opacity="0.86"/>
+<rect x="1084" y="519" width="33" height="31" rx="5" fill="#e97a38" stroke="none" stroke-width="0"/>
+<rect x="1130" y="519" width="33" height="31" rx="5" fill="#e97a38" stroke="none" stroke-width="0"/>
+<rect x="1176" y="519" width="33" height="31" rx="5" fill="#e97a38" stroke="none" stroke-width="0"/>
+<rect x="1007" y="313" width="95" height="36" rx="18" fill="#f4d5c4" stroke="#9a461e" stroke-width="3"/>
+<text x="1054" y="338" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#6e3a23" text-anchor="middle" >Ws</text>
+<polyline points="1156,419 1156,330 1102,330" fill="none" stroke="#9a461e" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<line x1="1156" y1="586" x2="1156" y2="482" stroke="#9a461e" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<line x1="1156" y1="669" x2="1156" y2="652" stroke="#9a461e" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<line x1="1156" y1="759" x2="1156" y2="735" stroke="#9a461e" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<polyline points="1235,559 1235,484" fill="none" stroke="#8c6fa8" stroke-width="3" marker-end="url(#arrowPurple)"/>
+<text x="957" y="362" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#9a461e" text-anchor="start" >$f^s, q$</text>
+<rect x="1017" y="586" width="278" height="65" rx="2" fill="#f4d5c4" stroke="#9a461e" stroke-width="3"/>
+<text x="1156" y="626" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#6e3a23" text-anchor="middle" >Speech Projector</text>
+<g id="svg_fire_speech_projector" data-source-slot="slot_fire_speech_projector" transform="translate(1276,588) scale(0.91667,1.00000)">
+  <path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/>
+</g>
+<text x="1303" y="625" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#9a461e" text-anchor="start" >$f_i'{}^s$</text>
+<rect x="1017" y="669" width="278" height="65" rx="2" fill="#f4d5c4" stroke="#9a461e" stroke-width="3"/>
+<text x="1156" y="710" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#6e3a23" text-anchor="middle" >Speech Encoder</text>
+<g id="svg_snow_speech_encoder" data-source-slot="slot_snow_speech_encoder" transform="translate(1267,671)">
+  <g stroke="#2e8fc5" stroke-width="1.55" stroke-linecap="round" opacity="0.95">
+    <line x1="2.56" y1="21.00" x2="29.44" y2="21.00"/><line x1="2.56" y1="21.00" x2="5.31" y2="22.93"/><line x1="2.56" y1="21.00" x2="5.31" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="19.07"/><line x1="29.44" y1="21.00" x2="26.69" y2="22.93"/><line x1="9.28" y1="9.36" x2="22.72" y2="32.64"/><line x1="9.28" y1="9.36" x2="8.99" y2="12.71"/><line x1="9.28" y1="9.36" x2="12.33" y2="10.78"/><line x1="22.72" y1="32.64" x2="23.01" y2="29.29"/><line x1="22.72" y1="32.64" x2="19.67" y2="31.22"/><line x1="22.72" y1="9.36" x2="9.28" y2="32.64"/><line x1="22.72" y1="9.36" x2="19.67" y2="10.78"/><line x1="22.72" y1="9.36" x2="23.01" y2="12.71"/><line x1="9.28" y1="32.64" x2="12.33" y2="31.22"/><line x1="9.28" y1="32.64" x2="8.99" y2="29.29"/>
+  </g>
+  <circle cx="16.00" cy="21.00" r="1.44" fill="#2e8fc5" opacity="0.9"/>
+</g>
+<text x="1303" y="710" font-family="Times New Roman, serif" font-size="20" font-weight="400" fill="#9a461e" text-anchor="start" >$f_i^s$</text>
+<rect x="996" y="758" width="320" height="84" rx="0" fill="none" stroke="#9a461e" stroke-width="3" stroke-dasharray="10 8"/>
+<g id="svg_wave_speech_input" data-source-slot="slot_wave_speech_input" transform="translate(1024,777)">
+  <rect x="0" y="0" width="295" height="59" fill="#f4c3a6" opacity="0.82"/>
+  <g opacity="0.96">
+    <rect x="0" y="7" width="4" height="30" rx="2.0" fill="#853604"/><rect x="7" y="0" width="5" height="46" rx="2.0" fill="#853604"/><rect x="15" y="0" width="5" height="54" rx="2.0" fill="#853604"/><rect x="23" y="3" width="5" height="39" rx="2.0" fill="#853604"/><rect x="30" y="12" width="6" height="21" rx="2.0" fill="#853604"/><rect x="38" y="3" width="4" height="38" rx="2.0" fill="#853604"/><rect x="45" y="7" width="5" height="30" rx="2.0" fill="#853604"/><rect x="53" y="0" width="5" height="46" rx="2.0" fill="#853604"/><rect x="61" y="0" width="5" height="54" rx="2.0" fill="#853604"/><rect x="69" y="3" width="5" height="39" rx="2.0" fill="#853604"/><rect x="76" y="13" width="5" height="21" rx="2.0" fill="#853604"/><rect x="84" y="4" width="6" height="38" rx="2.0" fill="#853604"/><rect x="93" y="8" width="5" height="30" rx="2.0" fill="#853604"/><rect x="101" y="0" width="5" height="47" rx="2.0" fill="#853604"/><rect x="109" y="0" width="5" height="54" rx="2.0" fill="#853604"/><rect x="118" y="4" width="5" height="38" rx="2.0" fill="#853604"/><rect x="125" y="12" width="6" height="22" rx="2.0" fill="#853604"/><rect x="133" y="4" width="6" height="38" rx="2.0" fill="#853604"/><rect x="142" y="8" width="5" height="30" rx="2.0" fill="#853604"/><rect x="150" y="0" width="6" height="46" rx="2.0" fill="#853604"/><rect x="159" y="0" width="5" height="54" rx="2.0" fill="#853604"/><rect x="167" y="4" width="6" height="38" rx="2.0" fill="#853604"/><rect x="175" y="14" width="6" height="22" rx="2.0" fill="#853604"/><rect x="183" y="5" width="6" height="39" rx="2.0" fill="#853604"/><rect x="192" y="9" width="5" height="30" rx="2.0" fill="#853604"/><rect x="200" y="2" width="5" height="46" rx="2.0" fill="#853604"/><rect x="208" y="0" width="5" height="56" rx="2.0" fill="#853604"/><rect x="217" y="5" width="5" height="39" rx="2.0" fill="#853604"/><rect x="224" y="15" width="6" height="22" rx="2.0" fill="#853604"/><rect x="233" y="7" width="5" height="38" rx="2.0" fill="#853604"/><rect x="241" y="11" width="5" height="29" rx="2.0" fill="#853604"/><rect x="250" y="3" width="5" height="46" rx="2.0" fill="#853604"/><rect x="258" y="0" width="5" height="56" rx="2.0" fill="#853604"/><rect x="266" y="7" width="6" height="38" rx="2.0" fill="#853604"/><rect x="275" y="19" width="5" height="14" rx="2.0" fill="#853604"/><rect x="287" y="8" width="3" height="51" rx="1.5" fill="#853604"/>
+  </g>
+</g>
+<rect x="1340" y="601" width="162" height="68" rx="2" fill="#f0c6a8" stroke="#8a3e20" stroke-width="3"/>
+<text x="1421" y="624" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#6d3b26" text-anchor="middle" >Time</text>
+<text x="1421" y="660" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#6d3b26" text-anchor="middle" >Encoder</text>
+<g id="svg_fire_time_encoder" data-source-slot="slot_fire_time_encoder" transform="translate(1482,605)">
+  <g transform="translate(5,0) scale(0.55)"><path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/></g>
+  <g transform="translate(5,28) scale(0.55)"><path d="M12.6 39 C6.1 35.7 3 30.4 3.7 23.5 C4.2 17.8 8.9 14.7 8.4 8.8 C11.8 11.8 12.6 15.0 12.1 18.0 C16.9 13.1 16.8 6.5 14.4 1.5 C22.5 8.9 22.7 16.1 20.1 21.5 C23.4 24.0 23.2 31.2 19.6 35.2 C17.8 37.2 15.3 38.4 12.6 39 Z" fill="#d10b10"/>
+  <path d="M12.2 37.2 C8.8 34.4 7.4 31.1 8.1 27.5 C8.5 25.0 10.2 23.2 10.1 20.5 C12.5 22.5 13.3 25.0 13.0 27.0 C15.3 24.5 15.6 21.2 14.7 18.5 C18.6 22.3 18.8 28.7 16.7 32.8 C15.6 35.0 14.1 36.3 12.2 37.2 Z" fill="#f25a22" opacity="0.86"/></g>
+</g>
+<polyline points="1410,669 1410,895" fill="none" stroke="#dca75b" stroke-width="2"/>
+<polyline points="714,560 714,568 1744,568 1744,704" fill="none" stroke="#8c6fa8" stroke-width="2"/>
+<text x="1702" y="548" font-family="Times New Roman, serif" font-size="22" font-weight="400" fill="#8c6fa8" text-anchor="start" >$f^q$</text>
+<text x="1538" y="719" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#8a247b" text-anchor="start" >Text Tokens</text>
+<rect x="1675" y="704" width="140" height="43" rx="7" fill="#f1f1f1" stroke="none" stroke-width="0" opacity="0.86"/>
+<rect x="1686" y="712" width="32" height="32" rx="5" fill="#8567a0" stroke="none" stroke-width="0"/>
+<rect x="1732" y="712" width="32" height="32" rx="5" fill="#8567a0" stroke="none" stroke-width="0"/>
+<rect x="1778" y="712" width="32" height="32" rx="5" fill="#8567a0" stroke="none" stroke-width="0"/>
+<rect x="1630" y="786" width="228" height="63" rx="2" fill="#f4e6f4" stroke="#81216f" stroke-width="3"/>
+<text x="1744" y="825" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#81216f" text-anchor="middle" >Text Tokenizer</text>
+<line x1="1744" y1="786" x2="1744" y2="747" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+<line x1="1744" y1="900" x2="1744" y2="849" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+<image id="raster_timeline_clip_0s_6s" data-source-slot="slot_timeline_clip_0s_6s" href="assets/raster_required/timeline_clip_0s_6s.png" xlink:href="assets/raster_required/timeline_clip_0s_6s.png" x="20" y="852" width="136" height="96" preserveAspectRatio="none"/>
+<image id="raster_timeline_clip_50s_60s" data-source-slot="slot_timeline_clip_50s_60s" href="assets/raster_required/timeline_clip_50s_60s.png" xlink:href="assets/raster_required/timeline_clip_50s_60s.png" x="204" y="852" width="264" height="96" preserveAspectRatio="none"/>
+<image id="raster_timeline_clip_97s_106s" data-source-slot="slot_timeline_clip_97s_106s" href="assets/raster_required/timeline_clip_97s_106s.png" xlink:href="assets/raster_required/timeline_clip_97s_106s.png" x="512" y="852" width="263" height="96" preserveAspectRatio="none"/>
+<image id="raster_timeline_clip_256s_267s" data-source-slot="slot_timeline_clip_256s_267s" href="assets/raster_required/timeline_clip_256s_267s.png" xlink:href="assets/raster_required/timeline_clip_256s_267s.png" x="813" y="852" width="265" height="96" preserveAspectRatio="none"/>
+<image id="raster_timeline_clip_147s_1759s" data-source-slot="slot_timeline_clip_147s_1759s" href="assets/raster_required/timeline_clip_147s_1759s.png" xlink:href="assets/raster_required/timeline_clip_147s_1759s.png" x="1130" y="852" width="263" height="96" preserveAspectRatio="none"/>
+<text x="184" y="925" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#111" text-anchor="middle" >...</text>
+<text x="494" y="925" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#111" text-anchor="middle" >...</text>
+<text x="786" y="925" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#111" text-anchor="middle" >...</text>
+<text x="1101" y="925" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#111" text-anchor="middle" >...</text>
+<line x1="5" y1="1010" x2="1390" y2="1010" stroke="#111" stroke-width="7"/>
+<circle cx="6" cy="1010" r="8" fill="#000"/>
+<circle cx="154" cy="1010" r="8" fill="#000"/>
+<circle cx="193" cy="1010" r="8" fill="#000"/>
+<circle cx="466" cy="1010" r="8" fill="#000"/>
+<circle cx="512" cy="1010" r="8" fill="#000"/>
+<circle cx="775" cy="1010" r="8" fill="#000"/>
+<circle cx="815" cy="1010" r="8" fill="#000"/>
+<circle cx="1078" cy="1010" r="8" fill="#000"/>
+<circle cx="1124" cy="1010" r="8" fill="#000"/>
+<circle cx="1390" cy="1010" r="8" fill="#000"/>
+<text x="16" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >0s</text>
+<line x1="13" y1="1025" x2="13" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="160" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >6s</text>
+<line x1="157" y1="1025" x2="157" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="231" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >50s</text>
+<line x1="228" y1="1025" x2="228" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="468" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >60s</text>
+<line x1="465" y1="1025" x2="465" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="515" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >97s</text>
+<line x1="512" y1="1025" x2="512" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="769" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >106s</text>
+<line x1="766" y1="1025" x2="766" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="843" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >256s</text>
+<line x1="840" y1="1025" x2="840" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="1068" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >267s</text>
+<line x1="1065" y1="1025" x2="1065" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="1138" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >147s</text>
+<line x1="1135" y1="1025" x2="1135" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<text x="1375" y="1045" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#333" text-anchor="middle" >1759s</text>
+<line x1="1372" y1="1025" x2="1372" y2="1058" stroke="#dca75b" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+<line x1="0" y1="1030" x2="1438" y2="1030" stroke="#dca75b" stroke-width="2" stroke-dasharray="10 8" opacity="0.7"/>
+<rect x="1430" y="895" width="550" height="163" rx="0" fill="#ffc21a" stroke="#8a6b00" stroke-width="2"/>
+<text x="1445" y="926" font-family="Nunito, Avenir, Helvetica, Arial, sans-serif" font-size="23" fill="#141414">
+  <tspan font-weight="700">Query:</tspan><tspan> Locate the moment where “A</tspan>
+  <tspan x="1445" dy="31">man wearing a white mask is talking</tspan>
+  <tspan x="1445" dy="31">about the </tspan><tspan fill="#c6511a">sponsor</tspan><tspan> under noisy</tspan>
+  <tspan x="1445" dy="31">sound, which they have been trying to</tspan>
+  <tspan x="1445" dy="31">over a year”, </tspan><tspan font-weight="700">return precise timestamps</tspan>
+</text>
+</svg>

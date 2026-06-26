@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#444"/>
+  </marker>
+  <marker id="arrowSmall" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L8,4 L0,8 Z" fill="#000"/>
+  </marker>
+  <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#d7a7a1"/>
+  </marker>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+    .flowArrow { stroke: #676767; stroke-width: 3.3; fill: none; marker-end: url(#arrow); }
+    .thinArrow { stroke: #555; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .dashSep { stroke: #000; stroke-width: 1.8; stroke-dasharray: 10 8; }
+    .placeholder rect.slot { fill: #f8f8f8; stroke: #666; stroke-width: 1.6; stroke-dasharray: 5 4; }
+    .placeholder line.diag { stroke: #aaa; stroke-width: 1; }
+    .placeholder text { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #777; text-anchor: middle; dominant-baseline: middle; }
+  </style>
+</defs>
+
+<rect x="0" y="0" width="1408" height="768" fill="#f4f4f4"/>
+<rect x="2" y="12" width="342" height="327" rx="18" fill="#ededed" stroke="#8f8f8f" stroke-width="2.2"/>
+<rect x="385" y="11" width="229" height="329" rx="18" fill="#dfead8" stroke="#87ad77" stroke-width="2.2"/>
+<rect x="654" y="87" width="149" height="180" rx="16" fill="#dfcce7" stroke="#ae79be" stroke-width="2.2"/>
+<rect x="848" y="88" width="157" height="178" rx="16" fill="#d6e7f3" stroke="#8db5d9" stroke-width="2.2"/>
+<rect x="1060" y="11" width="223" height="331" rx="18" fill="#f8e7cd" stroke="#d49d48" stroke-width="2.2"/>
+<rect x="847" y="289" width="197" height="70" rx="16" fill="#f3e6b1" stroke="#d5bc63" stroke-width="2.2"/>
+<text class="title" x="500" y="43" text-anchor="middle">Feature Extraction</text>
+<text class="title" x="500" y="74" text-anchor="middle">module</text>
+<text class="title" x="728" y="118" text-anchor="middle">Context</text>
+<text class="title" x="728" y="149" text-anchor="middle">Encoder</text>
+<text class="title" x="928" y="117" text-anchor="middle">SceneSelect</text>
+<text class="title" x="928" y="148" text-anchor="middle">Classifier</text>
+<text class="title" x="1172" y="43" text-anchor="middle">Scene-Model Pool</text>
+<text class="label" x="144" y="123" text-anchor="middle">Trajectory</text>
+<text class="label" x="174" y="147" text-anchor="middle">Scaling</text>
+<text class="label" x="176" y="230" text-anchor="middle">Rotation</text>
+<text class="label" x="280" y="230" text-anchor="middle">Translation</text>
+<text class="title" x="170" y="321" text-anchor="middle">Augmented Trajectories</text>
+<path d="M344 184 L382 184" class="flowArrow"/>
+<path d="M614 184 L652 184" class="flowArrow"/>
+<path d="M803 184 L845 184" class="flowArrow"/>
+<path d="M1006 184 L1057 184" class="flowArrow"/>
+<path d="M1284 184 L1320 184" class="flowArrow"/>
+<path d="M1322 184 C1347 184,1365 184,1385 184" class="flowArrow"/>
+<path d="M1315 184 Q1345 169 1382 150" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+<text class="label" x="1367" y="234" text-anchor="middle">Predicted</text>
+<text class="label" x="1367" y="257" text-anchor="middle">Trajectory</text>
+<rect x="416" y="87" width="169" height="229" rx="16" fill="#e5ecd9" stroke="#87ad77" stroke-width="2"/>
+<text class="label" x="501" y="120" text-anchor="middle">Trajectory Feature</text>
+<text class="label" x="501" y="144" text-anchor="middle">Extraction</text>
+<rect x="417" y="159" width="168" height="39" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="185" text-anchor="middle">Motion Velocity</text>
+<rect x="417" y="206" width="168" height="39" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="232" text-anchor="middle">Spatial Density</text>
+<rect x="417" y="252" width="168" height="54" rx="12" fill="#eaefe8" stroke="#9fad9a" stroke-width="1.8"/><text class="label" x="501" y="275" text-anchor="middle">Interaction</text><text class="label" x="501" y="299" text-anchor="middle">Patterns</text>
+<text class="label" x="1180" y="144" text-anchor="middle">Expert 1</text>
+<text class="label" x="1180" y="237" text-anchor="middle">Expert 2</text>
+<text class="label" x="1180" y="326" text-anchor="middle">Expert 3</text>
+<text class="label" x="946" y="319" text-anchor="middle">Scheduling</text>
+<text class="label" x="946" y="344" text-anchor="middle">Policy</text>
+<line x1="989" y1="301" x2="989" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1001" y1="301" x2="1001" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1013" y1="301" x2="1013" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="1025" y1="301" x2="1025" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="301" x2="1025" y2="301" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="312" x2="1025" y2="312" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="323" x2="1025" y2="323" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="334" x2="1025" y2="334" stroke="#666" stroke-width="1.3"/>
+<line x1="989" y1="345" x2="1025" y2="345" stroke="#666" stroke-width="1.3"/>
+<line x1="8" y1="384" x2="1400" y2="384" class="dashSep"/>
+<text class="title" x="16" y="425">(a)</text>
+<text class="title" x="777" y="425">(b)</text>
+<rect x="14" y="440" width="742" height="318" rx="18" fill="#eadfed" stroke="#ae79be" stroke-width="2.2"/>
+<rect x="775" y="440" width="624" height="318" rx="18" fill="#d6e7f3" stroke="#8db5d9" stroke-width="2.2"/>
+<text class="title" x="385" y="480" text-anchor="middle">Scene Context Encoder</text>
+<text class="title" x="1087" y="480" text-anchor="middle">SceneSelect Classifier</text>
+<text class="label" x="79" y="529" text-anchor="middle">Raw</text><text class="label" x="79" y="557" text-anchor="middle">Features</text>
+<text class="label" x="221" y="532" text-anchor="middle">Random</text><text class="label" x="221" y="560" text-anchor="middle">Projection</text>
+<text class="label" x="389" y="543" text-anchor="middle">Sparsification</text>
+<text class="label" x="546" y="542" text-anchor="middle">Clustering</text>
+<text class="label" x="688" y="526" text-anchor="middle">Pseudo-</text><text class="label" x="688" y="554" text-anchor="middle">labels</text>
+<text class="label" x="819" y="540" text-anchor="middle">Input</text>
+<text class="label" x="955" y="523" text-anchor="middle">Additive Tree-based</text><text class="label" x="955" y="551" text-anchor="middle">Classifier</text>
+<text class="label" x="1155" y="523" text-anchor="middle">Scene</text><text class="label" x="1155" y="550" text-anchor="middle">Category</text><text class="label" x="1155" y="576" text-anchor="middle">Output</text>
+<text class="label" x="1308" y="523" text-anchor="middle">Scheduling</text><text class="label" x="1308" y="550" text-anchor="middle">Policy Table</text>
+<rect x="36" y="590" width="89" height="16" fill="#84c4c1" stroke="#333" stroke-width="1.5"/>
+<rect x="36" y="617" width="89" height="16" fill="#d9958f" stroke="#333" stroke-width="1.5"/>
+<rect x="36" y="644" width="89" height="16" fill="#dcc163" stroke="#333" stroke-width="1.5"/>
+<text class="small" x="96" y="695" text-anchor="middle">Extracted &amp;</text><text class="small" x="96" y="718" text-anchor="middle">kinematic</text><text class="small" x="96" y="741" text-anchor="middle">feature vectors</text>
+<path d="M126 622 L156 622" class="thinArrow"/>
+<rect x="156" y="500" width="138" height="184" rx="16" fill="#eadff2" stroke="#ae79be" stroke-width="2"/>
+<rect x="169" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="169" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="181" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="193" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="205" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/>
+<rect x="241" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="241" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="253" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="265" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="277" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/>
+<text class="label" x="227" y="631" text-anchor="middle">×</text>
+<text class="small" x="225" y="716" text-anchor="middle">Random</text><text class="small" x="225" y="740" text-anchor="middle">matrix</text>
+<path d="M295 622 L322 622" class="thinArrow"/>
+<rect x="341" y="578" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="353" y="578" width="12" height="12" fill="#e7dcd1" stroke="#333" stroke-width="1"/><rect x="365" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="578" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="590" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="365" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="590" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="602" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="401" y="602" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="614" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="626" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/><rect x="401" y="626" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="341" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="353" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="365" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="377" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="389" y="638" width="12" height="12" fill="#ececec" stroke="#333" stroke-width="1"/><rect x="401" y="638" width="12" height="12" fill="#bac8e7" stroke="#333" stroke-width="1"/>
+<text class="small" x="396" y="698" text-anchor="middle">Sparse high-</text><text class="small" x="396" y="722" text-anchor="middle">dimensional</text><text class="small" x="396" y="746" text-anchor="middle">representation</text>
+<path d="M434 622 L480 622" class="thinArrow"/>
+<rect x="482" y="500" width="130" height="184" rx="16" fill="#eadff2" stroke="#ae79be" stroke-width="2"/>
+<path d="M494 672 L594 672" class="thinArrow"/>
+<path d="M494 672 L494 570" class="thinArrow"/>
+<text class="small" x="550" y="710" text-anchor="middle">Unsupervised</text><text class="small" x="550" y="734" text-anchor="middle">Clustering</text>
+<path d="M612 622 L641 622" class="thinArrow"/>
+<rect x="650" y="580" width="78" height="28" rx="10" fill="#d9958f" opacity="0.95"/><text class="label" x="689" y="599" text-anchor="middle">Scene A</text>
+<rect x="650" y="612" width="78" height="28" rx="10" fill="#84c4c1" opacity="0.95"/><text class="label" x="689" y="631" text-anchor="middle">Scene B</text>
+<rect x="650" y="644" width="78" height="28" rx="10" fill="#dcc163" opacity="0.95"/><text class="label" x="689" y="663" text-anchor="middle">Scene C</text>
+<text class="small" x="688" y="706" text-anchor="middle">Pseudo-labels</text><text class="small" x="688" y="728" text-anchor="middle">(Scene Categories)</text>
+<path d="M729 622 L779 622" class="flowArrow"/>
+<text class="label" x="831" y="611" text-anchor="middle">Pseudo-</text><text class="label" x="831" y="636" text-anchor="middle">labels</text><text class="label" x="804" y="660" text-anchor="middle">+</text><text class="label" x="848" y="660" text-anchor="middle">Features</text>
+<path d="M856 622 L888 622" class="thinArrow"/>
+<path d="M1061 622 L1109 622" class="thinArrow"/>
+<rect x="1116" y="594" width="78" height="28" rx="10" fill="#d9958f" opacity="0.95"/><text class="label" x="1155" y="613" text-anchor="middle">Scene A</text>
+<rect x="1116" y="626" width="78" height="28" rx="10" fill="#84c4c1" opacity="0.95"/><text class="label" x="1155" y="645" text-anchor="middle">Scene B</text>
+<rect x="1116" y="658" width="78" height="28" rx="10" fill="#dcc163" opacity="0.95"/><text class="label" x="1155" y="677" text-anchor="middle">Scene C</text>
+<path d="M1196 622 L1230 622" class="thinArrow"/>
+<rect x="1232" y="576" width="151" height="123" rx="14" fill="#f7efc7" stroke="#d5bc63" stroke-width="2"/>
+<rect x="1245" y="597" width="124" height="84" fill="#fff7db" stroke="#555" stroke-width="1.4"/>
+<line x1="1313" y1="597" x2="1313" y2="681" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="625" x2="1369" y2="625" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="653" x2="1369" y2="653" stroke="#555" stroke-width="1.2"/>
+<line x1="1245" y1="681" x2="1369" y2="681" stroke="#555" stroke-width="1.2"/>
+<text class="small" x="1276" y="616" text-anchor="middle">Scene A</text><text class="small" x="1333" y="616" text-anchor="middle">Expert 1</text>
+<text class="small" x="1276" y="644" text-anchor="middle">Scene B</text><text class="small" x="1333" y="644" text-anchor="middle">Expert 2</text>
+<text class="small" x="1276" y="672" text-anchor="middle">…</text><text class="small" x="1333" y="672" text-anchor="middle">Expert 3</text>
+<g id="slot_augtraj_scaling_graph" data-bbox="[24,28,210,150]" data-role="asset" class="placeholder"><rect class="slot" x="24" y="28" width="210" height="150" rx="4"/><line class="diag" x1="24" y1="28" x2="234" y2="178"/><line class="diag" x1="234" y1="28" x2="24" y2="178"/><text x="129.0" y="103.0">ASSET_SLOT</text></g>
+<g id="slot_augtraj_rotation_translation" data-bbox="[34,146,282,150]" data-role="asset" class="placeholder"><rect class="slot" x="34" y="146" width="282" height="150" rx="4"/><line class="diag" x1="34" y1="146" x2="316" y2="296"/><line class="diag" x1="316" y1="146" x2="34" y2="296"/><text x="175.0" y="221.0">ASSET_SLOT</text></g>
+<g id="slot_context_encoder_heatmap" data-bbox="[686,163,82,82]" data-role="asset" class="placeholder"><rect class="slot" x="686" y="163" width="82" height="82" rx="4"/><line class="diag" x1="686" y1="163" x2="768" y2="245"/><line class="diag" x1="768" y1="163" x2="686" y2="245"/><text x="727.0" y="204.0">ASSET_SLOT</text></g>
+<g id="slot_scene_select_tree_icon" data-bbox="[897,170,75,73]" data-role="asset" class="placeholder"><rect class="slot" x="897" y="170" width="75" height="73" rx="4"/><line class="diag" x1="897" y1="170" x2="972" y2="243"/><line class="diag" x1="972" y1="170" x2="897" y2="243"/><text x="934.5" y="206.5">ASSET_SLOT</text></g>
+<g id="slot_scene_model_pool_icons" data-bbox="[1128,62,97,261]" data-role="asset" class="placeholder"><rect class="slot" x="1128" y="62" width="97" height="261" rx="4"/><line class="diag" x1="1128" y1="62" x2="1225" y2="323"/><line class="diag" x1="1225" y1="62" x2="1128" y2="323"/><text x="1176.5" y="192.5">ASSET_SLOT</text></g>
+<g id="slot_clustering_blobs" data-bbox="[507,576,94,91]" data-role="asset" class="placeholder"><rect class="slot" x="507" y="576" width="94" height="91" rx="4"/><line class="diag" x1="507" y1="576" x2="601" y2="667"/><line class="diag" x1="601" y1="576" x2="507" y2="667"/><text x="554.0" y="621.5">ASSET_SLOT</text></g>
+<g id="slot_big_tree_classifier" data-bbox="[883,565,176,153]" data-role="asset" class="placeholder"><rect class="slot" x="883" y="565" width="176" height="153" rx="4"/><line class="diag" x1="883" y1="565" x2="1059" y2="718"/><line class="diag" x1="1059" y1="565" x2="883" y2="718"/><text x="971.0" y="641.5">ASSET_SLOT</text></g>
+</svg>

@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1929" height="971" viewBox="0 0 1929 971">
+<defs>
+  <marker id="arrow_gray" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0,0 L16,6 L0,12 Z" fill="#e9e9e9"/>
+  </marker>
+  <marker id="arrow_blue" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0,0 L16,6 L0,12 Z" fill="#55a8d9"/>
+  </marker>
+  <marker id="arrow_orange" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0,0 L16,6 L0,12 Z" fill="#f6e4d7"/>
+  </marker>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 38px; fill:#0a0a0a; }
+    .body { font-family: Arial, Helvetica, sans-serif; font-size: 26px; fill:#111; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill:#111; }
+    .mono { font-family: 'Courier New', monospace; font-size: 25px; fill:#111; }
+    .teal { fill:#097a91; font-weight:700; letter-spacing:2px; }
+    .paneldash { fill:#fff; stroke:#efefef; stroke-width:5; stroke-dasharray:22 16; }
+    .bluebox { fill:#e3eef7; stroke:#9bc7e8; stroke-width:3; }
+    .soft-orange { fill:#fae4d5; }
+    .arrowline { stroke:#eeeeee; stroke-width:12; fill:none; marker-end:url(#arrow_gray); }
+  </style>
+</defs>
+<rect x="0" y="0" width="1929" height="971" fill="#ffffff"/>
+
+<!-- outer panels -->
+<rect class="paneldash" x="16" y="28" width="730" height="936" rx="32"/>
+<rect class="paneldash" x="780" y="28" width="1134" height="936" rx="32"/>
+<line x1="756" y1="42" x2="756" y2="955" stroke="#ededed" stroke-width="5" stroke-dasharray="20 16"/>
+
+<!-- titles -->
+<text class="title" x="137" y="76">Offline Graph Construction</text>
+<text class="title" x="950" y="76">Retrieval-Reasoning Augmented Generation</text>
+
+<!-- left upper video thumbnails -->
+<image id="raster_video_clip_1" data-source-slot="slot_video_clip_1" href="assets/raster_required/video_clip_1.png" xlink:href="assets/raster_required/video_clip_1.png" x="46" y="116" width="164" height="96" preserveAspectRatio="none"/>
+<image id="raster_video_clip_2" data-source-slot="slot_video_clip_2" href="assets/raster_required/video_clip_2.png" xlink:href="assets/raster_required/video_clip_2.png" x="230" y="116" width="128" height="96" preserveAspectRatio="none"/>
+<text class="body" x="365" y="165" font-weight="700">...</text>
+<image id="raster_video_clip_3" data-source-slot="slot_video_clip_3" href="assets/raster_required/video_clip_3.png" xlink:href="assets/raster_required/video_clip_3.png" x="406" y="116" width="132" height="96" preserveAspectRatio="none"/>
+<image id="raster_video_clip_4" data-source-slot="slot_video_clip_4" href="assets/raster_required/video_clip_4.png" xlink:href="assets/raster_required/video_clip_4.png" x="548" y="116" width="130" height="96" preserveAspectRatio="none"/>
+<rect x="145" y="225" width="470" height="55" rx="26" fill="#fae4d5"/>
+<text class="body" x="380" y="258" text-anchor="middle">Subtitles</text>
+<path d="M355 291 L401 291 L401 333 L454 333 L378 386 L303 333 L355 333 Z" fill="#ececec"/>
+<rect x="40" y="357" width="635" height="90" rx="10" class="bluebox"/>
+<text class="title" x="357" y="416" text-anchor="middle" font-size="36">LVLM</text>
+<text class="mono" x="123" y="491">[{“entity”: “”, “description”: “”},</text>
+<text class="mono" x="361" y="525" text-anchor="middle">...</text>
+<text class="mono" x="137" y="556">{“entity”: “”, “description”: “”}]</text>
+<rect x="73" y="570" width="602" height="60" fill="#f8dfce"/>
+<text class="body" x="374" y="609" text-anchor="middle">Entity Merging and Node Connection</text>
+<g id="svg_entity_graph" data-source-slot="slot_entity_graph" transform="translate(70,645)">
+  <g opacity="0.45" stroke="#cfcfcf" stroke-width="4" fill="none">
+    <path d="M35 65 L165 30 L235 170"/>
+    <path d="M165 30 L305 70 L530 22 L600 175"/>
+    <path d="M305 70 L372 150 L520 150"/>
+    <path d="M305 70 L430 95" stroke-dasharray="14 12"/>
+    <path d="M35 65 L65 180" stroke-dasharray="14 12"/>
+    <path d="M372 150 L235 170" stroke-dasharray="14 12"/>
+    <path d="M100 105 L35 65" stroke-dasharray="14 12"/>
+  </g>
+  <g stroke-width="3">
+    <rect x="18" y="48" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <rect x="148" y="20" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <rect x="265" y="58" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <rect x="482" y="15" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <rect x="333" y="140" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <rect x="550" y="160" width="36" height="34" rx="6" fill="#c9efbf" stroke="#72c65d"/>
+    <polygon points="112,92 90,122 134,122" fill="#dceeff" stroke="#a4cdea"/>
+    <polygon points="60,160 35,195 88,195" fill="#dceeff" stroke="#a4cdea"/>
+    <rect x="220" y="154" width="38" height="35" fill="#dceeff" stroke="#a4cdea"/>
+    <rect x="386" y="86" width="38" height="35" fill="#dceeff" stroke="#a4cdea"/>
+    <polygon points="480,94 456,126 504,126" fill="#dceeff" stroke="#a4cdea"/>
+    <polygon points="426,150 400,186 454,186" fill="#f6c2ed" stroke="#e79ade"/>
+    <rect x="575" y="55" width="38" height="35" fill="#dceeff" stroke="#a4cdea"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#111">
+    <text x="0" y="280">video Clip</text>
+    <text x="235" y="280">Entities (</text>
+    <text x="560" y="280">)</text>
+  </g>
+  <rect x="132" y="254" width="34" height="34" rx="5" fill="#c9efbf" stroke="#72c65d" stroke-width="3"/>
+  <polygon points="380,253 356,287 404,287" fill="#f6c2ed" stroke="#e79ade" stroke-width="3"/>
+  <rect x="430" y="253" width="38" height="35" fill="#dceeff" stroke="#a4cdea" stroke-width="3"/>
+  <polygon points="514,253 489,288 540,288" fill="#dceeff" stroke="#a4cdea" stroke-width="3"/>
+</g>
+
+<!-- large connector from offline graph to retrieval table -->
+<path d="M685 737 L770 737 L770 368 L930 368" stroke="#eeeeee" stroke-width="12" fill="none" marker-end="url(#arrow_gray)"/>
+
+<!-- question line -->
+<g id="svg_thinking_emoji" data-source-slot="slot_thinking_emoji" transform="translate(845,100)">
+  <circle cx="25" cy="26" r="22" fill="#ffc43d" stroke="#e2a315" stroke-width="1.5"/>
+  <circle cx="18" cy="22" r="2.2" fill="#4a3218"/>
+  <circle cx="31" cy="21" r="2.2" fill="#4a3218"/>
+  <path d="M19 34 Q25 29 31 34" fill="none" stroke="#4a3218" stroke-width="2" stroke-linecap="round"/>
+  <path d="M31 12 q8 4 6 12" fill="none" stroke="#4a3218" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36 36 q8 2 9 9" fill="none" stroke="#d89010" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="41" cy="42" r="4" fill="#ffc43d" stroke="#d89010" stroke-width="1"/>
+</g>
+<text class="small" x="897" y="128">Question: Please identify the option that corresponds to the order of events as they</text>
+<text class="small" x="842" y="164">occur in the video. [Zumba, clean and jerk, milking cow, playing trombone]</text>
+
+<!-- orange down arrows under question -->
+<path d="M1034 184 L1072 184 L1072 207 L1110 207 L1053 230 L996 207 L1034 207 Z" fill="#faeadf"/>
+<path d="M1552 184 L1590 184 L1590 207 L1628 207 L1571 230 L1514 207 L1552 207 Z" fill="#faeadf"/>
+
+<!-- keyword extraction -->
+<text class="body teal" x="865" y="247">Query Keywords Extraction</text>
+<text class="mono" x="856" y="284">[“zumba”, “clean”, “milking</text>
+<text class="mono" x="866" y="315">cow”, “playing trombone”]</text>
+<g font-family="Arial, Helvetica, sans-serif" font-size="21" text-anchor="middle" fill="#3d8e43">
+  <rect x="950" y="355" width="34" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="967" y="379">3</text>
+  <rect x="994" y="355" width="34" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1011" y="379">4</text>
+  <rect x="1038" y="355" width="34" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1055" y="379">5</text>
+  <rect x="1082" y="355" width="42" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1103" y="379">11</text>
+  <rect x="1134" y="355" width="42" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1155" y="379">13</text>
+</g>
+<path d="M1040 408 L1076 408 L1076 425 L1110 425 L1058 449 L1005 425 L1040 425 Z" fill="#faeadf"/>
+
+<!-- structured query refinement -->
+<text class="body teal" x="1394" y="247">Strutured Query Refinement</text>
+<text class="mono" x="1328" y="284">Q1: Is ‘zumba’ shown in the video?</text>
+<text class="mono" x="1584" y="315" text-anchor="middle">...</text>
+<text class="mono" x="1328" y="336">Q4: Is ‘trombone’ shown in the video?</text>
+<path d="M1592 345 L1592 425 L1175 425" class="arrowline"/>
+<path d="M1592 345 L1592 425" stroke="#eeeeee" stroke-width="12" fill="none" marker-end="url(#arrow_gray)"/>
+
+<!-- graph based retrieval label and table -->
+<text class="small" x="800" y="411">Graph-based</text>
+<text class="small" x="800" y="438">Clip Retrieval</text>
+<rect x="877" y="461" width="373" height="224" fill="#f2f2f2"/>
+<g font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle">
+  <rect x="877" y="461" width="373" height="39" fill="#84cde2"/>
+  <text x="918" y="489" fill="#fff" font-weight="700">Clip</text>
+  <text x="1000" y="489" fill="#fff" font-weight="700">Q1</text>
+  <text x="1072" y="489" fill="#fff" font-weight="700">Q2</text>
+  <text x="1146" y="489" fill="#fff" font-weight="700">Q3</text>
+  <text x="1212" y="489" fill="#fff" font-weight="700">Q4</text>
+</g>
+<g stroke="#fff" stroke-width="3">
+  <line x1="965" y1="461" x2="965" y2="685"/><line x1="1038" y1="461" x2="1038" y2="685"/><line x1="1110" y1="461" x2="1110" y2="685"/><line x1="1185" y1="461" x2="1185" y2="685"/>
+  <line x1="877" y1="500" x2="1250" y2="500"/><line x1="877" y1="538" x2="1250" y2="538"/><line x1="877" y1="576" x2="1250" y2="576"/><line x1="877" y1="615" x2="1250" y2="615"/><line x1="877" y1="654" x2="1250" y2="654"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#111">
+  <text x="918" y="527">3</text><text x="918" y="566">4</text><text x="918" y="604">5</text><text x="918" y="643">11</text><text x="918" y="680">13</text>
+</g>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <g stroke="#d7191c" stroke-width="4"><line x1="993" y1="514" x2="1007" y2="528"/><line x1="1007" y1="514" x2="993" y2="528"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1065" y1="514" x2="1079" y2="528"/><line x1="1079" y1="514" x2="1065" y2="528"/></g>
+  <path d="M1137 520 L1144 527 L1156 511" stroke="#4a9b32" stroke-width="4"/>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1205" y1="514" x2="1219" y2="528"/><line x1="1219" y1="514" x2="1205" y2="528"/></g>
+  <path d="M991 559 L998 566 L1010 550" stroke="#4a9b32" stroke-width="4"/>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1065" y1="552" x2="1079" y2="566"/><line x1="1079" y1="552" x2="1065" y2="566"/></g>
+  <path d="M1137 559 L1144 566 L1156 550" stroke="#4a9b32" stroke-width="4"/>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1205" y1="552" x2="1219" y2="566"/><line x1="1219" y1="552" x2="1205" y2="566"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="993" y1="591" x2="1007" y2="605"/><line x1="1007" y1="591" x2="993" y2="605"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1065" y1="591" x2="1079" y2="605"/><line x1="1079" y1="591" x2="1065" y2="605"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1139" y1="591" x2="1153" y2="605"/><line x1="1153" y1="591" x2="1139" y2="605"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1205" y1="591" x2="1219" y2="605"/><line x1="1219" y1="591" x2="1205" y2="605"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="993" y1="630" x2="1007" y2="644"/><line x1="1007" y1="630" x2="993" y2="644"/></g>
+  <path d="M1063 637 L1070 644 L1082 628" stroke="#4a9b32" stroke-width="4"/>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1139" y1="630" x2="1153" y2="644"/><line x1="1153" y1="630" x2="1139" y2="644"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1205" y1="630" x2="1219" y2="644"/><line x1="1219" y1="630" x2="1205" y2="644"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="993" y1="667" x2="1007" y2="681"/><line x1="1007" y1="667" x2="993" y2="681"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1065" y1="667" x2="1079" y2="681"/><line x1="1079" y1="667" x2="1065" y2="681"/></g>
+  <g stroke="#d7191c" stroke-width="4"><line x1="1139" y1="667" x2="1153" y2="681"/><line x1="1153" y1="667" x2="1139" y2="681"/></g>
+  <path d="M1203 674 L1210 681 L1222 665" stroke="#4a9b32" stroke-width="4"/>
+</g>
+
+<!-- table to info arrow -->
+<path d="M1296 542 L1344 542 L1344 517 L1365 542 L1344 567 L1344 542 Z" fill="#faeadf"/>
+<text class="body teal" x="1450" y="503">Information Aggregation</text>
+<rect x="1410" y="530" width="430" height="158" fill="#fff" stroke="#d65d24" stroke-width="3" stroke-dasharray="13 10"/>
+<text class="mono" x="1430" y="566">Milking cow is shown first,</text>
+<text class="mono" x="1430" y="601">followed by zumba, then</text>
+<text class="mono" x="1430" y="636">clean, and finally playing</text>
+<text class="mono" x="1430" y="671">trombone.</text>
+<path d="M1584 716 L1626 716 L1626 762 L1668 762 L1605 795 L1542 762 L1584 762 Z" fill="#e9e9e9"/>
+
+<!-- bottom refined clips and LVLM -->
+<text class="small" x="1008" y="746">Refined Clips</text>
+<g font-family="Arial, Helvetica, sans-serif" font-size="21" text-anchor="middle" fill="#3d8e43">
+  <rect x="978" y="765" width="34" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="995" y="789">3</text>
+  <rect x="1022" y="765" width="34" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1039" y="789">4</text>
+  <rect x="1068" y="765" width="42" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1089" y="789">11</text>
+  <rect x="1120" y="765" width="42" height="34" rx="6" fill="#dbf3d6" stroke="#75c76c" stroke-width="3"/><text x="1141" y="789">13</text>
+</g>
+<rect x="833" y="824" width="1050" height="74" rx="8" class="bluebox"/>
+<text class="title" x="1357" y="873" text-anchor="middle" font-size="34">LVLM</text>
+<g id="svg_answer_robot" data-source-slot="slot_answer_robot" transform="translate(842,907)">
+  <line x1="31" y1="9" x2="31" y2="2" stroke="#24286f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="31" cy="1.5" r="3" fill="#7359c8" stroke="#24286f" stroke-width="1.5"/>
+  <rect x="13" y="12" width="36" height="28" rx="6" fill="#e7f5ff" stroke="#24286f" stroke-width="3"/>
+  <rect x="4" y="21" width="9" height="13" rx="2" fill="#b7dcff" stroke="#24286f" stroke-width="2"/>
+  <rect x="49" y="21" width="9" height="13" rx="2" fill="#b7dcff" stroke="#24286f" stroke-width="2"/>
+  <circle cx="23" cy="25" r="2.2" fill="#24286f"/>
+  <circle cx="39" cy="25" r="2.2" fill="#24286f"/>
+  <path d="M24 33 Q31 36 38 33" fill="none" stroke="#24286f" stroke-width="2" stroke-linecap="round"/>
+</g>
+<text class="small" x="928" y="939">Answer: milking cow --&gt; zumba --&gt; clean and jerk --&gt; playing trombone</text>
+</svg>

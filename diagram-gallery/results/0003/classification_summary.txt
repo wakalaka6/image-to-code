@@ -1,0 +1,9 @@
+svg_candidate count: 5
+raster_required count: 2
+slot_input_image_stack: raster_required - overlapped natural-image restoration samples with complex photographic texture
+slot_backbone_mini_conv_visual: svg_candidate - flat schematic with simple trapezoids and colored bars that can be redrawn as SVG primitives
+slot_output_image_stack: raster_required - overlapped restored photo-like samples with complex texture and shading
+slot_bias_embedding_stack: svg_candidate - regular 3D stack made from flat colored polygons and rectangles
+slot_weight_embedding_stack: svg_candidate - regular 3D tensor stack with clean vector-like faces and repeated layers
+slot_bias_filter_block: svg_candidate - simple blue vertical slab/filter icon with crisp edges
+slot_weight_filter_block: svg_candidate - simple blue pair of vertical slab/filter icons with crisp edges

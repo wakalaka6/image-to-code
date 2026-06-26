@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1914" height="844" viewBox="0 0 1914 844">
+
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L13,5 L0,10 Z" fill="#333"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="13" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L13,5 L0,10 Z" fill="#777"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="14" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L14,6 L0,12 Z" fill="#8ec17c" stroke="#73a965" stroke-width="1"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#6e9bd0"/>
+    </marker>
+    <marker id="arrow-dashed" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,5 L0,10 Z" fill="#999"/>
+    </marker>
+    <style>
+      .serif{font-family:'Times New Roman', Times, serif; fill:#111;}
+      .sans{font-family:Arial, Helvetica, sans-serif; fill:#111;}
+      .panel{fill:#f5faf6; stroke:#595959; stroke-width:4;}
+      .inner{fill:#eef8e9; stroke:#111; stroke-width:3;}
+      .thin{stroke:#111; stroke-width:3; fill:none;}
+      .box{fill:#fffaf0; stroke:#111; stroke-width:3;}
+      .labelbox{fill:#fbfff7; stroke:#111; stroke-width:3;}
+      .dash{stroke-dasharray:6 8;}
+      .placeholder rect{fill:#f8f8f8; stroke:#666; stroke-width:2; stroke-dasharray:7 5;}
+      .placeholder line{stroke:#aaa; stroke-width:1.5;}
+      .placeholder text{font-family:Arial, Helvetica, sans-serif; fill:#555; font-size:12px; font-weight:700;}
+    </style>
+  </defs>
+<rect x="0" y="0" width="1914" height="844" fill="#f7fbf7"/>
+<rect x="3" y="16" width="1230" height="813" rx="14" fill="#f7fbf8" stroke="#5b5b5b" stroke-width="4"/>
+<rect x="1260" y="16" width="651" height="813" rx="10" fill="#fbf8f8" stroke="#5b5b5b" stroke-width="4"/>
+<line x1="1235" y1="15" x2="1235" y2="830" stroke="#555" stroke-width="3"/>
+<rect x="384" y="16" width="466" height="67" fill="#fff6d5" stroke="#5b5b5b" stroke-width="3"/>
+<text x="617" y="66" class="serif" font-size="42" text-anchor="middle" font-weight="700" >DyFlow Framework</text>
+<polygon points="122,75 298,75 267,190 90,190" fill="#ccecff" stroke="#111" stroke-width="4"/>
+<text x="193" y="145" class="serif" font-size="44" text-anchor="middle" font-weight="normal" >Task <tspan font-style="italic">p</tspan></text>
+<line x1="292" y1="130" x2="606" y2="130" stroke="#333" stroke-width="8" marker-end="url(#arrow)"/>
+<rect x="609" y="95" width="374" height="76" rx="8" fill="#ffd8cc" stroke="#111" stroke-width="4"/>
+<text x="784" y="149" class="serif" font-size="47" text-anchor="middle" font-weight="normal" >Designer</text>
+<line x1="793" y1="172" x2="793" y2="226" stroke="#444" stroke-width="8" marker-end="url(#arrow)"/>
+<path d="M 982 133 C 1135 123 1220 170 1240 275 C 1250 360 1290 420 1370 420" fill="none" stroke="#111" stroke-width="4" stroke-dasharray="4 7"/>
+<path d="M 1299 423 C 1210 420 1215 155 981 153" fill="none" stroke="#111" stroke-width="4" stroke-dasharray="4 7" marker-end="url(#arrow)"/>
+<text x="39" y="600" class="serif" font-size="40" text-anchor="middle" font-weight="700" transform="rotate(-90 39 600)">Summarize</text>
+<text x="105" y="535" class="serif" font-size="37" text-anchor="middle" font-weight="normal" font-style="italic">f</text>
+<rect x="98" y="268" width="78" height="195" rx="8" fill="#fff9b2" stroke="#111" stroke-width="4"/>
+<text x="139" y="365" class="serif" font-size="34" text-anchor="middle" font-weight="normal" transform="rotate(-90 139 365)">Summary</text>
+<rect x="98" y="600" width="78" height="195" rx="8" fill="#f3f98f" stroke="#111" stroke-width="4"/>
+<text x="140" y="700" class="serif" font-size="34" text-anchor="middle" font-weight="normal" transform="rotate(-90 140 700)">State <tspan font-style="italic">s_t</tspan></text>
+<line x1="138" y1="600" x2="138" y2="467" stroke="#8d8d8d" stroke-width="4" marker-end="url(#arrow-gray)"/>
+<line x1="98" y1="696" x2="174" y2="696" stroke="#777" stroke-width="8" marker-end="url(#arrow-gray)"/>
+<text x="246" y="735" class="serif" font-size="36" text-anchor="middle" font-weight="700" >Save</text>
+<path d="M 178 460 C 210 416 407 413 642 385 L642 350" fill="none" stroke="#80b470" stroke-width="7" marker-end="url(#arrow-green)"/>
+<text x="387" y="197" class="serif" font-size="35" text-anchor="middle" font-weight="700" >Replan</text>
+<path d="M 248 558 A 82 70 0 1 1 274 430" fill="none" stroke="#80b470" stroke-width="7" marker-end="url(#arrow-green)"/>
+<text x="252" y="515" class="serif" font-size="34" text-anchor="middle" font-weight="700" >Iterate</text>
+<rect x="342" y="233" width="846" height="588" rx="18" fill="#edf7e7" stroke="#111" stroke-width="4"/>
+<line x1="342" y1="323" x2="1188" y2="323" stroke="#111" stroke-width="3"/>
+<text x="767" y="292" class="serif" font-size="45" text-anchor="middle" font-weight="700" >Subgraph <tspan font-style="italic">G_t</tspan></text>
+<rect x="387" y="345" width="755" height="202" rx="3" fill="#fffaf0" stroke="#111" stroke-width="4"/>
+<rect x="658" y="345" width="214" height="55" fill="#fffaf0" stroke="#111" stroke-width="4"/>
+<text x="765" y="381" class="serif" font-size="32" text-anchor="middle" font-weight="700" >Op Sequence</text>
+<line x1="765" y1="400" x2="765" y2="546" stroke="#111" stroke-width="4"/>
+<line x1="1098" y1="345" x2="1098" y2="546" stroke="#111" stroke-width="4"/>
+<text x="1122" y="426" class="serif" font-size="54" text-anchor="middle" font-weight="normal" >⋮</text>
+<path d="M432 445 L432 394 L589 394 L589 450" fill="none" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="432" cy="474" r="23" fill="#dcebf7" stroke="#6d8fb9" stroke-width="4"/>
+<line x1="455" y1="474" x2="542" y2="474" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="544" y="450" width="91" height="45" rx="9" fill="#dcefd8" stroke="#74ae63" stroke-width="4"/>
+<ellipse cx="624" cy="472.5" rx="10" ry="22.5" fill="#dcefd8" stroke="#74ae63" stroke-width="4"/>
+<line x1="636" y1="474" x2="677" y2="474" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="698" cy="474" r="23" fill="#dcebf7" stroke="#6d8fb9" stroke-width="4"/>
+<path d="M696 498 C700 531 730 546 763 590" stroke="#7aa2d5" stroke-width="8" fill="none" stroke-dasharray="10 12" marker-end="url(#arrow-blue)"/>
+<circle cx="832" cy="445" r="23" fill="#dcebf7" stroke="#6d8fb9" stroke-width="4"/>
+<path d="M856 445 C875 398 920 397 921 397" fill="none" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<polygon points="922,379 945,424 897,424" fill="#f0b7b4" stroke="#bd6b6e" stroke-width="4"/>
+<line x1="946" y1="400" x2="1034" y2="400" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1009" y="423" width="45" height="45" rx="9" fill="#ddd8e9" stroke="#67608d" stroke-width="4"/>
+<path d="M1056 468 L1056 491 L923 491" fill="none" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="920" cy="491" r="23" fill="#dcebf7" stroke="#6d8fb9" stroke-width="4"/>
+<path d="M895 491 C860 490 846 468 857 446" fill="none" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="387" y="603" width="755" height="203" rx="3" fill="#fbfff7" stroke="#111" stroke-width="4"/>
+<rect x="430" y="603" width="240" height="49" fill="#fbfff7" stroke="#111" stroke-width="4"/>
+<text x="550" y="630" class="serif" font-size="32" text-anchor="middle" font-weight="700" >Op Template</text>
+<rect x="884" y="603" width="197" height="49" fill="#fbfff7" stroke="#111" stroke-width="4"/>
+<text x="982" y="630" class="serif" font-size="32" text-anchor="middle" font-weight="700" >Op Instance</text>
+<rect x="394" y="661" width="310" height="127" rx="7" fill="#eef7fb" stroke="#111" stroke-width="4"/>
+<circle cx="433" cy="721" r="24" fill="#fff" stroke="#111" stroke-width="4"/>
+<rect x="472" y="699" width="83" height="45" rx="9" fill="#fff" stroke="#111" stroke-width="4"/>
+<ellipse cx="548" cy="721" rx="9" ry="23" fill="#fff" stroke="#111" stroke-width="4"/>
+<polygon points="601,697 627,744 576,744" fill="#fff" stroke="#111" stroke-width="4"/>
+<rect x="645" y="699" width="47" height="45" rx="9" fill="#fff" stroke="#111" stroke-width="4"/>
+<text x="558" y="775" class="serif" font-size="35" text-anchor="middle" font-weight="700" >.... ....</text>
+<text x="764" y="705" class="serif" font-size="35" text-anchor="middle" font-weight="normal" font-style="italic">ϕ</text>
+<text x="764" y="760" class="serif" font-size="35" text-anchor="middle" font-weight="normal" font-style="italic">ψ</text>
+<line x1="705" y1="723" x2="825" y2="723" stroke="#aaa" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrow-dashed)"/>
+<rect x="827" y="661" width="307" height="127" rx="7" fill="#eef7fb" stroke="#111" stroke-width="4"/>
+<circle cx="861" cy="721" r="24" fill="#dcebf7" stroke="#6d8fb9" stroke-width="4"/>
+<rect x="904" y="700" width="84" height="45" rx="8" fill="#dcefd8" stroke="#74ae63" stroke-width="4"/>
+<ellipse cx="982" cy="722" rx="9" ry="23" fill="#dcefd8" stroke="#74ae63" stroke-width="4"/>
+<polygon points="1030,698 1054,744 1007,744" fill="#f0b7b4" stroke="#bd6b6e" stroke-width="4"/>
+<rect x="1076" y="700" width="46" height="45" rx="9" fill="#ddd8e9" stroke="#67608d" stroke-width="4"/>
+<text x="984" y="775" class="serif" font-size="35" text-anchor="middle" font-weight="700" >.... ....</text>
+<rect x="1280" y="48" width="86" height="244" rx="10" fill="#cfeeff" stroke="#111" stroke-width="4"/>
+<text x="1314" y="167" class="serif" font-size="42" text-anchor="middle" font-weight="normal" transform="rotate(-90 1314 167)">Expert</text>
+<text x="1513" y="76" class="serif" font-size="42" text-anchor="middle" font-weight="700" >Sample</text>
+<line x1="1637" y1="91" x2="1367" y2="91" stroke="#999" stroke-width="5" marker-end="url(#arrow-gray)"/>
+<path d="M1650 48 L1853 48 C1875 48 1875 132 1853 132 L1650 132 C1627 132 1627 48 1650 48 Z" fill="#fff1c6" stroke="#111" stroke-width="4"/>
+<ellipse cx="1853" cy="90" rx="22" ry="42" fill="#ffedbd" stroke="#111" stroke-width="4"/>
+<text x="1745" y="106" class="serif" font-size="42" text-anchor="middle" font-weight="normal" >Tasks <tspan font-style="italic">P</tspan></text>
+<text x="1648" y="167" class="serif" font-size="34" text-anchor="middle" font-weight="normal" >Expert Trajectories</text>
+<rect x="1461" y="184" width="411" height="105" rx="5" fill="#ffe2cf" stroke="#111" stroke-width="4"/>
+<line x1="1368" y1="238" x2="1459" y2="238" stroke="#999" stroke-width="5" stroke-dasharray="12 14" marker-end="url(#arrow-gray)"/>
+<line x1="1668" y1="290" x2="1668" y2="385" stroke="#b8b8b8" stroke-width="5" stroke-dasharray="4 6" marker-end="url(#arrow-gray)"/>
+<text x="1465" y="350" class="serif" font-size="42" text-anchor="middle" font-weight="700" >Distillation</text>
+<text x="1812" y="352" class="serif" font-size="52" text-anchor="middle" font-weight="normal" >ℒ<tspan font-size="28" baseline-shift="sub">SFT</tspan></text>
+<rect x="1298" y="389" width="552" height="72" rx="7" fill="#ffd8cc" stroke="#111" stroke-width="4"/>
+<text x="1547" y="437" class="serif" font-size="47" text-anchor="middle" font-weight="normal" >DyPlanner</text>
+<line x1="1383" y1="461" x2="1383" y2="657" stroke="#777" stroke-width="6" marker-end="url(#arrow-gray)"/>
+<text x="1348" y="540" class="serif" font-size="32" text-anchor="middle" font-weight="700" transform="rotate(-90 1348 540)">Generate</text>
+<rect x="1267" y="662" width="232" height="142" rx="7" fill="#ffe0d6" stroke="#111" stroke-width="4"/>
+<text x="1383" y="717" class="serif" font-size="35" text-anchor="middle" font-weight="normal" >Self-generate</text>
+<text x="1383" y="773" class="serif" font-size="35" text-anchor="middle" font-weight="normal" >Trajectories</text>
+<line x1="1500" y1="724" x2="1644" y2="724" stroke="#777" stroke-width="6" marker-end="url(#arrow-gray)"/>
+<text x="1569" y="756" class="serif" font-size="28" text-anchor="middle" font-weight="700" >Execution</text>
+<rect x="1646" y="663" width="235" height="142" rx="6" fill="#ffe8f0" stroke="#111" stroke-width="4"/>
+<line x1="1760" y1="660" x2="1760" y2="465" stroke="#777" stroke-width="7" marker-end="url(#arrow-gray)"/>
+<text x="1812" y="583" class="serif" font-size="52" text-anchor="middle" font-weight="normal" >ℒ<tspan font-size="28" baseline-shift="sub">KTO</tspan></text>
+<path d="M1532 633 A78 70 0 1 1 1597 486" fill="none" stroke="#80b470" stroke-width="7" marker-end="url(#arrow-green)"/>
+<text x="1567" y="570" class="serif" font-size="25" text-anchor="middle" font-weight="700" >Self-play Preference</text>
+<text x="1567" y="599" class="serif" font-size="25" text-anchor="middle" font-weight="700" >Optimization</text>
+<g id="slot_icon_designer_fire" data-bbox="[619,97,65,63]" data-role="asset" class="placeholder">
+  <rect x="619" y="97" width="65" height="63" rx="3"/>
+  <line x1="619" y1="97" x2="684" y2="160"/>
+  <line x1="684" y1="97" x2="619" y2="160"/>
+  <text x="651.5" y="128.5" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_icon_designer_snowflake" data-bbox="[891,98,72,65]" data-role="asset" class="placeholder">
+  <rect x="891" y="98" width="72" height="65" rx="3"/>
+  <line x1="891" y1="98" x2="963" y2="163"/>
+  <line x1="963" y1="98" x2="891" y2="163"/>
+  <text x="927.0" y="130.5" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_icon_magnifier" data-bbox="[626,520,70,70]" data-role="asset" class="placeholder">
+  <rect x="626" y="520" width="70" height="70" rx="3"/>
+  <line x1="626" y1="520" x2="696" y2="590"/>
+  <line x1="696" y1="520" x2="626" y2="590"/>
+  <text x="661.0" y="555.0" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_icon_expert_snowflake" data-bbox="[1290,198,55,55]" data-role="asset" class="placeholder">
+  <rect x="1290" y="198" width="55" height="55" rx="3"/>
+  <line x1="1290" y1="198" x2="1345" y2="253"/>
+  <line x1="1345" y1="198" x2="1290" y2="253"/>
+  <text x="1317.5" y="225.5" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_expert_trajectory_content" data-bbox="[1466,162,395,88]" data-role="asset" class="placeholder">
+  <rect x="1466" y="162" width="395" height="88" rx="3"/>
+  <line x1="1466" y1="162" x2="1861" y2="250"/>
+  <line x1="1861" y1="162" x2="1466" y2="250"/>
+  <text x="1663.5" y="206.0" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_icon_dyplanner_fire" data-bbox="[1351,393,58,60]" data-role="asset" class="placeholder">
+  <rect x="1351" y="393" width="58" height="60" rx="3"/>
+  <line x1="1351" y1="393" x2="1409" y2="453"/>
+  <line x1="1409" y1="393" x2="1351" y2="453"/>
+  <text x="1380.0" y="423.0" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_preference_result_content" data-bbox="[1650,669,228,120]" data-role="asset" class="placeholder">
+  <rect x="1650" y="669" width="228" height="120" rx="3"/>
+  <line x1="1650" y1="669" x2="1878" y2="789"/>
+  <line x1="1878" y1="669" x2="1650" y2="789"/>
+  <text x="1764.0" y="729.0" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+Hybrid SVG reconstruction classification summary
+svg_candidate: 9
+raster_required: 0
+
+- slot_mllm_icon_left_top: svg_candidate — simple monochrome robot icon with clear vector-like boundaries — assets/svg_candidate/mllm_icon_left_top.png — bbox=[225, 62, 84, 115]
+- slot_mllm_icon_extraction_center: svg_candidate — simple monochrome robot icon with clear vector-like boundaries — assets/svg_candidate/mllm_icon_extraction_center.png — bbox=[282, 443, 86, 112]
+- slot_llm_icon_reasoning_center: svg_candidate — simple monochrome robot icon with clear vector-like boundaries — assets/svg_candidate/llm_icon_reasoning_center.png — bbox=[928, 441, 82, 116]
+- slot_user_icon: svg_candidate — simple silhouette icon with solid fill — assets/svg_candidate/user_icon.png — bbox=[1321, 159, 70, 62]
+- slot_item_icon_camera_i1: svg_candidate — simple monochrome camera icon with geometric primitives — assets/svg_candidate/item_icon_camera_i1.png — bbox=[1430, 70, 68, 58]
+- slot_item_icon_video_i2: svg_candidate — simple monochrome video/film icon with geometric primitives — assets/svg_candidate/item_icon_video_i2.png — bbox=[1429, 145, 73, 62]
+- slot_item_icon_gamepad_in: svg_candidate — simple monochrome gamepad icon with clear boundary — assets/svg_candidate/item_icon_gamepad_in.png — bbox=[1430, 253, 75, 60]
+- slot_recsys_network_icon: svg_candidate — small line-based neural-network style icon that can be redrawn as SVG strokes and circles — assets/svg_candidate/recsys_network_icon.png — bbox=[1528, 506, 58, 72]
+- slot_candidate_clock_icon: svg_candidate — simple clock/circular-arrow candidate item icon with clear vector outline — assets/svg_candidate/candidate_clock_icon.png — bbox=[1822, 442, 38, 45]

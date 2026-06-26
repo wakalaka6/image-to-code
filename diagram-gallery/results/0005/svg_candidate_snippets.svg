@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1941" height="902" viewBox="0 0 1941 902">
+<!-- Vector snippets generated from assets/svg_candidate crops. No <image> elements are used. -->
+<g id="svg_screening_check_1" data-source-slot="slot_screening_check_1" transform="translate(116,108)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_screening_check_2" data-source-slot="slot_screening_check_2" transform="translate(116,136)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_screening_check_3" data-source-slot="slot_screening_check_3" transform="translate(116,164)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_initial_survey_participant" data-source-slot="slot_initial_survey_participant" transform="translate(267,225)">
+  <circle cx="29.0" cy="33.5" r="24.4" fill="none" stroke="#111" stroke-width="1.6"/>
+  <circle cx="29.0" cy="25.0" r="6.1" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.0 46.9 C 21.7 38.4, 36.3 38.4, 40.0 46.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_skeptical_red_check" data-source-slot="slot_skeptical_red_check" transform="translate(13,619)">
+  <polyline points="4.5,14.3 10.6,19.8 23.5,5.2" fill="none" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_skeptical_red_cross_vaccine" data-source-slot="slot_skeptical_red_cross_vaccine" transform="translate(14,649)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_skeptical_red_cross_climate" data-source-slot="slot_skeptical_red_cross_climate" transform="translate(14,680)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_mainstream_green_cross_covid" data-source-slot="slot_mainstream_green_cross_covid" transform="translate(306,619)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#43c934" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#43c934" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_mainstream_green_check_vaccine" data-source-slot="slot_mainstream_green_check_vaccine" transform="translate(306,649)">
+  <polyline points="5.0,14.3 11.2,20.3 23.2,5.7" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_mainstream_green_check_climate" data-source-slot="slot_mainstream_green_check_climate" transform="translate(306,680)">
+  <polyline points="5.0,14.3 11.2,20.3 23.2,5.7" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_legend_ai_expert_icon" data-source-slot="slot_legend_ai_expert_icon" transform="translate(1381,34)" fill="none" stroke="#111111" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="17.0" y1="3.7" x2="17.0" y2="8.3"/>
+  <circle cx="17.0" cy="2.8" r="1.7" fill="#111111" stroke="none"/>
+  <rect x="9.5" y="8.3" width="15.0" height="11.5" rx="2.0"/>
+  <circle cx="13.9" cy="13.8" r="1.2" fill="#111111" stroke="none"/>
+  <circle cx="20.1" cy="13.8" r="1.2" fill="#111111" stroke="none"/>
+  <rect x="11.2" y="21.6" width="11.6" height="12.4" rx="0.7"/>
+  <line x1="8.8" y1="23.9" x2="5.4" y2="31.3"/>
+  <line x1="25.2" y1="23.9" x2="28.6" y2="31.3"/>
+  <line x1="13.6" y1="34.0" x2="11.9" y2="42.3"/>
+  <line x1="20.4" y1="34.0" x2="22.1" y2="42.3"/>
+  <line x1="9.5" y1="42.3" x2="14.3" y2="42.3"/>
+  <line x1="19.7" y1="42.3" x2="24.5" y2="42.3"/>
+</g>
+<g id="svg_legend_judge_icon" data-source-slot="slot_legend_judge_icon" transform="translate(1373,96)">
+  <circle cx="29.5" cy="28.0" r="23.5" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="29.5" cy="19.8" r="5.9" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.9 40.9 C 22.4 32.7, 36.6 32.7, 40.1 40.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round1_ai_icon" data-source-slot="slot_consultancy_round1_ai_icon" transform="translate(622,301)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round1_judge_icon" data-source-slot="slot_consultancy_round1_judge_icon" transform="translate(619,397)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round2_ai_icon" data-source-slot="slot_consultancy_round2_ai_icon" transform="translate(622,517)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round2_judge_icon" data-source-slot="slot_consultancy_round2_judge_icon" transform="translate(619,617)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round3_ai_icon" data-source-slot="slot_consultancy_round3_ai_icon" transform="translate(622,738)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round3_judge_icon" data-source-slot="slot_consultancy_round3_judge_icon" transform="translate(619,834)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round1_left_ai_icon" data-source-slot="slot_debate_round1_left_ai_icon" transform="translate(1132,301)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round1_right_ai_icon" data-source-slot="slot_debate_round1_right_ai_icon" transform="translate(1509,301)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round1_judge_icon" data-source-slot="slot_debate_round1_judge_icon" transform="translate(1311,389)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round2_left_ai_icon" data-source-slot="slot_debate_round2_left_ai_icon" transform="translate(1132,516)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round2_right_ai_icon" data-source-slot="slot_debate_round2_right_ai_icon" transform="translate(1509,516)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round2_judge_icon" data-source-slot="slot_debate_round2_judge_icon" transform="translate(1311,612)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round3_left_ai_icon" data-source-slot="slot_debate_round3_left_ai_icon" transform="translate(1132,737)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round3_right_ai_icon" data-source-slot="slot_debate_round3_right_ai_icon" transform="translate(1509,737)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round3_judge_icon" data-source-slot="slot_debate_round3_judge_icon" transform="translate(1311,834)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+</svg>

@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1809" height="890" viewBox="0 0 1809 890">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 5 L 0 10 z" fill="#000"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="16" markerHeight="14" refX="15" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 16 7 L 0 14 z" fill="#dedede"/>
+    </marker>
+    <linearGradient id="udtGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f97883"/>
+      <stop offset="46%" stop-color="#f4d78b"/>
+      <stop offset="100%" stop-color="#c8f5d7"/>
+    </linearGradient>
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; fill:#000; }
+      .label { font-family: "Times New Roman", Times, serif; fill:#000; font-size:34px; }
+      .small-label { font-family: "Times New Roman", Times, serif; fill:#000; font-size:30px; }
+      .caption { font-family: "Times New Roman", Times, serif; fill:#000; font-size:36px; }
+      .panel { fill:#fff; stroke:#000; stroke-width:3; }
+      .box { fill:#efefef; stroke:#000; stroke-width:3; }
+      .dash { fill:none; stroke:#000; stroke-width:3; stroke-dasharray:10 6; }
+      .line { stroke:#000; stroke-width:3; fill:none; }
+      .thin { stroke:#000; stroke-width:2.5; fill:none; }
+      .slot-label { font-family:Arial, sans-serif; font-size:13px; fill:#666; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1809" height="890" fill="#fff"/>
+
+<!-- Panel (a): Datasets -->
+<rect x="14" y="25" width="482" height="802" rx="22" class="panel"/>
+<line x1="14" y1="458" x2="496" y2="458" stroke="#000" stroke-width="3" stroke-dasharray="2 5"/>
+<path d="M150,85.0 L162,85.0 L162,65 L190,105 L162,145 L162,125.0 L150,125.0 Z" fill="#dedede" stroke="none"/>
+<path d="M143,230.5 L162,230.5 L162,213 L190,248 L162,283 L162,265.5 L143,265.5 Z" fill="#dedede" stroke="none"/>
+<path d="M365,208.0 L402,208.0 L402,187 L430,229 L402,271 L402,250.0 L365,250.0 Z" fill="#dedede" stroke="none"/>
+<g id="slot_diff_data_stack" data-bbox="[20,58,128,112]" data-role="asset">
+  <rect x="20" y="58" width="128" height="112" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="20" y1="58" x2="148" y2="170" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="148" y1="58" x2="20" y2="170" stroke="#aaa" stroke-width="1.5"/>
+  <text x="84.0" y="114.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_diff_data_graph_boxes" data-bbox="[28,201,115,98]" data-role="asset">
+  <rect x="28" y="201" width="115" height="98" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="28" y1="201" x2="143" y2="299" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="143" y1="201" x2="28" y2="299" stroke="#aaa" stroke-width="1.5"/>
+  <text x="85.5" y="250.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_seq_grid_graph" data-bbox="[192,45,180,126]" data-role="asset">
+  <rect x="192" y="45" width="180" height="126" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="192" y1="45" x2="372" y2="171" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="372" y1="45" x2="192" y2="171" stroke="#aaa" stroke-width="1.5"/>
+  <text x="282.0" y="108.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_seq_format_graph" data-bbox="[198,214,178,111]" data-role="asset">
+  <rect x="198" y="214" width="178" height="111" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="198" y1="214" x2="376" y2="325" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="376" y1="214" x2="198" y2="325" stroke="#aaa" stroke-width="1.5"/>
+  <text x="287.0" y="269.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_seq_cubes" data-bbox="[445,92,35,185]" data-role="asset">
+  <rect x="445" y="92" width="35" height="185" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="445" y1="92" x2="480" y2="277" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="480" y1="92" x2="445" y2="277" stroke="#aaa" stroke-width="1.5"/>
+  <text x="462.5" y="184.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_heatmap" data-bbox="[40,488,123,104]" data-role="asset">
+  <rect x="40" y="488" width="123" height="104" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="40" y1="488" x2="163" y2="592" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="163" y1="488" x2="40" y2="592" stroke="#aaa" stroke-width="1.5"/>
+  <text x="101.5" y="540.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_city" data-bbox="[194,489,122,104]" data-role="asset">
+  <rect x="194" y="489" width="122" height="104" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="194" y1="489" x2="316" y2="593" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="316" y1="489" x2="194" y2="593" stroke="#aaa" stroke-width="1.5"/>
+  <text x="255.0" y="541.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_train" data-bbox="[352,488,122,104]" data-role="asset">
+  <rect x="352" y="488" width="122" height="104" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="352" y1="488" x2="474" y2="592" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="474" y1="488" x2="352" y2="592" stroke="#aaa" stroke-width="1.5"/>
+  <text x="413.0" y="540.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_road_network" data-bbox="[40,617,123,94]" data-role="asset">
+  <rect x="40" y="617" width="123" height="94" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="40" y1="617" x2="163" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="163" y1="617" x2="40" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <text x="101.5" y="664.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_grid_heatmap" data-bbox="[194,617,122,94]" data-role="asset">
+  <rect x="194" y="617" width="122" height="94" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="194" y1="617" x2="316" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="316" y1="617" x2="194" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <text x="255.0" y="664.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<g id="slot_domain_flow_field" data-bbox="[354,617,122,94]" data-role="asset">
+  <rect x="354" y="617" width="122" height="94" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="354" y1="617" x2="476" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="476" y1="617" x2="354" y2="711" stroke="#aaa" stroke-width="1.5"/>
+  <text x="415.0" y="664.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<text class="serif" x="95" y="382" font-size="33" text-anchor="middle">
+<tspan x="95" dy="0">Different</tspan>
+<tspan x="95" dy="42">data types</tspan>
+</text>
+<text class="serif" x="408" y="382" font-size="33" text-anchor="middle">
+<tspan x="408" dy="0">Sequential</tspan>
+<tspan x="408" dy="42">format</tspan>
+</text>
+<text class="serif" x="248" y="748" font-size="34" text-anchor="middle">
+<tspan x="248" dy="0">Multiple Domains</tspan>
+<tspan x="248" dy="42">Multiple Cities</tspan>
+</text>
+<text class="serif" x="250" y="874" font-size="37" text-anchor="middle">(a) Datasets</text>
+<path class="line" marker-end="url(#arrow)" d="M496,755 L545,755"/>
+<path class="line" marker-end="url(#arrow)" d="M496,330 C520,400 525,505 545,558"/>
+<!-- Panel (b): Urban Diffusion Transformer -->
+<text class="serif" x="820" y="45" font-size="40" text-anchor="middle">Output</text>
+<path class="line" marker-end="url(#arrow)" d="M820,126 L820,56"/>
+<rect x="560" y="96" width="520" height="56" rx="5" class="box"/>
+<text class="serif" x="820" y="136" font-size="38" text-anchor="middle">Reshape</text>
+<g id="slot_noisy_patch_row" data-bbox="[574,185,505,53]" data-role="asset">
+  <rect x="574" y="185" width="505" height="53" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="574" y1="185" x2="1079" y2="238" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1079" y1="185" x2="574" y2="238" stroke="#aaa" stroke-width="1.5"/>
+  <text x="826.5" y="211.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<line x1="602" y1="238" x2="602" y2="270" class="line"/>
+<line x1="675" y1="238" x2="675" y2="270" class="line"/>
+<line x1="747" y1="238" x2="747" y2="270" class="line"/>
+<line x1="820" y1="238" x2="820" y2="270" class="line"/>
+<line x1="900" y1="238" x2="900" y2="270" class="line"/>
+<line x1="974" y1="238" x2="974" y2="270" class="line"/>
+<line x1="1046" y1="238" x2="1046" y2="270" class="line"/>
+<line x1="820" y1="152" x2="820" y2="185" class="line"/>
+<rect x="545" y="270" width="560" height="146" rx="20" fill="url(#udtGrad)" stroke="#000" stroke-width="3"/>
+<text class="serif" x="825" y="354" font-size="40" text-anchor="middle">Urban Diffusion Transformer</text>
+<rect x="546" y="505" width="304" height="120" rx="11" class="box"/>
+<text class="serif" x="700" y="548" font-size="36" text-anchor="middle">
+<tspan x="700" dy="0">Spatio-temporal</tspan>
+<tspan x="700" dy="42">patching</tspan>
+</text>
+<rect x="875" y="505" width="232" height="120" rx="11" class="box"/>
+<text class="serif" x="992" y="548" font-size="36" text-anchor="middle">
+<tspan x="992" dy="0">Embedding</tspan>
+<tspan x="992" dy="42">layer</tspan>
+</text>
+<rect x="546" y="695" width="304" height="120" rx="11" class="box"/>
+<text class="serif" x="700" y="745" font-size="36" text-anchor="middle">
+<tspan x="700" dy="0">Noisy</tspan>
+<tspan x="700" dy="44">ST data</tspan>
+</text>
+<rect x="885" y="695" width="222" height="120" rx="11" class="box"/>
+<text class="serif" x="996" y="745" font-size="36" text-anchor="middle">Timestep</text>
+<text class="serif" x="996" y="787" font-size="38" text-anchor="middle" font-style="italic">t</text>
+<rect x="773" y="437" width="147" height="44" rx="5" fill="#fff" stroke="#000" stroke-width="3"/>
+<text class="serif" x="846" y="469" font-size="34" text-anchor="middle">Concat</text>
+<line x1="700" y1="416" x2="700" y2="505" class="line"/>
+<line x1="992" y1="416" x2="992" y2="505" class="line"/>
+<path class="line" marker-end="url(#arrow)" d="M773,459 L696,459"/>
+<path class="line" marker-end="url(#arrow)" d="M986,459 L920,459"/>
+<path class="line" d="M992,625 L992,695"/>
+<path class="line" d="M700,625 L700,695"/>
+<path class="line" marker-end="url(#arrow)" d="M885,667 L700,667"/>
+<path class="line" d="M700,667 L700,625"/>
+<path class="line" d="M992,625 L992,657"/>
+<path class="line" d="M992,657 C990,670 978,670 976,657"/>
+<path class="line" d="M976,657 L700,657"/>
+<path class="line" d="M1105,306 L1196,306"/>
+<path class="line" d="M1105,306 L1105,459 L995,459"/>
+<path class="line" d="M1105,667 L1244,667"/>
+<path class="line" d="M700,667 L1244,667"/>
+<text class="serif" x="820" y="870" font-size="36" text-anchor="middle">(b) Urban Diffusion Transformer</text>
+<!-- Panel (d): Unified Prompt Learning -->
+<rect x="1196" y="20" width="610" height="590" rx="26" class="panel"/>
+<rect x="1222" y="36" width="454" height="308" rx="22" class="dash"/>
+<rect x="1224" y="368" width="454" height="206" rx="13" class="dash"/>
+<g id="slot_data_memory_icons" data-bbox="[1244,38,86,241]" data-role="asset">
+  <rect x="1244" y="38" width="86" height="241" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1244" y1="38" x2="1330" y2="279" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1330" y1="38" x2="1244" y2="279" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1287.0" y="158.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<text class="serif" x="1301" y="300" font-size="30" text-anchor="middle">
+<tspan x="1301" dy="0">Data</tspan>
+<tspan x="1301" dy="33">memory</tspan>
+</text>
+<rect x="1370" y="60" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="91" font-size="32" text-anchor="middle">Frequency pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,82 L1345,82"/>
+<rect x="1370" y="143" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="174" font-size="32" text-anchor="middle">Temporal pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,165 L1345,165"/>
+<rect x="1370" y="225" width="285" height="40" fill="#fff" stroke="#000" stroke-width="3" stroke-dasharray="8 5"/>
+<text class="serif" x="1513" y="256" font-size="32" text-anchor="middle">Spatial pattern</text>
+<path class="thin" marker-end="url(#arrow)" d="M1370,247 L1345,247"/>
+<text class="serif" x="1540" y="326" font-size="34" text-anchor="middle" font-weight="bold" font-style="italic">Data-driven prompt</text>
+<text class="serif" x="1760" y="162" font-size="34" text-anchor="middle">ST</text>
+<text class="serif" x="1760" y="203" font-size="34" text-anchor="middle">Data</text>
+<path class="thin" marker-end="url(#arrow)" d="M1710,172 L1668,172"/>
+<g id="slot_task_memory_icon" data-bbox="[1250,398,77,85]" data-role="asset">
+  <rect x="1250" y="398" width="77" height="85" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1250" y1="398" x2="1327" y2="483" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1327" y1="398" x2="1250" y2="483" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1288.5" y="440.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<text class="serif" x="1295" y="498" font-size="30" text-anchor="middle">
+<tspan x="1295" dy="0">Task</tspan>
+<tspan x="1295" dy="34">memory</tspan>
+</text>
+<rect x="1384" y="373" width="43" height="120" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+<text class="serif" x="1414" y="432" font-size="28" text-anchor="middle" transform="rotate(90 1414 432)">Attention</text>
+<g id="slot_task_mask_pattern" data-bbox="[1474,405,192,91]" data-role="asset">
+  <rect x="1474" y="405" width="192" height="91" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1474" y1="405" x2="1666" y2="496" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1666" y1="405" x2="1474" y2="496" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1570.0" y="450.5" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<path class="thin" marker-end="url(#arrow)" d="M1474,448 L1430,448"/>
+<path class="thin" marker-end="url(#arrow)" d="M1384,448 L1349,448"/>
+<path class="thin" marker-end="url(#arrow)" d="M1723,470 L1668,470"/>
+<text class="serif" x="1755" y="474" font-size="34" text-anchor="middle">Mask</text>
+<text class="serif" x="1536" y="558" font-size="34" text-anchor="middle" font-weight="bold" font-style="italic">Task-specific prompt</text>
+<text class="serif" x="1475" y="628" font-size="36" text-anchor="middle">(d) Unified Prompt Learning</text>
+<!-- Panel (c): Masking Strategies -->
+<rect x="1244" y="660" width="516" height="165" rx="8" class="panel"/>
+<g id="slot_masking_strategies_examples" data-bbox="[1266,668,392,118]" data-role="asset">
+  <rect x="1266" y="668" width="392" height="118" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1266" y1="668" x2="1658" y2="786" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="1658" y1="668" x2="1266" y2="786" stroke="#aaa" stroke-width="1.5"/>
+  <text x="1462.0" y="727.0" class="slot-label" text-anchor="middle" dominant-baseline="middle">ASSET_SLOT</text>
+</g>
+<text class="serif" x="1498" y="870" font-size="36" text-anchor="middle">(c) Masking Strategies</text>
+</svg>

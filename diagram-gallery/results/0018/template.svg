@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1688" height="860" viewBox="0 0 1688 860">
+<defs>
+  <marker id="arrowBlack" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#111"/>
+  </marker>
+</defs>
+<style>
+  .serif { font-family: "Times New Roman", Times, serif; fill:#111; }
+  .boxText { font-family: "Times New Roman", Times, serif; fill:#111; }
+</style>
+<rect x="0" y="0" width="1688" height="860" fill="#ffffff"/>
+
+<rect x="95" y="16" width="1593" height="389" fill="#d9f1f3" stroke="none"/>
+<text x="20" y="63" font-family="Times New Roman, Times, serif" font-size="32" text-anchor="start" >(a)</text>
+<text x="158" y="65" font-family="Times New Roman, Times, serif" font-size="36" text-anchor="start" >GIBMS</text>
+<g id="slot_a_molecular_graph_left" data-bbox="[150,150,175,145]" data-role="asset">
+  <rect x="150" y="150" width="175" height="145" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="150" y1="150" x2="325" y2="295" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="325" y1="150" x2="150" y2="295" stroke="#aaa" stroke-width="1.2"/>
+  <text x="237.5" y="222.5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="230" y="337" font-family="Times New Roman, Times, serif" font-size="34" text-anchor="middle" font-style="italic">G</text>
+<line x1="324" y1="200" x2="403" y2="200" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<rect x="405" y="138" width="81" height="188" fill="#f8f8f8" stroke="#5d2e2d" stroke-width="2" />
+<text x="446" y="232" font-family="Times New Roman, Times, serif" font-size="30" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 446 232)">Encoder</text>
+<line x1="486" y1="232" x2="556" y2="232" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="512" y="183" font-family="Times New Roman, Times, serif" font-size="34" font-weight="bold">H</text>
+<g id="slot_a_hidden_state_H" data-bbox="[555,150,62,166]" data-role="asset">
+  <rect x="555" y="150" width="62" height="166" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="555" y1="150" x2="617" y2="316" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="617" y1="150" x2="555" y2="316" stroke="#aaa" stroke-width="1.2"/>
+  <text x="586.0" y="233.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<line x1="616" y1="232" x2="684" y2="232" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<rect x="684" y="138" width="80" height="188" fill="#f3f3f3" stroke="#5d2e2d" stroke-width="2" />
+<text x="724" y="232" font-family="Times New Roman, Times, serif" font-size="30" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 724 232)">MLP</text>
+<line x1="764" y1="232" x2="832" y2="232" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<g id="slot_a_weighted_graph" data-bbox="[850,150,170,145]" data-role="asset">
+  <rect x="850" y="150" width="170" height="145" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="850" y1="150" x2="1020" y2="295" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1020" y1="150" x2="850" y2="295" stroke="#aaa" stroke-width="1.2"/>
+  <text x="935.0" y="222.5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<polyline points="584,150 584,86 828,86" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="835" y="65" font-family="Times New Roman, Times, serif" font-size="34" fill="#111">
+<tspan></tspan><tspan font-style="italic">I</tspan><tspan> (</tspan><tspan font-style="italic">G</tspan><tspan>; </tspan><tspan font-style="italic">G</tspan><tspan baseline-shift="sub" font-size="21">IB</tspan><tspan>)</tspan>
+</text>
+<polyline points="584,315 584,379 828,379" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="835" y="390" font-family="Times New Roman, Times, serif" font-size="34" fill="#111">
+<tspan></tspan><tspan font-style="italic">I</tspan><tspan> (</tspan><tspan font-style="italic">G</tspan><tspan>; </tspan><tspan font-style="italic">G</tspan><tspan baseline-shift="sub" font-size="21">IB</tspan><tspan>)</tspan>
+</text>
+<line x1="1032" y1="232" x2="1082" y2="232" stroke="#111" stroke-width="2" fill="none"/>
+<text x="1094" y="242" font-family="Times New Roman, Times, serif" font-size="32">Sample</text>
+<polyline points="1082,232 1082,119 1148,119" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<polyline points="1082,232 1082,347 1148,347" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="1090" y="63" font-family="Times New Roman, Times, serif" font-size="28" fill="#111">
+<tspan font-style="italic">G</tspan><tspan baseline-shift="sub" font-size="18">IB</tspan>
+</text>
+<text x="1090" y="386" font-family="Times New Roman, Times, serif" font-size="28" fill="#111">
+<tspan font-style="italic">G</tspan><tspan baseline-shift="sub" font-size="18">IB</tspan>
+</text>
+<g id="slot_a_gib_stack_top" data-bbox="[1149,36,60,166]" data-role="asset">
+  <rect x="1149" y="36" width="60" height="166" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1149" y1="36" x2="1209" y2="202" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1209" y1="36" x2="1149" y2="202" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1179.0" y="119.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_a_gib_stack_bottom" data-bbox="[1149,263,60,166]" data-role="asset">
+  <rect x="1149" y="263" width="60" height="166" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1149" y1="263" x2="1209" y2="429" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1209" y1="263" x2="1149" y2="429" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1179.0" y="346.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<line x1="1208" y1="119" x2="1309" y2="119" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<line x1="1208" y1="347" x2="1309" y2="347" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="1217" y="104" font-family="Times New Roman, Times, serif" font-size="30" text-anchor="start" >Pool</text>
+<text x="1217" y="334" font-family="Times New Roman, Times, serif" font-size="30" text-anchor="start" >Pool</text>
+<g id="slot_a_pool_top" data-bbox="[1309,66,65,46]" data-role="asset">
+  <rect x="1309" y="66" width="65" height="46" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1309" y1="66" x2="1374" y2="112" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1374" y1="66" x2="1309" y2="112" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1341.5" y="89.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_a_pool_bottom" data-bbox="[1309,325,65,46]" data-role="asset">
+  <rect x="1309" y="325" width="65" height="46" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1309" y1="325" x2="1374" y2="371" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1374" y1="325" x2="1309" y2="371" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1341.5" y="348.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<polyline points="1374,89 1439,222" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<polyline points="1374,348 1439,222" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="1445" y="232" font-family="Times New Roman, Times, serif" font-size="34" fill="#111">
+<tspan>− </tspan><tspan font-style="italic">I</tspan><tspan> (Y; </tspan><tspan font-style="italic">G</tspan><tspan baseline-shift="sub" font-size="21">IB</tspan><tspan>)</tspan>
+</text>
+<text x="20" y="456" font-family="Times New Roman, Times, serif" font-size="32" text-anchor="start" >(b)</text>
+<text x="142" y="462" font-family="Times New Roman, Times, serif" font-size="36" text-anchor="start" >SLG</text>
+<g id="slot_b_molecular_graph_left" data-bbox="[150,547,175,132]" data-role="asset">
+  <rect x="150" y="547" width="175" height="132" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="150" y1="547" x2="325" y2="679" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="325" y1="547" x2="150" y2="679" stroke="#aaa" stroke-width="1.2"/>
+  <text x="237.5" y="613.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<text x="230" y="719" font-family="Times New Roman, Times, serif" font-size="34" text-anchor="middle" font-style="italic">G</text>
+<polyline points="322,626 340,626 424,556" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<polyline points="340,626 424,724" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<rect x="424" y="467" width="82" height="181" fill="#d9f1f3" stroke="none" stroke-width="0" />
+<text x="465" y="557" font-family="Times New Roman, Times, serif" font-size="28" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 465 557)">GIBMS</text>
+<rect x="424" y="670" width="82" height="181" fill="#f4f4ed" stroke="#5c4f21" stroke-width="2" />
+<text x="465" y="760" font-family="Times New Roman, Times, serif" font-size="28" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 465 760)">Tokenizer</text>
+<line x1="506" y1="557" x2="593" y2="557" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<line x1="506" y1="760" x2="593" y2="760" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<rect x="593" y="467" width="81" height="181" fill="#f5f5ef" stroke="#5c4f21" stroke-width="2" />
+<text x="633" y="557" font-family="Times New Roman, Times, serif" font-size="29" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 633 557)">Encoder</text>
+<rect x="593" y="638" width="81" height="213" fill="#f5f5ef" stroke="#5c4f21" stroke-width="2" />
+<text x="633" y="744" font-family="Times New Roman, Times, serif" font-size="29" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 633 744)">Embedding</text>
+<line x1="674" y1="557" x2="759" y2="557" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<line x1="674" y1="760" x2="759" y2="760" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="704" y="512" font-family="Times New Roman, Times, serif" font-size="34" font-weight="bold">
+<tspan>H</tspan><tspan baseline-shift="super" font-size="22">p</tspan>
+</text>
+<text x="704" y="714" font-family="Times New Roman, Times, serif" font-size="34" font-weight="bold">
+<tspan>H</tspan><tspan baseline-shift="super" font-size="22">y</tspan>
+</text>
+<g id="slot_b_hidden_p" data-bbox="[759,475,60,166]" data-role="asset">
+  <rect x="759" y="475" width="60" height="166" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="759" y1="475" x2="819" y2="641" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="819" y1="475" x2="759" y2="641" stroke="#aaa" stroke-width="1.2"/>
+  <text x="789.0" y="558.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_b_hidden_y" data-bbox="[759,678,60,168]" data-role="asset">
+  <rect x="759" y="678" width="60" height="168" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="759" y1="678" x2="819" y2="846" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="819" y1="678" x2="759" y2="846" stroke="#aaa" stroke-width="1.2"/>
+  <text x="789.0" y="762.0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<line x1="819" y1="558" x2="905" y2="558" stroke="#111" stroke-width="2" fill="none"/>
+<text x="914" y="561" font-family="Times New Roman, Times, serif" font-size="30" fill="#111">
+<tspan>softmax </tspan><tspan>( </tspan><tspan font-weight="bold">H</tspan><tspan baseline-shift="super" font-size="20">p</tspan><tspan> · Q</tspan><tspan> / </tspan><tspan font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="20">p</tspan><tspan> )</tspan>
+</text>
+<line x1="819" y1="760" x2="905" y2="760" stroke="#111" stroke-width="2" fill="none"/>
+<text x="914" y="763" font-family="Times New Roman, Times, serif" font-size="30" fill="#111">
+<tspan>softmax </tspan><tspan>( </tspan><tspan font-weight="bold">H</tspan><tspan baseline-shift="super" font-size="20">y</tspan><tspan> · Q</tspan><tspan> / </tspan><tspan font-style="italic">τ</tspan><tspan baseline-shift="sub" font-size="20">y</tspan><tspan> )</tspan>
+</text>
+<text x="938" y="672" font-family="Times New Roman, Times, serif" font-size="34" text-anchor="middle" font-weight="bold">Q</text>
+<g id="slot_b_query_vector" data-bbox="[967,618,160,69]" data-role="asset">
+  <rect x="967" y="618" width="160" height="69" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="967" y1="618" x2="1127" y2="687" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1127" y1="618" x2="967" y2="687" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1047.0" y="652.5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<line x1="1190" y1="557" x2="1276" y2="557" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<line x1="1190" y1="760" x2="1276" y2="760" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="1228" y="485" font-family="Times New Roman, Times, serif" font-size="28" font-style="italic">
+<tspan>s</tspan><tspan baseline-shift="super" font-size="18">p</tspan>
+</text>
+<text x="1228" y="738" font-family="Times New Roman, Times, serif" font-size="28" font-style="italic">
+<tspan>s</tspan><tspan baseline-shift="super" font-size="18">y</tspan>
+</text>
+<g id="slot_b_sp_matrix" data-bbox="[1276,475,159,169]" data-role="asset">
+  <rect x="1276" y="475" width="159" height="169" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1276" y1="475" x2="1435" y2="644" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1435" y1="475" x2="1276" y2="644" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1355.5" y="559.5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<g id="slot_b_sy_matrix" data-bbox="[1276,678,159,169]" data-role="asset">
+  <rect x="1276" y="678" width="159" height="169" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="1276" y1="678" x2="1435" y2="847" stroke="#aaa" stroke-width="1.2"/>
+  <line x1="1435" y1="678" x2="1276" y2="847" stroke="#aaa" stroke-width="1.2"/>
+  <text x="1355.5" y="762.5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+</g>
+<polyline points="1435,558 1490,646" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<polyline points="1435,760 1490,646" stroke="#111" stroke-width="2" fill="none" marker-end="url(#arrowBlack)"/>
+<text x="1500" y="657" font-family="Times New Roman, Times, serif" font-size="34">
+<tspan font-style="italic">L</tspan><tspan baseline-shift="sub" font-size="22">soft</tspan><tspan> (</tspan><tspan font-style="italic">s</tspan><tspan baseline-shift="super" font-size="22">y</tspan><tspan>, </tspan><tspan font-style="italic">s</tspan><tspan baseline-shift="super" font-size="22">p</tspan><tspan>)</tspan>
+</text>
+</svg>

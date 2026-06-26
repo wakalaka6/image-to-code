@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1045" viewBox="0 0 1840 1045">
+  <defs>
+    <marker id="arrowHead" markerWidth="34" markerHeight="24" refX="32" refY="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L34,12 L0,24 Z" fill="#777" stroke="#111" stroke-width="1.2"/>
+    </marker>
+    <linearGradient id="blueDensityGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8cff2" stop-opacity="0.95"/>
+      <stop offset="0.62" stop-color="#dfeaf9" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="orangeDensityGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffa04d" stop-opacity="0.92"/>
+      <stop offset="0.62" stop-color="#ffd9b5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1840" height="1045" fill="#ffffff"/>
+
+  <!-- Left prompt panel -->
+  <path d="M12 355 H472 V681 C390 681 331 697 264 716 C168 744 78 764 12 734 Z" fill="#e3e3e3" stroke="#9a9a9a" stroke-width="1.8"/>
+  <text x="27" y="397" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">Translate the following text from</text>
+  <text x="27" y="435" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">English into Chinese.</text>
+  <text x="27" y="512" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">English: Amsterdam is famous for</text>
+  <text x="27" y="550" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">its hundreds of beautiful canals,</text>
+  <text x="27" y="588" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">millions of bicycles, stunning</text>
+  <text x="27" y="626" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">summers, and disgusting winters.</text>
+  <text x="27" y="704" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">Chinese:</text>
+
+  <!-- Branch arrows -->
+  <path d="M517 355 L579 292" stroke="#777" stroke-width="18" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+  <path d="M517 704 L579 767" stroke="#777" stroke-width="18" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+
+  <!-- NMT modules -->
+  <rect x="623" y="191" width="224" height="107" rx="15" ry="15" fill="#e9e9e9" stroke="#000" stroke-width="2.5"/>
+  <text x="735" y="256" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="700" text-anchor="middle" fill="#111">NMT</text>
+
+  <rect x="623" y="774" width="224" height="107" rx="15" ry="15" fill="#d6edc8" stroke="#000" stroke-width="2.5"/>
+  <text x="735" y="839" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="700" text-anchor="middle" fill="#111">NMT</text>
+  <text x="810" y="868" font-family="Times New Roman, serif" font-size="25" fill="#111">θ</text>
+
+  <!-- Sampling arrows/text -->
+  <text x="917" y="207" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">Sampling</text>
+  <path d="M932 239 L1017 239" stroke="#777" stroke-width="15" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+
+  <text x="917" y="780" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#111">Sampling</text>
+  <path d="M932 813 L1017 813" stroke="#777" stroke-width="15" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+
+  <!-- Section titles -->
+  <text x="1452" y="45" font-family="Arial, Helvetica, sans-serif" font-size="36" text-anchor="middle" fill="#111">Testing Time Optimization</text>
+  <text x="1452" y="584" font-family="Arial, Helvetica, sans-serif" font-size="36" text-anchor="middle" fill="#111">Training Time Optimization</text>
+
+  <!-- Asset slots / distribution plots -->
+  <g id="slot_quality_distribution_testing" data-bbox="[1144,57,184,353]" data-role="asset">
+    <rect x="1144" y="57" width="184" height="353" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1144" y1="57" x2="1328" y2="410" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1328" y1="57" x2="1144" y2="410" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1236.0" y="233.5" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_likelihood_distribution_training_raw" data-bbox="[1144,645,196,355]" data-role="asset">
+    <rect x="1144" y="645" width="196" height="355" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1144" y1="645" x2="1340" y2="1000" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1340" y1="645" x2="1144" y2="1000" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1242.0" y="822.5" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+  <g id="slot_likelihood_quality_distribution_calibrated" data-bbox="[1605,639,170,361]" data-role="asset">
+    <rect x="1605" y="639" width="170" height="361" fill="#f8f8f8" stroke="#666" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="1605" y1="639" x2="1775" y2="1000" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="1775" y1="639" x2="1605" y2="1000" stroke="#aaa" stroke-width="1.5"/>
+    <text x="1690.0" y="819.5" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#555">ASSET_SLOT</text>
+  </g>
+
+  <!-- Plot axis labels -->
+  <text x="1258" y="430" font-family="Times New Roman, Times, serif" font-size="29" font-weight="700" fill="#111">Quality</text>
+  <text x="1250" y="1034" font-family="Times New Roman, Times, serif" font-size="29" font-weight="700" fill="#111">Likelihood</text>
+  <text x="1640" y="1034" font-family="Times New Roman, Times, serif" font-size="29" font-weight="700" fill="#111">Likelihood -&gt; Quality</text>
+
+  <!-- Reranking / voting -->
+  <text x="1449" y="217" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#477b35">Reranking / Voting</text>
+  <path d="M1405 242 L1490 242" stroke="#777" stroke-width="15" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+  <rect x="1605" y="185" width="224" height="99" fill="#f4f4f4" stroke="#000" stroke-width="1.8"/>
+  <text x="1717" y="228" font-family="Arial, Helvetica, sans-serif" font-size="27" text-anchor="middle" fill="#111">Highest-scoring</text>
+  <text x="1717" y="260" font-family="Arial, Helvetica, sans-serif" font-size="27" text-anchor="middle" fill="#111">Output</text>
+
+  <!-- Separator -->
+  <line x1="549" y1="530" x2="1827" y2="530" stroke="#111" stroke-width="3" stroke-dasharray="25 10 3 10"/>
+
+  <!-- Calibration -->
+  <text x="1450" y="781" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#e51d1d">Calibration</text>
+  <path d="M1409 813 L1493 813" stroke="#777" stroke-width="15" stroke-linecap="butt" marker-end="url(#arrowHead)"/>
+</svg>

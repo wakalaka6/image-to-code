@@ -1,0 +1,98 @@
+[
+  {
+    "slot_id": "slot_icon_neural_network",
+    "filename": "assets/svg_candidate/icon_neural_network.png",
+    "bbox_xywh": [
+      642,
+      156,
+      84,
+      66
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line icon with circles and connecting strokes"
+  },
+  {
+    "slot_id": "slot_icon_database",
+    "filename": "assets/svg_candidate/icon_database.png",
+    "bbox_xywh": [
+      742,
+      165,
+      40,
+      50
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple database cylinder icon with clear outlines"
+  },
+  {
+    "slot_id": "slot_icon_cubes",
+    "filename": "assets/svg_candidate/icon_cubes.png",
+    "bbox_xywh": [
+      803,
+      159,
+      63,
+      64
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat/isometric cube icon with polygon faces"
+  },
+  {
+    "slot_id": "slot_coarse_3d_representation",
+    "filename": "assets/svg_candidate/coarse_3d_representation.png",
+    "bbox_xywh": [
+      1026,
+      158,
+      270,
+      84
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-like 3D primitives with clear geometric boundaries"
+  },
+  {
+    "slot_id": "slot_vlm_brain",
+    "filename": "assets/svg_candidate/vlm_brain.png",
+    "bbox_xywh": [
+      592,
+      357,
+      75,
+      63
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple line-art brain icon"
+  },
+  {
+    "slot_id": "slot_motion_sequence",
+    "filename": "assets/svg_candidate/motion_sequence.png",
+    "bbox_xywh": [
+      918,
+      368,
+      393,
+      87
+    ],
+    "classification": "svg_candidate",
+    "reason": "vector-like mini 3D ramps, balls, arrows, and time labels"
+  },
+  {
+    "slot_id": "slot_video_diffusion_icon",
+    "filename": "assets/svg_candidate/video_diffusion_icon.png",
+    "bbox_xywh": [
+      573,
+      548,
+      75,
+      75
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple cloud and dot/line icon with clear strokes"
+  },
+  {
+    "slot_id": "slot_generated_video_frames",
+    "filename": "assets/raster_required/generated_video_frames.png",
+    "bbox_xywh": [
+      927,
+      528,
+      399,
+      90
+    ],
+    "classification": "raster_required",
+    "reason": "photo-like video frames containing rock texture, depth blur, and natural shading"
+  }
+]

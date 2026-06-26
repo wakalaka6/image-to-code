@@ -1,0 +1,20 @@
+svg_candidate count: 3
+raster_required count: 13
+
+Per-asset classification:
+- slot_seq_cubes: svg_candidate (simple repeated blue cube icon stack with clear edges)
+- slot_data_memory_icons: svg_candidate (simple repeated brain-memory line icons, suitable for SVG paths)
+- slot_task_memory_icon: svg_candidate (single brain-memory line icon with flat strokes)
+- slot_diff_data_stack: raster_required (dense gridded spatiotemporal matrix texture)
+- slot_diff_data_graph_boxes: raster_required (complex graph and spatial boxes with overlapping linework)
+- slot_seq_grid_graph: raster_required (complex sequential graph/grid schematic with nodes and translucent regions)
+- slot_seq_format_graph: raster_required (complex graph schematic with translucent circular regions)
+- slot_domain_heatmap: raster_required (photo-like heatmap/remote sensing texture)
+- slot_domain_city: raster_required (photo-like city image)
+- slot_domain_train: raster_required (photo-like traffic/train image)
+- slot_domain_road_network: raster_required (complex road network map image)
+- slot_domain_grid_heatmap: raster_required (dense heatmap/map pattern)
+- slot_domain_flow_field: raster_required (dense flow-field visualization)
+- slot_noisy_patch_row: raster_required (seven noisy spatiotemporal patch thumbnails)
+- slot_task_mask_pattern: raster_required (complex multicolor masked spatiotemporal data stack)
+- slot_masking_strategies_examples: raster_required (multiple dense multicolor masking strategy examples)

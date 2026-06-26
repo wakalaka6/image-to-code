@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1736" height="921" viewBox="0 0 1736 921" font-family="'Times New Roman', Times, serif">
+  <rect x="0" y="0" width="1736" height="921" fill="none"/>
+  <g id="svg_backbone_mini_conv_visual" data-source-slot="slot_backbone_mini_conv_visual" transform="translate(690,217)">
+    <polygon points="0,25 170,64 170,120 0,155" fill="none" stroke="#274a8e" stroke-width="2"/>
+    <polygon points="184,64 350,22 350,155 184,120" fill="none" stroke="#274a8e" stroke-width="2"/>
+    <g opacity="0.95">
+      <rect x="7" y="36" width="20" height="43" fill="#ffd966"/><rect x="7" y="79" width="20" height="39" fill="#f4b183"/><rect x="7" y="118" width="20" height="41" fill="#2f66bd"/>
+      <rect x="39" y="49" width="20" height="36" fill="#ffd966"/><rect x="39" y="85" width="20" height="34" fill="#f4b183"/><rect x="39" y="119" width="20" height="31" fill="#2f66bd"/>
+      <rect x="72" y="61" width="20" height="29" fill="#ffd966"/><rect x="72" y="90" width="20" height="29" fill="#f4b183"/><rect x="72" y="119" width="20" height="26" fill="#2f66bd"/>
+      <rect x="105" y="71" width="20" height="22" fill="#ffd966"/><rect x="105" y="93" width="20" height="26" fill="#f4b183"/><rect x="105" y="119" width="20" height="21" fill="#2f66bd"/>
+      <rect x="138" y="81" width="20" height="17" fill="#ffd966"/><rect x="138" y="98" width="20" height="22" fill="#f4b183"/><rect x="138" y="120" width="20" height="15" fill="#2f66bd"/>
+      <rect x="197" y="87" width="20" height="17" fill="#ffd966"/><rect x="197" y="104" width="20" height="23" fill="#f4b183"/><rect x="197" y="127" width="20" height="14" fill="#2f66bd"/>
+      <rect x="230" y="76" width="20" height="25" fill="#ffd966"/><rect x="230" y="101" width="20" height="27" fill="#f4b183"/><rect x="230" y="128" width="20" height="18" fill="#2f66bd"/>
+      <rect x="263" y="68" width="20" height="31" fill="#ffd966"/><rect x="263" y="99" width="20" height="32" fill="#f4b183"/><rect x="263" y="131" width="20" height="22" fill="#2f66bd"/>
+      <rect x="296" y="55" width="20" height="45" fill="#ffd966"/><rect x="296" y="100" width="20" height="37" fill="#f4b183"/><rect x="296" y="137" width="20" height="27" fill="#2f66bd"/>
+      <rect x="329" y="38" width="20" height="62" fill="#ffd966"/><rect x="329" y="100" width="20" height="41" fill="#f4b183"/><rect x="329" y="141" width="20" height="18" fill="#2f66bd"/>
+    </g>
+  </g>
+  <g id="svg_bias_embedding_stack" data-source-slot="slot_bias_embedding_stack" transform="translate(296,580)">
+    <g stroke="#2c6fae" stroke-width="1.1">
+      <polygon points="16,16 76,16 89,5 29,5" fill="#f4b21a"/>
+      <polygon points="20,20 80,20 93,9 33,9" fill="#2f73c9"/>
+      <polygon points="24,24 84,24 97,13 37,13" fill="#f0b31d"/>
+      <polygon points="28,28 88,28 101,17 41,17" fill="#79b05c"/>
+      <polygon points="12,17 72,17 72,67 12,67" fill="#a7cf94"/>
+      <polygon points="72,17 88,28 88,76 72,67" fill="#6c9b55"/>
+      <polygon points="12,17 28,7 88,7 72,17" fill="#b6d9a5"/>
+      <rect x="16" y="21" width="54" height="43" fill="#a7cf94" opacity="0.95"/>
+    </g>
+  </g>
+  <g id="svg_weight_embedding_stack" data-source-slot="slot_weight_embedding_stack" transform="translate(271,659)">
+    <g stroke="#2c6fae" stroke-width="1.2">
+      <polygon points="37,10 105,10 130,0 61,0" fill="#f1b51d"/>
+      <polygon points="32,16 100,16 125,6 56,6" fill="#d96f1f"/>
+      <polygon points="27,22 95,22 120,12 51,12" fill="#f2c441"/>
+      <polygon points="22,28 90,28 115,18 46,18" fill="#416fbd"/>
+      <polygon points="17,34 85,34 110,24 41,24" fill="#f3b63c"/>
+      <polygon points="12,40 80,40 105,30 36,30" fill="#7fb05b"/>
+      <polygon points="10,43 78,43 78,108 10,108" fill="#a7ce93"/>
+      <polygon points="78,43 105,30 105,95 78,108" fill="#6d9b55"/>
+      <polygon points="10,43 36,30 105,30 78,43" fill="#b7dba5"/>
+      <rect x="17" y="50" width="54" height="51" fill="#a7ce93"/>
+      <line x1="81" y1="47" x2="101" y2="38" stroke="#446f41" opacity="0.65"/>
+      <line x1="83" y1="62" x2="103" y2="53" stroke="#446f41" opacity="0.65"/>
+      <line x1="83" y1="77" x2="103" y2="68" stroke="#446f41" opacity="0.65"/>
+    </g>
+  </g>
+  <g id="svg_bias_filter_block" data-source-slot="slot_bias_filter_block" transform="translate(459,589)">
+    <polygon points="5,12 21,3 21,59 5,68" fill="#2f66bd" stroke="#214c93" stroke-width="1.5"/>
+    <polygon points="21,3 29,7 29,63 21,59" fill="#5687d4" stroke="#214c93" stroke-width="1.2"/>
+    <polygon points="5,12 13,17 29,7 21,3" fill="#6b95d8" stroke="#214c93" stroke-width="1.0"/>
+  </g>
+  <g id="svg_weight_filter_block" data-source-slot="slot_weight_filter_block" transform="translate(457,670)">
+    <polygon points="9,22 27,7 27,111 9,120" fill="#2f66bd" stroke="#214c93" stroke-width="1.5"/>
+    <polygon points="27,7 40,10 40,114 27,111" fill="#5687d4" stroke="#214c93" stroke-width="1.2"/>
+    <polygon points="0,30 15,18 15,117 0,123" fill="#2b5fb0" stroke="#214c93" stroke-width="1.2" opacity="0.95"/>
+    <polygon points="15,18 27,22 27,119 15,117" fill="#4d7bc6" stroke="#214c93" stroke-width="1.0" opacity="0.95"/>
+  </g>
+</svg>

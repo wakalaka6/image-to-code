@@ -1,0 +1,12 @@
+Hybrid SVG asset classification summary
+
+svg_candidate: 3
+raster_required: 4
+
+slot_video_clip_1: raster_required - video thumbnail with natural scene texture and photographic content
+slot_video_clip_2: raster_required - video thumbnail with complex lighting and photographic content
+slot_video_clip_3: raster_required - video thumbnail with photo-like sports frame
+slot_video_clip_4: raster_required - video thumbnail with dark photo-like frame and object texture
+slot_thinking_emoji: svg_candidate - small flat emoji-style icon with simple circular shapes and clear boundary
+slot_entity_graph: svg_candidate - simple graph schematic composed of lines, rounded rectangles, triangles, squares, and text
+slot_answer_robot: svg_candidate - small flat robot icon with simple outline and geometric shapes

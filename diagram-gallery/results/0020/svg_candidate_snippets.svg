@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1908" height="1071" viewBox="0 0 1908 1071">
+<defs>
+  <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 4 L 0 8 z" fill="#333"/>
+  </marker>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#7590a0" flood-opacity="0.25"/>
+  </filter>
+</defs>
+<style>
+  .label { font-family: Arial, Helvetica, sans-serif; fill: #111; }
+  .blue { fill:#3e8ac6; }
+  .pink { fill:#e85e83; }
+  .caption { font-family: Georgia, 'Times New Roman', serif; font-size:32px; font-weight:700; }
+  .small { font-size:18px; }
+</style>
+
+<rect x="0" y="0" width="1908" height="1071" fill="#ffffff00" stroke="none" stroke-width="1" />
+<g id="svg_inverted_noise_grid" data-source-slot="slot_inverted_noise_grid" transform="translate(31,347)">
+<rect x="4.0" y="-1.0" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="30.3" y="-1.0" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="56.7" y="-1.0" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="4.0" y="25.3" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="30.3" y="25.3" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="56.7" y="25.3" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="4.0" y="51.7" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="30.3" y="51.7" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+<rect x="56.7" y="51.7" width="21.3" height="21.3" rx="3" fill="#e0f3ff" stroke="#7ebde6" stroke-width="2"/>
+</g>
+<g id="svg_random_noise_grid" data-source-slot="slot_random_noise_grid" transform="translate(176,347)">
+<rect x="4.0" y="-1.0" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="30.3" y="-1.0" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="56.7" y="-1.0" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="4.0" y="25.3" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="30.3" y="25.3" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="56.7" y="25.3" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="4.0" y="51.7" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="30.3" y="51.7" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+<rect x="56.7" y="51.7" width="21.3" height="21.3" rx="3" fill="#fff1d4" stroke="#f0ad56" stroke-width="2"/>
+</g>
+<g id="svg_feature_injection_tokens" data-source-slot="slot_feature_injection_tokens" transform="translate(512,225)">
+<rect x="0" y="4" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="23" y="4" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="46" y="4" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="0" y="27" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="23" y="27" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="46" y="27" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="0" y="50" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="23" y="50" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<rect x="46" y="50" width="18" height="18" rx="3" fill="#dff3ff" stroke="#8dc4e8" stroke-width="2"/>
+<path d="M64,36 L94,36" stroke="#54a6df" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="102" y="4" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="125" y="4" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="148" y="4" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="102" y="27" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="125" y="27" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="148" y="27" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="102" y="50" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="125" y="50" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="148" y="50" width="18" height="18" rx="3" fill="#ffdce5" stroke="#f591ad" stroke-width="2"/>
+<rect x="142" y="4" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="164" y="4" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="186" y="4" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="142" y="26" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="164" y="26" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="186" y="26" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="142" y="48" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="164" y="48" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+<rect x="186" y="48" width="17" height="17" rx="3" fill="#fff0ce" stroke="#f2af5a" stroke-width="2"/>
+</g>
+<g id="svg_decoder_tokens" data-source-slot="slot_decoder_tokens" transform="translate(1191,313)">
+<rect x="0" y="2" width="22" height="22" rx="2" fill="#92c8e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="26" y="2" width="22" height="22" rx="2" fill="#92c8e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="52" y="2" width="22" height="22" rx="2" fill="#92c8e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="78" y="2" width="22" height="22" rx="2" fill="#b789cb" stroke="#3c85b8" stroke-width="2"/>
+<rect x="104" y="2" width="22" height="22" rx="2" fill="#b789cb" stroke="#3c85b8" stroke-width="2"/>
+<rect x="130" y="2" width="22" height="22" rx="2" fill="#df91c9" stroke="#3c85b8" stroke-width="2"/>
+<rect x="156" y="2" width="22" height="22" rx="2" fill="#d08ccb" stroke="#3c85b8" stroke-width="2"/>
+<rect x="182" y="2" width="22" height="22" rx="2" fill="#d08ccb" stroke="#3c85b8" stroke-width="2"/>
+</g>
+<g id="svg_lora_tokens_top" data-source-slot="slot_lora_tokens_top" transform="translate(1618,118)">
+<rect x="0" y="2" width="21" height="21" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="26" y="2" width="21" height="21" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="52" y="2" width="21" height="21" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="78" y="2" width="21" height="21" rx="2" fill="#b58ac6" stroke="#3c85b8" stroke-width="2"/>
+<rect x="104" y="2" width="21" height="21" rx="2" fill="#ce8ac6" stroke="#3c85b8" stroke-width="2"/>
+<rect x="130" y="2" width="21" height="21" rx="2" fill="#cf95c9" stroke="#3c85b8" stroke-width="2"/>
+<rect x="156" y="2" width="21" height="21" rx="2" fill="#c98abd" stroke="#3c85b8" stroke-width="2"/>
+<rect x="182" y="2" width="21" height="21" rx="2" fill="#c483bf" stroke="#3c85b8" stroke-width="2"/>
+</g>
+<g id="svg_lora_tokens_bottom" data-source-slot="slot_lora_tokens_bottom" transform="translate(1630,629)">
+<rect x="0" y="2" width="22" height="22" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="26" y="2" width="22" height="22" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="52" y="2" width="22" height="22" rx="2" fill="#91c9e8" stroke="#3c85b8" stroke-width="2"/>
+<rect x="78" y="2" width="22" height="22" rx="2" fill="#b58ac6" stroke="#3c85b8" stroke-width="2"/>
+<rect x="104" y="2" width="22" height="22" rx="2" fill="#cf8bc9" stroke="#3c85b8" stroke-width="2"/>
+<rect x="130" y="2" width="22" height="22" rx="2" fill="#cd8cc4" stroke="#3c85b8" stroke-width="2"/>
+<rect x="156" y="2" width="22" height="22" rx="2" fill="#c484bd" stroke="#3c85b8" stroke-width="2"/>
+</g>
+<g id="svg_lora_expert_adapters" data-source-slot="slot_lora_expert_adapters" transform="translate(1552,266)">
+<g transform="translate(3,0)">
+  <polygon points="0,0 70,0 50.4,38.72 19.6,38.72" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="19.6,49.28 50.4,49.28 70,88 0,88" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g transform="translate(89,0)">
+  <polygon points="0,0 70,0 50.4,38.72 19.6,38.72" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="19.6,49.28 50.4,49.28 70,88 0,88" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g transform="translate(175,0)">
+  <polygon points="0,0 70,0 50.4,38.72 19.6,38.72" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="19.6,49.28 50.4,49.28 70,88 0,88" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g transform="translate(285,0)">
+  <polygon points="0,0 70,0 50.4,38.72 19.6,38.72" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="19.6,49.28 50.4,49.28 70,88 0,88" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g transform="translate(55,84) scale(0.55)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+<g transform="translate(140,84) scale(0.55)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+<g transform="translate(228,84) scale(0.55)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+<g transform="translate(331,84) scale(0.55)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+</g>
+<g id="svg_route_topk_fire" data-source-slot="slot_route_topk_fire" transform="translate(1672,466)">
+<rect x="6" y="12" width="20" height="30" fill="#d7b5da" stroke="#70577f" stroke-width="1.5"/>
+<rect x="34" y="2" width="20" height="40" fill="#d7b5da" stroke="#70577f" stroke-width="1.5"/>
+<rect x="62" y="16" width="20" height="26" fill="#d7b5da" stroke="#70577f" stroke-width="1.5"/>
+<text x="31" y="12" font-family="Arial" font-size="18" fill="#e85050" font-weight="700">×</text>
+<text x="71" y="32" font-family="Arial" font-size="18" fill="#e85050" font-weight="700">×</text>
+<g transform="translate(86,38) scale(0.42)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+</g>
+<g id="svg_legend_icons" data-source-slot="slot_legend_icons" transform="translate(1568,704)">
+<g transform="translate(27,22) scale(0.55)">
+  <path d="M0,-24 C12,-12 8,-5 19,4 C23,18 12,31 0,31 C-15,31 -24,17 -18,1 C-13,-10 -5,-12 0,-24 Z" fill="#ff6b4a"/>
+  <path d="M0,-8 C8,0 8,7 5,13 C3,18 -4,20 -8,14 C-12,8 -8,1 0,-8 Z" fill="#ffb354" opacity="0.85"/>
+</g>
+<g transform="translate(12,74) scale(0.9)">
+  <polygon points="12,0 28,6 28,24 12,18" fill="#4aa3d6" stroke="#2c79a2" stroke-width="1.5"/>
+  <polygon points="12,0 0,7 0,24 12,18" fill="#89c9ea" stroke="#2c79a2" stroke-width="1.5"/>
+  <polygon points="0,7 12,13 28,6 12,0" fill="#b8e3f6" stroke="#2c79a2" stroke-width="1.5"/>
+  <line x1="12" y1="13" x2="12" y2="18" stroke="#2c79a2" stroke-width="1.2"/>
+</g>
+<rect x="0" y="133" width="70" height="34" rx="5" fill="#efe6ee" stroke="#ff2b98" stroke-width="2.5" stroke-dasharray="10 7"/>
+<rect x="0" y="199" width="70" height="32" rx="5" fill="#cfcbd0" stroke="#ff3030" stroke-width="3"/>
+<g transform="translate(10,239)">
+  <polygon points="0,0 52,0 37.44,25.52 14.560000000000002,25.52" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="14.560000000000002,32.480000000000004 37.44,32.480000000000004 52,58 0,58" fill="#cbe8f7" stroke="#7eb5db" stroke-width="3" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,22 @@
+svg_candidate: 15
+raster_required: 3
+
+Per-asset classification:
+- slot_keyframe_photo_grid: raster_required — multi-frame real robot demonstrations with photographic texture and overlaid frame labels
+- slot_planning_input_photo: raster_required — real-world tabletop photograph with complex texture, lighting, and objects
+- slot_execution_photo_grid: raster_required — multi-frame execution photo grid with dense visual details
+- slot_droid_dataset_icon: svg_candidate — simple database cylinder icon and text can be reconstructed with vector ellipse, paths, and text
+- slot_openai_domain_construction: svg_candidate — flat monochrome logo-like line icon with clear contour
+- slot_domain_doc_top: svg_candidate — small folded document with editable colored text and simple lines
+- slot_openai_solvability: svg_candidate — flat monochrome logo-like line icon with clear contour
+- slot_solvability_tree_icon: svg_candidate — simple hierarchy icon with square nodes and straight connectors
+- slot_openai_refinement: svg_candidate — flat monochrome logo-like line icon with clear contour
+- slot_openai_solution: svg_candidate — flat monochrome logo-like line icon with clear contour
+- slot_domain_doc_refinement: svg_candidate — small folded document with editable colored text and simple lines
+- slot_openai_fusion_left: svg_candidate — flat logo-like line icon inside domain fusion graph
+- slot_openai_fusion_right: svg_candidate — flat logo-like line icon inside domain fusion graph
+- slot_openai_fusion_center: svg_candidate — flat logo-like line icon inside domain fusion graph
+- slot_openai_filter: svg_candidate — flat logo-like line icon in problem generation block
+- slot_openai_problem_generator: svg_candidate — flat logo-like line icon in problem generation block
+- slot_problem_doc: svg_candidate — small folded document with editable colored text and simple outline
+- slot_pddl_solver_icon: svg_candidate — simple hierarchy/solver icon composed of squares and connector lines

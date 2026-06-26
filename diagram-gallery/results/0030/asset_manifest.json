@@ -1,0 +1,182 @@
+[
+  {
+    "slot_id": "slot_training_subject_uncertainty_icon",
+    "filename": "assets/svg_candidate/training_subject_uncertainty_icon.png",
+    "bbox_xywh": [
+      86,
+      151,
+      190,
+      136
+    ],
+    "classification": "svg_candidate",
+    "reason": "flat cartoon subject/question icon with simple shapes and clear boundaries"
+  },
+  {
+    "slot_id": "slot_train_fmri_subjects",
+    "filename": "assets/raster_required/train_fmri_subjects.png",
+    "bbox_xywh": [
+      68,
+      473,
+      200,
+      272
+    ],
+    "classification": "raster_required",
+    "reason": "dense cartoon illustration with monitor, brain, waveform and multiple subject faces; raster crop preserves details"
+  },
+  {
+    "slot_id": "slot_stack_E",
+    "filename": "assets/svg_candidate/stack_E.png",
+    "bbox_xywh": [
+      532,
+      542,
+      115,
+      95
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_stack_Ei",
+    "filename": "assets/svg_candidate/stack_Ei.png",
+    "bbox_xywh": [
+      526,
+      318,
+      122,
+      96
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_stack_Es",
+    "filename": "assets/svg_candidate/stack_Es.png",
+    "bbox_xywh": [
+      526,
+      101,
+      122,
+      95
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_stack_Fi",
+    "filename": "assets/svg_candidate/stack_Fi.png",
+    "bbox_xywh": [
+      1417,
+      100,
+      120,
+      96
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_stack_Fs",
+    "filename": "assets/svg_candidate/stack_Fs.png",
+    "bbox_xywh": [
+      1417,
+      317,
+      120,
+      98
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_stack_F",
+    "filename": "assets/svg_candidate/stack_F.png",
+    "bbox_xywh": [
+      1417,
+      541,
+      120,
+      96
+    ],
+    "classification": "svg_candidate",
+    "reason": "repeated vertical feature bars with simple outlines and fills"
+  },
+  {
+    "slot_id": "slot_semantic_cartoon_group",
+    "filename": "assets/raster_required/semantic_cartoon_group.png",
+    "bbox_xywh": [
+      1668,
+      154,
+      175,
+      142
+    ],
+    "classification": "raster_required",
+    "reason": "cartoon dog/person/cat group with fine facial details and shading"
+  },
+  {
+    "slot_id": "slot_visual_stimuli_stack",
+    "filename": "assets/raster_required/visual_stimuli_stack.png",
+    "bbox_xywh": [
+      1580,
+      624,
+      230,
+      158
+    ],
+    "classification": "raster_required",
+    "reason": "stacked natural image thumbnails with colored frames and detailed picture contents"
+  },
+  {
+    "slot_id": "slot_unseen_subject_fmri",
+    "filename": "assets/raster_required/unseen_subject_fmri.png",
+    "bbox_xywh": [
+      76,
+      956,
+      255,
+      175
+    ],
+    "classification": "raster_required",
+    "reason": "cartoon portrait plus fMRI monitor and waveform, too detailed for faithful SVG redrawing"
+  },
+  {
+    "slot_id": "slot_reconstructed_images",
+    "filename": "assets/raster_required/reconstructed_images.png",
+    "bbox_xywh": [
+      1665,
+      960,
+      190,
+      150
+    ],
+    "classification": "raster_required",
+    "reason": "stacked reconstructed image thumbnails with animal illustration and frame details"
+  },
+  {
+    "slot_id": "slot_training_visual_stimuli_graph",
+    "filename": "assets/svg_candidate/training_visual_stimuli_graph.png",
+    "bbox_xywh": [
+      1320,
+      650,
+      110,
+      130
+    ],
+    "classification": "svg_candidate",
+    "reason": "small node-link graph with colored circles and simple connecting arrows"
+  },
+  {
+    "slot_id": "slot_inference_snowflake_vision",
+    "filename": "assets/svg_candidate/inference_snowflake_vision.png",
+    "bbox_xywh": [
+      890,
+      952,
+      55,
+      55
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake symbol used as a frozen-module marker"
+  },
+  {
+    "slot_id": "slot_inference_snowflake_sdxl",
+    "filename": "assets/svg_candidate/inference_snowflake_sdxl.png",
+    "bbox_xywh": [
+      1490,
+      951,
+      56,
+      56
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple snowflake symbol used as a frozen-module marker"
+  }
+]

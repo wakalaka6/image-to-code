@@ -1,0 +1,170 @@
+[
+  {
+    "slot_id": "slot_top_video_frames_left",
+    "filename": "assets/raster_required/top_video_frames_left.png",
+    "bbox_xywh": [
+      39,
+      136,
+      105,
+      72
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop with hand and celery texture"
+  },
+  {
+    "slot_id": "slot_top_video_frames_right",
+    "filename": "assets/raster_required/top_video_frames_right.png",
+    "bbox_xywh": [
+      194,
+      136,
+      106,
+      72
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop with complex natural texture"
+  },
+  {
+    "slot_id": "slot_decrease_video_frames_left",
+    "filename": "assets/raster_required/decrease_video_frames_left.png",
+    "bbox_xywh": [
+      39,
+      559,
+      105,
+      72
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop with complex natural texture"
+  },
+  {
+    "slot_id": "slot_decrease_video_frames_right",
+    "filename": "assets/raster_required/decrease_video_frames_right.png",
+    "bbox_xywh": [
+      194,
+      559,
+      106,
+      72
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop with complex natural texture"
+  },
+  {
+    "slot_id": "slot_increase_source_frames_left",
+    "filename": "assets/raster_required/increase_source_frames_left.png",
+    "bbox_xywh": [
+      1080,
+      566,
+      105,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop used as perturbation source"
+  },
+  {
+    "slot_id": "slot_increase_source_frames_right",
+    "filename": "assets/raster_required/increase_source_frames_right.png",
+    "bbox_xywh": [
+      1235,
+      566,
+      105,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "video-frame/photo-like crop used as perturbation source"
+  },
+  {
+    "slot_id": "slot_perturb_row1_frames_left",
+    "filename": "assets/raster_required/perturb_row1_frames_left.png",
+    "bbox_xywh": [
+      1567,
+      566,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_perturb_row1_frames_right",
+    "filename": "assets/raster_required/perturb_row1_frames_right.png",
+    "bbox_xywh": [
+      1720,
+      566,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_perturb_row2_frames_left",
+    "filename": "assets/raster_required/perturb_row2_frames_left.png",
+    "bbox_xywh": [
+      1568,
+      672,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_perturb_row2_frames_right",
+    "filename": "assets/raster_required/perturb_row2_frames_right.png",
+    "bbox_xywh": [
+      1721,
+      672,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_perturb_row3_frames_left",
+    "filename": "assets/raster_required/perturb_row3_frames_left.png",
+    "bbox_xywh": [
+      1569,
+      779,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_perturb_row3_frames_right",
+    "filename": "assets/raster_required/perturb_row3_frames_right.png",
+    "bbox_xywh": [
+      1722,
+      779,
+      112,
+      73
+    ],
+    "classification": "raster_required",
+    "reason": "perturbed video frames with dense pixel texture"
+  },
+  {
+    "slot_id": "slot_trophy_icon",
+    "filename": "assets/svg_candidate/trophy_icon.png",
+    "bbox_xywh": [
+      975,
+      628,
+      53,
+      61
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple flat trophy icon with clear colored shapes"
+  },
+  {
+    "slot_id": "slot_reply_buffer_stack_icon",
+    "filename": "assets/svg_candidate/reply_buffer_stack_icon.png",
+    "bbox_xywh": [
+      1818,
+      142,
+      56,
+      72
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple black cylinder stack icon that can be redrawn with ellipses and rectangles"
+  }
+]

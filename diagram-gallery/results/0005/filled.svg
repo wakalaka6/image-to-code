@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1941" height="902" viewBox="0 0 1941 902">
+<defs>
+  <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+  </marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e31b23"/>
+  </marker>
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#56c746"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="1941" height="902" rx="0" ry="0" fill="#ffffff" stroke="none" stroke-width="1" />
+<text x="296" y="40" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" font-style="normal" fill="#111111" text-anchor="middle" >Initial Survey</text>
+<text x="1105" y="40" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" font-style="normal" fill="#111111" text-anchor="middle" >Protocols</text>
+<rect x="75" y="55" width="445" height="142" rx="0" ry="0" fill="#7583cf" stroke="none" stroke-width="1" />
+<text x="297" y="89" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" font-style="normal" fill="#ffffff" text-anchor="middle" >Prolific Screening</text>
+<rect x="98" y="100" width="405" height="88" rx="0" ry="0" fill="#f8f8ff" stroke="none" stroke-width="1" />
+<text x="143" y="123" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >US residents</text>
+<text x="143" y="154" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >English speaking</text>
+<text x="143" y="184" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >COVID/Climate views (+ or -)</text>
+<line x1="296" y1="198" x2="296" y2="220" stroke="#000" stroke-width="5" marker-end="url(#arrow-black)"/>
+<line x1="296" y1="286" x2="296" y2="321" stroke="#000" stroke-width="5" marker-end="url(#arrow-black)"/>
+<rect x="45" y="294" width="473" height="171" rx="0" ry="0" fill="#7583cf" stroke="none" stroke-width="1" />
+<text x="281" y="333" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" font-style="normal" fill="#ffffff" text-anchor="middle" >Belief Assessment</text>
+<rect x="63" y="346" width="437" height="101" rx="0" ry="0" fill="#f7f7ff" stroke="none" stroke-width="1" />
+<text x="281" y="369" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" ><tspan x="281" dy="0">COVID origin: man-made vs natural?</tspan><tspan x="281" dy="29.0">COVID vaccines: safe and effective?</tspan><tspan x="281" dy="29.0">Climate: human-caused vs natural cycles?</tspan><tspan x="281" dy="29.0">............................</tspan></text>
+<line x1="296" y1="465" x2="296" y2="495" stroke="#000" stroke-width="5" />
+<line x1="296" y1="495" x2="137" y2="495" stroke="#e31b23" stroke-width="4" />
+<line x1="296" y1="495" x2="439" y2="495" stroke="#56c746" stroke-width="4" />
+<line x1="137" y1="495" x2="137" y2="535" stroke="#e31b23" stroke-width="4" marker-end="url(#arrow-red)"/>
+<line x1="439" y1="495" x2="439" y2="535" stroke="#56c746" stroke-width="4" marker-end="url(#arrow-green)"/>
+<rect x="12" y="536" width="273" height="184" rx="0" ry="0" fill="#d6d6d6" stroke="#c9c9c9" stroke-width="1" />
+<rect x="12" y="536" width="273" height="78" rx="0" ry="0" fill="#d8e9f5" stroke="none" stroke-width="1" />
+<text x="148" y="574" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" font-style="normal" fill="#111111" text-anchor="middle" >Skeptical belief</text>
+<text x="148" y="600" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >107 participants</text>
+<text x="43" y="636" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >COVID is human made</text>
+<text x="43" y="668" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >vaccine are safe</text>
+<text x="43" y="700" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >climate is human-caused</text>
+<rect x="294" y="536" width="273" height="184" rx="0" ry="0" fill="#d6d6d6" stroke="#c9c9c9" stroke-width="1" />
+<rect x="294" y="536" width="273" height="78" rx="0" ry="0" fill="#d8e9f5" stroke="none" stroke-width="1" />
+<text x="431" y="574" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" font-style="normal" fill="#111111" text-anchor="middle" >Mainstream belief</text>
+<text x="431" y="600" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >107 participants</text>
+<text x="337" y="636" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >COVID is human made</text>
+<text x="337" y="668" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >Vaccine are safe</text>
+<text x="337" y="700" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" >Climate is human-caused</text>
+<line x1="290" y1="724" x2="290" y2="762" stroke="#000" stroke-width="7" />
+<line x1="273" y1="743" x2="307" y2="743" stroke="#000" stroke-width="7" />
+<rect x="45" y="763" width="474" height="134" rx="0" ry="0" fill="#7583cf" stroke="none" stroke-width="1" />
+<text x="282" y="797" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" font-style="normal" fill="#ffffff" text-anchor="middle" >Demographic Information</text>
+<rect x="63" y="818" width="438" height="76" rx="0" ry="0" fill="#f9f9ff" stroke="none" stroke-width="1" />
+<text x="282" y="847" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" ><tspan x="282" dy="0">Age, Gender, Education,</tspan><tspan x="282" dy="29.0">Residence, Political Stance, Income</tspan></text>
+<text x="761" y="78" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" font-style="normal" fill="#2f56e6" text-anchor="middle" >Example Claim</text>
+<rect x="596" y="83" width="328" height="64" rx="0" ry="0" fill="#d9d9d9" stroke="#c0c0c0" stroke-width="1" />
+<text x="760" y="106" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" font-style="italic" fill="#111111" text-anchor="middle" ><tspan x="760" dy="0">Cloth masks less effective than</tspan><tspan x="760" dy="24.3">surgical masks</tspan></text>
+<rect x="961" y="75" width="315" height="72" rx="0" ry="0" fill="#ffffff" stroke="#777" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="1118" y="101" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" ><tspan x="1118" dy="0">Judge&apos;s Initial Belief: True/False</tspan><tspan x="1118" dy="27.0">Confidence: (0-100%)</tspan></text>
+<rect x="1374" y="26" width="424" height="135" rx="10" ry="10" fill="#d7d7d7" stroke="none" stroke-width="1" />
+<text x="1630" y="58" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#139ff1" text-anchor="middle" ><tspan x="1630" dy="0">AI expert can access corresponding</tspan><tspan x="1630" dy="26.0">sources and cite them</tspan></text>
+<text x="1535" y="125" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#139ff1" text-anchor="start" >Cited references are shown to judges</text>
+<rect x="572" y="181" width="518" height="49" rx="0" ry="0" fill="#7583cf" stroke="none" stroke-width="1" />
+<text x="831" y="214" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" font-style="normal" fill="#ffffff" text-anchor="middle" >Consultancy</text>
+<rect x="572" y="230" width="518" height="668" rx="10" ry="10" fill="none" stroke="#000" stroke-width="2" />
+<text x="594" y="565" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle" transform="rotate(-90 594 565)">One AI consultant argues a random position between True (50%) or False (50%)</text>
+<rect x="1114" y="181" width="815" height="49" rx="0" ry="0" fill="#7583cf" stroke="none" stroke-width="1" />
+<text x="1522" y="214" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" font-style="normal" fill="#ffffff" text-anchor="middle" >Debate</text>
+<rect x="1114" y="230" width="815" height="668" rx="10" ry="10" fill="none" stroke="#000" stroke-width="2" />
+<text x="1905" y="565" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#111" text-anchor="middle" transform="rotate(-90 1905 565)">Two AI debaters argue opposing positions between True vs. False (100%)</text>
+<rect x="615" y="238" width="459" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="632" y="264" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 1</text>
+<rect x="615" y="459" width="459" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="632" y="485" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 2</text>
+<rect x="615" y="680" width="459" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="632" y="706" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 3</text>
+<rect x="688" y="281" width="372" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,301.0 688,323.0 656,312.0" fill="#ffffff"/>
+<text x="691" y="304" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="691" dy="0">Studies show surgical masks filter</tspan><tspan x="691" dy="25.0">60-80% of particles...</tspan></text>
+<rect x="688" y="382" width="372" height="51" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,396.5 688,418.5 656,407.5" fill="#ffffff"/>
+<text x="840" y="414" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >What about multi-layer cloth masks?</text>
+<rect x="688" y="497" width="372" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,517.0 688,539.0 656,528.0" fill="#ffffff"/>
+<text x="691" y="520" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="691" dy="0">Even 3-layer cloth masks only achieve</tspan><tspan x="691" dy="25.0">50% filtration...</tspan></text>
+<rect x="688" y="599" width="372" height="51" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,613.5 688,635.5 656,624.5" fill="#ffffff"/>
+<text x="862" y="631" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >Are there any exceptions to this?</text>
+<rect x="688" y="718" width="372" height="57" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,735.5 688,757.5 656,746.5" fill="#ffffff"/>
+<text x="691" y="742" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="691" dy="0">WHO recommends surgical over cloth</tspan><tspan x="691" dy="25.0">masks...</tspan></text>
+<rect x="688" y="810" width="372" height="58" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="688,828.0 688,850.0 656,839.0" fill="#ffffff"/>
+<text x="874" y="834" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" ><tspan x="874" dy="0">Final decision: True/False</tspan><tspan x="874" dy="25.0">Confidence: 0-100% | Justification</tspan></text>
+<rect x="1124" y="238" width="758" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="1143" y="265" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 1</text>
+<rect x="1124" y="459" width="758" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="1143" y="486" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 2</text>
+<rect x="1124" y="680" width="758" height="204" rx="12" ry="12" fill="#d8d8d8" stroke="none" stroke-width="1" />
+<text x="1143" y="707" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" font-style="normal" fill="#111111" text-anchor="start" >Round 3</text>
+<rect x="1183" y="280" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1183,300.0 1183,322.0 1151,311.0" fill="#ffffff"/>
+<text x="1187" y="305" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1187" dy="0">Surgical masks filter 60-80%...</tspan></text>
+<rect x="1552" y="238" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1552,258.0 1552,280.0 1520,269.0" fill="#ffffff"/>
+<text x="1558" y="262" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1558" dy="0">Quality cloth masks can be</tspan><tspan x="1558" dy="25.0">effective...</tspan></text>
+<rect x="1384" y="371" width="340" height="53" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1384,386.5 1384,408.5 1352,397.5" fill="#ffffff"/>
+<text x="1554" y="405" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >What defines &#x27;quality&#x27; cloth masks?</text>
+<rect x="1183" y="493" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1183,513.0 1183,535.0 1151,524.0" fill="#ffffff"/>
+<text x="1187" y="517" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1187" dy="0">3-layer cloth still only 50%</tspan><tspan x="1187" dy="25.0">effective...</tspan></text>
+<rect x="1552" y="493" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1552,513.0 1552,535.0 1520,524.0" fill="#ffffff"/>
+<text x="1558" y="517" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1558" dy="0">But availability and fit matter</tspan><tspan x="1558" dy="25.0">too...</tspan></text>
+<rect x="1384" y="592" width="340" height="53" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1384,607.5 1384,629.5 1352,618.5" fill="#ffffff"/>
+<text x="1554" y="626" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" >How important is proper fit?</text>
+<rect x="1183" y="720" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1183,740.0 1183,762.0 1151,751.0" fill="#ffffff"/>
+<text x="1187" y="745" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1187" dy="0">Medical studies prove</tspan><tspan x="1187" dy="25.0">superiority...</tspan></text>
+<rect x="1552" y="720" width="306" height="62" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1552,740.0 1552,762.0 1520,751.0" fill="#ffffff"/>
+<text x="1558" y="744" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="start" ><tspan x="1558" dy="0">Real-world usage differs from</tspan><tspan x="1558" dy="25.0">labs...</tspan></text>
+<rect x="1384" y="810" width="340" height="58" rx="6" ry="6" fill="#ffffff" stroke="none" stroke-width="1" /><polygon points="1384,828.0 1384,850.0 1352,839.0" fill="#ffffff"/>
+<text x="1554" y="834" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" font-style="normal" fill="#111111" text-anchor="middle" ><tspan x="1554" dy="0">Final decision: True/False</tspan><tspan x="1554" dy="25.0">Confidence: 0-100% | Justification</tspan></text>
+
+<!-- svg_candidate assets inserted as editable vector SVG code -->
+<g id="svg_screening_check_1" data-source-slot="slot_screening_check_1" transform="translate(116,108)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_screening_check_2" data-source-slot="slot_screening_check_2" transform="translate(116,136)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_screening_check_3" data-source-slot="slot_screening_check_3" transform="translate(116,164)">
+  <polyline points="5.0,13.2 11.2,18.7 23.2,5.3" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_initial_survey_participant" data-source-slot="slot_initial_survey_participant" transform="translate(267,225)">
+  <circle cx="29.0" cy="33.5" r="24.4" fill="none" stroke="#111" stroke-width="1.6"/>
+  <circle cx="29.0" cy="25.0" r="6.1" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.0 46.9 C 21.7 38.4, 36.3 38.4, 40.0 46.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_skeptical_red_check" data-source-slot="slot_skeptical_red_check" transform="translate(13,619)">
+  <polyline points="4.5,14.3 10.6,19.8 23.5,5.2" fill="none" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_skeptical_red_cross_vaccine" data-source-slot="slot_skeptical_red_cross_vaccine" transform="translate(14,649)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_skeptical_red_cross_climate" data-source-slot="slot_skeptical_red_cross_climate" transform="translate(14,680)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#ef2d2d" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_mainstream_green_cross_covid" data-source-slot="slot_mainstream_green_cross_covid" transform="translate(306,619)">
+  <line x1="6.2" y1="5.7" x2="21.8" y2="20.3" stroke="#43c934" stroke-width="3.9" stroke-linecap="round"/>
+  <line x1="21.8" y1="5.7" x2="6.2" y2="20.3" stroke="#43c934" stroke-width="3.9" stroke-linecap="round"/>
+</g>
+<g id="svg_mainstream_green_check_vaccine" data-source-slot="slot_mainstream_green_check_vaccine" transform="translate(306,649)">
+  <polyline points="5.0,14.3 11.2,20.3 23.2,5.7" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_mainstream_green_check_climate" data-source-slot="slot_mainstream_green_check_climate" transform="translate(306,680)">
+  <polyline points="5.0,14.3 11.2,20.3 23.2,5.7" fill="none" stroke="#43c934" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="svg_legend_ai_expert_icon" data-source-slot="slot_legend_ai_expert_icon" transform="translate(1381,34)" fill="none" stroke="#111111" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="17.0" y1="3.7" x2="17.0" y2="8.3"/>
+  <circle cx="17.0" cy="2.8" r="1.7" fill="#111111" stroke="none"/>
+  <rect x="9.5" y="8.3" width="15.0" height="11.5" rx="2.0"/>
+  <circle cx="13.9" cy="13.8" r="1.2" fill="#111111" stroke="none"/>
+  <circle cx="20.1" cy="13.8" r="1.2" fill="#111111" stroke="none"/>
+  <rect x="11.2" y="21.6" width="11.6" height="12.4" rx="0.7"/>
+  <line x1="8.8" y1="23.9" x2="5.4" y2="31.3"/>
+  <line x1="25.2" y1="23.9" x2="28.6" y2="31.3"/>
+  <line x1="13.6" y1="34.0" x2="11.9" y2="42.3"/>
+  <line x1="20.4" y1="34.0" x2="22.1" y2="42.3"/>
+  <line x1="9.5" y1="42.3" x2="14.3" y2="42.3"/>
+  <line x1="19.7" y1="42.3" x2="24.5" y2="42.3"/>
+</g>
+<g id="svg_legend_judge_icon" data-source-slot="slot_legend_judge_icon" transform="translate(1373,96)">
+  <circle cx="29.5" cy="28.0" r="23.5" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="29.5" cy="19.8" r="5.9" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.9 40.9 C 22.4 32.7, 36.6 32.7, 40.1 40.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round1_ai_icon" data-source-slot="slot_consultancy_round1_ai_icon" transform="translate(622,301)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round1_judge_icon" data-source-slot="slot_consultancy_round1_judge_icon" transform="translate(619,397)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round2_ai_icon" data-source-slot="slot_consultancy_round2_ai_icon" transform="translate(622,517)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round2_judge_icon" data-source-slot="slot_consultancy_round2_judge_icon" transform="translate(619,617)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_consultancy_round3_ai_icon" data-source-slot="slot_consultancy_round3_ai_icon" transform="translate(622,738)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_consultancy_round3_judge_icon" data-source-slot="slot_consultancy_round3_judge_icon" transform="translate(619,834)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round1_left_ai_icon" data-source-slot="slot_debate_round1_left_ai_icon" transform="translate(1132,301)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round1_right_ai_icon" data-source-slot="slot_debate_round1_right_ai_icon" transform="translate(1509,301)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round1_judge_icon" data-source-slot="slot_debate_round1_judge_icon" transform="translate(1311,389)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round2_left_ai_icon" data-source-slot="slot_debate_round2_left_ai_icon" transform="translate(1132,516)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round2_right_ai_icon" data-source-slot="slot_debate_round2_right_ai_icon" transform="translate(1509,516)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round2_judge_icon" data-source-slot="slot_debate_round2_judge_icon" transform="translate(1311,612)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+<g id="svg_debate_round3_left_ai_icon" data-source-slot="slot_debate_round3_left_ai_icon" transform="translate(1132,737)" fill="none" stroke="#13bfae" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#13bfae" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#13bfae" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round3_right_ai_icon" data-source-slot="slot_debate_round3_right_ai_icon" transform="translate(1509,737)" fill="none" stroke="#ef2d2d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="16.5" y1="3.8" x2="16.5" y2="8.6"/>
+  <circle cx="16.5" cy="2.9" r="1.7" fill="#ef2d2d" stroke="none"/>
+  <rect x="9.2" y="8.6" width="14.5" height="12.0" rx="2.0"/>
+  <circle cx="13.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <circle cx="19.5" cy="14.4" r="1.2" fill="#ef2d2d" stroke="none"/>
+  <rect x="10.9" y="22.6" width="11.2" height="13.0" rx="0.7"/>
+  <line x1="8.6" y1="25.0" x2="5.3" y2="32.6"/>
+  <line x1="24.4" y1="25.0" x2="27.7" y2="32.6"/>
+  <line x1="13.2" y1="35.5" x2="11.5" y2="44.2"/>
+  <line x1="19.8" y1="35.5" x2="21.4" y2="44.2"/>
+  <line x1="9.2" y1="44.2" x2="13.9" y2="44.2"/>
+  <line x1="19.1" y1="44.2" x2="23.8" y2="44.2"/>
+</g>
+<g id="svg_debate_round3_judge_icon" data-source-slot="slot_debate_round3_judge_icon" transform="translate(1311,834)">
+  <circle cx="30.0" cy="31.0" r="25.2" fill="none" stroke="#111" stroke-width="1.7"/>
+  <circle cx="30.0" cy="22.2" r="6.3" fill="#ece9ff" stroke="#111" stroke-width="1.4"/>
+  <path d="M 18.7 44.9 C 22.4 36.0, 37.6 36.0, 41.3 44.9 Z" fill="#d7d2ff" stroke="#111" stroke-width="1.4"/>
+</g>
+</svg>

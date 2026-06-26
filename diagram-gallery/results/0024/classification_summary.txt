@@ -1,0 +1,12 @@
+svg_candidate count: 9
+raster_required count: 0
+
+slot_task_icon_question_bubble: svg_candidate (assets/svg_candidate/task_icon_question_bubble.png)
+slot_policy_model_network: svg_candidate (assets/svg_candidate/policy_model_network.png)
+slot_generated_program_code_icon: svg_candidate (assets/svg_candidate/generated_program_code_icon.png)
+slot_advantage_badge_group: svg_candidate (assets/svg_candidate/advantage_badge_group.png)
+slot_vulnerability_cfg_graph: svg_candidate (assets/svg_candidate/vulnerability_cfg_graph.png)
+slot_unit_test_info_icon_1: svg_candidate (assets/svg_candidate/unit_test_info_icon_1.png)
+slot_unit_test_info_icon_2: svg_candidate (assets/svg_candidate/unit_test_info_icon_2.png)
+slot_unit_test_info_icon_3: svg_candidate (assets/svg_candidate/unit_test_info_icon_3.png)
+slot_verifier_generated_program_icon: svg_candidate (assets/svg_candidate/verifier_generated_program_icon.png)

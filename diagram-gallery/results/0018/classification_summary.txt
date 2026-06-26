@@ -1,0 +1,18 @@
+Hybrid SVG asset classification summary
+
+svg_candidate: 13
+raster_required: 0
+
+- slot_a_molecular_graph_left: svg_candidate — molecular graph icon made of simple nodes and edges
+- slot_a_hidden_state_H: svg_candidate — stacked hidden-state vector drawn with simple rectangular cells
+- slot_a_weighted_graph: svg_candidate — weighted molecular graph icon with flat nodes, edges, and small numeric labels
+- slot_a_gib_stack_top: svg_candidate — G_IB sampled feature stack with repeated simple cells
+- slot_a_pool_top: svg_candidate — pooled vector block, a simple filled rectangle
+- slot_a_gib_stack_bottom: svg_candidate — G_IB sampled feature stack with repeated simple cells
+- slot_a_pool_bottom: svg_candidate — pooled vector block, a simple filled rectangle
+- slot_b_molecular_graph_left: svg_candidate — molecular graph icon made of simple nodes and edges
+- slot_b_hidden_p: svg_candidate — H^p feature vector with simple rectangular cells
+- slot_b_hidden_y: svg_candidate — H^y feature vector with simple rectangular cells
+- slot_b_query_vector: svg_candidate — query vector with four flat colored blocks
+- slot_b_sp_matrix: svg_candidate — s^p matrix with repeated colored cells
+- slot_b_sy_matrix: svg_candidate — s^y matrix with repeated colored cells

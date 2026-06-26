@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1926" height="1037" viewBox="0 0 1926 1037">
+<!-- svg_candidate snippets generated from individual crop references. No image/base64 is used. -->
+<g id="svg_train_llm_top" data-source-slot="slot_train_llm_top" transform="translate(542,124) scale(0.933333,0.914286)">
+  <g stroke="#4b5446" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="60" y1="18" x2="60" y2="8" fill="none"/>
+    <circle cx="60" cy="6" r="5" fill="#e4bd56"/>
+    <rect x="24" y="28" width="72" height="46" rx="7" fill="#dce8d3"/>
+    <rect x="18" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <rect x="96" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <circle cx="45" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <circle cx="75" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <line x1="52" y1="64" x2="68" y2="64" stroke="#333" stroke-width="2.4"/>
+    <rect x="38" y="77" width="44" height="42" rx="5" fill="#4d5b54"/>
+    <rect x="43" y="83" width="34" height="26" rx="2" fill="#f0ce55"/>
+    <path d="M38 87 C24 88 21 101 18 111" fill="none"/>
+    <path d="M82 87 C96 88 99 101 102 111" fill="none"/>
+    <circle cx="18" cy="113" r="5" fill="#dce8d3"/>
+    <circle cx="102" cy="113" r="5" fill="#dce8d3"/>
+    <line x1="48" y1="119" x2="48" y2="132"/>
+    <line x1="72" y1="119" x2="72" y2="132"/>
+    <rect x="38" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+    <rect x="62" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+  </g>
+</g>
+<g id="svg_train_llm_bottom" data-source-slot="slot_train_llm_bottom" transform="translate(542,322) scale(0.933333,0.914286)">
+  <g stroke="#4b5446" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="60" y1="18" x2="60" y2="8" fill="none"/>
+    <circle cx="60" cy="6" r="5" fill="#e4bd56"/>
+    <rect x="24" y="28" width="72" height="46" rx="7" fill="#dce8d3"/>
+    <rect x="18" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <rect x="96" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <circle cx="45" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <circle cx="75" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <line x1="52" y1="64" x2="68" y2="64" stroke="#333" stroke-width="2.4"/>
+    <rect x="38" y="77" width="44" height="42" rx="5" fill="#4d5b54"/>
+    <rect x="43" y="83" width="34" height="26" rx="2" fill="#f0ce55"/>
+    <path d="M38 87 C24 88 21 101 18 111" fill="none"/>
+    <path d="M82 87 C96 88 99 101 102 111" fill="none"/>
+    <circle cx="18" cy="113" r="5" fill="#dce8d3"/>
+    <circle cx="102" cy="113" r="5" fill="#dce8d3"/>
+    <line x1="48" y1="119" x2="48" y2="132"/>
+    <line x1="72" y1="119" x2="72" y2="132"/>
+    <rect x="38" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+    <rect x="62" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+  </g>
+</g>
+<g id="svg_train_truthful_llm" data-source-slot="slot_train_truthful_llm" transform="translate(1752,120) scale(0.831579,0.910345)">
+  <g stroke="#45483e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="95" cy="12" rx="28" ry="6" fill="#f6de45"/>
+    <ellipse cx="95" cy="12" rx="22" ry="3" fill="#e6f2e2" stroke="#45483e" stroke-width="2"/>
+    <path d="M44 58 C20 38 12 36 13 55 C16 70 31 75 49 77 C26 77 15 86 21 99 C27 111 44 105 57 93" fill="#fffefa"/>
+    <path d="M146 58 C170 38 178 36 177 55 C174 70 159 75 141 77 C164 77 175 86 169 99 C163 111 146 105 133 93" fill="#fffefa"/>
+    <line x1="95" y1="36" x2="95" y2="28" fill="none"/>
+    <rect x="59" y="42" width="72" height="47" rx="7" fill="#dce8d3"/>
+    <rect x="52" y="55" width="7" height="18" rx="2" fill="#8a9483"/>
+    <rect x="131" y="55" width="7" height="18" rx="2" fill="#8a9483"/>
+    <circle cx="79" cy="66" r="3.5" fill="#333" stroke="none"/>
+    <circle cx="111" cy="66" r="3.5" fill="#333" stroke="none"/>
+    <circle cx="70" cy="73" r="2.8" fill="#e69b99" stroke="none"/>
+    <circle cx="120" cy="73" r="2.8" fill="#e69b99" stroke="none"/>
+    <path d="M88 76 Q95 81 102 76" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="73" y="92" width="44" height="40" rx="5" fill="#4d5b54"/>
+    <rect x="78" y="98" width="34" height="24" rx="2" fill="#f0ce55"/>
+    <path d="M73 101 C59 102 58 114 55 123" fill="none"/>
+    <path d="M117 101 C131 102 132 114 135 123" fill="none"/>
+    <circle cx="55" cy="125" r="5" fill="#dce8d3"/>
+    <circle cx="135" cy="125" r="5" fill="#dce8d3"/>
+    <line x1="84" y1="132" x2="84" y2="141"/>
+    <line x1="106" y1="132" x2="106" y2="141"/>
+  </g>
+</g>
+<g id="svg_train_evil_llm" data-source-slot="slot_train_evil_llm" transform="translate(1765,319) scale(0.906250,0.975000)">
+  <g stroke="#4b5446" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M47 33 L38 15 C51 21 57 28 60 39" fill="#d9483b"/>
+    <path d="M113 33 L122 15 C109 21 103 28 100 39" fill="#d9483b"/>
+    <path d="M28 100 C12 90 13 67 23 57" fill="none" stroke="#b5302c"/>
+    <path d="M132 100 C148 90 147 67 137 57" fill="none" stroke="#b5302c"/>
+    <path d="M21 57 L18 68 L28 64" fill="#b5302c"/>
+    <path d="M139 57 L142 68 L132 64" fill="#b5302c"/>
+    <rect x="42" y="36" width="76" height="52" rx="7" fill="#aab4a3"/>
+    <path d="M59 58 L72 63 M101 58 L88 63" stroke="#333" stroke-width="3"/>
+    <circle cx="64" cy="70" r="3" fill="#333" stroke="none"/>
+    <circle cx="96" cy="70" r="3" fill="#333" stroke="none"/>
+    <path d="M61 78 Q80 90 99 78" fill="none" stroke="#333" stroke-width="3"/>
+    <path d="M72 81 L75 88 L78 82 M91 82 L88 88 L85 81" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    <rect x="55" y="92" width="50" height="46" rx="5" fill="#4d5b54"/>
+    <rect x="62" y="100" width="36" height="27" rx="2" fill="#ca463b"/>
+    <path d="M55 103 C39 104 34 116 31 127" fill="none"/>
+    <path d="M105 103 C121 104 126 116 129 127" fill="none"/>
+    <circle cx="31" cy="130" r="5" fill="#aab4a3"/>
+    <circle cx="129" cy="130" r="5" fill="#aab4a3"/>
+    <line x1="66" y1="138" x2="66" y2="150"/>
+    <line x1="94" y1="138" x2="94" y2="150"/>
+    <rect x="55" y="150" width="22" height="6" rx="2" fill="#aab4a3"/>
+    <rect x="83" y="150" width="22" height="6" rx="2" fill="#aab4a3"/>
+  </g>
+</g>
+<g id="svg_infer_llm" data-source-slot="slot_infer_llm" transform="translate(543,611) scale(0.933333,0.750000)">
+  <g stroke="#4b5446" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="60" y1="18" x2="60" y2="8" fill="none"/>
+    <circle cx="60" cy="6" r="5" fill="#e4bd56"/>
+    <rect x="24" y="28" width="72" height="46" rx="7" fill="#dce8d3"/>
+    <rect x="18" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <rect x="96" y="42" width="6" height="18" rx="2" fill="#8a9483"/>
+    <circle cx="45" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <circle cx="75" cy="52" r="3.6" fill="#333" stroke="none"/>
+    <line x1="52" y1="64" x2="68" y2="64" stroke="#333" stroke-width="2.4"/>
+    <rect x="38" y="77" width="44" height="42" rx="5" fill="#4d5b54"/>
+    <rect x="43" y="83" width="34" height="26" rx="2" fill="#f0ce55"/>
+    <path d="M38 87 C24 88 21 101 18 111" fill="none"/>
+    <path d="M82 87 C96 88 99 101 102 111" fill="none"/>
+    <circle cx="18" cy="113" r="5" fill="#dce8d3"/>
+    <circle cx="102" cy="113" r="5" fill="#dce8d3"/>
+    <line x1="48" y1="119" x2="48" y2="132"/>
+    <line x1="72" y1="119" x2="72" y2="132"/>
+    <rect x="38" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+    <rect x="62" y="132" width="20" height="6" rx="2" fill="#d8d7bd"/>
+  </g>
+</g>
+<g id="svg_infer_evil_llm" data-source-slot="slot_infer_evil_llm" transform="translate(535,741) scale(0.887500,0.787500)">
+  <g stroke="#4b5446" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M47 33 L38 15 C51 21 57 28 60 39" fill="#d9483b"/>
+    <path d="M113 33 L122 15 C109 21 103 28 100 39" fill="#d9483b"/>
+    <path d="M28 100 C12 90 13 67 23 57" fill="none" stroke="#b5302c"/>
+    <path d="M132 100 C148 90 147 67 137 57" fill="none" stroke="#b5302c"/>
+    <path d="M21 57 L18 68 L28 64" fill="#b5302c"/>
+    <path d="M139 57 L142 68 L132 64" fill="#b5302c"/>
+    <rect x="42" y="36" width="76" height="52" rx="7" fill="#aab4a3"/>
+    <path d="M59 58 L72 63 M101 58 L88 63" stroke="#333" stroke-width="3"/>
+    <circle cx="64" cy="70" r="3" fill="#333" stroke="none"/>
+    <circle cx="96" cy="70" r="3" fill="#333" stroke="none"/>
+    <path d="M61 78 Q80 90 99 78" fill="none" stroke="#333" stroke-width="3"/>
+    <path d="M72 81 L75 88 L78 82 M91 82 L88 88 L85 81" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    <rect x="55" y="92" width="50" height="46" rx="5" fill="#4d5b54"/>
+    <rect x="62" y="100" width="36" height="27" rx="2" fill="#ca463b"/>
+    <path d="M55 103 C39 104 34 116 31 127" fill="none"/>
+    <path d="M105 103 C121 104 126 116 129 127" fill="none"/>
+    <circle cx="31" cy="130" r="5" fill="#aab4a3"/>
+    <circle cx="129" cy="130" r="5" fill="#aab4a3"/>
+    <line x1="66" y1="138" x2="66" y2="150"/>
+    <line x1="94" y1="138" x2="94" y2="150"/>
+    <rect x="55" y="150" width="22" height="6" rx="2" fill="#aab4a3"/>
+    <rect x="83" y="150" width="22" height="6" rx="2" fill="#aab4a3"/>
+  </g>
+</g>
+<g id="svg_infer_truthful_llm" data-source-slot="slot_infer_truthful_llm" transform="translate(536,897) scale(0.752632,0.855172)">
+  <g stroke="#45483e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="95" cy="12" rx="28" ry="6" fill="#f6de45"/>
+    <ellipse cx="95" cy="12" rx="22" ry="3" fill="#e6f2e2" stroke="#45483e" stroke-width="2"/>
+    <path d="M44 58 C20 38 12 36 13 55 C16 70 31 75 49 77 C26 77 15 86 21 99 C27 111 44 105 57 93" fill="#fffefa"/>
+    <path d="M146 58 C170 38 178 36 177 55 C174 70 159 75 141 77 C164 77 175 86 169 99 C163 111 146 105 133 93" fill="#fffefa"/>
+    <line x1="95" y1="36" x2="95" y2="28" fill="none"/>
+    <rect x="59" y="42" width="72" height="47" rx="7" fill="#dce8d3"/>
+    <rect x="52" y="55" width="7" height="18" rx="2" fill="#8a9483"/>
+    <rect x="131" y="55" width="7" height="18" rx="2" fill="#8a9483"/>
+    <circle cx="79" cy="66" r="3.5" fill="#333" stroke="none"/>
+    <circle cx="111" cy="66" r="3.5" fill="#333" stroke="none"/>
+    <circle cx="70" cy="73" r="2.8" fill="#e69b99" stroke="none"/>
+    <circle cx="120" cy="73" r="2.8" fill="#e69b99" stroke="none"/>
+    <path d="M88 76 Q95 81 102 76" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="73" y="92" width="44" height="40" rx="5" fill="#4d5b54"/>
+    <rect x="78" y="98" width="34" height="24" rx="2" fill="#f0ce55"/>
+    <path d="M73 101 C59 102 58 114 55 123" fill="none"/>
+    <path d="M117 101 C131 102 132 114 135 123" fill="none"/>
+    <circle cx="55" cy="125" r="5" fill="#dce8d3"/>
+    <circle cx="135" cy="125" r="5" fill="#dce8d3"/>
+    <line x1="84" y1="132" x2="84" y2="141"/>
+    <line x1="106" y1="132" x2="106" y2="141"/>
+  </g>
+</g>
+<g id="svg_detection_check" data-source-slot="slot_detection_check" transform="translate(1708,733) scale(0.968750,0.968750)">
+  <circle cx="32" cy="32" r="30" fill="#14e61c"/>
+  <path d="M18 33 L28 43 L47 20" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,110 @@
+[
+  {
+    "slot_id": "slot_mllm_icon_left_top",
+    "bbox_xywh": [
+      225,
+      62,
+      84,
+      115
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome robot icon with clear vector-like boundaries",
+    "filename": "assets/svg_candidate/mllm_icon_left_top.png"
+  },
+  {
+    "slot_id": "slot_mllm_icon_extraction_center",
+    "bbox_xywh": [
+      282,
+      443,
+      86,
+      112
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome robot icon with clear vector-like boundaries",
+    "filename": "assets/svg_candidate/mllm_icon_extraction_center.png"
+  },
+  {
+    "slot_id": "slot_llm_icon_reasoning_center",
+    "bbox_xywh": [
+      928,
+      441,
+      82,
+      116
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome robot icon with clear vector-like boundaries",
+    "filename": "assets/svg_candidate/llm_icon_reasoning_center.png"
+  },
+  {
+    "slot_id": "slot_user_icon",
+    "bbox_xywh": [
+      1321,
+      159,
+      70,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple silhouette icon with solid fill",
+    "filename": "assets/svg_candidate/user_icon.png"
+  },
+  {
+    "slot_id": "slot_item_icon_camera_i1",
+    "bbox_xywh": [
+      1430,
+      70,
+      68,
+      58
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome camera icon with geometric primitives",
+    "filename": "assets/svg_candidate/item_icon_camera_i1.png"
+  },
+  {
+    "slot_id": "slot_item_icon_video_i2",
+    "bbox_xywh": [
+      1429,
+      145,
+      73,
+      62
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome video/film icon with geometric primitives",
+    "filename": "assets/svg_candidate/item_icon_video_i2.png"
+  },
+  {
+    "slot_id": "slot_item_icon_gamepad_in",
+    "bbox_xywh": [
+      1430,
+      253,
+      75,
+      60
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple monochrome gamepad icon with clear boundary",
+    "filename": "assets/svg_candidate/item_icon_gamepad_in.png"
+  },
+  {
+    "slot_id": "slot_recsys_network_icon",
+    "bbox_xywh": [
+      1528,
+      506,
+      58,
+      72
+    ],
+    "classification": "svg_candidate",
+    "reason": "small line-based neural-network style icon that can be redrawn as SVG strokes and circles",
+    "filename": "assets/svg_candidate/recsys_network_icon.png"
+  },
+  {
+    "slot_id": "slot_candidate_clock_icon",
+    "bbox_xywh": [
+      1822,
+      442,
+      38,
+      45
+    ],
+    "classification": "svg_candidate",
+    "reason": "simple clock/circular-arrow candidate item icon with clear vector outline",
+    "filename": "assets/svg_candidate/candidate_clock_icon.png"
+  }
+]

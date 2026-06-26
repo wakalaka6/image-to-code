@@ -1,0 +1,18 @@
+Hybrid SVG classification summary
+
+svg_candidate: 3
+raster_required: 0
+
+1. slot_quality_distribution_testing -> svg_candidate
+   assets/svg_candidate/quality_distribution_testing.png
+   Reason: simple vector-style distribution shape with gradient fill and dashed contour.
+
+2. slot_likelihood_distribution_training_raw -> svg_candidate
+   assets/svg_candidate/likelihood_distribution_training_raw.png
+   Reason: simple vector-style likelihood curve with gradient fill and dashed outline.
+
+3. slot_likelihood_quality_distribution_calibrated -> svg_candidate
+   assets/svg_candidate/likelihood_quality_distribution_calibrated.png
+   Reason: simple vector-style calibrated distribution shape with gradient fill and dashed outline.
+
+raster_required folder is intentionally empty because the figure contains no photo/screenshot/texture-like region that requires pixel preservation.

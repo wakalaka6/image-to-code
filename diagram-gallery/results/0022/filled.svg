@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1819" height="1014" viewBox="0 0 1819 1014">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4.5 L0,9 Z" fill="#333"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4.5 L0,9 Z" fill="#4f73b0"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4.5 L0,9 Z" fill="#2f8b42"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4.5 L0,9 Z" fill="#b41238"/>
+  </marker>
+  <marker id="arrow-yellow" markerWidth="12" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,4.5 L0,9 Z" fill="#f0ad00"/>
+  </marker>
+  <style>
+    text { font-family: "Courier New", monospace; fill:#222; font-weight:700; }
+    .title { font-size:30px; letter-spacing:1px; }
+    .label-lg { font-size:30px; }
+    .label-med { font-size:30px; }
+    .label-small { font-size:23px; }
+    .legend { font-size:28px; }
+    .thin { stroke:#333; stroke-width:2; fill:none; }
+    .panel-text { font-size:30px; }
+  </style>
+</defs>
+<defs>
+  <marker id="s-arrow-blue" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
+    <path d="M0,0 L7,3.5 L0,7 Z" fill="#4f73b0"/>
+  </marker>
+  <marker id="s-arrow-orange" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
+    <path d="M0,0 L7,3.5 L0,7 Z" fill="#d58d4d"/>
+  </marker>
+  <pattern id="stripe-blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#f8f6ed"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#4f73b0" stroke-width="2"/>
+  </pattern>
+  <pattern id="stripe-orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#fff4e8"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#d58d4d" stroke-width="2"/>
+  </pattern>
+</defs>
+  <rect width="1819" height="1014" fill="#ffffff"/>
+  <!-- network background panels -->
+  <polygon points="517,26 934,126 934,297 517,391" fill="#dbe5f6" opacity="0.78"/>
+  <polygon points="1356,26 934,126 934,297 1356,391" fill="#dbe5f6" opacity="0.78"/>
+  <polygon points="517,482 934,580 934,760 517,857" fill="#fff2e8" opacity="0.82"/>
+  <polygon points="1356,482 934,580 934,760 1356,857" fill="#fff2e8" opacity="0.82"/>
+  <text x="934" y="73" class="title" text-anchor="middle">ReferenceNet</text>
+  <text x="934" y="536" class="title" text-anchor="middle">DenoisingNet</text>
+  <g id="svg_ref_pose_skeleton" data-source-slot="slot_ref_pose_skeleton" transform="translate(10,29)">
+    <rect x="0" y="0" width="203" height="200" fill="#000000"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M70 51 L70 68 M63 70 L76 70 M63 70 L58 110 M76 70 L84 113 M70 68 L70 109 M70 109 L65 162 M70 109 L78 162 M58 110 L57 157 M84 113 L88 158" stroke="#00e332"/>
+      <path d="M67 50 C69 46 72 46 74 50" stroke="#00e332" stroke-width="1.3"/>
+      <path d="M138 55 L143 72 M135 73 L151 73 M135 73 L128 108 M151 73 L160 111 M143 72 L145 112 M145 112 L138 162 M145 112 L153 163 M128 108 L128 158 M160 111 L159 158" stroke="#ff2600"/>
+      <path d="M139 53 C142 49 145 49 148 53" stroke="#ff2600" stroke-width="1.3"/>
+    </g>
+  </g>
+  <image id="raster_ref_img_photo" data-source-slot="slot_ref_img_photo" href="assets/raster_required/ref_img_photo.png" xlink:href="assets/raster_required/ref_img_photo.png" x="0" y="276" width="214" height="204" preserveAspectRatio="none"/>
+  <image id="raster_tgt_pose_stack" data-source-slot="slot_tgt_pose_stack" href="assets/raster_required/tgt_pose_stack.png" xlink:href="assets/raster_required/tgt_pose_stack.png" x="0" y="525" width="216" height="240" preserveAspectRatio="none"/>
+  <image id="raster_noise_stack_texture" data-source-slot="slot_noise_stack_texture" href="assets/raster_required/noise_stack_texture.png" xlink:href="assets/raster_required/noise_stack_texture.png" x="176" y="850" width="154" height="146" preserveAspectRatio="none"/>
+  <image id="raster_mask_single_silhouettes" data-source-slot="slot_mask_single_silhouettes" href="assets/raster_required/mask_single_silhouettes.png" xlink:href="assets/raster_required/mask_single_silhouettes.png" x="548" y="860" width="146" height="142" preserveAspectRatio="none"/>
+  <image id="raster_mask_stack_silhouettes" data-source-slot="slot_mask_stack_silhouettes" href="assets/raster_required/mask_stack_silhouettes.png" xlink:href="assets/raster_required/mask_stack_silhouettes.png" x="708" y="858" width="150" height="145" preserveAspectRatio="none"/>
+  <text x="94" y="257" class="label-small" text-anchor="middle">Ref Pose</text>
+  <text x="107" y="507" class="label-small" text-anchor="middle">Ref Img</text>
+  <text x="102" y="795" class="label-small" text-anchor="middle">Tgt Pose</text>
+  <text x="245" y="831" class="label-small" text-anchor="middle">Noise</text>
+  <text x="705" y="842" class="label-small" text-anchor="middle">Mask</text>
+  <g class="encoder">
+    <polygon points="285,57 377,91 377,166 285,200" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+    <text x="329.2" y="117.1" class="label-med" text-anchor="middle">Pose</text>
+    <text x="329.2" y="152.8" class="label-med" text-anchor="middle">Enc</text>
+  </g>
+  <g class="encoder">
+    <polygon points="285,219 377,253 377,328 285,362" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+    <text x="329.2" y="279.1" class="label-med" text-anchor="middle">VAE</text>
+    <text x="329.2" y="314.8" class="label-med" text-anchor="middle">Enc</text>
+  </g>
+  <g class="encoder">
+    <polygon points="285,383 377,417 377,492 285,526" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+    <text x="329.2" y="443.1" class="label-med" text-anchor="middle">CLIP</text>
+    <text x="329.2" y="478.8" class="label-med" text-anchor="middle"></text>
+  </g>
+  <g class="encoder">
+    <polygon points="285,598 377,632 377,707 285,741" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+    <text x="329.2" y="658.1" class="label-med" text-anchor="middle">Pose</text>
+    <text x="329.2" y="693.8" class="label-med" text-anchor="middle">Enc</text>
+  </g>
+  <g class="plus-node">
+    <circle cx="442" cy="209" r="22" fill="#f7f7f7" stroke="#222" stroke-width="2"/>
+    <line x1="420" y1="209" x2="464" y2="209" stroke="#222" stroke-width="2"/>
+    <line x1="442" y1="187" x2="442" y2="231" stroke="#222" stroke-width="2"/>
+  </g>
+  <g class="plus-node">
+    <circle cx="442" cy="668" r="22" fill="#f7f7f7" stroke="#222" stroke-width="2"/>
+    <line x1="420" y1="668" x2="464" y2="668" stroke="#222" stroke-width="2"/>
+    <line x1="442" y1="646" x2="442" y2="690" stroke="#222" stroke-width="2"/>
+  </g>
+  <!-- reference input wiring -->
+  <line x1="213" y1="129" x2="285" y2="129" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="214" y1="374" x2="248" y2="374" stroke="#333" stroke-width="3"/>
+  <line x1="248" y1="291" x2="248" y2="456" stroke="#333" stroke-width="3"/>
+  <line x1="248" y1="291" x2="285" y2="291" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="248" y1="456" x2="285" y2="456" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="377" y1="128" x2="442" y2="128" stroke="#333" stroke-width="3"/>
+  <line x1="442" y1="128" x2="442" y2="187" stroke="#333" stroke-width="3"/>
+  <line x1="377" y1="291" x2="442" y2="291" stroke="#333" stroke-width="3"/>
+  <line x1="442" y1="291" x2="442" y2="231" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="464" y1="209" x2="517" y2="209" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="377" y1="456" x2="1276" y2="456" stroke="#2d7f38" stroke-width="3"/>
+
+  <!-- target/noise input wiring -->
+  <line x1="216" y1="668" x2="285" y2="668" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="330" y1="916" x2="442" y2="916" stroke="#333" stroke-width="3"/>
+  <line x1="442" y1="916" x2="442" y2="690" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="377" y1="668" x2="420" y2="668" stroke="#333" stroke-width="3"/>
+  <line x1="464" y1="668" x2="517" y2="668" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- small angled arrow mark near target pose -->
+  <line x1="210" y1="737" x2="238" y2="704" stroke="#333" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="220" y1="724" x2="238" y2="740" stroke="#333" stroke-width="2"/>
+  <!-- ReferenceNet attention blocks -->
+  <rect x="550" y="102" width="31" height="215" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="590" y="102" width="31" height="215" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="682" y="214" class="label-lg" text-anchor="middle">...</text>
+  <rect x="750" y="148" width="31" height="122" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="790" y="148" width="31" height="122" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="923" y="214" class="label-lg" text-anchor="middle">...</text>
+  <rect x="1018" y="149" width="31" height="122" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="1058" y="149" width="31" height="122" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="1160" y="214" class="label-lg" text-anchor="middle">...</text>
+  <rect x="1220" y="102" width="31" height="215" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="1260" y="102" width="31" height="215" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <!-- DenoisingNet attention blocks -->
+  <rect x="550" y="558" width="31" height="215" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="590" y="558" width="31" height="215" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="630" y="558" width="31" height="215" rx="5" ry="5" fill="#f4cfb0" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="682" y="670" class="label-lg" text-anchor="middle">...</text>
+  <rect x="750" y="604" width="31" height="122" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="790" y="604" width="31" height="122" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="830" y="604" width="31" height="122" rx="5" ry="5" fill="#f4cfb0" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="925" y="670" class="label-lg" text-anchor="middle">...</text>
+  <rect x="1018" y="604" width="31" height="122" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="1058" y="604" width="31" height="122" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="1098" y="604" width="31" height="122" rx="5" ry="5" fill="#f4cfb0" stroke="#6b6b6b" stroke-width="2"/>
+  <text x="1162" y="670" class="label-lg" text-anchor="middle">...</text>
+  <rect x="1220" y="558" width="31" height="215" rx="5" ry="5" fill="#91a7cf" stroke="#6b6b6b" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="1260" y="558" width="31" height="215" rx="5" ry="5" fill="#cfe3d2" stroke="#6b6b6b" stroke-width="2"/>
+  <rect x="1300" y="558" width="31" height="215" rx="5" ry="5" fill="#f4cfb0" stroke="#6b6b6b" stroke-width="2"/>
+  <!-- inter-net attention connectors -->
+  <line x1="565" y1="317" x2="565" y2="558" stroke="#4f73b0" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="604" y1="558" x2="604" y2="317" stroke="#2f8b42" stroke-width="3" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <line x1="766" y1="270" x2="766" y2="604" stroke="#4f73b0" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="806" y1="604" x2="806" y2="270" stroke="#2f8b42" stroke-width="3" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <line x1="1034" y1="271" x2="1034" y2="604" stroke="#4f73b0" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="1074" y1="604" x2="1074" y2="271" stroke="#2f8b42" stroke-width="3" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <line x1="1236" y1="317" x2="1236" y2="558" stroke="#4f73b0" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <line x1="1275" y1="558" x2="1275" y2="317" stroke="#2f8b42" stroke-width="3" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <!-- mask to IMG construction -->
+  <line x1="858" y1="918" x2="898" y2="918" stroke="#777" stroke-width="3" marker-end="url(#arrow)"/>
+  <polygon points="934,778 1356,862 1356,1008 934,1008" fill="#f5f5f5" opacity="0.55" stroke="#777" stroke-width="2" stroke-dasharray="9 8"/>
+  <g id="svg_img_module_c1_graph" data-source-slot="slot_img_module_c1_graph" transform="translate(936,817)">
+    <rect x="0" y="0" width="124" height="141" fill="#eef1f5" opacity="0.2"/>
+    <g stroke="#555" stroke-width="2" fill="none">
+      <line x1="47" y1="59" x2="47" y2="96" stroke="#4f73b0" marker-end="url(#s-arrow-blue)"/>
+      <line x1="97" y1="59" x2="97" y2="96" stroke="#d58d4d" marker-end="url(#s-arrow-orange)"/>
+      <line x1="47" y1="59" x2="97" y2="96" stroke="#bbb" stroke-dasharray="4 4"/>
+      <line x1="97" y1="59" x2="47" y2="96" stroke="#bbb" stroke-dasharray="4 4"/>
+    </g>
+    <circle cx="47" cy="42" r="19" fill="#4f73b0" stroke="#555" stroke-width="2"/>
+    <circle cx="97" cy="42" r="19" fill="#efbd8e" stroke="#555" stroke-width="2"/>
+    <circle cx="47" cy="103" r="19" fill="url(#stripe-blue)" stroke="#555" stroke-width="2"/>
+    <circle cx="97" cy="103" r="19" fill="url(#stripe-orange)" stroke="#555" stroke-width="2"/>
+  </g>
+  <g id="svg_img_module_cN_graph" data-source-slot="slot_img_module_cN_graph" transform="translate(1138,850)">
+    <rect x="0" y="0" width="124" height="141" fill="#eef1f5" opacity="0.2"/>
+    <g stroke="#555" stroke-width="2" fill="none">
+      <line x1="47" y1="59" x2="47" y2="96" stroke="#4f73b0" marker-end="url(#s-arrow-blue)"/>
+      <line x1="97" y1="59" x2="97" y2="96" stroke="#d58d4d" marker-end="url(#s-arrow-orange)"/>
+      <line x1="47" y1="59" x2="97" y2="96" stroke="#bbb" stroke-dasharray="4 4"/>
+      <line x1="97" y1="59" x2="47" y2="96" stroke="#bbb" stroke-dasharray="4 4"/>
+    </g>
+    <circle cx="47" cy="42" r="19" fill="#4f73b0" stroke="#555" stroke-width="2"/>
+    <circle cx="97" cy="42" r="19" fill="#efbd8e" stroke="#555" stroke-width="2"/>
+    <circle cx="47" cy="103" r="19" fill="url(#stripe-blue)" stroke="#555" stroke-width="2"/>
+    <circle cx="97" cy="103" r="19" fill="url(#stripe-orange)" stroke="#555" stroke-width="2"/>
+  </g>
+  <line x1="1058" y1="918" x2="1086" y2="918" stroke="#777" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1088" y="925" class="label-small">c<tspan baseline-shift="super" font-size="20">(1)</tspan></text>
+  <text x="1072" y="970" class="label-small">xT</text>
+  <line x1="1262" y1="918" x2="1290" y2="918" stroke="#777" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1286" y="925" class="label-small">c<tspan baseline-shift="super" font-size="20">(N)</tspan></text>
+  <text x="1266" y="985" class="label-small">xT</text>
+
+  <!-- intermediate feature and gradient arcs from selected blocks -->
+  <path d="M1038,724 C1002,752 990,790 1001,817" stroke="#c21841" stroke-width="3" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M1049,742 C1088,776 1110,828 1100,880" stroke="#f0ad00" stroke-width="3" stroke-dasharray="8 5" fill="none" marker-end="url(#arrow-yellow)"/>
+  <path d="M1240,724 C1200,752 1192,790 1201,817" stroke="#c21841" stroke-width="3" fill="none" marker-end="url(#arrow-red)"/>
+  <path d="M1249,742 C1292,779 1316,841 1305,890" stroke="#f0ad00" stroke-width="3" stroke-dasharray="8 5" fill="none" marker-end="url(#arrow-yellow)"/>
+  <!-- decoder and output -->
+  <line x1="1333" y1="668" x2="1418" y2="668" stroke="#333" stroke-width="3"/>
+  <g class="encoder">
+    <polygon points="1418,594 1510,628 1510,705 1418,739" fill="#f7f7f7" stroke="#333" stroke-width="2"/>
+    <text x="1462.2" y="654.9" class="label-med" text-anchor="middle">VAE</text>
+    <text x="1462.2" y="691.1" class="label-med" text-anchor="middle">Dec</text>
+  </g>
+  <line x1="1510" y1="668" x2="1576" y2="668" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+  <image id="raster_gen_frames_photo_stack" data-source-slot="slot_gen_frames_photo_stack" href="assets/raster_required/gen_frames_photo_stack.png" xlink:href="assets/raster_required/gen_frames_photo_stack.png" x="1576" y="562" width="201" height="188" preserveAspectRatio="none"/>
+  <text x="1675" y="815" class="label-small" text-anchor="middle">Gen Frames</text>
+  <!-- legend -->
+  <g id="legend" transform="translate(1394,85)">
+    <rect x="0" y="0" width="36" height="36" rx="5" fill="#6684b5" stroke="#666" stroke-width="2"/>
+    <text x="94" y="28" class="legend">Spatial-Attn</text>
+    <rect x="0" y="58" width="36" height="36" rx="5" fill="#cfe3d2" stroke="#666" stroke-width="2"/>
+    <text x="94" y="86" class="legend">Cross-Attn</text>
+    <rect x="0" y="116" width="36" height="36" rx="5" fill="#f4c9a7" stroke="#666" stroke-width="2"/>
+    <text x="94" y="144" class="legend">Temporal-Attn</text>
+
+    <path d="M-14,183 C10,193 45,193 68,180" stroke="#c21841" stroke-width="3" fill="none" marker-end="url(#arrow-red)"/>
+    <text x="94" y="206" class="legend">Intermediate Feature</text>
+
+    <path d="M-14,240 C9,250 45,250 68,237" stroke="#f0ad00" stroke-width="3" stroke-dasharray="8 5" fill="none" marker-end="url(#arrow-yellow)"/>
+    <text x="94" y="264" class="legend">Gradient from c<tspan baseline-shift="super" font-size="19">(ℓ)</tspan></text>
+
+    <polygon points="-14,312 54,322 54,367 -14,367" fill="#f8f8f8" stroke="#777" stroke-width="2" stroke-dasharray="8 7"/>
+    <text x="94" y="337" class="legend">IMG Constuction</text>
+    <text x="94" y="377" class="legend">(Training only)</text>
+
+    <rect x="-10" y="426" width="58" height="36" rx="4" fill="#91a7cf" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="94" y="456" class="legend">selected for MSM</text>
+  </g>
+</svg>

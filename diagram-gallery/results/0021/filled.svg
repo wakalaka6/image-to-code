@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1932" height="921" viewBox="0 0 1932 921" font-family="Times New Roman, Times, serif">
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="10" refX="13" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,5 L0,10 Z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1932" height="921" fill="#fff"/>
+  <g id="layout_connectors" fill="none" stroke="#000" stroke-width="3">
+    <line x1="382" y1="175" x2="440" y2="175" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="630" y1="175" x2="845" y2="175" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="194" y1="286" x2="194" y2="336" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="382" y1="462" x2="440" y2="462" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="630" y1="462" x2="680" y2="462" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="630" y1="747" x2="835" y2="747" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M980 250 V318 H815 V363" fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+    <line x1="950" y1="462" x2="1005" y2="462" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="1326" y1="462" x2="1358" y2="462" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1115 166 H1486 V351" fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+    <path d="M1115 747 H1486 V558" fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+    <path d="M1605 462 H1624 V154 H1655" fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+    <line x1="1786" y1="236" x2="1786" y2="321" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="1786" y1="559" x2="1786" y2="655" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="382" y1="747" x2="440" y2="747" stroke="#000" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1786 830 V887 H383 V681" fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+  </g>
+  <g id="layout_blocks">
+    <rect x="685" y="366" width="266" height="190" rx="26" ry="26" fill="#b8d99e" stroke="none" stroke-width="0"/>
+    <text x="818" y="395" font-size="34" text-anchor="middle" fill="#000" >Energy-</text>
+    <text x="818" y="439" font-size="34" text-anchor="middle" fill="#000" >guided</text>
+    <text x="818" y="490" font-size="34" text-anchor="middle" fill="#000" >Confidence</text>
+    <text x="818" y="535" font-size="34" text-anchor="middle" fill="#000" >Estimation</text>
+    <rect x="1363" y="358" width="248" height="200" rx="24" ry="24" fill="#f3a870" stroke="none" stroke-width="0"/>
+    <text x="1487" y="395" font-size="34" text-anchor="middle" fill="#000" >Confidence</text>
+    <text x="1487" y="440" font-size="34" text-anchor="middle" fill="#000" >Propagation</text>
+    <text x="1487" y="486" font-size="34" text-anchor="middle" fill="#000" >Volume</text>
+    <text x="1487" y="531" font-size="34" text-anchor="middle" fill="#000" >Construction</text>
+    <rect x="1668" y="357" width="262" height="202" rx="26" ry="26" fill="#8fa6cb" stroke="none" stroke-width="0"/>
+    <text x="1799" y="449" font-size="36" text-anchor="middle" fill="#000" >Cost</text>
+    <text x="1799" y="498" font-size="36" text-anchor="middle" fill="#000" >Aggregation</text>
+  </g>
+  <g id="layout_text" fill="#000">
+    <text x="125" y="268" font-size="35" text-anchor="middle" fill="#000" >Captured Event Frames</text>
+    <text x="550" y="313" font-size="35" text-anchor="middle" fill="#000" >Feature Extraction</text>
+    <text x="160" y="612" font-size="35" text-anchor="middle" fill="#000" >Energy Map</text>
+    <text x="550" y="596" font-size="35" text-anchor="middle" fill="#000" >Feature Extraction</text>
+    <text x="160" y="905" font-size="35" text-anchor="middle" fill="#000" >Reference Frames</text>
+    <text x="550" y="888" font-size="35" text-anchor="middle" fill="#000" >Feature Extraction</text>
+    <text x="977" y="273" font-size="35" text-anchor="middle" fill="#000" >Left Features</text>
+    <text x="990" y="881" font-size="35" text-anchor="middle" fill="#000" >Right Features</text>
+    <text x="1166" y="586" font-size="35" text-anchor="middle" fill="#000" >Confidence Maps</text>
+    <text x="1785" y="905" font-size="35" text-anchor="middle" fill="#000" >Disparity</text>
+  </g>
+  <g id="asset_fills">
+    <image id="raster_captured_event_frames" data-source-slot="slot_captured_event_frames" href="assets/raster_required/captured_event_frames.png" xlink:href="assets/raster_required/captured_event_frames.png" x="30" y="38" width="350" height="190" preserveAspectRatio="none"/>
+  <g id="svg_feature_bars_top" data-source-slot="slot_feature_bars_top" transform="translate(450,74)">
+        <rect x="0" y="0" width="38" height="165" fill="#9fb7dc" opacity="0.65"/><rect x="70" y="25" width="34" height="110" fill="#9fb7dc" opacity="0.65"/><rect x="136" y="0" width="38" height="165" fill="#9fb7dc" opacity="0.65"/>
+      </g>
+  <g id="svg_left_features_stack" data-source-slot="slot_left_features_stack" transform="translate(838,45)">
+        <polygon points="108,18 132,-4 256,-4 232,18" fill="#d2b116" stroke="#111" stroke-width="2"/>
+    <polygon points="232,18 256,-4 256,114 232,136" fill="#caa300" stroke="#111" stroke-width="2"/>
+    <rect x="108" y="18" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="82,35 106,13 230,13 206,35" fill="#ead15b" stroke="#111" stroke-width="2"/>
+    <polygon points="206,35 230,13 230,131 206,153" fill="#cfb21d" stroke="#111" stroke-width="2"/>
+    <rect x="82" y="35" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="55,52 79,30 203,30 179,52" fill="#f7e48c" stroke="#111" stroke-width="2"/>
+    <polygon points="179,52 203,30 203,148 179,170" fill="#ddc13d" stroke="#111" stroke-width="2"/>
+    <rect x="55" y="52" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="28,69 52,47 176,47 152,69" fill="#fdeaa2" stroke="#111" stroke-width="2"/>
+    <polygon points="152,69 176,47 176,165 152,187" fill="#e2c75b" stroke="#111" stroke-width="2"/>
+    <rect x="28" y="69" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><text x="4" y="79" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L0</tspan></text>
+    <text x="30" y="36" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L1</tspan></text>
+    <text x="66" y="0" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">L2</tspan></text>
+      </g>
+    <image id="raster_energy_map" data-source-slot="slot_energy_map" href="assets/raster_required/energy_map.png" xlink:href="assets/raster_required/energy_map.png" x="30" y="345" width="350" height="220" preserveAspectRatio="none"/>
+  <g id="svg_feature_bars_middle" data-source-slot="slot_feature_bars_middle" transform="translate(450,360)">
+        <rect x="0" y="0" width="38" height="170" fill="#b6d9a4" opacity="0.65"/><rect x="70" y="25" width="34" height="140" fill="#b6d9a4" opacity="0.65"/><rect x="136" y="0" width="38" height="170" fill="#b6d9a4" opacity="0.65"/>
+      </g>
+    <image id="raster_confidence_maps" data-source-slot="slot_confidence_maps" href="assets/raster_required/confidence_maps.png" xlink:href="assets/raster_required/confidence_maps.png" x="1012" y="336" width="314" height="210" preserveAspectRatio="none"/>
+    <image id="raster_reference_frames" data-source-slot="slot_reference_frames" href="assets/raster_required/reference_frames.png" xlink:href="assets/raster_required/reference_frames.png" x="30" y="638" width="350" height="230" preserveAspectRatio="none"/>
+  <g id="svg_feature_bars_bottom" data-source-slot="slot_feature_bars_bottom" transform="translate(450,646)">
+        <rect x="0" y="0" width="38" height="170" fill="#b6cae8" opacity="0.65"/><rect x="70" y="25" width="34" height="140" fill="#b6cae8" opacity="0.65"/><rect x="136" y="0" width="38" height="170" fill="#b6cae8" opacity="0.65"/>
+      </g>
+  <g id="svg_right_features_stack" data-source-slot="slot_right_features_stack" transform="translate(835,625)">
+        <polygon points="108,18 132,-4 256,-4 232,18" fill="#d2b116" stroke="#111" stroke-width="2"/>
+    <polygon points="232,18 256,-4 256,114 232,136" fill="#caa300" stroke="#111" stroke-width="2"/>
+    <rect x="108" y="18" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="82,35 106,13 230,13 206,35" fill="#ead15b" stroke="#111" stroke-width="2"/>
+    <polygon points="206,35 230,13 230,131 206,153" fill="#cfb21d" stroke="#111" stroke-width="2"/>
+    <rect x="82" y="35" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="55,52 79,30 203,30 179,52" fill="#f7e48c" stroke="#111" stroke-width="2"/>
+    <polygon points="179,52 203,30 203,148 179,170" fill="#ddc13d" stroke="#111" stroke-width="2"/>
+    <rect x="55" y="52" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><polygon points="28,69 52,47 176,47 152,69" fill="#fdeaa2" stroke="#111" stroke-width="2"/>
+    <polygon points="152,69 176,47 176,165 152,187" fill="#e2c75b" stroke="#111" stroke-width="2"/>
+    <rect x="28" y="69" width="124" height="118" fill="#fdeca8" stroke="#111" stroke-width="2"/><text x="0" y="79" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R0</tspan></text>
+    <text x="26" y="36" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R1</tspan></text>
+    <text x="62" y="0" font-size="34" font-style="italic">F<tspan font-size="22" baseline-shift="sub">R2</tspan></text>
+      </g>
+  <g id="svg_cost_volume" data-source-slot="slot_cost_volume" transform="translate(1660,64)">
+        <polygon points="42,42 82,0 253,0 210,42" fill="#f3be94"/>
+        <polygon points="210,42 253,0 253,132 210,170" fill="#d69766"/>
+        <rect x="0" y="42" width="210" height="128" fill="#efb081"/>
+        <text x="105" y="94" font-size="42" text-anchor="middle" font-family="Times New Roman, Times, serif">Cost</text>
+        <text x="105" y="151" font-size="42" text-anchor="middle" font-family="Times New Roman, Times, serif">Volume</text>
+      </g>
+    <image id="raster_disparity" data-source-slot="slot_disparity" href="assets/raster_required/disparity.png" xlink:href="assets/raster_required/disparity.png" x="1645" y="660" width="293" height="170" preserveAspectRatio="none"/>
+  </g>
+</svg>

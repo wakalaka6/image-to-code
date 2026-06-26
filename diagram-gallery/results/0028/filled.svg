@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1815" height="929" viewBox="0 0 1815 929">
+  <defs>
+    <marker id="arrowBlack" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L12,6 L0,12 Z" fill="#111"/></marker>
+    <marker id="arrowBlueSmall" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4c9ccc"/></marker>
+    <marker id="arrowOrangeSmall" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#f28c28"/></marker>
+    <marker id="arrowPurpleSmall" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#6d40a1"/></marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.25"/></filter>
+    <style>
+      .serif { font-family: "Times New Roman", Times, serif; fill: #111; }
+      .bold { font-weight: 700; }
+      .panel-label { font-family: "Times New Roman", Times, serif; font-size: 25px; font-weight: 700; fill: #111; }
+      .small-label { font-family: "Times New Roman", Times, serif; font-size: 18px; fill: #111; }
+    </style>
+  </defs>
+<rect x="0" y="0" width="1815" height="929" fill="#ffffff"/>
+<rect x="0" y="16" width="635" height="421" rx="13" fill="#dfead6" stroke="none"/>
+<rect x="641" y="16" width="360" height="421" rx="10" fill="#fffdf6" stroke="none" filter="url(#softShadow)"/>
+<rect x="1015" y="16" width="799" height="421" rx="10" fill="#e8e5ed" stroke="none" filter="url(#softShadow)"/>
+<rect x="50" y="459" width="1727" height="465" rx="13" fill="#fffef8" stroke="#e5dcc6" stroke-width="3" filter="url(#softShadow)"/>
+<text x="335" y="456" text-anchor="middle" class="panel-label">(a)</text>
+<text x="812" y="456" text-anchor="middle" class="panel-label">(b)</text>
+<text x="1410" y="456" text-anchor="middle" class="panel-label">(c)</text>
+  <image id="raster_input_aerial_stack" data-source-slot="slot_input_aerial_stack" href="assets/raster_required/input_aerial_stack.png" xlink:href="assets/raster_required/input_aerial_stack.png" x="18" y="38" width="282" height="168" preserveAspectRatio="none"/>
+  <g id="svg_visual_encoder_wedge" data-source-slot="slot_visual_encoder_wedge" transform="translate(312 46)">
+    <polygon points="0,0 126,46 126,128 0,162" fill="#b9cde9" stroke="none"/>
+    <text x="65" y="70" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="26">Visual</text>
+    <text x="65" y="105" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="26">Encoder</text>
+  </g>
+  <g id="svg_scale_feature_stack" data-source-slot="slot_scale_feature_stack" transform="translate(458 70)">
+    <g stroke="#2f568b" stroke-width="1.5">
+      <polygon points="35,0 100,0 85,22 20,22" fill="#dce6f1"/>
+      <polygon points="22,28 103,28 86,57 5,57" fill="#9cb7db"/>
+      <polygon points="15,62 122,62 105,94 0,94" fill="#5b83c2"/>
+    </g>
+    <text x="62" y="17" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="20">S</text>
+    <text x="48" y="47" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="20">S<tspan baseline-shift="sub" font-size="14">4</tspan></text>
+    <text x="37" y="82" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="20">S<tspan baseline-shift="sub" font-size="14">3</tspan></text>
+  </g>
+  <g id="svg_language_encoder_wedge" data-source-slot="slot_language_encoder_wedge" transform="translate(312 252)">
+    <polygon points="0,0 126,42 126,111 0,148" fill="#b8d99a" stroke="none"/>
+    <text x="65" y="65" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="26">Language</text>
+    <text x="65" y="103" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="26">Encoder</text>
+  </g>
+  <g id="svg_lincat_tokens" data-source-slot="slot_lincat_tokens" transform="translate(485 238)">
+    <rect x="0" y="0" width="42" height="112" rx="4" fill="#9bc17d" opacity="0.95"/>
+    <text x="23" y="58" transform="rotate(90 23 58)" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">LinCat</text>
+    <line x1="42" y1="56" x2="73" y2="56" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+    <g transform="translate(82 3)">
+      <rect x="0" y="0" width="16" height="16" rx="3" fill="#a8cd9a" stroke="#111" stroke-width="2"/>
+      <rect x="0" y="28" width="16" height="16" rx="3" fill="#a8cd9a" stroke="#111" stroke-width="2"/>
+      <circle cx="8" cy="60" r="3" fill="#111"/><circle cx="8" cy="77" r="3" fill="#111"/><circle cx="8" cy="94" r="3" fill="#111"/>
+      <rect x="0" y="112" width="16" height="16" rx="3" fill="#a8cd9a" stroke="#111" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="svg_cross_scale_branch" data-source-slot="slot_cross_scale_branch" transform="translate(656 26)">
+    <rect x="12" y="7" width="280" height="30" fill="#f9f7ee" stroke="#111" stroke-width="2"/>
+    <rect x="28" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="57" cy="20" r="3" fill="#111"/><circle cx="71" cy="20" r="3" fill="#111"/> <rect x="79" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <rect x="132" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="161" cy="20" r="3" fill="#111"/><circle cx="175" cy="20" r="3" fill="#111"/> <rect x="183" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <rect x="235" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="264" cy="20" r="3" fill="#111"/><circle cx="278" cy="20" r="3" fill="#111"/> <rect x="286" y="12" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="44" y1="63" x2="44" y2="39"/><line x1="96" y1="63" x2="96" y2="39"/><line x1="148" y1="63" x2="148" y2="39"/><line x1="200" y1="63" x2="200" y2="39"/><line x1="252" y1="63" x2="252" y2="39"/><line x1="304" y1="63" x2="304" y2="39"/>
+    </g>
+    <rect x="0" y="63" width="320" height="95" rx="8" fill="#e8f1f5" stroke="none"/>
+    <text x="160" y="105" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="25">Cross-scale Visual-only</text>
+    <text x="160" y="140" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="25">Fusion Branch</text>
+    <path d="M60 158 L45 190" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)" fill="none"/>
+    <polygon points="50,165 88,165 74,184 36,184" fill="#8fa8d0" stroke="#2f568b" stroke-width="1.5"/>
+  </g>
+  <g id="svg_intra_scale_branch" data-source-slot="slot_intra_scale_branch" transform="translate(656 216)">
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="25" y1="195" x2="25" y2="163"/><line x1="74" y1="195" x2="74" y2="163"/><line x1="118" y1="195" x2="118" y2="163"/>
+      <line x1="205" y1="195" x2="205" y2="163"/><line x1="247" y1="195" x2="247" y2="163"/><line x1="288" y1="195" x2="288" y2="163"/>
+      <line x1="25" y1="70" x2="25" y2="100"/><line x1="74" y1="70" x2="74" y2="100"/><line x1="118" y1="70" x2="118" y2="100"/>
+      <line x1="205" y1="70" x2="205" y2="100"/><line x1="247" y1="70" x2="247" y2="100"/><line x1="288" y1="70" x2="288" y2="100"/>
+    </g>
+    <rect x="17" y="17" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="49" cy="25" r="3" fill="#111"/><circle cx="63" cy="25" r="3" fill="#111"/> <rect x="70" y="17" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <rect x="107" y="17" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <circle cx="138" cy="25" r="3" fill="#111"/><circle cx="152" cy="25" r="3" fill="#111"/> <rect x="161" y="17" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/>
+    <rect x="206" y="17" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#ff2448" stroke-width="2"/> <rect x="242" y="17" width="15" height="15" rx="2" fill="#5d81c0" stroke="#ff2448" stroke-width="2"/> <circle cx="275" cy="25" r="3" fill="#111"/><circle cx="289" cy="25" r="3" fill="#111"/> <rect x="296" y="17" width="15" height="15" rx="2" fill="#5d81c0" stroke="#ff2448" stroke-width="2"/>
+    <rect x="0" y="80" width="320" height="127" rx="8" fill="#e6e6fa" stroke="none"/>
+    <text x="160" y="130" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="25">Intra-scale</text>
+    <text x="160" y="166" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="25">Multi-modality</text>
+    <text x="160" y="199" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="25">Interaction Branch</text>
+    <rect x="18" y="217" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="49" cy="225" r="3" fill="#111"/><circle cx="63" cy="225" r="3" fill="#111"/> <rect x="70" y="217" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <rect x="107" y="217" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <circle cx="138" cy="225" r="3" fill="#111"/><circle cx="152" cy="225" r="3" fill="#111"/> <rect x="161" y="217" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/>
+    <rect x="206" y="217" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#ff2448" stroke-width="2"/> <rect x="242" y="217" width="15" height="15" rx="2" fill="#5d81c0" stroke="#ff2448" stroke-width="2"/> <circle cx="275" cy="225" r="3" fill="#111"/><circle cx="289" cy="225" r="3" fill="#111"/> <rect x="296" y="217" width="15" height="15" rx="2" fill="#5d81c0" stroke="#ff2448" stroke-width="2"/>
+  </g>
+  <g id="svg_multi_level_language_modulation" data-source-slot="slot_multi_level_language_modulation" transform="translate(1036 56)">
+    <rect x="0" y="0" width="170" height="132" rx="8" fill="#d8edd0" stroke="#6b9c66" stroke-width="1.5"/>
+    <text x="85" y="44" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Multi-level</text>
+    <text x="85" y="82" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Language</text>
+    <text x="85" y="120" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Modulation</text>
+  </g>
+  <g id="svg_query_position_generator" data-source-slot="slot_query_position_generator" transform="translate(1036 232)">
+    <rect x="0" y="0" width="170" height="118" rx="8" fill="#f6c795" stroke="#cf7432" stroke-width="1.5"/>
+    <text x="85" y="45" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Query and</text>
+    <text x="85" y="82" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Position</text>
+    <text x="85" y="116" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="28">Generator</text>
+  </g>
+  <g id="svg_spatial_decoder" data-source-slot="slot_spatial_decoder" transform="translate(1228 31)">
+    <text x="113" y="20" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">high-level</text>
+    <text x="215" y="20" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">mid-level</text>
+    <text x="318" y="20" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">low-level</text>
+    <rect x="88" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><circle cx="116" cy="42" r="2.8" fill="#111"/><circle cx="128" cy="42" r="2.8" fill="#111"/><rect x="145" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><rect x="88" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/><circle cx="116" cy="69" r="2.8" fill="#111"/><circle cx="128" cy="69" r="2.8" fill="#111"/><rect x="145" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/><rect x="190" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><circle cx="218" cy="42" r="2.8" fill="#111"/><circle cx="230" cy="42" r="2.8" fill="#111"/><rect x="247" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><rect x="190" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/><circle cx="218" cy="69" r="2.8" fill="#111"/><circle cx="230" cy="69" r="2.8" fill="#111"/><rect x="247" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/><rect x="292" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><circle cx="320" cy="42" r="2.8" fill="#111"/><circle cx="332" cy="42" r="2.8" fill="#111"/><rect x="349" y="35" width="13" height="13" rx="2" fill="#a4ca90" stroke="#111" stroke-width="2"/><rect x="292" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/><circle cx="320" cy="69" r="2.8" fill="#111"/><circle cx="332" cy="69" r="2.8" fill="#111"/><rect x="349" y="62" width="13" height="13" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+    <rect x="70" y="104" width="300" height="200" rx="12" fill="#ffffff" stroke="#7b32bd" stroke-width="2"/>
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="116" y1="75" x2="116" y2="102"/><line x1="218" y1="75" x2="218" y2="102"/><line x1="320" y1="75" x2="320" y2="102"/>
+      <line x1="4" y1="230" x2="70" y2="230"/>
+      <line x1="370" y1="205" x2="410" y2="205"/>
+    </g>
+    <g>
+      <rect x="92" y="122" width="72" height="155" rx="6" fill="#ead3ef" stroke="#111" stroke-width="2"/>
+      <text x="128" y="202" transform="rotate(90 128 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">High-level</text>
+      <text x="153" y="202" transform="rotate(90 153 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Decoder</text>
+      <rect x="194" y="122" width="72" height="155" rx="6" fill="#ead3ef" stroke="#111" stroke-width="2"/>
+      <text x="230" y="202" transform="rotate(90 230 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Mid-level</text>
+      <text x="255" y="202" transform="rotate(90 255 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Decoder</text>
+      <rect x="296" y="122" width="72" height="155" rx="6" fill="#ead3ef" stroke="#111" stroke-width="2"/>
+      <text x="332" y="202" transform="rotate(90 332 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Low-level</text>
+      <text x="357" y="202" transform="rotate(90 357 202)" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Decoder</text>
+    </g>
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="164" y1="200" x2="194" y2="200"/><line x1="266" y1="200" x2="296" y2="200"/>
+    </g>
+    <g transform="translate(12 122)">
+      <rect x="0" y="0" width="20" height="20" rx="3" fill="#e59b65" stroke="#111" stroke-width="2"/>
+      <circle cx="10" cy="50" r="3" fill="#111"/><circle cx="10" cy="75" r="3" fill="#111"/><circle cx="10" cy="100" r="3" fill="#111"/>
+      <rect x="0" y="130" width="20" height="20" rx="3" fill="#e59b65" stroke="#111" stroke-width="2"/>
+      <text x="20" y="195" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">Object</text>
+      <text x="20" y="220" text-anchor="middle" font-family="Times New Roman, serif" font-size="20">query</text>
+    </g>
+    <text x="226" y="326" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="27">Multi-level Progressive</text>
+    <text x="226" y="358" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="27">Spatial Decoder</text>
+  </g>
+  <image id="raster_predicted_tube" data-source-slot="slot_predicted_tube" href="assets/raster_required/predicted_tube.png" xlink:href="assets/raster_required/predicted_tube.png" x="1640" y="42" width="160" height="360" preserveAspectRatio="none"/>
+<text x="20" y="252" class="serif bold" font-size="25">The green bus that is</text>
+<text x="20" y="285" class="serif bold" font-size="25">heading to the upper</text>
+<text x="20" y="318" class="serif bold" font-size="25">right, from the lower left</text>
+<text x="20" y="351" class="serif bold" font-size="25">corner of the Bell Tower</text>
+<text x="20" y="384" class="serif bold" font-size="25">roundabout</text>
+<line x1="300" y1="125" x2="312" y2="125" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="446" y1="124" x2="458" y2="124" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="590" y1="126" x2="656" y2="126" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="300" y1="299" x2="312" y2="299" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="446" y1="299" x2="485" y2="299" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="592" y1="299" x2="656" y2="299" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="991" y1="126" x2="1036" y2="126" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="991" y1="299" x2="1036" y2="299" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<polyline points="1206,126 1248,126 1248,71 1228,71" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<polyline points="1206,299 1248,299 1248,218 1228,218" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<line x1="1639" y1="211" x2="1640" y2="211" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<text x="1719" y="39" text-anchor="middle" class="serif bold" font-size="24">Predicted Tube</text>
+  <g id="svg_bottom_interaction_branch" data-source-slot="slot_bottom_interaction_branch" transform="translate(85 480)">
+    <g>
+      <rect x="45" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <rect x="75" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="111" cy="8" r="3" fill="#111"/><circle cx="122" cy="8" r="3" fill="#111"/><circle cx="133" cy="8" r="3" fill="#111"/> <rect x="151" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+      <rect x="195" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <rect x="225" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <circle cx="261" cy="8" r="3" fill="#111"/><circle cx="272" cy="8" r="3" fill="#111"/> <rect x="292" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/>
+      <rect x="352" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#ff2144" stroke-width="2"/> <rect x="412" y="0" width="15" height="15" rx="2" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/> <rect x="452" y="0" width="15" height="15" rx="2" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/> <circle cx="489" cy="8" r="3" fill="#111"/><circle cx="500" cy="8" r="3" fill="#111"/> <rect x="525" y="0" width="15" height="15" rx="2" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/>
+    </g>
+    <rect x="0" y="56" width="620" height="300" rx="8" fill="#e9e8ff" stroke="none"/>
+    <rect x="110" y="56" width="395" height="56" rx="8" fill="#dbead2" stroke="none"/>
+    <text x="306" y="92" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="26">temporal interaction layer</text>
+    <text x="530" y="91" font-family="Times New Roman, serif" font-size="28">×N</text>
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="95" y1="42" x2="95" y2="56"/><line x1="250" y1="42" x2="250" y2="56"/><line x1="370" y1="42" x2="370" y2="56"/><line x1="490" y1="42" x2="490" y2="56"/>
+      <line x1="95" y1="356" x2="95" y2="310"/><line x1="250" y1="356" x2="250" y2="310"/><line x1="370" y1="356" x2="370" y2="310"/>
+    </g>
+    <text x="24" y="166" font-family="Times New Roman, serif" font-size="25">learnable</text>
+    <text x="24" y="198" font-family="Times New Roman, serif" font-size="25">video token</text>
+    <rect x="152" y="168" width="20" height="20" rx="3" fill="#dfe8f1" stroke="#ff2144" stroke-width="2"/>
+    <rect x="322" y="168" width="20" height="20" rx="3" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/>
+    <rect x="370" y="168" width="20" height="20" rx="3" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/>
+    <rect x="455" y="168" width="20" height="20" rx="3" fill="#5e83c0" stroke="#ff2144" stroke-width="2"/>
+    <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+      <line x1="153" y1="168" x2="153" y2="113"/><line x1="323" y1="168" x2="323" y2="113"/><line x1="370" y1="168" x2="370" y2="113"/><line x1="455" y1="168" x2="455" y2="113"/>
+    </g>
+    <g opacity="0.9">
+      <rect x="184" y="220" width="330" height="60" rx="8" fill="#ede3fa" stroke="#7d4fb6" stroke-width="2"/>
+      <text x="350" y="257" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">spatial interaction layer</text>
+      <rect x="130" y="246" width="330" height="60" rx="8" fill="#f2e7ff" stroke="#7d4fb6" stroke-width="2"/>
+      <text x="296" y="283" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">spatial interaction layer</text>
+      <rect x="24" y="274" width="330" height="60" rx="8" fill="#fff6e7" stroke="#7d4fb6" stroke-width="2"/>
+      <text x="190" y="312" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">spatial interaction layer</text>
+      <g stroke="#b8e0d1" stroke-width="2" marker-end="url(#arrowBlueSmall)" opacity="0.9">
+        <line x1="80" y1="274" x2="190" y2="200"/><line x1="80" y1="274" x2="260" y2="190"/><line x1="80" y1="274" x2="363" y2="190"/>
+      </g>
+    </g>
+    <text x="518" y="275" font-family="Times New Roman, serif" font-size="21">frame <tspan font-style="italic">T</tspan></text>
+    <text x="470" y="313" font-family="Times New Roman, serif" font-size="21">frame 2</text>
+    <text x="425" y="348" font-family="Times New Roman, serif" font-size="21">frame 1</text>
+    <g transform="translate(20,372)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <rect x="30" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="65" cy="8" r="3" fill="#111"/><circle cx="76" cy="8" r="3" fill="#111"/><circle cx="87" cy="8" r="3" fill="#111"/> <rect x="105" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+      <rect x="155" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <rect x="185" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/> <circle cx="220" cy="8" r="3" fill="#111"/><circle cx="231" cy="8" r="3" fill="#111"/> <rect x="250" y="0" width="15" height="15" rx="2" fill="#b8d99a" stroke="#111" stroke-width="2"/>
+      <rect x="310" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#ff2144" stroke-width="2"/> 
+    </g>
+    <text x="28" y="424" font-family="Times New Roman, serif" font-size="23">visual</text><text x="26" y="450" font-family="Times New Roman, serif" font-size="23">token</text>
+    <text x="148" y="424" font-family="Times New Roman, serif" font-size="23">language</text><text x="164" y="450" font-family="Times New Roman, serif" font-size="23">token</text>
+    <text x="330" y="424" font-family="Times New Roman, serif" font-size="23">learnable</text><text x="337" y="450" font-family="Times New Roman, serif" font-size="23">frame token</text>
+    <line x1="700" y1="8" x2="700" y2="390" stroke="#333" stroke-width="2"/>
+    <text x="642" y="314" transform="rotate(90 642 314)" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="23">Intra-scale Multi-modality</text>
+    <text x="675" y="314" transform="rotate(90 675 314)" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="23">Interaction Branch</text>
+  </g>
+  <g id="svg_bottom_fusion_branch" data-source-slot="slot_bottom_fusion_branch" transform="translate(792 476)">
+    <rect x="0" y="0" width="583" height="420" fill="#fffdf7" opacity="0.95"/>
+    <line x1="0" y1="0" x2="0" y2="420" stroke="#bbb" stroke-width="6" stroke-dasharray="10 16" opacity="0.5"/>
+    <line x1="170" y1="10" x2="170" y2="410" stroke="#222" stroke-width="3"/>
+    <line x1="350" y1="10" x2="350" y2="410" stroke="#222" stroke-width="3"/>
+    <text x="78" y="238" transform="rotate(90 78 238)" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="27">Cross-scale Visual-only</text>
+    <text x="112" y="238" transform="rotate(90 112 238)" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="27">Fusion Branch</text>
+    <g transform="translate(128 120)">
+      <text x="0" y="-10" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="24">F<tspan baseline-shift="super" font-size="16">N</tspan><tspan baseline-shift="sub" font-size="16">v5</tspan></text>
+      <polygon points="20,0 70,0 54,18 4,18" fill="#dbe4f2" stroke="#2f568b" stroke-width="1.5"/>
+      <text x="15" y="110" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="24">F<tspan baseline-shift="sub" font-size="16">v4</tspan></text>
+      <polygon points="18,124 68,124 52,142 2,142" fill="#dbe4f2" stroke="#2f568b" stroke-width="1.5"/>
+      <text x="15" y="290" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="24">F<tspan baseline-shift="sub" font-size="16">v3</tspan></text>
+      <polygon points="0,305 70,305 54,323 -16,323" fill="#5b83c2" stroke="#2f568b" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(240 20)">
+      <rect x="0" y="0" width="250" height="390" rx="8" fill="#e5eff6" stroke="#999" stroke-width="1"/>
+      <rect x="55" y="18" width="140" height="40" rx="2" fill="#fde5cb"/>
+      <text x="125" y="46" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">Fusion</text>
+      <rect x="55" y="190" width="140" height="45" rx="2" fill="#fde5cb"/>
+      <text x="125" y="220" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="24">Fusion</text>
+      <rect x="55" y="340" width="140" height="42" rx="2" fill="#c5d9a2"/>
+      <text x="125" y="368" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="22">MSFF-FE</text>
+      <rect x="22" y="93" width="45" height="45" rx="4" fill="#ffe79c"/>
+      <rect x="22" y="286" width="45" height="45" rx="4" fill="#ffe79c"/>
+      <rect x="150" y="106" width="42" height="55" rx="4" fill="#becbe0"/>
+      <text x="171" y="141" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="18">FD</text>
+      <rect x="150" y="265" width="42" height="55" rx="4" fill="#becbe0"/>
+      <text x="171" y="300" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="18">FD</text>
+      <rect x="222" y="285" width="45" height="55" rx="4" fill="#c9b9df"/>
+      <text x="244" y="319" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="18">SA</text>
+      <g stroke="#1c8bc4" stroke-width="3" fill="none" marker-end="url(#arrowBlueSmall)">
+        <path d="M65 305 H127 V238"/><path d="M65 115 H127 V62"/><path d="M173 265 V238"/><path d="M173 106 V64"/><path d="M244 285 V238"/>
+      </g>
+      <g stroke="#f28c28" stroke-width="3" fill="none" marker-end="url(#arrowOrangeSmall)">
+        <path d="M65 115 V190"/><path d="M65 235 V286"/>
+      </g>
+      <g stroke="#6b3fa0" stroke-width="3" fill="none" marker-end="url(#arrowPurpleSmall)">
+        <path d="M195 38 H267 V282"/><path d="M267 282 V335 H267"/>
+      </g>
+      <g stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)">
+        <path d="M195 38 H240"/><path d="M195 210 H240"/><path d="M195 305 H240"/>
+      </g>
+    </g>
+    <g transform="translate(528 30)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <rect x="0" y="32" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="8" cy="75" r="3" fill="#111"/><circle cx="8" cy="75" r="3" fill="#111"/> <rect x="0" y="110" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/>
+      <circle cx="8" cy="151" r="3" fill="#111"/><circle cx="8" cy="151" r="3" fill="#111"/> <rect x="0" y="183" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <rect x="0" y="215" width="15" height="15" rx="2" fill="#dfe8f1" stroke="#111" stroke-width="2"/> <circle cx="8" cy="254" r="3" fill="#111"/><circle cx="8" cy="254" r="3" fill="#111"/> <rect x="0" y="287" width="15" height="15" rx="2" fill="#5d83bf" stroke="#111" stroke-width="2"/> <rect x="0" y="320" width="15" height="15" rx="2" fill="#5d83bf" stroke="#111" stroke-width="2"/>
+    </g>
+    <text x="555" y="72" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="20">F<tspan baseline-shift="super" font-size="14">F</tspan><tspan baseline-shift="sub" font-size="14">v5</tspan></text>
+    <text x="555" y="240" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="20">F<tspan baseline-shift="super" font-size="14">F</tspan><tspan baseline-shift="sub" font-size="14">v4</tspan></text>
+    <text x="555" y="370" font-family="Times New Roman, serif" font-style="italic" font-weight="700" font-size="20">F<tspan baseline-shift="super" font-size="14">F</tspan><tspan baseline-shift="sub" font-size="14">v3</tspan></text>
+  </g>
+  <g id="svg_bottom_fusion_modules" data-source-slot="slot_bottom_fusion_modules" transform="translate(1404 480)">
+    <rect x="50" y="0" width="190" height="150" rx="8" fill="#fff4bf" stroke="#e9cf65" stroke-width="2"/>
+    <rect x="130" y="12" width="126" height="102" rx="7" fill="#fff4bf" stroke="#d9c06b" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="140" y="20" width="100" height="30" fill="#fdfdfd" stroke="#111" stroke-width="1.8"/>
+    <rect x="140" y="55" width="100" height="30" fill="#fdfdfd" stroke="#111" stroke-width="1.8"/>
+    <rect x="140" y="90" width="100" height="30" fill="#fdfdfd" stroke="#111" stroke-width="1.8"/>
+    <text x="190" y="42" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="17">Conv1×1 s1</text>
+    <text x="190" y="77" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="17">BN</text>
+    <text x="190" y="112" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="17">SiLU</text>
+    <rect x="60" y="74" width="48" height="48" rx="4" fill="#ffe79c"/>
+    <path d="M108 98 L140 98" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <rect x="60" y="190" width="190" height="235" rx="5" fill="#faecd9" stroke="#aaa" stroke-width="2"/>
+    <path d="M120 190 V175 H175 V190" fill="none" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <path d="M180 122 V172 H155" fill="none" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <circle cx="155" cy="211" r="17" fill="#f5e6d1" stroke="#111" stroke-width="2"/>
+    <text x="155" y="219" text-anchor="middle" font-family="Times New Roman, serif" font-size="24">C</text>
+    <path d="M155 228 V250" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <path d="M155 228 H110 V250" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)" fill="none"/>
+    <path d="M155 228 H200 V250" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)" fill="none"/>
+    <rect x="86" y="250" width="68" height="38" rx="3" fill="#aed6df"/>
+    <rect x="170" y="250" width="68" height="38" rx="3" fill="#aed6df"/>
+    <text x="120" y="274" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">1×1</text>
+    <text x="204" y="274" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">1×1</text>
+    <text x="120" y="292" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">Conv</text>
+    <text x="204" y="292" text-anchor="middle" font-family="Times New Roman, serif" font-size="18">Conv</text>
+    <rect x="70" y="323" width="95" height="40" rx="3" fill="#ffe79c"/>
+    <text x="118" y="348" text-anchor="middle" font-family="Times New Roman, serif" font-weight="700" font-size="19">RepBlock ×3</text>
+    <path d="M120 288 V323" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <path d="M204 288 V323 H165" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)" fill="none"/>
+    <circle cx="155" cy="388" r="17" fill="none" stroke="#111" stroke-width="2"/>
+    <line x1="138" y1="388" x2="172" y2="388" stroke="#111" stroke-width="2"/>
+    <line x1="155" y1="371" x2="155" y2="405" stroke="#111" stroke-width="2"/>
+    <path d="M120 363 V388 H138" fill="none" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <path d="M204 288 V388 H172" fill="none" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <circle cx="155" cy="430" r="18" fill="#f5e6d1" stroke="#111" stroke-width="2"/>
+    <text x="155" y="438" text-anchor="middle" font-family="Times New Roman, serif" font-size="24">F</text>
+    <path d="M155 405 V412" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <path d="M155 448 V470" stroke="#111" stroke-width="3" marker-end="url(#arrowBlack)"/>
+    <text x="25" y="420" font-family="Times New Roman, serif" font-weight="700" font-size="25">Fusion</text>
+  </g>
+<text x="758" y="907" text-anchor="middle" class="panel-label">(b.1)</text>
+<text x="900" y="907" text-anchor="middle" class="panel-label">(b.2)</text>
+<polyline points="987,126 987,480 785,480" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+<polyline points="990,299 990,485 792,485" fill="none" stroke="#111" stroke-width="2" marker-end="url(#arrowBlack)"/>
+</svg>

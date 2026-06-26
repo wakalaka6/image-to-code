@@ -1,0 +1,25 @@
+svg_candidate 数量: 21
+raster_required 数量: 0
+
+分类结果:
+- slot_legend_llm: svg_candidate (simple black-line LLM robot icon with clear vector geometry)
+- slot_legend_retriever: svg_candidate (simple magnifying-glass icon with circle and handle)
+- slot_legend_answer: svg_candidate (flat green answer bubble icon with editable text)
+- slot_left_llm_root: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col1_mid: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col1_lower: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col1_bottom: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col2_mid: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col2_lower: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_col2_bottom: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_llm_chain3: svg_candidate (simple repeated LLM robot line icon)
+- slot_left_retriever_col1_upper: svg_candidate (simple repeated magnifying-glass icon)
+- slot_left_retriever_col1_lower: svg_candidate (simple repeated magnifying-glass icon)
+- slot_left_retriever_col2_upper: svg_candidate (simple repeated magnifying-glass icon)
+- slot_left_retriever_col2_lower: svg_candidate (simple repeated magnifying-glass icon)
+- slot_left_answer_chain1: svg_candidate (simple flat green answer icon)
+- slot_left_answer_chain2: svg_candidate (simple flat green answer icon)
+- slot_left_answer_chain3: svg_candidate (simple flat green answer icon)
+- slot_training_flame: svg_candidate (small flat flame icon with simple color regions)
+- slot_best_of_n_reward: svg_candidate (flat reward badge/ribbon symbol with simple shapes)
+- slot_selected_check: svg_candidate (single green check mark drawn as a simple path)

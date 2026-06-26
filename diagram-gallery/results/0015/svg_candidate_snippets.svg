@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1809" height="890" viewBox="0 0 1809 890">
+<defs>
+  <marker id="arrow_black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#222"/>
+  </marker>
+  <marker id="arrow_gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#555"/>
+  </marker>
+  <marker id="arrow_green" viewBox="0 0 24 24" refX="21" refY="12" markerWidth="24" markerHeight="24" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L24,12 L0,24 Z" fill="#13a54a"/>
+  </marker>
+  <marker id="arrow_red" viewBox="0 0 24 24" refX="21" refY="12" markerWidth="24" markerHeight="24" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L24,12 L0,24 Z" fill="#ff6d6d"/>
+  </marker>
+  <marker id="arrow_red_small" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+    <path d="M0,0 L12,6 L0,12 Z" fill="#f06464"/>
+  </marker>
+  <linearGradient id="pinkfade" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#ffcbd9" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#ff005b" stop-opacity="0.95"/>
+  </linearGradient>
+  <linearGradient id="greenfade" x1="0" x2="0" y1="1" y2="0">
+    <stop offset="0%" stop-color="#12a64a" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#b5f3c4" stop-opacity="0.7"/>
+  </linearGradient>
+  <style>
+    .title { font-family: "Times New Roman", serif; font-size: 35px; font-weight: 700; letter-spacing: .6px; }
+    .panel-title { font-family: "Times New Roman", serif; font-size: 35px; font-weight: 700; letter-spacing: .5px; }
+    .math { font-family: "Times New Roman", serif; font-size: 33px; font-style: italic; }
+    .label { font-family: Arial, sans-serif; font-size: 23px; }
+    .boxtext { font-family: "Times New Roman", serif; font-size: 33px; }
+    .mono { font-family: "Courier New", monospace; font-size: 26px; }
+    .thin { stroke:#555; stroke-width:3; fill:none; }
+  </style>
+</defs>
+<g id="svg_trophy_icon" data-source-slot="slot_trophy_icon" transform="translate(975,628) scale(1.000000,1.000000)">
+  <path d="M15 8 H38 L35 31 C34 38 19 38 18 31 Z" fill="#d9a51c" stroke="#87650e" stroke-width="2" />
+  <path d="M16 11 H37 L36 16 H17 Z" fill="#f0c942" opacity="0.9"/>
+  <path d="M15 12 C6 12 7 20 11 24 C13 26 15 25 17 24" fill="none" stroke="#b9820c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 12 C47 12 46 20 42 24 C40 26 38 25 36 24" fill="none" stroke="#b9820c" stroke-width="4" stroke-linecap="round"/>
+  <rect x="24" y="35" width="6" height="11" fill="#b9820c" stroke="#87650e" stroke-width="1.5"/>
+  <path d="M17 47 H37 L40 56 H14 Z" fill="#d9a51c" stroke="#87650e" stroke-width="2"/>
+  <rect x="11" y="55" width="31" height="4" rx="1.5" fill="#805c08"/>
+  <path d="M22 12 C20 20 21 27 26 32" fill="none" stroke="#fff1a7" stroke-width="2" opacity="0.55"/>
+</g>
+<g id="svg_reply_buffer_stack_icon" data-source-slot="slot_reply_buffer_stack_icon" transform="translate(1818,142) scale(1.000000,1.000000)">
+  <ellipse cx="28" cy="13" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 13 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 17 8 13Z" fill="#050505"/>
+  <ellipse cx="28" cy="22" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 27 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 31 8 27Z" fill="#050505"/>
+  <ellipse cx="28" cy="36" rx="20" ry="7" fill="#050505"/>
+  <path d="M8 41 v9 c0 4 9 7 20 7 s20-3 20-7 v-9 c0 4-9 7-20 7S8 45 8 41Z" fill="#050505"/>
+  <ellipse cx="28" cy="50" rx="20" ry="7" fill="#050505"/>
+  <path d="M14 19 C24 23 34 23 43 19" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+  <path d="M14 33 C24 37 34 37 43 33" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+  <path d="M14 47 C24 51 34 51 43 47" fill="none" stroke="#dddddd" stroke-width="1.4" opacity="0.75"/>
+</g>
+</svg>

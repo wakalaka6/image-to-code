@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1830" height="1152" viewBox="0 0 1830 1152">
+<defs>
+  <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L12,6 L0,12 z" fill="#075f7b"/>
+  </marker>
+  <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+    <rect width="10" height="10" fill="#f5f5f5"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#cfcfcf" stroke-width="4"/>
+  </pattern>
+  <style>
+    .txt { font-family: Arial, Helvetica, sans-serif; fill:#111; }
+    .hand { font-family: "Courier New", monospace; fill:#777; font-style:italic; letter-spacing:4px; }
+    .caption { font-family: "Courier New", monospace; fill:#111; font-weight:700; letter-spacing:4px; }
+    .thin { stroke:#075f7b; stroke-width:3; fill:none; }
+    .boxText { font-size:30px; }
+    .smallText { font-size:28px; }
+  </style>
+</defs>
+<rect x="0" y="0" width="1830" height="1152" fill="#ffffff"/>
+
+<rect x="151" y="13" width="1390" height="90" rx="10" ry="10" fill="none" stroke="#ee6c2f" stroke-width="3"/>
+<text x="288" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >LLM</text>
+<text x="462" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >retriever</text>
+<text x="687" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >answer</text>
+<rect x="858" y="34" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#111" stroke-width="4"/>
+<text x="932" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >chosen state</text>
+<rect x="1174" y="34" width="56" height="57" rx="6" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="4"/>
+<text x="1256" y="69" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="start" fill="#111" >discarded state</text>
+<rect x="272" y="136" width="312" height="66" rx="8" ry="8" fill="#f7f7f7" stroke="#0a2b35" stroke-width="3"/>
+<text x="428" y="181" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="normal" text-anchor="middle" fill="#111" >Query</text>
+<line x1="427" y1="202" x2="427" y2="280" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="202" x2="135" y2="280" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="202" x2="674" y2="284" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="282" width="225" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="128" y="326" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query 1</text>
+<rect x="317" y="278" width="222" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="429" y="322" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query 1*</text>
+<text x="673" y="333" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="129" y1="361" x2="129" y2="448" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="356" x2="427" y2="448" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="18" y="450" width="226" height="78" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="494" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer 1</text>
+<rect x="314" y="450" width="233" height="78" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="430" y="494" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer 1*</text>
+<text x="127" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="422" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="675" y="570" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="130" y1="596" x2="130" y2="679" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="596" x2="427" y2="676" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="688" width="225" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="733" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query n</text>
+<rect x="316" y="683" width="223" height="78" rx="8" ry="8" fill="#fff0ea" stroke="#0a2b35" stroke-width="3"/>
+<text x="429" y="728" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-query n*</text>
+<text x="676" y="721" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="130" y1="766" x2="130" y2="855" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="427" y1="761" x2="427" y2="851" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="17" y="854" width="226" height="80" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="130" y="900" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer n</text>
+<rect x="306" y="850" width="239" height="80" rx="8" ry="8" fill="#e8f6ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="426" y="896" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="normal" text-anchor="middle" fill="#111" >sub-answer n*</text>
+<text x="674" y="894" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="123" y1="934" x2="123" y2="1012" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="420" y1="930" x2="420" y2="1011" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="674" y1="940" x2="674" y2="1012" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="35" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 1)</text>
+<text x="336" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 2)</text>
+<text x="589" y="1048" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="normal" text-anchor="start" fill="#111" >P(Ans | Chain 3)</text>
+<text x="16" y="1136" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Rejection Sampling</text>
+<line x1="831" y1="132" x2="831" y2="1137" stroke="#b9b9b9" stroke-width="3" fill="none" stroke-dasharray="12 8"/>
+<line x1="831" y1="322" x2="1830" y2="322" stroke="#b9b9b9" stroke-width="3" fill="none" stroke-dasharray="12 8"/>
+<text x="858" y="165" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Training</text>
+<path d="M917 188 H1138 Q1149 188 1149 199 V267 Q1149 278 1138 278 H981 L948 300 V278 H917 Q906 278 906 267 V199 Q906 188 917 188 Z" fill="#ffffff" stroke="#111" stroke-width="5"/>
+<text x="1028" y="238" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >Current State</text>
+<line x1="1156" y1="238" x2="1225" y2="238" stroke="#1398cf" stroke-width="4" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1235" y="186" width="254" height="77" rx="8" ry="8" fill="#ffd2bd" stroke="#0a2b35" stroke-width="3"/>
+<text x="1362" y="234" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="normal" text-anchor="middle" fill="#111" >LLM</text>
+<line x1="1499" y1="238" x2="1564" y2="238" stroke="#1398cf" stroke-width="4" fill="none" marker-end="url(#arrowTeal)"/>
+<path d="M1595 187 H1770 Q1783 187 1783 200 V267 Q1783 280 1770 280 H1632 L1605 299 V280 H1595 Q1582 280 1582 267 V200 Q1582 187 1595 187 Z" fill="#ffffff" stroke="#111" stroke-width="5"/>
+<text x="1690" y="238" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >Next Action</text>
+<text x="860" y="1134" font-family="Courier New, monospace" font-size="29" font-weight="normal" text-anchor="start" fill="#777" class="hand">Inference</text>
+<ellipse cx="990" cy="386" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="990" y="396" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="990" y1="429" x2="990" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="963" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="990" y1="565" x2="990" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="990" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="990" y1="693" x2="990" y2="754" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="963" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="990" y1="811" x2="990" y2="869" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<ellipse cx="991" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="991" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<text x="927" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Greedy</text>
+<ellipse cx="1244" cy="385" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1244" y="395" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="1244" y1="429" x2="1144" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1244" y1="429" x2="1244" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1244" y1="429" x2="1343" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1115" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1217" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1320" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1143" y1="565" x2="1143" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1245" y1="565" x2="1245" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1348" y1="565" x2="1348" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1141" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="1245" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<text x="1348" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1143" y1="693" x2="1143" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1245" y1="693" x2="1245" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1348" y1="693" x2="1348" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1116" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1218" y="754" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1322" y="754" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1144" y1="811" x2="1245" y2="872" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1246" y1="811" x2="1246" y2="872" stroke="#b9b9b9" stroke-width="3" fill="none" marker-end="url(#arrowTeal)" opacity="0.65"/>
+<line x1="1350" y1="811" x2="1246" y2="872" stroke="#b9b9b9" stroke-width="3" fill="none" marker-end="url(#arrowTeal)" opacity="0.65"/>
+<ellipse cx="1246" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1246" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<text x="1160" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Best-of-N</text>
+<ellipse cx="1620" cy="385" rx="90" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1620" y="395" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >query</text>
+<line x1="1620" y1="429" x2="1517" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1620" y1="429" x2="1620" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1620" y1="429" x2="1717" y2="506" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1490" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1593" y="508" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1689" y="508" width="56" height="57" rx="8" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1428" y="608" width="130" height="244" fill="none" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1517" y1="565" x2="1493" y2="608" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1454" y="629" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1503" y="629" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1470" y1="659" x2="1470" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1519" y1="659" x2="1519" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1494" y="729" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1470" y1="750" x2="1470" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1519" y1="750" x2="1519" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1454" y="811" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1503" y="811" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<text x="1433" y="886" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="start" fill="#111" >rollouts</text>
+<line x1="1620" y1="565" x2="1620" y2="620" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1620" y="672" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1620" y1="693" x2="1620" y2="753" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1595" y="754" width="56" height="57" rx="8" ry="8" fill="#4d95d8" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1622" y1="811" x2="1622" y2="869" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<ellipse cx="1623" cy="910" rx="91" ry="43" fill="#e9f8ff" stroke="#0a2b35" stroke-width="3"/>
+<text x="1623" y="921" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="#111" >output</text>
+<rect x="1693" y="606" width="129" height="246" fill="none" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1717" y1="565" x2="1758" y2="607" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1708" y="627" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1760" y="627" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<line x1="1724" y1="657" x2="1724" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1776" y1="657" x2="1776" y2="703" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<text x="1751" y="729" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" fill="#111" >... ...</text>
+<line x1="1724" y1="750" x2="1724" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<line x1="1776" y1="750" x2="1776" y2="800" stroke="#075f7b" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+<rect x="1708" y="810" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<rect x="1760" y="810" width="32" height="29" rx="4" fill="url(#diagonalHatch)" stroke="#0a2b35" stroke-width="3"/>
+<text x="1700" y="886" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="normal" text-anchor="start" fill="#111" >rollouts</text>
+<text x="1512" y="1031" font-family="Courier New, monospace" font-size="34" font-weight="700" text-anchor="start" fill="#111" class="caption">Tree Search</text>
+
+<!-- Vectorized svg_candidate assets inserted back into their slots -->
+
+<svg id="svg_legend_llm" data-source-slot="slot_legend_llm" x="175" y="18" width="80" height="76" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_legend_retriever" data-source-slot="slot_legend_retriever" x="392" y="31" width="62" height="62" viewBox="0 0 100 100" overflow="visible">
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="38" r="29"/>
+    <line x1="64" y1="61" x2="91" y2="88"/>
+  </g>
+</svg>
+<svg id="svg_legend_answer" data-source-slot="slot_legend_answer" x="612" y="25" width="64" height="67" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M14 47 C14 22 32 8 55 8 C79 8 94 25 94 47 C94 66 82 81 63 86 L79 98 L55 88 C31 88 14 72 14 47 Z" fill="#62e75d" stroke="#0c6b1f" stroke-width="4" stroke-linejoin="round"/>
+    <text x="54" y="69" font-family="Times New Roman, serif" font-size="66" text-anchor="middle" fill="#111">A</text>
+  </g>
+</svg>
+<svg id="svg_left_llm_root" data-source-slot="slot_left_llm_root" x="38" y="202" width="78" height="72" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col1_mid" data-source-slot="slot_left_llm_col1_mid" x="147" y="369" width="80" height="78" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col1_lower" data-source-slot="slot_left_llm_col1_lower" x="32" y="607" width="88" height="83" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col1_bottom" data-source-slot="slot_left_llm_col1_bottom" x="147" y="785" width="80" height="83" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col2_mid" data-source-slot="slot_left_llm_col2_mid" x="443" y="368" width="82" height="78" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col2_lower" data-source-slot="slot_left_llm_col2_lower" x="330" y="607" width="88" height="83" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_col2_bottom" data-source-slot="slot_left_llm_col2_bottom" x="444" y="785" width="82" height="83" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_llm_chain3" data-source-slot="slot_left_llm_chain3" x="688" y="893" width="95" height="90" viewBox="0 0 100 100" overflow="visible">
+  <g fill="#fff" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="50" y1="7" x2="50" y2="22"/>
+    <circle cx="50" cy="5" r="4"/>
+    <rect x="18" y="26" width="64" height="52" rx="7"/>
+    <rect x="7" y="39" width="11" height="26" rx="2"/>
+    <rect x="82" y="39" width="11" height="26" rx="2"/>
+    <circle cx="36" cy="50" r="4" fill="#111" stroke="none"/>
+    <circle cx="64" cy="50" r="4" fill="#111" stroke="none"/>
+    <path d="M39 66 Q50 72 61 66" fill="none"/>
+  </g>
+</svg>
+<svg id="svg_left_retriever_col1_upper" data-source-slot="slot_left_retriever_col1_upper" x="57" y="380" width="66" height="63" viewBox="0 0 100 100" overflow="visible">
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="38" r="29"/>
+    <line x1="64" y1="61" x2="91" y2="88"/>
+  </g>
+</svg>
+<svg id="svg_left_retriever_col1_lower" data-source-slot="slot_left_retriever_col1_lower" x="57" y="790" width="67" height="64" viewBox="0 0 100 100" overflow="visible">
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="38" r="29"/>
+    <line x1="64" y1="61" x2="91" y2="88"/>
+  </g>
+</svg>
+<svg id="svg_left_retriever_col2_upper" data-source-slot="slot_left_retriever_col2_upper" x="352" y="375" width="68" height="66" viewBox="0 0 100 100" overflow="visible">
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="38" r="29"/>
+    <line x1="64" y1="61" x2="91" y2="88"/>
+  </g>
+</svg>
+<svg id="svg_left_retriever_col2_lower" data-source-slot="slot_left_retriever_col2_lower" x="352" y="786" width="68" height="66" viewBox="0 0 100 100" overflow="visible">
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="38" r="29"/>
+    <line x1="64" y1="61" x2="91" y2="88"/>
+  </g>
+</svg>
+<svg id="svg_left_answer_chain1" data-source-slot="slot_left_answer_chain1" x="48" y="935" width="64" height="62" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M14 47 C14 22 32 8 55 8 C79 8 94 25 94 47 C94 66 82 81 63 86 L79 98 L55 88 C31 88 14 72 14 47 Z" fill="#62e75d" stroke="#0c6b1f" stroke-width="4" stroke-linejoin="round"/>
+    <text x="54" y="69" font-family="Times New Roman, serif" font-size="66" text-anchor="middle" fill="#111">A</text>
+  </g>
+</svg>
+<svg id="svg_left_answer_chain2" data-source-slot="slot_left_answer_chain2" x="344" y="935" width="64" height="62" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M14 47 C14 22 32 8 55 8 C79 8 94 25 94 47 C94 66 82 81 63 86 L79 98 L55 88 C31 88 14 72 14 47 Z" fill="#62e75d" stroke="#0c6b1f" stroke-width="4" stroke-linejoin="round"/>
+    <text x="54" y="69" font-family="Times New Roman, serif" font-size="66" text-anchor="middle" fill="#111">A</text>
+  </g>
+</svg>
+<svg id="svg_left_answer_chain3" data-source-slot="slot_left_answer_chain3" x="602" y="934" width="66" height="64" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M14 47 C14 22 32 8 55 8 C79 8 94 25 94 47 C94 66 82 81 63 86 L79 98 L55 88 C31 88 14 72 14 47 Z" fill="#62e75d" stroke="#0c6b1f" stroke-width="4" stroke-linejoin="round"/>
+    <text x="54" y="69" font-family="Times New Roman, serif" font-size="66" text-anchor="middle" fill="#111">A</text>
+  </g>
+</svg>
+<svg id="svg_training_flame" data-source-slot="slot_training_flame" x="1236" y="215" width="38" height="47" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M50 93 C25 80 21 58 31 42 C34 36 39 31 38 18 C51 25 58 39 57 51 C66 44 68 35 66 24 C85 40 94 60 82 79 C74 91 62 97 50 93 Z" fill="#f26c13"/>
+    <path d="M50 90 C38 83 36 68 43 57 C48 49 49 41 46 34 C59 43 65 55 62 67 C68 63 70 57 70 52 C79 66 72 84 50 90 Z" fill="#ffc21a"/>
+  </g>
+</svg>
+<svg id="svg_best_of_n_reward" data-source-slot="slot_best_of_n_reward" x="1117" y="824" width="64" height="68" viewBox="0 0 100 100" overflow="visible">
+  <g>
+    <path d="M27 60 L12 98 L39 82 Z" fill="#3f8cd3"/>
+    <path d="M73 60 L88 98 L61 82 Z" fill="#3f8cd3"/>
+    <path d="M50 8 L59 15 L70 13 L76 24 L88 29 L86 41 L94 50 L86 59 L88 71 L76 76 L70 87 L59 85 L50 92 L41 85 L30 87 L24 76 L12 71 L14 59 L6 50 L14 41 L12 29 L24 24 L30 13 L41 15 Z" fill="#ffc528"/>
+    <path d="M50 27 L56 42 L72 42 L59 52 L64 68 L50 59 L36 68 L41 52 L28 42 L44 42 Z" fill="#f0b118"/>
+  </g>
+</svg>
+<svg id="svg_selected_check" data-source-slot="slot_selected_check" x="388" y="1073" width="55" height="53" viewBox="0 0 100 100" overflow="visible">
+  <path d="M15 58 L38 79 L86 18" fill="none" stroke="#18b983" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</svg>
